@@ -1,0 +1,34 @@
+The importance of thermal conductivity in the Earth’s interior
+1.1 Mantle dynamics
+1.2 Heat flow
+1.3 Geomagnetism
+
+Mechanisms of heat transport in materials
+2.1 Electron
+2.2 Photon 
+2.3 Phonon
+
+Current constraints on the thermal conductivity of the lower mantle
+3.1 Experimental values 
+3.2 Calculated values 
+3.3 Radiative conductivity 
+
+Theoretical methods for calculating thermal conductivity
+4.1 Molecular dyanmics 
+4.2 Interatomic potentials 
+4.3 Methods 
+4.3.1 Direct 
+4.3.2 Green-Kubo 
+4.4 Finite-size effects
+
+The project & future plan
+5.1 Outline of completed work
+5.2 Next steps
+5.3 Future work 
+5.4 Progress timeline
+5.5 Thesis chapters
+
+
+
+
+

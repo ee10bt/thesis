@@ -1,0 +1,37 @@
+CHAPTER ZERO - not my work - what goes in discussion - transfer report
+what is the problem/question - why
+what do we already know - simulation/mantle divide, each half needs own dedicated section
+theory - explain/mention any concepts that will later be refered to
+
+CHAPTER ONE - how do FSE affect the methods? - paper1
+temperature fit
+how is periclase different
+where does model setup go, i.e. potential convergence, getting lammps to work, non-FSE
+what do the extrapolations look like, how/why are they different, condition/conductivity
+
+CHAPTER TWO - what do impurities do? - isotopic/iron
+how I change the model to do this
+temperature/composition fit
+do I use this as evidence that direct method requires condition/kappa/MFP-dependent extrapolation? 
+have its own, seperate discussion? hey look, depends on composition, as well as temperature!
+over-arching MFP/kappa-magnitude dependence, unify temp/comp?
+why is this relevant physically? how is this relevant in the context of the mantle?
+
+CHAPTER THREE - how does the mantle behave / LEMA
+is the mantle explained in this chapter or ZERO?
+interpretation, what are the good fits?
+what else is influenced by variable conductivity? - garnero, 2016?
+what is my modelling/LEMA lacking, assumptions?
+
+CHAPTER FOUR - discussion/conculsion/future work
+need to seperate what others have done and what I have done
+block of background or interspersed or discussion?
+what studies need to be revisited in light of my findings? - direct method, constant kappa mantle modelling?
+
+each chapter has a results section, compare with other work at end to tie it all together? or compared at each results chapter?
+
+what does future work look like? more pressure/temperatures? LEMA
+
+FIGURES
+REFERENCES - where to reference
+start off isolated, then move reference/theory/discussion pieces to where they are most relevant. careful balance of previous work in intro/discussion/both

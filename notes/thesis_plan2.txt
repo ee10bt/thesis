@@ -1,0 +1,119 @@
+Chapter 1 - Introduction
+------------------------
+Why is kappa important?
+-Material science
+-Mantle/Earth
+
+What is kappa?
+-What affects it?
+-Mechanisms
+
+Previous work
+-Geophysics - Heat stuff?
+
+Thesis outline
+
+-------------------------------------------------
+
+Chapter 2 - Background
+----------------------
+Theory
+-Atomic modelling / molecular dynamics
+-Interatomic potentials / classic simulations
+--Aside on DFT etc.?
+-LAMMPS (general)
+
+Simulation methods
+-Aside on others
+-Direct Method (general)
+-Green-kubo (general)
+
+Problems/setup
+-Convergence/drift
+-FSE
+
+Previous work
+-Materials science
+
+-------------------------------------------------
+
+Chapter 3 - FSE
+---------------
+LAMMPS setup (specific to me, what I did)
+-Potential calibration
+--Oganov
+-NPT/structure equilibration
+-NVT/Temp equilibration
+
+Direct method
+
+Green-Kubo
+
+Results
+-My results
+--Compare methods
+-Literature rev.
+--Compare findings
+-Implications
+-Periclase data?
+
+-------------------------------------------------
+
+Chapter 4 - Iron
+----------------
+Intro
+-Fe in mantle
+-Fe/impurities in materials
+
+Previous work
+-Mantle studies
+-Material studies
+
+My work
+-Fe potential
+-Adding impurities to crystal structure
+
+Results
+-Temperature/Composition model, fitting
+--Method comaprison, FSE showcase
+-Implications etc.
+
+-------------------------------------------------
+
+Chapter 5 - LEMA
+
+Intro
+-Kappa + dT/dr = CMB heat flux
+--My kappa, LEMA's dT/dr
+-Relevant mantle/CMB info
+-LEMA info,referencing paper?
+--Talk about kappa-relevant parts
+
+Method
+-Monte Carlo?
+
+Results
+-Fit to real world?
+-Literature comparison
+-Impacts
+--Variable vs. fixed kappa
+-What isn't modelled / assumptions
+
+-------------------------------------------------
+
+Chapter 6 - END
+
+General conclusion
+
+Agreements/disagreements with literature
+
+Tying together
+
+Collection of questions/uncertainties for future work
+
+
+
+
+
+
+
