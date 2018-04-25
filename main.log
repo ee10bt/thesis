@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.4)  25 APR 2018 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.4)  25 APR 2018 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1582,7 +1582,7 @@ LaTeX Info: Redefining \pageref on input line 6432.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 104.
+(scrhack)             need that hack, on input line 113.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -1599,17 +1599,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip74
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 104.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 104.
-Package hyperref Info: Option `colorlinks' set `true' on input line 104.
-Package hyperref Info: Option `unicode' set `true' on input line 104.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 113.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 113.
+Package hyperref Info: Option `colorlinks' set `true' on input line 113.
+Package hyperref Info: Option `unicode' set `true' on input line 113.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 104.
+Package hyperref Info: Option `breaklinks' set `true' on input line 113.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1624,23 +1624,23 @@ Package csquotes Info: ... found 'babel' package.
 (./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 113.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1796,14 +1796,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 104.
-Package scrbase Info: activating english \abbrevname on input line 104.
-Package scrbase Info: activating english \byname on input line 104.
-Package scrbase Info: activating english \acknowledgementname on input line 104
+(scrlayer)             \begin{document} on input line 113.
+Package scrbase Info: activating english \abbrevname on input line 113.
+Package scrbase Info: activating english \byname on input line 113.
+Package scrbase Info: activating english \acknowledgementname on input line 113
 .
-Package scrbase Info: activating english \authorshipname on input line 104.
-Package scrbase Info: activating english \constantsname on input line 104.
-Package scrbase Info: activating english \symbolsname on input line 104.
+Package scrbase Info: activating english \authorshipname on input line 113.
+Package scrbase Info: activating english \constantsname on input line 113.
+Package scrbase Info: activating english \symbolsname on input line 113.
 \big@size=\dimen187
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1842,10 +1842,10 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 104.
-Package biblatex Info: Reference segment=0 on input line 104.
+Package biblatex Info: Reference section=0 on input line 113.
+Package biblatex Info: Reference segment=0 on input line 113.
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 104.
+Package hyperref Info: Link coloring ON on input line 113.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1854,40 +1854,40 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count369
 )
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
-LaTeX Info: Redefining \nameref on input line 104.
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 \c__siunitx_mathsf_int=\count370
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 104.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 113.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 104
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 113
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 104
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 113
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 104
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 113
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 104
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 113
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1897,7 +1897,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 122.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 131.
 [1
 
 
@@ -1909,15 +1909,15 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 165.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 174.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 174.
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
@@ -1931,7 +1931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 196.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 205.
 1: section
 [7] [8
 
@@ -1944,22 +1944,22 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 214.
- (./main.toc)
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 223.
+ (./main.toc
+1: section
+[11])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-1: section
-[11] [12
-
-] (./main.lof)
+ [12] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
 
 1: section
-[13] [14
+[13
+
+] [14
 
 ] (./main.lot)
 \tf@lot=\write8
@@ -1999,7 +1999,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 13.
 )
 1: section
 [1
@@ -2078,47 +2078,47 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
 
 ]
-Overfull \hbox (5.55327pt too wide) in paragraph at lines 301--301
+Overfull \hbox (5.55327pt too wide) in paragraph at lines 310--310
 \T1/ppl/m/n/10.95 als^^Q. In: \T1/ppl/m/it/10.95 Physics of the Earth and Plan-
 e-tary In-te-ri-ors \T1/ppl/m/n/10.95 174.1-4, pp. 24^^U32. \T1/ppl/m/sc/10.95 
 issn\T1/ppl/m/n/10.95 : 00319201.
  []
 
 
-Overfull \hbox (0.57991pt too wide) in paragraph at lines 301--301
+Overfull \hbox (0.57991pt too wide) in paragraph at lines 310--310
 [][]\T1/ppl/m/n/10.95 Hofmeister, A. M. (1999). ^^P  Man-tle Val-ues of Ther-ma
 l Con-duc-tiv-ity and the Geotherm
  []
 
 
-Overfull \hbox (10.60612pt too wide) in paragraph at lines 301--301
+Overfull \hbox (10.60612pt too wide) in paragraph at lines 310--310
 [][]\T1/ppl/m/n/10.95 Tosi, Nicola et al. (2013). ^^P  Man-tle dy-nam-ics with 
 pressure- and temperature-dependent
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
 1: section
 [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5461677112B055BA5FA4EC81E2ACB32F;4456.
+(rerunfilecheck)             Checksum: BD5D851D0056F9E330E9096201BC5C88;6269.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32991 strings out of 492995
- 664753 string characters out of 6132705
- 878705 words of memory out of 5000000
- 36089 multiletter control sequences out of 15000+600000
+ 33018 strings out of 492995
+ 665032 string characters out of 6132705
+ 878826 words of memory out of 5000000
+ 36106 multiletter control sequences out of 15000+600000
  53703 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,19n,71p,10377b,1560s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,19n,74p,10377b,2305s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
@@ -2130,10 +2130,10 @@ exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on main.pdf (39 pages, 177290 bytes).
+Output written on main.pdf (39 pages, 179100 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 83 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
