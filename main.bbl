@@ -17,104 +17,6 @@
 \endgroup
 
 \sortlist[entry]{nyt/global/}
-  \entry{Brown1986}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BJM}{%
-         family={Brown},
-         familyi={B\bibinitperiod},
-         given={J.\bibnamedelima M.},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=MRG}{%
-         family={McQueen},
-         familyi={M\bibinitperiod},
-         given={R.\bibnamedelima G.},
-         giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-  \keyw{doi:10.1029/JB091iB07p07485,http://dx.doi.org/10.1029/JB091iB07p07485}
-    \strng{namehash}{BJMMRG1}
-    \strng{fullhash}{BJMMRG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1986}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{number}{B7}
-    \field{pages}{7485\bibrangedash 7494}
-    \field{title}{{Phase Transitions, Gr{\"{u}}neisen Parameter, and Elasticity
-  for Shocked Iron Between 77 GPa and 400 GPa}}
-    \field{volume}{91}
-    \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Brown, McQueen
-    \verb - 1986 - Phase Transitions, Gr{\"{u}}neisen Parameter, and Elasticity
-    \verb  for Shocked Iron Between 77 GPa and 400 GPa.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Geophysical Research}
-    \field{year}{1986}
-  \endentry
-
-  \entry{Goncharov2009}{article}{}
-    \name{author}{5}{}{%
-      {{hash=GAF}{%
-         family={Goncharov},
-         familyi={G\bibinitperiod},
-         given={Alexander\bibnamedelima F.},
-         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=BP}{%
-         family={Beck},
-         familyi={B\bibinitperiod},
-         given={Pierre},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=SVV}{%
-         family={Struzhkin},
-         familyi={S\bibinitperiod},
-         given={Viktor\bibnamedelima V.},
-         giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-      {{hash=HBD}{%
-         family={Haugen},
-         familyi={H\bibinitperiod},
-         given={Benjamin\bibnamedelima D.},
-         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=JSD}{%
-         family={Jacobsen},
-         familyi={J\bibinitperiod},
-         given={Steven\bibnamedelima D.},
-         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \keyw{earth,s mantle dynamics,thermal conductivity}
-    \strng{namehash}{GAF+1}
-    \strng{fullhash}{GAFBPSVVHBDJSD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2009}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1016/j.pepi.2008.07.033
-    \endverb
-    \field{issn}{00319201}
-    \field{number}{1-4}
-    \field{pages}{24\bibrangedash 32}
-    \field{title}{{Thermal conductivity of lower-mantle minerals}}
-    \verb{url}
-    \verb http://linkinghub.elsevier.com/retrieve/pii/S0031920108001945
-    \endverb
-    \field{volume}{174}
-    \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Goncharov et al
-    \verb . - 2009 - Thermal conductivity of lower-mantle minerals.pdf:pdf
-    \endverb
-    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
-    \field{year}{2009}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{Hofmeister1999}{article}{}
     \name{author}{1}{}{%
       {{hash=HAM}{%
@@ -149,53 +51,6 @@
     \endverb
     \field{journaltitle}{Science}
     \field{year}{1999}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Lay2008}{article}{}
-    \name{author}{3}{}{%
-      {{hash=LT}{%
-         family={Lay},
-         familyi={L\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=HJ}{%
-         family={Hernlund},
-         familyi={H\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BBA}{%
-         family={Buffett},
-         familyi={B\bibinitperiod},
-         given={B.\bibnamedelima A.},
-         giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LTHJBBA1}
-    \strng{fullhash}{LTHJBBA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2008}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \verb{doi}
-    \verb 10.1038/ngeo.2007.44
-    \endverb
-    \field{issn}{1752-0894}
-    \field{pages}{25\bibrangedash 32}
-    \field{title}{{Core–mantle boundary heat flow}}
-    \verb{url}
-    \verb http://www.nature.com/doifinder/10.1038/ngeo.2007.44
-    \endverb
-    \field{volume}{1}
-    \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Lay, Hernlund,
-    \verb Buffett - 2008 - Core–mantle boundary heat flow.pdf:pdf
-    \endverb
-    \field{journaltitle}{Nature Geoscience}
-    \field{year}{2008}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -361,96 +216,182 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Osako1991}{article}{}
-    \name{author}{2}{}{%
-      {{hash=OM}{%
-         family={Osako},
+  \entry{Ohta2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=OK}{%
+         family={Ohta},
          familyi={O\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
       }}%
-      {{hash=IE}{%
-         family={Ito},
-         familyi={I\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
+      {{hash=YT}{%
+         family={Yagi},
+         familyi={Y\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hirose},
+         familyi={H\bibinitperiod},
+         given={Kei},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=OY}{%
+         family={Ohishi},
+         familyi={O\bibinitperiod},
+         given={Yasuo},
+         giveni={Y\bibinitperiod},
       }}%
     }
-    \keyw{conductivity,lattice,thermal}
-    \strng{namehash}{OMIE1}
-    \strng{fullhash}{OMIE1}
+    \list{publisher}{1}{%
+      {Elsevier B.V.}%
+    }
+    \keyw{(Mg, Fe)O ferropericlase,core–mantle boundary heat
+  flow,electrical conductivity,spin crossover,thermal conductivity}
+    \strng{namehash}{OK+2}
+    \strng{fullhash}{OKYTHKOY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1991}
+    \field{labelyear}{2017}
     \field{sortinit}{O}
     \field{sortinithash}{O}
-    \field{pages}{239\bibrangedash 242}
-    \field{title}{{Thermal diffusivity of MgSiO3 perovskite}}
-    \verb{url}
-    \verb http://onlinelibrary.wiley.com/doi/10.1029/91GL00212/full
-    \endverb
-    \field{volume}{18}
-    \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Osako, Ito - 19
-    \verb 91 - Thermal diffusivity of MgSiO3 perovskite.pdf:pdf
-    \endverb
-    \field{journaltitle}{Geophysical Research Letters}
-    \field{year}{1991}
-  \endentry
-
-  \entry{Snyder2008}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SGJ}{%
-         family={Snyder},
-         familyi={S\bibinitperiod},
-         given={G\bibnamedelima Jeffrey},
-         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=TES}{%
-         family={Toberer},
-         familyi={T\bibinitperiod},
-         given={Eric\bibnamedelima S},
-         giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SGJTES1}
-    \strng{fullhash}{SGJTES1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2008}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
     \field{abstract}{%
-    Thermoelectric materials, which can generate electricity from waste heat or
-  be used as solid-state Peltier coolers, could play an important role in a
-  global sustainable energy solution. Such a development is contingent on
-  identifying materials with higher thermoelectric efficiency than available at
-  present, which is a challenge owing to the conflicting combination of
-  material traits that are required. Nevertheless, because of modern synthesis
-  and characterization techniques, particularly for nanoscale materials, a new
-  era of complex thermoelectric materials is approaching. We review recent
-  advances in the field, highlighting the strategies used to improve the
-  thermopower and reduce the thermal conductivity.%
+    (Mg, Fe)O ferropericlase (Fp) is one of the important minerals comprising
+  Earth's lower mantle, and its thermal conductivity could be strongly
+  influenced by the iron content and its spin state. We examined the lattice
+  thermal conductivity of (Mg, Fe)O Fp containing 19 mol{\%} iron up to 111
+  GPa and 300 K by means of the pulsed light heating thermoreflectance
+  technique in a diamond anvil cell. We confirmed a strong reduction in the
+  lattice thermal conductivity of Fp due to iron substitution as reported in
+  previous studies. Our results also show that iron spin crossover in Fp
+  reduces its lattice thermal conductivity as well as its radiative conduction.
+  We also measured the electrical conductivity of an identical Fp sample up to
+  140 GPa and 2730 K, and found that Fp remained an insulator throughout the
+  experimental conditions, indicating the electronic thermal conduction in Fp
+  is negligible. Because of the effects of strong iron impurity scattering and
+  spin crossover, the total thermal conductivity of Fp at the core–mantle
+  boundary conditions is much smaller than that of bridgmanite (Bdg). Our
+  findings indicate that Bdg (and post-perovskite) is the best heat conductor
+  in the Earth's lower mantle, and distribution of iron and its valence state
+  among the lower mantle minerals are key factors to control the lower mantle
+  thermal conductivity.%
     }
     \verb{doi}
-    \verb 10.1038/nmat2090
+    \verb 10.1016/j.epsl.2017.02.030
     \endverb
-    \verb{eprint}
-    \verb 1512.00567
+    \field{isbn}{0012-821X}
+    \field{issn}{0012821X}
+    \field{pages}{29\bibrangedash 37}
+    \field{title}{{Thermal conductivity of ferropericlase in the Earth's lower
+  mantle}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.epsl.2017.02.030
     \endverb
-    \field{isbn}{1476-1122}
-    \field{issn}{1476-1122}
-    \field{number}{2}
-    \field{pages}{105\bibrangedash 114}
-    \field{title}{{Complex thermoelectric materials}}
-    \field{volume}{7}
+    \field{volume}{465}
     \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Snyder, Toberer
-    \verb  - 2008 - Complex thermoelectric materials.pdf:pdf
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Ohta et al. - 2
+    \verb 017 - Thermal conductivity of ferropericlase in the Earth's lower man
+    \verb tle.pdf:pdf
     \endverb
-    \field{journaltitle}{Nature materials}
-    \field{eprinttype}{arXiv}
-    \field{year}{2008}
+    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Okuda2017}{article}{}
+    \name{author}{7}{}{%
+      {{hash=OY}{%
+         family={Okuda},
+         familyi={O\bibinitperiod},
+         given={Yoshiyuki},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=OK}{%
+         family={Ohta},
+         familyi={O\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YT}{%
+         family={Yagi},
+         familyi={Y\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sinmyo},
+         familyi={S\bibinitperiod},
+         given={Ryosuke},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wakamatsu},
+         familyi={W\bibinitperiod},
+         given={Tatsuya},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hirose},
+         familyi={H\bibinitperiod},
+         given={Kei},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=OY}{%
+         family={Ohishi},
+         familyi={O\bibinitperiod},
+         given={Yasuo},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier B.V.}%
+    }
+    \keyw{Earth's lower mantle,aluminum,bridgmanite,core–mantle boundary heat
+  flow,iron,thermal conductivity}
+    \strng{namehash}{OY+1}
+    \strng{fullhash}{OYOKYTSRWTHKOY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Bridgmanite (Bdg), iron (Fe)- and aluminum (Al)-bearing magnesium silicate
+  perovskite is the most abundant mineral in the Earth's lower mantle. Thus,
+  its thermal conductivity governs the lower mantle thermal conductivity that
+  critically controls the thermo-chemical evolution of both the core and the
+  lower mantle. While there is extensive research for the lattice thermal
+  conductivity of MgSiO3 Bdg, the effects of Fe and Al incorporation on its
+  lattice thermal conduction are still controversial. Here we report the
+  lattice thermal conductivity of Mg0.832Fe0.209Al0.060Si0.916O3 Bdg measured
+  up to 142 GPa at 300 K using the pulsed light heating thermoreflectance
+  technique in a diamond anvil cell. The results show that the lattice thermal
+  conductivity of Bdg is 25.5±2.2 W/m/K at 135 GPa and 300 K, which is 19{\%}
+  lower than that of Fe and Al-free Bdg at identical conditions. Considering
+  the temperature effect on the lattice conductivity and the contribution of
+  radiative thermal conductivity, the total thermal conductivity of Fe and
+  Al-bearing Bdg does not change very much with temperature at 135 GPa, and
+  could be higher than that of post-perovskite with identical chemical
+  composition.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.epsl.2017.06.022
+    \endverb
+    \field{issn}{0012821X}
+    \field{number}{September}
+    \field{pages}{25\bibrangedash 31}
+    \field{title}{{The effect of iron and aluminum incorporation on lattice
+  thermal conductivity of bridgmanite at the Earth's lower mantle}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.epsl.2017.06.022
+    \endverb
+    \field{volume}{474}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Okuda et al. -
+    \verb 2017 - The effect of iron and aluminum incorporation on lattice therm
+    \verb al conductivity of bridgmanite at the Earth's lower.pdf:pdf
+    \endverb
+    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{year}{2017}
   \endentry
 
   \entry{Tosi2013}{article}{}

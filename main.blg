@@ -2,7 +2,12 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
+A level-1 auxiliary file: Chapters/Chapter1.aux
+A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
+A level-1 auxiliary file: Chapters/Chapter4.aux
+A level-1 auxiliary file: Chapters/Chapter5.aux
+A level-1 auxiliary file: Chapters/Chapter6.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -20,47 +25,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: thesis.bib
+Warning--I didn't find a database entry for "Snyder2008"
+Warning--I didn't find a database entry for "Lay2008"
+Warning--I didn't find a database entry for "Brown1986"
+Warning--I didn't find a database entry for "Osako1991"
+Warning--I didn't find a database entry for "Goncharov2009"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 10 entries,
+You've used 7 entries,
             6256 wiz_defined-function locations,
-            1289 strings with 16407 characters,
-and the built_in function-call counts, 64791 in all, are:
-= -- 4536
-> -- 1081
-< -- 253
-+ -- 1656
-- -- 496
-* -- 5345
-:= -- 6953
+            1271 strings with 17753 characters,
+and the built_in function-call counts, 49646 in all, are:
+= -- 3643
+> -- 756
+< -- 176
++ -- 1452
+- -- 339
+* -- 3889
+:= -- 5597
 add.period$ -- 0
-call.type$ -- 10
-change.case$ -- 120
-chr.to.int$ -- 35
-cite$ -- 18
-duplicate$ -- 6823
-empty$ -- 6039
-format.name$ -- 714
-if$ -- 12998
+call.type$ -- 7
+change.case$ -- 111
+chr.to.int$ -- 33
+cite$ -- 12
+duplicate$ -- 5574
+empty$ -- 4431
+format.name$ -- 533
+if$ -- 9720
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 17
 missing$ -- 0
-newline$ -- 488
-num.names$ -- 394
-pop$ -- 3165
+newline$ -- 401
+num.names$ -- 302
+pop$ -- 2209
 preamble$ -- 1
-purify$ -- 187
+purify$ -- 167
 quote$ -- 0
-skip$ -- 1607
+skip$ -- 1147
 stack$ -- 0
-substring$ -- 8088
-swap$ -- 1805
-text.length$ -- 264
-text.prefix$ -- 9
+substring$ -- 6215
+swap$ -- 1360
+text.length$ -- 167
+text.prefix$ -- 6
 top$ -- 1
-type$ -- 328
+type$ -- 226
 warning$ -- 0
-while$ -- 878
+while$ -- 759
 width$ -- 0
-write$ -- 479
+write$ -- 395
+(There were 5 warnings)
