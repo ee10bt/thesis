@@ -19,14 +19,90 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacin
 
 Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
 
+\section{Adding iron}
+
+
+
 
 
 \section{Making the model}
 
+Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the relative abundance of each mineral component. There are also endmember relations to consider within each mineral, the concentration of impurities, and mineral phase transitions.  A simple weighted average can be taken to combine the contributions of individual minerals, whereas mixing of endmembers is not as linear. \cite{Ohta2017} provide an equation for interpolating \cs between compositional endmembers, specifically (Mg,Fe)O (ferro)periclase. I apply it to (Mg,Fe)SiO$_3$ perovskite [[[PRESUMABLY ALSO WORKS FOR bdg<->p-Pv?]]]. \cite{Okuda2017} present a temperature scaling relation for bridgmanite, which I additionally apply to the Fe-endmember. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
+
+
 \subsection{Fitting the data}
+
+Determine lattice thermal conductivity as a function of temperature and composition, 
+using calculated and fit constants.
+    
+Equations from Ohta et al. 2017 (eq. 7,8,9), and Okuda et al. 2017 (eq. 5).
+
+default parameters refer to [Mg,Fe]SiO$_3$ perovskite, bridgmanite, at 136 GPa, CMB pressure.
+
+xN is a wildcard, N = 0 or 1
+x0 in variable names refers to x=0 endmember (default = [Mg]SiO3)
+x1 in variable names refers to x=1 endmember (default = [Fe]SiO3)
+
+
+\subsubsection{Compositional dependence}
+\cite{Ohta2017}
+
+    Ohta eq. 7 - k = k\_linear * omega\_ratio * np.arctan(1.0/omega\_ratio) 
+                  
+                 k           - output conductivity as function of t \& x (W/m.K), 
+                               considering mineral specific parameters
+                 k\_linear    - the composition-dependent conducitivity,
+                               if it were linearly interpolated between endmembers (W/m.K)
+                 omega\_ratio - temperature-dependent parameter to perturb k\_linear,
+                               to create the "trough" trend in composition-dependent conductivity
+
+
+    Ohta eq. 8 - omega\_ratio = np.sqrt(chi\_t / (x*(1-x)))
+                 
+                 omega\_ratio - temperature-dependent parameter to perturb k\_linear,
+                               to create the "trough" trend in composition-dependent conductivity
+                 chi\_t       - temperature-dependent parameter to ... ???
+                 x           - composition mix of interest (dimensionless, values between 0 and 1)
+
+
+    chi\_t scaling - chi\_t = a * np.exp(b*t)
+
+                    chi\_t - temperature-dependent parameter to ... ???
+                    a     - coefficient in  chi\_t variation with temperature
+                    b     - exponent in chi\_t variation with temperature
+                    t     - temperature of interest (K, default data fit between 1000 - 5000 K,
+                            but extrapolation should be reasonable)
+
+
+    Ohta eq. 9 - k\_linear = ((1 - x) * k\_x0) + x*k\_x1 
+                 
+                 k\_linear - the composition-dependent conducitivity,
+                            if it were linearly interpolated between endmembers (W/m.K)
+                 x        - composition mix of interest (dimensionless, values between 0 and 1)
+                 k\_x0     - temperature and volume-dependent conductivity for x=0 endmember (W/m.K)
+                 k\_x1     - temperature and volume-dependent conductivity for x=1 endmember (W/m.K)
 
 \subsubsection{Temperature dependence}
 \cite{Okuda2017}
 
-\subsubsection{Compositional dependence}
-\cite{Ohta2017}
+    Okuda eq. 5 - k\_x0 = ref\_k\_x0 * (ref\_t/t)**a\_x0 * (ref\_v\_x0 / v\_x0)**g\_x0
+                           k\_x1 = ref\_k\_x1 * (ref\_t/t)**a\_x1 * (ref\_v\_x1 / v\_x1)**g\_x1
+                  
+                  k\_xN     - temperature and volume-dependent conductivity of an endmember (W/m.K)
+                  ref\_k\_xN - reference conducitivty of an endmember (W/m.K)
+                  ref\_t    - reference temperature at which above conductivities are calculated (K)
+                  t        - temperature of interest (K, default data fit between 1000 - 5000 K,
+                             but extrapolation should be reasonable)                  
+                  a\_xN     - exponent controlling temperature-dependent conducitvity of an endmember
+                  ref\_v\_xN - reference volume of an endmember (E-30 m$^3$)
+                  v\_xN     - temperature-dependent volume of an endmember (E-30 m$^3$)
+                  g\_xN     - exponent controlling volume|density-dependent conducitvity of an endmember
+
+
+    Volume scaling - v\_xN = m\_xN * t + c\_xN
+                     
+                     v\_xN - temperature-dependent volume for x=0 endmember (E-30 m$^3$)
+                     m\_xN - fit gradient for x=0 endmember (E-30 m$^3$/K)
+                     t    - temperature of interest (K, default data fit between 1000 - 5000 K,
+                            but extrapolation should be reasonable)
+                     c\_xN - intercept volume for x=0 endmember (E-30 m$^3$)
