@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  27 APR 2018 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  30 APR 2018 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2093,7 +2093,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 205.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 221.
 1: section
 [7] [8
 
@@ -2101,12 +2101,22 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 --------------------
  Acknowledgements
 --------------------
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
+\T1/ppl/m/n/10.95 project ad-vi-sor...
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
+
+ []
+
 1: section
 [9] [10
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 223.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 241.
  (./main.toc
 1: section
 [11])
@@ -2200,30 +2210,54 @@ Chapter 3.
 Chapter 4.
 1: section
 [7]
-Overfull \hbox (22.96013pt too wide) in paragraph at lines 52--58
-\T1/ppl/m/n/10.95 early in-ter-po-lated be-tween end-mem-bers (W/m.K) omega_rat
-io - temperature-dependent
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+
  []
 
 
-Overfull \hbox (23.47472pt too wide) in paragraph at lines 62--66
-\T1/ppl/m/n/10.95 the "trough" trend in composition-dependent con-duc-tiv-ity c
-hi_t - temperature-dependent
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 69--75
+
  []
 
 
-Overfull \hbox (18.75049pt too wide) in paragraph at lines 91--100
-[]\T1/ppl/m/n/10.95 k_xN - tem-per-a-ture and volume-dependent con-duc-tiv-ity 
-of an end-mem-ber (W/m.K)
+Overfull \hbox (32.56096pt too wide) in paragraph at lines 76--81
+\OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
+dent con-duc-tiv-ity for Mg end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Overfull \hbox (41.30093pt too wide) in paragraph at lines 91--100
-\T1/ppl/m/n/10.95 dependent vol-ume of an end-mem-ber (E-30 m$[]$) g_xN - ex-po
--nent con-trol-ling volume|density-
+Overfull \hbox (23.15935pt too wide) in paragraph at lines 76--81
+\OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
+dent con-duc-tiv-ity for Fe end-mem-ber (Wm$[]$K$[]$) 
  []
 
-) [8] [9]
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Overfull \hbox (5.20894pt too wide) in paragraph at lines 85--94
+\OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
+dent con-duc-tiv-ity of an end-mem-ber (Wm$[]$K$[]$) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--94
+
+ []
+
+) [9]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex [10
@@ -2265,33 +2299,33 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
 
 ]
-Overfull \hbox (5.55327pt too wide) in paragraph at lines 310--310
+Overfull \hbox (5.55327pt too wide) in paragraph at lines 328--328
 \T1/ppl/m/n/10.95 als^^Q. In: \T1/ppl/m/it/10.95 Physics of the Earth and Plan-
 e-tary In-te-ri-ors \T1/ppl/m/n/10.95 174.1-4, pp. 24^^U32. \T1/ppl/m/sc/10.95 
 issn\T1/ppl/m/n/10.95 : 00319201.
  []
 
 
-Overfull \hbox (0.57991pt too wide) in paragraph at lines 310--310
+Overfull \hbox (0.57991pt too wide) in paragraph at lines 328--328
 [][]\T1/ppl/m/n/10.95 Hofmeister, A. M. (1999). ^^P  Man-tle Val-ues of Ther-ma
 l Con-duc-tiv-ity and the Geotherm
  []
 
 
-Overfull \hbox (10.60612pt too wide) in paragraph at lines 310--310
+Overfull \hbox (10.60612pt too wide) in paragraph at lines 328--328
 [][]\T1/ppl/m/n/10.95 Tosi, Nicola et al. (2013). ^^P  Man-tle dy-nam-ics with 
 pressure- and temperature-dependent
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
 1: section
 [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 24124EC58D06E87BF76E84829BF70456;7021.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2299,31 +2333,32 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33766 strings out of 492990
- 689414 string characters out of 6121926
+ 33774 strings out of 492990
+ 689462 string characters out of 6121926
  906911 words of memory out of 5000000
  36845 multiletter control sequences out of 15000+600000
- 581048 words of font info for 106 fonts, out of 8000000 for 9000
+ 583921 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,20n,75p,10377b,2284s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,20n,78p,10377b,2284s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm
 -super/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-di
 st/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></apps/applications/texlive
-/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></app
-s/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/mathpa
-zo/fplmri.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/
-type1/public/cm-super/sftt1000.pfb></apps/applications/texlive/2017/1/default/2
-017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></apps/applications/tex
-live/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></apps/
-applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/up
-lr8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1
-/urw/palatino/uplr8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-
-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (41 pages, 190522 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></apps/applications/texliv
+e/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></app
+s/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fon
+ts/type1/public/mathpazo/fplmri.pfb></apps/applications/texlive/2017/1/default/
+2017/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></apps/applications/te
+xlive/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><
+/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palat
+ino/uplb8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts
+/type1/urw/palatino/uplr8a.pfb></apps/applications/texlive/2017/1/default/2017/
+texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/applications/texlive/2017
+/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (41 pages, 203066 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
+ 514 PDF objects out of 1000 (max. 8388607)
+ 456 compressed objects within 5 object streams
  102 named destinations out of 1000 (max. 500000)
  313 words of extra memory for PDF output out of 10000 (max. 10000000)
 

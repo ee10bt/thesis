@@ -30,7 +30,7 @@
 \contentsline {section}{\numberline {4.3}Making the model}{7}{section.37}
 \contentsline {subsection}{\numberline {4.3.1}Fitting the data}{8}{subsection.38}
 \contentsline {subsubsection}{Compositional dependence}{8}{section*.39}
-\contentsline {subsubsection}{Temperature dependence}{8}{section*.40}
+\contentsline {subsubsection}{Temperature dependence}{9}{section*.40}
 \contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{11}{chapter.41}
 \contentsline {section}{\numberline {5.1}Main Section 1}{11}{section.42}
 \contentsline {subsection}{\numberline {5.1.1}Subsection 1}{11}{subsection.43}
