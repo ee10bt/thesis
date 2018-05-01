@@ -27,23 +27,23 @@ Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum an
 
 \section{Making the model}
 
-Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the relative abundance of each mineral component. There are also endmember relations to consider within each mineral, the concentration of impurities, and mineral phase transitions.  A simple weighted average can be taken to combine the contributions of individual minerals, whereas mixing of endmembers is not as linear. \cite{Ohta2017} provide an equation for interpolating \cs between compositional endmembers, specifically (Mg,Fe)O (ferro)periclase. I apply it to (Mg,Fe)SiO$_3$ perovskite [[[PRESUMABLY ALSO WORKS FOR bdg<->p-Pv?]]]. \cite{Okuda2017} present a temperature scaling relation for bridgmanite, which I additionally apply to the Fe-endmember. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
+Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the relative abundance of each mineral component. There are also endmember relations to consider within each mineral, the concentration of impurities, and mineral phase transitions.  
+
+A simple weighted average can be taken to combine the contributions of individual minerals, whereas mixing between endmembers is not as linear. \cite{Ohta2017} provide an equation for interpolating \cs between compositional endmembers, specifically (Mg,Fe)O (ferro)periclase. I apply it to (Mg,Fe)SiO$_3$ perovskite [[[PRESUMABLY ALSO WORKS FOR bdg<->p-Pv?]]]. 
+
+\cite{Okuda2017} present a temperature scaling relation for bridgmanite, which I additionally apply to the Fe-endmember. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
 
 
 \subsection{Fitting the data}
 
-Determine lattice thermal conductivity as a function of temperature and composition, 
-using calculated and fit constants.
+[Equations from \cite{Ohta2017} (eq. 7,8,9), and \cite{Okuda2017} (eq. 5)]
+
+I want to determine lattice thermal conductivity as a function of temperature and composition, 
+using calculated and fit constants. For the method I will use I need to know how the conductivity of endmember minerals changes with physical conditions. In order to keep temperature the only dependent variable, I will scale volume linerarly with temperature [FIGURE]. At this point I can scale the conductivity of an endmember with temperature within the fitted range \citep{Okuda2017}.
+
+Considering \cite{Ohta2017} the linear interpolation between the conductivities two endmembers can be perturbed, forming the trough characteristic of varying composition. While \fesios generally has a lower \tcs than \mgsio, the minimum is located at an intermediate composition. The effect of impurity scattering is larger than inherent changes due to chemistry.
     
-Equations from Ohta et al. 2017 (eq. 7,8,9), and Okuda et al. 2017 (eq. 5).
-
-default parameters refer to [Mg,Fe]SiO$_3$ perovskite, bridgmanite, at 136 GPa, CMB pressure.
-
-xN is a wildcard, N = 0 or 1
-x0 in variable names refers to x=0 endmember (default = [Mg]SiO3)
-x1 in variable names refers to x=1 endmember (default = [Fe]SiO3)
-
-
+    
 \subsubsection{Compositional dependence}
 \cite{Ohta2017}\\
 * = already cited somewhere above\\
@@ -53,7 +53,9 @@ Ohta eq. 7 $$\kappa_{latt}=\kappa_{i}\left ( \frac{\omega_{0}}{\omega_{M}} \righ
 $\kappa_{i}$ - the composition-dependent conducitivity, if it were linearly interpolated between endmembers (\wmk)\\
 $\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}$, to create the "trough" trend in composition-dependent conductivity\\
 $\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms}}\\
-$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}\\
+$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}
+
+Ultimately the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.\\
 
 Ohta eq. 8 $$\left ( \frac{\omega_{0}}{\omega_{M}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}$$           
 \\ *$\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}$, to create the "trough" trend in composition-dependent conductivity\\
@@ -64,7 +66,7 @@ $\chi$ - \enquote{\textit{a constant}}\dots\\
 $T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\                    
 $C$ - composition mix of interest (dimensionless, values between 0 and 1)
 
-\pagebreak
+The equation that splits $\omega_{0}/\omega_{M}$ into its temperature and composition-dependent components. $\chi$ is a constant unique to and endmember pair. $C\left ( 1-C \right )$ is largest when $C=0.5\ or\ 50\%$, relating to the shape of the trough formed by this fit.\\
 
 $\chi^{T}$ scaling $$\chi^{T}=A\ e^{BT}$$
 *$\chi^{T}$ -temperature-dependent parameter to \dots ??? \\
