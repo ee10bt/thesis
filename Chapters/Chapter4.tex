@@ -55,7 +55,7 @@ $\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}
 $\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms}}\\
 $\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}
 
-Ultimately the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.\\
+Ultimately this is the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.\\
 
 Ohta eq. 8 $$\left ( \frac{\omega_{0}}{\omega_{M}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}$$           
 \\ *$\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}$, to create the "trough" trend in composition-dependent conductivity\\
@@ -66,7 +66,7 @@ $\chi$ - \enquote{\textit{a constant}}\dots\\
 $T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\                    
 $C$ - composition mix of interest (dimensionless, values between 0 and 1)
 
-The equation that splits $\omega_{0}/\omega_{M}$ into its temperature and composition-dependent components. $\chi$ is a constant unique to and endmember pair. $C\left ( 1-C \right )$ is largest when $C=0.5\ or\ 50\%$, relating to the shape of the trough formed by this fit.\\
+The equation that splits $\omega_{0}/\omega_{M}$ into its temperature and composition-dependent components, where $\chi$ is a temperature-dependent variable. $C\left ( 1-C \right )$ is largest when $C=0.5\ or\ 50\%$, relating to the shape of the trough formed by this fit.\\
 
 $\chi^{T}$ scaling $$\chi^{T}=A\ e^{BT}$$
 *$\chi^{T}$ -temperature-dependent parameter to \dots ??? \\
