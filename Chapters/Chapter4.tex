@@ -4,87 +4,105 @@
 
 \label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
-
-\section{Main Section 1}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Subsection 1}
-
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
-
+%-----------------------------------------------------------
 \section{Adding iron}
+%-----------------------------------------------------------
+
+insert text here...
 
 
 
-
-
+%-----------------------------------------------------------
 \section{Making the model}
+%-----------------------------------------------------------
 
 Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the relative abundance of each mineral component. There are also endmember relations to consider within each mineral, the concentration of impurities, and mineral phase transitions.  
 
-A simple weighted average can be taken to combine the contributions of individual minerals, whereas mixing between endmembers is not as linear. \cite{Ohta2017} provide an equation for interpolating \cs between compositional endmembers, specifically (Mg,Fe)O (ferro)periclase. I apply it to (Mg,Fe)SiO$_3$ perovskite [[[PRESUMABLY ALSO WORKS FOR bdg<->p-Pv?]]]. 
+A simple weighted average can be taken to combine the contributions of individual minerals, whereas mixing between endmembers is not as linear. \citet{Ohta2017} provide an equation for interpolating \cs between compositional endmembers, specifically (Mg,Fe)O (ferro)periclase. I apply it to (Mg,Fe)SiO$_3$ perovskite [[[PRESUMABLY ALSO WORKS FOR bdg<->p-Pv?]]]. 
 
-\cite{Okuda2017} present a temperature scaling relation for bridgmanite, which I additionally apply to the Fe-endmember. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
+\citet{Okuda2017} present a temperature scaling relation for bridgmanite, which I additionally apply to the Fe-endmember. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
 
-
-\subsection{Fitting the data}
+%---------------------------------------
+\subsection{Fitting the data} 
+%---------------------------------------
 
 [Equations from \cite{Ohta2017} (eq. 7,8,9), and \cite{Okuda2017} (eq. 5)]
 
 I want to determine lattice thermal conductivity as a function of temperature and composition, 
 using calculated and fit constants. For the method I will use I need to know how the conductivity of endmember minerals changes with physical conditions. In order to keep temperature the only dependent variable, I will scale volume linerarly with temperature [FIGURE]. At this point I can scale the conductivity of an endmember with temperature within the fitted range \citep{Okuda2017}.
 
-Considering \cite{Ohta2017} the linear interpolation between the conductivities two endmembers can be perturbed, forming the trough characteristic of varying composition. While \fesios generally has a lower \tcs than \mgsio, the minimum is located at an intermediate composition. The effect of impurity scattering is larger than inherent changes due to chemistry.
+Considering \citet{Ohta2017} the linear interpolation between the conductivities two endmembers can be perturbed, forming the trough characteristic of varying composition. While \fesios generally has a lower \tcs than \mgsio, the minimum is located at an intermediate composition. The effect of impurity scattering is larger than inherent changes due to chemistry.
     
-    
+%-------------------
 \subsubsection{Compositional dependence}
+%-------------------
 \cite{Ohta2017}\\
 * = already cited somewhere above\\
 
-Ohta eq. 7 $$\kappa_{latt}=\kappa_{i}\left ( \frac{\omega_{0}}{\omega_{M}} \right )arctan\left ( \frac{\omega_{M}}{\omega_{0}} \right )$$
+Ohta eq. 7 
+\begin{equation}%-----
+\kappa_{latt}=\kappa_{i}\left ( \frac{\omega_{0}}{\omega_{M}} \right )arctan\left ( \frac{\omega_{M}}{\omega_{0}} \right )
+\label{eq.ohta7}
+\end{equation}%-------
 \\ $\kappa_{latt}$ - output conductivity as function of t \& x (\wmk), considering mineral specific parameters\\
 $\kappa_{i}$ - the composition-dependent conducitivity, if it were linearly interpolated between endmembers (\wmk)\\
 $\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}$, to create the "trough" trend in composition-dependent conductivity\\
 $\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms}}\\
-$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}
+$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}\\
 
 Ultimately this is the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.\\
 
-Ohta eq. 8 $$\left ( \frac{\omega_{0}}{\omega_{M}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}$$           
+Ohta eq. 8 
+\begin{equation}%-----
+\left ( \frac{\omega_{0}}{\omega_{M}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}  
+\label{eq.ohta8}
+\end{equation}%-------
 \\ *$\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}$, to create the "trough" trend in composition-dependent conductivity\\
 *$\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms}}\\
 *$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}\\
 $\chi^{T}$ -temperature-dependent parameter to \dots ??? \\
 $\chi$ - \enquote{\textit{a constant}}\dots\\
 $T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\                    
-$C$ - composition mix of interest (dimensionless, values between 0 and 1)
+$C$ - composition mix of interest (dimensionless, values between 0 and 1)\\
 
 The equation that splits $\omega_{0}/\omega_{M}$ into its temperature and composition-dependent components, where $\chi$ is a temperature-dependent variable. $C\left ( 1-C \right )$ is largest when $C=0.5\ or\ 50\%$, relating to the shape of the trough formed by this fit.\\
 
-$\chi^{T}$ scaling $$\chi^{T}=A\ e^{BT}$$
-*$\chi^{T}$ -temperature-dependent parameter to \dots ??? \\
+$\chi^{T}$ scaling 
+\begin{equation}%-----
+\chi^{T}=A\ e^{BT}
+\label{eq.chi_scale}
+\end{equation}%-------
+\\ *$\chi^{T}$ -temperature-dependent parameter to \dots ??? \\
 *$\chi$ - \enquote{\textit{a constant}}\dots\\
 *$T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\                    
 $A$ - coefficient in $\chi^{T}$ variation with temperature\\
-$B$     - exponent in $\chi^{T}$ variation with temperature\\
+$B$ - exponent in $\chi^{T}$ variation with temperature\\
 
-Ohta eq. 9 $$\kappa_{i}=\left ( 1-C \right )\kappa_{MgSiO_{3}}+C\ \kappa_{FeSiO_{3}}$$                
-*$\kappa_{i}$ - the composition-dependent conducitivity, if it were linearly interpolated between endmembers (\wmk)\\
+$\chi$ is a temperature-dependent variable, but a plot of $\chi$ against $T$ has no obvious trend. A simple exponential can be fit to $\chi^{T}$ against $T$ however, with a coefficient $A$ and exponent $B$.\\
+
+Ohta eq. 9 
+\begin{equation}%-----
+\kappa_{i}=\left ( 1-C \right )\kappa_{MgSiO_{3}}+C\ \kappa_{FeSiO_{3}}
+\label{eq.ohta9}
+\end{equation}%-------         
+\\ *$\kappa_{i}$ - the composition-dependent conducitivity, if it were linearly interpolated between endmembers (\wmk)\\
 *$C$ - composition mix of interest (dimensionless, values between 0 and 1)\\
 $\kappa_{MgSiO_{3}}$ - temperature and volume-dependent conductivity for Mg endmember (\wmk)\\
 $\kappa_{FeSiO_{3}}$ - temperature and volume-dependent conductivity for Fe endmember (\wmk)\\
 
+An equation that describes the conductivity of an endmember mix, assuming the relation is a simple weighted mean. $C$, in this case specifically, is the proportion of Fe atoms swapped into the system for Mg. The actually dependence of conductivity with composition is more complicated on the atomic scale, this intermediate average value adjusted in Eq.~\ref{eq.ohta7} \citep[][Eq. 7]{Ohta2017}. \\
+
+%-------------------
 \subsubsection{Temperature dependence}
+%-------------------
+
 \cite{Okuda2017}\\
 
-Okuda eq. 5 $$\kappa_{adj}=\kappa_{ref}\left ( \frac{T_{ref}}{T} \right )^{a}\left ( \frac{V_{ref}}{V} \right )^{g}$$      
+Okuda eq. 5 
+\begin{equation}%-----
+\kappa_{adj}=\kappa_{ref}\left ( \frac{T_{ref}}{T} \right )^{a}\left ( \frac{V_{ref}}{V} \right )^{g}
+\label{eq.okuda5}
+\end{equation}%-------
 \\ $\kappa_{adj}$ - temperature and volume-dependent conductivity of an endmember (\wmk)\\
 $\kappa_{ref}$ - reference conducitivty of an endmember (\wmk)\\
 $T_{ref}$ - reference temperature at which above conductivities are calculated (K)\\
@@ -94,11 +112,18 @@ $V_{ref}$ - reference volume of an endmember (E-30 m$^3$)\\
 $V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\
 $g$ - exponent controlling volume|density-dependent conducitvity of an endmember\\
 
+\citet{Okuda2017} present a model for density and temperature-dependent conductivity (actually from Manthilake 2011, REF???), which utilises exponents obtained from fitted data. A reference value is scaled to infer conductivity at the conditions of interest.\\
 
-Volume scaling $$y=mx+c$$ $$V=\frac{\partial V}{\partial T} T+V_{T_{0}}$$                    
-*$V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\          
+Volume scaling ($y=mx+c$)  
+\begin{equation}%-----
+V=\frac{\partial V}{\partial T} T+V_{T_{0}}
+\label{eq.vol_scale}
+\end{equation}%-------     
+\\ *$V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\          
 ${\partial V}/{\partial T}$ - fit gradient, change of volume with temperature (E-30 m$^3$/K)\\
 *$T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\
-$V_{T_{0}}$ - intercept volume for T=0~K (E-30 m$^3$)
+$V_{T_{0}}$ - intercept volume for T=0~K (E-30 m$^3$)\\
+
+I take Eq.~\ref{eq.okuda5} \citep[][Eq. 5]{Okuda2017} a step further, by obtaining $V$ in terms of $T$. This dependence is effectively linear over the temperatures considered, meaning Eq.~\ref{eq.ohta7} \citep[][Eq. 7]{Ohta2017} is dependent solely on temperature, composition, and fit or calculated constants.
                      
 \pagebreak
