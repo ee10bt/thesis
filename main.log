@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.4)  2 MAY 2018 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.4)  14 MAY 2018 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1818,6 +1818,16 @@ Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Ammann2014':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Dekura2013':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'Goncharov2009':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -2009,16 +2019,49 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 13.
-)
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Overfull \hbox (13.53183pt too wide) in paragraph at lines 31--32
+\T1/ppl/m/n/10.95 thus higher the ther-mal con-du-tiv-ity. A num-ber of ef-fect
+s (MEN-TION MATTHIESSEN'S
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
 1: section
 [1
 
 
 ]
+Overfull \hbox (5.43057pt too wide) in paragraph at lines 43--44
+\T1/ppl/m/n/10.95 Many stud-ies as-sume low-er-most man-tle ther-mal con-duc-ti
+v-ity to be 10 Wm$[]$K$[]$ (e.g.[]
+ []
+
+
+Overfull \hbox (2.1782pt too wide) in paragraph at lines 45--46
+\T1/ppl/m/n/10.95 re-ported for chem-i-cal and struc-tural ana-logues, MgSiO$[]
+$ en-statite (5.0 Wm$[]$K$[]$REF)
+ []
+
+
+Overfull \hbox (10.73119pt too wide) in paragraph at lines 45--46
+\T1/ppl/m/n/10.95 of 3.0 Wm$[]$K$[]$just be-neath the man-tle tran-si-tion zone
+ at 1900 K, and 12.0 Wm$[]$K$[]$at
+ []
+
+[2]) [3]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex [2
+ (./Chapters/Chapter2.tex [4
 
 
 
@@ -2026,10 +2069,10 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 Chapter 2.
 )
 1: section
-[3]
+[5]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex [4
+ (./Chapters/Chapter3.tex [6
 
 
 
@@ -2037,10 +2080,10 @@ Chapter 2.
 Chapter 3.
 )
 1: section
-[5]
+[7]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [6
+ (./Chapters/Chapter4.tex [8
 
 
 
@@ -2052,7 +2095,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
  []
 
 1: section
-[7]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 46--52
 
  []
@@ -2091,7 +2134,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--80
 
  []
 
-[8]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -2139,26 +2182,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[9]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 121--126
 
  []
 
-) [10]
+) [12]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex
 Chapter 5.
 )
 1: section
-[11
+[13
 
 
 
 ]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [12
+ (./Chapters/Chapter6.tex [14
 
 
 
@@ -2166,10 +2209,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[13]
+[15]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [14
+ (./Appendices/AppendixA.tex [16
 
 
 
@@ -2180,37 +2223,44 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 11.
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[15] [16
+[17] [18
 
 
 ]
-Overfull \hbox (5.55327pt too wide) in paragraph at lines 333--333
+Overfull \hbox (5.55327pt too wide) in paragraph at lines 350--350
 \T1/ppl/m/n/10.95 als^^Q. In: \T1/ppl/m/it/10.95 Physics of the Earth and Plan-
 e-tary In-te-ri-ors \T1/ppl/m/n/10.95 174.1-4, pp. 24^^U32. \T1/ppl/m/sc/10.95 
 issn\T1/ppl/m/n/10.95 : 00319201.
  []
 
 
-Overfull \hbox (0.57991pt too wide) in paragraph at lines 333--333
+Overfull \hbox (0.57991pt too wide) in paragraph at lines 350--350
 [][]\T1/ppl/m/n/10.95 Hofmeister, A. M. (1999). ^^P  Man-tle Val-ues of Ther-ma
 l Con-duc-tiv-ity and the Geotherm
  []
 
+1: section
+[19]
+Overfull \hbox (4.39392pt too wide) in paragraph at lines 350--350
+\T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
+pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
+ doi / 10 . 1002 / 2014GL059385 /
+ []
 
-Overfull \hbox (10.60612pt too wide) in paragraph at lines 333--333
+
+Overfull \hbox (10.60612pt too wide) in paragraph at lines 350--350
 [][]\T1/ppl/m/n/10.95 Tosi, Nicola et al. (2013). ^^P  Man-tle dy-nam-ics with 
 pressure- and temperature-dependent
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
-1: section
-[17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+[20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: FBE310FAFA0EB4BC938153642ECF794B;6769.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2218,10 +2268,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33079 strings out of 492995
- 665842 string characters out of 6132705
- 886309 words of memory out of 5000000
- 36145 multiletter control sequences out of 15000+600000
+ 33122 strings out of 492995
+ 666599 string characters out of 6132705
+ 891985 words of memory out of 5000000
+ 36180 multiletter control sequences out of 15000+600000
  57289 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,20n,78p,10377b,2305s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2237,10 +2287,10 @@ xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (41 pages, 205275 bytes).
+Output written on main.pdf (44 pages, 221219 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 464 compressed objects within 5 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 515 compressed objects within 6 object streams
+ 114 named destinations out of 1000 (max. 500000)
  297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,27 +9,54 @@
 %----------------------------------------------------------------------------------------
 
 \section{Why is \tcs important?}
+Knowledge of the thermal conductivity of solids is key in a wide range of technological applications and for our understanding of natural systems.
 
 \subsection{Man-made applications}
+Low thermal conductivities are required in thermoelectric materials, to maximise the efficiency of heat-electricity conversion \citep{Snyder2008}.
 
 \subsection{In the context of the Earth}
+For example, in the Earth's lower mantle thermal conductivity controls the nature of planetary convection \citep{Tosi2013}, and the heat flux out of the core which powers the geotherm. 
 
+The lower mantle encompasses the region between the mantle transition zone (660~km deep, $\sim$1900~K, $\sim$25~GPa) and the CMB (2891~km deep, $\sim$4000~K, $\sim$136~GPa). The composition of this region can be approximated as 80\% MgSiO$_3$/magnesium silicate perovskite (bridgmanite) and 20\% MgO/magnesium oxide (periclase), both of which are insulators and past their Debye temperatures at lower mantle conditions.
 
 \section{What is \tc?}
+Thermal conductivity determines whether a material is a conductor or insulator of heat, both of which have many technological applications.
 
 \subsection{What affects it?}
+pressure, temperature, and composition
 
 \subsection{Mechanisms of heat transport}
+RADIATIVE AND ELECTRONIC TOO\\
+
+Heat is transported as lattice virbrations, or phonons. The further phonons travel before scattering (mean free path, MFP) the more efficient the heat transport and thus higher the thermal condutivity. A number of effects (MENTION MATTHIESSEN'S RULE) cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. 
 
 
 \section{Previous work - geophysics}
+INSERT GEOPHYSICS INTRO HERE ASWELL\\
+
+A range of atomic scale simulation methods are available to determine the lattice thermal conductivity of materials. These are invaluable for calculating thermal conductivity at conditions of which experiments are difficult, e.g. the extreme conditions found in the Earth's lower mantle (pressures and temperatures up to 136~GPa and 4000~K at the core-mantle boundary). 
 
 \subsection{Mantle/core dynamics}
+Thermal conductivity in the deep Earth influences dynamic processes such as mantle convection and heat loss from the core \citep{Lay2008}.
 
 \subsection{\Tc of the lower mantle}
+Many studies assume lowermost mantle thermal conductivity to be 10~\wmk~\citep[e.g.][]{Lay2008}, but uncertainty in the extrapolation of results made at low pressures and temperatures gives a range of 4~-~16 \wmk~\citep{Brown1986, Osako1991, Hofmeister1999, Goncharov2009, Manthilake2011, Ohta2012}.
 
+There have been several computational studies to calculate the lattice thermal conductivity of bridgmanite at CMB conditions. \citet{Osako1991} measured the lattice thermal conductivity of MgSiO$_3$ perovskite, using a modified \AA ngstrom method. They investigated a temperature range of 160~-~340~K at ambient pressure. At 300~K, a conductivity of 5.1~\wmk was obtained. This value is similar to that reported for chemical and structural analogues, MgSiO$_3$ enstatite (5.0~\wmk REF) and CaTiO$_{3}$ perovskite (4~\wmk REF). The authors extrapolated the value to mantle conditions, neglecting radiative thermal conductivity. They predicted a value of 3.0~\wmk just beneath the mantle transition zone at 1900~K, and 12.0~\wmk at the top of the D$^{\prime \prime}$ layer at 2500~K, a four-fold increase. Thermal conductivity is highlighted as an important indictor of lowermost mantle structure, whether or not the D$^{\prime \prime}$ layer can behave as a thermal boundary between core and mantle.
+
+\par \citet{Manthilake2011} measured MgSiO$_3$ perovskite at 26~GPa and 473~-~1073~K, and periclase at 8 and 14~GPa between 373~-~1273~K. In order to estimate values of thermal conductivity at the top and bottom of D$^{\prime \prime}$ for a lower mantle compositional model of 4~perovskite~:~1~periclase, the authors extrapolated their measurements to high temperature and pressure. For an iron-free mantle, thermal conductivities of $18.9\pm1.6~$\wmk and $15.4\pm1.4$~\wmk are estimated for the top of D$^{\prime \prime}$ and CMB respectively. Similarly, for a mantle composition with Fe, thermal conductivities of $9.1\pm1.2$~\wmk and $8.4\pm1.2$~\wmk are calculated. This highlights the importance of impurities in controlling thermal conductivity in the lower mantle.
+
+\par \citet{Ohta2012} measured the lattice thermal diffusivity of MgSiO$_3$ perovskite and post-perovskite at room temperature and pressures up to 144~GPa (using a diamond-anvil cell (DAC) and light heating thermoreflectance). These results suggest a perovskite-dominant lowermost mantle would have conducitivity of around 11~\wmk, and that parts of the lowermost mantle where post-perovskite is stable will have a conductivity approximately 60\% higher. The authors suggest that these differences in conductivity between phases will not have a large effect on CMB heat flux, assuming the double-crossing perovskite phase model. The lattice conductivity of \mgsios perovskite is shown to increase with pressure and decrease with temperature as expected. The inclusion of impurities is expected to decrease lattice thermal conductivity.
+
+MANTHILAKE'S HIGH T RESULTS? CAN'T FIND REFERENCE?
+
+My approach is similar to that of \citet{Ammann2014}, who use the direct method and interatomic potentials reporting a value of $\sim$8.5~\wmk. \citet{Stackhouse2015} again use the direct method but with density functional theory, yielding conductivity of $6.8\pm0.9$~\wmk. Using Green-Kubo, \citet{Haigis2013} report a value of $12.4\pm2.0$~\wmks for conditions of 3000~K, 139~GPa. \citet{Tang2014} and \citet{Dekura2013} employed first principles, anharmonic lattice dynamics techniques, obtaining values of $\sim$1~\wmks (CMB conditions) and 2.3~\wmks (for 4000~K and 100~GPa) respectively. These results are much lower than other studies, and could be because of LD TRUNCATION OF CONDUCTIVITY [CRITICAL ANALYSIS].
 
 \section{Thesis outline}
+In Chapter \ref{Chapter2} we provide an overview of the methods and expand on issues. I outline my computational approaches, for the non-equilibrium molecular dynamics direct method and equilibrium molecular dynamics Green-Kubo method. I show convergence of computed conductivity with respect to simulation cell size and shape 
+
+In Chapter \ref{Chapter3}, PRESSURE/TEMPERATURE EFFECTS. DISCUSS [P/T] SCALING LAW / THEORETICAL MODEL
+
 
 \subsection{Aims}
 

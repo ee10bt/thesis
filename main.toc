@@ -11,30 +11,30 @@
 \contentsline {section}{\numberline {1.2}What is thermal conductivity?}{1}{section.18}
 \contentsline {subsection}{\numberline {1.2.1}What affects it?}{1}{subsection.19}
 \contentsline {subsection}{\numberline {1.2.2}Mechanisms of heat transport}{1}{subsection.20}
-\contentsline {section}{\numberline {1.3}Previous work - geophysics}{1}{section.21}
-\contentsline {subsection}{\numberline {1.3.1}Mantle/core dynamics}{1}{subsection.22}
-\contentsline {subsection}{\numberline {1.3.2}Thermal conductivity of the lower mantle}{1}{subsection.23}
-\contentsline {section}{\numberline {1.4}Thesis outline}{1}{section.24}
-\contentsline {subsection}{\numberline {1.4.1}Aims}{1}{subsection.25}
-\contentsline {subsection}{\numberline {1.4.2}Objectives}{1}{subsection.26}
-\contentsline {chapter}{\numberline {2}Intro/Background/Theory 2}{3}{chapter.27}
-\contentsline {section}{\numberline {2.1}Main Section 1}{3}{section.28}
-\contentsline {subsection}{\numberline {2.1.1}Subsection 1}{3}{subsection.29}
-\contentsline {chapter}{\numberline {3}Constraining the finite-size effects of molecular dynamics methods to compute thermal coductivity}{5}{chapter.30}
-\contentsline {section}{\numberline {3.1}Introduction}{5}{section.31}
-\contentsline {subsection}{\numberline {3.1.1}Intro Intro (remove this subsection header later)}{5}{subsection.32}
-\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of lower mantle minerals}{7}{chapter.33}
-\contentsline {section}{\numberline {4.1}Adding iron}{7}{section.34}
-\contentsline {section}{\numberline {4.2}Making the model}{7}{section.35}
-\contentsline {subsection}{\numberline {4.2.1}Fitting the data}{7}{subsection.36}
-\contentsline {subsubsection}{Compositional dependence}{8}{section*.37}
-\contentsline {subsubsection}{Temperature dependence}{9}{section*.42}
-\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{11}{chapter.45}
-\contentsline {section}{\numberline {5.1}Main Section 1}{11}{section.46}
-\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{11}{subsection.47}
-\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{13}{chapter.48}
-\contentsline {section}{\numberline {6.1}Main Section 1}{13}{section.49}
-\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{13}{subsection.50}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{15}{appendix.51}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{15}{section.52}
-\contentsline {chapter}{Bibliography}{17}{appendix*.53}
+\contentsline {section}{\numberline {1.3}Previous work - geophysics}{2}{section.21}
+\contentsline {subsection}{\numberline {1.3.1}Mantle/core dynamics}{2}{subsection.22}
+\contentsline {subsection}{\numberline {1.3.2}Thermal conductivity of the lower mantle}{2}{subsection.23}
+\contentsline {section}{\numberline {1.4}Thesis outline}{3}{section.24}
+\contentsline {subsection}{\numberline {1.4.1}Aims}{3}{subsection.25}
+\contentsline {subsection}{\numberline {1.4.2}Objectives}{3}{subsection.26}
+\contentsline {chapter}{\numberline {2}Intro/Background/Theory 2}{5}{chapter.27}
+\contentsline {section}{\numberline {2.1}Main Section 1}{5}{section.28}
+\contentsline {subsection}{\numberline {2.1.1}Subsection 1}{5}{subsection.29}
+\contentsline {chapter}{\numberline {3}Constraining the finite-size effects of molecular dynamics methods to compute thermal coductivity}{7}{chapter.30}
+\contentsline {section}{\numberline {3.1}Introduction}{7}{section.31}
+\contentsline {subsection}{\numberline {3.1.1}Intro Intro (remove this subsection header later)}{7}{subsection.32}
+\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of lower mantle minerals}{9}{chapter.33}
+\contentsline {section}{\numberline {4.1}Adding iron}{9}{section.34}
+\contentsline {section}{\numberline {4.2}Making the model}{9}{section.35}
+\contentsline {subsection}{\numberline {4.2.1}Fitting the data}{9}{subsection.36}
+\contentsline {subsubsection}{Compositional dependence}{10}{section*.37}
+\contentsline {subsubsection}{Temperature dependence}{11}{section*.42}
+\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{13}{chapter.45}
+\contentsline {section}{\numberline {5.1}Main Section 1}{13}{section.46}
+\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{13}{subsection.47}
+\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{15}{chapter.48}
+\contentsline {section}{\numberline {6.1}Main Section 1}{15}{section.49}
+\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{15}{subsection.50}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{17}{appendix.51}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{17}{section.52}
+\contentsline {chapter}{Bibliography}{19}{appendix*.53}
