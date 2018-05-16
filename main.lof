@@ -3,6 +3,9 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }}{6}{figure.caption.37}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Movement and distribution of heat in the direct method. Orange to white scale represents temperature \citep [modified from][]{Stackhouse2015}.\relax }}{7}{figure.caption.38}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }}{8}{figure.caption.41}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
