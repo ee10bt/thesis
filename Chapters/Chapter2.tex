@@ -18,14 +18,21 @@ A range of atomic scale simulation methods are available to determine the lattic
 %-------------------
 \subsubsection{Parameter drift/convergence}
 %-------------------
+We ensure all calculations are run for a sufficient length of time for the conductivity value to converge. When conductivity fails to converge it means either the simulations needs to be run for longer (unlikely with our nanosecond-scale classical calculations), or the system temperature has drifted. When NVE simulations are run for a long time there is noticable drift in the average system temperature (due to numerical approximations in the equation of motion), which in turn causes drift in the computed conductivity.
 
 %---------------------------------------
 \subsection{Interatomic potentials / Atomic interactions?}
 %---------------------------------------
+With the interatomic potential of \citet{Oganov2000} we simulate bridgmanite (MgSiO$_3$ perovskite). To assess finite-size effects we use larger simulation cells than those employed in previous studies. The atom counts associated with these cells (the largest cell considered having over 100,000 atoms) means an ab initio study would be impractical, necessitating the use of interatomic potentials. We expect the potentials to represent the finite size effects well, even if computed conductivities may inaccurate compared to first-principles calculations.
+
+WHY OGANOV? 
+
+WHAT CUTOFFS?
 
 %---------------------------------------
 \subsection{LAMMPS}
 %---------------------------------------
+LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a classical molecular dynamics code \citep{Plimpton1995}.
 
 %---------------------------------------
 \subsection{DFT/other}
@@ -102,6 +109,43 @@ The convergence is not necessarily observed concurrently for longer cells howeve
 %---------------------------------------
 \subsection{Green-Kubo}
 %---------------------------------------
+The Green-Kubo method uses auto-correlation functions (ACFs) to quantify time-dependence of heat fluxes (shown in Figure~\ref{fig:gk_acf}, and Equation \ref{acf-j}), in a simulation cell of roughly cubic dimensions (WHY??) and spatially-consistent average temperature. Instantaneous heat fluxes can be used to determine how energy is dissipated within a system, where brief flux events mean heat is transferred quickly indicating high thermal conductivity [[[and vice versa, BUT IS THIS TRUE?]]]. 
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Figures/gk_acf.png}
+\caption{Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.}
+\label{fig:gk_acf}
+\end{figure}
+
+The auto-correlation is obtained over the net heat flux series in each crystallographic direction, for a timescale up to a chosen correlation length.
+~
+\begin{equation}
+ACF_i = \left \langle J_i(0) \cdot  J_i(t) \right \rangle,
+\label{acf-j}
+\end{equation}
+~
+where $i$ specifies direction, $J$ is heat flux, and $t$ is the correlation length. The integral of heat flux ACF is proportional to thermal conductivity via the Green-Kubo equation (see Figure~\ref{fig:gk_int} and Equation \ref{gk-int}), 
+~
+\begin{equation}
+\kappa_i = \frac{V}{k_{B}T^{2}} \int_{0}^{\infty} \left \langle J_i(0) \cdot  J_i(t) \right \rangle dt ,
+\label{gk-int}
+\end{equation}
+~
+[[[I am using ``k''s and ``kappa''s to represent \tc, kappa here and k earlier?]]] where $V$ is the simulation cell volume, $k_B$ is the Boltzmann constant, and $T$ is the average temperature of the system. In this study we use Green-Kubo results as an independent check on the direct method, as they do not have the same finite size-effects. Obtaining a converged conductivity result simply depends on using a large enough cell volume / number of atoms. 
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{Figures/gk_int.png}
+\caption{Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).}
+\label{fig:gk_int}
+\end{figure}
+
+The individual integrals obtained from the Green-Kubo show variation from the average combined integral on the order of the mean. Many simulations from different intital temperature conditions are required in order to ensure good sampling of conductivity, as well as ensuring the computation time for each is long enough for convergence. This makes Green-Kubo a computationally expensive method, especially for large systems.
+
+The ACF should decay to zero as correlation time tends to infinity, however noise in the ACF prevents this. This will ultimately cause the integral to diverge/drift on long timescales. \citet{Howell2012} fits a series of exponential decays to their ACF, forcing the expected decay to zero and subsequent (constant) integral convergence. This is represents a significant improvement on the conductivity estimate at long correlation lengths, but is mostly similar with the un-fit integrals early in the correlation. (INTEGRAL DRIFT FIGURE, JUST THE ONE INTEGRAL FOR 100PS)
+
+(STACKHOUSE 2010 REFERENCES Volz and Chen 2000; Sun and Murthy 2006)
+
+
 
 %---------------------------------------
 \subsection{Other}

@@ -344,6 +344,62 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Howell2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HPC}{%
+         family={Howell},
+         familyi={H\bibinitperiod},
+         given={P.\bibnamedelima C.},
+         giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HPC1}
+    \strng{fullhash}{HPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    We compare the molecular dynamics Green-Kubo and direct methods for
+  calculating thermal conductivity $\kappa$, using as a test case crystalline
+  silicon at temperatures T in the range 500-1000 K (classical regime). We pay
+  careful attention to the convergence with respect to simulation size and
+  duration and to the procedures used to fit the simulation data. We show that
+  in the Green-Kubo method the heat current autocorrelation function is
+  characterized by three decay processes, of which the slowest lasts several
+  tens of picoseconds so that convergence requires several tens of nanoseconds
+  of data. Using the Stillinger-Weber potential we find excellent agreement
+  between the two methods. We also use the direct method to calculate
+  $\kappa$(T) for the Tersoff potential and find that the magnitude and the
+  temperature-dependence are different for the two potentials and that neither
+  potential agrees with experimental data. We argue that this implies that
+  using the Stillinger-Weber or Tersoff potentials to predict trends in kappa
+  as some system parameter is varied may yield results which are specific to
+  the potential but not intrinsic to Si.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.4767516
+    \endverb
+    \field{issn}{1089-7690}
+    \field{number}{22}
+    \field{pages}{224111}
+    \field{title}{{Comparison of molecular dynamics methods and interatomic
+  potentials for calculating the thermal conductivity of silicon.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/23248991
+    \endverb
+    \field{volume}{137}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Howell - 2012 -
+    \verb  Comparison of molecular dynamics methods and interatomic potentials
+    \verb for calculating the thermal conductivity of silicon.pdf:pdf
+    \endverb
+    \field{journaltitle}{The Journal of chemical physics}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Hu2011}{article}{}
     \name{author}{3}{}{%
       {{hash=HL}{%
@@ -690,6 +746,52 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Oganov2000}{article}{}
+    \name{author}{3}{}{%
+      {{hash=OAR}{%
+         family={Oganov},
+         familyi={O\bibinitperiod},
+         given={A.\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=BJP}{%
+         family={Brodholt},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=PDG}{%
+         family={Price},
+         familyi={P\bibinitperiod},
+         given={D.\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \keyw{anharmonicity,d layer,earth,equation of state,gr{\"{u}}neisen
+  parameter,interatomic potentials,s lower mantle,thermal expansion}
+    \strng{namehash}{OARBJPPDG1}
+    \strng{fullhash}{OARBJPPDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{pages}{277\bibrangedash 288}
+    \field{title}{{Comparative study of quasiharmonic lattice dynamics,
+  molecular dynamics and Debye model applied to MgSiO3 perovskite}}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0031920100001977
+    \endverb
+    \field{volume}{122}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Oganov, Brodhol
+    \verb t, Price - 2000 - Comparative study of quasiharmonic lattice dynamics
+    \verb , molecular dynamics and Debye model applied to MgSi.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{year}{2000}
+  \endentry
+
   \entry{Ohta2012}{article}{}
     \name{author}{8}{}{%
       {{hash=OK}{%
@@ -987,6 +1089,61 @@
     \endverb
     \field{journaltitle}{Geophysical Research Letters}
     \field{year}{1991}
+  \endentry
+
+  \entry{Plimpton1995}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PS}{%
+         family={Plimpton},
+         familyi={P\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{body problem,molecular dynamics,n,parallel computing}
+    \strng{namehash}{PS1}
+    \strng{fullhash}{PS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Three parallel algorithms for classical molecular dynamics are presented.
+  The first assigns each processor a fixed subset of atoms; the second assigns
+  each a fixed subset of inter–atomic forces to compute; the third assigns
+  each a fixed spatial region. The algorithms are suitable for molecular
+  dynamics models which can be difficult to parallelize efficiently — those
+  with short–range forces where the neighbors of each atom change rapidly.
+  They can be implemented on any distributed–memory parallel machine which
+  allows for message–passing of data between independently executing
+  processors. The algorithms are tested on a standard Lennard–Jones benchmark
+  problem for system sizes ranging from 500 to 100,000,000 atoms on several
+  parallel supercomputers—the nCUBE 2, Intel iPSC/860 and Paragon, and Cray
+  T3D. Comparing the results to the fastest reported vectorized Cray Y–MP and
+  C90 algorithm shows that the current generation of parallel machines is
+  competitive with conventional vector supercomputers even for small problems.
+  For large problems, the spatial algorithm achieves parallel efficiencies of
+  90{\%} and a 1840–node Intel Paragon performs up to 165 faster than a
+  single Cray C90 processor. Trade–offs between the three algorithms and
+  guidelines for adapting them to more complex molecular dynamics simulations
+  are also discussed. This%
+    }
+    \verb{doi}
+    \verb 10.1006/jcph.1995.1039
+    \endverb
+    \field{issn}{00219991}
+    \field{pages}{1\bibrangedash 19}
+    \field{title}{{Fast Parallel Algorithms for Short – Range Molecular
+  Dynamics}}
+    \field{volume}{117}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Plimpton - 1995
+    \verb  - Fast Parallel Algorithms for Short – Range Molecular Dynamics.pd
+    \verb f:pdf
+    \endverb
+    \field{journaltitle}{Journal of Computational Physics}
+    \field{year}{1995}
   \endentry
 
   \entry{Schelling2002}{article}{}
