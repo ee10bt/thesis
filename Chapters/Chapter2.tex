@@ -20,6 +20,8 @@ A range of atomic scale simulation methods are available to determine the lattic
 %-------------------
 We ensure all calculations are run for a sufficient length of time for the conductivity value to converge. When conductivity fails to converge it means either the simulations needs to be run for longer (unlikely with our nanosecond-scale classical calculations), or the system temperature has drifted. When NVE simulations are run for a long time there is noticable drift in the average system temperature (due to numerical approximations in the equation of motion), which in turn causes drift in the computed conductivity.
 
+NPT-NVT-NVE PROCESS
+
 %---------------------------------------
 \subsection{Interatomic potentials / Atomic interactions?}
 %---------------------------------------
@@ -49,12 +51,30 @@ Required? Subsubsection somewhere?
 (2) The non-equilbrium molecular dynamics-based ``direct method'', where thermal conductivity is calculated from an imposed heat flux and corresponding temperature gradient via Fourier's Law \citep{Muller-Plathe1997,Nieto-Draghi2013}.
 
 %---------------------------------------
+\subsection{Finite-size effects}
+%---------------------------------------
+[[[Give its own section, or as subsection in each method?]]]\\
+Computational techniques are not limited by the reproduction of physical conditions like experiments, however they are affected by the size and shape of the simulation cell. The effects of the finite system size available for computation must be checked, as systems with too few atoms are sometimes unable to reproduce the behaviour of the bulk material. If the wavelength of a phonon is too long to fit into a cell, it is not able to transport heat like it should. In the case of the direct method, the length to cross sectional area (CSA) aspect ratio can also matter.
+
+Considering systems of varying size, length-dependent conductivities are obtained from the direct method and extrapolated to the bulk material (\citet{Schelling2002}). The validity of this extrapolation procedure have been called into question (e.g. \citet{Sellan2010}), when a linear trend cannot be fit through the length-dependent conductivities. We describe finite-size effects (FSE) which cause the conductivity result of a simulation to diverge from the value expected by a linear trend, and offer a comparison with results obtained from the Green-Kubo method. The two methods have previously been compared (e.g. \citet{Schelling2002} [[[REFERENCED EARLIER IN THIS PARAGRAPH, THIS OKAY?]]] ), and have been found to give results in good agreement.
+
+The finite-size effects (FSE) I describe are associated with phonon-phonon scattering, or the lack thereof, and boundary-scattering or truncation of phonon mean free path due to limited system sizes. These phenomena combine to misrepresent the phonon behaviour of the bulk material. 
+
+The FSE observed for a material change with thermal conductivity/phonon MFP, and thus are pressure, temperature, and composition sensitive. Higher conductivity(or is it MFP?) materials/conditions require larger systems to eliminate FSE (and vice versa) [[[BUT IS THIS TRUE?]]].
+
+
+
+%---------------------------------------
 \subsection{Direct method}
 %---------------------------------------
 The direct method is the computational implementation of a typical experiment to measure thermal conductivity, using Fourier's law to relate heat flux ($q$) and temperature gradient ($\nabla{T}$) to thermal conductivity ($k$), 
 \begin{equation}
 q=-k \nabla{T} \label{fourier}.
 \end{equation}
+
+%-------------------
+\subsubsection{System setup}
+%-------------------
 
 In the direct method energy is transferred from one group of atoms to another, creating hot and cold regions between which heat flows. The resultant temperature gradient is measured by calculating the temperature of individual groups of atoms along the direction of the heat flux. Simulation cells tend to be long relative to their cross-sectional area, defined as height by width (see Figure~\ref{fig:cell_dia}). Cell boundaries are periodic and the hot and cold sections are half the cell length apart, meaning heat flows in both directions from hot to cold (one of which is across the length-end periodic boundary). This results in two similar temperature gradients which can be averaged.
 
@@ -75,7 +95,13 @@ From kinetic theory [[[REF?]]], conductivities computed by the direct method ($k
 k_{L} = \frac{1}{3} C_{V} v l_{L} \label{length-dep},
 \end{equation}
 
-where $C_v$ is the volumetric heat capacity, $v$ is the average phonon drift velocity, and $l_L$ is the phonon mean free path. The finite size of the simulation cell truncates the mean free path, underestimating conductivity compared to that of the bulk material ($k_\infty$). Using results from simulations of varying cell length ($L$), conductivity is extrapolated to a length-independent value (where $b$ is a material dependent parameter),
+where $C_v$ is the volumetric heat capacity, $v$ is the average phonon drift velocity, and $l_L$ is the phonon mean free path. 
+
+%-------------------
+\subsubsection{Data processing}
+%-------------------
+
+The finite size of the simulation cell truncates the mean free path, underestimating conductivity compared to that of the bulk material ($k_\infty$). Using results from simulations of varying cell length ($L$), conductivity is extrapolated to a length-independent value (where $b$ is a material dependent parameter),
 
 \begin{equation}
 {k_{L}}^{-1} = b L^{-1} + {k_{\infty}}^{-1} \label{linear-extrap}.
@@ -89,6 +115,10 @@ Inverse conductivities from direct method simulations are plotted against corres
   \label{fig:ideal}
 \end{figure}
 
+%-------------------
+\subsubsection{Finite-size effects}
+%-------------------
+
 Problems arise when the data do not support a linear trend. There are two effects of finite system size that can cause an individual direct method simulation to diverge away from an inferred/expected linear trend, both of which result in overestimation of the length-dependent conductivity data point. First, when the distance between hot and cold sections (controlled by cell length) is shorter than the MFP, phonons travel ballistically (i.e. without any scattering events) from heat source to sink \citep{Sellan2010}. Conductivites in shorter length cells are overestimated when this occurs, reducing the gradient of the linear fit and thus underestimating the extrapolated conductivity.
 
 For a given length, conductivity is dependent on the CSA, or aspect ratio of the simulation cell. Conductivity is overestimated due to an underestimation of phonon-phonon scattering, from sparse phonon phase sampling in cells where cross-section is small compared to length. Phonons that aren't resolved cannot contribute to phonon-phonon scattering effects. Reduced scattering means heat transport is artificially more efficient than expected from the bulk material. 
@@ -97,6 +127,12 @@ For a given length, conductivity is dependent on the CSA, or aspect ratio of the
 
 The convergence is not necessarily observed concurrently for longer cells however, where they might show overestimated conductivities compared to the fit through the short cells (\cite{Hu2011}). This would cause the fit to all data to be steeper than it should, increasing the extrapolated result.  [[[HOPEFULLY THIS IS TRUE]]] I can show that increasing CSA does not change the computed conductivity at short lengths, but does reduce values from longer cells and bring them into alignment with the expected fit.
 
+%-------------------
+\subsubsection{Other NEMD}
+%-------------------
+Fixed ends?
+
+Sinusoidal temperature perturbation.
 
 
 %%%MOVE TO 3
@@ -151,22 +187,8 @@ The ACF should decay to zero as correlation time tends to infinity, however nois
 \subsection{Other}
 %---------------------------------------
 (3) Anharmonic lattice dynamics \citep{Tang2009}. %(BTE)CHERNATYNSKIY and PHILLPOT 2010?
-(4) Combined quasiharmonic lattice dynamics and molecular dynamics method [\citet{DeKoker2009}].
-
-%---------------------------------------
-\subsection{Finite-size effects}
-%---------------------------------------
-[[[Give its own section, or as subsection in each method?]]]\\
-Computational techniques are not limited by the reproduction of physical conditions like experiments, however they are affected by the size and shape of the simulation cell. The effects of the finite system size available for computation must be checked, as systems with too few atoms are sometimes unable to reproduce the behaviour of the bulk material. If the wavelength of a phonon is too long to fit into a cell, it is not able to transport heat like it should. In the case of the direct method, the length to cross sectional area (CSA) aspect ratio can also matter.
-
-Considering systems of varying size, length-dependent conductivities are obtained from the direct method and extrapolated to the bulk material (\citet{Schelling2002}). The validity of this extrapolation procedure have been called into question (e.g. \citet{Sellan2010}), when a linear trend cannot be fit through the length-dependent conductivities. We describe finite-size effects (FSE) which cause the conductivity result of a simulation to diverge from the value expected by a linear trend, and offer a comparison with results obtained from the Green-Kubo method. The two methods have previously been compared (e.g. \citet{Schelling2002} [[[REFERENCED EARLIER IN THIS PARAGRAPH, THIS OKAY?]]] ), and have been found to give results in good agreement.
-
-The finite-size effects (FSE) I describe are associated with phonon-phonon scattering, or the lack thereof, and boundary-scattering or truncation of phonon mean free path due to limited system sizes. These phenomena combine to misrepresent the phonon behaviour of the bulk material. 
-
-The FSE observed for a material change with thermal conductivity/phonon MFP, and thus are pressure, temperature, and composition sensitive. Higher conductivity(or is it MFP?) materials/conditions require larger systems to eliminate FSE (and vice versa) [[[BUT IS THIS TRUE?]]].
-
-
-
+\\
+(4) Combined quasiharmonic lattice dynamics and molecular dynamics method \citep{DeKoker2009}.
 
 
 

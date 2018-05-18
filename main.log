@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  17 MAY 2018 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  18 MAY 2018 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2253,81 +2253,86 @@ Overfull \hbox (10.73119pt too wide) in paragraph at lines 62--63
 Chapter 2.
 1: section
 [5]
-Overfull \hbox (8.55096pt too wide) in paragraph at lines 47--50
+Overfull \hbox (8.55096pt too wide) in paragraph at lines 49--52
 \T1/ppl/m/n/10.95 lated from an im-posed heat flux and cor-re-spond-ing tem-per
 -a-ture gra-di-ent via Fourier's
  []
 
-<Figures/cell_diagram.png, id=473, 1553.805pt x 1391.1975pt>
-File: Figures/cell_diagram.png Graphic file (type png)
-<use Figures/cell_diagram.png>
-Package pdftex.def Info: Figures/cell_diagram.png  used on input line 62. on in
-put line 62.
-Package pdftex.def Info: Requested size: 404.02908pt x 361.74527pt on input lin
-e 62.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/ss_direct_mod.png, id=475, 2156.5368pt x 1185.228pt>
-File: Figures/ss_direct_mod.png Graphic file (type png)
-<use Figures/ss_direct_mod.png>
-Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 68. on i
-nput line 68.
-Package pdftex.def Info: Requested size: 404.02908pt x 222.04884pt on input lin
-e 68.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6]
-<Figures/ideal_extrap.png, id=495, 945.5325pt x 403.5075pt>
-File: Figures/ideal_extrap.png Graphic file (type png)
-<use Figures/ideal_extrap.png>
-Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 87. on in
-put line 87.
-Package pdftex.def Info: Requested size: 404.02908pt x 172.4212pt on input line
- 87.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (0.15266pt too wide) in paragraph at lines 94--95
-\T1/ppl/m/n/10.95 phonon-phonon scat-ter-ing, from sparse phonon phase sam-plin
-g in cells where cross-
- []
-
-[7 <./Figures/cell_diagram.png>]
-Overfull \hbox (7.97014pt too wide) in paragraph at lines 98--99
-\T1/ppl/m/n/10.95 ever, where they might show over-es-ti-mated con-duc-tiv-i-ti
-es com-pared to the fit through
- []
-
-<Figures/gk_acf.png, id=508, 1220.30907pt x 514.17094pt>
-File: Figures/gk_acf.png Graphic file (type png)
-<use Figures/gk_acf.png>
-Package pdftex.def Info: Figures/gk_acf.png  used on input line 115. on input l
-ine 115.
-Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
-e 115.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8 <./Figures/ss_direct_mod.png>] [9 <./Figures/ideal_extrap.png> <./Figures/gk
-_acf.png>]
-<Figures/gk_int.png, id=527, 1237.62375pt x 533.74406pt>
-File: Figures/gk_int.png Graphic file (type png)
-<use Figures/gk_int.png>
-Package pdftex.def Info: Figures/gk_int.png  used on input line 137. on input l
-ine 137.
-Package pdftex.def Info: Requested size: 404.02908pt x 174.24661pt on input lin
-e 137.
-
-Overfull \hbox (12.0767pt too wide) in paragraph at lines 162--163
+Overfull \hbox (12.0767pt too wide) in paragraph at lines 59--60
 \T1/ppl/m/n/10.95 Green-Kubo method. The two meth-ods have pre-vi-ously been co
 m-pared (e.g. []Schelling,
  []
 
-[10 <./Figures/gk_int.png>]) [11]
+[6]
+<Figures/cell_diagram.png, id=509, 1553.805pt x 1391.1975pt>
+File: Figures/cell_diagram.png Graphic file (type png)
+<use Figures/cell_diagram.png>
+Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
+put line 82.
+Package pdftex.def Info: Requested size: 404.02908pt x 361.74527pt on input lin
+e 82.
+<Figures/ss_direct_mod.png, id=511, 2156.5368pt x 1185.228pt>
+File: Figures/ss_direct_mod.png Graphic file (type png)
+<use Figures/ss_direct_mod.png>
+Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
+nput line 88.
+Package pdftex.def Info: Requested size: 404.02908pt x 222.04884pt on input lin
+e 88.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./Figures/cell_diagram.png>]
+<Figures/ideal_extrap.png, id=522, 945.5325pt x 403.5075pt>
+File: Figures/ideal_extrap.png Graphic file (type png)
+<use Figures/ideal_extrap.png>
+Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
+nput line 113.
+Package pdftex.def Info: Requested size: 404.02908pt x 172.4212pt on input line
+ 113.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./Figures/ss_direct_mod.png>]
+Overfull \hbox (0.15266pt too wide) in paragraph at lines 124--125
+\T1/ppl/m/n/10.95 phonon-phonon scat-ter-ing, from sparse phonon phase sam-plin
+g in cells where cross-
+ []
+
+
+Overfull \hbox (7.97014pt too wide) in paragraph at lines 128--129
+\T1/ppl/m/n/10.95 ever, where they might show over-es-ti-mated con-duc-tiv-i-ti
+es com-pared to the fit through
+ []
+
+[9 <./Figures/ideal_extrap.png>]
+<Figures/gk_acf.png, id=543, 1220.30907pt x 514.17094pt>
+File: Figures/gk_acf.png Graphic file (type png)
+<use Figures/gk_acf.png>
+Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
+ine 151.
+Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
+e 151.
+<Figures/gk_int.png, id=546, 1237.62375pt x 533.74406pt>
+File: Figures/gk_int.png Graphic file (type png)
+<use Figures/gk_int.png>
+Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
+ine 173.
+Package pdftex.def Info: Requested size: 404.02908pt x 174.24661pt on input lin
+e 173.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./Figures/gk_acf.png>]
+Overfull \hbox (14.3329pt too wide) in paragraph at lines 189--192
+\T1/ppl/m/n/10.95 (4) Com-bined quasi-har-monic lat-tice dy-nam-ics and molec-u
+-lar dy-nam-ics method ([]Koker,
+ []
+
+) [11 <./Figures/gk_int.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex [12
@@ -2542,16 +2547,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B9886834BF0998D3D067EC532C83F713;8895.
+(rerunfilecheck)             Checksum: CE09D7498245E54D6163FE832C776595;9423.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34018 strings out of 492990
- 693933 string characters out of 6121926
- 936794 words of memory out of 5000000
- 37024 multiletter control sequences out of 15000+600000
+ 34026 strings out of 492990
+ 694029 string characters out of 6121926
+ 936795 words of memory out of 5000000
+ 37028 multiletter control sequences out of 15000+600000
  586171 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2572,10 +2577,10 @@ ts/type1/urw/palatino/uplb8a.pfb></apps/applications/texlive/2017/1/default/201
 17/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/applica
 tions/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on main.pdf (51 pages, 814403 bytes).
+Output written on main.pdf (51 pages, 814914 bytes).
 PDF statistics:
- 795 PDF objects out of 1000 (max. 8388607)
- 712 compressed objects within 8 object streams
- 159 named destinations out of 1000 (max. 500000)
- 426 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 816 PDF objects out of 1000 (max. 8388607)
+ 733 compressed objects within 8 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 458 words of extra memory for PDF output out of 10000 (max. 10000000)
 
