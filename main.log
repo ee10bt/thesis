@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  18 MAY 2018 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  2 JUL 2018 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2265,14 +2265,14 @@ m-pared (e.g. []Schelling,
  []
 
 [6]
-<Figures/cell_diagram.png, id=509, 1553.805pt x 1391.1975pt>
+<Figures/cell_diagram.png, id=519, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
 put line 82.
 Package pdftex.def Info: Requested size: 404.02908pt x 361.74527pt on input lin
 e 82.
-<Figures/ss_direct_mod.png, id=511, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=521, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
@@ -2284,7 +2284,7 @@ e 88.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./Figures/cell_diagram.png>]
-<Figures/ideal_extrap.png, id=522, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=532, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
@@ -2308,14 +2308,14 @@ es com-pared to the fit through
  []
 
 [9 <./Figures/ideal_extrap.png>]
-<Figures/gk_acf.png, id=543, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=553, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
 ine 151.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
 e 151.
-<Figures/gk_int.png, id=546, 1237.62375pt x 533.74406pt>
+<Figures/gk_int.png, id=556, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
@@ -2353,118 +2353,139 @@ Chapter 3.
 ]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Overfull \hbox (17.15155pt too wide) in paragraph at lines 12--13
+[]\T1/ppl/m/n/10.95 Impurities re-duce ther-mal con-duc-tiv-ity by pro-vid-ing 
+more op-por-tu-ni-ties for phonon
+ []
 
+
+LaTeX Warning: Citation 'Oganov2008' on page 15 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'Oganov2008' on page 15 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Oganov2008' on page 15 undefined on input line 24.
+
+
+Overfull \hbox (24.49164pt too wide) in paragraph at lines 28--29
+\T1/ppl/m/n/10.95 O. We fit to the elas-tic-ity re-sults of Parise (REF), an ex
+-per-i-men-tal study of (Mg$[]$,Fe$[]$)SiO$[]$
  []
 
 1: section
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 44--50
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 
-Overfull \hbox (19.42523pt too wide) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 74--80
+
+ []
+
+[16]
+Overfull \hbox (19.42523pt too wide) in paragraph at lines 81--82
 \OML/zplm/m/it/10.95 ![]\OT1/zplm/m/n/10.95 /\OML/zplm/m/it/10.95 ![]$\T1/ppl/m
 /n/10.95 , are both tem-per-a-ture and composition-dependent. $\OML/zplm/m/it/1
 0.95 ^^T[]$ \T1/ppl/m/n/10.95 gives the compositionally-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--65
+Underfull \hbox (badness 10000) in paragraph at lines 87--95
 
  []
 
 
-Overfull \hbox (0.15877pt too wide) in paragraph at lines 66--67
+Overfull \hbox (0.15877pt too wide) in paragraph at lines 96--97
 \T1/ppl/m/n/10.95 com-po-nents, where $\OML/zplm/m/it/10.95 ^^_$ \T1/ppl/m/n/10
 .95 is a temperature-dependent vari-able. $\OML/zplm/m/it/10.95 C []$ \T1/ppl/m
 /n/10.95 is largest when
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--78
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 102--108
 
  []
 
 
-Overfull \hbox (32.56096pt too wide) in paragraph at lines 85--90
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+[17]
+Overfull \hbox (32.56096pt too wide) in paragraph at lines 115--120
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity for Mg end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Overfull \hbox (23.15935pt too wide) in paragraph at lines 85--90
+Overfull \hbox (23.15935pt too wide) in paragraph at lines 115--120
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity for Fe end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--90
+Underfull \hbox (badness 10000) in paragraph at lines 115--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 
-Overfull \hbox (5.20894pt too wide) in paragraph at lines 103--112
+Overfull \hbox (5.20894pt too wide) in paragraph at lines 133--142
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity of an end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--112
+Underfull \hbox (badness 10000) in paragraph at lines 133--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 119--124
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
-) [18]
+[18]) [19]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex
-Chapter 5.
-)
-1: section
-[19
+ (./Chapters/Chapter5.tex [20
 
 
 
 ]
+Chapter 5.
+)
+1: section
+[21]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [20
+ (./Chapters/Chapter6.tex [22
 
 
 
@@ -2472,10 +2493,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[21]
+[23]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [22
+ (./Appendices/AppendixA.tex [24
 
 
 
@@ -2488,7 +2509,7 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[23] [24
+[25] [26
 
 
 ]
@@ -2511,7 +2532,7 @@ r-re-versible Pro-cesses. I.^^Q In: \T1/ppl/m/it/10.95 Journa;
  []
 
 1: section
-[25]
+[27]
 Overfull \hbox (29.89816pt too wide) in paragraph at lines 353--353
 \T1/ppl/m/n/10.95 tems^^Q. In: \T1/ppl/m/it/10.95 Molec-u-lar Physics \T1/ppl/m
 /n/10.95 101.14, pp. 2303^^U2307. \T1/ppl/m/sc/10.95 doi\T1/ppl/m/n/10.95 : [][
@@ -2525,7 +2546,7 @@ w . sciencedirect . com / science / article / pii / S0031920100001977$[][]\T1/p
 pl/m/n/10.95 . 
  []
 
-[26]
+[28]
 Overfull \hbox (4.39392pt too wide) in paragraph at lines 353--353
 \T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
@@ -2539,7 +2560,7 @@ pressure- and temperature-dependent
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
-[27]
+[29]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
@@ -2547,16 +2568,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CE09D7498245E54D6163FE832C776595;9423.
+(rerunfilecheck)             Checksum: B232753F3B61D1E323C99E09982E7C74;9967.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34026 strings out of 492990
- 694029 string characters out of 6121926
- 936795 words of memory out of 5000000
- 37028 multiletter control sequences out of 15000+600000
+ 34032 strings out of 492990
+ 694099 string characters out of 6121926
+ 936839 words of memory out of 5000000
+ 37030 multiletter control sequences out of 15000+600000
  586171 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2577,10 +2607,10 @@ ts/type1/urw/palatino/uplb8a.pfb></apps/applications/texlive/2017/1/default/201
 17/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/applica
 tions/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on main.pdf (51 pages, 814914 bytes).
+Output written on main.pdf (53 pages, 819255 bytes).
 PDF statistics:
- 816 PDF objects out of 1000 (max. 8388607)
- 733 compressed objects within 8 object streams
- 163 named destinations out of 1000 (max. 500000)
- 458 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 834 PDF objects out of 1000 (max. 8388607)
+ 749 compressed objects within 8 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 474 words of extra memory for PDF output out of 10000 (max. 10000000)
 
