@@ -15,17 +15,21 @@ Impurities reduce \tcs by providing more opportunities for phonon scattering eve
 \subsection{How does iron behave?} 
 %---------------------------------------
 
-I use two methods to add iron impurities to classical molecular dynamics simulations. The first approach is to simply create a magnesium atom with the mass of an iron atom, without changing any coefficients of the interatomic potentials from \citet{Oganov2008}. Despite being an obviously "quick and dirty" method, this is a reasonable first-order approximation(((PROVE IT!?))). As the variation in mass number from Mg to Fe is so drastic (24 to 56, a 133\% increase), it is likely to change the behaviour of the system more than a subtle change in the atomic interactions.
+I use two methods to add iron impurities to classical molecular dynamics simulations. The first approach is to simply create a magnesium atom with the mass of an iron atom, without changing any coefficients of the interatomic potentials from \citet{Oganov2000}. Despite being an obviously "quick and dirty" method, this is a reasonable first-order approximation(((PROVE IT!?))). As the variation in mass number from Mg to Fe is so drastic (24 to 56, a 133\% increase), it is likely to change the behaviour of the system more than a subtle change in the atomic interactions.
 
-The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. We adapt the \citet{Oganov2008} \mgsios Buckingham potential to include the Fe-O interation. We must determine two short-range potential parameters, $b$ and $\rho$, shown in the following equation found in Oganov,
+The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. We adapt the \citet{Oganov2000} \mgsios Buckingham interatomic potential ($U$) to include the Fe-O interation. We must determine two short-range potential parameters, $b$ and $\rho$, shown in Eq. 11 from \citet{Oganov2000},
 
-INSERT EQUATION HERE
+\begin{equation}
+U_{ij}\left ( R_{ij} \right ) = \frac{z_{i}z_{j}}{R_{ij}} + b_{ij}\ \textup{exp}\left ( - \frac{R_{ij}}{\rho_{ij}} \right ) - \frac{c_{ij}}{{R_{ij}}^{6}}, \label{og_buck}
+\end{equation}
 
-where $ij$ refers to an atom pair, $R$ is interatomic distance, $z$ is atomic charge, and $c$ relates to the Van der Waals force (zero for non O-O interactions). We determine $\rho$ in the same fashion as \citet{Oganov2008}, calculated from the atomic first ionisation potentials and formula from Urusov (REF),
+where $ij$ refers to an atom pair, $R$ is interatomic distance, $z$ is atomic charge, and $c$ relates to the Van der Waals force (zero for non O-O interactions). We determine $\rho$ in the same fashion as \citet{Oganov2000}, calculated from the atomic first ionisation potentials,
 
-INSERT EQUATION HERE
+\begin{equation}
+\rho_{ij} = \frac{1.85}{\sqrt{I_{i}}+\sqrt{I_{j}}}.  \label{urusov}
+\end{equation}
 
-$b$ is constrained using the GULP code (REF), using the calculated $\rho$ value for Fe-O. We fit to the elasticity results of Parise (REF), an experimental study of (Mg$_{0.9}$,Fe$_{0.1}$)SiO$_3$ bridgmanite up to 433~K. Despite potential fitting being an improvement on solely changing mass (((PROVE IT!?))), it is still not perfect as the charge of our fitted Fe is not varied from the original Mg.
+$b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\rho$ value for Fe-O. We fit to the elasticity results of \citet{Parise1990}, an experimental study of (Mg$_{0.9}$,Fe$_{0.1}$)SiO$_3$ bridgmanite up to 433~K. Despite potential fitting being an improvement on solely changing mass (((PROVE IT!?))), it is still not perfect as the charge of our fitted Fe is not varied from the original Mg.
 
 !!! Validate potentials
 
@@ -37,7 +41,9 @@ $b$ is constrained using the GULP code (REF), using the calculated $\rho$ value 
 \subsection{Where do the impurities go?} 
 %---------------------------------------
 
-MY MATLAB CODE, HOW IS FE ADDED ALONG LENGTH?
+Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple script (((INCLUDE IN APPENDIX, MENTION MATLAB?))) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
+
+Due to the microscopic nature of the system, we do not want all of the added iron to be clumped together, especially in a heat source/sink region (((ELABORATE?))). To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. After iron is added, the standard direct method or Green-Kubo workflow is followed.
 
 
 %-----------------------------------------------------------

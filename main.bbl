@@ -179,6 +179,35 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Gale1997}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GJD}{%
+         family={Gale},
+         familyi={G\bibinitperiod},
+         given={J.\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJD1}
+    \strng{fullhash}{GJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{pages}{629\bibrangedash 637}
+    \field{title}{{GULP: A computer program for the symmetry-adapted simulation
+  of solids}}
+    \field{volume}{93}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Gale - 1997 - G
+    \verb ULP A computer program for the symmetry-adapted simulation of solids.
+    \verb pdf:pdf
+    \endverb
+    \field{journaltitle}{J. Chem. Soc.}
+    \field{year}{1997}
+  \endentry
+
   \entry{Goncharov2009}{article}{}
     \name{author}{5}{}{%
       {{hash=GAF}{%
@@ -1089,6 +1118,42 @@
     \endverb
     \field{journaltitle}{Geophysical Research Letters}
     \field{year}{1991}
+  \endentry
+
+  \entry{Parise1990}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PJB}{%
+         family={Parise},
+         familyi={P\bibinitperiod},
+         given={J\bibnamedelima B},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Y},
+         giveni={Y},
+      }}%
+    }
+    \strng{namehash}{PJBWY1}
+    \strng{fullhash}{PJBWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{12}
+    \field{pages}{2089\bibrangedash 2092}
+    \field{title}{{of Mg substitutes for Si in the octahedral ( Bhsite , with a
+  x • Mg Fe + XB The use x • Fe x • Mg = This study ; The refined Mg / Fe
+  , For data}}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Parise, Wang -
+    \verb 1990 - of Mg substitutes for Si in the octahedral ( Bhsite , with a x
+    \verb  • Mg Fe XB The use x • Fe x • Mg = This stud.pdf:pdf
+    \endverb
+    \field{journaltitle}{October}
+    \field{year}{1990}
   \endentry
 
   \entry{Plimpton1995}{article}{}
