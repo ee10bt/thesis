@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  6 JUL 2018 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  19 JUL 2018 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2265,14 +2265,14 @@ m-pared (e.g. []Schelling,
  []
 
 [6]
-<Figures/cell_diagram.png, id=520, 1553.805pt x 1391.1975pt>
+<Figures/cell_diagram.png, id=555, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
 put line 82.
 Package pdftex.def Info: Requested size: 404.02908pt x 361.74527pt on input lin
 e 82.
-<Figures/ss_direct_mod.png, id=522, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=557, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
@@ -2284,7 +2284,7 @@ e 88.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./Figures/cell_diagram.png>]
-<Figures/ideal_extrap.png, id=533, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=568, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
@@ -2308,14 +2308,14 @@ es com-pared to the fit through
  []
 
 [9 <./Figures/ideal_extrap.png>]
-<Figures/gk_acf.png, id=554, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=590, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
 ine 151.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
 e 151.
-<Figures/gk_int.png, id=557, 1237.62375pt x 533.74406pt>
+<Figures/gk_int.png, id=593, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
@@ -2341,12 +2341,53 @@ Overfull \hbox (14.3329pt too wide) in paragraph at lines 189--192
 
 ]
 Chapter 3.
-)
 1: section
 [13]
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 27.2pt needed,
+(scrlayer-scrpage)                but only 18.85364pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting geometry's option
+(scrlayer-scrpage)                `head=27.2pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 5
+4.
+
+
+Overfull \vbox (8.34636pt too high) has occurred while \output is active []
+
+
+[14]
+
+LaTeX Warning: Reference `fig:acf_decay' on page 15 undefined on input line 66.
+
+
+[15]
+
+LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 16 undefined on
+ input line 86.
+
+
+LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 16 undefined on
+ input line 86.
+
+
+LaTeX Warning: Reference `fig:direct_length_graph' on page 16 undefined on inpu
+t line 88.
+
+
+LaTeX Warning: Reference `sec:theory.direct' on page 16 undefined on input line
+ 88.
+
+
+LaTeX Warning: Reference `fig:gk-direct' on page 16 undefined on input line 90.
+
+
+[16]) [17]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [14
+ (./Chapters/Chapter4.tex [18
 
 
 
@@ -2359,7 +2400,7 @@ more op-por-tu-ni-ties for phonon
  []
 
 1: section
-[15] [16]
+[19] [20]
 Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
@@ -2386,7 +2427,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--101
 
  []
 
-[17]
+[21]
 Overfull \hbox (0.15877pt too wide) in paragraph at lines 102--103
 \T1/ppl/m/n/10.95 com-po-nents, where $\OML/zplm/m/it/10.95 ^^_$ \T1/ppl/m/n/10
 .95 is a temperature-dependent vari-able. $\OML/zplm/m/it/10.95 C []$ \T1/ppl/m
@@ -2446,7 +2487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--148
 
  []
 
-[18]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
@@ -2456,10 +2497,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
-) [19]
+) [23]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [20
+ (./Chapters/Chapter5.tex [24
 
 
 
@@ -2467,10 +2508,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--160
 Chapter 5.
 )
 1: section
-[21]
+[25]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [22
+ (./Chapters/Chapter6.tex [26
 
 
 
@@ -2478,10 +2519,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[23]
+[27]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [24
+ (./Appendices/AppendixA.tex [28
 
 
 
@@ -2494,7 +2535,7 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[25] [26
+[29] [30
 
 
 ]
@@ -2517,7 +2558,7 @@ r-re-versible Pro-cesses. I.^^Q In: \T1/ppl/m/it/10.95 Journa;
  []
 
 1: section
-[27]
+[31]
 Overfull \hbox (29.89816pt too wide) in paragraph at lines 353--353
 \T1/ppl/m/n/10.95 tems^^Q. In: \T1/ppl/m/it/10.95 Molec-u-lar Physics \T1/ppl/m
 /n/10.95 101.14, pp. 2303^^U2307. \T1/ppl/m/sc/10.95 doi\T1/ppl/m/n/10.95 : [][
@@ -2531,7 +2572,7 @@ w . sciencedirect . com / science / article / pii / S0031920100001977$[][]\T1/p
 pl/m/n/10.95 . 
  []
 
-[28]
+[32]
 Overfull \hbox (4.39392pt too wide) in paragraph at lines 353--353
 \T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
@@ -2545,7 +2586,7 @@ pressure- and temperature-dependent
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
-[29]
+[33]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
@@ -2553,16 +2594,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C80491814237A22E5CB8CDB8C258143C;9967.
+(rerunfilecheck)             Checksum: 7065490879279B0D46C269C6FCE0DB82;10622.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34051 strings out of 492990
- 694409 string characters out of 6121926
- 938172 words of memory out of 5000000
- 37045 multiletter control sequences out of 15000+600000
+ 34084 strings out of 492990
+ 694878 string characters out of 6121926
+ 938463 words of memory out of 5000000
+ 37067 multiletter control sequences out of 15000+600000
  587102 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2570,23 +2615,24 @@ Here is how much of TeX's memory you used:
 -super/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-di
 st/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></apps/applications/texliv
-e/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></app
-s/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fon
-ts/type1/public/mathpazo/fplmr.pfb></apps/applications/texlive/2017/1/default/2
-017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></apps/applications/texli
-ve/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></ap
-ps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-su
-per/sftt1095.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fon
-ts/type1/urw/palatino/uplb8a.pfb></apps/applications/texlive/2017/1/default/201
-7/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/applications/texlive/20
-17/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/applica
-tions/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
-fb>
-Output written on main.pdf (53 pages, 822154 bytes).
+e/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></ap
+ps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></apps/applications/texlive/2017/1/defau
+lt/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></apps/applications/te
+xlive/2017/1/default/2017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></a
+pps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-s
+uper/sftt1000.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fo
+nts/type1/public/cm-super/sftt1095.pfb></apps/applications/texlive/2017/1/defau
+lt/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></apps/applications/texl
+ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
+pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
+r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
+urw/palatino/uplri8a.pfb>
+Output written on main.pdf (57 pages, 844244 bytes).
 PDF statistics:
- 846 PDF objects out of 1000 (max. 8388607)
- 761 compressed objects within 8 object streams
- 171 named destinations out of 1000 (max. 500000)
- 474 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 909 PDF objects out of 1000 (max. 8388607)
+ 818 compressed objects within 9 object streams
+ 182 named destinations out of 1000 (max. 500000)
+ 530 words of extra memory for PDF output out of 10000 (max. 10000000)
 
