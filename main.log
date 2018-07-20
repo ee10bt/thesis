@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  19 JUL 2018 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  20 JUL 2018 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2144,12 +2144,6 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 \openout6 = `main.toc'.
 
  [12] (./main.lof
-Overfull \hbox (12.71277pt too wide) in paragraph at lines 7--7
- \T1/ppl/m/n/10.95 white scale rep-re-sents tem-per-a-ture (mod-i-fied from Sta
-ck-house, Stixrude, 
- []
-
-
 Overfull \hbox (1.22649pt too wide) in paragraph at lines 9--9
  [][] [][][]\T1/ppl/m/n/10.95 Normalised ACF. Cor-re-la-tion is taken over a lo
 nger length than shown 
@@ -2251,28 +2245,22 @@ Overfull \hbox (10.73119pt too wide) in paragraph at lines 62--63
 
 ]
 Chapter 2.
+
+Overfull \hbox (13.89531pt too wide) in paragraph at lines 28--29
+\T1/ppl/m/n/10.95 With the in-ter-atomic po-ten-tial of []Oganov et al. ([][]20
+00[][]) we sim-u-late bridg-man-ite (MgSiO$[]$
+ []
+
 1: section
-[5]
-Overfull \hbox (8.55096pt too wide) in paragraph at lines 49--52
-\T1/ppl/m/n/10.95 lated from an im-posed heat flux and cor-re-spond-ing tem-per
--a-ture gra-di-ent via Fourier's
- []
-
-
-Overfull \hbox (12.0767pt too wide) in paragraph at lines 59--60
-\T1/ppl/m/n/10.95 Green-Kubo method. The two meth-ods have pre-vi-ously been co
-m-pared (e.g. []Schelling,
- []
-
-[6]
-<Figures/cell_diagram.png, id=555, 1553.805pt x 1391.1975pt>
+[5] [6]
+<Figures/cell_diagram.png, id=566, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
 put line 82.
 Package pdftex.def Info: Requested size: 404.02908pt x 361.74527pt on input lin
 e 82.
-<Figures/ss_direct_mod.png, id=557, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=568, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
@@ -2284,7 +2272,7 @@ e 88.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./Figures/cell_diagram.png>]
-<Figures/ideal_extrap.png, id=568, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=579, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
@@ -2308,14 +2296,14 @@ es com-pared to the fit through
  []
 
 [9 <./Figures/ideal_extrap.png>]
-<Figures/gk_acf.png, id=590, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=601, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
 ine 151.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
 e 151.
-<Figures/gk_int.png, id=593, 1237.62375pt x 533.74406pt>
+<Figures/gk_int.png, id=604, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
@@ -2497,10 +2485,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
-) [23]
+<Figures/k-t_all_01.png, id=717, 673.01437pt x 411.03563pt>
+File: Figures/k-t_all_01.png Graphic file (type png)
+<use Figures/k-t_all_01.png>
+Package pdftex.def Info: Figures/k-t_all_01.png  used on input line 173. on inp
+ut line 173.
+Package pdftex.def Info: Requested size: 404.02908pt x 246.75499pt on input lin
+e 173.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/k-c_all_01.png, id=719, 695.59875pt x 411.03563pt>
+File: Figures/k-c_all_01.png Graphic file (type png)
+<use Figures/k-c_all_01.png>
+Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 181. on inp
+ut line 181.
+Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
+ 181.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/K_over_T_over_X.png, id=721, 702.86118pt x 502.34735pt>
+File: Figures/K_over_T_over_X.png Graphic file (type png)
+<use Figures/K_over_T_over_X.png>
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 189. o
+n input line 189.
+Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
+e 189.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [23] [24 <./Figures/k-t_all_01.png> <./Figures/k-c_all_01.png>] [25 <./Figure
+s/K_over_T_over_X.png>]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [24
+ (./Chapters/Chapter5.tex [26
 
 
 
@@ -2508,10 +2527,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--160
 Chapter 5.
 )
 1: section
-[25]
+[27]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [26
+ (./Chapters/Chapter6.tex [28
 
 
 
@@ -2519,10 +2538,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[27]
+[29]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [28
+ (./Appendices/AppendixA.tex [30
 
 
 
@@ -2535,7 +2554,7 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[29] [30
+[31] [32
 
 
 ]
@@ -2558,7 +2577,7 @@ r-re-versible Pro-cesses. I.^^Q In: \T1/ppl/m/it/10.95 Journa;
  []
 
 1: section
-[31]
+[33]
 Overfull \hbox (29.89816pt too wide) in paragraph at lines 353--353
 \T1/ppl/m/n/10.95 tems^^Q. In: \T1/ppl/m/it/10.95 Molec-u-lar Physics \T1/ppl/m
 /n/10.95 101.14, pp. 2303^^U2307. \T1/ppl/m/sc/10.95 doi\T1/ppl/m/n/10.95 : [][
@@ -2572,7 +2591,7 @@ w . sciencedirect . com / science / article / pii / S0031920100001977$[][]\T1/p
 pl/m/n/10.95 . 
  []
 
-[32]
+[34]
 Overfull \hbox (4.39392pt too wide) in paragraph at lines 353--353
 \T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
@@ -2586,7 +2605,7 @@ pressure- and temperature-dependent
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
-[33]
+[35]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
@@ -2594,7 +2613,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7065490879279B0D46C269C6FCE0DB82;10622.
+(rerunfilecheck)             Checksum: 2E1D7EA59D1C952FB2CA14304BDFDED6;10712.
 
 
 LaTeX Warning: There were undefined references.
@@ -2604,10 +2623,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34084 strings out of 492990
- 694878 string characters out of 6121926
- 938463 words of memory out of 5000000
- 37067 multiletter control sequences out of 15000+600000
+ 34111 strings out of 492990
+ 695460 string characters out of 6121926
+ 938624 words of memory out of 5000000
+ 37085 multiletter control sequences out of 15000+600000
  587102 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2629,10 +2648,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (57 pages, 844244 bytes).
+Output written on main.pdf (59 pages, 1050785 bytes).
 PDF statistics:
- 909 PDF objects out of 1000 (max. 8388607)
- 818 compressed objects within 9 object streams
- 182 named destinations out of 1000 (max. 500000)
- 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 839 compressed objects within 9 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 553 words of extra memory for PDF output out of 10000 (max. 10000000)
 
