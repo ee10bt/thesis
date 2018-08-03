@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  20 JUL 2018 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  31 JUL 2018 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2253,14 +2253,14 @@ Overfull \hbox (13.89531pt too wide) in paragraph at lines 28--29
 
 1: section
 [5] [6]
-<Figures/cell_diagram.png, id=566, 1553.805pt x 1391.1975pt>
+<Figures/cell_diagram.png, id=569, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
 put line 82.
 Package pdftex.def Info: Requested size: 404.02908pt x 361.74527pt on input lin
 e 82.
-<Figures/ss_direct_mod.png, id=568, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=571, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
@@ -2272,7 +2272,7 @@ e 88.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./Figures/cell_diagram.png>]
-<Figures/ideal_extrap.png, id=579, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=582, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
@@ -2296,14 +2296,14 @@ es com-pared to the fit through
  []
 
 [9 <./Figures/ideal_extrap.png>]
-<Figures/gk_acf.png, id=601, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=604, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
 ine 151.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
 e 151.
-<Figures/gk_int.png, id=604, 1237.62375pt x 533.74406pt>
+<Figures/gk_int.png, id=607, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
@@ -2485,35 +2485,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
-<Figures/k-t_all_01.png, id=717, 673.01437pt x 411.03563pt>
+<Figures/k-t_all_01.png, id=720, 673.01437pt x 411.03563pt>
 File: Figures/k-t_all_01.png Graphic file (type png)
 <use Figures/k-t_all_01.png>
-Package pdftex.def Info: Figures/k-t_all_01.png  used on input line 173. on inp
-ut line 173.
+Package pdftex.def Info: Figures/k-t_all_01.png  used on input line 170. on inp
+ut line 170.
 Package pdftex.def Info: Requested size: 404.02908pt x 246.75499pt on input lin
-e 173.
+e 170.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-c_all_01.png, id=719, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=724, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
-Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 181. on inp
-ut line 181.
+Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 178. on inp
+ut line 178.
 Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
- 181.
+ 178.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=721, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=726, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
-Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 189. o
-n input line 189.
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 186. o
+n input line 186.
 Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
-e 189.
+e 186.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [23] [24 <./Figures/k-t_all_01.png> <./Figures/k-c_all_01.png>] [25 <./Figure
 s/K_over_T_over_X.png>]
@@ -2625,7 +2625,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  34111 strings out of 492990
  695460 string characters out of 6121926
- 938624 words of memory out of 5000000
+ 938708 words of memory out of 5000000
  37085 multiletter control sequences out of 15000+600000
  587102 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2648,10 +2648,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (59 pages, 1050785 bytes).
+Output written on main.pdf (59 pages, 1050923 bytes).
 PDF statistics:
- 938 PDF objects out of 1000 (max. 8388607)
- 839 compressed objects within 9 object streams
+ 943 PDF objects out of 1000 (max. 8388607)
+ 843 compressed objects within 9 object streams
  188 named destinations out of 1000 (max. 500000)
  553 words of extra memory for PDF output out of 10000 (max. 10000000)
 
