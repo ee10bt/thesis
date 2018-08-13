@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  31 JUL 2018 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  13 AUG 2018 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2465,58 +2465,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
  []
 
 
-Overfull \hbox (5.20894pt too wide) in paragraph at lines 139--148
-\OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
-dent con-duc-tiv-ity of an end-mem-ber (Wm$[]$K$[]$) 
+Overfull \hbox (4.13586pt too wide) in paragraph at lines 140--147
+\OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and density-depe
+ndent con-duc-tiv-ity of an end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--148
+Underfull \hbox (badness 10000) in paragraph at lines 140--147
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
+Underfull \hbox (badness 10000) in paragraph at lines 157--163
 
  []
 
-<Figures/k-t_all_01.png, id=720, 673.01437pt x 411.03563pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--184
+
+ []
+
+<Figures/k-t_all_01.png, id=721, 673.01437pt x 411.03563pt>
 File: Figures/k-t_all_01.png Graphic file (type png)
 <use Figures/k-t_all_01.png>
-Package pdftex.def Info: Figures/k-t_all_01.png  used on input line 170. on inp
-ut line 170.
+Package pdftex.def Info: Figures/k-t_all_01.png  used on input line 193. on inp
+ut line 193.
 Package pdftex.def Info: Requested size: 404.02908pt x 246.75499pt on input lin
-e 170.
+e 193.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-c_all_01.png, id=724, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=725, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
-Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 178. on inp
-ut line 178.
+Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 201. on inp
+ut line 201.
 Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
- 178.
+ 201.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=726, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=727, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
-Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 186. o
-n input line 186.
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 209. o
+n input line 209.
 Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
-e 186.
+e 209.
+[23]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [23] [24 <./Figures/k-t_all_01.png> <./Figures/k-c_all_01.png>] [25 <./Figure
-s/K_over_T_over_X.png>]
+) [24 <./Figures/k-t_all_01.png> <./Figures/k-c_all_01.png>] [25 <./Figures/K_o
+ver_T_over_X.png>]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex [26
@@ -2613,7 +2619,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2E1D7EA59D1C952FB2CA14304BDFDED6;10712.
+(rerunfilecheck)             Checksum: B8C1F61ED386E388AF14549E88ABC64A;10712.
 
 
 LaTeX Warning: There were undefined references.
@@ -2623,10 +2629,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34111 strings out of 492990
- 695460 string characters out of 6121926
- 938708 words of memory out of 5000000
- 37085 multiletter control sequences out of 15000+600000
+ 34113 strings out of 492990
+ 695485 string characters out of 6121926
+ 938758 words of memory out of 5000000
+ 37086 multiletter control sequences out of 15000+600000
  587102 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2648,10 +2654,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (59 pages, 1050923 bytes).
+Output written on main.pdf (59 pages, 1051307 bytes).
 PDF statistics:
- 943 PDF objects out of 1000 (max. 8388607)
- 843 compressed objects within 9 object streams
- 188 named destinations out of 1000 (max. 500000)
+ 945 PDF objects out of 1000 (max. 8388607)
+ 845 compressed objects within 9 object streams
+ 189 named destinations out of 1000 (max. 500000)
  553 words of extra memory for PDF output out of 10000 (max. 10000000)
 

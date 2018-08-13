@@ -103,7 +103,7 @@ The equation that splits $\omega_{0}/\omega_{M}$ into its temperature and compos
 
 $\chi^{T}$ scaling 
 \begin{equation}%-----
-\chi^{T}=A\ e^{BT}
+\chi^{T}=A T^{B}
 \label{eq.chi_scale}
 \end{equation}%-------
 \\ *$\chi^{T}$ -temperature-dependent parameter to \dots ??? \\
@@ -112,7 +112,7 @@ $\chi^{T}$ scaling
 $A$ - coefficient in $\chi^{T}$ variation with temperature\\
 $B$ - exponent in $\chi^{T}$ variation with temperature\\
 
-$\chi$ is a temperature-dependent variable, but a plot of $\chi$ against $T$ has no obvious trend. A simple exponential can be fit to $\chi^{T}$ against $T$ however, with a coefficient $A$ and exponent $B$.\\
+$\chi$ is a temperature-dependent variable, but a plot of $\chi$ against $T$ has no obvious trend. A simple power law can be fit to $\chi^{T}$ against $T$ however, with a coefficient $A$ and exponent $B$.\\
 
 Ohta eq. 9 
 \begin{equation}%-----
@@ -133,20 +133,44 @@ An equation that describes the conductivity of an endmember mix, assuming the re
 \cite{Okuda2017}\\
 
 Okuda eq. 5 
+
 \begin{equation}%-----
-\kappa_{adj}=\kappa_{ref}\left ( \frac{T_{ref}}{T} \right )^{a}\left ( \frac{V_{ref}}{V} \right )^{g}
+\kappa_{adj}=\kappa_{ref}\left ( \frac{\rho}{\rho_{ref}} \right )^{g}\left ( \frac{T_{ref}}{T} \right )^{a}
 \label{eq.okuda5}
 \end{equation}%-------
-\\ $\kappa_{adj}$ - temperature and volume-dependent conductivity of an endmember (\wmk)\\
-$\kappa_{ref}$ - reference conducitivty of an endmember (\wmk)\\
-$T_{ref}$ - reference temperature at which above conductivities are calculated (K)\\
-*$T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\   
+\\ $\kappa_{adj}$ - temperature and density-dependent conductivity of an endmember (\wmk)\\
+$\kappa_{ref}$ - reference conducitivty\\
+$T_{ref}$ - reference temperature\\
 $a$ - exponent controlling temperature-dependent conducitvity of an endmember\\
-$V_{ref}$ - reference volume of an endmember (E-30 m$^3$)\\
-$V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\
-$g$ - exponent controlling volume|density-dependent conducitvity of an endmember\\
+$\rho_{ref}$ - reference density\\
+$g$ - exponent controlling density-dependent conducitvity of an endmember\\
 
 \citet{Okuda2017} present a model for density and temperature-dependent conductivity (actually from Manthilake 2011, REF???), which utilises exponents obtained from fitted data. A reference value is scaled to infer conductivity at the conditions of interest.\\
+
+
+
+Okuda eq. 5 modified
+
+\begin{equation}%-----
+\kappa_{adj}=\kappa_{ref}\left ( \frac{T_{ref}}{T} \right )^{a}\left ( \frac{V_{ref}}{V} \right )^{h}
+\label{eq.okuda_mod}
+\end{equation}%-------
+\\ $T_{ref}$ - temperature at which reference conductivity is calculated (K)\\
+$T$ - temperature of interest to interpolate (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\   
+$V_{ref}$ - reference volume of an endmember (E-30 m$^3$)\\
+$V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\
+$h$ - exponent controlling volume-dependent conducitvity of an endmember\\
+
+I adjust Eq.\ref{eq.okuda5} to consider volume instead of density, where density and volume are inversely proportional.
+
+
+
+
+
+
+
+
+
 
 Volume scaling ($y=mx+c$)  
 \begin{equation}%-----
@@ -164,7 +188,6 @@ I take Eq.~\ref{eq.okuda5} \citep[][Eq. 5]{Okuda2017} a step further, by obtaini
 %-----------------------------------------------------------
 \section{Results}
 %-----------------------------------------------------------
-
 Taking Green-Kubo results at the full range of lower mantle temperatures (1000-5000~K) and CMB pressure (136~GPa), I fit Equation \ref{eq.okuda5} to obtain conductivity as a function of temperature for Mg and Fe silicate perovskite endmembers (Figure \ref{fig:kappa-temp_01}).
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/k-t_all_01.png}
