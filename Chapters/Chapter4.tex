@@ -47,7 +47,7 @@ Due to the microscopic nature of the system, we do not want all of the added iro
 
 
 %-----------------------------------------------------------
-\section{Making the model}
+\section{Making the mantle model}
 %-----------------------------------------------------------
 
 Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the relative abundance of each mineral component. There are also endmember relations to consider within each mineral, the concentration of impurities, and mineral phase transitions.  
@@ -85,6 +85,22 @@ $\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean fr
 $\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}\\
 
 Ultimately this is the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.\\
+
+By combining models for the temperate-dependence of \mgsios and \fesio-endmember conductivities, and the $\chi^{T}$ parameter, I obtain a function for conductivity of the lower mantle (136~GPa) as a function of just temperature and composition (as illustrated in Figure. \ref{fig:draft_kc} and ).
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/draft_kC.png}
+  \caption{Each coloured dot series relates to a given temperature, the dotted fit lines are the model output.}
+  \label{fig:draft_kc}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/K_over_T_over_X.png}
+  \caption{Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8\wmk.}
+  \label{fig:draft_ktc}
+\end{figure}
+
+
 
 Ohta eq. 8 
 \begin{equation}%-----
