@@ -86,7 +86,7 @@ $\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximu
 
 Ultimately this is the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.\\
 
-By combining models for the temperate-dependence of \mgsios and \fesio-endmember conductivities, and the $\chi^{T}$ parameter, I obtain a function for conductivity of the lower mantle (136~GPa) as a function of just temperature and composition (as illustrated in Figure. \ref{fig:draft_kc} and ).
+By combining models for the temperate-dependence of \mgsios and \fesio-endmember conductivities, and the fit $\chi^{T}$ parameter, I obtain a function for conductivity of the lower mantle (136~GPa) as a function of just temperature and composition (as illustrated in Figure. \ref{fig:draft_kc} and ).
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/draft_kC.png}
@@ -115,7 +115,7 @@ $\chi$ - \enquote{\textit{a constant}}\dots\\
 $T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\                    
 $C$ - composition mix of interest (dimensionless, values between 0 and 1)\\
 
-The equation that splits $\omega_{0}/\omega_{M}$ into its temperature and composition-dependent components, where $\chi$ is a temperature-dependent variable. $C\left ( 1-C \right )$ is largest when $C=0.5\ or\ 50\%$, relating to the shape of the trough formed by this fit.\\
+The equation that splits $\omega_{0}/\omega_{M}$ into its temperature and composition-dependent components, where $\chi$ is a temperature-dependent variable. A value for $\chi$ is fit for all compositions at each temperature. $C\left ( 1-C \right )$ is largest when $C=0.5\ or\ 50\%$, relating to the shape of the trough formed by this fit.\\
 
 $\chi^{T}$ scaling 
 \begin{equation}%-----
@@ -128,7 +128,23 @@ $\chi^{T}$ scaling
 $A$ - coefficient in $\chi^{T}$ variation with temperature\\
 $B$ - exponent in $\chi^{T}$ variation with temperature\\
 
-$\chi$ is a temperature-dependent variable, but a plot of $\chi$ against $T$ has no obvious trend. A simple power law can be fit to $\chi^{T}$ against $T$ however, with a coefficient $A$ and exponent $B$.\\
+In order to obtain an equation for conductivity at any mantle temperature, it is required that $\chi$ can be expressed as function of temperature. Figure \ref{fig:draft_xt} shows $\chi$ over $T$ fit with a power law and 4th order polynomial, the former of which is a poor fit and the latter an egregious overfitting. 
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/draft_XT.png}
+  \caption{The fit $\chi$ values plotted against $T$, with power law (left) and 4th order polynomial (right) trendlines. Blue and orange series are the exponential and power law fits obtained from plotting $\chi^T/T$ (see Figure \ref{fig:draft_xtt}).}
+  \label{fig:draft_xt}
+\end{figure}
+
+The lack of an obvious trend in $\chi$ against $T$ can be countered by plotting $\chi^T$ over $T$, and fitting either a expontial or power law relationship (Figure \ref{fig:draft_xtt}). I will be using the power law-relationship as it represents the temperature-dependence better, both statistically and sensitivity-wise. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. Referring back to Figure \ref{fig:draft_xt}, we can see that either of the power law or exponential $\chi^T/T$ fits represent the data better than the $\chi/T$ relations.\\ 
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/draft_XTT.png}
+  \caption{Exponential fit in blue (more curved), power law in orange (flatter)}
+  \label{fig:draft_xtt}
+\end{figure}
+
+
 
 Ohta eq. 9 
 \begin{equation}%-----
@@ -140,7 +156,7 @@ Ohta eq. 9
 $\kappa_{MgSiO_{3}}$ - temperature and volume-dependent conductivity for Mg endmember (\wmk)\\
 $\kappa_{FeSiO_{3}}$ - temperature and volume-dependent conductivity for Fe endmember (\wmk)\\
 
-An equation that describes the conductivity of an endmember mix, assuming the relation is a simple weighted mean. $C$, in this case specifically, is the proportion of Fe atoms swapped into the system for Mg. The actually dependence of conductivity with composition is more complicated on the atomic scale, this intermediate average value adjusted in Eq.~\ref{eq.ohta7} \citep[][Eq. 7]{Ohta2017}. \\
+An equation that describes the conductivity of an endmember mix, assuming the relation is a simple weighted mean. $C$, in this case specifically, is the proportion of Fe atoms swapped into the system for Mg. The actual dependence of conductivity with composition is more complicated, this intermediate average value is adjusted for atomic-scale effects in Equation.~\ref{eq.ohta7} \citep[][Eq. 7]{Ohta2017}. \\
 
 %-------------------
 \subsubsection{Temperature dependence}
@@ -161,7 +177,7 @@ $a$ - exponent controlling temperature-dependent conducitvity of an endmember\\
 $\rho_{ref}$ - reference density\\
 $g$ - exponent controlling density-dependent conducitvity of an endmember\\
 
-\citet{Okuda2017} present a model for density and temperature-dependent conductivity (actually from Manthilake 2011, REF???), which utilises exponents obtained from fitted data. A reference value is scaled to infer conductivity at the conditions of interest.\\
+\citet{Okuda2017} present a model for density and temperature-dependent conductivity (actually from Manthilake 2011, REF???), which utilises exponents obtained from REAL data / is calculated? (actually real numbers, only mine are fitted?). A reference value is scaled to infer conductivity at the conditions of interest, which in this case is temperature and pressure (via proxy using simulation cell volume/density).\\
 
 
 
@@ -177,9 +193,13 @@ $V_{ref}$ - reference volume of an endmember (E-30 m$^3$)\\
 $V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\
 $h$ - exponent controlling volume-dependent conducitvity of an endmember\\
 
-I adjust Eq.\ref{eq.okuda5} to consider volume instead of density, where density and volume are inversely proportional.
+I adjust Eq. \ref{eq.okuda5} to consider volume instead of density, where density and volume are inversely proportional. Varying $a$ and $h$ I fit this equation for both Mg and Fe endmembers, using reference values from 1000~K (see Figure \ref{fig:draft_kt}). The purpose of this is to scale the conductivities needed for Eq. \ref{eq.ohta9} to any temperature of interest.
 
-
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/draft_kT.png}
+  \caption{}
+  \label{fig:draft_kt}
+\end{figure}
 
 
 
@@ -198,7 +218,13 @@ ${\partial V}/{\partial T}$ - fit gradient, change of volume with temperature (E
 *$T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\
 $V_{T_{0}}$ - intercept volume for T=0~K (E-30 m$^3$)\\
 
-I take Eq.~\ref{eq.okuda5} \citep[][Eq. 5]{Okuda2017} a step further, by obtaining $V$ in terms of $T$. This dependence is effectively linear over the temperatures considered, meaning Eq.~\ref{eq.ohta7} \citep[][Eq. 7]{Ohta2017} is dependent solely on temperature, composition, and fit or calculated constants.
+I take Eq.~\ref{eq.okuda5} \citep[][Eq. 5]{Okuda2017} a step further, by obtaining $V$ in terms of $T$. This dependence is effectively linear over the temperatures considered (see Figure \ref{fig:draft_vt}). With this, Eq. \ref{eq.okuda_mod} can be made into a function of just temperature, meaning Eq.~\ref{eq.ohta7} \citep[][Eq. 7]{Ohta2017} is dependent solely on temperature, composition, and fit or calculated constants.
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/draft_VT.png}
+  \caption{Number of atoms is kept constant for all volumes, data is obtained from GK calculations of a 4x4x3 simulation cell. Magnitude of volume isn't of interest, just the relative difference to the reference volume.}
+  \label{fig:draft_vt}
+\end{figure}
 
 
 %-----------------------------------------------------------

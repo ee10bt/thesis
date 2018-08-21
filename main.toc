@@ -54,14 +54,14 @@
 \contentsline {section}{\numberline {4.2}Making the mantle model}{20}{section.73}
 \contentsline {subsection}{\numberline {4.2.1}Fitting the data}{20}{subsection.74}
 \contentsline {subsubsection}{Compositional dependence}{21}{section*.75}
-\contentsline {subsubsection}{Temperature dependence}{23}{section*.82}
-\contentsline {section}{\numberline {4.3}Results}{24}{section.86}
-\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{27}{chapter.90}
-\contentsline {section}{\numberline {5.1}Main Section 1}{27}{section.91}
-\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{27}{subsection.92}
-\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{29}{chapter.93}
-\contentsline {section}{\numberline {6.1}Main Section 1}{29}{section.94}
-\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{29}{subsection.95}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{31}{appendix.96}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{31}{section.97}
-\contentsline {chapter}{Bibliography}{33}{appendix*.98}
+\contentsline {subsubsection}{Temperature dependence}{24}{section*.84}
+\contentsline {section}{\numberline {4.3}Results}{26}{section.90}
+\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{29}{chapter.94}
+\contentsline {section}{\numberline {5.1}Main Section 1}{29}{section.95}
+\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{29}{subsection.96}
+\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{31}{chapter.97}
+\contentsline {section}{\numberline {6.1}Main Section 1}{31}{section.98}
+\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{31}{subsection.99}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{33}{appendix.100}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{33}{section.101}
+\contentsline {chapter}{Bibliography}{35}{appendix*.102}
