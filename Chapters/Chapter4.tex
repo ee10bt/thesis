@@ -1,6 +1,10 @@
-\chapter{Modelling the thermal conductivity of lower mantle minerals} % Main chapter title
+\chapter{Modelling the thermal conductivity of (Mg,Fe)SiO$_3$ at the CMB} % Main chapter title
 
 \label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+As stated earlier (REF), there are no are experiments that can reach the high pressures and temperatures necessary to represent the bottom of the lower mantle. The addition of impurities into minerals further complicates the matter, as pressure, temperature, and composition must be considered for proper evaluation.
+
+DISCUSS/RE-ITERATE EARLIER-DISCUSSED SEMI-RELEVANT EXPERIMENTS HERE, MANTHILAKE
 
 %-----------------------------------------------------------
 \section{Simulating the effect of atomic impurities}
@@ -16,6 +20,8 @@ Impurities reduce \tcs by providing more opportunities for phonon scattering eve
 %---------------------------------------
 
 I use two methods to add iron impurities to classical molecular dynamics simulations. The first approach is to simply create a magnesium atom with the mass of an iron atom, without changing any coefficients of the interatomic potentials from \citet{Oganov2000}. Despite being an obviously "quick and dirty" method, this is a reasonable first-order approximation(((PROVE IT!?))). As the variation in mass number from Mg to Fe is so drastic (24 to 56, a 133\% increase), it is likely to change the behaviour of the system more than a subtle change in the atomic interactions.
+
+MENTION AMMANN IRON STUFF HERE
 
 The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. We adapt the \citet{Oganov2000} \mgsios Buckingham interatomic potential ($U$) to include the Fe-O interation. We must determine two short-range potential parameters, $b$ and $\rho$, shown in Eq. 11 from \citet{Oganov2000},
 
@@ -33,7 +39,7 @@ $b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\
 
 !!! Validate potentials
 
-!!! Difference in results between Fe-approaches?
+!!! Difference in results between Fe-approaches? AMMANN
 
 
 
@@ -56,14 +62,16 @@ A simple weighted average can be taken to combine the contributions of individua
 
 \citet{Okuda2017} present a temperature scaling relation for bridgmanite, which I additionally apply to the Fe-endmember. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
 
+The aforementioned equation from \citet{Okuda2017} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion SCIENCE HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %---------------------------------------
 \subsection{Fitting the data} 
 %---------------------------------------
 
 [Equations from \cite{Ohta2017} (eq. 7,8,9), and \cite{Okuda2017} (eq. 5)]
 
-I want to determine lattice thermal conductivity as a function of temperature and composition, 
-using calculated and fit constants. For the method I will use I need to know how the conductivity of endmember minerals changes with physical conditions. In order to keep temperature the only dependent variable, I will scale volume linerarly with temperature [FIGURE]. At this point I can scale the conductivity of an endmember with temperature within the fitted range \citep{Okuda2017}.
+I want to determine lattice thermal conductivity as a function of temperature and composition, using calculated and fit constants. For the method I will use I need to know how the conductivity of endmember minerals changes with physical conditions. In order to keep temperature the only dependent variable, I will scale volume linerarly with temperature [FIGURE]. At this point I can scale the conductivity of an endmember with temperature within the fitted range \citep{Okuda2017}.
 
 Considering \citet{Ohta2017} the linear interpolation between the conductivities two endmembers can be perturbed, forming the trough characteristic of varying composition. While \fesios generally has a lower \tcs than \mgsio, the minimum is located at an intermediate composition. The effect of impurity scattering is larger than inherent changes due to chemistry.
     
@@ -84,9 +92,9 @@ $\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}
 $\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms}}\\
 $\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}\\
 
-Ultimately this is the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.\\
+Ultimately this is the equation we are trying to solve. The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.
 
-By combining models for the temperate-dependence of \mgsios and \fesio-endmember conductivities, and the fit $\chi^{T}$ parameter, I obtain a function for conductivity of the lower mantle (136~GPa) as a function of just temperature and composition (as illustrated in Figure. \ref{fig:draft_kc} and ).
+By combining models for the temperate-dependence of \mgsios and \fesio-endmember conductivities, and the fit $\chi^{T}$ parameter, I obtain a function for conductivity of the lower mantle (136~GPa) as a function of just temperature and composition (as illustrated in Figure. \ref{fig:draft_kc}).\\
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/draft_kC.png}
@@ -185,7 +193,7 @@ Okuda eq. 5 modified
 
 \begin{equation}%-----
 \kappa_{adj}=\kappa_{ref}\left ( \frac{T_{ref}}{T} \right )^{a}\left ( \frac{V_{ref}}{V} \right )^{h}
-\label{eq.okuda_mod}
+\label{eq.okuda5_mod}
 \end{equation}%-------
 \\ $T_{ref}$ - temperature at which reference conductivity is calculated (K)\\
 $T$ - temperature of interest to interpolate (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\   
@@ -193,7 +201,7 @@ $V_{ref}$ - reference volume of an endmember (E-30 m$^3$)\\
 $V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\
 $h$ - exponent controlling volume-dependent conducitvity of an endmember\\
 
-I adjust Eq. \ref{eq.okuda5} to consider volume instead of density, where density and volume are inversely proportional. Varying $a$ and $h$ I fit this equation for both Mg and Fe endmembers, using reference values from 1000~K (see Figure \ref{fig:draft_kt}). The purpose of this is to scale the conductivities needed for Eq. \ref{eq.ohta9} to any temperature of interest.
+I adjust Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.okuda5_mod}), where density and volume are inversely proportional. Varying $a$ and $h$ I fit this equation for both Mg and Fe endmembers, using reference values from 1000~K (see Figure \ref{fig:draft_kt}). The purpose of this is to scale the conductivities needed for Eq. \ref{eq.ohta9} to any temperature of interest.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/draft_kT.png}
@@ -233,7 +241,7 @@ I take Eq.~\ref{eq.okuda5} \citep[][Eq. 5]{Okuda2017} a step further, by obtaini
 Taking Green-Kubo results at the full range of lower mantle temperatures (1000-5000~K) and CMB pressure (136~GPa), I fit Equation \ref{eq.okuda5} to obtain conductivity as a function of temperature for Mg and Fe silicate perovskite endmembers (Figure \ref{fig:kappa-temp_01}).
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/k-t_all_01.png}
-  \caption{Data points are GK conductivity results, dotted line is the fit from Equation \ref{eq.okuda5}.}
+  \caption{Data points are GK conductivity results, dotted line is the fit from Equation \ref{eq.okuda5_mod}.}
   \label{fig:kappa-temp_01}
 \end{figure}
 

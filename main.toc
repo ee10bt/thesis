@@ -47,14 +47,14 @@
 \contentsline {subsection}{\numberline {3.3.1}Green-Kubo}{15}{subsection.64}
 \contentsline {subsection}{\numberline {3.3.2}Direct method}{16}{subsection.65}
 \contentsline {section}{\numberline {3.4}Summary}{16}{section.66}
-\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of lower mantle minerals}{19}{chapter.67}
+\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of (Mg,Fe)SiO$_3$ at the CMB}{19}{chapter.67}
 \contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{19}{section.68}
 \contentsline {subsection}{\numberline {4.1.1}How does iron behave?}{19}{subsection.69}
 \contentsline {subsection}{\numberline {4.1.2}Where do the impurities go?}{20}{subsection.72}
 \contentsline {section}{\numberline {4.2}Making the mantle model}{20}{section.73}
-\contentsline {subsection}{\numberline {4.2.1}Fitting the data}{20}{subsection.74}
+\contentsline {subsection}{\numberline {4.2.1}Fitting the data}{21}{subsection.74}
 \contentsline {subsubsection}{Compositional dependence}{21}{section*.75}
-\contentsline {subsubsection}{Temperature dependence}{24}{section*.84}
+\contentsline {subsubsection}{Temperature dependence}{25}{section*.84}
 \contentsline {section}{\numberline {4.3}Results}{26}{section.90}
 \contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{29}{chapter.94}
 \contentsline {section}{\numberline {5.1}Main Section 1}{29}{section.95}
