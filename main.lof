@@ -11,13 +11,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Each coloured dot series relates to a given temperature, the dotted fit lines are the model output.\relax }}{22}{figure.caption.77}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8Wm$^{-1}$K$^{-1}$.\relax }}{23}{figure.caption.78}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8Wm$^{-1}$K$^{-1}$. Such conditions are unphysical at 136~GPa within the lower mantle.\relax }}{23}{figure.caption.78}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces The fit $\chi $ values plotted against $T$, with power law (left) and 4th order polynomial (right) trendlines. Blue and orange series are the exponential and power law fits obtained from plotting $\chi ^T/T$ (see Figure \ref {fig:draft_xtt}).\relax }}{24}{figure.caption.81}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Exponential fit in blue (more curved), power law in orange (flatter)\relax }}{24}{figure.caption.82}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces \relax }}{26}{figure.caption.87}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Number of atoms is kept constant for all volumes, data is obtained from GK calculations of a 4x4x3 simulation cell. Magnitude of volume isn't of interest, just the relative difference to the reference volume.\relax }}{26}{figure.caption.89}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Data points are GK conductivity results, dotted line is the fit from Equation \ref {eq.okuda5_mod}.\relax }}{27}{figure.caption.91}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces CAPTION\relax }}{27}{figure.caption.92}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CAPTION\relax }}{28}{figure.caption.92}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces CAPTION\relax }}{28}{figure.caption.93}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
