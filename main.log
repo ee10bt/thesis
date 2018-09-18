@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  31 AUG 2018 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  18 SEP 2018 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2411,50 +2411,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
+<Figures/k-t_all_02.png, id=707, 672.26157pt x 410.2828pt>
+File: Figures/k-t_all_02.png Graphic file (type png)
+<use Figures/k-t_all_02.png>
+Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 57. on inpu
+t line 57.
+Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
+ 57.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/k-c_all_01.png, id=711, 695.59875pt x 411.03563pt>
+File: Figures/k-c_all_01.png Graphic file (type png)
+<use Figures/k-c_all_01.png>
+Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 65. on inpu
+t line 65.
+Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
+ 65.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-[21]
-<Figures/draft_kC.png, id=729, 407.27156pt x 284.56313pt>
-File: Figures/draft_kC.png Graphic file (type png)
-<use Figures/draft_kC.png>
-Package pdftex.def Info: Figures/draft_kC.png  used on input line 98. on input 
-line 98.
-Package pdftex.def Info: Requested size: 404.02908pt x 282.30888pt on input lin
-e 98.
-<Figures/K_over_T_over_X.png, id=730, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=722, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
-Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 104. o
-n input line 104.
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 73. on
+ input line 73.
 Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
-e 104.
+e 73.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+[21 <./Figures/k-t_all_02.png (PNG copy)> <./Figures/k-c_all_01.png>] [22 <./Fi
+gures/K_over_T_over_X.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 
-Overfull \hbox (3.70665pt too wide) in paragraph at lines 124--125
-[]\T1/ppl/m/n/10.95 The equa-tion splits $\OML/zplm/m/it/10.95 ![]\OT1/zplm/m/n
-/10.95 /\OML/zplm/m/it/10.95 ![]$ \T1/ppl/m/n/10.95 into its tem-per-a-ture and
- composition-dependent com-
+Underfull \hbox (badness 10000) in paragraph at lines 115--121
+
  []
 
 
@@ -2462,141 +2459,150 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[22 <./Figures/draft_kC.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--136
+<Figures/draft_kC.png, id=744, 407.27156pt x 284.56313pt>
+File: Figures/draft_kC.png Graphic file (type png)
+<use Figures/draft_kC.png>
+Package pdftex.def Info: Figures/draft_kC.png  used on input line 127. on input
+ line 127.
+Package pdftex.def Info: Requested size: 404.02908pt x 282.30888pt on input lin
+e 127.
 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/draft_XT.png, id=737, 723.45282pt x 217.5628pt>
-File: Figures/draft_XT.png Graphic file (type png)
-<use Figures/draft_XT.png>
-Package pdftex.def Info: Figures/draft_XT.png  used on input line 140. on input
- line 140.
-Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
-e 140.
+File: Figures/K_over_T_over_X.png Graphic file (type png)
+<use Figures/K_over_T_over_X.png>
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 133. o
+n input line 133.
+Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
+e 133.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 144--152
 
  []
 
-<Figures/draft_XTT.png, id=742, 797.98125pt x 490.83376pt>
+[23]
+Overfull \hbox (3.70665pt too wide) in paragraph at lines 153--154
+[]\T1/ppl/m/n/10.95 The equa-tion splits $\OML/zplm/m/it/10.95 ![]\OT1/zplm/m/n
+/10.95 /\OML/zplm/m/it/10.95 ![]$ \T1/ppl/m/n/10.95 into its tem-per-a-ture and
+ composition-dependent com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
+
+ []
+
+<Figures/draft_XT.png, id=752, 723.45282pt x 217.5628pt>
+File: Figures/draft_XT.png Graphic file (type png)
+<use Figures/draft_XT.png>
+Package pdftex.def Info: Figures/draft_XT.png  used on input line 169. on input
+ line 169.
+Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
+e 169.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+[24 <./Figures/draft_kC.png>]
+<Figures/draft_XTT.png, id=762, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
-Package pdftex.def Info: Figures/draft_XTT.png  used on input line 148. on inpu
-t line 148.
+Package pdftex.def Info: Figures/draft_XTT.png  used on input line 177. on inpu
+t line 177.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
-e 148.
-[23 <./Figures/K_over_T_over_X.png>]
-Overfull \hbox (32.56096pt too wide) in paragraph at lines 159--164
+e 177.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (32.56096pt too wide) in paragraph at lines 188--193
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity for Mg end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Overfull \hbox (23.15935pt too wide) in paragraph at lines 159--164
+Overfull \hbox (23.15935pt too wide) in paragraph at lines 188--193
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity for Fe end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--164
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-[24 <./Figures/draft_XT.png> <./Figures/draft_XTT.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 
-Overfull \hbox (4.13586pt too wide) in paragraph at lines 178--185
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+[25]
+Overfull \hbox (4.13586pt too wide) in paragraph at lines 207--214
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and density-depe
 ndent con-duc-tiv-ity of an end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--185
+Underfull \hbox (badness 10000) in paragraph at lines 207--214
+
+ []
+
+[26 <./Figures/draft_XT.png> <./Figures/draft_XTT.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 224--230
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--201
-
- []
-
-<Figures/draft_kT.png, id=764, 484.81125pt x 219.06844pt>
+<Figures/draft_kT.png, id=783, 484.81125pt x 219.06844pt>
 File: Figures/draft_kT.png Graphic file (type png)
 <use Figures/draft_kT.png>
-Package pdftex.def Info: Figures/draft_kT.png  used on input line 205. on input
- line 205.
+Package pdftex.def Info: Figures/draft_kT.png  used on input line 234. on input
+ line 234.
 Package pdftex.def Info: Requested size: 404.02908pt x 182.5755pt on input line
- 205.
+ 234.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--226
+Underfull \hbox (badness 10000) in paragraph at lines 251--256
 
  []
 
-[25]
+[27 <./Figures/draft_kT.png>]
 
-LaTeX Warning: Reference `eq.okuda_mod' on page 26 undefined on input line 227.
+LaTeX Warning: Reference `eq.okuda_mod' on page 28 undefined on input line 257.
 
 
-<Figures/draft_VT.png, id=777, 459.21562pt x 216.81pt>
+<Figures/draft_VT.png, id=794, 459.21562pt x 216.81pt>
 File: Figures/draft_VT.png Graphic file (type png)
 <use Figures/draft_VT.png>
-Package pdftex.def Info: Figures/draft_VT.png  used on input line 230. on input
- line 230.
+Package pdftex.def Info: Figures/draft_VT.png  used on input line 260. on input
+ line 260.
 Package pdftex.def Info: Requested size: 404.02908pt x 190.76361pt on input lin
-e 230.
-<Figures/k-t_all_01.png, id=780, 673.01437pt x 411.03563pt>
-File: Figures/k-t_all_01.png Graphic file (type png)
-<use Figures/k-t_all_01.png>
-Package pdftex.def Info: Figures/k-t_all_01.png  used on input line 241. on inp
-ut line 241.
-Package pdftex.def Info: Requested size: 404.02908pt x 246.75499pt on input lin
-e 241.
-[26 <./Figures/draft_kT.png> <./Figures/draft_VT.png>]
-<Figures/k-c_all_01.png, id=788, 695.59875pt x 411.03563pt>
-File: Figures/k-c_all_01.png Graphic file (type png)
-<use Figures/k-c_all_01.png>
-Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 249. on inp
-ut line 249.
-Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
- 249.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: Figures/K_over_T_over_X.png Graphic file (type png)
-<use Figures/K_over_T_over_X.png>
-Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 257. o
-n input line 257.
-Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
-e 257.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [27 <./Figures/k-t_all_01.png>] [28 <./Figures/k-c_all_01.png>]
+e 260.
+) [28 <./Figures/draft_VT.png>]
 \openout2 = `Chapters/Chapter5.aux'.
 
-
-(./Chapters/Chapter5.tex
+ (./Chapters/Chapter5.tex
 Chapter 5.
 )
 1: section
@@ -2690,7 +2696,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5D05522433522CFA2F65FFB96CB0C7FB;10768.
+(rerunfilecheck)             Checksum: 2917F001CC85974ED695F211FC02479C;10768.
 
 
 LaTeX Warning: There were undefined references.
@@ -2725,9 +2731,9 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (61 pages, 1140624 bytes).
+Output written on main.pdf (61 pages, 1159473 bytes).
 PDF statistics:
- 997 PDF objects out of 1000 (max. 8388607)
+ 996 PDF objects out of 1000 (max. 8388607)
  887 compressed objects within 9 object streams
  197 named destinations out of 1000 (max. 500000)
  578 words of extra memory for PDF output out of 10000 (max. 10000000)

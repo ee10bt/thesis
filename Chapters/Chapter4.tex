@@ -48,6 +48,35 @@ Iron is substituted with magnesium into the bridgmanite atomic structure. The un
 Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region (((ELABORATE WITH FIGURE?))). To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. After iron is added, the standard direct method or Green-Kubo workflow is followed.
 
 
+
+%-----------------------------------------------------------
+\section{Results}
+%-----------------------------------------------------------
+Taking Green-Kubo results at the full range of lower mantle temperatures (1000-5000~K) and CMB pressure (136~GPa), I fit Equation \ref{eq.okuda5} to obtain conductivity as a function of temperature for Mg and Fe silicate perovskite endmembers (Figure \ref{fig:kappa-temp_01}).
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/k-t_all_02.png}
+  \caption{Data points are GK conductivity results, dotted line is the fit from Equation \ref{eq.okuda5_mod}.}
+  \label{fig:kappa-temp_01}
+\end{figure}
+
+We also consider the effects of variable Mg:Fe across the same temperatures and pressures (Figure \ref{fig:kappa-comp_01}). Conductivity decreases sharply as Fe is introduced and reaches a plateau around intermediate compositions, then increases towards 100\% Fe. 
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/k-c_all_01.png}
+  \caption{CAPTION}
+  \label{fig:kappa-comp_01}
+\end{figure}
+
+A simple interpolation between endmember conductivities is insufficient, the presence of a compositional mix has an effect. This effect is itself temperature-dependent, the trough-like trend flattens with increasing temperature. These temperature and compositional dependences can be combined, allowing conductivity to be determined for a range of possible CMB conditions (Figure \ref{fig:kappa-temp-comp_01}). 
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/K_over_T_over_X.png}
+  \caption{CAPTION}
+  \label{fig:kappa-temp-comp_01}
+\end{figure}
+
+
+
 %-----------------------------------------------------------
 \section{Making the mantle model}
 %-----------------------------------------------------------
@@ -215,6 +244,7 @@ I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.o
 
 
 Volume scaling ($y=mx+c$)  
+
 \begin{equation}%-----
 V=\frac{\partial V}{\partial T} T+V_{T_{0}}
 \label{eq.vol_scale}
@@ -233,31 +263,7 @@ I take Eq.~\ref{eq.okuda5} \citep[][Eq. 5]{Okuda2017} a step further, by obtaini
 \end{figure}
 
 
-%-----------------------------------------------------------
-\section{Results}
-%-----------------------------------------------------------
-Taking Green-Kubo results at the full range of lower mantle temperatures (1000-5000~K) and CMB pressure (136~GPa), I fit Equation \ref{eq.okuda5} to obtain conductivity as a function of temperature for Mg and Fe silicate perovskite endmembers (Figure \ref{fig:kappa-temp_01}).
-\begin{figure}[h!]
-  \includegraphics[width=\linewidth]{Figures/k-t_all_01.png}
-  \caption{Data points are GK conductivity results, dotted line is the fit from Equation \ref{eq.okuda5_mod}.}
-  \label{fig:kappa-temp_01}
-\end{figure}
 
-We also consider the effects of variable Mg:Fe across the same temperatures and pressures (Figure \ref{fig:kappa-comp_01}). Conductivity decreases sharply as Fe is introduced and reaches a plateau around intermediate compositions, then increases towards 100\% Fe. 
-
-\begin{figure}[h!]
-  \includegraphics[width=\linewidth]{Figures/k-c_all_01.png}
-  \caption{CAPTION}
-  \label{fig:kappa-comp_01}
-\end{figure}
-
-A simple interpolation between endmember conductivities is insufficient, the presence of a compositional mix has an effect. This effect is itself temperature-dependent, the trough-like trend flattens with increasing temperature. These temperature and compositional dependences can be combined, allowing conductivity to be determined for a range of possible CMB conditions (Figure \ref{fig:kappa-temp-comp_01}). 
-
-\begin{figure}[h!]
-  \includegraphics[width=\linewidth]{Figures/K_over_T_over_X.png}
-  \caption{CAPTION}
-  \label{fig:kappa-temp-comp_01}
-\end{figure}
 
 
 
