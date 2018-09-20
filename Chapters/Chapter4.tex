@@ -219,12 +219,12 @@ $g$ - exponent controlling density-dependent conducitvity of an endmember\\
 Okuda eq. 5 modified
 
 \begin{equation}%-----
-\kappa_{adj}=\kappa_{ref}\left ( \frac{T_{ref}}{T} \right )^{a}\left ( \frac{V_{ref}}{V} \right )^{h}
+\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}\left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}
 \label{eq.okuda5_mod}
 \end{equation}%-------
-\\ $T_{ref}$ - temperature at which reference conductivity is calculated (K)\\
+\\ $T_{\mathrm{ref}}$ - temperature at which reference conductivity is calculated (K)\\
 $T$ - temperature of interest to interpolate (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\   
-$V_{ref}$ - reference volume of an endmember (E-30 m$^3$)\\
+$V_{\mathrm{ref}}$ - reference volume of an endmember (E-30 m$^3$)\\
 $V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\
 $h$ - exponent controlling volume-dependent conducitvity of an endmember\\
 
@@ -236,19 +236,38 @@ I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.o
   \label{fig:draft_kt}
 \end{figure}
 
-$$\left ( \frac{\rho }{\rho _{\mathrm{ref}}} \right )^{g} = \left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}$$
+
+
+\pagebreak
+
+
+
+
+
+
+$$\kappa_{\mathrm{latt}}=\kappa_{\mathrm{i}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )arctan\left ( \frac{\omega_{\mathrm{M}}}{\omega_{\mathrm{0}}} \right )$$
+
+$$\kappa_{\mathrm{i}}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}$$
+
+$$\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}$$
+
+$$\chi^{T}=A T^{B}$$
+
+$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{\rho}{\rho_{\mathrm{ref}}} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
+
+$$\frac{\rho }{\rho _{\mathrm{ref}}} \equiv \frac{V_{\mathrm{ref}}}{V}$$%$$\left ( \frac{\rho }{\rho _{\mathrm{ref}}} \right )^{g} = \left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}$$
+
+$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
+
+$$g=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{T}$$
+
+$$h=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{P}$$
 
 $$\frac{V_{\mathrm{ref}}}{V(T)} \approx  mT+c$$
 
 $$\frac{V_{\mathrm{ref}}}{V} (T) \approx  mT+c$$
 
-$$\left ( \frac{\rho }{\rho _{\mathrm{ref}}} \right )^{g} = \left ( mT+c \right )^{g}$$
-
-$$g=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{T}$$
-
-$$g^{*}=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{P}$$
-
-$$\kappa_{adj}=\kappa_{ref}\left ( \frac{T_{ref}}{T} \right )^{a}\left ( mT+c \right )^{g^{*}}$$
+$$\kappa_{adj}=\kappa_{ref} \left ( mT+c \right )^{h} \left ( \frac{T_{ref}}{T} \right )^{a}$$
 
 
 
