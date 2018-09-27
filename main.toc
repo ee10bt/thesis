@@ -52,8 +52,8 @@
 \contentsline {subsection}{\numberline {4.1.1}How does iron behave?}{19}{subsection.69}
 \contentsline {subsection}{\numberline {4.1.2}Where do the impurities go?}{20}{subsection.72}
 \contentsline {section}{\numberline {4.2}Results}{20}{section.73}
-\contentsline {section}{\numberline {4.3}Making the mantle model}{22}{section.77}
-\contentsline {subsection}{\numberline {4.3.1}Parameterising the data fit}{22}{subsection.78}
+\contentsline {section}{\numberline {4.3}Making the mantle model}{21}{section.77}
+\contentsline {subsection}{\numberline {4.3.1}Parameterising the data fit}{23}{subsection.78}
 \contentsline {subsubsection}{Compositional dependence}{23}{section*.79}
 \contentsline {subsubsection}{Temperature dependence}{26}{section*.88}
 \contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{29}{chapter.92}

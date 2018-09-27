@@ -52,7 +52,18 @@ Due to the microscopic nature of the system, we do not want all of the added iro
 %-----------------------------------------------------------
 \section{Results}
 %-----------------------------------------------------------
-[k/T] - Taking Green-Kubo results at the full range of lower mantle temperatures (1000-5000~K) and CMB pressure (136~GPa), I fit Equation \ref{eq.okuda5} to obtain conductivity as a function of temperature for Mg and Fe silicate perovskite endmembers (Figure \ref{fig:kappa-temp_01}).
+
+% reference SS2015 supp. for this section, the what affects conductivity bit
+% have I gone too far into discussion here, interpretation of results?
+Lattice thermal conductivities obtained from Green-Kubo calculations are plotted against temperature in Figure \ref{fig:kappa-temp_01}, for Mg and Fe-endmembers and the 50/50 solid solution mix.
+
+Conductivity decreases with temperature, approximately following $\kappa \propto 1/T^{0.9}$. This is in contrast to the typically expected $\kappa \propto 1/T$ relation, indicating some kind of saturation in conductivity decrease with temperature.
+
+\fesios has a consistently lower conductivity than \mgsio, which is to be expected due to the atomic mass increase. The two trends appear to be converging, indicating the conductivity of both species may be equal given a high enough (though unphysical for the lower mantle) temperature. This suggests there is a minimum conductivity associated with the crystal structure, reached first by \fesios with its inherently lower conductivity. [WAFFLE ALERT]
+
+The endmember mix has a consistently lower conductivity than \mgsio, and a lower than or equal to relation to \fesios. This is again to be expected, conductivity decreases from endmember to intermediate compositions as inpurity concentration increases. It can be seen that conductivity differences are very small at high temperatures for \fesios and the mix. If \fesios has already reached its theoretical minimum, adding impurities will do little to decrease it further.
+%
+
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/k-t_all_02.png}
   \caption{Data points are GK conductivity results, dotted line is the fit from Equation \ref{eq.okuda5_mod}.}
@@ -87,7 +98,7 @@ A simple weighted average (VRH?) can be used to combine the contributions of ind
 
 \citet{Okuda2017} present a temperature scaling relation for bridgmanite, which I apply to both Mg and Fe-endmembers. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
 
-The aforementioned equation from \citet{Okuda2017} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion SCIENCE HERE
+The aforementioned equation from \citet{Okuda2017} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion, and the equations will be altered to accomodate this. MORE SCIENCE HERE?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %---------------------------------------
@@ -96,7 +107,7 @@ The aforementioned equation from \citet{Okuda2017} considers density, allowing c
 
 [Equations from \cite{Ohta2017} (eq. 7,8,9), and \cite{Okuda2017} (eq. 5)]
 
-I want to determine lattice thermal conductivity as a function of temperature and composition, using calculated and fit constants. For the method I will use I need to know how the conductivity of endmember minerals changes with physical conditions. In order to keep temperature the only dependent variable, I will scale volume linerarly with temperature [FIGURE]. At this point I can scale the conductivity of an endmember with temperature within the fitted range \citep{Okuda2017}.
+I want to determine lattice thermal conductivity as a function of temperature and composition, using calculated and fit constants. For the method I will use, I need to know how the conductivity of endmember minerals changes with physical conditions. In order to keep temperature the only dependent variable, I will scale volume linerarly with temperature [FIGURE]. At this point I can scale the conductivity of an endmember with temperature within the fitted range \citep{Okuda2017}.
 
 Considering \citet{Ohta2017}, the linear interpolation between the conductivities of two endmembers can be perturbed, forming the trough characteristic of varying composition. While \fesios generally has a lower \tcs than \mgsio, the minimum is located at an intermediate composition. The effect of impurity scattering is larger than inherent changes due to chemistry.
     
@@ -115,9 +126,8 @@ Ohta eq. 7
 \end{equation}%-------
 \\ $\kappa_{latt}$ - output conductivity as function of t \& x (\wmk), considering mineral specific parameters\\
 $\kappa_{i}$ - the composition-dependent conducitivity, if it were linearly interpolated between endmembers (\wmk)\\
-$\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}$, to create the "trough" trend in composition-dependent conductivity\\
-$\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms}}\\
-$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}\\
+$\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms (or just interatomic spacing?)}}\\
+$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum (Debye frequency)}}\\
 
 The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.
 
@@ -142,9 +152,8 @@ Ohta eq. 8
 \left ( \frac{\omega_{0}}{\omega_{M}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}  
 \label{eq.ohta8}
 \end{equation}%-------
-\\ *$\omega_{0}/\omega_{M}$ - temperature-dependent parameter to perturb $\kappa_{i}$, to create the "trough" trend in composition-dependent conductivity\\
-*$\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms}}\\
-*$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum}}\\
+$\omega_{0}$ - \enquote{\textit{the phonon frequency where the intrinsic mean free path is equal to that due to solute atoms (or just interatomic spacing?)}}\\
+$\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximum of the acoustic branch of the phonon spectrum (Debye frequency)}}\\
 $\chi^{T}$ -temperature-dependent parameter to \dots ??? \\
 $\chi$ - \enquote{\textit{a constant}}\dots\\
 $T$ - temperature of interest (K, default data fit between 1000 - 5000 K, but extrapolation should be reasonable)\\                    
@@ -261,13 +270,11 @@ $$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{V_{\mathrm{ref}}}{V} 
 
 $$g=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{T}$$
 
-$$h=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{P}$$
+$$h \sim \left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{P}$$
 
 $$\frac{V_{\mathrm{ref}}}{V(T)} \approx  mT+c$$
 
-$$\frac{V_{\mathrm{ref}}}{V} (T) \approx  mT+c$$
-
-$$\kappa_{adj}=\kappa_{ref} \left ( mT+c \right )^{h} \left ( \frac{T_{ref}}{T} \right )^{a}$$
+$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}} \left ( mT+c \right )^{h} \left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
 
 
 
