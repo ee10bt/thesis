@@ -151,7 +151,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{DHTTTJ1}
+    \strng{namehash}{DH+1}
     \strng{fullhash}{DHTTTJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -450,7 +450,7 @@
          giveni={P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{HLEWJKP1}
+    \strng{namehash}{HL+1}
     \strng{fullhash}{HLEWJKP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -477,6 +477,55 @@
     \endverb
     \field{journaltitle}{Journal of Applied Physics}
     \field{year}{2011}
+  \endentry
+
+  \entry{Klemens1960}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KP}{%
+         family={Klemens},
+         familyi={K\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KP1}
+    \strng{fullhash}{KP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1960}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    An expression is obtained for the lattice thermal conductivity at high
+  temperatures in the limit when the scattering of phonons by point defects is
+  stronger than by umklapp processes. The latter limit the phonon mean free
+  path at low frequencies and most of the heat is transported at frequencies
+  such that the point defect and umklapp mean free paths are equal. The
+  conductivity varies as (AT)-1/2, where A is proportional to the strength of
+  the point defect scattering, T is the temperature. The theory is in rough
+  agreement with the thermal conductivity of Ge-Si alloys, measured by Steele
+  and Rosi.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.119.507
+    \endverb
+    \field{isbn}{0031-899X$\backslash$r1536-6065}
+    \field{issn}{0031-899X}
+    \field{number}{2}
+    \field{pages}{507\bibrangedash 509}
+    \field{title}{{Thermal Resistance due to Point Defects at High
+  Temperatures}}
+    \verb{url}
+    \verb http://link.aps.org/doi/10.1103/PhysRev.119.507
+    \endverb
+    \field{volume}{119}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Klemens - 1960
+    \verb - Thermal Resistance due to Point Defects at High Temperatures.pdf:pd
+    \verb f
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{year}{1960}
   \endentry
 
   \entry{DeKoker2009}{article}{}
@@ -594,7 +643,7 @@
          giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{LTHJBBA1}
+    \strng{namehash}{LT+1}
     \strng{fullhash}{LTHJBBA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -798,7 +847,7 @@
     }
     \keyw{anharmonicity,d layer,earth,equation of state,gr{\"{u}}neisen
   parameter,interatomic potentials,s lower mantle,thermal expansion}
-    \strng{namehash}{OARBJPPDG1}
+    \strng{namehash}{OAR+1}
     \strng{fullhash}{OARBJPPDG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1120,6 +1169,44 @@
     \field{year}{1991}
   \endentry
 
+  \entry{Padture1997}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PNP}{%
+         family={Padture},
+         familyi={P\bibinitperiod},
+         given={N.\bibnamedelima P.},
+         giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KPG}{%
+         family={Klemens},
+         familyi={K\bibinitperiod},
+         given={P.\bibnamedelima G.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PNPKPG1}
+    \strng{fullhash}{PNPKPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.1111/j.1151-2916.1997.tb02937.x
+    \endverb
+    \field{issn}{00027820}
+    \field{number}{4}
+    \field{pages}{1018\bibrangedash 1020}
+    \field{title}{{Low Thermal Conductivity in Garnets}}
+    \field{volume}{80}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Padture, Klemen
+    \verb s - 1997 - Low Thermal Conductivity in Garnets.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of the American Ceramic Society}
+    \field{year}{1997}
+  \endentry
+
   \entry{Parise1990}{article}{}
     \name{author}{2}{}{%
       {{hash=PJB}{%
@@ -1232,7 +1319,7 @@
          giveni={P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SPKPSRKP1}
+    \strng{namehash}{SPK+1}
     \strng{fullhash}{SPKPSRKP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1495,7 +1582,7 @@
     \list{publisher}{1}{%
       {Elsevier B.V.}%
     }
-    \strng{namehash}{SSSLKBB1}
+    \strng{namehash}{SS+1}
     \strng{fullhash}{SSSLKBB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1655,7 +1742,7 @@
   H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{TJAIRMMAJH1}
+    \strng{namehash}{TJA+1}
     \strng{fullhash}{TJAIRMMAJH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}

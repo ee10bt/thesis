@@ -51,17 +51,18 @@
 \contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{19}{section.68}
 \contentsline {subsection}{\numberline {4.1.1}How does iron behave?}{19}{subsection.69}
 \contentsline {subsection}{\numberline {4.1.2}Where do the impurities go?}{20}{subsection.72}
-\contentsline {section}{\numberline {4.2}Results}{20}{section.73}
-\contentsline {section}{\numberline {4.3}Making the mantle model}{22}{section.77}
-\contentsline {subsection}{\numberline {4.3.1}Parameterising the data fit}{23}{subsection.78}
-\contentsline {subsubsection}{Compositional dependence}{23}{section*.79}
-\contentsline {subsubsection}{Temperature dependence}{27}{section*.88}
-\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{29}{chapter.92}
-\contentsline {section}{\numberline {5.1}Main Section 1}{29}{section.93}
-\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{29}{subsection.94}
-\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{31}{chapter.95}
-\contentsline {section}{\numberline {6.1}Main Section 1}{31}{section.96}
-\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{31}{subsection.97}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{33}{appendix.98}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{33}{section.99}
-\contentsline {chapter}{Bibliography}{35}{appendix*.100}
+\contentsline {subsection}{\numberline {4.1.3}How do impurities affect conductivity?}{20}{subsection.73}
+\contentsline {section}{\numberline {4.2}Results}{21}{section.77}
+\contentsline {section}{\numberline {4.3}Making the mantle model}{23}{section.81}
+\contentsline {subsection}{\numberline {4.3.1}Parameterising the data fit}{23}{subsection.82}
+\contentsline {subsubsection}{Compositional dependence}{24}{section*.83}
+\contentsline {subsubsection}{Temperature dependence}{27}{section*.92}
+\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{31}{chapter.96}
+\contentsline {section}{\numberline {5.1}Main Section 1}{31}{section.97}
+\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{31}{subsection.98}
+\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{33}{chapter.99}
+\contentsline {section}{\numberline {6.1}Main Section 1}{33}{section.100}
+\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{33}{subsection.101}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{35}{appendix.102}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{35}{section.103}
+\contentsline {chapter}{Bibliography}{37}{appendix*.104}
