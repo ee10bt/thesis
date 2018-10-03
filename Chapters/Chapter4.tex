@@ -59,7 +59,8 @@ Due to the microscopic nature of the system, we do not want all of the added iro
 The effect of impurities on lattice thermal conductivity is approximated by \citet{Klemens1960} and \citet{Padture1997}, a review of which can be found in the Supplementary Material of \citet{Stackhouse2015}. The lattice thermal conductivity of a binary solid solution is given \citep[in][Eq. S6]{Stackhouse2015} as
 
 \begin{equation}
-\kappa_{\mathrm{S}}=\kappa_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{S}}}{\omega_{\mathrm{D}}} \right )arctan\left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{S}}} \right ),
+\kappa_{\mathrm{S}}=\kappa_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{S}}}{\omega_{\mathrm{D}}} \right )\arctan \left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{S}}} \right ),
+\label{SS2015SM.6}
 \end{equation}
 \\
 where $\kappa_{\mathrm{V}}$ is the compositionally-weighted average of endmember conductivities, $\omega_{\mathrm{S}}$ is the phonon frequency at which the mean free path is equal to that due to the solute atoms (?????), and $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). The ratio of these phonon frequencies can be expressed \citep[][Eq. S11]{Stackhouse2015} as
@@ -75,6 +76,10 @@ where $T$ is temperature, $T_{\mathrm{S}}$ is the temperature at which the phono
 \end{equation}
 \\
 where $M_{i}$ is the atomic mass of the $i$-th endmember, $\overline{M}$ is the mean atomic mass of the solid solution, and $x$ is the proporition of endmembers \citep[][Eq. S9]{Stackhouse2015}.
+
+Considering Eq. \ref{SS2015SM.6}, when $\omega_{\mathrm{S}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{S}})$, so $\kappa_{S} \rightarrow \kappa_{V}$, the conductivity considering impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
+
+On the other hand, when $\omega_{\mathrm{D}} \gg \omega_{\mathrm{S}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}}) \rightarrow \pi/2$, so $\kappa_{\mathrm{S}}\propto\kappa_{\mathrm{V}}$, and impurity scattering has an effect on the resultant conductivity. Adding impurities has an effect like this when the conductivity has not already been reduced for other reasons, like at low temperatures compared to the conditions mentioned above. 
 
 WRITE WORDS ABOUT WHAT THESE EQUATIONS MEAN
 
