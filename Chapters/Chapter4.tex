@@ -146,11 +146,11 @@ A simple interpolation between endmember conductivities is insufficient, the pre
 
 Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the relative abundance of each mineral component. There are also endmember relations to consider for each mineral, the concentration of impurities, and mineral phase transitions.  
 
-A simple weighted average (VRH?) can be used to combine the contributions of individual minerals, whereas mixing between endmembers is non-linear. \citet{Ohta2017} derive an equation for interpolating \cs between mineral endmembers, specifically (Mg,Fe)O (ferro)periclase. I apply it to (Mg,Fe)SiO$_3$ perovskite [[[PRESUMABLY ALSO WORKS FOR bdg<->p-Pv?]]]. 
+A simple weighted average can be used to combine the contributions to lattice thermal conductivity from individual mineral species, whereas the conductivity of a solid solution cannot be linearly interpolated between endmembers. \citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017} apply to experimental (Mg,Fe)O (ferro)periclase data. Following a similar methodology, I will be applying the theory to (Mg,Fe)SiO$_3$ perovskite. 
 
-\citet{Okuda2017} present a temperature scaling relation for bridgmanite, which I apply to both Mg and Fe-endmembers. By having temperature-dependent values I am able to obtain an equation that gives \tcs as a function of both temperature and composition, for a given (studied/fit?) endmember pair.
+\citet{Okuda2017} present a temperature scaling relation for lattice conductivity \citep[originally from][]{Manthilake2011}, fit to their experimental results of bridgmanite. I apply this temperature scaling to computational results of \mgsios and \fesios at 136~GPa, which when combined with compositional-dependence mentioned above, enables the prediction of bridgmanite lattice thermal conductivity for any temperature and Fe-content at the CMB.
 
-The aforementioned equation from \citet{Okuda2017} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion, and the equations will be altered to accomodate this. MORE SCIENCE HERE?
+The aforementioned equation from \citet{Manthilake2011} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion, and the equations will be altered to accomodate this.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %---------------------------------------

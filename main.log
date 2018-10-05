@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  4 OCT 2018 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  5 OCT 2018 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2453,7 +2453,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-<Figures/draft_kC.png, id=769, 407.27156pt x 284.56313pt>
+<Figures/draft_kC.png, id=771, 407.27156pt x 284.56313pt>
 File: Figures/draft_kC.png Graphic file (type png)
 <use Figures/draft_kC.png>
 Package pdftex.def Info: Figures/draft_kC.png  used on input line 189. on input
@@ -2491,7 +2491,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--226
 
  []
 
-<Figures/draft_XT.png, id=777, 723.45282pt x 217.5628pt>
+[26]
+<Figures/draft_XT.png, id=784, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 230. on input
@@ -2499,22 +2500,18 @@ Package pdftex.def Info: Figures/draft_XT.png  used on input line 230. on input
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
 e 230.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
-[26]
-<Figures/draft_XTT.png, id=787, 797.98125pt x 490.83376pt>
+<Figures/draft_XTT.png, id=789, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 238. on inpu
 t line 238.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
 e 238.
-
+[27 <./Figures/draft_XT.png> <./Figures/draft_XTT.png>]
 Overfull \hbox (32.56096pt too wide) in paragraph at lines 249--254
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity for Mg end-mem-ber (Wm$[]$K$[]$) 
@@ -2531,7 +2528,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--254
 
  []
 
-[27 <./Figures/draft_XT.png> <./Figures/draft_XTT.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
@@ -2562,28 +2559,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--291
 
  []
 
-<Figures/draft_kT.png, id=803, 484.81125pt x 219.06844pt>
+[28]
+<Figures/draft_kT.png, id=810, 484.81125pt x 219.06844pt>
 File: Figures/draft_kT.png Graphic file (type png)
 <use Figures/draft_kT.png>
 Package pdftex.def Info: Figures/draft_kT.png  used on input line 295. on input
  line 295.
 Package pdftex.def Info: Requested size: 404.02908pt x 182.5755pt on input line
  295.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28] [29 <./Figures/draft_kT.png>])
+ [29 <./Figures/draft_kT.png>] [30])
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [30
+ (./Chapters/Chapter5.tex
+Chapter 5.
+)
+1: section
+[31
 
 
 
 ]
-Chapter 5.
-)
-1: section
-[31]
 \openout2 = `Chapters/Chapter6.aux'.
 
  (./Chapters/Chapter6.tex [32
@@ -2679,10 +2674,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34217 strings out of 492990
- 697151 string characters out of 6121926
- 942765 words of memory out of 5000000
- 37156 multiletter control sequences out of 15000+600000
+ 34219 strings out of 492990
+ 697175 string characters out of 6121926
+ 942807 words of memory out of 5000000
+ 37158 multiletter control sequences out of 15000+600000
  603710 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2704,10 +2699,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (63 pages, 1158782 bytes).
+Output written on main.pdf (63 pages, 1159218 bytes).
 PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 909 compressed objects within 10 object streams
+ 1022 PDF objects out of 1200 (max. 8388607)
+ 911 compressed objects within 10 object streams
  203 named destinations out of 1000 (max. 500000)
  581 words of extra memory for PDF output out of 10000 (max. 10000000)
 
