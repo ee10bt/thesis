@@ -55,8 +55,8 @@
 \contentsline {section}{\numberline {4.2}Results}{21}{section.77}
 \contentsline {section}{\numberline {4.3}Making the mantle model}{24}{section.81}
 \contentsline {subsection}{\numberline {4.3.1}Parameterising the data fit}{24}{subsection.82}
-\contentsline {subsubsection}{Compositional dependence}{24}{section*.83}
-\contentsline {subsubsection}{Temperature dependence}{28}{section*.92}
+\contentsline {subsubsection}{Compositional dependence}{25}{section*.83}
+\contentsline {subsubsection}{Temperature dependence}{27}{section*.92}
 \contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{31}{chapter.96}
 \contentsline {section}{\numberline {5.1}Main Section 1}{31}{section.97}
 \contentsline {subsection}{\numberline {5.1.1}Subsection 1}{31}{subsection.98}
