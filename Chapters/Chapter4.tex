@@ -22,6 +22,7 @@ Impurities reduce \tcs by providing more opportunities for phonon scattering eve
 %---------------------------------------
 \subsection{How do impurities affect conductivity?} 
 %---------------------------------------
+\label{impur_theory}
 
 The effect of impurities on lattice thermal conductivity is approximated by \citet{Klemens1960} and \citet{Padture1997}, a review of which can be found in the Supplementary Material of \citet{Stackhouse2015}. The lattice thermal conductivity of a binary solid solution is given \citep[in][Eq. S6]{Stackhouse2015} as
 
@@ -125,10 +126,9 @@ Lattice thermal conductivities obtained from Green-Kubo calculations are plotted
 
 Conductivity decreases with temperature, approximately following $\kappa \propto 1/T^{0.9}$ at the studied 136~GPa. This is in contrast to the typically expected $\kappa \propto 1/T$ relation, indicating some kind of saturation in conductivity decrease with temperature.
 
-\fesios has a consistently lower conductivity than \mgsio, which is to be expected due to the atomic mass increase. The two trends appear to be converging, indicating the conductivity of both species may be equal given a high enough (though unphysical for the lower mantle) temperature. This suggests there is a minimum conductivity associated with the crystal structure, reached first by \fesios with its inherently lower conductivity.
+\fesios has a consistently lower conductivity than \mgsio, which is to be expected due to the atomic mass increase [WRONG, SHEAR MOD DECREASE, DENSITY INCREASE, WAVESPEED EQUATION]. The two trends appear to be converging, indicating the conductivity of both species may be equal given a high enough (though unphysical for the lower mantle) temperature. This suggests there is a minimum conductivity associated with the crystal structure, reached first by \fesios with its inherently lower conductivity.
 
 The 50\% solid solution has a consistently lower conductivity than \mgsio, and a lower than or equal to relation to \fesios. This is again to be expected, conductivity decreases from endmember to intermediate compositions as inpurity concentration increases. It can be seen that conductivity differences are very small at high temperatures for \fesios and the solid solution. If \fesios has already reached its theoretical minimum, adding impurities will do little to decrease it further.
-%
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/k-t_all_02.png}
@@ -154,7 +154,7 @@ A simple interpolation between endmember conductivities is insufficient, the pre
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/K_over_T_over_X.png}
-  \caption{CAPTION}
+  \caption{Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8\wmk. Such conditions are unphysical at 136~GPa within the lower mantle.}
   \label{fig:kappa-temp-comp_01}
 \end{figure}
 
@@ -164,13 +164,14 @@ A simple interpolation between endmember conductivities is insufficient, the pre
 \section{Making the mantle model}
 %-----------------------------------------------------------
 
-Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the relative abundance of each mineral component. There are also endmember relations to consider for each mineral, the concentration of impurities, and mineral phase transitions.  
+I want to determine a model for the lattice thermal conductivity of \mgfesios perovskite at CMB conditions. Whilst the CMB is a small section of the lower mantle, it marks the heat flow boundary from core to mantle, making it a very interesting region for studies of on both sides of the interface. The pressure is always 136~GPa, but I am interested in how temperature and Fe-content affect bridgmanite \tc.
 
-A simple weighted average can be used to combine the contributions to lattice thermal conductivity from individual mineral species, whereas the conductivity of a solid solution cannot be linearly interpolated between endmembers. \citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017} apply to experimental (Mg,Fe)O (ferro)periclase data. Following a similar methodology, I will be applying the theory to (Mg,Fe)SiO$_3$ perovskite. 
+Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the abundance of each mineral component. There are also mineral solid solutions to consider however, particularly the concentration of Fe impurities in \mgsios towards \fesio, and the phase boundary between bridgmanite and \mgsios post-perovskite. 
 
-\citet{Okuda2017} present a temperature scaling relation for lattice conductivity \citep[originally from][]{Manthilake2011}, fit to their experimental results of bridgmanite. I apply this temperature scaling to computational results of \mgsios and \fesios at 136~GPa, which when combined with compositional-dependence mentioned above, enables the prediction of bridgmanite lattice thermal conductivity for any temperature and Fe-content at the CMB.
+The conductivity of an intermediate member in a solid solution is not a simple weighted average between endmembers, you cannot interpolate linearly. This can be seen in Figure \ref{fig:kappa-temp_01}, where the (Mg$_{0.5}$,Fe$_{0.5}$)SiO$_3$ results do not plot between those of \mgsios and \fesio.
 
-The aforementioned equation from \citet{Manthilake2011} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion, and the equations will be altered to accomodate this.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %---------------------------------------
@@ -179,25 +180,25 @@ The aforementioned equation from \citet{Manthilake2011} considers density, allow
 
 [Equations from \cite{Ohta2017} (eq. 7,8,9), and \cite{Okuda2017} (eq. 5)]
 
-I want to determine a model for the lattice thermal conductivity of (Mg,Fe)SiO$_3$ perovskite at CMB conditions. Whilst the CMB is a small section of the lower mantle, it marks the heat flow boundary from core to mantle, making it a very interesting region for studies of on both sides of the interface. 
+Equations and functional forms exist to determine the temperature and compostional dependence of \tc, and it is possible to combine the two. The basic idea is to determine the conductivity of \mgsios and \fesios endmembers at the temperature of interest, and then apply the (temperature-dependent) effect of composition.
 
-The model will be a function of temperature and composition, using calculated and fit constants from calculations performed at 136~GPa. A range of temperature and composition conditions will be considered, but all density changes will be related to thermal expansion rather than compaction under pressure. This detail is relevant as I will need to modify and make approximations to equation found in the literature.
+\citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017} apply to experimental ferropericlase data. Following a similar methodology, I will be fitting constants that apply this compositional dependence to (Mg,Fe)SiO$_3$ perovskite results at various temperatures (1000~K, 2000~K, 3000~K, 4000~K, and 5000~K). In an additional step, I establish the temperature-dependence of the fit constants. This means I am able to quantify the effect of composition at all temperatures.
 
-For the method I will use, I need to know how the conductivity of both endmember minerals change with temperature. The linear interpolation between the conductivities of two endmembers can then be perturbed, forming the trough characteristic of varying composition. 
+\citet{Okuda2017} present a temperature scaling relation for lattice conductivity \citep[originally from][]{Manthilake2011}, fit to their experimental results of bridgmanite. I apply this temperature scaling to computational results of \mgsios and \fesios at 136~GPa. With the temperature dependence of these endmembers and of the compositional effect, I am able to able to determine the conductivity of any composition, at any temperature in the range 1000~K to 5000~K, at 136~GPa representative of the CMB.
 
-[RELEVANT, MOVE INTO RESULTS?] While \fesios generally has a lower \tcs than \mgsio, the minimum is located at an intermediate composition. The effect of impurity scattering is larger than inherent changes due to chemistry.
+The aforementioned temperaturedependence from \citet{Manthilake2011} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion, and the equations will be altered to accomodate this.
+
+Some of the equations in the following section have already been presented as analogous forms in Section \ref{impur_theory}. The equations are kept similar to their published form, which was \citet{Stackhouse2015} in the former, and \citet{Ohta2017, Okuda2017} in the following.
 
 
     
 %-------------------
 \subsubsection{Compositional dependence}
 %-------------------
-\cite{Ohta2017}\\
-* = already cited somewhere above\\
 
-Ohta eq. 7 
+\citet{Ohta2017} Eq.~7
 \begin{equation}%-----
-\kappa_{latt}=\kappa_{i}\left ( \frac{\omega_{0}}{\omega_{M}} \right )arctan\left ( \frac{\omega_{M}}{\omega_{0}} \right )
+\kappa_{latt}=\kappa_{i}\left ( \frac{\omega_{0}}{\omega_{M}} \right )\mathrm{arctan}\left ( \frac{\omega_{M}}{\omega_{0}} \right )
 \label{eq.ohta7}
 \end{equation}%-------
 \\ $\kappa_{latt}$ - output conductivity as function of t \& x (\wmk), considering mineral specific parameters\\
@@ -207,19 +208,8 @@ $\omega_{M}$ - \enquote{\textit{the phonon frequency corresponding to the maximu
 
 The two components $\kappa_{i}$ and $\omega_{0}/\omega_{M}$, are both temperature and composition-dependent. $\kappa_{i}$ gives the compositionally-weighted average conductivity, a linear interpolation between endmembers at a certain temperature. $\omega_{0}/\omega_{M}$ controls the conductivity decrease due to the impurity effect, the magnitude of which depends on the temperature and composition of interest.
 
-By combining models for the temperate-dependence of \mgsios and \fesio-endmember conductivities, and the fit $\chi^{T}$ parameter, I obtain a function for conductivity of the lower mantle (136~GPa) as a function of just temperature and composition (as illustrated in Figure. \ref{fig:draft_kc}).\\
+By combining models for the temperate-dependence of \mgsios and \fesio-endmember conductivities, and the fit $\chi^{T}$ parameter, I obtain a function for conductivity of the lower mantle (136~GPa) as a function of just temperature and composition (as illustrated in Figure. \ref{fig:kappa-comp_01}).\\
 
-\begin{figure}[h]
-  \includegraphics[width=\linewidth]{Figures/draft_kC.png}
-  \caption{Each coloured dot series relates to a given temperature, the dotted fit lines are the model output.}
-  \label{fig:draft_kc}
-\end{figure}
-
-\begin{figure}[h]
-  \includegraphics[width=\linewidth]{Figures/K_over_T_over_X.png}
-  \caption{Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8\wmk. Such conditions are unphysical at 136~GPa within the lower mantle.}
-  \label{fig:draft_ktc}
-\end{figure}
 
 
 
@@ -268,7 +258,7 @@ The lack of an obvious trend in $\chi$ against $T$ can be countered by plotting 
 
 Ohta eq. 9 
 \begin{equation}%-----
-\kappa_{i}=\left ( 1-C \right )\kappa_{MgSiO_{3}}+C\ \kappa_{FeSiO_{3}}
+\kappa_{i}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}
 \label{eq.ohta9}
 \end{equation}%-------         
 \\ *$\kappa_{i}$ - the composition-dependent conducitivity, if it were linearly interpolated between endmembers (\wmk)\\
@@ -287,7 +277,7 @@ This equation describes the conductivity of an intermediate composition, assumin
 Okuda eq. 5 
 
 \begin{equation}%-----
-\kappa_{adj}=\kappa_{ref}\left ( \frac{\rho}{\rho_{ref}} \right )^{g}\left ( \frac{T_{ref}}{T} \right )^{a}
+\kappa_{adj}=\kappa_{\mathrm{ref}}\left ( \frac{\rho}{\rho_{\mathrm{ref}}} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}
 \label{eq.okuda5}
 \end{equation}%-------
 \\ $\kappa_{adj}$ - temperature and density-dependent conductivity of an endmember (\wmk)\\
@@ -313,13 +303,9 @@ $V_{\mathrm{ref}}$ - reference volume of an endmember (E-30 m$^3$)\\
 $V$ - temperature-dependent volume of an endmember (E-30 m$^3$)\\
 $h$ - exponent controlling volume-dependent conducitvity of an endmember\\
 
-I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.okuda5_mod}), where density and volume are inversely proportional. Varying $a$ and $h$ I fit this equation for both Mg and Fe endmembers, using reference values from 1000~K (see Figure \ref{fig:draft_kt}). The purpose of this is to scale the conductivities needed for Eq. \ref{eq.ohta9} to any temperature of interest.
+I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.okuda5_mod}), where density and volume are inversely proportional. Varying $a$ and $h$ I fit this equation for both Mg and Fe endmembers, using reference values from 1000~K (see Figure \ref{fig:kappa_temp_01}). The purpose of this is to scale the conductivities needed for Eq. \ref{eq.ohta9} to any temperature of interest.
 
-\begin{figure}[h]
-  \includegraphics[width=\linewidth]{Figures/draft_kT.png}
-  \caption{}
-  \label{fig:draft_kt}
-\end{figure}
+
 
 
 
@@ -330,7 +316,7 @@ I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.o
 
 
 
-$$\kappa_{\mathrm{latt}}=\kappa_{\mathrm{i}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )arctan\left ( \frac{\omega_{\mathrm{M}}}{\omega_{\mathrm{0}}} \right )$$
+$$\kappa_{\mathrm{latt}}=\kappa_{\mathrm{i}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )\mathrm{arctan}\left ( \frac{\omega_{\mathrm{M}}}{\omega_{\mathrm{0}}} \right )$$
 
 $$\kappa_{\mathrm{i}}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}$$
 
@@ -340,7 +326,7 @@ $$\chi^{T}=A T^{B}$$
 
 $$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{\rho}{\rho_{\mathrm{ref}}} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
 
-$$\frac{\rho }{\rho _{\mathrm{ref}}} \equiv \frac{V_{\mathrm{ref}}}{V}$$%$$\left ( \frac{\rho }{\rho _{\mathrm{ref}}} \right )^{g} = \left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}$$
+$$\frac{\rho }{\rho _{\mathrm{ref}}} \equiv \frac{V_{\mathrm{ref}}}{V}$$
 
 $$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
 
@@ -350,7 +336,7 @@ $$h \sim \left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) 
 
 $$\frac{V_{\mathrm{ref}}}{V(T)} \approx  mT+c$$
 
-$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{v}} \left ( mT+c \right )^{h} \left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
+$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}} \left ( mT+c \right )^{h} \left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
 
 
 

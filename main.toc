@@ -55,15 +55,15 @@
 \contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{21}{subsection.78}
 \contentsline {section}{\numberline {4.3}Results}{22}{section.79}
 \contentsline {section}{\numberline {4.4}Making the mantle model}{24}{section.83}
-\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{25}{subsection.84}
+\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{24}{subsection.84}
 \contentsline {subsubsection}{Compositional dependence}{25}{section*.85}
-\contentsline {subsubsection}{Temperature dependence}{28}{section*.94}
-\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{31}{chapter.98}
-\contentsline {section}{\numberline {5.1}Main Section 1}{31}{section.99}
-\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{31}{subsection.100}
-\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{33}{chapter.101}
-\contentsline {section}{\numberline {6.1}Main Section 1}{33}{section.102}
-\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{33}{subsection.103}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{35}{appendix.104}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{35}{section.105}
-\contentsline {chapter}{Bibliography}{37}{appendix*.106}
+\contentsline {subsubsection}{Temperature dependence}{28}{section*.92}
+\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{31}{chapter.95}
+\contentsline {section}{\numberline {5.1}Main Section 1}{31}{section.96}
+\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{31}{subsection.97}
+\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{33}{chapter.98}
+\contentsline {section}{\numberline {6.1}Main Section 1}{33}{section.99}
+\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{33}{subsection.100}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{35}{appendix.101}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{35}{section.102}
+\contentsline {chapter}{Bibliography}{37}{appendix*.103}
