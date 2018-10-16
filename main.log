@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  15 OCT 2018 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  16 OCT 2018 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1763,8 +1763,18 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Ch
-apter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
-(./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
+apter3.aux) (./Chapters/Chapter4.aux
+
+LaTeX Warning: Label `eq.ohta7' multiply defined.
+
+
+LaTeX Warning: Label `eq.ohta9' multiply defined.
+
+
+LaTeX Warning: Label `eq.ohta8' multiply defined.
+
+) (./Chapters/Chapter5.aux) (./Chapters/Chapter6.aux)
+(./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
@@ -2637,19 +2647,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8259B202DA616147D824BB4132D8D74C;11249.
+(rerunfilecheck)             Checksum: FDDE8329B9428B929D05381531167CB3;11254.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34188 strings out of 492990
- 696579 string characters out of 6121926
- 942814 words of memory out of 5000000
+ 34191 strings out of 492990
+ 696630 string characters out of 6121926
+ 942850 words of memory out of 5000000
  37134 multiletter control sequences out of 15000+600000
  595939 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2672,10 +2685,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (63 pages, 1131966 bytes).
+Output written on main.pdf (63 pages, 1133370 bytes).
 PDF statistics:
- 1022 PDF objects out of 1200 (max. 8388607)
- 913 compressed objects within 10 object streams
- 202 named destinations out of 1000 (max. 500000)
+ 1027 PDF objects out of 1200 (max. 8388607)
+ 918 compressed objects within 10 object streams
+ 205 named destinations out of 1000 (max. 500000)
  579 words of extra memory for PDF output out of 10000 (max. 10000000)
 

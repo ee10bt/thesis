@@ -28,43 +28,43 @@ The effect of impurities on lattice thermal conductivity is approximated by \cit
 
 \begin{equation}
 k_{\mathrm{S}}=k_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{S}}}{\omega_{\mathrm{D}}} \right )\arctan \left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{S}}} \right ),
-\label{eq.SS2015SM.6}
+\label{SS2015SM.6}
 \end{equation}
 \\
-where $\omega_{\mathrm{S}}$ is the phonon frequency at which the mean free path is equal to that of the solute atoms, and $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $k_{\mathrm{V}}$ is the compositionally-weighted average of endmember conductivities, 
+where $\omega_{\mathrm{S}}$ is the phonon frequency at which the mean free path is equal to that of the solute Fe atoms, and $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $k_{\mathrm{V}}$ is the compositionally-weighted average of endmember conductivities, 
 
 \begin{equation}
 k_{\mathrm{V}}=\left ( 1-x \right )k_{1} + x\ k_{2} \ ,
-\label{eq.SS2015SM.7}
+\label{SS2015SM.7}
 \end{equation}
 \\
 where $k_{\mathrm{1}}$ and $k_{\mathrm{2}}$ are the pure endmember conductivities, and $x$ is the decimal concentration of the second endmember \citep[][Eq. S7]{Stackhouse2015}.
 
-Considering Eq. \ref{eq.SS2015SM.6}, when $\omega_{\mathrm{S}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{S}})$, so $k_{S} \rightarrow k_{V}$, the conductivity considering impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
+Considering Eq. \ref{SS2015SM.6}, when $\omega_{\mathrm{S}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{S}})$, so $k_{S} \rightarrow k_{V}$, the conductivity considering impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
 
-On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{S}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}})\rightarrow\pi/2$, but $(\omega_{\mathrm{S}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{S}} < k_{\mathrm{V}}$, and impurity scattering has an effect on the resultant conductivity. Adding impurities has an effect like this when the conductivity has not already been reduced for other reasons, like at low temperatures compared to the conditions mentioned above. 
+On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{S}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}})\rightarrow\pi/2$, but $(\omega_{\mathrm{S}}/\omega_{\mathrm{D}})\ll\pi/2$, so $k_{\mathrm{S}} < k_{\mathrm{V}}$, and impurity scattering has an effect on the resultant conductivity. Adding impurities has an effect like this when the conductivity has not already been reduced for other reasons, like at low temperatures compared to the conditions mentioned above. 
 
-That factors which affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{eq.SS2015SM.6} can be expressed \citep[][Eq. S11]{Stackhouse2015} as
+That factors which affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{SS2015SM.6} can be expressed \citep[][Eq. S11]{Stackhouse2015} as
 
 \begin{equation}
 \left ( \frac{\omega_{S}}{\omega_{D}} \right )^{2} = \frac{1}{\left ( 6\pi^{2} \right )^{1/3}} \ \frac{T}{3 \varepsilon T_{S}} \ ,
-\label{eq.SS2015SM.11}
+\label{SS2015SM.11}
 \end{equation}
 \\
 where $T$ is temperature, $T_{\mathrm{S}}$ is the temperature at which the phonon mean free path length approaches that of the interatomic seperation, and $\varepsilon$ is related to the mass difference and proportion of endmembers by
 
 \begin{equation}
 \varepsilon = \frac{\left (M_{2}-M_{1}  \right )^{2}}{\overline{M}^{2}} \ x\left ( 1-x \right ) \ ,
-\label{eq.SS2015SM.9}
+\label{SS2015SM.9}
 \end{equation}
 \\
 where $M_{i}$ is the atomic mass of the $i$-th endmember, $\overline{M}$ is the mean atomic mass of the solid solution, and $x$ is the proporition of endmembers \citep[][Eq. S9]{Stackhouse2015}.
 
-As the temperature increases, so too does the left-hand side of Equation \ref{eq.SS2015SM.11}. As discussed above, this reduces the effect of scattering caused by impurities, which will be relevant at CMB conditions. 
+As the temperature increases, so too does the left-hand side of Equation \ref{SS2015SM.11}. As discussed above, this reduces the effect of scattering caused by impurities, which will be relevant at CMB conditions. 
 
-$\varepsilon$ increases with the mass difference of the endmembers, and the impurity concentration. Increasing $\varepsilon$ tends to reduce the phonon frequency ratio, meaning impurity scattering will affect the resultant conductivity more. The atomic masses of Mg and Fe are 24 and 56, so \fesios is 1.32 times heavier than \mgsio. As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will have little effect on conductivity, where the mass changes are typically small (e.g. $^{24}$Mg to $^{25/26}$Mg) and abundances are low (Mg standard atomic weight is 24.3, the ratio of $^{24}$Mg to heavier isotopes is roughly 4:1).
+$\varepsilon$ increases with the mass difference of the endmembers, and the impurity concentration. Increasing $\varepsilon$ tends to reduce the phonon frequency ratio, meaning impurity scattering will affect the resultant conductivity more. The atomic masses of Mg and Fe are 24 and 56, so \fesios is 1.32 times heavier than \mgsio. As an aside, Equation~\ref{SS2015SM.9} predicts that isotopic variations will have little effect on conductivity, where the mass changes are typically small (e.g. $^{24}$Mg to $^{25/26}$Mg) and abundances are low (Mg standard atomic weight is 24.3, the ratio of $^{24}$Mg to heavier isotopes is roughly 4:1).
 
-The composition control term in Equation~\ref{eq.SS2015SM.9}, $x(1-x)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the atomic structure.
+The composition control term in Equation~\ref{SS2015SM.9}, $x(1-x)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the atomic structure.
 
 !!! 181012 TALK ABOUT THESE EFFECTS AT CMB SPECIFICALLY and how they relate to the questions i'm posing?
 
@@ -311,28 +311,16 @@ I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.o
 
 \pagebreak
 
-The lattice thermal conductivity (in \wmk) of a material as a function of temperature and composition can be approximated by the following equation,
 
-\begin{equation}
-\kappa_{\mathrm{latt}}=\kappa_{\mathrm{i}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )\mathrm{arctan}\left ( \frac{\omega_{\mathrm{M}}}{\omega_{\mathrm{0}}} \right ),
-\label{eq.ohta7}
-\end{equation}
-\\
-where $\omega_{\mathrm{0}}$ is the phonon frequency at which the mean free path is equal to that of the solute atoms, and $\omega_{\mathrm{M}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $\kappa_{\mathrm{i}}$ is the conductivity of the solid solution in the absence of impurity scattering, the linear interpolation to a composition between endmembers,
 
-\begin{equation}
-\kappa_{\mathrm{i}}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}\ ,
-\label{eq.ohta9}
-\end{equation}
-\\
-$C$ being the decimal concentration of Fe impurities, with $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$ as the temperature dependent conductivities of the endmembers. The ratio of the phonon frequencies can be expressed as
 
-\begin{equation}
-\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}\ ,
-\label{eq.ohta8}
-\end{equation}
-\\
-where $\chi$ is a constant to be fit, and $T$ is the temperature of interest. $\chi$ can be thought as a measure of resistance to the effects of impurity scattering, independent of the conductivity magnitude in question. For a given $T$ and $C$, increasing $\chi$ increases the phonon frequency ratio which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$.
+
+
+$$\kappa_{\mathrm{latt}}=\kappa_{\mathrm{i}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )\mathrm{arctan}\left ( \frac{\omega_{\mathrm{M}}}{\omega_{\mathrm{0}}} \right )$$
+
+$$\kappa_{\mathrm{i}}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}$$
+
+$$\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}$$
 
 $$\chi^{T}=A T^{B}$$
 
