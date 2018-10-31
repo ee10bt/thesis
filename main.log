@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  18 OCT 2018 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  31 OCT 2018 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2116,23 +2116,9 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 
 
 {/apps/applications/texlive/2017/1/default/2017/texmf-var/fonts/map/pdftex/updm
-ap/pdftex.map}]
+ap/pdftex.map}] [2
 
-Package scrlayer-scrpage Warning: \headheight to low.
-(scrlayer-scrpage)                At least 21.896pt needed,
-(scrlayer-scrpage)                but only 18.85364pt found.
-(scrlayer-scrpage)                I'll enlarge \headheight, for further
-(scrlayer-scrpage)                processing, but you should do this yourself,
-(scrlayer-scrpage)                e.g., setting geometry's option
-(scrlayer-scrpage)                `head=21.896pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-70.
-
-
-Overfull \vbox (3.04236pt too high) has occurred while \output is active []
-
-
-[2]
+]
 --------------------
  Declaration of Authorship
 --------------------
@@ -2151,9 +2137,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
  []
 
 1: section
-[3
 
-] [4
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 21.896pt needed,
+(scrlayer-scrpage)                but only 18.85364pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting geometry's option
+(scrlayer-scrpage)                `head=21.896pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+96.
+
+
+Overfull \vbox (3.04236pt too high) has occurred while \output is active []
+
+
+[3] [4
 
 ] [5] [6
 
@@ -2269,9 +2268,9 @@ $ en-statite (5.0 Wm$[]$K$[]$REF)
  []
 
 
-Overfull \hbox (10.73119pt too wide) in paragraph at lines 62--63
+Overfull \hbox (1.68663pt too wide) in paragraph at lines 62--63
 \T1/ppl/m/n/10.95 of 3.0 Wm$[]$K$[]$just be-neath the man-tle tran-si-tion zone
- at 1900 K, and 12.0 Wm$[]$K$[]$at
+ at 1900 K, and 12.0 Wm$[]$K$[]$
  []
 
 [3]) [4]
@@ -2284,13 +2283,7 @@ Chapter 2.
 
 
 
-]
-Overfull \hbox (13.89531pt too wide) in paragraph at lines 28--29
-\T1/ppl/m/n/10.95 With the in-ter-atomic po-ten-tial of []Oganov et al. ([][]20
-00[][]) we sim-u-late bridg-man-ite (MgSiO$[]$
- []
-
-[6] [7]
+] [6] [7]
 <Figures/cell_diagram.png, id=606, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
@@ -2331,9 +2324,9 @@ g in cells where cross-
  []
 
 [10 <./Figures/ss_direct_mod.png>]
-Overfull \hbox (7.97014pt too wide) in paragraph at lines 128--129
-\T1/ppl/m/n/10.95 ever, where they might show over-es-ti-mated con-duc-tiv-i-ti
-es com-pared to the fit through
+Overfull \hbox (0.31639pt too wide) in paragraph at lines 128--129
+\T1/ppl/m/n/10.95 ever, where they may show over-es-ti-mated con-duc-tiv-i-ties
+ com-pared to the fit through
  []
 
 <Figures/gk_acf.png, id=637, 1220.30907pt x 514.17094pt>
@@ -2439,146 +2432,139 @@ more op-por-tu-ni-ties for phonon
  []
 
 1: section
-[23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
-
- []
-
-[26] [27]
+[23] [24] [25] [26] [27]
 <Figures/k-t_all_02.png, id=768, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
-Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 134. on inp
-ut line 134.
+Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 135. on inp
+ut line 135.
 Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
- 134.
+ 135.
+ [28 <./Figures/k-t_all_02.png (PNG copy)>]
+<Figures/k-c_all_01.png, id=777, 695.59875pt x 411.03563pt>
+File: Figures/k-c_all_01.png Graphic file (type png)
+<use Figures/k-c_all_01.png>
+Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 149. on inp
+ut line 149.
+Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
+ 149.
+<Figures/K_over_T_over_X.png, id=779, 702.86118pt x 502.34735pt>
+File: Figures/K_over_T_over_X.png Graphic file (type png)
+<use Figures/K_over_T_over_X.png>
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 157. o
+n input line 157.
+Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
+e 157.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28]
-<Figures/k-c_all_01.png, id=777, 695.59875pt x 411.03563pt>
-File: Figures/k-c_all_01.png Graphic file (type png)
-<use Figures/k-c_all_01.png>
-Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 148. on inp
-ut line 148.
-Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
- 148.
- [29 <./Figures/k-t_all_02.png (PNG copy)> <./Figures/k-c_all_01.png>]
-<Figures/K_over_T_over_X.png, id=785, 702.86118pt x 502.34735pt>
-File: Figures/K_over_T_over_X.png Graphic file (type png)
-<use Figures/K_over_T_over_X.png>
-Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 156. o
-n input line 156.
-Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
-e 156.
-
-[30 <./Figures/K_over_T_over_X.png>] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 203--208
+[29 <./Figures/k-c_all_01.png>] [30 <./Figures/K_over_T_over_X.png>] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 204--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--228
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 220--227
-
- []
-
-
-Overfull \hbox (3.70665pt too wide) in paragraph at lines 228--229
+Overfull \hbox (3.70665pt too wide) in paragraph at lines 229--230
 []\T1/ppl/m/n/10.95 The equa-tion splits $\OML/zplm/m/it/10.95 ![]\OT1/zplm/m/n
 /10.95 /\OML/zplm/m/it/10.95 ![]$ \T1/ppl/m/n/10.95 into its tem-per-a-ture and
  composition-dependent com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--240
+Underfull \hbox (badness 10000) in paragraph at lines 235--241
 
  []
 
-[33]
-<Figures/draft_XT.png, id=824, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=819, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
-Package pdftex.def Info: Figures/draft_XT.png  used on input line 244. on input
- line 244.
+Package pdftex.def Info: Figures/draft_XT.png  used on input line 245. on input
+ line 245.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
-e 244.
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
-
- []
-
-<Figures/draft_XTT.png, id=829, 797.98125pt x 490.83376pt>
-File: Figures/draft_XTT.png Graphic file (type png)
-<use Figures/draft_XTT.png>
-Package pdftex.def Info: Figures/draft_XTT.png  used on input line 252. on inpu
-t line 252.
-Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
-e 252.
+e 245.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (32.56096pt too wide) in paragraph at lines 263--268
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+[33]
+<Figures/draft_XTT.png, id=829, 797.98125pt x 490.83376pt>
+File: Figures/draft_XTT.png Graphic file (type png)
+<use Figures/draft_XTT.png>
+Package pdftex.def Info: Figures/draft_XTT.png  used on input line 253. on inpu
+t line 253.
+Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
+e 253.
+
+Overfull \hbox (32.56096pt too wide) in paragraph at lines 264--269
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity for Mg end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Overfull \hbox (23.15935pt too wide) in paragraph at lines 263--268
+Overfull \hbox (23.15935pt too wide) in paragraph at lines 264--269
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and volume-depen
 dent con-duc-tiv-ity for Fe end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--268
+Underfull \hbox (badness 10000) in paragraph at lines 264--269
+
+ []
+
+[34 <./Figures/draft_XT.png> <./Figures/draft_XTT.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
-
- []
-
-[34 <./Figures/draft_XT.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
 
-Overfull \hbox (4.13586pt too wide) in paragraph at lines 282--289
+Overfull \hbox (4.13586pt too wide) in paragraph at lines 283--290
 \OML/zplm/m/it/10.95 ^^T[]$ \T1/ppl/m/n/10.95 - tem-per-a-ture and density-depe
 ndent con-duc-tiv-ity of an end-mem-ber (Wm$[]$K$[]$) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--289
-
- []
-
-[35 <./Figures/draft_XTT.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 283--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--305
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 300--306
 
  []
 
 
 LaTeX Warning: Reference `fig:kappa_temp_01' on page 36 undefined on input line
- 306.
+ 307.
 
 [36] [37] [38])
 \openout2 = `Chapters/Chapter5.aux'.
@@ -2715,7 +2701,7 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (75 pages, 1140618 bytes).
+Output written on main.pdf (75 pages, 1140485 bytes).
 PDF statistics:
  1085 PDF objects out of 1200 (max. 8388607)
  964 compressed objects within 10 object streams
