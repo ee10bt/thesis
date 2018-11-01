@@ -99,20 +99,23 @@ where $ij$ refers to an atom pair, $R$ is interatomic distance, $z$ is atomic ch
 $b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\rho$ value for Fe-O. We fit to the elasticity results of \citet{Parise1990}, an experimental study of (Mg$_{0.9}$,Fe$_{0.1}$)SiO$_3$ bridgmanite up to 433~K. Despite potential fitting being an improvement on solely changing mass (((PROVE IT!?))), it is still not perfect as the charge of our fitted Fe is not varied from the original Mg.
 
 !!! Validate potentials
-!!! Validate Fe vs. heavy Magnesium
-!!! Include Oganav table (earlier?), with the fitted Fe info
+
+!!! Validate Fe vs. heavy Mg, isotope mass
+
+!!! Include Oganov table (earlier?), with the fitted Fe info
 
 
 %---------------------------------------
 \subsection{Where do the impurities go?} 
 %---------------------------------------
 
-Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple script (((INCLUDE IN APPENDIX, MENTION MATLAB?))) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
+Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple MATLAB script (((REF, APPENDIX))) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
 
 Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region (((ELABORATE WITH FIGURE?))). To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. After iron is added, the standard direct method or Green-Kubo workflow is followed.
 
 !!! NICE PICTURE/DIAGRAM HERE?
-!!! Comparison of random and homogeneous distribution
+
+!!! Comparison of random and homogeneous distribution, don't make reader engage their imagination, show obvious picture
 
 
 
@@ -125,7 +128,7 @@ Due to the microscopic nature of the system, we do not want all of the added iro
 % have I gone too far into discussion here, interpretation of results?
 Lattice thermal conductivities obtained from Green-Kubo calculations are plotted against temperature in Figure \ref{fig:kappa-temp_01}, for Mg and Fe-endmembers and the 50/50 solid solution mix.
 
-Conductivity decreases with temperature, approximately following $\kappa \propto 1/T^{0.9}$ at the studied 136~GPa. This is in contrast to the typically expected $\kappa \propto 1/T$ relation, indicating some kind of saturation in conductivity decrease with temperature.
+Conductivity decreases with temperature, approximately following $\kappa \propto 1/T^{0.9}$ at the pressure of 136~GPa considered here. This is in contrast to the typically expected $\kappa \propto 1/T$ relation, indicating some kind of saturation in conductivity decrease with temperature.
 
 \fesios has a consistently lower conductivity than \mgsio, which is to be expected due to the atomic mass increase [WRONG, SHEAR MOD DECREASE, DENSITY INCREASE, WAVESPEED EQUATION]. The two trends appear to be converging, indicating the conductivity of both species may be equal given a high enough (though unphysical for the lower mantle) temperature. This suggests there is a minimum conductivity associated with the crystal structure, reached first by \fesios with its inherently lower conductivity.
 
@@ -165,11 +168,11 @@ A simple interpolation between endmember conductivities is insufficient, the pre
 \section{Making the mantle model}
 %-----------------------------------------------------------
 
-I want to determine a model for the lattice thermal conductivity of \mgfesios perovskite at CMB conditions. Whilst the CMB is a small section of the lower mantle, it marks the heat flow boundary from core to mantle, making it a very interesting region for studies of on both sides of the interface. The pressure is always 136~GPa, but I am interested in how temperature and Fe-content affect bridgmanite \tc.
+In this section I develop a model for the lattice thermal conductivity of \mgfesios perovskite at CMB conditions. Whilst the CMB is a small section of the lower mantle, it marks the heat flow boundary from core to mantle, making it a very important region for studies of both sides of the interface. The pressure is 136~GPa, but I am interested in how temperature and Fe-content affect bridgmanite \tc.
 
-Due to uncertainty in the lower mantle's compositional distrubution, properties like \tcs are averaged considering the abundance of each mineral component. There are also mineral solid solutions to consider however, particularly the concentration of Fe impurities in \mgsios towards \fesio, and the phase boundary between bridgmanite and \mgsios post-perovskite. 
+Due to uncertainty in the lower mantle's composition, properties like \tcs are averaged considering the abundance of each mineral component. There are also solid solutions to consider however, particularly the concentration of Fe in \mgsio, as well as the phase boundary between bridgmanite and \mgsios post-perovskite. 
 
-The conductivity of an intermediate member in a solid solution is not a simple weighted average between endmembers, you cannot interpolate linearly. This can be seen in Figure \ref{fig:kappa-temp_01}, where the (Mg$_{0.5}$,Fe$_{0.5}$)SiO$_3$ results do not plot between those of \mgsios and \fesio.
+The conductivity of an intermediate composition is not a simple weighted average of the endmember values, you cannot interpolate linearly. This can be seen in Figure \ref{fig:kappa-temp_01}, where the (Mg$_{0.5}$,Fe$_{0.5}$)SiO$_3$ results do not plot between those of \mgsios and \fesio.
 
 
 
@@ -181,13 +184,13 @@ The conductivity of an intermediate member in a solid solution is not a simple w
 
 [Equations from \cite{Ohta2017} (eq. 7,8,9), and \cite{Okuda2017} (eq. 5)]
 
-Equations and functional forms exist to determine the temperature and compostional dependence of \tc, and it is possible to combine the two. The basic idea is to determine the conductivity of \mgsios and \fesios endmembers at the temperature of interest, and then apply the (temperature-dependent) effect of composition.
+Equations and functional forms exist for the temperature and compostional dependence of \tc, and it is possible to combine the two. The basic idea is to determine the conductivity of \mgsios and \fesios endmembers at the temperature of interest, and then apply the (temperature-dependent) effect of composition.
 
-\citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017} apply to experimental ferropericlase data. Following a similar methodology, I will be fitting constants that apply this compositional dependence to (Mg,Fe)SiO$_3$ perovskite results at various temperatures (1000~K, 2000~K, 3000~K, 4000~K, and 5000~K). In an additional step, I establish the temperature-dependence of the fit constants. This means I am able to quantify the effect of composition at all temperatures.
+\citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017}use to experimental ferropericlase data. Following a similar methodology, I fit the functional form to my (Mg,Fe)SiO$_3$ perovskite results at various temperatures (1000~K, 2000~K, 3000~K, 4000~K, and 5000~K). In an additional step, I establish the temperature-dependence of the fit constants. This means I am able to quantify the effect of composition at all temperatures.
 
 \citet{Okuda2017} present a temperature scaling relation for lattice conductivity \citep[originally from][]{Manthilake2011}, fit to their experimental results of bridgmanite. I apply this temperature scaling to computational results of \mgsios and \fesios at 136~GPa. With the temperature dependence of these endmembers and of the compositional effect, I am able to able to determine the conductivity of any composition, at any temperature in the range 1000~K to 5000~K, at 136~GPa representative of the CMB.
 
-The aforementioned temperaturedependence from \citet{Manthilake2011} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion, and the equations will be altered to accomodate this.
+The aforementioned temperature dependence from \citet{Manthilake2011} considers density, allowing conductivity to be determined as a function of temperature and pressure. In the examples I will present, I am only concerned with systems at 136~GPa. All density changes will result from thermal expansion, and the equations will be altered to accomodate this.
 
 Some of the equations in the following section have already been presented as analogous forms in Section \ref{impur_theory}. The equations are kept similar to their published form, which was \citet{Stackhouse2015} in the former, and \citet{Ohta2017, Okuda2017} in the following.
 
