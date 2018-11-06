@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  1 NOV 2018 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  6 NOV 2018 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1773,6 +1773,18 @@ LaTeX Warning: Label `eq.ohta9' multiply defined.
 
 LaTeX Warning: Label `eq.ohta8' multiply defined.
 
+
+LaTeX Warning: Label `eq.chi_scale' multiply defined.
+
+
+LaTeX Warning: Label `fig:draft_xt' multiply defined.
+
+
+LaTeX Warning: Label `fig:draft_xtt' multiply defined.
+
+
+LaTeX Warning: Label `eq.okuda5' multiply defined.
+
 ) (./Chapters/Chapter5.aux) (./Chapters/Chapter6.aux)
 (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
@@ -2284,7 +2296,7 @@ Chapter 2.
 
 
 ] [6] [7]
-<Figures/cell_diagram.png, id=606, 1553.805pt x 1391.1975pt>
+<Figures/cell_diagram.png, id=614, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
@@ -2295,7 +2307,7 @@ e 82.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/ss_direct_mod.png, id=608, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=616, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
@@ -2306,7 +2318,7 @@ e 88.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8]
-<Figures/ideal_extrap.png, id=620, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=628, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
@@ -2329,7 +2341,7 @@ Overfull \hbox (0.31639pt too wide) in paragraph at lines 128--129
  com-pared to the fit through
  []
 
-<Figures/gk_acf.png, id=637, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=645, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
@@ -2340,7 +2352,7 @@ e 151.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./Figures/ideal_extrap.png>]
-<Figures/gk_int.png, id=648, 1237.62375pt x 533.74406pt>
+<Figures/gk_int.png, id=656, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
@@ -2433,7 +2445,7 @@ more op-por-tu-ni-ties for phonon
 
 1: section
 [23] [24] [25] [26] [27]
-<Figures/k-t_all_02.png, id=768, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=776, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 138. on inp
@@ -2445,7 +2457,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [28]
-<Figures/k-c_all_01.png, id=777, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=785, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 152. on inp
@@ -2456,7 +2468,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=779, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=787, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 160. o
@@ -2503,7 +2515,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--244
  []
 
 [33]
-<Figures/draft_XT.png, id=824, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=832, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 248. on input
@@ -2515,7 +2527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-<Figures/draft_XTT.png, id=829, 797.98125pt x 490.83376pt>
+<Figures/draft_XTT.png, id=837, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 256. on inpu
@@ -2577,21 +2589,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 303--309
 LaTeX Warning: Reference `fig:kappa_temp_01' on page 36 undefined on input line
  310.
 
-[36] [37] [38])
+[36]
+File: Figures/draft_XT.png Graphic file (type png)
+<use Figures/draft_XT.png>
+Package pdftex.def Info: Figures/draft_XT.png  used on input line 342. on input
+ line 342.
+Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
+e 342.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37]
+File: Figures/draft_XTT.png Graphic file (type png)
+<use Figures/draft_XTT.png>
+Package pdftex.def Info: Figures/draft_XTT.png  used on input line 357. on inpu
+t line 357.
+Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
+e 357.
+ [38] [39])
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex
-Chapter 5.
-)
-1: section
-[39
+ (./Chapters/Chapter5.tex [40
 
 
 
 ]
+Chapter 5.
+)
+1: section
+[41]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [40
+ (./Chapters/Chapter6.tex [42
 
 
 
@@ -2599,10 +2629,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[41]
+[43]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [42
+ (./Appendices/AppendixA.tex [44
 
 
 
@@ -2615,7 +2645,7 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[43] [44
+[45] [46
 
 
 ]
@@ -2632,13 +2662,13 @@ l Con-duc-tiv-ity and the Geotherm
  []
 
 1: section
-[45]
+[47]
 Overfull \hbox (4.87933pt too wide) in paragraph at lines 355--355
 [][]\T1/ppl/m/n/10.95 Kubo, R. (1957). ^^P  Statistical-Mechanical The-ory of I
 r-re-versible Pro-cesses. I.^^Q In: \T1/ppl/m/it/10.95 Journa;
  []
 
-[46]
+[48]
 Overfull \hbox (29.89816pt too wide) in paragraph at lines 355--355
 \T1/ppl/m/n/10.95 tems^^Q. In: \T1/ppl/m/it/10.95 Molec-u-lar Physics \T1/ppl/m
 /n/10.95 101.14, pp. 2303^^U2307. \T1/ppl/m/sc/10.95 doi\T1/ppl/m/n/10.95 : [][
@@ -2652,21 +2682,21 @@ w . sciencedirect . com / science / article / pii / S0031920100001977$[][]\T1/p
 pl/m/n/10.95 . 
  []
 
-[47]
+[49]
 Overfull \hbox (4.39392pt too wide) in paragraph at lines 355--355
 \T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
  doi / 10 . 1002 / 2014GL059385 /
  []
 
-[48]
+[50]
 Overfull \hbox (10.60612pt too wide) in paragraph at lines 355--355
 [][]\T1/ppl/m/n/10.95 Tosi, Nicola et al. (2013). ^^P  Man-tle dy-nam-ics with 
 pressure- and temperature-dependent
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
-[49]
+[51]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
@@ -2674,7 +2704,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FDDE8329B9428B929D05381531167CB3;11254.
+(rerunfilecheck)             Checksum: 265A4560367F795970B1E8AC57C410B1;11258.
 
 
 LaTeX Warning: There were undefined references.
@@ -2687,9 +2717,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34203 strings out of 492990
- 696714 string characters out of 6121926
- 939872 words of memory out of 5000000
+ 34209 strings out of 492990
+ 696790 string characters out of 6121926
+ 940874 words of memory out of 5000000
  37134 multiletter control sequences out of 15000+600000
  595939 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2712,10 +2742,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (75 pages, 1140566 bytes).
+Output written on main.pdf (77 pages, 1144345 bytes).
 PDF statistics:
- 1085 PDF objects out of 1200 (max. 8388607)
- 964 compressed objects within 10 object streams
- 217 named destinations out of 1000 (max. 500000)
+ 1110 PDF objects out of 1200 (max. 8388607)
+ 986 compressed objects within 10 object streams
+ 223 named destinations out of 1000 (max. 500000)
  579 words of extra memory for PDF output out of 10000 (max. 10000000)
 

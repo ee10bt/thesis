@@ -186,7 +186,7 @@ The conductivity of an intermediate composition is not a simple weighted average
 
 Equations and functional forms exist for the temperature and compostional dependence of \tc, and it is possible to combine the two. The basic idea is to determine the conductivity of \mgsios and \fesios endmembers at the temperature of interest, and then apply the (temperature-dependent) effect of composition.
 
-\citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017}use to experimental ferropericlase data. Following a similar methodology, I fit the functional form to my (Mg,Fe)SiO$_3$ perovskite results at various temperatures (1000~K, 2000~K, 3000~K, 4000~K, and 5000~K). In an additional step, I establish the temperature-dependence of the fit constants. This means I am able to quantify the effect of composition at all temperatures.
+\citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017}use to fit experimental ferropericlase data. Following a similar methodology, I fit the functional form to my (Mg,Fe)SiO$_3$ perovskite results at various temperatures (1000~K, 2000~K, 3000~K, 4000~K, and 5000~K). In an additional step, I establish the temperature-dependence of the fit constants. This means I am able to quantify the effect of composition at all temperatures.
 
 \citet{Okuda2017} present a temperature scaling relation for lattice conductivity \citep[originally from][]{Manthilake2011}, fit to their experimental results of bridgmanite. I apply this temperature scaling to computational results of \mgsios and \fesios at 136~GPa. With the temperature dependence of these endmembers and of the compositional effect, I am able to able to determine the conductivity of any composition, at any temperature in the range 1000~K to 5000~K, at 136~GPa representative of the CMB.
 
@@ -316,31 +316,57 @@ I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.o
 \pagebreak
 
 The lattice thermal conductivity (in \wmk) of a material as a function of temperature and composition can be approximated by the following equation,
-
+%
 \begin{equation}
 \kappa_{\mathrm{latt}}=\kappa_{\mathrm{i}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )\mathrm{arctan}\left ( \frac{\omega_{\mathrm{M}}}{\omega_{\mathrm{0}}} \right ),
 \label{eq.ohta7}
 \end{equation}
-\\
+%
 where $\omega_{\mathrm{0}}$ is the phonon frequency at which the mean free path is equal to that of the solute atoms, and $\omega_{\mathrm{M}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $\kappa_{\mathrm{i}}$ is the conductivity of the solid solution in the absence of impurity scattering, the linear interpolation to a composition between endmembers,
-
+%
 \begin{equation}
 \kappa_{\mathrm{i}}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}\ ,
 \label{eq.ohta9}
 \end{equation}
-\\
+%
 $C$ being the decimal concentration of Fe impurities, with $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$ as the temperature dependent conductivities of the endmembers. The ratio of the phonon frequencies can be expressed as
-
+%
 \begin{equation}
 \left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}\ ,
 \label{eq.ohta8}
 \end{equation}
-\\
-where $\chi$ is a constant to be fit, and $T$ is the temperature of interest. $\chi$ can be thought as a measure of resistance to the effects of impurity scattering, independent of the conductivity magnitude in question. For a given $T$ and $C$, increasing $\chi$ increases the phonon frequency ratio which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$.
+%
+where $\chi$ is a constant to be fit, and $T$ is the temperature of interest. $\chi$ can be thought as a measure of resistance to the effects of impurity scattering. For a given $T$ and $C$, increasing $\chi$ increases the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows $\chi$ over $T$ fit with a power law (a.) and 4th order polynomial (b.), the former of which is a poor fit and the latter an egregious overfitting. 
 
-$$\chi^{T}=A T^{B}$$
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/draft_XT.png}
+  \caption{The fit $\chi$ values plotted against $T$, with power law (left) and 4th order polynomial (right) trendlines. Blue and orange series are the exponential and power law fits obtained from plotting $\chi^T/T$ (see Figure \ref{fig:draft_xtt}).}
+  \label{fig:draft_xt}
+\end{figure}
 
-$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{\rho}{\rho_{\mathrm{ref}}} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
+The lack of an obvious trend in $\chi$ against $T$ can be countered by plotting $\chi^T$ over $T$, and fitting either a expontial or power law relationship (Figure \ref{fig:draft_xtt}). I use the following power law-relationship, 
+%
+\begin{equation}%-----
+\chi^{T}=A T^{B},
+\label{eq.chi_scale}
+\end{equation}%-------
+%
+where $A$ is the coefficient and $B$ is the exponent to be fit. This fit represents the temperature-dependence better, both statistically and sensitivity-wise compared to an exponential relationship $\left ( \chi^{T}=A e^{BT}\right )$. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. In Figure \ref{fig:draft_xt}, we can see that either of the power law or exponential $\chi^T/T$ fits represent the data better than the $\chi/T$ relations.
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/draft_XTT.png}
+  \caption{Exponential fit in blue (more curved), power law in orange (flatter)}
+  \label{fig:draft_xtt}
+\end{figure}
+
+The conductivities of $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$ from Equation \ref{eq.ohta9} can be scaled with temperature, giving an adjusted value 
+%
+\begin{equation}
+\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{\rho}{\rho_{\mathrm{ref}}} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}.
+\label{eq.okuda5}
+\end{equation}
+%
+$\rho$ is density, $g$ and $a$ are exponents which control the nature of the density and temperature-dependence, and ``ref'' denotes a reference value. This equation is fit to the data, anchored around the values of the reference data point. I fit to the data point at 1000~K, as the conductivities at higher temperatures become more similar, converging towards a minimum point. Anchoring to 1000~K reduces the error in the fit, on account of the relatively larger conductivity at this temperature.
 
 $$\frac{\rho }{\rho _{\mathrm{ref}}} \equiv \frac{V_{\mathrm{ref}}}{V}$$
 
