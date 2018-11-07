@@ -194,7 +194,7 @@ The aforementioned temperature dependence from \citet{Manthilake2011} considers 
 
 Some of the equations in the following section have already been presented as analogous forms in Section \ref{impur_theory}. The equations are kept similar to their published form, which was \citet{Stackhouse2015} in the former, and \citet{Ohta2017, Okuda2017} in the following.
 
-
+\pagebreak
     
 %-------------------
 \subsubsection{Compositional dependence}
@@ -309,11 +309,11 @@ $h$ - exponent controlling volume-dependent conducitvity of an endmember\\
 
 I adapt Eq. \ref{eq.okuda5} to consider volume instead of density (Eq. \ref{eq.okuda5_mod}), where density and volume are inversely proportional. Varying $a$ and $h$ I fit this equation for both Mg and Fe endmembers, using reference values from 1000~K (see Figure \ref{fig:kappa_temp_01}). The purpose of this is to scale the conductivities needed for Eq. \ref{eq.ohta9} to any temperature of interest.
 
-
-
-
-
 \pagebreak
+ 
+%-------------------
+\subsubsection{Compositional dependence2}
+%-------------------
 
 The lattice thermal conductivity (in \wmk) of a material as a function of temperature and composition can be approximated by the following equation,
 %
@@ -344,14 +344,14 @@ where $\chi$ is a constant to be fit, and $T$ is the temperature of interest. $\
   \label{fig:draft_xt}
 \end{figure}
 
-The lack of an obvious trend in $\chi$ against $T$ can be countered by plotting $\chi^T$ over $T$, and fitting either a expontial or power law relationship (Figure \ref{fig:draft_xtt}). I use the following power law-relationship, 
+The lack of an obvious trend in $\chi$ against $T$ can be countered by plotting $\chi^T$ over $T$, and fitting either a expontial or power law relationship (Figure~\ref{fig:draft_xtt}). I use the following power law-relationship, 
 %
 \begin{equation}%-----
 \chi^{T}=A T^{B},
 \label{eq.chi_scale}
 \end{equation}%-------
 %
-where $A$ is the coefficient and $B$ is the exponent to be fit. This fit represents the temperature-dependence better, both statistically and sensitivity-wise compared to an exponential relationship $\left ( \chi^{T}=A e^{BT}\right )$. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. In Figure \ref{fig:draft_xt}, we can see that either of the power law or exponential $\chi^T/T$ fits represent the data better than the $\chi/T$ relations.
+where $A$ is the coefficient and $B$ is the exponent to be fit. This fit represents the temperature-dependence better, both statistically and sensitivity-wise compared to an exponential relationship $\left ( \chi^{T}=A e^{BT}\right )$. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. In Figure~\ref{fig:draft_xt}, we can see that either of the power law or exponential $\chi^T/T$ fits represent the data better than the $\chi/T$ relations.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/draft_XTT.png}
@@ -368,20 +368,61 @@ The conductivities of $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{
 %
 $\rho$ is density, $g$ and $a$ are exponents which control the nature of the density and temperature-dependence, and ``ref'' denotes a reference value. This equation is fit to the data, anchored around the values of the reference data point. I fit to the data point at 1000~K, as the conductivities at higher temperatures become more similar, converging towards a minimum point. Anchoring to 1000~K reduces the error in the fit, on account of the relatively larger conductivity at this temperature.
 
-$$\frac{\rho }{\rho _{\mathrm{ref}}} \equiv \frac{V_{\mathrm{ref}}}{V}$$
+For a given composition, the mass of the simulated system does not change with temperature. The number and type of atoms remains constant, while thermal effects cause density variations. Considering the density fraction in Equation~\ref{eq.okuda5}, we can reformulate with
+%
+\begin{equation}
+\frac{\rho }{\rho _{\mathrm{ref}}} \equiv \frac{V_{\mathrm{ref}}}{V} \ ,
+\label{eq.rho_to_vol}
+\end{equation}
+%
+because $\rho \propto V^{-1}$, where $V$ is the volume of the system in question. This gives a modified version of the equation for adjusting conductivity with temperature,
+%
+\begin{equation}
+\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}.
+\label{eq.okuda5mod}
+\end{equation}
 
-$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
+The exponent $g$ represents the rate of change of lattice thermal conductivity with density, at a constant temperature,
+%
+\begin{equation}
+g=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{T} \ .
+\label{eq.g_def}
+\end{equation}
+%
+The density/volume changes that I observe result from thermal effects, i.e. not at a constant temperature and not pressure-driven. The rate of change in conductivity with density in my data are better represented as something like 
+%
+\begin{equation}
+h \sim \left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{P} \ ,
+\label{eq.g_def}
+\end{equation}
+%
+where pressure ($P$) is the condition kept constant. The significance here is that pressure-driven and temperature-driven density changes affect the conductivity differently. At constant temperature, conductivity and density increase with pressure. The opposite is true at constant pressure, where conductivity and density decrease with increasing temperature (for the material and temperatures considered here, THIS IN FOOTNOTE?). The result is $g$ and $h$ having opposite polarities based on the scenarios they describe.
 
-$$g=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{T}$$
+I do not want to have have volume as an input ((INDEPENTENT?)) for the model, especially as all data are obtained from constant pressure (136~GPa) calculations and any volume variations relate to thermal expansion. I express the volume ratio shown in Equation~\ref{eq.okuda5mod} as 
+%
+\begin{equation}
+\frac{V_{\mathrm{ref}}}{V(T)} \approx  mT+c \ ,
+\label{eq.linear_v_mT_c}
+\end{equation}
+%
+a simple linear function of temperature, where $m$ is the gradient and $c$ the intercept (as you might expect). With this, we rewrite Equation~\ref{eq.okuda5} one more time,
+%
+\begin{equation}
+\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}} \left ( mT+c \right )^{h} \left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}.
+\label{eq.okuda5modmod}
+\end{equation}
+%
+This equation allows me to obtain a conductivity value at any temperature within the fit range, comprising a reference conductivity and temperature for the material in question, with constants ($m$, $c$, $h$, \& $a$) fit to data across a range of temperatures (1000~K, 2000~K, 3000~K, 4000~K, \& 5000~K). This scaling process is necessary for $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$, which have their own reference values and fit constants.
 
-$$h \sim \left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{P}$$
+ADD REFEERENCES DUH
 
-$$\frac{V_{\mathrm{ref}}}{V(T)} \approx  mT+c$$
+FITTING CHAI TEA TO COMPOSITION FOR A TEMPERATURE-reference results figure
 
-$$\kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}} \left ( mT+c \right )^{h} \left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}$$
+FITTING G or H AND A
 
+FITTING V/Vref to T
 
-
+TABLES OF CONSTANTS AND STUFF
 
 
 
