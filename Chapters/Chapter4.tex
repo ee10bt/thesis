@@ -336,7 +336,7 @@ $C$ being the decimal concentration of Fe impurities, with $\kappa_{\mathrm{MgSi
 \label{eq.ohta8}
 \end{equation}
 %
-where $\chi$ is a constant to be fit, and $T$ is the temperature of interest. $\chi$ can be thought as a measure of resistance to the effects of impurity scattering. For a given $T$ and $C$, increasing $\chi$ increases the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows $\chi$ over $T$ fit with a power law (a.) and 4th order polynomial (b.), the former of which is a poor fit and the latter an egregious overfitting. 
+where $\chi$ is a constant to be fit, and $T$ is the temperature of interest. $\chi$ can be thought as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (TABLE XX - CHI VALUES NEXT TO T). For a given $T$ and $C$, increasing $\chi$ increases the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows $\chi$ over $T$ fit with a power law (a.) and 4th order polynomial (b.), the former of which is a poor fit and the latter an egregious overfitting. 
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/draft_XT.png}
@@ -344,14 +344,14 @@ where $\chi$ is a constant to be fit, and $T$ is the temperature of interest. $\
   \label{fig:draft_xt}
 \end{figure}
 
-The lack of an obvious trend in $\chi$ against $T$ can be countered by plotting $\chi^T$ over $T$, and fitting either a expontial or power law relationship (Figure~\ref{fig:draft_xtt}). I use the following power law-relationship, 
+The lack of an obvious trend in $\chi$ against $T$ can be mitigated by plotting $\chi^T$ over $T$, and fitting either a expontial or power law relationship (Figure~\ref{fig:draft_xtt}). I use the following power law-relationship, 
 %
 \begin{equation}%-----
 \chi^{T}=A T^{B},
 \label{eq.chi_scale}
 \end{equation}%-------
 %
-where $A$ is the coefficient and $B$ is the exponent to be fit. This fit represents the temperature-dependence better, both statistically and sensitivity-wise compared to an exponential relationship $\left ( \chi^{T}=A e^{BT}\right )$. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. In Figure~\ref{fig:draft_xt}, we can see that either of the power law or exponential $\chi^T/T$ fits represent the data better than the $\chi/T$ relations.
+where $A$ is the coefficient and $B$ is the exponent to be fit. The magnitudes of these fit parameters are $3.468 \times 10^{-6}$ and $1.426$ respectively. This fit represents the temperature-dependence better, both statistically and sensitivity-wise compared to an exponential relationship $\left ( \chi^{T}=A e^{BT}\right )$. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. In Figure~\ref{fig:draft_xt}, we can see that either of the power law or exponential $\chi^T$ over $T$ fits represent the data better than the $\chi$ over $T$ power law or polynomial relations.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/draft_XTT.png}
@@ -366,7 +366,7 @@ The conductivities of $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{
 \label{eq.okuda5}
 \end{equation}
 %
-$\rho$ is density, $g$ and $a$ are exponents which control the nature of the density and temperature-dependence, and ``ref'' denotes a reference value. This equation is fit to the data, anchored around the values of the reference data point. I fit to the data point at 1000~K, as the conductivities at higher temperatures become more similar, converging towards a minimum point. Anchoring to 1000~K reduces the error in the fit, on account of the relatively larger conductivity at this temperature.
+$\rho$ is density, $g$ and $a$ are exponents which control the nature of the density and temperature-dependence, and ``ref'' denotes a reference value. This equation is fit to the data, anchored around the values of the reference data point (the fit is shown in Figure~\ref{fig:kappa-temp_01}). I fit to the data point at 1000~K, as the conductivities at higher temperatures become more similar, converging towards a minimum point. Anchoring to 1000~K reduces the error in the fit, on account of the relatively larger conductivity at this temperature.
 
 For a given composition, the mass of the simulated system does not change with temperature. The number and type of atoms remains constant, while thermal effects cause density variations. Considering the density fraction in Equation~\ref{eq.okuda5}, we can reformulate with
 %
@@ -405,7 +405,15 @@ I do not want to have have volume as an input ((INDEPENTENT?)) for the model, es
 \label{eq.linear_v_mT_c}
 \end{equation}
 %
-a simple linear function of temperature, where $m$ is the gradient and $c$ the intercept (as you might expect). With this, we rewrite Equation~\ref{eq.okuda5} one more time,
+a simple linear function of temperature (see Figure~\ref{fig:draft_VrefV-T}), where $m$ is the gradient and $c$ the intercept (as you might expect). 
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/draft_VrefV-T.png}
+  \caption{$V_{\mathrm{ref}}/V$ can be expressed as a simple linear function of $T$.}
+  \label{fig:draft_VrefV-T}
+\end{figure}
+
+With Equation~\ref{eq.linear_v_mT_c}, we rewrite Equation~\ref{eq.okuda5} one more time,
 %
 \begin{equation}
 \kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}} \left ( mT+c \right )^{h} \left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}.
@@ -414,17 +422,34 @@ a simple linear function of temperature, where $m$ is the gradient and $c$ the i
 %
 This equation allows me to obtain a conductivity value at any temperature within the fit range, comprising a reference conductivity and temperature for the material in question, with constants ($m$, $c$, $h$, \& $a$) fit to data across a range of temperatures (1000~K, 2000~K, 3000~K, 4000~K, \& 5000~K). This scaling process is necessary for $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$, which have their own reference values and fit constants.
 
-ADD REFEERENCES DUH
-
-FITTING CHAI TEA TO COMPOSITION FOR A TEMPERATURE-reference results figure
-
-FITTING G or H AND A
-
-FITTING V/Vref to T
+ADD MORE REFEERENCES DUH
 
 TABLES OF CONSTANTS AND STUFF
 
 
+\begin{table}[h!]
+\begin{tabular}{cl|lllll}
+                                                                           &       & \multicolumn{5}{c}{Temperature (K)}                       \\
+
+                                                                           &       &  1000  & 2000    & 3000    & 4000    & 5000 \\ \hline
+
+\multirow{2}{5em}{Conductivity (\wmk)}     & Mg & 17.51  & 10.36   & 8.11     & 7.07     & 6.28 \\ 
+
+                                                                           & Fe   & 11.26  & 6.79     & 5.84     & 5.30     & 4.95 \\ \hline
+
+\multirow{2}{*}{Volume (\AA$^{3}$)}          & Mg & 5960   & 6017    & 6075    & 6136    & 6199 \\
+
+                                                                           & Fe   & 6253   & 6310    & 6369    & 6431    & 6500 \\ \hline
+                                                                           
+\multirow{2}{*}{$V_{\mathrm{ref}}/V(T)$}  & Mg & 1         & 0.9906 & 0.9811 & 0.9714 & 0.9616 \\
+                                                                           
+                                                                           & Fe   & 1         & 0.9909 & 0.9817 & 0.9723 & 0.9619 \\ \hline
+                                                                           
+\multicolumn{2}{c|}{$\chi$}                                     & 0.9973 & 0.9992 & 0.9996 & 0.9998 & 0.9999 \\
+
+\multicolumn{2}{c|}{$\chi^{T}$}                            & 0.0649 & 0.2035 & 0.2748 & 0.4277 & 0.7494
+\end{tabular}
+\end{table}
 
 
 
