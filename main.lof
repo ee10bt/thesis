@@ -13,11 +13,9 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Data points are GK conductivity results, dotted line is the fit from Equation \ref {eq.okuda5_mod}.\relax }}{29}{figure.caption.80}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces CAPTION\relax }}{30}{figure.caption.81}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8Wm$^{-1}$K$^{-1}$. Such conditions are unphysical at 136~GPa within the lower mantle.\relax }}{30}{figure.caption.82}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The fit $\chi $ values plotted against $T$, with power law (left) and 4th order polynomial (right) trendlines. Blue and orange series are the exponential and power law fits obtained from plotting $\chi ^T/T$ (see Figure \ref {fig:draft_xtt}).\relax }}{35}{figure.caption.89}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Exponential fit in blue (more curved), power law in orange (flatter)\relax }}{35}{figure.caption.90}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The fit $\chi $ values plotted against $T$, with power law (left) and 4th order polynomial (right) trendlines. Blue and orange series are the exponential and power law fits obtained from plotting $\chi ^T/T$ (see Figure \ref {fig:draft_xtt}).\relax }}{39}{figure.caption.99}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Exponential fit in blue (more curved), power law in orange (flatter)\relax }}{40}{figure.caption.101}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces $V_{\mathrm {ref}}/V$ can be expressed as a simple linear function of $T$.\relax }}{41}{figure.caption.108}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The fit $\chi $ values plotted against $T$, with power law (LEFT/A.) and 4th order polynomial (RIGHT/B.) trendlines (both black). Blue and orange series are the exponential and power law fits obtained from plotting $\chi ^T/T$ (see Figure \ref {fig:draft_xtt}).\relax }}{33}{figure.caption.89}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Exponential fit in blue (more curved), power law in orange (flatter)\relax }}{34}{figure.caption.91}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces $V_{\mathrm {ref}}/V$ can be expressed as a simple linear function of $T$.\relax }}{36}{figure.caption.98}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
