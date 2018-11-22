@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  16 NOV 2018 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  22 NOV 2018 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2049,6 +2049,11 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'Stackhouse2010':
 (biblatex)                - Invalid format of field 'month'.
 
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Tronnes2009':
+(biblatex)                - Invalid format of field 'month'.
+
 )
 Package biblatex Info: Reference section=0 on input line 122.
 Package biblatex Info: Reference segment=0 on input line 122.
@@ -2191,10 +2196,6 @@ Overfull \hbox (1.22649pt too wide) in paragraph at lines 9--9
 nger length than shown 
  []
 
-
-LaTeX Warning: Reference `eq.okuda5_mod' on page xv undefined on input line 13.
-
-
 1: section
 [15])
 \tf@lof=\write7
@@ -2290,7 +2291,7 @@ Chapter 2.
 
 
 ] [6] [7]
-<Figures/cell_diagram.png, id=602, 1553.805pt x 1391.1975pt>
+<Figures/cell_diagram.png, id=604, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
@@ -2301,7 +2302,7 @@ e 82.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/ss_direct_mod.png, id=604, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=606, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
@@ -2312,7 +2313,7 @@ e 88.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8]
-<Figures/ideal_extrap.png, id=616, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=618, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
@@ -2335,7 +2336,7 @@ Overfull \hbox (0.31639pt too wide) in paragraph at lines 128--129
  com-pared to the fit through
  []
 
-<Figures/gk_acf.png, id=633, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=635, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
@@ -2346,7 +2347,7 @@ e 151.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./Figures/ideal_extrap.png>]
-<Figures/gk_int.png, id=644, 1237.62375pt x 533.74406pt>
+<Figures/gk_int.png, id=646, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
@@ -2431,104 +2432,89 @@ Overfull \hbox (11.57881pt too wide) in paragraph at lines 8--9
 -MENTS
  []
 
-
-Overfull \hbox (17.15155pt too wide) in paragraph at lines 18--19
+1: section
+[23]
+Overfull \hbox (17.15155pt too wide) in paragraph at lines 25--26
 []\T1/ppl/m/n/10.95 Impurities re-duce ther-mal con-duc-tiv-ity by pro-vid-ing 
 more op-por-tu-ni-ties for phonon
  []
 
-1: section
-[23] [24] [25] [26] [27]
-<Figures/k-t_all_02.png, id=764, 672.26157pt x 410.2828pt>
+[24] [25] [26] [27] [28]
+<Figures/k-t_all_02.png, id=775, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
-Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 138. on inp
-ut line 138.
+Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 155. on inp
+ut line 155.
 Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
- 138.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 139.
-
-
-LaTeX Warning: Reference `eq.okuda5_mod' on page 28 undefined on input line 139
-.
-
-
-LaTeX Warning: Reference `eq.okuda5_mod' on page 28 undefined on input line 139
-.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[28]
-<Figures/k-c_all_01.png, id=771, 695.59875pt x 411.03563pt>
+ 155.
+<Figures/k-c_all_01.png, id=780, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
-Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 152. on inp
-ut line 152.
+Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 169. on inp
+ut line 169.
 Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
- 152.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/K_over_T_over_X.png, id=773, 702.86118pt x 502.34735pt>
+ 169.
+ [29 <./Figures/k-t_all_02.png (PNG copy)>]
+<Figures/K_over_T_over_X.png, id=787, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
-Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 160. o
-n input line 160.
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 177. o
+n input line 177.
 Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
-e 160.
+e 177.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <./Figures/k-t_all_02.png (PNG copy)>]
-
-LaTeX Warning: Text page 30 contains only floats.
-
-[30 <./Figures/k-c_all_01.png> <./Figures/K_over_T_over_X.png>] [31] [32]
-<Figures/draft_XT.png, id=811, 723.45282pt x 217.5628pt>
+[30 <./Figures/k-c_all_01.png>] [31 <./Figures/K_over_T_over_X.png>] [32]
+<Figures/draft_XT.png, id=819, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
-Package pdftex.def Info: Figures/draft_XT.png  used on input line 349. on input
- line 349.
+Package pdftex.def Info: Figures/draft_XT.png  used on input line 366. on input
+ line 366.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
-e 349.
+e 366.
 
-[33 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=824, 797.98125pt x 490.83376pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33]
+<Figures/draft_XTT.png, id=832, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
-Package pdftex.def Info: Figures/draft_XTT.png  used on input line 364. on inpu
-t line 364.
+Package pdftex.def Info: Figures/draft_XTT.png  used on input line 381. on inpu
+t line 381.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
-e 364.
- [34 <./Figures/draft_XTT.png>] [35]
-<Figures/draft_VrefV-T.png, id=846, 393.72093pt x 179.16937pt>
+e 381.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34 <./Figures/draft_XT.png>] [35 <./Figures/draft_XTT.png>]
+<Figures/draft_VrefV-T.png, id=855, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
-Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 418. on 
-input line 418.
+Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 435. on 
+input line 435.
 Package pdftex.def Info: Requested size: 404.02908pt x 183.86029pt on input lin
-e 418.
-
-Overfull \hbox (9.30644pt too wide) in paragraph at lines 443--443
+e 435.
+ [36 <./Figures/draft_VrefV-T.png>]
+Overfull \hbox (9.30644pt too wide) in paragraph at lines 460--460
 []|\T1/ppl/m/n/10.95 Conductivity 
  []
 
 
-Overfull \hbox (3.47081pt too wide) in paragraph at lines 443--443
+Overfull \hbox (3.47081pt too wide) in paragraph at lines 460--460
 \T1/ppl/m/n/10.95 (Wm$[]$K$[]$)|  
  []
 
 
-Overfull \vbox (1.03882pt too high) detected at line 443
+Overfull \vbox (1.03882pt too high) detected at line 460
  []
 
-[36 <./Figures/draft_VrefV-T.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 465.
+               Default added (so using `tbp') on input line 482.
 
 [37])
 \openout2 = `Chapters/Chapter5.aux'.
@@ -2627,7 +2613,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0EFF00E8D1488797C0ABB7E3942116A0;11369.
+(rerunfilecheck)             Checksum: 879DB3A433133E6C67F87D4503E17A7B;11369.
 
 
 LaTeX Warning: There were undefined references.
@@ -2640,11 +2626,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34272 strings out of 492990
- 697965 string characters out of 6121926
- 940702 words of memory out of 5000000
- 37193 multiletter control sequences out of 15000+600000
- 597388 words of font info for 143 fonts, out of 8000000 for 9000
+ 34280 strings out of 492990
+ 698178 string characters out of 6121926
+ 942822 words of memory out of 5000000
+ 37199 multiletter control sequences out of 15000+600000
+ 595939 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm
@@ -2665,10 +2651,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (75 pages, 1147553 bytes).
+Output written on main.pdf (75 pages, 1149628 bytes).
 PDF statistics:
- 1084 PDF objects out of 1200 (max. 8388607)
- 963 compressed objects within 10 object streams
- 221 named destinations out of 1000 (max. 500000)
+ 1097 PDF objects out of 1200 (max. 8388607)
+ 975 compressed objects within 10 object streams
+ 224 named destinations out of 1000 (max. 500000)
  576 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,9 +11,16 @@ DISCUSS/RE-ITERATE EARLIER-DISCUSSED SEMI-RELEVANT EXPERIMENTS HERE, MANTHILAKE
 \section{Simulating the effect of atomic impurities}
 %-----------------------------------------------------------
 
-The bulk of the lower mantle comprises bridgmanite (X\%, and its high-pressure polymorph post-perovskite), ferropericlase (Y\%), along with others (Z\%) such as calcium silicate perovskite CaSiO$_3$. The composition can vary within these mineral archetypes, significantly the concentration of iron impurities. Magnesium is replaced with iron in 
-\mgsios and MgO compositions, leading to \fesios and FeO endmembers. Aluminium can similarly be subsituted for Magnesium (((REF))) (Mg$^{2+}$ + Si$^{4+}$ = Al$^{3+}$ + Al$^{3+}$ or Al$^{3+}$ + Fe$^{3+}$).
-BRODHOLT NATURE PAPER
+The bulk of the lower mantle comprises bridgmanite (\textasciitilde70\%, and its high-pressure polymorph post-perovskite), ferropericlase (\textasciitilde20\%), along with others (\textasciitilde10\%) such as calcium silicate perovskite CaSiO$_3$ \citep{Tronnes2009}. The composition can vary within these mineral archetypes, significantly the concentration of iron impurities. Magnesium is replaced with iron in 
+\mgsios and MgO compositions, leading to \fesios and FeO endmembers. Aluminium can similarly be subsituted for Magnesium and Silicon
+\citep[as in][]{Brodholt2000} where, ((DOES THIS NEED TO BE IN, WITH EQ NUMBER?))
+%
+\begin{equation}
+\mathrm{ \left ( Mg_{3}Al \right )\left ( Si_{3}Al \right )O_{12} + 2MgO = Mg_{2}Al_{2}O_{5} + 3MgSiO_{3} }\ .
+\label{eq.brodholt_al}
+\end{equation}
+%
+%(Mg$^{2+}$ + Si$^{4+}$ = Al$^{3+}$ + Al$^{3+}$ or Al$^{3+}$ + Fe$^{3+}$).
 
 Impurities reduce \tcs by providing more opportunities for phonon scattering events. An impurity is an irregularity to a propagating phonon, much like a speedbumb to a car. They have different properties to the atoms the phonon expects to meet from crystal regularity, namely mass and their bonds with neighbouring atoms. For this reason that the \tcs of a solid solution is lower at intermediate compositions than at the endmembers. Even if one endmember has lower \cs than the other, an irregular mix of the two can produce even lower values.
 
@@ -40,6 +47,14 @@ k_{\mathrm{V}}=\left ( 1-x \right )k_{1} + x\ k_{2} \ ,
 %
 where $k_{\mathrm{1}}$ and $k_{\mathrm{2}}$ are the pure endmember conductivities, and $x$ is the decimal concentration of the second endmember \citep[][Eq. S7]{Stackhouse2015}.
 
+$\omega_{\mathrm{S}}$ is defined as the frequency at which R1 (Tu) is equal to R2 (T'),
+KLEMENS 11
+Where
+KLEMENS 3
+and
+KLEMENS 2
+When the relaxation times in Equation. XX are equated, the MFP for each process is the same ((LINK RELAXATION TIME TO MFP??)). This means neither MFP is truncating the other. For a CMB-like condition of high temperature, Umklapp-process MFP is already short, so that adding impurities doesn't have a large scattering effect, if any at all. Where the the Umklapp-process MFP is long, even a slight amount of impurity scattering tends to reduce the effective MFP and thus the resultant conductivity.
+
 Considering Eq. \ref{eq.SS2015SM.6}, when $\omega_{\mathrm{S}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{S}})$, so $k_{S} \rightarrow k_{V}$, the conductivity considering impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
 
 On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{S}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}})\rightarrow\pi/2$, but $(\omega_{\mathrm{S}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{S}} < k_{\mathrm{V}}$, and impurity scattering has an effect on the resultant conductivity. Adding impurities has an effect like this when the conductivity has not already been reduced for other reasons, like at low temperatures compared to the conditions mentioned above. 
@@ -62,7 +77,9 @@ where $M_{i}$ is the atomic mass of the $i$-th endmember, $\overline{M}$ is the 
 
 As the temperature increases, so too does the left-hand side of Equation \ref{eq.SS2015SM.11}. As discussed above, this reduces the effect of scattering caused by impurities, which will be relevant at CMB conditions. 
 
-$\varepsilon$ increases with the mass difference of the endmembers, and the impurity concentration. Increasing $\varepsilon$ tends to reduce the phonon frequency ratio, meaning impurity scattering will affect the resultant conductivity more. The atomic masses of Mg and Fe are 24 and 56, so \fesios is 1.32 times heavier than \mgsio. As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will have little effect on conductivity, where the mass changes are typically small (e.g. $^{24}$Mg to $^{25/26}$Mg) and abundances are low (Mg standard atomic weight is 24.3, the ratio of $^{24}$Mg to heavier isotopes is roughly 4:1).
+$\varepsilon$ increases with the mass difference of the endmembers, and the impurity concentration. Increasing $\varepsilon$ tends to reduce the phonon frequency ratio, meaning impurity scattering will affect the resultant conductivity more. The atomic masses of Mg and Fe are 24 and 56, so \fesios is 1.32 times heavier than \mgsio. 
+
+As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will have little effect on conductivity, where the mass changes are typically small (e.g. $^{24}$Mg to $^{25/26}$Mg) and abundances are low (Mg standard atomic weight is 24.3, the ratio of $^{24}$Mg to heavier isotopes is roughly 4:1). Mass difference is an additional reason why Fe impurities might be more interesting theoretically than Al. The mass of Al is 27, compared to Mg with 24 and Si at 28.
 
 The composition control term in Equation~\ref{eq.SS2015SM.9}, $x(1-x)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the atomic structure.
 
@@ -136,7 +153,7 @@ The 50\% solid solution has a consistently lower conductivity than \mgsio, and a
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/k-t_all_02.png}
-  \caption{Data points are GK conductivity results, dotted line is the fit from Equation \ref{eq.okuda5_mod}.}
+  \caption{Data points are GK conductivity results, dotted line is the fit from Equation \ref{eq.okuda5modmod}.}
   \label{fig:kappa-temp_01}
 \end{figure}
 
@@ -375,14 +392,14 @@ The conductivities of $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{
 %
 $\rho$ is density, $g$ and $a$ are exponents which control the nature of the density and temperature-dependence, and ``ref'' denotes a reference value. This equation is fit to the data, anchored around the values of the reference data point (the fit is shown in Figure~\ref{fig:kappa-temp_01}). I fit to the data point at 1000~K, as the conductivities at higher temperatures become more similar, converging towards a minimum point. Anchoring to 1000~K reduces the error in the fit, on account of the relatively larger conductivity at this temperature. BIGGER VALUE, IS THE ERROR RELATIVE TO THE VALUE SMALLER?
 
-For a given composition, the mass of the simulated system does not change with temperature. The number and type of atoms remains constant, while thermal effects cause density variations. Considering the density ratio in Equation~\ref{eq.okuda5}, we can reformulate with
+For a given composition, the mass of the simulated system does not change with temperature. The number and type of atoms remains constant, while thermal effects cause density variations. The density relation in Equation~\ref{eq.okuda5} can be reformulated as
 %
 \begin{equation}
 \frac{\rho }{\rho _{\mathrm{ref}}} \equiv \frac{V_{\mathrm{ref}}}{V} \ ,
 \label{eq.rho_to_vol}
 \end{equation}
 %
-because $\rho \propto V^{-1}$, where $V$ is the volume of the system in question. This gives a modified version of the equation for adjusting conductivity with temperature,
+because $\rho \propto V^{-1}$, where $V$ is the volume of the system in question. This leads to a modified version of Equation~\ref{eq.okuda5}
 %
 \begin{equation}
 \kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}}\left ( \frac{V_{\mathrm{ref}}}{V} \right )^{g}\left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}.
@@ -405,7 +422,7 @@ h \sim \left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{
 %
 where pressure ($P$) is the condition kept constant. The significance here is that pressure-driven and temperature-driven density changes affect the conductivity differently. At constant temperature, conductivity and density increase with pressure. The opposite is true at constant pressure for the material and temperatures considered here, conductivity and density decrease with increasing temperature. The result is $g$ and $h$ having opposite polarities based on the scenarios they describe.
 
-I do not want to have have volume as an input ((INDEPENTENT?)) for the model, especially as all data are obtained from constant pressure (136~GPa) calculations and any volume variations relate to thermal expansion. I express the volume ratio shown in Equation~\ref{eq.okuda5mod} as 
+Volume does not need to be input ((INDEPENDENT?)) variable for the model, as all the data are obtained from constant pressure (136~GPa) calculations and any volume variations relate to thermal expansion. I express the volume ratio shown in Equation~\ref{eq.okuda5mod} as 
 %
 \begin{equation}
 \frac{V_{\mathrm{ref}}}{V(T)} \approx  mT+c \ ,
