@@ -10,12 +10,12 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).\relax }}{13}{figure.caption.51}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Data points are GK conductivity results, dotted line is the fit from Equation \ref {eq.okuda5modmod}.\relax }}{29}{figure.caption.81}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces CAPTION\relax }}{30}{figure.caption.82}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8Wm$^{-1}$K$^{-1}$. Such conditions are unphysical at 136~GPa within the lower mantle.\relax }}{31}{figure.caption.83}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The fit $\chi $ values plotted against $T$, with power law (LEFT/A.) and 4th order polynomial (RIGHT/B.) trendlines (both black). Blue and orange series are the exponential and power law fits obtained from plotting $\chi ^T/T$ (see Figure \ref {fig:draft_xtt}).\relax }}{34}{figure.caption.90}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Exponential fit in blue (more curved), power law in orange (flatter)\relax }}{35}{figure.caption.92}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces $V_{\mathrm {ref}}/V$ can be expressed as a simple linear function of $T$.\relax }}{36}{figure.caption.99}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Data points are GK conductivity results, dotted line is the fit from Equation \ref {eq.okuda5modmod}.\relax }}{29}{figure.caption.85}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CAPTION\relax }}{30}{figure.caption.86}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Modelled conductivity, shown plotted against temperature and composition. Note the sensitivity of the colour scale, showing low conductivities as dominant at high temperatures and intermediate compositions. High values are found only at low temperatures, and even then they rapidly decay and saturate to <8Wm$^{-1}$K$^{-1}$. Such conditions are unphysical at 136~GPa within the lower mantle.\relax }}{31}{figure.caption.87}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The fit $\chi $ values plotted against $T$, with power law (LEFT/A.) and 4th order polynomial (RIGHT/B.) trendlines (both black). Blue and orange series are the exponential and power law fits obtained from plotting $\chi ^T/T$ (see Figure \ref {fig:draft_xtt}).\relax }}{34}{figure.caption.94}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Exponential fit in blue (more curved), power law in orange (flatter)\relax }}{35}{figure.caption.96}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces $V_{\mathrm {ref}}/V$ can be expressed as a simple linear function of $T$.\relax }}{37}{figure.caption.103}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

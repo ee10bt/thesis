@@ -31,14 +31,14 @@ Impurities reduce \tcs by providing more opportunities for phonon scattering eve
 %---------------------------------------
 \label{impur_theory}
 
-The effect of impurities on lattice thermal conductivity is approximated by \citet{Klemens1960} and \citet{Padture1997}, a review of which can be found in the Supplementary Material of \citet{Stackhouse2015}. The lattice thermal conductivity of a binary solid solution is given \citep[in][Eq. S6]{Stackhouse2015} as
+The effect of impurities on lattice thermal conductivity is approximated by \citet{Klemens1960} and \citet{Padture1997}, a review of which can be found in the Supplementary Material of \citet{Stackhouse2015}. The lattice thermal conductivity of a binary solid solution is given \citep[][Eq. S6]{Stackhouse2015} as
 %
 \begin{equation}
-k_{\mathrm{S}}=k_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{S}}}{\omega_{\mathrm{D}}} \right )\arctan \left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{S}}} \right ),
+k_{\mathrm{SS}}=k_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{D}}} \right )\arctan \left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{0}}} \right ),
 \label{eq.SS2015SM.6}
 \end{equation}
 %
-where $\omega_{\mathrm{S}}$ is the phonon frequency at which the mean free path is equal to that of the solute atoms, and $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $k_{\mathrm{V}}$ is the compositionally-weighted average of endmember conductivities, 
+where $\omega_{\mathrm{0}}$ is the phonon frequency at which the mean free path is equal to that of the solute atoms, and $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $k_{\mathrm{V}}$ is the compositionally-weighted (Voigt) average of endmember conductivities, 
 %
 \begin{equation}
 k_{\mathrm{V}}=\left ( 1-x \right )k_{1} + x\ k_{2} \ ,
@@ -47,13 +47,37 @@ k_{\mathrm{V}}=\left ( 1-x \right )k_{1} + x\ k_{2} \ ,
 %
 where $k_{\mathrm{1}}$ and $k_{\mathrm{2}}$ are the pure endmember conductivities, and $x$ is the decimal concentration of the second endmember \citep[][Eq. S7]{Stackhouse2015}.
 
-$\omega_{\mathrm{S}}$ is defined as the frequency at which R1 (Tu) is equal to R2 (T'),
-KLEMENS 11
-Where
-KLEMENS 3
-and
-KLEMENS 2
-When the relaxation times in Equation. XX are equated, the MFP for each process is the same ((LINK RELAXATION TIME TO MFP??)). This means neither MFP is truncating the other. For a CMB-like condition of high temperature, Umklapp-process MFP is already short, so that adding impurities doesn't have a large scattering effect, if any at all. Where the the Umklapp-process MFP is long, even a slight amount of impurity scattering tends to reduce the effective MFP and thus the resultant conductivity.
+$\omega_{\mathrm{0}}$ is defined \citep[by][Eq. 11]{Klemens1960} as the frequency at which 
+%
+\begin{equation}
+{\tau}'\left ( \omega_{\mathrm{0}} \right ) = \tau_{u}\left ( \omega_{\mathrm{0}} \right ),
+\label{eq.Klemens11}
+\end{equation}
+%
+where ${\tau}'$ and $\tau_{u}$ are the contributions of point defect scattering and Umklapp processes respectively to the effective phonon relaxation time \citep[][Eq.~2~\&~3]{Klemens1960}, where
+%
+\begin{equation}
+1/{\tau}'= A\omega^{4},
+\label{eq.Klemens2}
+\end{equation}
+%
+and 
+%
+\begin{equation}
+1/\tau_{u}=B\omega^{2}.
+\label{eq.Klemens3}
+\end{equation}
+%
+$A$ and $B$ are constants, the latter directly proportional to temperature. The effective phonon relaxation time of the system is  
+%
+\begin{equation}
+\frac{1}{\tau \left ( \omega \right )} = \frac{1}{\tau_{u}} + \frac{1}{{\tau}'},
+\label{eq.Klemens7}
+\end{equation}
+%
+the Ruess average of the above contributions \citep[modified from][Eq. 7]{Klemens1960}.
+
+When Equation \ref{eq.Klemens11} is true, the MFP for each process is the same ((LINK RELAXATION TIME TO MFP??)). This means neither MFP is truncating the other. For a CMB-like condition of high temperature, Umklapp process MFP is already short, so that adding impurities doesn't have a large scattering effect, if any at all. Where the the Umklapp process MFP is long, even a slight amount of impurity scattering tends to reduce the effective MFP and thus the resultant conductivity.
 
 Considering Eq. \ref{eq.SS2015SM.6}, when $\omega_{\mathrm{S}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{S}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{S}})$, so $k_{S} \rightarrow k_{V}$, the conductivity considering impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
 
