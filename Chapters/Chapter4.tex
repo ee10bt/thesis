@@ -25,7 +25,7 @@ The bulk of the lower mantle comprises bridgmanite (\textasciitilde70\%, and its
 Impurities reduce \tcs by providing more opportunities for phonon scattering events. An impurity is an irregularity to a propagating phonon, much like a speedbumb to a car. They have different properties to the atoms the phonon expects to meet from crystal regularity, namely mass and their bonds with neighbouring atoms. For this reason that the \tcs of a solid solution is lower at intermediate compositions than at the endmembers. Even if one endmember has lower \cs than the other, an irregular mix of the two can produce even lower values.
 
 
-
+\pagebreak
 %---------------------------------------
 \subsection{How do impurities affect conductivity?} 
 %---------------------------------------
@@ -47,6 +47,25 @@ where $\omega_{\mathrm{0}}$ is the phonon frequency at which the mean free path 
 %
 where $\kappa_{\mathrm{1}}$ and $\kappa_{\mathrm{2}}$ are the solid solution endmember conductivities, and $C$ is the fractional concentration of the second endmember \citep[][Eq. S7]{Stackhouse2015}.
 
+
+\pagebreak
+
+%-------------------
+\subsubsection{$\omega_{\mathrm{0}}/\omega_{\mathrm{D}}$ overview} 
+%-------------------
+
+When $\omega_{\mathrm{0}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{0}})$, so $k_{SS} \rightarrow k_{V}$, the conductivity including the effect of impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
+
+On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}})\rightarrow\pi/2$, but $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{SS}} < k_{\mathrm{V}}$, and impurity scattering has an effect on the resultant conductivity. Adding impurities has an effect like this when the conductivity has not already been reduced by Umklapp processes, like at low temperatures compared to the conditions mentioned above.
+
+\pagebreak
+
+
+
+%-------------------
+\subsubsection{$\omega_{0}$ in depth} 
+%-------------------
+
 $\omega_{\mathrm{0}}$ is defined \citep[by][Eq. 11]{Klemens1960} as the frequency at which 
 %
 \begin{equation}
@@ -67,8 +86,26 @@ and
 1/\tau_{u}=B\omega^{2}.
 \label{eq.Klemens3}
 \end{equation}
+
+$A$ and $B$ are constants, the latter directly proportional to temperature (T). The two above terms can be equated via Equation \ref{eq.Klemens11}, showing $\omega_{0}$ is similarily temperature-dependent
 %
-$A$ and $B$ are constants, the latter directly proportional to temperature. The effective phonon relaxation time of the system, using the Matthiesen Rule \citep[modified from][Eq. 7]{Klemens1960}, is  
+$$A{\omega_{0}}^{4}=B\left(T\right){\omega_{0}}^{2},$$
+$${\omega_{0}}^{2}=B\left(T\right)/A\ ,$$
+%
+\begin{equation}
+\omega_{0} \propto T\ .
+\label{eq.Klemens23mod}
+\end{equation}
+
+TALK ABOUT DEBYE FREQUENCY, DEPENDENT ON SOUND VELOCITY, THEREFORE SMALLER WITH TEMPERATURE?
+
+\pagebreak
+
+%-------------------
+\subsubsection{How do impurities affect phonon relaxation time?} 
+%-------------------
+
+The effective phonon relaxation time of the system, using the Matthiesen Rule \citep[modified from][Eq. 7]{Klemens1960}, is  
 %
 \begin{equation}
 \frac{1}{\tau \left ( \omega \right )} = \frac{1}{\tau_{u}} + \frac{1}{{\tau}'}\ .
@@ -82,22 +119,20 @@ When Equation \ref{eq.Klemens11} is satisfied, the effective relaxation time wil
 \label{eq.Klemens7ex}
 \end{equation}
 %
-The greater the difference between $\tau_{u}$ and ${\tau}'$, the more the effective relaxation time will tend toward the smaller of the two, from half the smallest's value (for the $\omega_{0}$ case, either time is the smallest). [[INCLUDE ARCTAN GRAPH TO ILLUSTRATE THIS POINT ???]]
+When ${\tau}' \neq \tau_{u}\ $, the effective relaxation time will tend toward the smaller of the two as the difference increases. [[INCLUDE ARCTAN GRAPH TO ILLUSTRATE THIS POINT ???]]
+
+For a CMB-like condition of high temperature, Umklapp process relaxation time is short. Adding impurities doesn't contribute much to the already large scattering effect. Where the Umklapp process relaxation time is long, even adding a small amount of atomic impurity can influence the effective system behaviour. Considering the average phonon velocity, a longer relaxation time means a greater distance travelled, or phonon mean free path.
 
 
 
 
 
+\pagebreak
 
 
-
-For a CMB-like condition of high temperature, Umklapp process relaxation time is already short, so that adding impurities doesn't have a large scattering effect, if any at all. 
-
-Where the Umklapp process MFP is long, even a slight amount of impurity scattering tends to reduce the effective MFP and thus the resultant conductivity.
-
-Considering Eq. \ref{eq.SS2015SM.6}, when $\omega_{\mathrm{0}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{0}})$, so $k_{SS} \rightarrow k_{V}$, the conductivity including the effect of impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
-
-On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}})\rightarrow\pi/2$, but $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{SS}} < k_{\mathrm{V}}$, and impurity scattering has an effect on the resultant conductivity. Adding impurities has an effect like this when the conductivity has not already been reduced by Umklapp processes, like at low temperatures compared to the conditions mentioned above. 
+%-------------------
+\subsubsection{What affects the magnitude of impurity scattering?} 
+%-------------------
 
 That factors which affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{eq.SS2015SM.6} can be expressed \citep[][Eq. S11]{Stackhouse2015} as
 %
@@ -124,6 +159,8 @@ As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will
 The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the atomic structure.
 
 !!! 181012 TALK ABOUT THESE EFFECTS AT CMB SPECIFICALLY and how they relate to the questions i'm posing?
+
+\pagebreak
 
 
 
