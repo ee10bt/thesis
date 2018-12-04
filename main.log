@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  3 DEC 2018 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  4 DEC 2018 11:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2481,68 +2481,74 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 66.
 
+
+Overfull \hbox (12.06999pt too wide) in paragraph at lines 102--103
+[]\T1/ppl/m/n/10.95 DEBYE TEM-PER-A-TURE DE-PENDS ON DE-BYE FRE-QUENCY, WHICH D
+E-PENDS
+ []
+
 [27] [28] [29] [30] [31] [32]
 <Figures/k-t_all_02.png, id=823, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
-Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 232. on inp
-ut line 232.
+Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 234. on inp
+ut line 234.
 Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
- 232.
+ 234.
  [33 <./Figures/k-t_all_02.png (PNG copy)>]
 <Figures/k-c_all_01.png, id=832, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
-Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 246. on inp
-ut line 246.
+Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 248. on inp
+ut line 248.
 Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
- 246.
+ 248.
 
 [34 <./Figures/k-c_all_01.png>]
 <Figures/K_over_T_over_X.png, id=839, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
-Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 254. o
-n input line 254.
+Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 256. o
+n input line 256.
 Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
-e 254.
+e 256.
  [35 <./Figures/K_over_T_over_X.png>] [36]
 [37]
 <Figures/draft_XT.png, id=873, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
-Package pdftex.def Info: Figures/draft_XT.png  used on input line 443. on input
- line 443.
+Package pdftex.def Info: Figures/draft_XT.png  used on input line 445. on input
+ line 445.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
-e 443.
+e 445.
  [38 <./Figures/draft_XT.png>]
 <Figures/draft_XTT.png, id=885, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
-Package pdftex.def Info: Figures/draft_XTT.png  used on input line 458. on inpu
-t line 458.
+Package pdftex.def Info: Figures/draft_XTT.png  used on input line 460. on inpu
+t line 460.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
-e 458.
+e 460.
  [39 <./Figures/draft_XTT.png>] [40]
 <Figures/draft_VrefV-T.png, id=906, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
-Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 512. on 
-input line 512.
+Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 514. on 
+input line 514.
 Package pdftex.def Info: Requested size: 404.02908pt x 183.86029pt on input lin
-e 512.
+e 514.
 
-Overfull \hbox (9.30644pt too wide) in paragraph at lines 537--537
+Overfull \hbox (9.30644pt too wide) in paragraph at lines 539--539
 []|\T1/ppl/m/n/10.95 Conductivity 
  []
 
 
-Overfull \hbox (3.47081pt too wide) in paragraph at lines 537--537
+Overfull \hbox (3.47081pt too wide) in paragraph at lines 539--539
 \T1/ppl/m/n/10.95 (Wm$[]$K$[]$)|  
  []
 
 
-Overfull \vbox (1.03882pt too high) detected at line 537
+Overfull \vbox (1.03882pt too high) detected at line 539
  []
 
 
@@ -2550,7 +2556,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 559.
+               Default added (so using `tbp') on input line 561.
 
 [41 <./Figures/draft_VrefV-T.png>]) [42]
 \openout2 = `Chapters/Chapter5.aux'.
@@ -2687,7 +2693,7 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (79 pages, 1155193 bytes).
+Output written on main.pdf (79 pages, 1155335 bytes).
 PDF statistics:
  1147 PDF objects out of 1200 (max. 8388607)
  1020 compressed objects within 11 object streams
