@@ -50,17 +50,16 @@
 \contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{23}{chapter.67}
 \contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{23}{section.68}
 \contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{25}{subsection.70}
-\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{26}{section*.73}
-\contentsline {subsubsection}{$\omega _{0}$ in depth}{27}{section*.74}
-\contentsline {subsubsection}{How do impurities affect phonon relaxation time?}{28}{section*.79}
-\contentsline {subsubsection}{What affects the magnitude of impurity scattering?}{29}{section*.82}
-\contentsline {section}{\numberline {4.2}Methodology}{31}{section.85}
-\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{31}{subsection.86}
-\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{32}{subsection.89}
-\contentsline {section}{\numberline {4.3}Results}{32}{section.90}
-\contentsline {section}{\numberline {4.4}Parameterising the effect of composition and temperature on CMB conductivity}{35}{section.94}
-\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{36}{subsection.95}
-\contentsline {subsubsection}{Compositional dependence}{37}{section*.96}
+\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{25}{section*.73}
+\contentsline {subsubsection}{What effects the magnitude of impurity scattering?}{26}{section*.74}
+\contentsline {subsection}{\numberline {4.1.2}$\omega $ and $\tau $ in depth}{28}{subsection.77}
+\contentsline {section}{\numberline {4.2}Methodology}{30}{section.85}
+\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{30}{subsection.86}
+\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{31}{subsection.89}
+\contentsline {section}{\numberline {4.3}Results}{31}{section.90}
+\contentsline {section}{\numberline {4.4}Parameterising the effect of composition and temperature on CMB conductivity}{34}{section.94}
+\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{35}{subsection.95}
+\contentsline {subsubsection}{Compositional dependence}{36}{section*.96}
 \contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{43}{chapter.113}
 \contentsline {section}{\numberline {5.1}Main Section 1}{43}{section.114}
 \contentsline {subsection}{\numberline {5.1.1}Subsection 1}{43}{subsection.115}

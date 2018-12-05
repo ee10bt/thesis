@@ -47,23 +47,51 @@ where $\omega_{\mathrm{0}}$ is the phonon frequency at which the mean free path 
 %
 where $\kappa_{\mathrm{1}}$ and $\kappa_{\mathrm{2}}$ are the solid solution endmember conductivities, and $C$ is the fractional concentration of the second endmember \citep[][Eq. S7]{Stackhouse2015}.
 
-
-\pagebreak
-
 %-------------------
 \subsubsection{$\omega_{\mathrm{0}}/\omega_{\mathrm{D}}$ overview} 
 %-------------------
 
-When $\omega_{\mathrm{0}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{0}})$, so $k_{SS} \rightarrow k_{V}$, the conductivity including the effect of impurities tends toward the endmember linear average. This will happen when other factors, such as high temperatures, have reduced conductivity and adding impurities has little additional effect.
+When $\omega_{\mathrm{0}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{0}})$, so $k_{SS} \rightarrow k_{V}$, the conductivity including the effect of impurities tends toward the endmember linear average. This is the scenario when other factors, such as Umklapp processes at high temperatures, have caused conductivity to decrease significantly. Adding impurities at this point has little additional effect, conductivity is already close to its saturated minimum.
 
-On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}})\rightarrow\pi/2$, but $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{SS}} < k_{\mathrm{V}}$, and impurity scattering has an effect on the resultant conductivity. Adding impurities has an effect like this when the conductivity has not already been reduced by Umklapp processes, like at low temperatures compared to the conditions mentioned above.
+On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}})\rightarrow\pi/2$, but $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{SS}} < k_{\mathrm{V}}$, and impurity scattering has a noticeable effect on the resultant conductivity. Adding impurities affects conductivity in this fashion when phonon-phonon collisions are not the dominant conductivity reducing process, like at low temperatures compared to the conditions mentioned in the above case.
+
+%-------------------
+\subsubsection{What effects the magnitude of impurity scattering?} 
+%-------------------
+
+That factors that affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{eq.SS2015SM.6} can be expressed \citep[][Eq. S11]{Stackhouse2015} as
+%
+\begin{equation}
+\left ( \frac{\omega_{0}}{\omega_{D}} \right )^{2} = \frac{1}{\left ( 6\pi^{2} \right )^{1/3}} \ \frac{T}{3 \varepsilon T_{0}} \ ,
+\label{eq.SS2015SM.11}
+\end{equation}
+%
+where $T$ is temperature, $T_{\mathrm{0}}$ is the temperature associated with $\omega_{0}$, and $\varepsilon$ is related to the mass difference and proportion of endmembers by
+%
+\begin{equation}
+\varepsilon = \frac{\left (M_{2}-M_{1}  \right )^{2}}{\overline{M}^{2}} \ C\left ( 1-C \right ) \ ,
+\label{eq.SS2015SM.9}
+\end{equation}
+%
+where $M_{i}$ is the atomic mass of the $i$-th endmember, $\overline{M}$ is the mean atomic mass of the solid solution, and $C$ is the proporition of endmembers \citep[][Eq. S9]{Stackhouse2015}.
+
+As the temperature increases, so too does the left-hand side of Equation \ref{eq.SS2015SM.11}. As discussed earlier, this reduces the effect of scattering caused by impurities, which will be relevant at CMB conditions where temperature is large ($\sim$4000~K). 
+
+$\varepsilon$ increases with the mass difference of the endmembers, and the impurity concentration. Increasing $\varepsilon$ tends to reduce the phonon frequency ratio, meaning impurity scattering will affect the resultant conductivity more. The atomic masses of Mg and Fe are 24 and 56, so \fesios is 1.32 times heavier than \mgsio. 
+
+As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will have little effect on conductivity, where the mass changes are typically small (e.g. $^{24}$Mg to $^{25/26}$Mg) and abundances are low (Mg standard atomic weight is 24.3, the ratio of $^{24}$Mg to heavier isotopes is roughly 4:1). Mass difference is an additional reason why Fe impurities are more interesting theoretically than Al. The mass of Al is 27, compared to Mg with 24 and Si at 28.
+
+The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the atomic structure. While I investigate the full range of C, most of the lower mantle \mgfesios is going to have compositions up to 20\% Fe ((REF)). Knowledge of conductivity up to \fesios composition is interesting if ultra low velocity zones are thermochemical features of high Fe content ((REF)). 
+
 
 \pagebreak
 
 
 
+
+
 %-------------------
-\subsubsection{$\omega_{0}$ in depth} 
+\subsection{$\omega$ and $\tau$ in depth} 
 %-------------------
 
 $\omega_{\mathrm{0}}$ is defined \citep[by][Eq. 11]{Klemens1960} as the frequency at which 
@@ -86,27 +114,7 @@ and
 1/\tau_{u}=B\omega^{2}.
 \label{eq.Klemens3}
 \end{equation}
-
-$A$ and $B$ are constants, the latter directly proportional to temperature (T). The two above terms can be equated via Equation \ref{eq.Klemens11}, showing $\omega_{0}$ is similarily temperature-dependent
 %
-$$A{\omega_{0}}^{4}=B\left(T\right){\omega_{0}}^{2},$$
-$${\omega_{0}}^{2}=B\left(T\right)/A\ ,$$
-%
-\begin{equation}
-\omega_{0} \propto T\ .
-\label{eq.Klemens23mod}
-\end{equation}
-
-TALK ABOUT DEBYE FREQUENCY, IS IT A CONSTANT? DEPENDENT ON SOUND VELOCITY, THEREFORE SMALLER WITH TEMPERATURE, A FUNCTION OF TEMPERATURE? 
-
-DEBYE TEMPERATURE DEPENDS ON DEBYE FREQUENCY, WHICH DEPENDS ON SOUND VELOCITY IN MATERIAL, WHICH DEPENDS ON TEMPERATURE, SO DEBYE TEMPERATURE DEPENDS ON TEMPERATURE???
-
-\pagebreak
-
-%-------------------
-\subsubsection{How do impurities affect phonon relaxation time?} 
-%-------------------
-
 The effective phonon relaxation time of the system, using the Matthiesen Rule \citep[modified from][Eq. 7]{Klemens1960}, is  
 %
 \begin{equation}
@@ -125,42 +133,35 @@ When ${\tau}' \neq \tau_{u}\ $, the effective relaxation time will tend toward t
 
 For a CMB-like condition of high temperature, Umklapp process relaxation time is short. Adding impurities doesn't contribute much to the already large scattering effect. Where the Umklapp process relaxation time is long, even adding a small amount of atomic impurity can influence the effective system behaviour. Considering the average phonon velocity, a longer relaxation time means a greater distance travelled, or phonon mean free path.
 
-
-
-
-
-\pagebreak
-
-
-%-------------------
-\subsubsection{What affects the magnitude of impurity scattering?} 
-%-------------------
-
-That factors which affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{eq.SS2015SM.6} can be expressed \citep[][Eq. S11]{Stackhouse2015} as
+Calling back to Equation \ref{eq.Klemens2} \& \ref{eq.Klemens3} , $A$ and $B$ are constants, where only the latter is temperature-dependent (T). The contribution of point defect scattering to the effective phonon relaxation time is constant with temperature (varying with impurity concentration and composition). It is the relative magnitude of $\tau_{u}$, which decreases with temperature ($\propto 1/T$, via $B$), to ${\tau}'$ that influences the effect of impurities on \tcs (see Equation \ref{eq.Klemens7}).
+ 
+The two relaxation time terms above can be equated via Equation \ref{eq.Klemens11}, showing $\omega_{0}$ is similarily temperature-dependent
+%
+$$A{\omega_{0}}^{4}=B\left(T\right){\omega_{0}}^{2},$$
+$${\omega_{0}}^{2}=B\left(T\right)/A\ ,$$
 %
 \begin{equation}
-\left ( \frac{\omega_{0}}{\omega_{D}} \right )^{2} = \frac{1}{\left ( 6\pi^{2} \right )^{1/3}} \ \frac{T}{3 \varepsilon T_{0}} \ ,
-\label{eq.SS2015SM.11}
+\omega_{0} \propto T\ .
+\label{eq.Klemens23mod}
 \end{equation}
 %
-where $T$ is temperature, $T_{\mathrm{0}}$ is the temperature associated with $\omega_{0}$, and $\varepsilon$ is related to the mass difference and proportion of endmembers by
+The Debye frequency is a constant, so
 %
 \begin{equation}
-\varepsilon = \frac{\left (M_{2}-M_{1}  \right )^{2}}{\overline{M}^{2}} \ C\left ( 1-C \right ) \ ,
-\label{eq.SS2015SM.9}
+\left (\frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{D}}} \right ) \propto T\ .
+\label{eq.Klemens23mod2}
 \end{equation}
 %
-where $M_{i}$ is the atomic mass of the $i$-th endmember, $\overline{M}$ is the mean atomic mass of the solid solution, and $C$ is the proporition of endmembers \citep[][Eq. S9]{Stackhouse2015}.
+As temperature increases (above the Debye temperature), conductivity decreases because of Umklapp processes. The significance (SHOWN IN A LATER FIGURE) of point defect scattering decreases as phonon-phonon scattering becomes more prominent. Therefore the relative conductivity decrease due to impurities is inversely proportional with temperature.
 
-As the temperature increases, so too does the left-hand side of Equation \ref{eq.SS2015SM.11}. As discussed earlier, this reduces the effect of scattering caused by impurities, which will be relevant at CMB conditions. 
+IS DEBYE FREQUENCY A CONSTANT? DEPENDENT ON SOUND VELOCITY, THEREFORE SMALLER WITH TEMPERATURE, A FUNCTION OF TEMPERATURE? DEBYE TEMPERATURE DEPENDS ON DEBYE FREQUENCY, WHICH DEPENDS ON SOUND VELOCITY IN MATERIAL, WHICH DEPENDS ON TEMPERATURE, SO DEBYE TEMPERATURE DEPENDS ON TEMPERATURE???
 
-$\varepsilon$ increases with the mass difference of the endmembers, and the impurity concentration. Increasing $\varepsilon$ tends to reduce the phonon frequency ratio, meaning impurity scattering will affect the resultant conductivity more. The atomic masses of Mg and Fe are 24 and 56, so \fesios is 1.32 times heavier than \mgsio. 
 
-As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will have little effect on conductivity, where the mass changes are typically small (e.g. $^{24}$Mg to $^{25/26}$Mg) and abundances are low (Mg standard atomic weight is 24.3, the ratio of $^{24}$Mg to heavier isotopes is roughly 4:1). Mass difference is an additional reason why Fe impurities are more interesting theoretically than Al. The mass of Al is 27, compared to Mg with 24 and Si at 28.
 
-The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the atomic structure.
 
-!!! 181012 TALK ABOUT THESE EFFECTS AT CMB SPECIFICALLY and how they relate to the questions i'm posing?
+
+
+
 
 \pagebreak
 
