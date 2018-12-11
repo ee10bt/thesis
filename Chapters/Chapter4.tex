@@ -13,7 +13,7 @@ DISCUSS/RE-ITERATE EARLIER-DISCUSSED SEMI-RELEVANT EXPERIMENTS HERE, MANTHILAKE
 
 The bulk of the lower mantle comprises bridgmanite (\textasciitilde70\%, and its high-pressure polymorph post-perovskite), ferropericlase (\textasciitilde20\%), along with others (\textasciitilde10\%) such as calcium silicate perovskite CaSiO$_3$ \citep{Tronnes2009}. The composition can vary within these mineral archetypes, significantly the concentration of iron impurities. Magnesium is replaced with iron in 
 \mgsios and MgO compositions, leading to \fesios and FeO endmembers. Aluminium can similarly be subsituted for Magnesium and Silicon
-\citep[as in][]{Brodholt2000} where, ((DOES THIS NEED TO BE IN, WITH EQ NUMBER?))
+\citep[as in][]{Brodholt2000} where, ((DOES THIS NEED TO BE IN, WITH AN EQ NUMBER?))
 %
 \begin{equation}
 \mathrm{ \left ( Mg_{3}Al \right )\left ( Si_{3}Al \right )O_{12} + 2MgO = Mg_{2}Al_{2}O_{5} + 3MgSiO_{3} }\ .
@@ -52,7 +52,7 @@ where $\kappa_{\mathrm{1}}$ and $\kappa_{\mathrm{2}}$ are the solid solution end
 
 When $\omega_{\mathrm{0}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{0}})$, so $k_{SS} \rightarrow k_{V}$, the conductivity including the effect of impurities tends toward the endmember linear average. This is the scenario when other factors, such as Umklapp processes at high temperatures, have caused conductivity to decrease significantly. Adding impurities at this point has little additional effect, conductivity is already close to its saturated minimum.
 
-On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}})\rightarrow\pi/2$, but $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{SS}} < k_{\mathrm{V}}$, and impurity scattering has a noticeable effect on the resultant conductivity. Adding impurities affects conductivity in this fashion when phonon-phonon collisions are not the dominant conductivity reducing process, like at low temperatures compared to the conditions mentioned in the above case.
+On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}})\rightarrow\pi/2$, but $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{SS}} < k_{\mathrm{V}}$, and impurity scattering has a noticeable effect on the resultant conductivity. Adding impurities affects conductivity in this fashion when phonon-phonon collisions are not the dominant conductivity reducing process, like at low temperatures compared to the conditions mentioned in the above case. Additional information on $\omega_{\mathrm{0}}$ will be given at the end of this subsection.
 
 %-------------------
 \subsubsection{What effects the magnitude of impurity scattering?} 
@@ -84,7 +84,7 @@ The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increase
 
 
 
-
+\pagebreak
 
 %-------------------
 \subsection{$\omega$ and $\tau$ in depth} 
@@ -125,9 +125,15 @@ When Equation \ref{eq.Klemens11} is satisfied, the effective relaxation time wil
 \label{eq.Klemens7ex}
 \end{equation}
 %
-When ${\tau}' \neq \tau_{u}\ $, the effective relaxation time will tend toward the smaller of the two as the difference increases. [[INCLUDE ARCTAN GRAPH TO ILLUSTRATE THIS POINT ???]]
+When ${\tau}' \neq \tau_{u}\ $, the effective relaxation time will tend toward the smaller of the two as the difference increases. I illustrate in Figure \ref{fig:relaxation_time} that a process' relaxation time will dominate the other in the effective behaviour when it is around 1,000 times smaller. At the point where the contribution is equal (i.e. 0.5), the $\omega_{0}$ criterion is satisfied (Eq. \ref{eq.Klemens11}). The contribution varies linearly when the magnitudes of the relaxation times are comparable, adopting an arctan-like form when they vary greatly. 
 
-For a CMB-like condition of high temperature, Umklapp process relaxation time is short. Adding impurities doesn't contribute much to the already large scattering effect. Where the Umklapp process relaxation time is long, even adding a small amount of atomic impurity can influence the effective system behaviour. Considering the average phonon velocity, a longer relaxation time means a greater distance travelled, or phonon mean free path.
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/effective-phonon-relaxation-time.png}
+  \caption{For a series of ${\tau}'$, their contribution to the effective phonon relaxation time is plotted against $\tau_{u}$. The quantity on the y-axis is the normalised difference in effective phonon relaxation time, comparing just Umklapp processes to Umklapp and the impurity scattering effect (as in Eq.~\ref{eq.Klemens7}). }
+  \label{fig:relaxation_time}
+\end{figure}
+
+For a CMB-like condition of high temperature, Umklapp process relaxation time is short (left hand side of Fig. \ref{fig:relaxation_time}). Adding impurities (reducing ${\tau}'$) doesn't contribute much to an already large scattering effect. Where the Umklapp process relaxation time is longer (temperatures decreasing towards Debye temperature), even adding a small amount of atomic impurity can influence the effective system behaviour. Considering the average phonon velocity, a longer relaxation time means a greater distance travelled, or phonon mean free path.
 
 Calling back to Equation \ref{eq.Klemens2} \& \ref{eq.Klemens3} , $A$ and $B$ are constants, where only the latter is temperature-dependent (T). The contribution of point defect scattering to the effective phonon relaxation time is constant with temperature (varying with impurity concentration and composition). It is the relative magnitude of $\tau_{u}$, which decreases with temperature ($\propto 1/T$, via $B$), to ${\tau}'$ that influences the effect of impurities on \tcs (see Equation \ref{eq.Klemens7}).
  
@@ -149,14 +155,6 @@ The Debye frequency is a constant, so
 \end{equation}
 %
 As temperature increases (above the Debye temperature), conductivity decreases because of Umklapp processes. The significance of point defect scattering (but not the magnitude of its relaxation time) decreases as the effect of phonon-phonon scattering increases. Therefore the relative conductivity decrease due to impurities is inversely proportional with temperature, and less important as conductivity tends towards its saturated minimum.
-
-!!! CALL BACK TO $\omega_{\mathrm{0}}/\omega_{\mathrm{D}}$ overview
-
-!!! ARCTAN RELAXATION TIME GRAPH
-
-
-
-
 
 
 
@@ -223,7 +221,7 @@ Lattice thermal conductivities obtained from Green-Kubo calculations are plotted
 
 Conductivity decreases with temperature, approximately following $\kappa \propto 1/T^{0.9}$ at the pressure of 136~GPa considered here. This is in contrast to the typically expected $\kappa \propto 1/T$ relation, indicating some kind of saturation in conductivity decrease with temperature.
 
-\fesios has a consistently lower conductivity than \mgsio, which is to be expected due to the atomic mass increase [WRONG, SHEAR MOD DECREASE, DENSITY INCREASE, WAVESPEED EQUATION]. The two trends appear to be converging, indicating the conductivity of both species may be equal given a high enough (though unphysical for the lower mantle) temperature. This suggests there is a minimum conductivity associated with the crystal structure, reached first by \fesios with its inherently lower conductivity.
+\fesios has a consistently lower conductivity than \mgsio, although both species may converge given a high enough, albeit unphysical, lower mantle temperature. This suggests there is a minimum conductivity associated with the crystal structure, reached first by \fesios with its inherently lower conductivity.
 
 The 50\% solid solution has a consistently lower conductivity than \mgsio, and a lower than or equal to relation to \fesios. This is again to be expected, conductivity decreases from endmember to intermediate compositions as inpurity concentration increases. It can be seen that conductivity differences are very small at high temperatures for \fesios and the solid solution. If \fesios has already reached its theoretical minimum, adding impurities will do little to decrease it further.
 
@@ -237,7 +235,7 @@ An alternative perspective to Figure \ref{fig:kappa-temp_01} is presented in Fig
 
 Conductivity generally decreases with increasing temperature at all compositions, though the change becomes minimal at tempertatures above 3000~K.
 
-The \mgsios endmember has a consistently higher conductivity than the \fesio. This can be explained by the general reduction in shear modulus and increase in density associated with adding Fe, which decreases seismic velocity and thus conductivity [TRUTH ALERT, REF???].
+The \mgsios endmember has a consistently higher conductivity than the \fesio. This can be explained by the general reduction in shear modulus and increase in density associated with adding Fe, which decreases seismic velocity and thus conductivity [[[TRUTH ALERT, REF???]]].
 
 The amount of Mg atoms replaced with Fe has a variable effect on conductivity. A better way to label the effect is impurities added to an endmember, i.e. Fe is added to \mgsios and Mg to \fesio, which always serves increase phonon scattering and decrease conductivity. The decrease from this effect saturates towards a 50\% compositional mix. At high temperatures, this effect is minimal when adding Mg to \fesio. The conductivity could already be close to its theoretical minimum due to temperature effects, little reduction is observed from adding impurities.
 
@@ -420,7 +418,7 @@ WHY DOES THIS EQUATION EVEN WORK?
 \label{eq.ohta7}
 \end{equation}
 %
-where $\omega_{\mathrm{0}}$ is the phonon frequency at which the Umklapp/regular processes and impurity scattering effects' contributions to the mean free path (average distance travelled by a phonon) are equal. In terms of generating thermal resistance, neither effect dominates the other at this frequency. $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $\kappa_{\mathrm{V}}$ is the conductivity of the solid solution in the absence of impurity scattering
+where $\omega_{\mathrm{0}}$ is the phonon frequency at which the Umklapp/regular processes and impurity scattering effects' contributions to the mean free path and relaxation time (distance and time respectively travelled by a phonon) are equal. In terms of generating thermal resistance, neither effect dominates over the other at this frequency. $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $\kappa_{\mathrm{V}}$ is the conductivity of the solid solution in the absence of impurity scattering
 %
 \begin{equation}
 \kappa_{\mathrm{V}}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}\ ,
@@ -436,7 +434,7 @@ WHAT IS THE THEORY BEHIND THIS?
 \label{eq.ohta8}
 \end{equation}
 %
-where $\chi$ is a temperature-dependent constant, and $T$ is the temperature of interest. $\chi$ can be thought of as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (TABLE XX - CHI VALUES NEXT TO T). For a given $T$ and $C$, increasing $\chi$ increases the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows a plot of $\chi$ against $T$ with a power law (LEFT/B.) and 4th-order polynomial (RIGHT/B.), the former of which is a poor fit and the latter an egregious overfitting. 
+where $\chi$ is a temperature-dependent constant, and $T$ is the temperature of interest. $\chi$ can be thought of as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (see Table \ref{tab:temp-table}). For a given $T$ and $C$, increasing $\chi$ causes the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ to increase which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows a plot of $\chi$ against $T$ with a power law (LEFT/B.) and 4th-order polynomial (RIGHT/B.), the former of which is a poor fit and the latter an egregious overfitting. 
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/draft_XT.png}
@@ -524,7 +522,7 @@ This equation allows me to obtain a conductivity value at any temperature within
 
 ADD MORE REFEERENCES DUH
 
-TABLES OF CONSTANTS AND STUFF
+
 
 %-----------------------------------------------------------
 \begin{table}[h!]
@@ -549,6 +547,7 @@ TABLES OF CONSTANTS AND STUFF
 
 \multicolumn{2}{c|}{$\chi^{T}$}                            & 0.0649 & 0.2035 & 0.2748 & 0.4277 & 0.7494
 \end{tabular}
+\caption[]{\label{tab:temp-table}}
 \end{table}
 %-----------------------------------------------------------
 
@@ -556,15 +555,16 @@ TABLES OF CONSTANTS AND STUFF
 
 %-----------------------------------------------------------
 \begin{table}[]
-\begin{tabular}{c|cc}
- & \multicolumn{2}{c}{Endmember}    \\
- & Mg           & Fe           \\ \hline
-$\kappa_{ref}$ & 17.51      & 11.26      \\
-$h$ & -10.93     & -17.32     \\
-$a$ & 0.896     & 0.913     \\
-$m$ & -9.60E-06 & -9.48E-06 \\
-$c$ & 1.00975    & 1.00983   
+\begin{tabular}{c|ccc}
+                           & \multicolumn{3}{c}{Composition}    \\
+                           & Mg             & SS           & Fe           \\ \hline
+$\kappa_{ref}$  & 17.51         & 8.26        & 11.26      \\
+$h$                     & -10.93        & -5.52       & -17.32     \\
+$a$                     & 0.896         & 0.428       & 0.913     \\
+$m$                    & -9.60E-06  & -9.47E-06 & -9.48E-06 \\
+$c$                      & 1.00975    & 1.00965    & 1.00983
 \end{tabular}
+\caption[CONTENTS BIT?]{\label{tab:comp-table}Mg and Fe refer to \mgsios and \fesios endmembers, SS the solid solution with a 50\% mix.}
 \end{table}
 %-----------------------------------------------------------
 
