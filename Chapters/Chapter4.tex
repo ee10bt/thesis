@@ -436,6 +436,33 @@ WHAT IS THE THEORY BEHIND THIS?
 %
 where $\chi$ is a temperature-dependent constant, and $T$ is the temperature of interest. $\chi$ can be thought of as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (see Table \ref{tab:temp-table}). For a given $T$ and $C$, increasing $\chi$ causes the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ to increase which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows a plot of $\chi$ against $T$ with a power law (LEFT/B.) and 4th-order polynomial (RIGHT/B.), the former of which is a poor fit and the latter an egregious overfitting. 
 
+%-----------------------------------------------------------
+\begin{table}[h!]
+\begin{tabular}{cc|lllll}
+                                                                           &       & \multicolumn{5}{c}{Temperature (K)}                       \\
+
+                                                                           &       &  1000  & 2000    & 3000    & 4000    & 5000 \\ \hline
+
+\multirow{2}{5em}{Conductivity (\wmk)}     & Mg & 17.51  & 10.36   & 8.11     & 7.07     & 6.28 \\ 
+
+                                                                           & Fe   & 11.26  & 6.79     & 5.84     & 5.30     & 4.95 \\ \hline
+
+\multirow{2}{*}{Volume (\AA$^{3}$)}          & Mg & 5960   & 6017    & 6075    & 6136    & 6199 \\
+
+                                                                           & Fe   & 6253   & 6310    & 6369    & 6431    & 6500 \\ \hline
+                                                                           
+\multirow{2}{*}{$V_{\mathrm{ref}}/V(T)$}  & Mg & 1         & 0.9906 & 0.9811 & 0.9714 & 0.9616 \\
+                                                                           
+                                                                           & Fe   & 1         & 0.9909 & 0.9817 & 0.9723 & 0.9619 \\ \hline
+                                                                           
+\multicolumn{2}{c|}{$\chi$}                                     & 0.9973 & 0.9992 & 0.9996 & 0.9998 & 0.9999 \\
+
+\multicolumn{2}{c|}{$\chi^{T}$}                            & 0.0649 & 0.2035 & 0.2748 & 0.4277 & 0.7494
+\end{tabular}
+\caption[]{\label{tab:temp-table}}
+\end{table}
+%-----------------------------------------------------------
+
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/draft_XT.png}
   \caption{The fit $\chi$ values plotted against $T$, with power law (LEFT/A.) and 4th order polynomial (RIGHT/B.) trendlines (both black). Blue and orange series are the exponential and power law fits obtained from plotting $\chi^T/T$ (see Figure \ref{fig:draft_xtt}).}
@@ -518,40 +545,7 @@ With Equation~\ref{eq.linear_v_mT_c}, we rewrite Equation~\ref{eq.okuda5} one mo
 \label{eq.okuda5modmod}
 \end{equation}
 %
-This equation allows me to obtain a conductivity value at any temperature within the fit range, comprising a reference conductivity and temperature for the material in question, with constants ($m$, $c$, $h$, \& $a$) fit to data across a range of temperatures (1000~K, 2000~K, 3000~K, 4000~K, \& 5000~K). This scaling process is necessary for $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$, which have their own reference values and fit constants.
-
-ADD MORE REFEERENCES DUH
-
-
-
-%-----------------------------------------------------------
-\begin{table}[h!]
-\begin{tabular}{cc|lllll}
-                                                                           &       & \multicolumn{5}{c}{Temperature (K)}                       \\
-
-                                                                           &       &  1000  & 2000    & 3000    & 4000    & 5000 \\ \hline
-
-\multirow{2}{5em}{Conductivity (\wmk)}     & Mg & 17.51  & 10.36   & 8.11     & 7.07     & 6.28 \\ 
-
-                                                                           & Fe   & 11.26  & 6.79     & 5.84     & 5.30     & 4.95 \\ \hline
-
-\multirow{2}{*}{Volume (\AA$^{3}$)}          & Mg & 5960   & 6017    & 6075    & 6136    & 6199 \\
-
-                                                                           & Fe   & 6253   & 6310    & 6369    & 6431    & 6500 \\ \hline
-                                                                           
-\multirow{2}{*}{$V_{\mathrm{ref}}/V(T)$}  & Mg & 1         & 0.9906 & 0.9811 & 0.9714 & 0.9616 \\
-                                                                           
-                                                                           & Fe   & 1         & 0.9909 & 0.9817 & 0.9723 & 0.9619 \\ \hline
-                                                                           
-\multicolumn{2}{c|}{$\chi$}                                     & 0.9973 & 0.9992 & 0.9996 & 0.9998 & 0.9999 \\
-
-\multicolumn{2}{c|}{$\chi^{T}$}                            & 0.0649 & 0.2035 & 0.2748 & 0.4277 & 0.7494
-\end{tabular}
-\caption[]{\label{tab:temp-table}}
-\end{table}
-%-----------------------------------------------------------
-
-
+This equation allows me to obtain a conductivity value at any temperature within the fit range, comprising a reference conductivity and temperature for the material in question, with constants ($m$, $c$, $h$, \& $a$, see Table \ref{tab:comp-table}) fit to data across a range of temperatures. This scaling process is necessary for $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$, which have their own reference values and fit constants.
 
 %-----------------------------------------------------------
 \begin{table}[]
@@ -573,6 +567,7 @@ $c$                      & 1.00975    & 1.00965    & 1.00983
 
 
 
+ADD MORE REFEERENCES DUH
 
 
 
