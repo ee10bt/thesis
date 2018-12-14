@@ -82,9 +82,7 @@ As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will
 
 The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the atomic structure. While I investigate the full range of C, most of the lower mantle \mgfesios is going to have compositions up to 20\% Fe ((REF)). Knowledge of conductivity up to \fesios composition is interesting if ultra low velocity zones are thermochemical features of high Fe content ((REF)). 
 
-
-
-\pagebreak
+!!! MANTLE COMPOSITION REFERENCES NEEDED ABOVE
 
 %-------------------
 \subsection{$\omega$ and $\tau$ in depth} 
@@ -158,8 +156,6 @@ As temperature increases (above the Debye temperature), conductivity decreases b
 
 
 
-\pagebreak
-
 
 %-----------------------------------------------------------
 \section{Methodology}
@@ -202,12 +198,13 @@ $b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\
 
 Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple MATLAB script (((REF, APPENDIX))) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
 
-Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region (((ELABORATE WITH FIGURE?))). To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. After iron is added, the standard direct method or Green-Kubo workflow is followed.
+Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region (((ELABORATE WITH FIGURE?))). To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. These distributions are illustrated in Figure \ref{fig:substitutions}. After iron is added, the standard direct method or Green-Kubo workflow is followed.
 
-!!! NICE PICTURE/DIAGRAM HERE?
-
-!!! Comparison of random and homogeneous distribution, don't make reader engage their imagination, show obvious picture
-
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/substitution_05-collated.png}
+  \caption[]{A cartoon showing the side view of Mg atoms in \mgsios along a supercell of dimensions $8\times1\times1$, where dashed lines mark a cell boundary. \textbf{a.} shows a \mgsios endmember composition (blue balls), with no Fe replacements. \textbf{b}-\textbf{d.} all show \mgfesio, with 25\% Fe substitution (red balls). \textbf{b.} shows a homogeneous distribution along a length unit, equal to a cell, or 1 substitution out of every possible 4 along length. \textbf{c.} shows the same Fe\% concentration (8/32 replaced), but with a random distribution along the length. \textbf{d.} again has the same composition, but all the iron is clumped in the first half of the length. This scenario produces greatly differing temperature gradients on both halves when applying the direct method.}
+  \label{fig:substitutions}
+\end{figure}
 
 
 
