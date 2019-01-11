@@ -171,7 +171,7 @@ I use two methods to introduce iron impurities to my bridgmanite models. The fir
 
 MENTION AMMANN IRON STUFF HERE
 
-The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. I adapted the \citet{Oganov2000} \mgsios Buckingham interatomic potential ($U$) to include the Fe-O interation. I determined two short-range potential parameters, $b$ and $\rho$, shown in Eq. 11 from \citet{Oganov2000},
+The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. I adapted the \citet{Oganov2000} \mgsios Buckingham interatomic potential ($U$) to include the Fe-O interation (see Table \ref{tab:oganov_param_mod}). I determined two short-range potential parameters, $b$ and $\rho$, shown in Eq. 11 from \citet{Oganov2000},
 %
 \begin{equation}
 U_{ij}\left ( R_{ij} \right ) = \frac{z_{i}z_{j}}{R_{ij}} + b_{ij}\ \textup{exp}\left ( - \frac{R_{ij}}{\rho_{ij}} \right ) - \frac{c_{ij}}{{R_{ij}}^{6}}, \label{og_buck}
@@ -183,14 +183,24 @@ where $ij$ refers to an atom pair, $R$ is interatomic distance, $z$ is atomic ch
 \rho_{ij} = \frac{1.85}{\sqrt{I_{i}}+\sqrt{I_{j}}}.  \label{urusov}
 \end{equation}
 %
-$b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\rho$ value for Fe-O. We fit to the elasticity results of \citet{Parise1990}, an experimental study of (Mg$_{0.9}$,Fe$_{0.1}$)SiO$_3$ bridgmanite up to 433~K. Despite potential fitting being an improvement on solely changing mass (((PROVE IT!?))), it is still not perfect as the charge of our fitted Fe is not varied from the original Mg.
+$b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\rho$ value for Fe-O. We fit to structural information from \citet{Parise1990}, an experimental study of (Mg$_{0.9}$,Fe$_{0.1}$)SiO$_3$ bridgmanite at ambient conditions. This study was chosen as it matches the conditions at which \citet{Oganov2000} fit their potential. Despite potential fitting being an improvement on solely changing atomic mass (((PROVE IT!?))), it is not ``perfect'' as I do not vary atomic charge from Mg to Fe.
 
 !!! Validate potentials
 
 !!! Validate Fe vs. heavy Mg, isotope mass
 
-!!! Include Oganov table (earlier?), with the fitted Fe info
-
+\begin{table}[h]
+\centering
+\caption{Parameters used to define \citet{Oganov2000}'s \mgsios perovskite potential, including my fit Fe-O values.} %\vspace{2mm}
+\label{tab:oganov_param_mod}
+\begin{tabular}{clll} 
+Bond $ij$ & $b_{ij}$ (eV)  & $\rho_{ij}$ (\AA) & $c_{ij}$ (eV.\AA$^{6}$) \\ \hline
+Mg-O        & 1041.435        & 0.2866                 & 0                \\
+Si-O          & 1137.028        & 0.2827                 & 0                \\
+O-O          & 2023.800        & 0.2674                  & 13.83 \\ 
+Fe-O         & 1440.437        & 0.2846                  & 0 \\ \hline       
+\end{tabular}
+\end{table}
 
 %---------------------------------------
 \subsection{Where do the impurities go?} 
