@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {4.2}Methodology}{29}{section.86}
 \contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{29}{subsection.87}
 \contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{30}{subsection.91}
-\contentsline {section}{\numberline {4.3}Results}{30}{section.93}
+\contentsline {section}{\numberline {4.3}Results}{32}{section.93}
 \contentsline {section}{\numberline {4.4}Parameterising the effect of composition and temperature on CMB conductivity}{34}{section.97}
 \contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{35}{subsection.98}
 \contentsline {subsubsection}{Compositional dependence}{36}{section*.99}

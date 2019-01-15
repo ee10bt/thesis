@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  11 JAN 2019 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  15 JAN 2019 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2497,8 +2497,8 @@ Package pdftex.def Info: Figures/effective-phonon-relaxation-time.png  used on
 input line 129. on input line 129.
 Package pdftex.def Info: Requested size: 404.02908pt x 270.79298pt on input lin
 e 129.
- [27 <./Figures/effective-phonon-relaxation-time.png>] [28] [29]
-<Figures/substitution_05-collated.png, id=829, 1014.03844pt x 1021.56656pt>
+ [27 <./Figures/effective-phonon-relaxation-time.png>] [28] [29] [30]
+<Figures/substitution_05-collated.png, id=834, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 <use Figures/substitution_05-collated.png>
 Package pdftex.def Info: Figures/substitution_05-collated.png  used on input li
@@ -2508,11 +2508,8 @@ e 214.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 215.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[30] [31 <./Figures/substitution_05-collated.png>]
-<Figures/k-t_all_02.png, id=841, 672.26157pt x 410.2828pt>
+[31 <./Figures/substitution_05-collated.png>]
+<Figures/k-t_all_02.png, id=842, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 236. on inp
@@ -2520,26 +2517,23 @@ ut line 236.
 Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
  236.
  [32 <./Figures/k-t_all_02.png (PNG copy)>]
-<Figures/k-c_all_01.png, id=850, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=851, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 250. on inp
 ut line 250.
 Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
  250.
-<Figures/K_over_T_over_X.png, id=852, 702.86118pt x 502.34735pt>
+ [33 <./Figures/k-c_all_01.png>]
+<Figures/K_over_T_over_X.png, id=858, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 258. o
 n input line 258.
 Package pdftex.def Info: Requested size: 404.02908pt x 288.77083pt on input lin
 e 258.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[33 <./Figures/k-c_all_01.png>] [34 <./Figures/K_over_T_over_X.png>] [35]
-[36]
+ [34 <./Figures/K_over_T_over_X.png>]
+[35] [36]
 Overfull \hbox (9.30644pt too wide) in paragraph at lines 453--453
 []|\T1/ppl/m/n/10.95 Conductivity 
  []
@@ -2553,23 +2547,26 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 453--453
 Overfull \vbox (1.03882pt too high) detected at line 453
  []
 
-<Figures/draft_XT.png, id=892, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=893, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 474. on input
  line 474.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
 e 474.
-[37 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=904, 797.98125pt x 490.83376pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37]
+<Figures/draft_XTT.png, id=905, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 489. on inpu
 t line 489.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
 e 489.
- [38 <./Figures/draft_XTT.png>] [39]
-<Figures/draft_VrefV-T.png, id=926, 393.72093pt x 179.16937pt>
+ [38 <./Figures/draft_XT.png> <./Figures/draft_XTT.png>] [39]
+<Figures/draft_VrefV-T.png, id=927, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
 Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 543. on 
@@ -2581,7 +2578,7 @@ e 543.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 558.
 
-[40 <./Figures/draft_VrefV-T.png>]) [41]
+[40 <./Figures/draft_VrefV-T.png>] [41])
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex [42
@@ -2691,13 +2688,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34353 strings out of 492990
- 699419 string characters out of 6121926
- 944799 words of memory out of 5000000
- 37245 multiletter control sequences out of 15000+600000
+ 34354 strings out of 492990
+ 699431 string characters out of 6121926
+ 944815 words of memory out of 5000000
+ 37246 multiletter control sequences out of 15000+600000
  605361 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,22n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,21n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm
 -super/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-di
 st/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/
@@ -2716,10 +2713,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (79 pages, 1288931 bytes).
+Output written on main.pdf (79 pages, 1289157 bytes).
 PDF statistics:
- 1171 PDF objects out of 1200 (max. 8388607)
- 1039 compressed objects within 11 object streams
+ 1172 PDF objects out of 1200 (max. 8388607)
+ 1040 compressed objects within 11 object streams
  241 named destinations out of 1000 (max. 500000)
  610 words of extra memory for PDF output out of 10000 (max. 10000000)
 

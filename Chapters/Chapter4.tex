@@ -169,7 +169,7 @@ In this section I outline the process of taking Fe from chemistry to computer, b
 
 I use two methods to introduce iron impurities to my bridgmanite models. The first approach is to simply create a magnesium atom with the mass of an iron atom, without changing any coefficients of the interatomic potentials from \citet{Oganov2000}. Despite being an obviously "quick and dirty" method, (I will show) this is a reasonable first-order approximation(((PROVE IT!?))). As the variation in mass number from Mg to Fe is large (24 to 56, a 133\% increase), it is likely to change the behaviour of the system more than a subtle change in the atomic interactions.
 
-MENTION AMMANN IRON STUFF HERE
+MENTION MORE AMMANN IRON STUFF HERE, QUANTIFY/DATA? Approximating Fe with heavier Mg atoms is used by \citet{Ammann2014} to investigate \mgfesios with 20\% impurity content at 20~GPa and 2000~K. They found the effect of adding impurities in this manner was variable on a number of factors (crystallographic direction, interatomic potential), and observed saturation in the conductivity decrease with concentration. 
 
 The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. I adapted the \citet{Oganov2000} \mgsios Buckingham interatomic potential ($U$) to include the Fe-O interation (see Table \ref{tab:oganov_param_mod}). I determined two short-range potential parameters, $b$ and $\rho$, shown in Eq. 11 from \citet{Oganov2000},
 %
@@ -208,7 +208,7 @@ Fe-O         & 1440.437        & 0.2846                  & 0 \\ \hline
 
 Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple MATLAB script (((REF, APPENDIX))) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
 
-Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region (((ELABORATE WITH FIGURE?))). To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. These distributions are illustrated in Figure \ref{fig:substitutions}. After iron is added, the standard direct method or Green-Kubo workflow is followed.
+Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region. To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. These distributions are illustrated in Figure \ref{fig:substitutions}. After iron is added, the standard direct method or Green-Kubo workflow is followed.
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/substitution_05-collated.png}
