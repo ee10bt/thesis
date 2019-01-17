@@ -156,7 +156,6 @@ As temperature increases (above the Debye temperature), conductivity decreases b
 
 
 
-
 %-----------------------------------------------------------
 \section{Methodology}
 %-----------------------------------------------------------
@@ -410,13 +409,14 @@ Some of the equations in the following section have already been presented as an
 %
 %\pagebreak
  
+ 
+ 
+ 
 %-------------------
 \subsubsection{Compositional dependence}
 %-------------------
 
-REFERENCE BACK TO METHODOLOGY FOR FIRST TWO EQUATIONS AND DEFINITIONS ETC.
-
-The lattice thermal conductivity of a solid-solution as a function of temperature and composition can be approximated by the following equation,
+The lattice thermal conductivity of a solid-solution as a function of temperature and composition can be approximated by the following equation (first seen as Eq. \ref{eq.SS2015SM.6}),
 %
 WHY DOES THIS EQUATION EVEN WORK?
 %
@@ -425,7 +425,7 @@ WHY DOES THIS EQUATION EVEN WORK?
 \label{eq.ohta7}
 \end{equation}
 %
-where $\omega_{\mathrm{0}}$ is the phonon frequency at which the Umklapp/regular processes and impurity scattering effects' contributions to the mean free path and relaxation time (distance and time respectively travelled by a phonon) are equal. In terms of generating thermal resistance, neither effect dominates over the other at this frequency. $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $\kappa_{\mathrm{V}}$ is the conductivity of the solid solution in the absence of impurity scattering
+where $\omega_{\mathrm{0}}$ is the phonon frequency at which the Umklapp/regular processes and impurity scattering effects' contributions to the mean free path and relaxation time (distance and time respectively travelled by a phonon) are equal. In terms of generating thermal resistance, neither effect dominates over the other at this frequency. $\omega_{\mathrm{D}}$ is the phonon frequency corresponding to the maximum of the acoustic branch in the phonon spectrum (the Debye frequency). $\kappa_{\mathrm{V}}$ is the conductivity of the solid solution in the absence of impurity scattering (previously as Eq. \ref{eq.SS2015SM.7}, modified for the specific \mgfesios endmembers)
 %
 \begin{equation}
 \kappa_{\mathrm{V}}=\left ( 1-C \right )\kappa_{\mathrm{MgSiO_{3}}}+C\ \kappa_{\mathrm{FeSiO_{3}}}\ ,
@@ -491,6 +491,26 @@ where $A$ is the coefficient and $B$ is the exponent to be determined. The magni
   \label{fig:draft_xtt}
 \end{figure}
 
+At this point, we have all the pieces in place to qualitatively describe how the equation for modelling a solid solution's thermal conductivity (\ref{eq.ohta7}) works and why. The first part is to scale a linearly interpolate the conductivity of two endmembers, at a given temperature, to the composition of interest. This ($\kappa_{\mathrm{V}}$) will most often be an overestimate of the true value, the conductivity is more complicated than a weighted average of the endmembers. 
+
+The atomic disorder serves to reduce conductivity, a function of both temperature and composition. The more the solid solution is varied (i.e. closer to a 50/50 mix), the larger the effect of impurities on conductivity
+
+ARCTAN!!! of relative magnitudes
+
+
+
+\begin{equation}
+\kappa_{\mathrm{SS}}=\kappa_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{D}}} \right )\mathrm{arctan}\left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{0}}} \right ),
+\label{eq.ohta7}
+\end{equation}
+
+
+
+
+%-------------------
+\subsubsection{Temperature dependence}
+%-------------------
+
 The conductivities of $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$ from Equation \ref{eq.ohta9} can be scaled with temperature, giving an adjusted value 
 %
 \begin{equation}
@@ -552,7 +572,7 @@ With Equation~\ref{eq.linear_v_mT_c}, we rewrite Equation~\ref{eq.okuda5} one mo
 \label{eq.okuda5modmod}
 \end{equation}
 %
-This equation allows me to obtain a conductivity value at any temperature within the fit range, comprising a reference conductivity and temperature for the material in question, with constants ($m$, $c$, $h$, \& $a$, see Table \ref{tab:comp-table}) fit to data across a range of temperatures. This scaling process is necessary for $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$, which have their own reference values and fit constants.
+This equation allows me to obtain a conductivity value at any temperature within the fit range, comprising a reference conductivity and temperature for the material in question, with constants ($m$, $c$, $h$, \& $a$, see Table \ref{tab:comp-table}) fit to data across a range of temperatures. This scaling process is necessary to obtain $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$, which have their own reference values and fit constants, for use in Eq. \ref{eq.ohta9}.
 
 %-----------------------------------------------------------
 \begin{table}[]
