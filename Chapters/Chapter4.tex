@@ -418,8 +418,6 @@ Some of the equations in the following section have already been presented as an
 
 The lattice thermal conductivity of a solid-solution as a function of temperature and composition can be approximated by the following equation (first seen as Eq. \ref{eq.SS2015SM.6}),
 %
-WHY DOES THIS EQUATION EVEN WORK?
-%
 \begin{equation}
 \kappa_{\mathrm{SS}}=\kappa_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{D}}} \right )\mathrm{arctan}\left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{0}}} \right ),
 \label{eq.ohta7}
@@ -434,7 +432,6 @@ where $\omega_{\mathrm{0}}$ is the phonon frequency at which the Umklapp/regular
 %
 where $C$ is the fractional concentration of Fe, and $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$ the temperature dependent conductivities of the endmembers. The ratio of the phonon frequencies can be expressed as
 
-WHAT IS THE THEORY BEHIND THIS?
 %
 \begin{equation}
 \left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{D}}} \right )^{2}=\frac{\chi^{T}}{C\left ( 1-C \right )}\ ,
@@ -491,19 +488,22 @@ where $A$ is the coefficient and $B$ is the exponent to be determined. The magni
   \label{fig:draft_xtt}
 \end{figure}
 
-At this point, we have all the pieces in place to qualitatively describe how the equation for modelling a solid solution's thermal conductivity (\ref{eq.ohta7}) works and why. The first part is to scale a linearly interpolate the conductivity of two endmembers, at a given temperature, to the composition of interest. This ($\kappa_{\mathrm{V}}$) will most often be an overestimate of the true value, the conductivity is more complicated than a weighted average of the endmembers. 
-
-The atomic disorder serves to reduce conductivity, a function of both temperature and composition. The more the solid solution is varied (i.e. closer to a 50/50 mix), the larger the effect of impurities on conductivity
-
-ARCTAN!!! of relative magnitudes
 
 
+%-------------------
+\subsubsection{Why does this model work?}
+%-------------------
 
-\begin{equation}
-\kappa_{\mathrm{SS}}=\kappa_{\mathrm{V}}\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{D}}} \right )\mathrm{arctan}\left ( \frac{\omega_{\mathrm{D}}}{\omega_{\mathrm{0}}} \right ),
-\label{eq.ohta7}
-\end{equation}
 
+At this point, we have all the pieces in place to qualitatively describe how the equation for modelling a solid solution's thermal conductivity (Eq.~\ref{eq.ohta7}) works and why. The first part is to scale a linearly interpolate the conductivity of two endmembers, at a given temperature, to the composition of interest. This ($\kappa_{\mathrm{V}}$, Eq.~\ref{eq.ohta9}) will be an overestimate of the true value, the conductivity is more complicated than a weighted average of the endmembers. 
+
+Increasing impurity mass difference and concentration (towards $\sim$50\%) increase the magnitude of point defect scattering. Mass difference is always constant in this study. Concentration varies, but as discrete values across the various temperatures. For a given concentration at varying temperature, the mass difference and thus magnitude of point defect scattering is constant. Despite this, conductivity decrease due to adding impurities is not constant with varying temperature.
+
+As temperature increases (through the range of conditions considered here) the magnitude of thermal/Umklapp scattering increases, tending to decrease conductivity (Figure. \ref{fig:kappa-temp_01}). The key thing in determining the effect of adding impurities is to consider the relative magnitudes of thermal scattering to defect scattering. As this ratio increases, with temperature, the significance of the defect scattering diminishes. An increase in thermal scattering reduces conductivity directly, but also reduces the change in conductivity associated with adding impurities.
+
+This can be seen in Figure. \ref{fig:kappa-comp_01}, where the actual conductivity and curvature of the model fit decrease with temperature. ``Curvature'' in this sense can be measured by the area between the model and a straight line between endmembers. The model becomes more similar to the endmember line (area decrease) as temperature increases, as the effect of thermal scattering increases relative to defect scattering.
+
+In the context of the model, the effect of this ratio is handled by the arctan segment of Eq.~\ref{eq.ohta7} (as alluded to in Figure. \ref{fig:substitutions}). The $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})$ term ((Eq.~\ref{eq.ohta8})) contains the temperature and chemical ($\chi$), and concentration ($C$) variables to control the scaling effect on $\kappa_{\mathrm{V}}$.
 
 
 
