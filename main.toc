@@ -57,11 +57,11 @@
 \contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{29}{subsection.87}
 \contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{30}{subsection.91}
 \contentsline {section}{\numberline {4.3}Results}{31}{section.93}
-\contentsline {section}{\numberline {4.4}Parameterising the effect of composition and temperature on CMB conductivity}{35}{section.97}
+\contentsline {section}{\numberline {4.4}Parameterising composition and temperature effects on CMB conductivity}{35}{section.97}
 \contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{35}{subsection.98}
 \contentsline {subsubsection}{Compositional dependence}{36}{section*.99}
-\contentsline {subsubsection}{Why does this model work?}{39}{section*.107}
-\contentsline {subsubsection}{Temperature dependence}{40}{section*.108}
+\contentsline {subsubsection}{Why does this model work?}{38}{section*.107}
+\contentsline {subsubsection}{Temperature dependence}{39}{section*.108}
 \contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{43}{chapter.118}
 \contentsline {section}{\numberline {5.1}Main Section 1}{43}{section.119}
 \contentsline {subsection}{\numberline {5.1.1}Subsection 1}{43}{subsection.120}

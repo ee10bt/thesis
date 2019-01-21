@@ -235,6 +235,44 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Dobson2005}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DDP}{%
+         family={Dobson},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BJP}{%
+         family={Brodholt},
+         familyi={B\bibinitperiod},
+         given={John\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DDPBJP1}
+    \strng{fullhash}{DDPBJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1038/nature03385.1.
+    \endverb
+    \field{pages}{371\bibrangedash 374}
+    \field{title}{{Subducted banded iron formations as a source of
+  ultralow-velocity zones at the core-mantle boundary}}
+    \field{volume}{434}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Dobson, Brodhol
+    \verb t - 2005 - Subducted banded iron formations as a source of ultralow-v
+    \verb elocity zones at the core-mantle boundary.pdf:pdf
+    \endverb
+    \field{journaltitle}{Nature}
+    \field{year}{2005}
+  \endentry
+
   \entry{Gale1997}{article}{}
     \name{author}{1}{}{%
       {{hash=GJD}{%
@@ -801,6 +839,103 @@
   United States of America}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Mao2004}{article}{}
+    \name{author}{9}{}{%
+      {{hash=MWL}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Wendy\bibnamedelima L.},
+         giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Guoyin},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PVB}{%
+         family={Prakapenka},
+         familyi={P\bibinitperiod},
+         given={Vitali\bibnamedelima B.},
+         giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Meng},
+         familyi={M\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CAJ}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Andrew\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HDL}{%
+         family={Heinz},
+         familyi={H\bibinitperiod},
+         given={Dion\bibnamedelima L.},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shu},
+         familyi={S\bibinitperiod},
+         given={Jinfu},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HRJ}{%
+         family={Hemley},
+         familyi={H\bibinitperiod},
+         given={Russell\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MHk}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Ho-kwang},
+         giveni={H\bibinitperiod-k\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWL+1}
+    \strng{fullhash}{MWLSGPVBMYCAJHDLSJHRJMHk1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Natural olivine with 12 mol {\%} Fe(2)SiO(4) and synthetic orthopyroxenes
+  with 20{\%} and 40{\%} FeSiO(3) were studied beyond the pressure-temperature
+  conditions of the core-mantle boundary. All samples were found to convert
+  entirely or partially into the CaIrO(3) postperovskite structure, which was
+  recently reported for pure MgSiO(3). The incorporation of Fe greatly reduces
+  the pressure needed for the transition and establishes the new phase as the
+  major component of the D'' layer. With the liquid core as an unlimited
+  reservoir of iron, core-mantle reactions could further enrich the iron
+  content in this phase and explain the intriguing seismic signatures observed
+  in the D'' layer.%
+    }
+    \verb{doi}
+    \verb 10.1073/pnas.0407135101
+    \endverb
+    \field{issn}{0027-8424}
+    \field{number}{45}
+    \field{pages}{15867\bibrangedash 15869}
+    \field{title}{{Ferromagnesian postperovskite silicates in the D'' layer of
+  the Earth}}
+    \verb{url}
+    \verb http://www.pnas.org/cgi/doi/10.1073/pnas.0407135101
+    \endverb
+    \field{volume}{101}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Mao et al. - 20
+    \verb 04 - Ferromagnesian postperovskite silicates in the D'' layer of the
+    \verb Earth.pdf:pdf
+    \endverb
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2004}
   \endentry
 
   \entry{Muller-Plathe1997}{article}{}
