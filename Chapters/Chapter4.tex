@@ -374,13 +374,23 @@ At this point, we have all the pieces in place to qualitatively describe how the
 
 Increasing impurity mass difference and concentration (towards $\sim$50\%) increase the magnitude of point defect scattering. Mass difference is always constant in this study. Concentration varies, but as discrete values across the various temperatures. For a given concentration at varying temperature, the mass difference and thus magnitude of point defect scattering is constant. Despite this, conductivity decrease due to adding impurities is not constant with varying temperature.
 
-As temperature increases (through the range of conditions considered here) the magnitude of thermal/Umklapp scattering increases, tending to decrease conductivity (Figure. \ref{fig:kappa-temp_01}). The key thing in determining the effect of adding impurities is to consider the relative magnitudes of thermal scattering to defect scattering. As this ratio increases, with temperature, the significance of the defect scattering diminishes. An increase in thermal scattering reduces conductivity directly, but also reduces the change in conductivity associated with adding impurities.
+As temperature increases (through the range of conditions considered here) the magnitude of thermal/Umklapp scattering increases, tending to decrease conductivity (Figure.~\ref{fig:kappa-temp_01}). The key thing in determining the effect of adding impurities is to consider the relative magnitudes of thermal scattering to defect scattering. As this ratio increases, with temperature, the significance of the defect scattering diminishes. An increase in thermal scattering reduces conductivity directly, but also reduces the change in conductivity associated with adding impurities.
 
-This can be seen in Figure. \ref{fig:kappa-comp_01}, where the actual conductivity and curvature of the model fit decrease with temperature. ``Curvature'' in this sense can be measured by the area between the model and a straight line between endmembers. The model becomes more similar to the endmember line (area decrease) as temperature increases, as the effect of thermal scattering increases relative to defect scattering.
+This can be seen in Figure. \ref{fig:kappa-comp_01}, where the actual conductivity and curvature of the model fit decrease with temperature. ``Curvature'' in this sense can be measured by the area between the model and a straight line between endmembers. The model becomes more similar to the endmember line (area decrease) as temperature increases, as the effect of thermal scattering increases relative to defect scattering. An additional diagram is provided in Figure~\ref{fig:k-c_demo-cartoon}, showing how the
 
-In the context of the model, the effect of this ratio is handled by the arctan segment of Eq.~\ref{eq.ohta7} (as alluded to in Figure. \ref{fig:substitutions}). The $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})$ term ((Eq.~\ref{eq.ohta8})) contains the temperature and chemical ($\chi$), and concentration ($C$) variables to control the scaling effect on $\kappa_{\mathrm{V}}$.
+In the context of the model, the effect of this ratio is handled by the arctan segment of Eq.~\ref{eq.ohta7} (as alluded to in Figure. \ref{fig:substitutions}). The $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})$ term (Eq.~\ref{eq.ohta8}) contains the temperature and chemical ($\chi$), and concentration ($C$) variables to control the scaling effect on $\kappa_{\mathrm{V}}$.
 
-
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/k-c_demo-cartoon.png}
+  \caption[CONTENTS BIT]{A graph showing how the relative magnitudes of defect and thermal scattering affect the resultant conductivity. Conductivity values are normalised to the maximum, the \mgsios value in this case. This figure does not show how the magnitude of conductivity variations with temperature, but the magnitude of conductivity changes from adding impurities. 
+  
+  \textbf{a.} shows the compositionally-weighted average of endmember conductivities. It represents the conductivity in absense of defect scattering, but with the addition of heavier Fe atoms having the effect of reducing conductivity. 
+  
+  \textbf{d.} represents conductivity if impurity scattering were to dominate over Umklapp processes. As with \textbf{a.}, this series is hypothetical, and the physical result lies somewhere inbetween the two.
+  
+  \textbf{b.} \& \textbf{c.} represent a solid solution at hot and cold conditions respectively. \textbf{b.} would be found at a higher temperature, where increased thermal scattering reduces the significance of defect scattering. \textbf{c.} represents a colder condition with fewer Umklapp processes, where impurities are more relevant and there is a larger decrease relative to \textbf{a.}, compared to the hot case (\textbf{b.}).}
+  \label{fig:k-c_demo-cartoon}
+\end{figure}
 
 %-------------------
 \subsubsection{Temperature dependence}
