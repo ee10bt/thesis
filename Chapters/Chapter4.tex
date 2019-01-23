@@ -194,7 +194,7 @@ Fe-O         & 1440.437        & 0.2846                  & 0 \\ \hline
 \end{tabular}
 \end{table}
 
-Despite potential fitting being an improvement on solely changing atomic mass (((PROVE IT!?))), it is not ``perfect'' as I do not vary atomic charge from Mg to Fe. The problem is additionally complicated by the Fe-partitioning between \mgsios and \mgo, the effect of ferrous vs. ferric iron, and how spin state affects properties such as conductivity as it varies along the geotherm (((REFS?))). These additional complexities are beyond the scope of this project, where only ferrous iron will be considered. The effects of impurities (i.e. some kind of irregular atom) is interesting, even if the exact chemistry is not accurate.
+Despite potential fitting being an improvement on solely changing atomic mass, it is not perfect as I do not vary atomic charge from Mg to Fe. The problem is additionally complicated by the Fe-partitioning between \mgsios and \mgo, the effect of ferrous vs. ferric iron, and how spin state affects properties such as conductivity as it varies along the geotherm (((REFS?))). These additional complexities are beyond the scope of this project, where only ferrous iron will be considered. The effects of impurities (i.e. some kind of irregular atom) is interesting, even if the exact chemistry is not accurate.
 
 !!! Validate potentials
 
@@ -312,7 +312,7 @@ where $C$ is the fractional concentration of Fe, and $\kappa_{\mathrm{MgSiO_{3}}
 \label{eq.ohta8}
 \end{equation}
 %
-where $\chi$ is a temperature-dependent constant, and $T$ is the temperature of interest. $\chi$ can be thought of as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (see Table \ref{tab:temp-table}). For a given $T$ and $C$, increasing $\chi$ causes the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ to increase which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows a plot of $\chi$ against $T$ with a power law (LEFT/B.) and 4th-order polynomial (RIGHT/B.), the former of which is a poor fit and the latter an egregious overfitting. 
+where $\chi$ is a temperature-dependent constant, and $T$ is the temperature of interest \citep{Padture1997}. $\chi$ can be thought of as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (see Table \ref{tab:temp-table}). For a given $T$ and $C$, increasing $\chi$ causes the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ to increase which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows a plot of $\chi$ against $T$ with a power law (LEFT/B.) and 4th-order polynomial (RIGHT/B.), the former of which is a poor fit and the latter an egregious overfitting. 
 
 %-----------------------------------------------------------
 \begin{table}[h!]
@@ -403,7 +403,7 @@ The conductivities of $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{
 \label{eq.okuda5}
 \end{equation}
 %
-$\rho$ is density, $g$ and $a$ are exponents which control the nature of the density and temperature-dependence, and ``ref'' denotes a reference value. This equation is fit to the data, anchored around the values of the reference data point (the fit is shown in Figure~\ref{fig:kappa-temp_01}). I fit to the data point at 1000~K, as the conductivities at higher temperatures become more similar, converging towards a minimum point. Anchoring to 1000~K reduces the error in the fit, on account of the relatively larger conductivity at this temperature.
+$\rho$ is density, $g$ and $a$ are exponents which control the nature of the density and temperature-dependence, and ``ref'' denotes a reference value \citep{Manthilake2011, Okuda2017}. This equation is fit to the data, anchored around the values of the reference data point (the fit is shown in Figure~\ref{fig:kappa-temp_01}). I fit to the data point at 1000~K, as the conductivities at higher temperatures become more similar, converging towards a minimum point. Anchoring to 1000~K reduces the error in the fit, on account of the relatively larger conductivity at this temperature.
 
 For a given composition, the mass of the simulated system does not change with temperature. The number and type of atoms remains constant, while thermal effects cause density variations. The density relation in Equation~\ref{eq.okuda5} can be reformulated as
 %
@@ -419,7 +419,7 @@ because $\rho \propto V^{-1}$, where $V$ is the volume of the system in question
 \label{eq.okuda5mod}
 \end{equation}
 
-The exponent $g$ represents the rate of change of lattice thermal conductivity with density, at a constant temperature,
+The exponent $g$ \citep{Manthilake2011} represents the rate of change of lattice thermal conductivity with density, at a constant temperature,
 %
 \begin{equation}
 g=\left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{T} \ .
@@ -477,21 +477,4 @@ $c$                      & 1.00975    & 1.00965    & 1.00983
 
 
 
-
-
-
-ADD MORE REFEERENCES DUH
-
-
-
-
-
-
-
-
-
-
-
 \pagebreak
-
-
