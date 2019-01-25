@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  23 JAN 2019 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  25 JAN 2019 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2001,6 +2001,11 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Dalton2013':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'Dekura2013':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -2026,6 +2031,11 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lee1995':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'Manthilake2011':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -2047,6 +2057,11 @@ Package biblatex Warning: Biber reported the following issues
 
 Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'Stackhouse2010':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Tang2010':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -2183,6 +2198,11 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 252.
  (./main.toc
+Overfull \hbox (31.2712pt too wide) in paragraph at lines 16--16
+ [][] [][][]\T1/ppl/m/n/10.95 DETERMINATIONS OF TC FOR EARTH MA-TE-RI-ALS/CONDI
+TIONS[][] [][]  
+ []
+
 1: section
 [11] [12])
 \tf@toc=\write6
@@ -2247,51 +2267,55 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+LaTeX Warning: Citation 'Baladin2008' on page 2 undefined on input line 47.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Overfull \hbox (13.53183pt too wide) in paragraph at lines 41--42
+Overfull \hbox (13.53183pt too wide) in paragraph at lines 59--60
 \T1/ppl/m/n/10.95 thus higher the ther-mal con-du-tiv-ity. A num-ber of ef-fect
 s (MEN-TION MATTHIESSEN'S
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
+[2]
+Overfull \hbox (20.69295pt too wide) in paragraph at lines 98--98
+[]\T1/ppl/b/n/12 DETERMINATIONS OF TC FOR EARTH MA-TE-RI-ALS/CONDITIONS 
  []
 
 
-Overfull \hbox (5.43057pt too wide) in paragraph at lines 60--61
+Overfull \hbox (5.43057pt too wide) in paragraph at lines 100--101
 \T1/ppl/m/n/10.95 Many stud-ies as-sume low-er-most man-tle ther-mal con-duc-ti
 v-ity to be 10 Wm$[]$K$[]$ (e.g.[]
  []
 
-[2]
-Overfull \hbox (2.1782pt too wide) in paragraph at lines 62--63
+
+Overfull \hbox (2.1782pt too wide) in paragraph at lines 102--103
 \T1/ppl/m/n/10.95 re-ported for chem-i-cal and struc-tural ana-logues, MgSiO$[]
 $ en-statite (5.0 Wm$[]$K$[]$REF)
  []
 
 
-Overfull \hbox (1.68663pt too wide) in paragraph at lines 62--63
+Overfull \hbox (1.68663pt too wide) in paragraph at lines 102--103
 \T1/ppl/m/n/10.95 of 3.0 Wm$[]$K$[]$just be-neath the man-tle tran-si-tion zone
  at 1900 K, and 12.0 Wm$[]$K$[]$
  []
 
-[3]) [4]
+[3] [4]) [5]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex
+ (./Chapters/Chapter2.tex [6
+
+
+
+]
 Chapter 2.
 1: section
-[5
-
-
-
-] [6] [7]
-<Figures/cell_diagram.png, id=629, 1553.805pt x 1391.1975pt>
+[7] [8] [9]
+<Figures/cell_diagram.png, id=652, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
@@ -2302,7 +2326,7 @@ e 82.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/ss_direct_mod.png, id=631, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=654, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
@@ -2312,8 +2336,8 @@ e 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8]
-<Figures/ideal_extrap.png, id=643, 945.5325pt x 403.5075pt>
+[10]
+<Figures/ideal_extrap.png, id=666, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
@@ -2324,19 +2348,19 @@ Package pdftex.def Info: Requested size: 404.02908pt x 172.4212pt on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./Figures/cell_diagram.png>]
+[11 <./Figures/cell_diagram.png>]
 Overfull \hbox (0.15266pt too wide) in paragraph at lines 124--125
 \T1/ppl/m/n/10.95 phonon-phonon scat-ter-ing, from sparse phonon phase sam-plin
 g in cells where cross-
  []
 
-[10 <./Figures/ss_direct_mod.png>]
+[12 <./Figures/ss_direct_mod.png>]
 Overfull \hbox (0.31639pt too wide) in paragraph at lines 128--129
 \T1/ppl/m/n/10.95 ever, where they may show over-es-ti-mated con-duc-tiv-i-ties
  com-pared to the fit through
  []
 
-<Figures/gk_acf.png, id=660, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=684, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
@@ -2346,8 +2370,8 @@ e 151.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./Figures/ideal_extrap.png>]
-<Figures/gk_int.png, id=671, 1237.62375pt x 533.74406pt>
+[13 <./Figures/ideal_extrap.png>]
+<Figures/gk_int.png, id=694, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
@@ -2358,19 +2382,19 @@ e 173.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./Figures/gk_acf.png>]
+[14 <./Figures/gk_acf.png>]
 Overfull \hbox (14.3329pt too wide) in paragraph at lines 189--192
 \T1/ppl/m/n/10.95 (4) Com-bined quasi-har-monic lat-tice dy-nam-ics and molec-u
 -lar dy-nam-ics method ([]Koker,
  []
 
-[13 <./Figures/gk_int.png>]) [14]
+[15 <./Figures/gk_int.png>]) [16]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
 Chapter 3.
 1: section
-[15
+[17
 
 
 
@@ -2390,37 +2414,37 @@ Package scrlayer-scrpage Warning: \headheight to low.
 Overfull \vbox (21.89601pt too high) has occurred while \output is active []
 
 
-[16] [17]
+[18] [19]
 
-LaTeX Warning: Reference `fig:acf_decay' on page 18 undefined on input line 66.
+LaTeX Warning: Reference `fig:acf_decay' on page 20 undefined on input line 66.
 
 
-[18]
+[20]
 
-LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 19 undefined on
+LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 21 undefined on
  input line 86.
 
 
-LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 19 undefined on
+LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 21 undefined on
  input line 86.
 
 
-LaTeX Warning: Reference `fig:direct_length_graph' on page 19 undefined on inpu
+LaTeX Warning: Reference `fig:direct_length_graph' on page 21 undefined on inpu
 t line 88.
 
 
-LaTeX Warning: Reference `sec:theory.direct' on page 19 undefined on input line
+LaTeX Warning: Reference `sec:theory.direct' on page 21 undefined on input line
  88.
 
-[19]
+[21]
 
-LaTeX Warning: Reference `fig:gk-direct' on page 20 undefined on input line 90.
+LaTeX Warning: Reference `fig:gk-direct' on page 22 undefined on input line 90.
 
 
-[20]) [21]
+[22]) [23]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [22
+ (./Chapters/Chapter4.tex [24
 
 
 
@@ -2433,7 +2457,7 @@ Overfull \hbox (11.57881pt too wide) in paragraph at lines 8--9
  []
 
 1: section
-[23]
+[25]
 Overfull \hbox (0.15155pt too wide) in paragraph at lines 21--24
 \T1/ppl/m/n/10.95 Impurities re-duce ther-mal con-duc-tiv-ity by pro-vid-ing mo
 re op-por-tu-ni-ties for phonon
@@ -2463,7 +2487,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 48.
 
-[24] [25]
+[26] [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
@@ -2488,8 +2512,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
 
-[26]
-<Figures/effective-phonon-relaxation-time.png, id=789, 703.12688pt x 471.26062p
+[28]
+<Figures/effective-phonon-relaxation-time.png, id=812, 703.12688pt x 471.26062p
 t>
 File: Figures/effective-phonon-relaxation-time.png Graphic file (type png)
 <use Figures/effective-phonon-relaxation-time.png>
@@ -2497,8 +2521,8 @@ Package pdftex.def Info: Figures/effective-phonon-relaxation-time.png  used on
 input line 127. on input line 127.
 Package pdftex.def Info: Requested size: 404.02908pt x 270.79298pt on input lin
 e 127.
- [27 <./Figures/effective-phonon-relaxation-time.png>] [28] [29] [30]
-<Figures/substitution_05-collated.png, id=835, 1014.03844pt x 1021.56656pt>
+ [29 <./Figures/effective-phonon-relaxation-time.png>] [30] [31] [32]
+<Figures/substitution_05-collated.png, id=858, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 <use Figures/substitution_05-collated.png>
 Package pdftex.def Info: Figures/substitution_05-collated.png  used on input li
@@ -2511,7 +2535,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-t_all_02.png, id=837, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=860, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 232. on inp
@@ -2521,8 +2545,8 @@ Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31] [32 <./Figures/substitution_05-collated.png>]
-<Figures/k-c_all_01.png, id=851, 695.59875pt x 411.03563pt>
+[33] [34 <./Figures/substitution_05-collated.png>]
+<Figures/k-c_all_01.png, id=874, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 244. on inp
@@ -2533,7 +2557,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=853, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=876, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 252. o
@@ -2543,11 +2567,11 @@ e 252.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33 <./Figures/k-t_all_02.png (PNG copy)>]
+[35 <./Figures/k-t_all_02.png (PNG copy)>]
 
-LaTeX Warning: Text page 34 contains only floats.
+LaTeX Warning: Text page 36 contains only floats.
 
-[34 <./Figures/k-c_all_01.png> <./Figures/K_over_T_over_X.png>] [35] [36]
+[36 <./Figures/k-c_all_01.png> <./Figures/K_over_T_over_X.png>] [37] [38]
 Overfull \hbox (9.30644pt too wide) in paragraph at lines 326--326
 []|\T1/ppl/m/n/10.95 Conductivity 
  []
@@ -2561,23 +2585,23 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 326--326
 Overfull \vbox (1.03882pt too high) detected at line 326
  []
 
-<Figures/draft_XT.png, id=891, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=914, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 346. on input
  line 346.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
 e 346.
-[37 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=902, 797.98125pt x 490.83376pt>
+[39 <./Figures/draft_XT.png>]
+<Figures/draft_XTT.png, id=925, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 361. on inpu
 t line 361.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
 e 361.
- [38 <./Figures/draft_XTT.png>]
-<Figures/k-c_demo-cartoon.png, id=917, 888.31876pt x 502.12593pt>
+ [40 <./Figures/draft_XTT.png>]
+<Figures/k-c_demo-cartoon.png, id=940, 888.31876pt x 502.12593pt>
 File: Figures/k-c_demo-cartoon.png Graphic file (type png)
 <use Figures/k-c_demo-cartoon.png>
 Package pdftex.def Info: Figures/k-c_demo-cartoon.png  used on input line 384. 
@@ -2588,8 +2612,8 @@ e 384.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39] [40 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [41]
-<Figures/draft_VrefV-T.png, id=945, 393.72093pt x 179.16937pt>
+[41] [42 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [43]
+<Figures/draft_VrefV-T.png, id=969, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
 Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 448. on 
@@ -2601,10 +2625,10 @@ e 448.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 463.
 
-) [42 <./Figures/draft_VrefV-T.png>] [43]
+) [44 <./Figures/draft_VrefV-T.png>] [45]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [44
+ (./Chapters/Chapter5.tex [46
 
 
 
@@ -2612,10 +2636,10 @@ LaTeX Warning: No positions in optional float specifier.
 Chapter 5.
 )
 1: section
-[45]
+[47]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [46
+ (./Chapters/Chapter6.tex [48
 
 
 
@@ -2623,10 +2647,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[47]
+[49]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [48
+ (./Appendices/AppendixA.tex [50
 
 
 
@@ -2639,18 +2663,24 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[49] [50
+[51] [52
 
 
 ]
+Overfull \hbox (3.39851pt too wide) in paragraph at lines 360--360
+\T1/cmtt/m/n/10.95 gov / articlerender . fcgi ? artid = 3739002{\ & }tool = pmc
+entrez{\ & }rendertype =
+ []
+
+1: section
+[53]
 Overfull \hbox (5.55327pt too wide) in paragraph at lines 360--360
 \T1/ppl/m/n/10.95 als^^Q. In: \T1/ppl/m/it/10.95 Physics of the Earth and Plan-
 e-tary In-te-ri-ors \T1/ppl/m/n/10.95 174.1-4, pp. 24^^U32. \T1/ppl/m/sc/10.95 
 issn\T1/ppl/m/n/10.95 : 00319201.
  []
 
-1: section
-[51]
+
 Overfull \hbox (0.57991pt too wide) in paragraph at lines 360--360
 [][]\T1/ppl/m/n/10.95 Hofmeister, A. M. (1999). ^^P  Man-tle Val-ues of Ther-ma
 l Con-duc-tiv-ity and the Geotherm
@@ -2662,7 +2692,7 @@ Overfull \hbox (4.87933pt too wide) in paragraph at lines 360--360
 r-re-versible Pro-cesses. I.^^Q In: \T1/ppl/m/it/10.95 Journa;
  []
 
-[52]
+[54]
 Overfull \hbox (29.89816pt too wide) in paragraph at lines 360--360
 \T1/ppl/m/n/10.95 tems^^Q. In: \T1/ppl/m/it/10.95 Molec-u-lar Physics \T1/ppl/m
 /n/10.95 101.14, pp. 2303^^U2307. \T1/ppl/m/sc/10.95 doi\T1/ppl/m/n/10.95 : [][
@@ -2676,21 +2706,29 @@ w . sciencedirect . com / science / article / pii / S0031920100001977$[][]\T1/p
 pl/m/n/10.95 . 
  []
 
-[53]
+[55] [56]
+Overfull \hbox (19.14536pt too wide) in paragraph at lines 360--360
+\T1/ppl/m/it/10.95 States of Amer-ica \T1/ppl/m/n/10.95 107, pp. 4539^^U4543. \
+T1/ppl/m/sc/10.95 issn\T1/ppl/m/n/10.95 : 1091-6490. \T1/ppl/m/sc/10.95 doi\T1/
+ppl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1073 / pnas . 0907194107$[][]\T1/p
+pl/m/n/10.95 .
+ []
+
+
 Overfull \hbox (4.39392pt too wide) in paragraph at lines 360--360
 \T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
  doi / 10 . 1002 / 2014GL059385 /
  []
 
-[54]
+[57]
 Overfull \hbox (10.60612pt too wide) in paragraph at lines 360--360
 [][]\T1/ppl/m/n/10.95 Tosi, Nicola et al. (2013). ^^P  Man-tle dy-nam-ics with 
 pressure- and temperature-dependent
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-[55]
+[58]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
@@ -2698,7 +2736,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C6F123E0AD76E6EDAF81DE909B4FBF92;12292.
+(rerunfilecheck)             Checksum: 7C324A68CDC736275C896052D04E8264;12639.
 
 
 LaTeX Warning: There were undefined references.
@@ -2706,15 +2744,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34378 strings out of 492990
- 699896 string characters out of 6121926
- 945361 words of memory out of 5000000
- 37262 multiletter control sequences out of 15000+600000
+ 34434 strings out of 492990
+ 701085 string characters out of 6121926
+ 952761 words of memory out of 5000000
+ 37310 multiletter control sequences out of 15000+600000
  605361 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2736,10 +2779,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (81 pages, 1526194 bytes).
+Output written on main.pdf (84 pages, 1532940 bytes).
 PDF statistics:
- 1197 PDF objects out of 1200 (max. 8388607)
- 1062 compressed objects within 11 object streams
- 248 named destinations out of 1000 (max. 500000)
+ 1241 PDF objects out of 1440 (max. 8388607)
+ 1102 compressed objects within 12 object streams
+ 256 named destinations out of 1000 (max. 500000)
  631 words of extra memory for PDF output out of 10000 (max. 10000000)
 
