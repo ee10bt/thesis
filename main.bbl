@@ -355,6 +355,46 @@
     \field{year}{2005}
   \endentry
 
+  \entry{Dubuffet2000}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DF}{%
+         family={Dubuffet},
+         familyi={D\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YDA}{%
+         family={Yuen},
+         familyi={Y\bibinitperiod},
+         given={D.\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+  \keyw{doi:10.1029/1999GL008338,dynamics,http://dx.doi.org/10.1029/1999GL008338,mantle}
+    \strng{namehash}{DFYDA1}
+    \strng{fullhash}{DFYDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{pages}{17\bibrangedash 20}
+    \field{title}{{A thick pipe-like heat-transfer mechanism in the mantle:
+  Nonlinear coupling between 3‐D convection and variable thermal
+  conductivity}}
+    \verb{url}
+    \verb http://onlinelibrary.wiley.com/doi/10.1029/1999GL008338/full
+    \endverb
+    \field{volume}{27}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Dubuffet, Yuen
+    \verb - 2000 - A thick pipe-like heat-transfer mechanism in the mantle Nonl
+    \verb inear coupling between 3‐D convection and variable.pdf:pdf
+    \endverb
+    \field{journaltitle}{Geophysical research letters}
+    \field{year}{2000}
+  \endentry
+
   \entry{Gale1997}{article}{}
     \name{author}{1}{}{%
       {{hash=GJD}{%
@@ -834,6 +874,80 @@
     \field{year}{1966}
   \endentry
 
+  \entry{Lay2006}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LT}{%
+         family={Lay},
+         familyi={L\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hernlund},
+         familyi={H\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GEJ}{%
+         family={Garnero},
+         familyi={G\bibinitperiod},
+         given={E.\bibnamedelima J.},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TMS}{%
+         family={Thorne},
+         familyi={T\bibinitperiod},
+         given={M.\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LT+1}
+    \strng{fullhash}{LTHJGEJTMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Temperature gradients in a low-shear-velocity province in the lowermost
+  mantle (D'' region) beneath the central Pacific Ocean were inferred from the
+  observation of a rapid S-wave velocity increase overlying a rapid decrease.
+  These paired seismic discontinuities are attributed to a phase change from
+  perovskite to post-perovskite and then back to perovskite as the temperature
+  increases with depth. Iron enrichment could explain the occurrence of
+  post-perovskite several hundred kilometers above the core-mantle boundary in
+  this warm, chemically distinct province. The double phase-boundary crossing
+  directly constrains the lowermost mantle temperature gradients. Assuming a
+  standard but unconstrained choice of thermal conductivity, the regional
+  core-mantle boundary heat flux (approximately 85 +/- 25 milliwatts per square
+  meter), comparable to the average at Earth's surface, was estimated, along
+  with a lower bound on global core-mantle boundary heat flow in the range of
+  13 +/- 4 terawatts. Mapped velocity-contrast variations indicate that the
+  lens of post-perovskite minerals thins and vanishes over 1000 kilometers
+  laterally toward the margin of the chemical distinct region as a result of a
+  approximately 500-kelvin temperature increase.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.1133280
+    \endverb
+    \field{issn}{1095-9203}
+    \field{pages}{1272\bibrangedash 1276}
+    \field{title}{{A post-perovskite lens and D'' heat flux beneath the central
+  Pacific.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/17124317
+    \endverb
+    \field{volume}{314}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Lay et al. - 20
+    \verb 06 - A post-perovskite lens and D'' heat flux beneath the central Pac
+    \verb ific.pdf:pdf
+    \endverb
+    \field{journaltitle}{Science}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Lay2008}{article}{}
     \name{author}{3}{}{%
       {{hash=LT}{%
@@ -1147,6 +1261,48 @@
     \endverb
     \field{journaltitle}{The Journal of Chemical Physics}
     \field{year}{1997}
+  \endentry
+
+  \entry{Naliboff2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NJB}{%
+         family={Naliboff},
+         familyi={N\bibinitperiod},
+         given={J.\bibnamedelima B.},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=KLH}{%
+         family={Kellogg},
+         familyi={K\bibinitperiod},
+         given={L.\bibnamedelima H.},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NJBKLH1}
+    \strng{fullhash}{NJBKLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \verb{doi}
+    \verb 10.1029/2006GL025717
+    \endverb
+    \field{issn}{0094-8276}
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{{Dynamic effects of a step-wise increase in thermal
+  conductivity and viscosity in the lowermost mantle}}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1029/2006GL025717
+    \endverb
+    \field{volume}{33}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Naliboff, Kello
+    \verb gg - 2006 - Dynamic effects of a step-wise increase in thermal conduc
+    \verb tivity and viscosity in the lowermost mantle.pdf:pdf
+    \endverb
+    \field{journaltitle}{Geophysical Research Letters}
+    \field{year}{2006}
   \endentry
 
   \entry{Nieto-Draghi2013}{article}{}

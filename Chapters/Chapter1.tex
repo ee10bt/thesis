@@ -46,6 +46,8 @@ Observations of plume structures and cyclic subduction patterns \citep[see][]{Ga
 
 Thermal conductivity is a material property, indicative of the ease with which heat is transferred through conduction. For known substances thermal conductivity spans about six orders of magnitude, from silica aerogels with 0.005~\wmk \citep{Lee1995} to graphene with 5000~\wmk \citep{Baladin2008}.
 
+The transfer of thermal energy can occur between an object and its surroundings, two bodies brought into contact, or along a temperature gradient within an object.
+
 %---------------------------------------
 \subsection{What affects it?}
 %---------------------------------------
@@ -94,16 +96,43 @@ A range of atomic scale simulation methods are available to determine the lattic
 
 Thermal conductivity in the deep Earth influences dynamic processes such as mantle convection and heat loss from the core \citep{Lay2008}. In this section I will discuss the prominent thermal conductivity-dependent processes.
 
+%-------------------
+\subsubsection{Mantle dynamics}
+%-------------------
+
+In the lower mantle \tcs changes with pressure, temperature, and composition, influencing features on a large scale. For example, \citet{Naliboff2006} used numerical models of mantle convection to show size and stability of convective plumes are sensitive to thermal conductivity above the core mantle boundary (CMB).
+
+\citet{Dubuffet2000} investigated the effects of temperature and pressure-dependent \tcs on mantle convection, finding that depth-dependent \tcs encouraged heat transport via convective plumes. Compared to a constant conductivity model, vertical heat transfer was concentrated to these ``pipe-like'' structures, despite the horizontally-averaged heat flow for both systems being around the same value. Variable conductivity, even in one dimension, increased the spatial and temporal stability of convection. Plumes were thicker, had heads of larger surface area, and were hotter, compared to the uniform conductivity mantle model.
+
+%-------------------
+\subsubsection{Heat flow}
+%-------------------
+
+The most accessible estimate of the Earth's energy is the total heat flow at the surface, of which a value of $46\pm3$~TW is accepted as the upper bound. Sources of surface heat flow include; radiogenic heating ($20\pm3$~TW), mantle cooling (8--28~TW), and the conduction of heat across the CMB from core cooling \citep{Lay2008}. Conductive heat flow is constrained by thermal conductivity, a model of which is not available for all Earth conditions.
+
+Better constraints on thermal conductivity are required to estimate CMB heat flow. This in turn would tell us more about the temperatures either side of the CMB, as well as the presence and nature of the lower mantle thermal boundary layer (TBL). Employing the most commonly used value for lower mantle conductivity, 10~\wmk~\citep{Lay2008}, heat flow across the CMB is expected to be 5--13~TW~\citep{Lay2008}. The value of 10~\wmk used by \citet{Lay2006} is an estimate of lowermost mantle \tc, based on extrapolation of a measurement at ambient conditions \citep{Osako1991}. Both higher and lower values have been proposed \citep[4--16~\wmk,][]{Manthilake2011}, illustrating how poorly constrained thermal conductivity is at CMB-relevant pressure/temperature conditions.
+
+%-------------------
+\subsubsection{Geomagnetism}
+%-------------------
+
+Using shear wave velocity as a proxy for CMB heat flow, \citet{Gubbins2007} showed that variations in mantle temperature gradients above the CMB can influence Earth's geodynamo. The present day magnetic field at the surface has four lobes, and these align above regions of fast shear wave velocity on the CMB. Ignoring compositional effects in the mantle, seismically-fast regions can be assumed to be cold. Considering Fourier's law (CITE), colder regions facilitate larger heat flows through steeper temperature gradients from the isothermal CMB.
+
+\citet{Gubbins2007} recreate the geomagnetic observation of the aforementioned lobes using a core geodynamo simulation, where the upper boundary (CMB, lowermost mantle bottom) condition was a laterally varying heat flux. Knowing the \tc, especially as it changes with temperature, would better constrain mantle boundary conditions used in this and similar core dynamics models \citep{Ammann2014}.
+
+
+
+
 %---------------------------------------
 \subsection{DETERMINATIONS OF TC FOR EARTH MATERIALS/CONDITIONS}
 %---------------------------------------
-Many studies assume lowermost mantle thermal conductivity to be 10~\wmk~\citep[e.g.][]{Lay2008}, but uncertainty in the extrapolation of results made at low pressures and temperatures gives a range of 4~-~16 \wmk~\citep{Brown1986, Osako1991, Hofmeister1999, Goncharov2009, Manthilake2011, Ohta2012}.
+Many studies assume lowermost mantle thermal conductivity to be 10~\wmk~\citep[e.g.][]{Lay2008}, but uncertainty in the extrapolation of results made at low pressures and temperatures gives a range of 4--16 \wmk~\citep{Brown1986, Osako1991, Hofmeister1999, Goncharov2009, Manthilake2011, Ohta2012}.
 
-There have been several computational studies to calculate the lattice thermal conductivity of bridgmanite at CMB conditions. \citet{Osako1991} measured the lattice thermal conductivity of MgSiO$_3$ perovskite, using a modified \AA ngstrom method. They investigated a temperature range of 160~-~340~K at ambient pressure. At 300~K, a conductivity of 5.1~\wmk was obtained. This value is similar to that reported for chemical and structural analogues, MgSiO$_3$ enstatite (5.0~\wmk REF) and CaTiO$_{3}$ perovskite (4~\wmk REF). The authors extrapolated the value to mantle conditions, neglecting radiative thermal conductivity. They predicted a value of 3.0~\wmk just beneath the mantle transition zone at 1900~K, and 12.0~\wmks at the top of the D$^{\prime \prime}$ layer at 2500~K, a four-fold increase. Thermal conductivity is highlighted as an important indictor of lowermost mantle structure, whether or not the D$^{\prime \prime}$ layer can behave as a thermal boundary between core and mantle.
+There have been several computational studies to calculate the lattice thermal conductivity of bridgmanite at CMB conditions. \citet{Osako1991} measured the lattice thermal conductivity of MgSiO$_3$ perovskite, using a modified \AA ngstrom method. They investigated a temperature range of 160--340~K at ambient pressure. At 300~K, a conductivity of 5.1~\wmk was obtained. This value is similar to that reported for chemical and structural analogues, MgSiO$_3$ enstatite (5.0~\wmk REF) and CaTiO$_{3}$ perovskite (4~\wmk REF). The authors extrapolated the value to mantle conditions, neglecting radiative thermal conductivity. They predicted a value of 3.0~\wmk just beneath the mantle transition zone at 1900~K, and 12.0~\wmks at the top of the D$^{\prime \prime}$ layer at 2500~K, a four-fold increase. Thermal conductivity is highlighted as an important indictor of lowermost mantle structure, whether or not the D$^{\prime \prime}$ layer can behave as a thermal boundary between core and mantle.
 
-\par \citet{Manthilake2011} measured MgSiO$_3$ perovskite at 26~GPa and 473~-~1073~K, and periclase at 8 and 14~GPa between 373~-~1273~K. In order to estimate values of thermal conductivity at the top and bottom of D$^{\prime \prime}$ for a lower mantle compositional model of 4~perovskite~:~1~periclase, the authors extrapolated their measurements to high temperature and pressure. For an iron-free mantle, thermal conductivities of $18.9\pm1.6~$\wmk and $15.4\pm1.4$~\wmk are estimated for the top of D$^{\prime \prime}$ and CMB respectively. Similarly, for a mantle composition with Fe, thermal conductivities of $9.1\pm1.2$~\wmk and $8.4\pm1.2$~\wmk are calculated. This highlights the importance of impurities in controlling thermal conductivity in the lower mantle.
+\citet{Manthilake2011} measured MgSiO$_3$ perovskite at 26~GPa and 473--1073~K, and periclase at 8 and 14~GPa between 373--1273~K. In order to estimate values of thermal conductivity at the top and bottom of D$^{\prime \prime}$ for a lower mantle compositional model of 4~perovskite~:~1~periclase, the authors extrapolated their measurements to high temperature and pressure. For an iron-free mantle, thermal conductivities of $18.9\pm1.6~$\wmk and $15.4\pm1.4$~\wmk are estimated for the top of D$^{\prime \prime}$ and CMB respectively. Similarly, for a mantle composition with Fe, thermal conductivities of $9.1\pm1.2$~\wmk and $8.4\pm1.2$~\wmk are calculated. This highlights the importance of impurities in controlling thermal conductivity in the lower mantle.
 
-\par \citet{Ohta2012} measured the lattice thermal diffusivity of MgSiO$_3$ perovskite and post-perovskite at room temperature and pressures up to 144~GPa (using a diamond-anvil cell (DAC) and light heating thermoreflectance). These results suggest a perovskite-dominant lowermost mantle would have conducitivity of around 11~\wmk, and that parts of the lowermost mantle where post-perovskite is stable will have a conductivity approximately 60\% higher. The authors suggest that these differences in conductivity between phases will not have a large effect on CMB heat flux, assuming the double-crossing perovskite phase model. The lattice conductivity of \mgsios perovskite is shown to increase with pressure and decrease with temperature as expected. The inclusion of impurities is expected to decrease lattice thermal conductivity.
+\citet{Ohta2012} measured the lattice thermal diffusivity of MgSiO$_3$ perovskite and post-perovskite at room temperature and pressures up to 144~GPa (using a diamond-anvil cell and light heating thermoreflectance). These results suggest a perovskite-dominant lowermost mantle would have conducitivity of around 11~\wmk, and that parts of the lowermost mantle where post-perovskite is stable will have a conductivity approximately 60\% higher. The authors suggest that these differences in conductivity between phases will not have a large effect on CMB heat flux, assuming the double-crossing perovskite phase model. The lattice conductivity of \mgsios perovskite is shown to increase with pressure and decrease with temperature as expected. The inclusion of impurities is expected to decrease lattice thermal conductivity.
 
 MANTHILAKE'S HIGH T RESULTS? CAN'T FIND REFERENCE?
 
