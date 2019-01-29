@@ -460,6 +460,88 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Goncharov2008}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GAF}{%
+         family={Goncharov},
+         familyi={G\bibinitperiod},
+         given={A.\bibnamedelima F.},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=HBD}{%
+         family={Haugen},
+         familyi={H\bibinitperiod},
+         given={B.\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SVV}{%
+         family={Struzhkin},
+         familyi={S\bibinitperiod},
+         given={V.\bibnamedelima V.},
+         giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Beck},
+         familyi={B\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JSD}{%
+         family={Jacobsen},
+         familyi={J\bibinitperiod},
+         given={S.\bibnamedelima D.},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GAF+1}
+    \strng{fullhash}{GAFHBDSVVBPJSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Iron in crustal and mantle minerals adopts several possible oxidation
+  states: this has implications for biogeochemical processes, oxygenation of
+  the atmosphere and the oxidation state of the mantle. In the deep Earth, iron
+  in silicate perovskite, (Mg(0.9)Fe(0.1))SiO(3), and ferropericlase,
+  (Mg(0.85)Fe(0.15))O, influences the thermal conductivity of the lower mantle
+  and therefore heat flux from the core. Little is known, however, about the
+  effect of iron oxidation states on transport properties. Here we show that
+  the radiative component of thermal conductivity in the dominant silicate
+  perovskite material of Earth's lower mantle is controlled by the amount of
+  ferric iron, Fe(3+). We obtained the optical absorption spectra of silicate
+  perovskite and ferropericlase at pressures up to 133 GPa, corresponding to
+  pressures at the core-mantle boundary. Absorption spectra of ferropericlase
+  up to 800 K and 60 GPa exhibit minimal temperature dependence. The results on
+  silicate perovskite show that optical absorption in the visible and
+  near-infrared spectral range is dominated by O-Fe(3+) charge transfer and
+  Fe(3+)-Fe(2+) intervalence transitions, whereas a contribution from the
+  Fe(2+) crystal-field transitions is substantially smaller. The estimated
+  pressure-dependent radiative conductivity, k(rad), from these data is 2-5
+  times lower than previously inferred from model extrapolations, with
+  implications for the evolution of the mantle, such as generation and
+  stability of thermo-chemical plumes in the lower mantle.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature07412
+    \endverb
+    \field{issn}{1476-4687}
+    \field{pages}{231\bibrangedash 234}
+    \field{title}{{Radiative conductivity in the Earth's lower mantle.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/19005553
+    \endverb
+    \field{volume}{456}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Goncharov et al
+    \verb . - 2008 - Radiative conductivity in the Earth's lower mantle.pdf:pdf
+    \endverb
+    \field{journaltitle}{Nature}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Goncharov2009}{article}{}
     \name{author}{5}{}{%
       {{hash=GAF}{%
@@ -494,7 +576,7 @@
       }}%
     }
     \keyw{earth,s mantle dynamics,thermal conductivity}
-    \strng{namehash}{GAF+1}
+    \strng{namehash}{GAF+2}
     \strng{fullhash}{GAFBPSVVHBDJSD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -552,6 +634,58 @@
     \endverb
     \field{journaltitle}{The Journal of Chemical Physics}
     \field{year}{1954}
+  \endentry
+
+  \entry{Gubbins2007}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GD}{%
+         family={Gubbins},
+         familyi={G\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WAP}{%
+         family={Willis},
+         familyi={W\bibinitperiod},
+         given={A.\bibnamedelima P.},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sreenivasan},
+         familyi={S\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{and south of the,ary,cmb,core processes,equator,from,geodynamo,has 4
+  main lobes,s geomagnetic field at,symmetrically placed north,the core-mantle
+  bound-,they are centered away,time-averaged geomagnetic field,today}
+    \strng{namehash}{GD+1}
+    \strng{fullhash}{GDWAPSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1016/j.pepi.2007.04.014
+    \endverb
+    \field{issn}{00319201}
+    \field{pages}{256\bibrangedash 260}
+    \field{title}{{Correlation of Earth's magnetic field with lower mantle
+  thermal and seismic structure}}
+    \verb{url}
+    \verb http://linkinghub.elsevier.com/retrieve/pii/S0031920107000908
+    \endverb
+    \field{volume}{162}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Gubbins, Willis
+    \verb , Sreenivasan - 2007 - Correlation of Earth's magnetic field with low
+    \verb er mantle thermal and seismic structure.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{year}{2007}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Haigis2013}{thesis}{}
@@ -729,6 +863,56 @@
     \endverb
     \field{journaltitle}{Journal of Applied Physics}
     \field{year}{2011}
+  \endentry
+
+  \entry{Keppler2008}{article}{}
+    \name{author}{4}{}{%
+      {{hash=KH}{%
+         family={Keppler},
+         familyi={K\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DLS}{%
+         family={Dubrovinsky},
+         familyi={D\bibinitperiod},
+         given={L.\bibnamedelima S.},
+         giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NO}{%
+         family={Narygina},
+         familyi={N\bibinitperiod},
+         given={O.},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Kantor},
+         familyi={K\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KH+1}
+    \strng{fullhash}{KHDLSNOKI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{pages}{1529\bibrangedash 1532}
+    \field{title}{{Optical absorption and radiative thermal conductivity of
+  silicate perovskite to 125 gigapascals}}
+    \verb{url}
+    \verb http://www.sciencemag.org/content/322/5907/1529.short
+    \endverb
+    \field{volume}{322}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Keppler et al.
+    \verb - 2008 - Optical absorption and radiative thermal conductivity of sil
+    \verb icate perovskite to 125 gigapascals.pdf:pdf
+    \endverb
+    \field{journaltitle}{Science}
+    \field{year}{2008}
   \endentry
 
   \entry{Klemens1960}{article}{}

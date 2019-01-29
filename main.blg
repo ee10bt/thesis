@@ -23,53 +23,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11950 items from 5000.
+Reallocated field_info (elt_size=4) to 12228 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: thesis.bib
 Warning--I didn't find a database entry for "Baladin2008"
-Warning--I didn't find a database entry for "Osaka1991"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 48 entries,
+You've used 51 entries,
             6256 wiz_defined-function locations,
-            1690 strings with 49669 characters,
-and the built_in function-call counts, 294940 in all, are:
-= -- 20034
-> -- 4900
-< -- 1189
-+ -- 6958
-- -- 2195
-* -- 24176
-:= -- 29965
+            1718 strings with 52654 characters,
+and the built_in function-call counts, 317318 in all, are:
+= -- 21678
+> -- 5218
+< -- 1254
++ -- 7542
+- -- 2339
+* -- 26034
+:= -- 32407
 add.period$ -- 0
-call.type$ -- 48
-change.case$ -- 610
-chr.to.int$ -- 46
-cite$ -- 94
-duplicate$ -- 31589
-empty$ -- 28517
-format.name$ -- 3316
-if$ -- 59819
+call.type$ -- 51
+change.case$ -- 643
+chr.to.int$ -- 48
+cite$ -- 100
+duplicate$ -- 33980
+empty$ -- 30619
+format.name$ -- 3559
+if$ -- 64254
 int.to.chr$ -- 0
-int.to.str$ -- 108
+int.to.str$ -- 115
 missing$ -- 0
-newline$ -- 2224
-num.names$ -- 2057
-pop$ -- 16091
+newline$ -- 2384
+num.names$ -- 2183
+pop$ -- 17164
 preamble$ -- 1
-purify$ -- 891
+purify$ -- 948
 quote$ -- 0
-skip$ -- 7728
+skip$ -- 8186
 stack$ -- 0
-substring$ -- 34956
-swap$ -- 8653
-text.length$ -- 1190
-text.prefix$ -- 48
+substring$ -- 37960
+swap$ -- 9237
+text.length$ -- 1262
+text.prefix$ -- 51
 top$ -- 1
-type$ -- 1619
+type$ -- 1721
 warning$ -- 0
-while$ -- 3740
+while$ -- 4045
 width$ -- 0
-write$ -- 2177
-(There were 2 warnings)
+write$ -- 2334
+(There was 1 warning)

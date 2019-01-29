@@ -9,68 +9,71 @@
 \contentsline {subsection}{\numberline {1.1.1}Man-made applications}{1}{subsection.16}
 \contentsline {subsection}{\numberline {1.1.2}In the context of the Earth}{1}{subsection.17}
 \contentsline {section}{\numberline {1.2}What is thermal conductivity?}{2}{section.18}
-\contentsline {subsection}{\numberline {1.2.1}What affects it?}{2}{subsection.19}
-\contentsline {subsection}{\numberline {1.2.2}Mechanisms of heat transport}{2}{subsection.20}
-\contentsline {section}{\numberline {1.3}Previous work - geophysics}{3}{section.21}
-\contentsline {subsection}{\numberline {1.3.1}STUFF THAT IS INFLUENCED BY CONDUCTIVITY}{3}{subsection.22}
-\contentsline {subsubsection}{Mantle dynamics}{3}{section*.23}
-\contentsline {subsubsection}{Heat flow}{4}{section*.24}
-\contentsline {subsubsection}{Geomagnetism}{4}{section*.25}
-\contentsline {subsection}{\numberline {1.3.2}DETERMINATIONS OF TC FOR EARTH MATERIALS/CONDITIONS}{5}{subsection.26}
-\contentsline {section}{\numberline {1.4}Thesis outline}{6}{section.27}
-\contentsline {subsection}{\numberline {1.4.1}Aims}{7}{subsection.28}
-\contentsline {subsection}{\numberline {1.4.2}Objectives}{7}{subsection.29}
-\contentsline {chapter}{\numberline {2}Intro/Background/Theory 2}{9}{chapter.30}
-\contentsline {section}{\numberline {2.1}Atomic-scale modelling}{9}{section.31}
-\contentsline {subsection}{\numberline {2.1.1}Molecular dynamics}{9}{subsection.32}
-\contentsline {subsubsection}{Parameter drift/convergence}{9}{section*.33}
-\contentsline {subsection}{\numberline {2.1.2}Interatomic potentials / Atomic interactions?}{10}{subsection.34}
-\contentsline {subsection}{\numberline {2.1.3}LAMMPS}{10}{subsection.35}
-\contentsline {subsection}{\numberline {2.1.4}DFT/other}{10}{subsection.36}
-\contentsline {section}{\numberline {2.2}Computing thermal conductivity}{10}{section.37}
-\contentsline {subsection}{\numberline {2.2.1}Finite-size effects}{11}{subsection.38}
-\contentsline {subsection}{\numberline {2.2.2}Direct method}{12}{subsection.39}
-\contentsline {subsubsection}{System setup}{12}{section*.41}
-\contentsline {subsubsection}{Data processing}{12}{section*.45}
-\contentsline {subsubsection}{Finite-size effects}{13}{section*.48}
-\contentsline {subsubsection}{Other NEMD}{15}{section*.49}
-\contentsline {subsection}{\numberline {2.2.3}Green-Kubo}{15}{subsection.50}
-\contentsline {subsection}{\numberline {2.2.4}Other}{17}{subsection.55}
-\contentsline {section}{\numberline {2.3}Previous work}{18}{section.56}
-\contentsline {subsection}{\numberline {2.3.1}Method comparison}{18}{subsection.57}
-\contentsline {subsection}{\numberline {2.3.2}Finite-size effects}{18}{subsection.58}
-\contentsline {subsubsection}{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}{18}{section*.59}
-\contentsline {chapter}{\numberline {3}Constraining the finite-size effects of molecular dynamics methods to compute thermal coductivity}{19}{chapter.60}
-\contentsline {section}{\numberline {3.1}Introduction}{19}{section.61}
-\contentsline {subsection}{\numberline {3.1.1}Finite-size effects}{20}{subsection.62}
-\contentsline {section}{\numberline {3.2}Computational approaches}{20}{section.63}
-\contentsline {subsection}{\numberline {3.2.1}Direct method}{20}{subsection.64}
-\contentsline {subsection}{\numberline {3.2.2}Green-Kubo}{21}{subsection.65}
-\contentsline {section}{\numberline {3.3}Results}{23}{section.66}
-\contentsline {subsection}{\numberline {3.3.1}Green-Kubo}{23}{subsection.67}
-\contentsline {subsection}{\numberline {3.3.2}Direct method}{23}{subsection.68}
-\contentsline {section}{\numberline {3.4}Summary}{24}{section.69}
-\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{27}{chapter.70}
-\contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{27}{section.71}
-\contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{28}{subsection.73}
-\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{29}{section*.76}
-\contentsline {subsubsection}{What effects the magnitude of impurity scattering?}{29}{section*.77}
-\contentsline {subsection}{\numberline {4.1.2}$\omega $ and $\tau $ in depth}{30}{subsection.80}
-\contentsline {section}{\numberline {4.2}Methodology}{33}{section.89}
-\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{33}{subsection.90}
-\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{34}{subsection.94}
-\contentsline {section}{\numberline {4.3}Results}{35}{section.96}
-\contentsline {section}{\numberline {4.4}Parameterising composition and temperature effects on CMB conductivity}{39}{section.100}
-\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{39}{subsection.101}
-\contentsline {subsubsection}{Compositional dependence}{40}{section*.102}
-\contentsline {subsubsection}{Why does this model work?}{42}{section*.110}
-\contentsline {subsubsection}{Temperature dependence}{44}{section*.112}
-\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{49}{chapter.122}
-\contentsline {section}{\numberline {5.1}Main Section 1}{49}{section.123}
-\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{49}{subsection.124}
-\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{51}{chapter.125}
-\contentsline {section}{\numberline {6.1}Main Section 1}{51}{section.126}
-\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{51}{subsection.127}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{53}{appendix.128}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{53}{section.129}
-\contentsline {chapter}{Bibliography}{55}{appendix*.130}
+\contentsline {subsection}{\numberline {1.2.1}Mechanisms of heat transport}{3}{subsection.19}
+\contentsline {subsubsection}{Electron}{3}{section*.20}
+\contentsline {subsubsection}{Photon}{3}{section*.21}
+\contentsline {subsubsection}{Phonon}{4}{section*.22}
+\contentsline {subsection}{\numberline {1.2.2}What affects it?}{4}{subsection.23}
+\contentsline {section}{\numberline {1.3}Previous work - geophysics}{5}{section.24}
+\contentsline {subsection}{\numberline {1.3.1}STUFF THAT IS INFLUENCED BY CONDUCTIVITY}{5}{subsection.25}
+\contentsline {subsubsection}{Mantle dynamics}{5}{section*.26}
+\contentsline {subsubsection}{Heat flow}{6}{section*.27}
+\contentsline {subsubsection}{Geomagnetism}{6}{section*.28}
+\contentsline {subsection}{\numberline {1.3.2}DETERMINATIONS OF TC FOR EARTH MATERIALS/CONDITIONS}{7}{subsection.29}
+\contentsline {section}{\numberline {1.4}Thesis outline}{9}{section.30}
+\contentsline {subsection}{\numberline {1.4.1}Aims}{9}{subsection.31}
+\contentsline {subsection}{\numberline {1.4.2}Objectives}{9}{subsection.32}
+\contentsline {chapter}{\numberline {2}Intro/Background/Theory 2}{11}{chapter.33}
+\contentsline {section}{\numberline {2.1}Atomic-scale modelling}{11}{section.34}
+\contentsline {subsection}{\numberline {2.1.1}Molecular dynamics}{11}{subsection.35}
+\contentsline {subsubsection}{Parameter drift/convergence}{11}{section*.36}
+\contentsline {subsection}{\numberline {2.1.2}Interatomic potentials / Atomic interactions?}{12}{subsection.37}
+\contentsline {subsection}{\numberline {2.1.3}LAMMPS}{12}{subsection.38}
+\contentsline {subsection}{\numberline {2.1.4}DFT/other}{12}{subsection.39}
+\contentsline {section}{\numberline {2.2}Computing thermal conductivity}{12}{section.40}
+\contentsline {subsection}{\numberline {2.2.1}Finite-size effects}{13}{subsection.41}
+\contentsline {subsection}{\numberline {2.2.2}Direct method}{14}{subsection.42}
+\contentsline {subsubsection}{System setup}{14}{section*.44}
+\contentsline {subsubsection}{Data processing}{14}{section*.48}
+\contentsline {subsubsection}{Finite-size effects}{15}{section*.51}
+\contentsline {subsubsection}{Other NEMD}{17}{section*.52}
+\contentsline {subsection}{\numberline {2.2.3}Green-Kubo}{17}{subsection.53}
+\contentsline {subsection}{\numberline {2.2.4}Other}{19}{subsection.58}
+\contentsline {section}{\numberline {2.3}Previous work}{20}{section.59}
+\contentsline {subsection}{\numberline {2.3.1}Method comparison}{20}{subsection.60}
+\contentsline {subsection}{\numberline {2.3.2}Finite-size effects}{20}{subsection.61}
+\contentsline {subsubsection}{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}{20}{section*.62}
+\contentsline {chapter}{\numberline {3}Constraining the finite-size effects of molecular dynamics methods to compute thermal coductivity}{21}{chapter.63}
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.64}
+\contentsline {subsection}{\numberline {3.1.1}Finite-size effects}{22}{subsection.65}
+\contentsline {section}{\numberline {3.2}Computational approaches}{22}{section.66}
+\contentsline {subsection}{\numberline {3.2.1}Direct method}{22}{subsection.67}
+\contentsline {subsection}{\numberline {3.2.2}Green-Kubo}{23}{subsection.68}
+\contentsline {section}{\numberline {3.3}Results}{25}{section.69}
+\contentsline {subsection}{\numberline {3.3.1}Green-Kubo}{25}{subsection.70}
+\contentsline {subsection}{\numberline {3.3.2}Direct method}{25}{subsection.71}
+\contentsline {section}{\numberline {3.4}Summary}{26}{section.72}
+\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{29}{chapter.73}
+\contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{29}{section.74}
+\contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{30}{subsection.76}
+\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{31}{section*.79}
+\contentsline {subsubsection}{What effects the magnitude of impurity scattering?}{31}{section*.80}
+\contentsline {subsection}{\numberline {4.1.2}$\omega $ and $\tau $ in depth}{32}{subsection.83}
+\contentsline {section}{\numberline {4.2}Methodology}{35}{section.92}
+\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{35}{subsection.93}
+\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{36}{subsection.97}
+\contentsline {section}{\numberline {4.3}Results}{37}{section.99}
+\contentsline {section}{\numberline {4.4}Parameterising composition and temperature effects on CMB conductivity}{41}{section.103}
+\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{41}{subsection.104}
+\contentsline {subsubsection}{Compositional dependence}{42}{section*.105}
+\contentsline {subsubsection}{Why does this model work?}{44}{section*.113}
+\contentsline {subsubsection}{Temperature dependence}{46}{section*.115}
+\contentsline {chapter}{\numberline {5}Modelling the lower mantle with variable thermal conductivity}{51}{chapter.125}
+\contentsline {section}{\numberline {5.1}Main Section 1}{51}{section.126}
+\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{51}{subsection.127}
+\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{53}{chapter.128}
+\contentsline {section}{\numberline {6.1}Main Section 1}{53}{section.129}
+\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{53}{subsection.130}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{55}{appendix.131}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{55}{section.132}
+\contentsline {chapter}{Bibliography}{57}{appendix*.133}
