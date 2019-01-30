@@ -23,52 +23,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 12228 items from 5000.
+Reallocated field_info (elt_size=4) to 12506 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: thesis.bib
-Warning--I didn't find a database entry for "Baladin2008"
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 51 entries,
+You've used 54 entries,
             6256 wiz_defined-function locations,
-            1718 strings with 52654 characters,
-and the built_in function-call counts, 317318 in all, are:
-= -- 21678
-> -- 5218
-< -- 1254
-+ -- 7542
-- -- 2339
-* -- 26034
-:= -- 32407
+            1747 strings with 55072 characters,
+and the built_in function-call counts, 335859 in all, are:
+= -- 22847
+> -- 5566
+< -- 1325
++ -- 8215
+- -- 2497
+* -- 27427
+:= -- 34482
 add.period$ -- 0
-call.type$ -- 51
-change.case$ -- 643
-chr.to.int$ -- 48
-cite$ -- 100
-duplicate$ -- 33980
-empty$ -- 30619
-format.name$ -- 3559
-if$ -- 64254
+call.type$ -- 54
+change.case$ -- 676
+chr.to.int$ -- 49
+cite$ -- 106
+duplicate$ -- 36617
+empty$ -- 32193
+format.name$ -- 3830
+if$ -- 67737
 int.to.chr$ -- 0
-int.to.str$ -- 115
+int.to.str$ -- 121
 missing$ -- 0
-newline$ -- 2384
-num.names$ -- 2183
-pop$ -- 17164
+newline$ -- 2553
+num.names$ -- 2306
+pop$ -- 18251
 preamble$ -- 1
-purify$ -- 948
+purify$ -- 1010
 quote$ -- 0
-skip$ -- 8186
+skip$ -- 8682
 stack$ -- 0
-substring$ -- 37960
-swap$ -- 9237
-text.length$ -- 1262
-text.prefix$ -- 51
+substring$ -- 39334
+swap$ -- 9874
+text.length$ -- 1342
+text.prefix$ -- 53
 top$ -- 1
-type$ -- 1721
+type$ -- 1823
 warning$ -- 0
-while$ -- 4045
+while$ -- 4387
 width$ -- 0
-write$ -- 2334
-(There was 1 warning)
+write$ -- 2500

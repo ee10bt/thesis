@@ -93,12 +93,97 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Balandin2008}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BAA}{%
+         family={Balandin},
+         familyi={B\bibinitperiod},
+         given={A.\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BW}{%
+         family={Bao},
+         familyi={B\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Calizo},
+         familyi={C\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Teweldebrhan},
+         familyi={T\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Miao},
+         familyi={M\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LCN}{%
+         family={Lau},
+         familyi={L\bibinitperiod},
+         given={C.\bibnamedelima N.},
+         giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BAA+1}
+    \strng{fullhash}{BAAGSBWCITDMFLCN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    We report the measurement of the thermal conductivity of a suspended
+  single-layer graphene. The room temperature values of the thermal
+  conductivity in the range approximately (4.84+/-0.44)x10(3) to
+  (5.30+/-0.48)x10(3) W/mK were extracted for a single-layer graphene from the
+  dependence of the Raman G peak frequency on the excitation laser power and
+  independently measured G peak temperature coefficient. The extremely high
+  value of the thermal conductivity suggests that graphene can outperform
+  carbon nanotubes in heat conduction. The superb thermal conduction property
+  of graphene is beneficial for the proposed electronic applications and
+  establishes graphene as an excellent material for thermal management.%
+    }
+    \verb{doi}
+    \verb 10.1021/nl0731872
+    \endverb
+    \field{issn}{1530-6984}
+    \field{number}{3}
+    \field{pages}{902\bibrangedash 907}
+    \field{title}{{Superior thermal conductivity of single-layer graphene.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/18284217
+    \endverb
+    \field{volume}{8}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Balandin et al.
+    \verb  - 2008 - Superior thermal conductivity of single-layer graphene.pdf:
+    \verb pdf
+    \endverb
+    \field{journaltitle}{Nano letters}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Brodholt2000}{article}{}
     \name{author}{1}{}{%
       {{hash=BJP}{%
          family={Brodholt},
          familyi={B\bibinitperiod},
-         given={John\bibnamedelima P.},
+         given={J.\bibnamedelima P.},
          giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
@@ -174,13 +259,13 @@
     \field{sortinithash}{B}
     \field{number}{B7}
     \field{pages}{7485\bibrangedash 7494}
-    \field{title}{{Phase Transitions, Gr{\"{u}}neisen Parameter, and Elasticity
-  for Shocked Iron Between 77 GPa and 400 GPa}}
+    \field{title}{{Phase transitions, Gr{\"{u}}neisen parameter, and elasticity
+  for shocked iron between 77{\~{}}GPa and 400{\~{}}GPa}}
     \field{volume}{91}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Brown, McQueen
-    \verb - 1986 - Phase Transitions, Gr{\"{u}}neisen Parameter, and Elasticity
-    \verb  for Shocked Iron Between 77 GPa and 400 GPa.pdf:pdf
+    \verb - 1986 - Phase transitions, Gr{\"{u}}neisen parameter, and elasticity
+    \verb  for shocked iron between 77{\~{}}GPa and 400{\~{}}GPa.pdf:pdf
     \endverb
     \field{journaltitle}{Journal of Geophysical Research}
     \field{year}{1986}
@@ -301,16 +386,16 @@
     \endverb
     \field{issn}{0031-9007}
     \field{pages}{1\bibrangedash 5}
-    \field{title}{{Ab initio Lattice Thermal Conductivity of MgSiO3 Perovskite
-  as Found in Earth's Lower Mantle}}
+    \field{title}{{Ab initio lattice thermal conductivity of MgSiO3 perovskite
+  as found in Earth's lower mantle}}
     \verb{url}
     \verb http://link.aps.org/doi/10.1103/PhysRevLett.110.025904
     \endverb
     \field{volume}{110}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Dekura, Tsuchiy
-    \verb a, Tsuchiya - 2013 - Ab initio Lattice Thermal Conductivity of MgSiO3
-    \verb  Perovskite as Found in Earth's Lower Mantle.pdf:pdf
+    \verb a, Tsuchiya - 2013 - Ab initio lattice thermal conductivity of MgSiO3
+    \verb  perovskite as found in Earth's lower mantle.pdf:pdf
     \endverb
     \field{journaltitle}{Physical Review Letters}
     \field{year}{2013}
@@ -322,13 +407,13 @@
       {{hash=DDP}{%
          family={Dobson},
          familyi={D\bibinitperiod},
-         given={David\bibnamedelima P.},
+         given={D.\bibnamedelima P.},
          giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
       {{hash=BJP}{%
          family={Brodholt},
          familyi={B\bibinitperiod},
-         given={John\bibnamedelima P.},
+         given={J.\bibnamedelima P.},
          giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
@@ -547,36 +632,36 @@
       {{hash=GAF}{%
          family={Goncharov},
          familyi={G\bibinitperiod},
-         given={Alexander\bibnamedelima F.},
+         given={A.\bibnamedelima F.},
          giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
       }}%
       {{hash=BP}{%
          family={Beck},
          familyi={B\bibinitperiod},
-         given={Pierre},
+         given={P.},
          giveni={P\bibinitperiod},
       }}%
       {{hash=SVV}{%
          family={Struzhkin},
          familyi={S\bibinitperiod},
-         given={Viktor\bibnamedelima V.},
+         given={V.\bibnamedelima V.},
          giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
       {{hash=HBD}{%
          family={Haugen},
          familyi={H\bibinitperiod},
-         given={Benjamin\bibnamedelima D.},
+         given={B.\bibnamedelima D.},
          giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
       {{hash=JSD}{%
          family={Jacobsen},
          familyi={J\bibinitperiod},
-         given={Steven\bibnamedelima D.},
+         given={S.\bibnamedelima D.},
          giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
     \keyw{earth,s mantle dynamics,thermal conductivity}
-    \strng{namehash}{GAF+2}
+    \strng{namehash}{GAF+1}
     \strng{fullhash}{GAFBPSVVHBDJSD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -587,7 +672,6 @@
     \verb 10.1016/j.pepi.2008.07.033
     \endverb
     \field{issn}{00319201}
-    \field{number}{1-4}
     \field{pages}{24\bibrangedash 32}
     \field{title}{{Thermal conductivity of lower-mantle minerals}}
     \verb{url}
@@ -619,18 +703,35 @@
     \field{labelyear}{1954}
     \field{sortinit}{G}
     \field{sortinithash}{G}
+    \field{abstract}{%
+    The procedures developed in a previous paper of the same main title are
+  applied to the specific case of irreversible processes in fluids. The gross
+  variables are chosen to be a finite number of the plane‐wave expansion
+  coefficients of the local particle, momentum and energy densities. As an
+  example, the gross variables describing the local particle density are ∑
+  i=1 N exp i k {\textperiodcentered} x i , where p i and x i are the momentum
+  and position of the ith molecule and N the total number. k runs over a finite
+  number of values which are all small compared to the reciprocal mean distance
+  between molecules. The phenomenonological equations are derived and
+  expressions are given for the viscosity,diffusion, and heat conductivity in
+  terms the autocorrelation coefficients of certain phase functions. These
+  expressions are supposed to be valid for both liquids and gases. They are
+  shown to coincide with the Chapman‐Enskog expressions for dilute gases.%
+    }
     \verb{doi}
     \verb 10.1063/1.1740082
     \endverb
+    \field{isbn}{0021-9606}
+    \field{issn}{00219606}
     \field{number}{3}
     \field{pages}{398\bibrangedash 413}
-    \field{title}{{Markoff Random Processes and the Statistical Mechanics of
-  Time-Dependent Phenomena. II. Irreversible Processes in Fluids}}
+    \field{title}{{Markoff random processes and the statistical mechanics of
+  time-dependent phenomena. II. Irreversible processes in fluids}}
     \field{volume}{22}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Green - 1954 -
-    \verb Markoff Random Processes and the Statistical Mechanics of Time-Depend
-    \verb ent Phenomena. II. Irreversible Processes in Fluids.pdf:pdf
+    \verb Markoff random processes and the statistical mechanics of time-depend
+    \verb ent phenomena. II. Irreversible processes in fluids.pdf:pdf
     \endverb
     \field{journaltitle}{The Journal of Chemical Physics}
     \field{year}{1954}
@@ -693,7 +794,7 @@
       {{hash=HV}{%
          family={Haigis},
          familyi={H\bibinitperiod},
-         given={Volker},
+         given={V.},
          giveni={V\bibinitperiod},
       }}%
     }
@@ -704,6 +805,7 @@
     \field{labelyear}{2013}
     \field{sortinit}{H}
     \field{sortinithash}{H}
+    \field{pages}{83}
     \field{title}{{Trace elements in silicate melts and the thermal
   conductivity of the earth's deep mantle: insights from atomistic modeling of
   geomaterials}}
@@ -743,16 +845,16 @@
     \endverb
     \field{issn}{00368075}
     \field{pages}{1699\bibrangedash 1706}
-    \field{title}{{Mantle Values of Thermal Conductivity and the Geotherm from
-  Phonon Lifetimes}}
+    \field{title}{{Mantle values of thermal conductivity and the geotherm from
+  phonon lifetimes}}
     \verb{url}
     \verb http://www.sciencemag.org/cgi/doi/10.1126/science.283.5408.1699
     \endverb
     \field{volume}{283}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Hofmeister - 19
-    \verb 99 - Mantle Values of Thermal Conductivity and the Geotherm from Phon
-    \verb on Lifetimes.pdf:pdf
+    \verb 99 - Mantle values of thermal conductivity and the geotherm from phon
+    \verb on lifetimes.pdf:pdf
     \endverb
     \field{journaltitle}{Science}
     \field{year}{1999}
@@ -917,15 +1019,15 @@
 
   \entry{Klemens1960}{article}{}
     \name{author}{1}{}{%
-      {{hash=KP}{%
+      {{hash=KPG}{%
          family={Klemens},
          familyi={K\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
+         given={P.\bibnamedelima G.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KP1}
-    \strng{fullhash}{KP1}
+    \strng{namehash}{KPG1}
+    \strng{fullhash}{KPG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1960}
@@ -949,15 +1051,15 @@
     \field{issn}{0031-899X}
     \field{number}{2}
     \field{pages}{507\bibrangedash 509}
-    \field{title}{{Thermal Resistance due to Point Defects at High
-  Temperatures}}
+    \field{title}{{Thermal resistance due to point defects at high
+  temperatures}}
     \verb{url}
     \verb http://link.aps.org/doi/10.1103/PhysRev.119.507
     \endverb
     \field{volume}{119}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Klemens - 1960
-    \verb - Thermal Resistance due to Point Defects at High Temperatures.pdf:pd
+    \verb - Thermal resistance due to point defects at high temperatures.pdf:pd
     \verb f
     \endverb
     \field{journaltitle}{Physical Review}
@@ -987,13 +1089,13 @@
     \endverb
     \field{number}{12}
     \field{pages}{1\bibrangedash 4}
-    \field{title}{{Thermal Conductivity of MgO Periclase from Equilibrium First
-  Principles Molecular Dynamics}}
+    \field{title}{{Thermal conductivity of MgO periclase from equilibrium first
+  principles molecular dynamics}}
     \field{volume}{103}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/de Koker - 2009
-    \verb  - Thermal Conductivity of MgO Periclase from Equilibrium First Princ
-    \verb iples Molecular Dynamics.pdf:pdf
+    \verb  - Thermal conductivity of MgO periclase from equilibrium first princ
+    \verb iples molecular dynamics.pdf:pdf
     \endverb
     \field{journaltitle}{Physical Review Letters}
     \field{year}{2009}
@@ -1019,14 +1121,15 @@
     \verb 10.1143/JPSJ.12.570
     \endverb
     \field{number}{6}
-    \field{title}{{Statistical-Mechanical Theory of Irreversible Processes.
+    \field{pages}{570\bibrangedash 586}
+    \field{title}{{Statistical-mechanical theory of irreversible processes.
   I.}}
     \field{volume}{12}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Kubo - 1957 - S
-    \verb tatistical-Mechanical Theory of Irreversible Processes. I.pdf:pdf
+    \verb tatistical-mechanical theory of irreversible processes. I.pdf:pdf
     \endverb
-    \field{journaltitle}{Journa; of the Physical Society of Japan}
+    \field{journaltitle}{Journal of the Physical Society of Japan}
     \field{year}{1957}
   \endentry
 
@@ -1046,15 +1149,17 @@
     \field{labelyear}{1966}
     \field{sortinit}{K}
     \field{sortinithash}{K}
+    \field{isbn}{0034-4885}
+    \field{issn}{00319007}
     \field{number}{1}
-    \field{pages}{255\bibrangedash 283}
+    \field{pages}{255}
     \field{title}{{The fluctuation-dissipation theorem}}
     \field{volume}{29}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Kubo - 1966 - T
     \verb he fluctuation-dissipation theorem.pdf:pdf
     \endverb
-    \field{journaltitle}{Reports on Progress in Physics}
+    \field{journaltitle}{Rep. Prog. Phys.}
     \field{year}{1966}
   \endentry
 
@@ -1317,60 +1422,60 @@
       {{hash=MWL}{%
          family={Mao},
          familyi={M\bibinitperiod},
-         given={Wendy\bibnamedelima L.},
+         given={W.\bibnamedelima L.},
          giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
       {{hash=SG}{%
          family={Shen},
          familyi={S\bibinitperiod},
-         given={Guoyin},
+         given={G.},
          giveni={G\bibinitperiod},
       }}%
       {{hash=PVB}{%
          family={Prakapenka},
          familyi={P\bibinitperiod},
-         given={Vitali\bibnamedelima B.},
+         given={V.\bibnamedelima B.},
          giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod},
       }}%
       {{hash=MY}{%
          family={Meng},
          familyi={M\bibinitperiod},
-         given={Yue},
+         given={Y.},
          giveni={Y\bibinitperiod},
       }}%
       {{hash=CAJ}{%
          family={Campbell},
          familyi={C\bibinitperiod},
-         given={Andrew\bibnamedelima J.},
+         given={A.\bibnamedelima J.},
          giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
       {{hash=HDL}{%
          family={Heinz},
          familyi={H\bibinitperiod},
-         given={Dion\bibnamedelima L.},
+         given={D.\bibnamedelima L.},
          giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
       {{hash=SJ}{%
          family={Shu},
          familyi={S\bibinitperiod},
-         given={Jinfu},
+         given={J.},
          giveni={J\bibinitperiod},
       }}%
       {{hash=HRJ}{%
          family={Hemley},
          familyi={H\bibinitperiod},
-         given={Russell\bibnamedelima J.},
+         given={R.\bibnamedelima J.},
          giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
-      {{hash=MHk}{%
+      {{hash=MH}{%
          family={Mao},
          familyi={M\bibinitperiod},
-         given={Ho-kwang},
-         giveni={H\bibinitperiod-k\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
       }}%
     }
     \strng{namehash}{MWL+1}
-    \strng{fullhash}{MWLSGPVBMYCAJHDLSJHRJMHk1}
+    \strng{fullhash}{MWLSGPVBMYCAJHDLSJHRJMH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2004}
@@ -1394,7 +1499,7 @@
     \field{issn}{0027-8424}
     \field{number}{45}
     \field{pages}{15867\bibrangedash 15869}
-    \field{title}{{Ferromagnesian postperovskite silicates in the D'' layer of
+    \field{title}{{Ferromagnesian post-perovskite silicates in the D'' layer of
   the Earth}}
     \verb{url}
     \verb http://www.pnas.org/cgi/doi/10.1073/pnas.0407135101
@@ -1402,8 +1507,8 @@
     \field{volume}{101}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Mao et al. - 20
-    \verb 04 - Ferromagnesian postperovskite silicates in the D'' layer of the
-    \verb Earth.pdf:pdf
+    \verb 04 - Ferromagnesian post-perovskite silicates in the D'' layer of the
+    \verb  Earth.pdf:pdf
     \endverb
     \field{journaltitle}{Proceedings of the National Academy of Sciences}
     \field{year}{2004}
@@ -1445,6 +1550,57 @@
     \endverb
     \field{journaltitle}{The Journal of Chemical Physics}
     \field{year}{1997}
+  \endentry
+
+  \entry{Murakami2004}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MM}{%
+         family={Murakami},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hirose},
+         familyi={H\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kawamura},
+         familyi={K\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sata},
+         familyi={S\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=OY}{%
+         family={Ohishi},
+         familyi={O\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MM+1}
+    \strng{fullhash}{MMHKKKSNOY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{855\bibrangedash 858}
+    \field{title}{{Post-perovskite phase transition in MgSiO{\_}3}}
+    \field{volume}{304}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Murakami et al.
+    \verb  - 2004 - Post-perovskite phase transition in MgSiO{\_}3.pdf:pdf
+    \endverb
+    \field{journaltitle}{Science}
+    \field{year}{2004}
   \endentry
 
   \entry{Naliboff2006}{article}{}
@@ -1526,6 +1682,41 @@
     \endverb
     \field{journaltitle}{Molecular Physics}
     \field{year}{2013}
+  \endentry
+
+  \entry{Oganov2004}{article}{}
+    \name{author}{2}{}{%
+      {{hash=OAR}{%
+         family={Oganov},
+         familyi={O\bibinitperiod},
+         given={A.\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=OS}{%
+         family={Ono},
+         familyi={O\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OAROS1}
+    \strng{fullhash}{OAROS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{pages}{445\bibrangedash 448}
+    \field{title}{{Theoretical and experimental evidence for a post-perovskite
+  phase of MgSiO3 in Earth's D" layer}}
+    \field{volume}{430}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Oganov, Ono - 2
+    \verb 004 - Theoretical and experimental evidence for a post-perovskite pha
+    \verb se of MgSiO3 in Earth's D layer.pdf:pdf
+    \endverb
+    \field{journaltitle}{Nature}
+    \field{year}{2004}
   \endentry
 
   \entry{Oganov2000}{article}{}
@@ -1710,34 +1901,34 @@
       {{hash=OK}{%
          family={Ohta},
          familyi={O\bibinitperiod},
-         given={Kenji},
+         given={K.},
          giveni={K\bibinitperiod},
       }}%
       {{hash=YT}{%
          family={Yagi},
          familyi={Y\bibinitperiod},
-         given={Takashi},
+         given={T.},
          giveni={T\bibinitperiod},
       }}%
       {{hash=HK}{%
          family={Hirose},
          familyi={H\bibinitperiod},
-         given={Kei},
+         given={K.},
          giveni={K\bibinitperiod},
       }}%
       {{hash=OY}{%
          family={Ohishi},
          familyi={O\bibinitperiod},
-         given={Yasuo},
+         given={Y.},
          giveni={Y\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {Elsevier B.V.}%
     }
-    \keyw{(Mg, Fe)O ferropericlase,core–mantle boundary heat
-  flow,electrical conductivity,spin crossover,thermal conductivity}
-    \strng{namehash}{OK+2}
+    \keyw{(Mg,Fe)O ferropericlase,core–mantle boundary heat flow,electrical
+  conductivity,spin crossover,thermal conductivity}
+    \strng{namehash}{OK+1}
     \strng{fullhash}{OKYTHKOY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1745,25 +1936,24 @@
     \field{sortinit}{O}
     \field{sortinithash}{O}
     \field{abstract}{%
-    (Mg, Fe)O ferropericlase (Fp) is one of the important minerals comprising
+    (Mg, Fe)O ferropericlase (Fp) is one of the important minerals comprising
   Earth's lower mantle, and its thermal conductivity could be strongly
   influenced by the iron content and its spin state. We examined the lattice
-  thermal conductivity of (Mg, Fe)O Fp containing 19 mol{\%} iron up to 111
-  GPa and 300 K by means of the pulsed light heating thermoreflectance
-  technique in a diamond anvil cell. We confirmed a strong reduction in the
-  lattice thermal conductivity of Fp due to iron substitution as reported in
-  previous studies. Our results also show that iron spin crossover in Fp
-  reduces its lattice thermal conductivity as well as its radiative conduction.
-  We also measured the electrical conductivity of an identical Fp sample up to
-  140 GPa and 2730 K, and found that Fp remained an insulator throughout the
-  experimental conditions, indicating the electronic thermal conduction in Fp
-  is negligible. Because of the effects of strong iron impurity scattering and
-  spin crossover, the total thermal conductivity of Fp at the core–mantle
-  boundary conditions is much smaller than that of bridgmanite (Bdg). Our
-  findings indicate that Bdg (and post-perovskite) is the best heat conductor
-  in the Earth's lower mantle, and distribution of iron and its valence state
-  among the lower mantle minerals are key factors to control the lower mantle
-  thermal conductivity.%
+  thermal conductivity of (Mg, Fe)O Fp containing 19 mol{\%} iron up to 111 GPa
+  and 300 K by means of the pulsed light heating thermoreflectance technique in
+  a diamond anvil cell. We confirmed a strong reduction in the lattice thermal
+  conductivity of Fp due to iron substitution as reported in previous studies.
+  Our results also show that iron spin crossover in Fp reduces its lattice
+  thermal conductivity as well as its radiative conduction. We also measured
+  the electrical conductivity of an identical Fp sample up to 140 GPa and 2730
+  K, and found that Fp remained an insulator throughout the experimental
+  conditions, indicating the electronic thermal conduction in Fp is negligible.
+  Because of the effects of strong iron impurity scattering and spin crossover,
+  the total thermal conductivity of Fp at the core–mantle boundary conditions
+  is much smaller than that of bridgmanite (Bdg). Our findings indicate that
+  Bdg (and post-perovskite) is the best heat conductor in the Earth's lower
+  mantle, and distribution of iron and its valence state among the lower mantle
+  minerals are key factors to control the lower mantle thermal conductivity.%
     }
     \verb{doi}
     \verb 10.1016/j.epsl.2017.02.030
@@ -1791,43 +1981,43 @@
       {{hash=OY}{%
          family={Okuda},
          familyi={O\bibinitperiod},
-         given={Yoshiyuki},
+         given={Y.},
          giveni={Y\bibinitperiod},
       }}%
       {{hash=OK}{%
          family={Ohta},
          familyi={O\bibinitperiod},
-         given={Kenji},
+         given={K.},
          giveni={K\bibinitperiod},
       }}%
       {{hash=YT}{%
          family={Yagi},
          familyi={Y\bibinitperiod},
-         given={Takashi},
+         given={T.},
          giveni={T\bibinitperiod},
       }}%
       {{hash=SR}{%
          family={Sinmyo},
          familyi={S\bibinitperiod},
-         given={Ryosuke},
+         given={R.},
          giveni={R\bibinitperiod},
       }}%
       {{hash=WT}{%
          family={Wakamatsu},
          familyi={W\bibinitperiod},
-         given={Tatsuya},
+         given={T.},
          giveni={T\bibinitperiod},
       }}%
       {{hash=HK}{%
          family={Hirose},
          familyi={H\bibinitperiod},
-         given={Kei},
+         given={K.},
          giveni={K\bibinitperiod},
       }}%
       {{hash=OY}{%
          family={Ohishi},
          familyi={O\bibinitperiod},
-         given={Yasuo},
+         given={Y.},
          giveni={Y\bibinitperiod},
       }}%
     }
@@ -1948,11 +2138,11 @@
     \field{issn}{00027820}
     \field{number}{4}
     \field{pages}{1018\bibrangedash 1020}
-    \field{title}{{Low Thermal Conductivity in Garnets}}
+    \field{title}{{Low thermal conductivity in garnets}}
     \field{volume}{80}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Padture, Klemen
-    \verb s - 1997 - Low Thermal Conductivity in Garnets.pdf:pdf
+    \verb s - 1997 - Low thermal conductivity in garnets.pdf:pdf
     \endverb
     \field{journaltitle}{Journal of the American Ceramic Society}
     \field{year}{1997}
@@ -1963,14 +2153,14 @@
       {{hash=PJB}{%
          family={Parise},
          familyi={P\bibinitperiod},
-         given={J\bibnamedelima B},
+         given={J.\bibnamedelima B.},
          giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
       }}%
       {{hash=WY}{%
          family={Wang},
          familyi={W\bibinitperiod},
-         given={Y},
-         giveni={Y},
+         given={Y.},
+         giveni={Y\bibinitperiod},
       }}%
     }
     \strng{namehash}{PJBWY1}
@@ -1982,13 +2172,12 @@
     \field{sortinithash}{P}
     \field{number}{12}
     \field{pages}{2089\bibrangedash 2092}
-    \field{title}{{of Mg substitutes for Si in the octahedral ( Bhsite , with a
-  x • Mg Fe + XB The use x • Fe x • Mg = This study ; The refined Mg / Fe
-  , For data}}
+    \field{title}{{Crystal structure and thermal expansion of (Mg,Fe)SiO{\_}3
+  perovskite}}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Parise, Wang -
-    \verb 1990 - of Mg substitutes for Si in the octahedral ( Bhsite , with a x
-    \verb  • Mg Fe XB The use x • Fe x • Mg = This stud.pdf:pdf
+    \verb 1990 - Crystal structure and thermal expansion of (Mg,Fe)SiO{\_}3 per
+    \verb ovskite.pdf:pdf
     \endverb
     \field{journaltitle}{October}
     \field{year}{1990}
@@ -2037,13 +2226,13 @@
     \endverb
     \field{issn}{00219991}
     \field{pages}{1\bibrangedash 19}
-    \field{title}{{Fast Parallel Algorithms for Short – Range Molecular
-  Dynamics}}
+    \field{title}{{Fast parallel algorithms for short–range molecular
+  dynamics}}
     \field{volume}{117}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Plimpton - 1995
-    \verb  - Fast Parallel Algorithms for Short – Range Molecular Dynamics.pd
-    \verb f:pdf
+    \verb  - Fast parallel algorithms for short–range molecular dynamics.pdf:
+    \verb pdf
     \endverb
     \field{journaltitle}{Journal of Computational Physics}
     \field{year}{1995}
@@ -2054,19 +2243,19 @@
       {{hash=SPK}{%
          family={Schelling},
          familyi={S\bibinitperiod},
-         given={Patrick\bibnamedelima K.},
+         given={P.\bibnamedelima K.},
          giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
       {{hash=PSR}{%
          family={Phillpot},
          familyi={P\bibinitperiod},
-         given={Simon\bibnamedelima R.},
+         given={S.\bibnamedelima R.},
          giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
       {{hash=KP}{%
          family={Keblinski},
          familyi={K\bibinitperiod},
-         given={Pawel},
+         given={P.},
          giveni={P\bibinitperiod},
       }}%
     }
@@ -2216,13 +2405,13 @@
       {{hash=SGJ}{%
          family={Snyder},
          familyi={S\bibinitperiod},
-         given={G\bibnamedelima Jeffrey},
+         given={G.\bibnamedelima J.},
          giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
       {{hash=TES}{%
          family={Toberer},
          familyi={T\bibinitperiod},
-         given={Eric\bibnamedelima S},
+         given={E.\bibnamedelima S.},
          giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
@@ -2293,16 +2482,16 @@
     \endverb
     \field{issn}{1529-6466}
     \field{pages}{253\bibrangedash 269}
-    \field{title}{{Theoretical Methods for Calculating the Lattice Thermal
-  Conductivity of Minerals}}
+    \field{title}{{Theoretical methods for calculating the lattice thermal
+  conductivity of minerals}}
     \verb{url}
     \verb http://rimg.geoscienceworld.org/cgi/doi/10.2138/rmg.2010.71.12
     \endverb
     \field{volume}{71}
     \verb{file}
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Stackhouse, Sti
-    \verb xrude - 2010 - Theoretical Methods for Calculating the Lattice Therma
-    \verb l Conductivity of Minerals.pdf:pdf
+    \verb xrude - 2010 - Theoretical methods for calculating the lattice therma
+    \verb l conductivity of minerals.pdf:pdf
     \endverb
     \field{journaltitle}{Reviews in Mineralogy and Geochemistry}
     \field{year}{2010}
@@ -2314,19 +2503,19 @@
       {{hash=SS}{%
          family={Stackhouse},
          familyi={S\bibinitperiod},
-         given={Stephen},
+         given={S.},
          giveni={S\bibinitperiod},
       }}%
       {{hash=SL}{%
          family={Stixrude},
          familyi={S\bibinitperiod},
-         given={Lars},
+         given={L.},
          giveni={L\bibinitperiod},
       }}%
       {{hash=KBB}{%
          family={Karki},
          familyi={K\bibinitperiod},
-         given={Bijaya\bibnamedelima B},
+         given={B.\bibnamedelima B.},
          giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
       }}%
     }
@@ -2358,6 +2547,58 @@
     \endverb
     \field{journaltitle}{Earth And Planetary Science Letters}
     \field{year}{2015}
+  \endentry
+
+  \entry{Tang2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TX}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dong},
+         familyi={D\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{First-principles theory,Gr??neisen parameter,Lattice
+  anharmonicity,MgO,Phonon spectra,Thermal conductivity}
+    \strng{namehash}{TXDJ1}
+    \strng{fullhash}{TXDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    We report a recent first-principles calculation of harmonic and anharmonic
+  lattice dynamics of MgO. The 2nd order harmonic and 3rd order anharmonic
+  interatomic interaction terms are computed explicitly, and their pressure
+  dependences are discussed. The phonon mode Gr??neisen parameters derived
+  based on our calculated 3rd order lattice anharmonicity are in good agreement
+  with those estimated using the finite difference method. The implications for
+  lattice thermal conductivity at high pressure are discussed based on a simple
+  kinetic transport theory.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.pepi.2008.10.003
+    \endverb
+    \field{issn}{00319201}
+    \field{pages}{33\bibrangedash 38}
+    \field{title}{{Pressure dependence of harmonic and anharmonic lattice
+  dynamics in MgO: A first-principles calculation and implications for lattice
+  thermal conductivity}}
+    \field{volume}{174}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Tang, Dong - 20
+    \verb 09 - Pressure dependence of harmonic and anharmonic lattice dynamics
+    \verb in MgO A first-principles calculation and implicatio.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{year}{2009}
   \endentry
 
   \entry{Tang2010}{article}{}
@@ -2409,13 +2650,14 @@
     \verb{doi}
     \verb 10.1073/pnas.0907194107
     \endverb
-    \field{issn}{1091-6490}
+    \field{isbn}{1091-6490 (Electronic)$\backslash$r0027-8424 (Linking)}
+    \field{issn}{0027-8424}
+    \field{number}{10}
     \field{pages}{4539\bibrangedash 4543}
     \field{title}{{Lattice thermal conductivity of MgO at conditions of Earth's
-  interior.}}
+  interior}}
     \verb{url}
-    \verb http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2842022{\&}
-    \verb tool=pmcentrez{\&}rendertype=abstract
+    \verb http://www.pnas.org/cgi/doi/10.1073/pnas.0907194107
     \endverb
     \field{volume}{107}
     \verb{file}
@@ -2423,8 +2665,7 @@
     \verb 10 - Lattice thermal conductivity of MgO at conditions of Earth's int
     \verb erior.pdf:pdf
     \endverb
-    \field{journaltitle}{Proceedings of the National Academy of Sciences of the
-  United States of America}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
     \field{year}{2010}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -2485,59 +2726,6 @@
     \endverb
     \field{journaltitle}{Geophysical Research Letters}
     \field{year}{2014}
-  \endentry
-
-  \entry{Tang2009}{article}{}
-    \name{author}{2}{}{%
-      {{hash=TX}{%
-         family={Tang},
-         familyi={T\bibinitperiod},
-         given={Xiaoli},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=DJ}{%
-         family={Dong},
-         familyi={D\bibinitperiod},
-         given={Jianjun},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \keyw{First-principles theory,Gr??neisen parameter,Lattice
-  anharmonicity,MgO,Phonon spectra,Thermal conductivity}
-    \strng{namehash}{TXDJ2}
-    \strng{fullhash}{TXDJ2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2009}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{abstract}{%
-    We report a recent first-principles calculation of harmonic and anharmonic
-  lattice dynamics of MgO. The 2nd order harmonic and 3rd order anharmonic
-  interatomic interaction terms are computed explicitly, and their pressure
-  dependences are discussed. The phonon mode Gr??neisen parameters derived
-  based on our calculated 3rd order lattice anharmonicity are in good agreement
-  with those estimated using the finite difference method. The implications for
-  lattice thermal conductivity at high pressure are discussed based on a simple
-  kinetic transport theory.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.pepi.2008.10.003
-    \endverb
-    \field{issn}{00319201}
-    \field{number}{1-4}
-    \field{pages}{33\bibrangedash 38}
-    \field{title}{{Pressure dependence of harmonic and anharmonic lattice
-  dynamics in MgO: A first-principles calculation and implications for lattice
-  thermal conductivity}}
-    \field{volume}{174}
-    \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Tang, Dong - 20
-    \verb 09 - Pressure dependence of harmonic and anharmonic lattice dynamics
-    \verb in MgO A first-principles calculation and implicatio.pdf:pdf
-    \endverb
-    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
-    \field{year}{2009}
   \endentry
 
   \entry{Thomas2010}{article}{}
@@ -2610,13 +2798,13 @@
       {{hash=TN}{%
          family={Tosi},
          familyi={T\bibinitperiod},
-         given={Nicola},
+         given={N.},
          giveni={N\bibinitperiod},
       }}%
       {{hash=YDA}{%
          family={Yuen},
          familyi={Y\bibinitperiod},
-         given={David\bibnamedelima A.},
+         given={D.\bibnamedelima A.},
          giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
       {{hash=dKN}{%
@@ -2624,13 +2812,13 @@
          prefixi={d\bibinitperiod},
          family={Koker},
          familyi={K\bibinitperiod},
-         given={Nico},
+         given={N.},
          giveni={N\bibinitperiod},
       }}%
       {{hash=WRM}{%
          family={Wentzcovitch},
          familyi={W\bibinitperiod},
-         given={Renata\bibnamedelima M.},
+         given={R.\bibnamedelima M.},
          giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
