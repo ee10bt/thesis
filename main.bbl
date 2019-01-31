@@ -824,6 +824,60 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Haigis2012}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HV}{%
+         family={Haigis},
+         familyi={H\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Salanne},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jahn},
+         familyi={J\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \keyw{MgO,lower mantle,molecular
+  dynamics,perovskite,post-perovskite,thermal conductivity}
+    \strng{namehash}{HV+1}
+    \strng{fullhash}{HVSMJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1016/j.epsl.2012.09.002
+    \endverb
+    \field{issn}{0012821X}
+    \field{pages}{102\bibrangedash 108}
+    \field{title}{{Thermal conductivity of MgO, MgSiO3 perovskite and
+  post-perovskite in the Earth's deep mantle}}
+    \verb{url}
+    \verb http://linkinghub.elsevier.com/retrieve/pii/S0012821X12004815
+    \endverb
+    \field{volume}{355-356}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Haigis, Salanne
+    \verb , Jahn - 2012 - Thermal conductivity of MgO, MgSiO3 perovskite and po
+    \verb st-perovskite in the Earth's deep mantle.pdf:pdf
+    \endverb
+    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Hofmeister1999}{article}{}
     \name{author}{1}{}{%
       {{hash=HAM}{%
