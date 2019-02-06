@@ -461,8 +461,9 @@ With Equation~\ref{eq.linear_v_mT_c}, we rewrite Equation~\ref{eq.okuda5} one mo
 %
 This equation allows me to obtain a conductivity value at any temperature within the fit range, comprising a reference conductivity and temperature for the material in question, with constants ($m$, $c$, $h$, \& $a$, see Table \ref{tab:comp-table}) fit to data across a range of temperatures. This scaling process is necessary to obtain $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$, which have their own reference values and fit constants, for use in Eq. \ref{eq.ohta9}.
 
+
 %-----------------------------------------------------------
-\begin{table}[]
+\begin{table}[h]
 \centering
 \caption[CONTENTS BIT]{\label{tab:comp-table}Mg and Fe refer to \mgsios and \fesios endmembers, SS the solid solution with a 50\% mix.}
 \begin{tabular}{c|ccc}
@@ -476,6 +477,80 @@ $c$                      & 1.00975    & 1.00965    & 1.00983
 \end{tabular}
 \end{table}
 %-----------------------------------------------------------
+
+
+
+
+
+
+
+%---------------------------------------
+\subsection{MEAN FREE PATH} 
+%---------------------------------------
+
+%-------------------
+\subsubsection{MFP FROM DM EXTRAPOLATION}
+%-------------------
+The conductivities from supercells ($\kappa_{L}$) of varying length ($L$) obtained via direct method calculations fit the form \citep[modified from][]{Stackhouse2010}
+%
+\begin{equation} 
+\frac{1}{\kappa_{L}}=\left [ \frac{12}{C_{\mathrm{v}}v} \right ]\frac{1}{L}+\left [ \frac{3}{C_{\mathrm{v}}v} \frac{1}{\Lambda_{\mathrm{ph-ph}}} \right ],
+\label{eq.ss2010.28}
+\end{equation}
+%
+where $C_{\mathrm{v}}$ is the volumetric isochoric heat capacity, $v$ is the phonon group velocity, and $\Lambda_{\mathrm{ph-ph}}$ is the mean free path associated with phonon--phonon scattering. When the inverse conductivities are plotted against the inverse cell lengths, extrapolation to the y-axis ($1/L = 0$) gives the bulk material ($L\rightarrow \infty$) conductivity, and its associated phonon mean free path. The two square-bracketed terms in the above equation represent the gradient and intercept respectively, of such a line fit to data and extrapolated. 
+
+I can rewrite Equation~\ref{eq.ss2010.28} with the following simplifications 
+%
+$$M = \left [ \frac{12}{C_{\mathrm{v}}v} \right ],\ \mathrm{and}\ \frac{M}{4}= \frac{3}{C_{\mathrm{v}}v},$$
+%
+giving
+%
+$$ \frac{1}{\kappa_{L}}= M\ \frac{1}{L}+\left [ \frac{M}{4} \frac{1}{\Lambda_{\mathrm{ph-ph}}} \right ]. $$
+%
+When $1/L = 0$, the extrapolated conductivity can be equated to the gradient and effective mean free path
+%
+$$ \frac{1}{\kappa}=  \frac{M}{4} \frac{1}{\Lambda}\ ,$$
+%
+and thus 
+%
+$$ 
+\Lambda = \frac{M}{4}\ \kappa \ .$$
+
+Using the gradient and conductivity from direct method calculations at 136~GPa, 4000~K, and a supercell cross-sectional area of $12\times12$, the mean free path is equal to $0.23\pm0.03$~nm. This value is roughly half the width of the unit cell in the A/x-direction, or the width of a direct method temperature section.
+
+
+
+%-------------------
+\subsubsection{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}
+%-------------------
+This MFP value is obtained from a conductivity representative of bulk \mgsios \bdg, therefore I can assume it is the effective MFP in the absense of phonon-defect or phonon-boundary scattering ((MATTHIESEN)). MFP is direct proportional to conductivity ((REF)), therefore I propose scaling the 4000~K GK conductivity results ((REF)) to try and quantify the phonon-defect scattering associated with adding iron.
+
+When considering the effect of impurities on conductivity, the effective MFP depends on phonon-phonon and phonon-defect interactions
+%
+$$\frac{1}{\Lambda}=\frac{1}{\Lambda_{\mathrm{ph-ph}}}+\frac{1}{\Lambda_{\mathrm{ph-d}}}\ . $$
+%
+In the context of Figure REF, $\Lambda$ is proportional to the conductivity of the data points/model fit. $\Lambda_{\mathrm{ph-ph}}$ is proportional to the conductivity of the linear interpolation between endmembers. The segment between these lines can be imagined as phonon-defect contribution to $\Lambda$, the bigger the gap at a given composition, the greater significance of $\Lambda_{\mathrm{ph-d}}$. 
+
+The MFP determined from the direct method extrapolation above can be matched with the equivalent 0~\%~Fe 4000~K Green-Kubo result on Figure REF. If 7.07~\wmks is proportional to an effective MFP of 0.23~nm, I can scale this value by the \mgsios endmember-normalised conductivity. The data points represent the effective MFP, with 
+
+  I determine effective MFP of every data point, and of the endmember linear interpolation
+
+
+
+%-------------------
+\subsubsection{C(1-C) MODEL LIMITATIONS}
+%-------------------
+
+%-------------------
+\subsubsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
+%-------------------
+
+%-------------------
+\subsubsection{MASS VS. POTENTIAL IN MODELLING FE}
+%-------------------
+
+
 
 
 
