@@ -491,6 +491,8 @@ $c$                      & 1.00975    & 1.00965    & 1.00983
 %-------------------
 \subsubsection{MFP FROM DM EXTRAPOLATION}
 %-------------------
+REFERENCE SCHELLING FOR EQUATION
+
 The conductivities from supercells ($\kappa_{L}$) of varying length ($L$) obtained via direct method calculations fit the form \citep[modified from][]{Stackhouse2010}
 %
 \begin{equation} 
@@ -498,7 +500,7 @@ The conductivities from supercells ($\kappa_{L}$) of varying length ($L$) obtain
 \label{eq.ss2010.28}
 \end{equation}
 %
-where $C_{\mathrm{v}}$ is the volumetric isochoric heat capacity, $v$ is the phonon group velocity, and $\Lambda_{\mathrm{ph-ph}}$ is the mean free path associated with phonon--phonon scattering. When the inverse conductivities are plotted against the inverse cell lengths, extrapolation to the y-axis ($1/L = 0$) gives the bulk material ($L\rightarrow \infty$) conductivity, and its associated phonon mean free path. The two square-bracketed terms in the above equation represent the gradient and intercept respectively, of such a line fit to data and extrapolated. 
+where $C_{\mathrm{v}}$ is the volumetric isochoric heat capacity, $v$ is the phonon group velocity, and $\Lambda_{\mathrm{ph-ph}}$ is the mean free path associated with phonon--phonon scattering. When the inverse conductivities are plotted against the inverse cell lengths, extrapolation to the y-axis ($1/L = 0$) gives the bulk material ($L\rightarrow \infty$) conductivity, and its associated phonon mean free path. The two square-bracketed terms in the above equation represent the gradient and intercept respectively, of such a line fit to data and extrapolated ((FIGURE)). 
 
 I can rewrite Equation~\ref{eq.ss2010.28} with the following simplifications 
 %
@@ -524,17 +526,17 @@ Using the gradient and conductivity from direct method calculations at 136~GPa, 
 %-------------------
 \subsubsection{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}
 %-------------------
-This MFP value is obtained from a conductivity representative of bulk \mgsios \bdg, therefore I can assume it is the effective MFP in the absense of phonon-defect or phonon-boundary scattering ((MATTHIESEN)). MFP is direct proportional to conductivity ((REF)), therefore I propose scaling the 4000~K GK conductivity results ((REF)) to try and quantify the phonon-defect scattering associated with adding iron.
-
-When considering the effect of impurities on conductivity, the effective MFP depends on phonon-phonon and phonon-defect interactions
+This MFP value is obtained from a conductivity representative of bulk \mgsios \bdg, therefore I can assume it is the effective MFP in the absense of phonon-defect or phonon-boundary scattering ((MATTHIESEN)). MFP is direct proportional to conductivity ((REF)), therefore I propose scaling the 4000~K GK conductivity results ((REF)) to try and quantify the phonon-defect scattering associated with adding iron. When considering the effect of impurities on conductivity, the effective MFP depends on phonon-phonon and phonon-defect interactions
 %
 $$\frac{1}{\Lambda}=\frac{1}{\Lambda_{\mathrm{ph-ph}}}+\frac{1}{\Lambda_{\mathrm{ph-d}}}\ . $$
+
+The MFP determined from the direct method extrapolation can be matched with the equivalent 0\%~Fe, 4000~K Green-Kubo result on Figure REF. If 7.07~\wmks is proportional to an effective MFP of 0.23~nm, I can scale this MFP value by the \mgsios endmember-normalised conductivities ((ADD FIGURE)). 
+
+I make the assumption that the data points/curve of Figure REF represent the effective MFP, the linear interpolation between endmembers the phonon-phonon scattering MFP. The interpolated conductivities do not capture the non-linear effects of defect scattering, at constant temperature the change in conductivity is proporitional to the change in mass associated with changing Mg to Fe.
+
+The deficit between computed and interpolated conductivity can be imagined as phonon-defect contribution to $\Lambda$, the bigger the gap at a given composition, the greater significance of $\Lambda_{\mathrm{ph-d}}$. I will obtain the phonon-defect MFP by subtracting the inverse of the two, as in 
 %
-In the context of Figure REF, $\Lambda$ is proportional to the conductivity of the data points/model fit. $\Lambda_{\mathrm{ph-ph}}$ is proportional to the conductivity of the linear interpolation between endmembers. The segment between these lines can be imagined as phonon-defect contribution to $\Lambda$, the bigger the gap at a given composition, the greater significance of $\Lambda_{\mathrm{ph-d}}$. 
-
-The MFP determined from the direct method extrapolation above can be matched with the equivalent 0~\%~Fe 4000~K Green-Kubo result on Figure REF. If 7.07~\wmks is proportional to an effective MFP of 0.23~nm, I can scale this value by the \mgsios endmember-normalised conductivity. The data points represent the effective MFP, with 
-
-  I determine effective MFP of every data point, and of the endmember linear interpolation
+$$\frac{1}{\Lambda_{\mathrm{ph-d}}}=\frac{1}{\Lambda}-\frac{1}{\Lambda_{\mathrm{ph-ph}}}\ . $$
 
 
 
@@ -542,14 +544,29 @@ The MFP determined from the direct method extrapolation above can be matched wit
 \subsubsection{C(1-C) MODEL LIMITATIONS}
 %-------------------
 
+Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Taking the 4000~K model-fit conductivities, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\%. This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation REF. However, when the raw 4000~K data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). The model is assuming that an equal number of each type of atom creates the most phonon-defect scattering, but I believe it is when each type of atom contributes equal to the system's mass ((INFORMAL, THERE IS SCIENCE TO BACK THIS UP SOMEWHERE)). The composition at which this mass contribution scenario is satisfied can be calculated by
+%
+$$ C_{\mathrm{mass}} = \frac{A_{\mathrm{Mg}}}{A_{\mathrm{Mg}} + A_{\mathrm{Fe}}}\ ,$$
+%
+where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe, $C_{\mathrm{mass}} = 0.3$, or 30\%~Fe to 70\%~Mg. This is the turning point in phonon-defect scattering, it increases up to this composition, and decreases after. Even if conductivity decreases overall due to phonon-phonon effects, this is the point of minimum $\Lambda_{\mathrm{ph-d}}$.
+
+
+
+
 %-------------------
 \subsubsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
 %-------------------
+
+WORK OUT A TON OF DM MFPs???
+
+I can do something similar with direct method results, taking the extrapolated MFP as the phonon-phonon contribution (as in Equation \ref{eq.ss2010.28}), and the computed conductivity as the effective. Subtracting these two may give info on the effects of phonon-boundary scattering, for impurity-free systems anyway.
+
 
 %-------------------
 \subsubsection{MASS VS. POTENTIAL IN MODELLING FE}
 %-------------------
 
+I believe mass is the most important thing for the magnitude of phonon-defect scattering. I am to prove this by running calculations where the mass of the impurities are kept the same as Mg, only changing their potential to match my fitted Mg-Fe interaction. I predict conductivity will be largely unchanged with varying composition.
 
 
 

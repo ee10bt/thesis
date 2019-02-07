@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  6 FEB 2019 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  7 FEB 2019 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2658,42 +2658,23 @@ e 450.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [50 <./Figures/draft_VrefV-T.png>] [51]
-Overfull \hbox (0.91743pt too wide) in paragraph at lines 527--528
+Overfull \hbox (0.91743pt too wide) in paragraph at lines 529--531
 \T1/ppl/m/n/10.95 This MFP value is ob-tained from a con-duc-tiv-ity rep-re-sen
 -ta-tive of bulk MgSiO$[]$ bridg-
  []
 
-
-Overfull \hbox (28.07399pt too wide) in paragraph at lines 531--534
-\T1/ppl/m/n/10.95 In the con-text of Fig-ure REF, $\OT1/zplm/m/n/10.95 ^^C$ \T1
-/ppl/m/n/10.95 is pro-por-tional to the con-duc-tiv-ity of the data points/mode
-l
- []
-
-
-Overfull \hbox (0.72688pt too wide) in paragraph at lines 535--536
-[]\T1/ppl/m/n/10.95 The MFP de-ter-mined from the di-rect method ex-trap-o-la-t
-ion above can be matched
- []
-
-
-Overfull \hbox (1.57585pt too wide) in paragraph at lines 535--536
-\T1/ppl/m/n/10.95 with the equiv-a-lent 0 % Fe 4000 K Green-Kubo re-sult on Fig
--ure REF. If 7.07 Wm$[]$K$[]$
- []
-
-) [52] [53]
+[52]) [53] [54]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [54
+ (./Chapters/Chapter5.tex
+Chapter 5.
+)
+1: section
+[55
 
 
 
 ]
-Chapter 5.
-)
-1: section
-[55]
 \openout2 = `Chapters/Chapter6.aux'.
 
  (./Chapters/Chapter6.tex [56
@@ -2795,10 +2776,6 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -2829,10 +2806,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (93 pages, 1560874 bytes).
+Output written on main.pdf (93 pages, 1563375 bytes).
 PDF statistics:
- 1427 PDF objects out of 1440 (max. 8388607)
- 1278 compressed objects within 13 object streams
+ 1428 PDF objects out of 1440 (max. 8388607)
+ 1279 compressed objects within 13 object streams
  291 named destinations out of 1000 (max. 500000)
  751 words of extra memory for PDF output out of 10000 (max. 10000000)
 
