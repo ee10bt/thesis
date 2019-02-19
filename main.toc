@@ -37,11 +37,11 @@
 \contentsline {subsection}{\numberline {2.2.1}Finite-size effects}{15}{subsection.45}
 \contentsline {subsection}{\numberline {2.2.2}Direct method}{16}{subsection.46}
 \contentsline {subsubsection}{System setup}{16}{section*.48}
-\contentsline {subsubsection}{Data processing}{16}{section*.52}
-\contentsline {subsubsection}{Finite-size effects}{17}{section*.55}
+\contentsline {subsubsection}{Data processing}{17}{section*.52}
+\contentsline {subsubsection}{Finite-size effects}{18}{section*.55}
 \contentsline {subsubsection}{Other NEMD}{19}{section*.56}
-\contentsline {subsection}{\numberline {2.2.3}Green-Kubo}{19}{subsection.57}
-\contentsline {subsection}{\numberline {2.2.4}Other}{21}{subsection.62}
+\contentsline {subsection}{\numberline {2.2.3}Green-Kubo}{20}{subsection.57}
+\contentsline {subsection}{\numberline {2.2.4}Other}{22}{subsection.62}
 \contentsline {section}{\numberline {2.3}Previous work}{22}{section.63}
 \contentsline {subsection}{\numberline {2.3.1}Method comparison}{22}{subsection.64}
 \contentsline {subsection}{\numberline {2.3.2}Finite-size effects}{22}{subsection.65}

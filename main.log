@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  8 FEB 2019 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  19 FEB 2019 15:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2353,6 +2353,18 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 
 (./Chapters/Chapter2.tex
 Chapter 2.
+
+Overfull \hbox (0.55722pt too wide) in paragraph at lines 13--14
+\T1/ppl/m/n/10.95 but can not be mea-sured ex-per-i-men-tally at core man-tle b
+ound-ary con-di-tions. Atomic
+ []
+
+
+Overfull \hbox (2.19836pt too wide) in paragraph at lines 15--16
+\T1/ppl/m/n/10.95 strain-ing ap-pro-pri-ate sys-tem pa-ram-e-ters. MOVE TO CLAS
+-SI-CAL PO-TEN-TIAL SEC-
+ []
+
 1: section
 [13
 
@@ -2362,10 +2374,10 @@ Chapter 2.
 <Figures/cell_diagram.png, id=805, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
-Package pdftex.def Info: Figures/cell_diagram.png  used on input line 82. on in
-put line 82.
+Package pdftex.def Info: Figures/cell_diagram.png  used on input line 91. on in
+put line 91.
 Package pdftex.def Info: Requested size: 404.02908pt x 361.74527pt on input lin
-e 82.
+e 91.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2373,61 +2385,52 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/ss_direct_mod.png, id=807, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
-Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 88. on i
-nput line 88.
+Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 97. on i
+nput line 97.
 Package pdftex.def Info: Requested size: 404.02908pt x 222.04884pt on input lin
-e 88.
+e 97.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16]
-<Figures/ideal_extrap.png, id=819, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=817, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
-Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 113. on i
-nput line 113.
+Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 122. on i
+nput line 122.
 Package pdftex.def Info: Requested size: 404.02908pt x 172.4212pt on input line
- 113.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[17 <./Figures/cell_diagram.png>]
-Overfull \hbox (0.15266pt too wide) in paragraph at lines 124--125
+ 122.
+ [17 <./Figures/cell_diagram.png>] [18 <./Figures/ss_direct_mod.png> <./Figures
+/ideal_extrap.png>]
+Overfull \hbox (0.15266pt too wide) in paragraph at lines 133--134
 \T1/ppl/m/n/10.95 phonon-phonon scat-ter-ing, from sparse phonon phase sam-plin
 g in cells where cross-
  []
 
-[18 <./Figures/ss_direct_mod.png>]
-Overfull \hbox (0.31639pt too wide) in paragraph at lines 128--129
+
+Overfull \hbox (0.31639pt too wide) in paragraph at lines 137--138
 \T1/ppl/m/n/10.95 ever, where they may show over-es-ti-mated con-duc-tiv-i-ties
  com-pared to the fit through
  []
 
-<Figures/gk_acf.png, id=837, 1220.30907pt x 514.17094pt>
+[19]
+<Figures/gk_acf.png, id=843, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
-Package pdftex.def Info: Figures/gk_acf.png  used on input line 151. on input l
-ine 151.
+Package pdftex.def Info: Figures/gk_acf.png  used on input line 160. on input l
+ine 160.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
-e 151.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19 <./Figures/ideal_extrap.png>]
-<Figures/gk_int.png, id=847, 1237.62375pt x 533.74406pt>
+e 160.
+ [20 <./Figures/gk_acf.png>]
+<Figures/gk_int.png, id=854, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
-Package pdftex.def Info: Figures/gk_int.png  used on input line 173. on input l
-ine 173.
+Package pdftex.def Info: Figures/gk_int.png  used on input line 182. on input l
+ine 182.
 Package pdftex.def Info: Requested size: 404.02908pt x 174.24661pt on input lin
-e 173.
+e 182.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20 <./Figures/gk_acf.png>]
-Overfull \hbox (14.3329pt too wide) in paragraph at lines 189--192
+Overfull \hbox (14.3329pt too wide) in paragraph at lines 198--201
 \T1/ppl/m/n/10.95 (4) Com-bined quasi-har-monic lat-tice dy-nam-ics and molec-u
 -lar dy-nam-ics method ([]Koker,
  []
@@ -2815,7 +2818,7 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (93 pages, 1607682 bytes).
+Output written on main.pdf (93 pages, 1607739 bytes).
 PDF statistics:
  1437 PDF objects out of 1440 (max. 8388607)
  1286 compressed objects within 13 object streams
