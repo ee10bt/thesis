@@ -2,48 +2,76 @@
 
 \label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-In this chapter I introduce thermal conductivity and its effects within the deep earth.
+%-----------------------------------------------------------------------------------------------------------
 
 %-----------------------------------------------------------
-\section{Why is \tcs important?}
+\section{Introduction to the problem}
 %-----------------------------------------------------------
-Knowledge of the thermal conductivity of solids is key in a wide range of technological applications, and for our understanding of natural systems.
+
+The nature of heat transport within a substance is controlled by its \tc. This influences the thermal evolution and heat budget of the Earth, but is poorly constrained across relevant conditions. Experiments can measure the conductivity of material, but not at the high pressure/temperature conditions found in the deep Earth. Computer simulations allow materials and their conductivities to be modelled on an atomic-scale, but care must be taken to achieve accurate results. This involves setting up the material to faithfully replicate its expected real-world counterpart, and choosing a simulation method which includes realistic atomic interactions. In this chapter, I will introduce thermal conductivity and the deep earth, considering the effects of the former on the latter.
+
 
 %---------------------------------------
-\subsection{Man-made applications}
+\subsection{Man-made applications with \tc}
 %---------------------------------------
-Low conductivities are required in thermoelectric materials, to maximise the efficiency of heat-electricity conversion \citep{Snyder2008}. Thermal conductivity determines whether a material is a conductor or insulator of heat, both of which have many technological applications.
+Knowledge of the thermal conductivity of solids is key in a wide range of technological applications, in addition to developing our understanding of natural systems. Low conductivities are required in thermoelectric materials, to maximise the efficiency of heat-electricity conversion \citep{Snyder2008}. Thermal conductivity determines whether a material is a conductor or insulator of heat, both of which have many technological applications.
 
 !!! SOLAR PANELS ETC.?
 
+!!! FLESH OUT !!!
+
 %---------------------------------------
-\subsection{In the context of the Earth}
+\subsection{Conductivity in the Earth}
 %---------------------------------------
-In the Earth's lower mantle thermal conductivity controls the nature of planetary convection \citep{Tosi2013}, and the heat flux out of the core which powers the geotherm. THERMAL CONDUCTIVITY WITHIN THE EARTH will be discussed further in Section~\ref{sec:ch1:cond_in_earth}.
+%In the Earth's lower mantle thermal conductivity controls the nature of planetary convection \citep{Tosi2013}, and the heat flux out of the core which powers the geotherm. THERMAL CONDUCTIVITY WITHIN THE EARTH will be discussed further in Section~\ref{sec:ch1:cond_in_earth}.
 
 Within the lower mantle, thermal conductivity influences the rate at which heat is transferred from core cooling towards the surface, and more importantly the mechanisms by which it does so \citep{Lay2008}. High thermal conductivity systems will preferentially transport heat by conduction. Systems will convect (ADVECT?) where there is too much heat to be transpoted by conduction alone (i.e. low conductivity conditions).
 
 Observations of plume structures and cyclic subduction patterns \citep[see][]{Garnero2008} suggest convective behaviour in the lower mantle. Thermal conductivity is poorly constrained in this region, obtaining a comprehensive depth profile is not a trivial task. Additional difficulties are pressure, temperature, and compositional dependences, including isotopic variation \citep{Tang2010,Dalton2013,Tang2014} and inclusion of impurities \citep{Manthilake2011,Ammann2014,Ohta2014}.
 
+%---------------------------------------
+\subsection{AIMS / WHAT DO I DO THAT IS DIFFERENT TO OTHERS}
+%---------------------------------------
+
+The aim of the work presented in this thesis is to model \tcs at the core mantle boundary (CMB). I will running simulations at high pressure and varying temperatures, considering the effects of composition across an entire solid solution. 
+
+By parameterising the temperature and compositional-dependence, \tcs can be determined as a function of both at any condition. This is of particular use to LEMA because of REASONS. 
+
+In order to perform this parameterisation, I will need to explore the equations that describe these dependencies, adapting them where necessary to compliment my result set.
+
+Working on the atomic-scale, compositional variations are more important than in a sample of bulk material. A relatively low amount of possible sites for impurities to be placed means clumping is possible, and must be considered when randomly substituting atoms.
+
+Fundamental characteristics of heat transport in atomic systems mean that the size of the system / number of atoms affect the magnitude of the conductivity result. Measures exist to quantify these effects, but simulations may yield incorrect results if system size is not considered. I will look into this to validate my calculated results, but also to offer analysis of these finite size effects (FSE) for atomic simulations in general.
+
+!!! ADD REFS OBVS
 
 
 
+%-----------------------------------------------------------
+\section{Structure of the Earth}
+%-----------------------------------------------------------
+\label{sec:earth_structure}
 
+SECTIONS FOR EACH LAYER, OR SECTIONS FOR DESCRIPTION, PROPERTIES, COMPOSITION ETC.?
 
+%---------------------------------------
+\subsection{TALKING ABOUT LAYER PROPERTIES}
+%---------------------------------------
+Combine with above section?
 
-
-
-
-
+%---------------------------------------
+\subsection{TALKING ABOUT COMPOSITION}
+%---------------------------------------
+Discuss relevant LM mineralogies, change from upper mantle, core. Spin transition, impurities and stuff.
 
 
 
 
 
 %-----------------------------------------------------------
-\section{What is \tc?}
+\section{Defining \tc}
 %-----------------------------------------------------------
-\label{sec:what_is_tc}
+\label{sec:defining_tc}
 
 Thermal conductivity is a material property, indicative of the ease with which heat is transferred through conduction. For known substances thermal conductivity spans about six orders of magnitude, from silica aerogels with 0.005~\wmks \citep{Lee1995} to graphene with 5000~\wmks \citep{Balandin2008}.
 
