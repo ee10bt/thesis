@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  22 FEB 2019 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  4 MAR 2019 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2223,14 +2223,14 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 265.
  (./main.toc
-Overfull \hbox (31.2712pt too wide) in paragraph at lines 25--25
+Overfull \hbox (31.2712pt too wide) in paragraph at lines 27--27
  [][] [][][]\T1/ppl/m/n/10.95 DETERMINATIONS OF TC FOR EARTH MA-TE-RI-ALS/CONDI
 TIONS[][] [][]  
  []
 
 1: section
 [11] [12]
-Overfull \hbox (7.02795pt too wide) in paragraph at lines 79--79
+Overfull \hbox (7.02795pt too wide) in paragraph at lines 81--81
  [][] [][]\T1/ppl/m/n/10.95 SCAL-ING MFP TO QUAN-TIFY PHONON-DEFECT SCAT-TER- 
  []
 
@@ -2296,68 +2296,66 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 [1
 
 
-] [2] [3]
-Overfull \hbox (2.13884pt too wide) in paragraph at lines 80--81
+] [2] [3] [4] [5]
+Overfull \hbox (2.13884pt too wide) in paragraph at lines 104--105
 []\T1/ppl/m/n/10.95 I am pri-mar-ily con-cerned with the atomic vi-bra-tions of
  lat-tice con-duc-tion through
  []
 
-[4] [5]
-Overfull \hbox (13.53183pt too wide) in paragraph at lines 123--124
+[6] [7]
+Overfull \hbox (13.53183pt too wide) in paragraph at lines 147--148
 \T1/ppl/m/n/10.95 thus higher the ther-mal con-du-tiv-ity. A num-ber of ef-fect
 s (MEN-TION MATTHIESSEN'S
  []
 
-[6]
-Overfull \hbox (3.41473pt too wide) in paragraph at lines 155--156
+
+Overfull \hbox (3.41473pt too wide) in paragraph at lines 168--169
 \T1/ppl/m/n/10.95 dependent ther-mal con-duc-tiv-ity on man-tle con-vec-tion, f
 ind-ing that depth-dependent
  []
 
-[7]
-Overfull \hbox (20.69295pt too wide) in paragraph at lines 177--177
+[8] [9]
+Overfull \hbox (20.69295pt too wide) in paragraph at lines 189--189
 []\T1/ppl/b/n/12 DETERMINATIONS OF TC FOR EARTH MA-TE-RI-ALS/CONDITIONS 
  []
 
 
-Overfull \hbox (5.43057pt too wide) in paragraph at lines 179--180
-\T1/ppl/m/n/10.95 Many stud-ies as-sume low-er-most man-tle ther-mal con-duc-ti
-v-ity to be 10 Wm$[]$K$[]$ (e.g.[]
- []
-
-[8]
-Overfull \hbox (0.15182pt too wide) in paragraph at lines 185--186
+Overfull \hbox (0.15182pt too wide) in paragraph at lines 200--201
 \T1/ppl/m/n/10.95 tice ther-mal con-duc-tiv-ity of MgSiO$[]$ per-ovskite, us-in
 g a mod-i-fied Ångstrom method.
  []
 
-[9] [10]
-Overfull \hbox (12.33385pt too wide) in paragraph at lines 203--204
+[10] [11]
+Overfull \hbox (12.33385pt too wide) in paragraph at lines 218--219
 \T1/ppl/m/n/10.95 post-perovskite un-der D$[]$ con-di-tions. They found the con
 -duc-tiv-ity of post-perovskiteto
  []
 
-<Figures/ammann_saturation.png, id=762, 720.44156pt x 291.33844pt>
+<Figures/ammann_saturation.png, id=767, 720.44156pt x 291.33844pt>
 File: Figures/ammann_saturation.png Graphic file (type png)
 <use Figures/ammann_saturation.png>
-Package pdftex.def Info: Figures/ammann_saturation.png  used on input line 208.
- on input line 208.
+Package pdftex.def Info: Figures/ammann_saturation.png  used on input line 223.
+ on input line 223.
 Package pdftex.def Info: Requested size: 404.02908pt x 163.38402pt on input lin
-e 208.
+e 223.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 209.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 224.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] [12 <./Figures/ammann_saturation.png (PNG copy)>]
+[12] [13 <./Figures/ammann_saturation.png (PNG copy)>]
 
-LaTeX Warning: Reference `sec:what_is_tc' on page 13 undefined on input line 23
-1.
+LaTeX Warning: Reference `sec:what_is_tc' on page 14 undefined on input line 24
+2.
 
-[13]) [14]
+[14]) [15]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex
+ (./Chapters/Chapter2.tex [16
+
+
+
+]
 Chapter 2.
 
 Overfull \hbox (0.55722pt too wide) in paragraph at lines 13--14
@@ -2372,12 +2370,8 @@ Overfull \hbox (2.19836pt too wide) in paragraph at lines 15--16
  []
 
 1: section
-[15
-
-
-
-] [16] [17]
-<Figures/cell_diagram.png, id=847, 1553.805pt x 1391.1975pt>
+[17] [18] [19]
+<Figures/cell_diagram.png, id=845, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 91. on in
@@ -2388,7 +2382,7 @@ e 91.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/ss_direct_mod.png, id=849, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=847, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 97. on i
@@ -2398,15 +2392,15 @@ e 97.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18]
-<Figures/ideal_extrap.png, id=861, 945.5325pt x 403.5075pt>
+[20]
+<Figures/ideal_extrap.png, id=857, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 122. on i
 nput line 122.
 Package pdftex.def Info: Requested size: 404.02908pt x 172.4212pt on input line
  122.
- [19 <./Figures/cell_diagram.png>] [20 <./Figures/ss_direct_mod.png> <./Figures
+ [21 <./Figures/cell_diagram.png>] [22 <./Figures/ss_direct_mod.png> <./Figures
 /ideal_extrap.png>]
 Overfull \hbox (0.15266pt too wide) in paragraph at lines 133--134
 \T1/ppl/m/n/10.95 phonon-phonon scat-ter-ing, from sparse phonon phase sam-plin
@@ -2419,16 +2413,16 @@ Overfull \hbox (0.31639pt too wide) in paragraph at lines 137--138
  com-pared to the fit through
  []
 
-[21]
-<Figures/gk_acf.png, id=890, 1220.30907pt x 514.17094pt>
+[23]
+<Figures/gk_acf.png, id=884, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 160. on input l
 ine 160.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
 e 160.
- [22 <./Figures/gk_acf.png>]
-<Figures/gk_int.png, id=905, 1237.62375pt x 533.74406pt>
+ [24 <./Figures/gk_acf.png>]
+<Figures/gk_int.png, id=895, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 182. on input l
@@ -2441,13 +2435,13 @@ Overfull \hbox (14.3329pt too wide) in paragraph at lines 198--201
 -lar dy-nam-ics method ([]Koker,
  []
 
-[23 <./Figures/gk_int.png>]) [24]
+[25 <./Figures/gk_int.png>]) [26]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
 Chapter 3.
 1: section
-[25
+[27
 
 
 
@@ -2467,37 +2461,37 @@ Package scrlayer-scrpage Warning: \headheight to low.
 Overfull \vbox (21.89601pt too high) has occurred while \output is active []
 
 
-[26] [27]
+[28] [29]
 
-LaTeX Warning: Reference `fig:acf_decay' on page 28 undefined on input line 66.
+LaTeX Warning: Reference `fig:acf_decay' on page 30 undefined on input line 66.
 
 
-[28]
+[30]
 
-LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 29 undefined on
+LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 31 undefined on
  input line 86.
 
 
-LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 29 undefined on
+LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 31 undefined on
  input line 86.
 
 
-LaTeX Warning: Reference `fig:direct_length_graph' on page 29 undefined on inpu
+LaTeX Warning: Reference `fig:direct_length_graph' on page 31 undefined on inpu
 t line 88.
 
 
-LaTeX Warning: Reference `sec:theory.direct' on page 29 undefined on input line
+LaTeX Warning: Reference `sec:theory.direct' on page 31 undefined on input line
  88.
 
-[29]
+[31]
 
-LaTeX Warning: Reference `fig:gk-direct' on page 30 undefined on input line 90.
+LaTeX Warning: Reference `fig:gk-direct' on page 32 undefined on input line 90.
 
 
-[30]) [31]
+[32]) [33]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [32
+ (./Chapters/Chapter4.tex [34
 
 
 
@@ -2510,7 +2504,7 @@ Overfull \hbox (11.57881pt too wide) in paragraph at lines 8--9
  []
 
 1: section
-[33]
+[35]
 Overfull \hbox (0.15155pt too wide) in paragraph at lines 21--24
 \T1/ppl/m/n/10.95 Impurities re-duce ther-mal con-duc-tiv-ity by pro-vid-ing mo
 re op-por-tu-ni-ties for phonon
@@ -2540,7 +2534,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 48.
 
-[34] [35]
+[36] [37]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
@@ -2565,8 +2559,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
 
-[36]
-<Figures/effective-phonon-relaxation-time.png, id=1037, 703.12688pt x 471.26062
+[38]
+<Figures/effective-phonon-relaxation-time.png, id=1005, 703.12688pt x 471.26062
 pt>
 File: Figures/effective-phonon-relaxation-time.png Graphic file (type png)
 <use Figures/effective-phonon-relaxation-time.png>
@@ -2574,8 +2568,8 @@ Package pdftex.def Info: Figures/effective-phonon-relaxation-time.png  used on
 input line 127. on input line 127.
 Package pdftex.def Info: Requested size: 404.02908pt x 270.79298pt on input lin
 e 127.
- [37 <./Figures/effective-phonon-relaxation-time.png>] [38] [39] [40]
-<Figures/substitution_05-collated.png, id=1087, 1014.03844pt x 1021.56656pt>
+ [39 <./Figures/effective-phonon-relaxation-time.png>] [40] [41] [42]
+<Figures/substitution_05-collated.png, id=1050, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 <use Figures/substitution_05-collated.png>
 Package pdftex.def Info: Figures/substitution_05-collated.png  used on input li
@@ -2586,7 +2580,7 @@ e 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-t_all_02.png, id=1089, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=1052, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 234. on inp
@@ -2596,8 +2590,8 @@ Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41] [42 <./Figures/substitution_05-collated.png>]
-<Figures/k-c_all_01.png, id=1106, 695.59875pt x 411.03563pt>
+[43] [44 <./Figures/substitution_05-collated.png>]
+<Figures/k-c_all_01.png, id=1066, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 246. on inp
@@ -2608,7 +2602,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=1108, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=1068, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 254. o
@@ -2618,11 +2612,11 @@ e 254.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43 <./Figures/k-t_all_02.png (PNG copy)>]
+[45 <./Figures/k-t_all_02.png (PNG copy)>]
 
-LaTeX Warning: Text page 44 contains only floats.
+LaTeX Warning: Text page 46 contains only floats.
 
-[44 <./Figures/k-c_all_01.png> <./Figures/K_over_T_over_X.png>] [45] [46]
+[46 <./Figures/k-c_all_01.png> <./Figures/K_over_T_over_X.png>] [47] [48]
 Overfull \hbox (9.30644pt too wide) in paragraph at lines 328--328
 []|\T1/ppl/m/n/10.95 Conductivity 
  []
@@ -2636,23 +2630,23 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 328--328
 Overfull \vbox (1.03882pt too high) detected at line 328
  []
 
-<Figures/draft_XT.png, id=1149, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=1107, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 348. on input
  line 348.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
 e 348.
-[47 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=1164, 797.98125pt x 490.83376pt>
+[49 <./Figures/draft_XT.png>]
+<Figures/draft_XTT.png, id=1118, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 363. on inpu
 t line 363.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
 e 363.
- [48 <./Figures/draft_XTT.png>]
-<Figures/k-c_demo-cartoon.png, id=1182, 888.31876pt x 502.12593pt>
+ [50 <./Figures/draft_XTT.png>]
+<Figures/k-c_demo-cartoon.png, id=1133, 888.31876pt x 502.12593pt>
 File: Figures/k-c_demo-cartoon.png Graphic file (type png)
 <use Figures/k-c_demo-cartoon.png>
 Package pdftex.def Info: Figures/k-c_demo-cartoon.png  used on input line 386. 
@@ -2663,8 +2657,8 @@ e 386.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49] [50 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [51]
-<Figures/draft_VrefV-T.png, id=1212, 393.72093pt x 179.16937pt>
+[51] [52 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [53]
+<Figures/draft_VrefV-T.png, id=1161, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
 Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 450. on 
@@ -2675,27 +2669,27 @@ e 450.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52 <./Figures/draft_VrefV-T.png>] [53]
+[54 <./Figures/draft_VrefV-T.png>] [55]
 Overfull \hbox (0.91743pt too wide) in paragraph at lines 529--531
 \T1/ppl/m/n/10.95 This MFP value is ob-tained from a con-duc-tiv-ity rep-re-sen
 -ta-tive of bulk MgSiO$[]$ bridg-
  []
 
-[54]) [55] [56]
+[56]) [57] [58]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex
 Chapter 5.
 )
 1: section
-[57
+[59
 
 
 
 ]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [58
+ (./Chapters/Chapter6.tex [60
 
 
 
@@ -2703,10 +2697,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[59]
+[61]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [60
+ (./Appendices/AppendixA.tex [62
 
 
 
@@ -2719,7 +2713,7 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[61] [62
+[63] [64
 
 
 ]
@@ -2742,14 +2736,14 @@ n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary .
  []
 
 1: section
-[63]
+[65]
 Overfull \hbox (52.39838pt too wide) in paragraph at lines 374--374
 \T1/cmtt/m/n/10.95 2012 . 09 . 002$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 u
 rl\T1/ppl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / linkinghub . elsevier 
 . com / retrieve / pii / S0012821X12004815$[][]\T1/ppl/m/n/10.95 . 
  []
 
-[64] [65]
+[66] [67]
 Overfull \hbox (29.89816pt too wide) in paragraph at lines 374--374
 \T1/ppl/m/n/10.95 tems^^Q. In: \T1/ppl/m/it/10.95 Molec-u-lar Physics \T1/ppl/m
 /n/10.95 101.14, pp. 2303^^U2307. \T1/ppl/m/sc/10.95 doi\T1/ppl/m/n/10.95 : [][
@@ -2763,339 +2757,71 @@ w . sciencedirect . com / science / article / pii / S0031920100001977$[][]\T1/p
 pl/m/n/10.95 . 
  []
 
-[66]
+[68]
 Overfull \hbox (24.03674pt too wide) in paragraph at lines 374--374
 [][]\T1/ppl/m/n/10.95 Parise, J. B. and Y. Wang (1990). ^^P  Crys-tal struc-tur
 e and ther-mal ex-pan-sion of (Mg,Fe)SiO_3
  []
 
-[67]
+[69]
 Overfull \hbox (4.39392pt too wide) in paragraph at lines 374--374
 \T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
  doi / 10 . 1002 / 2014GL059385 /
  []
 
-[68]
+[70]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
- [69]
+ [71]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 16DC3BF8E29E86A496919C44CBC0F14B;16134.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 0F962F175EE259B1AD3D56B1F5F7AAFD;15739
-(rerunfilecheck)             After:  D3FE85DF4B9FE05CEEB24E90885ECFBF;16065.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34685 strings out of 492990
- 705001 string characters out of 6121926
- 967780 words of memory out of 5000000
- 37432 multiletter control sequences out of 15000+600000
+ 34605 strings out of 492990
+ 703982 string characters out of 6121926
+ 967811 words of memory out of 5000000
+ 37435 multiletter control sequences out of 15000+600000
  605361 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,20n,82p,10377b,2909s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.134} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.123} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.113} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.130} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.91} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.88} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.84} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.62} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.131} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.116} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.103} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.129} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.121} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.119} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.117} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.107} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.105} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.96} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.64} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.61} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.57} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.147} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.146} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.145} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.144} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.143} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.142} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.141} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.140} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.139} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.135} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.133} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.132} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.122} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.120} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.112} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.111} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.110} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.106} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.104} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.100} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.99} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.90} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.86} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.83} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.81} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.80} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.79} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.77} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.76} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.74} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.73} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.72} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.71} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.70} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.69} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.67} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.66} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.65} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.60} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.58} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.55} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.51} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.48} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.47} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.44} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.43} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.42} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.41} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.40} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.38} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.37} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.36} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.33} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.32} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.29} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.28} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.27} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.26} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.23} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.22} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.21} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.19} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.18} has been referenced but does not exist,
- replaced by a fixed one
-
-{/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm-s
-uper/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-dist
-/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></apps/applications/texlive/
-2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></apps
-/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></apps/applications/texlive/2017/1/default
-/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></apps/applications/texl
-ive/2017/1/default/2017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></app
-s/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-sup
-er/sftt1000.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/font
-s/type1/public/cm-super/sftt1095.pfb></apps/applications/texlive/2017/1/default
-/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></apps/applications/texliv
-e/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/app
-lications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8
-a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/ur
-w/palatino/uplri8a.pfb>
-Output written on main.pdf (95 pages, 1611658 bytes).
+{/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm
+-super/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-di
+st/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></apps/applications/texliv
+e/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></ap
+ps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></apps/applications/texlive/2017/1/defau
+lt/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></apps/applications/te
+xlive/2017/1/default/2017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></a
+pps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-s
+uper/sftt1000.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fo
+nts/type1/public/cm-super/sftt1095.pfb></apps/applications/texlive/2017/1/defau
+lt/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></apps/applications/texl
+ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
+pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
+r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
+urw/palatino/uplri8a.pfb>
+Output written on main.pdf (97 pages, 1613657 bytes).
 PDF statistics:
- 1563 PDF objects out of 1728 (max. 8388607)
- 1408 compressed objects within 15 object streams
- 384 named destinations out of 1000 (max. 500000)
- 780 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1480 PDF objects out of 1728 (max. 8388607)
+ 1324 compressed objects within 14 object streams
+ 301 named destinations out of 1000 (max. 500000)
+ 796 words of extra memory for PDF output out of 10000 (max. 10000000)
 
