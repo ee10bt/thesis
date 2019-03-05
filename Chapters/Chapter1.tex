@@ -4,12 +4,13 @@
 
 %-----------------------------------------------------------------------------------------------------------
 
+
+
 %-----------------------------------------------------------
 \section{Introduction to the problem}
 %-----------------------------------------------------------
 
 The nature of heat transport within a substance is controlled by its \tc. This influences the thermal evolution and heat budget of the Earth, but is poorly constrained across relevant conditions. Experiments can measure the conductivity of material, but not at the high pressure/temperature conditions found in the deep Earth. Computer simulations allow materials and their conductivities to be modelled on an atomic-scale, but care must be taken to achieve accurate results. This involves setting up the material to faithfully replicate its expected real-world counterpart, and choosing a simulation method which includes realistic atomic interactions. In this chapter, I will introduce thermal conductivity and the deep earth, considering the effects of the former on the latter.
-
 
 %---------------------------------------
 \subsection{Man-made applications with \tc}
@@ -18,12 +19,9 @@ Knowledge of the thermal conductivity of solids is key in a wide range of techno
 
 !!! SOLAR PANELS ETC.?
 
-!!! FLESH OUT !!!
-
 %---------------------------------------
 \subsection{Conductivity in the Earth}
 %---------------------------------------
-%In the Earth's lower mantle thermal conductivity controls the nature of planetary convection \citep{Tosi2013}, and the heat flux out of the core which powers the geotherm. THERMAL CONDUCTIVITY WITHIN THE EARTH will be discussed further in Section~\ref{sec:ch1:cond_in_earth}.
 
 Within the lower mantle, thermal conductivity influences the rate at which heat is transferred from core cooling towards the surface, and more importantly the mechanisms by which it does so \citep{Lay2008}. High thermal conductivity systems will preferentially transport heat by conduction. Systems will convect (ADVECT?) where there is too much heat to be transpoted by conduction alone (i.e. low conductivity conditions).
 
@@ -43,7 +41,7 @@ Working on the atomic-scale, compositional variations are more important than in
 
 Fundamental characteristics of heat transport in atomic systems mean that the size of the system / number of atoms affect the magnitude of the conductivity result. Measures exist to quantify these effects, but simulations may yield incorrect results if system size is not considered. I will look into this to validate my calculated results, but also to offer analysis of these finite size effects (FSE) for atomic simulations in general.
 
-!!! ADD REFS OBVS
+
 
 
 
@@ -52,7 +50,11 @@ Fundamental characteristics of heat transport in atomic systems mean that the si
 %-----------------------------------------------------------
 \label{sec:earth_structure}
 
-ENTIRE SECTION NEEDS FIGURE 
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/pp_earth_diagram.png}
+  \caption[EARTH STRUCTURE DIAGRAM]{THE IDEA HERE IS FOR ME TO MAKE A FIGURE THAT INCLUDES ON THE MOST RELEVANT BITS OF THE EARTH, BASED OFF WHAT I MENTION IN FOLLOWING PARAGRAPHS. ADD SCALEBAR/DISTANCES? TEXT ON FIGURE? MARK CMB? MARK ATMOSPHERE/SURFACE?}
+  \label{fig:earth_diagram}
+\end{figure}
 
 The average radius of the Earth is 6371~km, the properties of which change dramatically with depth to the centre. I will be focussed on the lower mantle, particularly the region close to the core (the core mantle boundary, CMB). Events in the lower mantle influence (and are influenced by) the upper mantle and lithosphere above, and the core below. Heat transport throughout the Earth is influenced by thermal conductivity, which in turn affects the dynamics of the system, the surface expression of this being plate tectonics. Heat flow also affects the core geodynamo, which produces the Earth's magnetic field. 
 
@@ -60,9 +62,7 @@ The average radius of the Earth is 6371~km, the properties of which change drama
 \subsection{Lower mantle}
 %---------------------------------------
 
-!!! SiO2 PHASES?
-
-The lower mantle encompasses the region between the mantle transition zone (660~km deep, $\sim$1900~K, $\sim$25~GPa) and the CMB (2900~km deep, $\sim$4000~K, $\sim$136~GPa). The composition of this region can be approximated as 75\% bridgmanite (MgSiO$_3$, magnesium silicate perovskite), 20\% periclase (MgO, magnesium oxide), and  5\% calcium silicate (CaSiO$_3$) perovskite \citep{Tronnes2009}. All of which are insulators and past their Debye temperatures at lower mantle conditions, with the potential for the inclusion of impurities such as iron and aluminium.
+The lower mantle encompasses the region after the mantle transition zone (660~km deep, $\sim$1900~K, $\sim$25~GPa) to the CMB (2900~km deep, $\sim$4000~K, 136~GPa). The composition of this region can be approximated as 75\% bridgmanite (MgSiO$_3$, magnesium silicate perovskite), 20\% periclase (MgO, magnesium oxide), and  5\% calcium silicate (CaSiO$_3$) perovskite \citep{Tronnes2009}. All of which are insulators and past their Debye temperatures at lower mantle conditions, with the potential for the inclusion of impurities such as iron and aluminium.
 
 The exact nature of impurities is complicated to resolve, as there are a lot of variables. Iron comes in ferrous and ferric varieties, which can have varying electron spin states. The amount of iron is not partitioned evenly thoughout the mineral phases, periclase taking a larger proportion than bridgmanite for example. The nature of partitioning changes with physical conditions, where \ppvs may behave differently to \bdg.
 
@@ -70,25 +70,23 @@ A popular opinion is that bridgmanite is stable in the lower mantle until the bo
 
 The lower mantle is not heterogeneous, with large-scale features around the CMB. Two large low shear velocity provinces (LLSVPs) can be found roughly underneath Africa and the Pacific. An associated feature is the ultra-low velocity zones (ULVZs), identified around the edges of LLSVPs. These can be observed seismically, but the reason they exist is unclear. It is suggested they are ``thermo-chemical features'', hotter and denser than the regular lower mantle. Increasing temperature and density tend to reduce seismic velocity, with increased density to offset the additional buoyancy from raised temperature. ``Thermo'' intuitively refers to the change in temperatures, while ``chemical'' changes are required to explain density increase. As a result, thermal conductivity will vary within these regions. Adding impurities such as iron would be a possible cause for density increase, such that the conductivity change should be quantified.
 
-
-
 %---------------------------------------
-\subsection{Above the lower mantle}
+\subsection{Lithosphere and upper mantle}
 %---------------------------------------
 
 The lithosphere (from 0~km depth) and upper mantle lie above the transition zone (to 660~km depth), which marks the top of the lower mantle. Although the chemistry of these regions is similar to that of the lower mantle, the physical conditions and mineral phases are different. Eruptive and subductive behaviour associated with plate tectonics is perhaps the most obvious consequence of mantle dynamics at the Earth's surface, and generally to humanity.
 
-The ``rocky'' portion of the Earth (from the surface down to CMB) is largely some form of silicate mineral, often with magnesium.
-
-%MANTLE TRANSITION ZONE STAGES  & CHEMISTRY - QUARTZ, PYROX -> GARNET, OLIVINE -> WADSLEYITE -> RINGWOODITE
+The ``rocky'' portion of the Earth (from the surface down to CMB) is largely some form of silicate mineral, often with magnesium and iron. The two main mineral transitions from the Earth's surface to the top of the lower mantle are pyroxene to garnet (40~\%), and olivine through wadsleyite to ringwoodite\citep[60~\%][]{Tronnes2009}. The olivine to wadsleyite change occurs at 410~km, marking the top of the mantle transition zone. Wadsleyite transitions to ringwoodite through this zone until 660~km, at which point it breaks down into lower mantle bridgmanite and ferropericlase.
 
 %---------------------------------------
-\subsection{Below the lower mantle}
+\subsection{Inner and outer core}
 %---------------------------------------
 
 The region beyond the CMB (starts at 2900~km depth) includes the core, comprised of its outer and inner sections. The liquid outer core extends to 5100~km depth, where the pressure-driven transition to solid inner core occurs. The composition of the core is dominated by iron, with various light elements suggested as possible alloying components.
 
 Relative to the lower mantle, the outer core is a vigorously convecting system, and the core-side CMB can be considered to be an isothermal boundary. The main relevance to the lower mantle is the heat transfer across the CMB, the rate of which depends on the mantle conductivity and temperature. A second concern is that of chemical transfer between core and mantle, where iron from the core would be swapped various light mantle elements. Fe-content may increase in the lower mantle with CMB proximity, which in turn affects conductivity and the temperature profile for CMB heat flux.
+
+
 
 
 
@@ -131,8 +129,6 @@ Similar to the observed behaviour of photons, phonons exhibit wave-particle dual
 
 
 
-
-
 %---------------------------------------
 \subsection{What affects it?}
 %---------------------------------------
@@ -145,6 +141,8 @@ pressure increase
 refer to composition effects in chap 4
 
 Heat is transported as lattice virbrations, or phonons. The further phonons travel before scattering (mean free path, MFP), the more efficient the heat transport and thus higher the thermal condutivity. A number of effects (MENTION MATTHIESSEN'S RULE) cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. 
+
+
 
 
 
@@ -228,8 +226,6 @@ MANTHILAKE'S HIGH T RESULTS? CAN'T FIND REFERENCE?
 \citet{Tang2014} performed first-principles calculations to assess the \tcs of \mgsios
 and the effect of Fe inclusions therein. These results feed into a model of conductivity along a lower mantle geotherm, of aggregate composition 4 \bdg : 1 periclase with 12.5\% Fe impurities. Their calculations model \mgfesios by increasing atomic mass, but not changing the force constants, in a manner similar to \citet{Ammann2014}. The inclusion of impurities has little effect at 136~GPa-4000~K, on the order of a few percent, but they note MgO is affected more considering its higher conductivity. The observation that conductivity is reduced less when it is already small due to the effect of temperature, matches the saturation described in \citet{Ammann2014}, but in turn disagrees with \citet{Haigis2012}. The uncertainity is large when experimental data is extrapolated, especially when considering the (temperature-dependent) effect of impurities.
 
-
-
 %-------------------
 \subsubsection{Radiative conductivity}
 %-------------------
@@ -242,6 +238,8 @@ and the effect of Fe inclusions therein. These results feed into a model of cond
 \citet{Goncharov2008} performed a similar optical absorption spectra analysis up to 133~GPa, but with the opposite conclusion to \citet{Keppler2008}. They agreed the radiative conductivity was dependent on the amount, redox state, and spin state of iron, but disagreed with its significance. \citet{Goncharov2008} estimated radiative conductivity would not exceed 0.54~\wmks at the top of the \ddds layer, a value in line with \citet{Hofmeister1999} and at odds with \citet{Keppler2008}. Until better constrained, it is convenient to assume the radiative component is small compared to the lattice component. As stated earlier (Section~\ref{sec:what_is_tc}), the two components can simply be added to determine the total thermal conductivity (for the lower mantle).
 
 \citet{Tang2014} re-evaluated the works of \citet{Keppler2008} and \citet{Goncharov2008} to create a profile of radiative conductivity in the lower mantle. \citeauthor{Tang2014}'s profile suggests that the previous works have a more reasonable agreement than they show, using analysis which gives an upper bound on the conductivity. Radiative heat transfer is inhibited in the same way as conductive, by impurities and grain boundaries which are not considered when calculating this upper bound. Unlike lattice thermal conductivity, radiative conductivity increases with temperature, steeply so in the mantle thermal boundary layer. When the opposing temperature dependencies of lattice and radiative conductivity are considered in tandem, they suggest that the thermal conductivity of the lower mantle is largely temperature-independent above the \ddds region at around 3~\wmk. Thermal conductivity increases to 5.5 \wmks in the TBL, due to the increased significance of the radiative component.
+
+
 
 
 
