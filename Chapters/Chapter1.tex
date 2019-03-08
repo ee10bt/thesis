@@ -15,9 +15,11 @@ The nature of heat transport within a substance is controlled by its \tc. This i
 %---------------------------------------
 \subsection{Man-made applications with \tc}
 %---------------------------------------
-Knowledge of the thermal conductivity of solids is key in a wide range of technological applications, in addition to developing our understanding of natural systems. Low conductivities are required in thermoelectric materials, to maximise the efficiency of heat-electricity conversion \citep{Snyder2008}. Thermal conductivity determines whether a material is a conductor or insulator of heat, both of which have many technological applications.
+Knowledge of the thermal conductivity of solids is key for a wide range of technological applications, in addition to developing our understanding of natural systems. Conductivity determines whether a material is a conductor or insulator of heat, both of which have many uses, technological or otherwise. Oven gloves introduce an insulating, low conductivity layer between our hands and a hot object which would otherwise cause injury. Vacuum flasks utilise a low conductivity construction to keep liquids hot, houses have wall insulation to keep the heat in. While a saucepan may have an insulating rubber handle, it may also have a conductive copper base, allowing it to heat up quickly with an even temperature distribution.
 
-!!! SOLAR PANELS ETC.?
+Heat exchangers are found in many systems, where one substance is used to cool or heat another. While the heat transfer is affected by the thermal conductivity of the media in question, the material that seperates the two must have high conductivity for the system to be efficient. Domestic examples include central heating system, fridges, and cars. Industrial examples include solar water heating, and power plants, from geothermal to nuclear.
+
+Thermoelectric materials convert waste heat into electricity, thereby improving the efficiency of domestic, automotive, and industrial processes. They are proposed to increase the sustainability of our current electricity base, but suitable materials must have a low thermal conductivity \citep{Snyder2008}.
 
 %---------------------------------------
 \subsection{Conductivity in the Earth}
@@ -40,6 +42,76 @@ In order to perform this parameterisation, I will need to explore the equations 
 Working on the atomic-scale, compositional variations are more important than in a sample of bulk material. A relatively low amount of possible sites for impurities to be placed means clumping is possible, and must be considered when randomly substituting atoms.
 
 Fundamental characteristics of heat transport in atomic systems mean that the size of the system / number of atoms affect the magnitude of the conductivity result. Measures exist to quantify these effects, but simulations may yield incorrect results if system size is not considered. I will look into this to validate my calculated results, but also to offer analysis of these finite size effects (FSE) for atomic simulations in general.
+
+
+
+
+
+%-----------------------------------------------------------
+\section{Defining \tc}
+%-----------------------------------------------------------
+\label{sec:defining_tc}
+
+Thermal conductivity is a material property, indicative of the ease with which heat is transferred through conduction. For known substances thermal conductivity spans about six orders of magnitude, from silica aerogels with 0.005~\wmks \citep{Lee1995} to graphene with 5000~\wmks \citep{Balandin2008}.
+
+The transfer of thermal energy can occur between an object and its surroundings, two bodies brought into contact, or along a temperature gradient within an object. The possible mechanisms by which this can occur are conduction, convection, and radiation. Conduction is the transfer of heat by atomic vibrations and electron transport in metallic substances (such as in the outer core). Convection is the motion of thermal energy via a moving medium, generally in liquids and gases (but expected in the mantle). Density differences are the driving force for convection, due to the volume change associated with thermal expansion. Radiation refers to the transport of heat by electromagnetic radiation in the form of photons.
+
+I am primarily concerned with the atomic vibrations of lattice conduction through the lower mantle, and secondly the convective behaviour therein. Mantle minerals are expected to be insulators, meaning there is no contribution from electron transport. The radiative component of thermal conductivity in the mantle is thought to be small \citep{Goncharov2008}, and will not be determined as part of this work. In the event that radiation contributes significantly to the effective thermal conductivity \citep{Keppler2008}, it can simply be added to the lattice component.
+
+Convection in them mantle is dependent on the \tc, and will occur if heat cannot be sufficiently transported by conductive processes. The value of the Rayleigh number describes the behaviour of heat flow in a fluid, relative to a critical value for the system. Many variables are required to determine the Rayleigh number, but most importantly here it is inversely proportional to \tc. If the calculated Rayleigh number is lower than the critcal value, conduction is the dominant process. When the Rayleigh number is greater, the ratio between it and the critcal value decribes the vigour and style of convection.
+
+%---------------------------------------
+\subsection{Mechanisms of heat transport}
+%---------------------------------------
+
+The transport of heat, rather than the transport of hot material, can be split into three components that contribute to the overall thermal conductivity of a material. These transport mechanisms can be explained on an atomic level, and in the case of this study within a crystal lattice. Atoms have translational symmetry within a crystal, the lattice can be thought of a regular, repeating pattern of atomic arrangement. 
+
+Electrical thermal conductivity refers to the transport of heat via free electrons in a lattice structure. Radiative thermal conductivity is the transport of heat via photons, or packets of electromagnetic energy. Phonons are packets of vibrational energy, a quasiparticle used to describe atomic motions which contribute to lattice thermal conductivity.
+
+!!! DIAGRAM OF A LATTICE ??? CRYSTALMAKER ???
+
+%-------------------
+\subsubsection{Electron}
+%-------------------
+
+Close parallels exist between thermal and electrical conduction. The conduction of thermal energy in metals is predominantly due to the motion and interaction of free electrons. Heat is transferred as electrons move and collide in the lattice. There is no net transport of electrons in order to maintain charge neutrality within the lattice. Lower mantle minerals are semiconductors, and thus electrical thermal conductivity is of little significance to this project.
+
+%-------------------
+\subsubsection{Photon}
+%-------------------
+
+Any body with a non-absolute zero temperature emits thermal radiation as light, or photons. Radiative thermal conductivity is determined by a material's optical absorptivity, which describes how heat is transferred by electromagnetic radiation within a material. On the atomic scale, charged particles vibrate and emit light. Energy is transferred from one particle to another when this light is scattered or absorbed. The transfer of heat by radiation is limited similarly to the transfer of visible light, with difficulty passing through opaque media. Unlike lattice conductivity at mantle conditions, radiative conductivity increases with temperature \citep{Hofmeister1999}. This relation has been used to assume thermal conductivity could be constant through the lower mantle if radiative processes are significant, where the lattice component decreases at the same rate the radiative increases \citep{Tang2014}.
+
+%-------------------
+\subsubsection{Phonon}
+%-------------------
+
+!!! DEBYE DIAGRAM
+
+!!! OPTICAL VS. ACOUSTIC EXPLAIN !!!
+
+The final way heat is conducted is by the vibration of atoms, where the velocity of an atom is proportional to its heat. As an atom vibrates, forces act on neighbouring atoms, inducing motion. Hot atoms in a closed system transfer energy to cold atoms in this way, until energy and temperature are both equilibrated. Considering a crystalline arrangement of atoms, there is long-range structure and well-defined bonds between atoms. Much like standing waves on a string, atoms can vibrate in-phase. These patterns of vibrations are called phonons, and can be differentiated by wavelength and the relative motions of atoms.
+
+Similar to how photons have wave particle duality, phonons are known as quasiparticles. This is useful for explaining how phonons ``waves'' interact with structural discontinuities and in phonon-phonon collisions. As a particle, a phonon is a quantised packet of vibrational energy. Unlike electronic heat conduction, there is a net motion of phonon ``particles'' from hot to cold regions.
+
+The amount of phonon ``modes'' contributing to heat transport increases with the material's heat capacity, until the saturation of this parameter at the Debye temperature. \Tc is proportional to the amount of active modes, so also increases with temperature up to the Debye limit. After this point, phonon-phonon scattering begins to reduce conductivity, as the frequency of more energetic collisions increases. Conductivity change is inversely proporitional to temperature at this point, decreasing, and eventually saturating, to a minimum value. Bridgmanite is above its Debye temperature for all lower mantle conditions I will consider. I can safely assume its conductivity will decrease with rising temperature.
+
+
+
+
+
+%---------------------------------------
+\subsection{What affects it?}
+%---------------------------------------
+pressure, temperature, and composition
+
+temperature dependence from 0~K
+
+pressure increase
+
+refer to composition effects in chap 4
+
+Heat is transported as lattice virbrations, or phonons. The further phonons travel before scattering (mean free path, MFP), the more efficient the heat transport and thus higher the thermal condutivity. A number of effects (MENTION MATTHIESSEN'S RULE) cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. 
 
 
 
@@ -76,7 +148,7 @@ The lower mantle is not heterogeneous, with large-scale features around the CMB.
 
 The lithosphere (from 0~km depth) and upper mantle lie above the transition zone (to 660~km depth), which marks the top of the lower mantle. Although the chemistry of these regions is similar to that of the lower mantle, the physical conditions and mineral phases are different. Eruptive and subductive behaviour associated with plate tectonics is perhaps the most obvious consequence of mantle dynamics at the Earth's surface, and generally to humanity.
 
-The ``rocky'' portion of the Earth (from the surface down to CMB) is largely some form of silicate mineral, often with magnesium and iron. The two main mineral transitions from the Earth's surface to the top of the lower mantle are pyroxene to garnet (40~\%), and olivine through wadsleyite to ringwoodite\citep[60~\%][]{Tronnes2009}. The olivine to wadsleyite change occurs at 410~km, marking the top of the mantle transition zone. Wadsleyite transitions to ringwoodite through this zone until 660~km, at which point it breaks down into lower mantle bridgmanite and ferropericlase.
+The ``rocky'' portion of the Earth (from the surface down to CMB) is largely some form of silicate mineral, often with magnesium and iron. The two main mineral transitions from the Earth's surface to the top of the lower mantle are pyroxene to garnet (40\%), and olivine through wadsleyite to ringwoodite \citep[60\%][]{Tronnes2009}. The olivine to wadsleyite change occurs at 410~km, marking the top of the mantle transition zone. Wadsleyite transitions to ringwoodite through this zone until 660~km, at which point it breaks down into lower mantle bridgmanite and ferropericlase.
 
 %---------------------------------------
 \subsection{Inner and outer core}
@@ -85,62 +157,6 @@ The ``rocky'' portion of the Earth (from the surface down to CMB) is largely som
 The region beyond the CMB (starts at 2900~km depth) includes the core, comprised of its outer and inner sections. The liquid outer core extends to 5100~km depth, where the pressure-driven transition to solid inner core occurs. The composition of the core is dominated by iron, with various light elements suggested as possible alloying components.
 
 Relative to the lower mantle, the outer core is a vigorously convecting system, and the core-side CMB can be considered to be an isothermal boundary. The main relevance to the lower mantle is the heat transfer across the CMB, the rate of which depends on the mantle conductivity and temperature. A second concern is that of chemical transfer between core and mantle, where iron from the core would be swapped various light mantle elements. Fe-content may increase in the lower mantle with CMB proximity, which in turn affects conductivity and the temperature profile for CMB heat flux.
-
-
-
-
-
-%-----------------------------------------------------------
-\section{Defining \tc}
-%-----------------------------------------------------------
-\label{sec:defining_tc}
-
-Thermal conductivity is a material property, indicative of the ease with which heat is transferred through conduction. For known substances thermal conductivity spans about six orders of magnitude, from silica aerogels with 0.005~\wmks \citep{Lee1995} to graphene with 5000~\wmks \citep{Balandin2008}.
-
-The transfer of thermal energy can occur between an object and its surroundings, two bodies brought into contact, or along a temperature gradient within an object. The possible mechanisms by which this can occur are conduction, convection, and radiation. Conduction is the transfer of heat by atomic vibrations, and electron transport in metallic substances (such as in the outer core). Convection is the motion of thermal energy via a moving medium, generally in liquids and gases (but expected in the mantle). Density differences are the driving force for convection, due to the volume change associated with thermal expansion. Radiation refers to the transport of heat by electromagnetic radiation in the form of photons.
-
-I am primarily concerned with the atomic vibrations of lattice conduction through the lower mantle, and secondly the convective behaviour therein. Mantle minerals are expected to be insulators, meaning there is no contribution from electron transport. The radiative component of thermal conductivity in the mantle is thought to be small \citep{Goncharov2008}, and will not be determined as part of this work. In the event that radiation contributes significantly to the effective thermal conductivity \citep{Keppler2008}, it can simply be added to the lattice component.
-
-Convection in them mantle is dependent on the \tc, and will occur if heat cannot be sufficiently transported by conductive processes. The value of the Rayleigh number describes the behaviour of heat flow in a fluid, relative to a critical value for the system. Many variables are required to determine the Rayleigh number, but most importantly here it is inversely proportional to \tc. If the calculated Rayleigh number is lower than the critcal value, conduction is the dominant process. When the Rayleigh number is greater, the ratio between it and the critcal value decribes the vigour and style of convection.
-
-%---------------------------------------
-\subsection{Mechanisms of heat transport}
-%---------------------------------------
-
-%-------------------
-\subsubsection{Electron}
-%-------------------
-
-Close parallels exist between thermal and electrical conduction. The conduction of thermal energy in metals is predominantly due to the motion and interaction of free electrons. Heat is transferred as electrons move and collide in the lattice. There is no net transport of electrons in order to maintain charge neutrality within the lattice.
-
-%-------------------
-\subsubsection{Photon}
-%-------------------
-
-Any body with a non-absolute zero temperature emits thermal radiation as light, or photons. Radiative thermal conductivity is determined by a material's optical absorptivity, which describes how heat is transferred by electromagnetic radiation within a material. On the atomic scale, charged particles vibrate and emit light. Energy is transferred from one particle to another when this light is scattered or absorbed. The transfer of heat by radiation is limited similarly to the transfer of visible light, with difficulty passing through opaque media. Unlike lattice conductivity at mantle conditions, radiative conductivity increases with temperature \citep{Hofmeister1999}. This relation has been used to assume thermal conductivity could be constant through the lower mantle if radiative processes are significant, where the lattice component decreases at the same rate the radiative increases \citep{Tang2014}.
-
-%-------------------
-\subsubsection{Phonon}
-%-------------------
-
-The final way heat is conducted is by the vibration of atoms, where the velocity of an atom is proportional to its heat. As an atom vibrates, forces act on neighbouring atoms, inducing motion. Hot atoms in a closed system transfer energy to cold atoms in this way, until energy and temperature are both equilibrated. Considering a crystalline arrangement of atoms, there is long-range structure and well-defined bonds between atoms. Much like standing waves on a string, atoms can vibrate in-phase. These patterns of vibrations are called phonons, and can be differentiated by wavelength and the relative motions of atoms.
-
-Similar to the observed behaviour of photons, phonons exhibit wave-particle duality. This is necessary to describe how phonons interact with structural discontinuities and in a phonon-phonon collision. As a particle, a phonon is a quantised packet of vibrational energy. Unlike electronic heat conduction, there is a net motion of phonon ``particles'' from hot to cold regions, and the amount of active phonon modes increases with temperature. For a given material at constant conditions, there is a temperature at which thermal conductivity peaks. Up to this temperature, some phonon wavelengths are inactive in heat transport. Above this temperature, increased frequency of phonon-phonon collisions cause scattering, tending to reduce the efficiency of heat transfer. In the lower mantle, we are above this critical temperature for all physical pressure conditions, thus increasing temperature reduces conductivity.
-
-
-
-%---------------------------------------
-\subsection{What affects it?}
-%---------------------------------------
-pressure, temperature, and composition
-
-temperature dependence from 0~K
-
-pressure increase
-
-refer to composition effects in chap 4
-
-Heat is transported as lattice virbrations, or phonons. The further phonons travel before scattering (mean free path, MFP), the more efficient the heat transport and thus higher the thermal condutivity. A number of effects (MENTION MATTHIESSEN'S RULE) cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. 
 
 
 
