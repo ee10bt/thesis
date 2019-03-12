@@ -2,25 +2,25 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces EARTH STRUCTURE DIAGRAM}}{7}{figure.caption.26}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Thermal conductivity against Fe-content}}{15}{figure.caption.38}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces EARTH STRUCTURE DIAGRAM}}{8}{figure.caption.29}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Thermal conductivity against Fe-content}}{15}{figure.caption.41}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }}{23}{figure.caption.55}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Movement and distribution of heat in the direct method. Orange to white scale represents temperature \citep [modified from][]{Stackhouse2015}.\relax }}{24}{figure.caption.56}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }}{24}{figure.caption.60}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }}{26}{figure.caption.64}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).\relax }}{27}{figure.caption.67}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }}{23}{figure.caption.58}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Movement and distribution of heat in the direct method. Orange to white scale represents temperature \citep [modified from][]{Stackhouse2015}.\relax }}{24}{figure.caption.59}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }}{24}{figure.caption.63}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }}{26}{figure.caption.67}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).\relax }}{27}{figure.caption.70}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CONTENTS BIT}}{41}{figure.caption.99}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces CONTENTS BIT}}{46}{figure.caption.108}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CONTENTS BIT}}{47}{figure.caption.110}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CONTENTS BIT}}{48}{figure.caption.111}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CONTENTS BIT}}{48}{figure.caption.112}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces CONTENTS BIT}}{51}{figure.caption.120}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces CONTENTS BIT}}{52}{figure.caption.122}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces CONTENTS BIT}}{54}{figure.caption.124}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces CONTENTS BIT}}{56}{figure.caption.132}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CONTENTS BIT}}{41}{figure.caption.102}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CONTENTS BIT}}{46}{figure.caption.111}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CONTENTS BIT}}{47}{figure.caption.113}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CONTENTS BIT}}{48}{figure.caption.114}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CONTENTS BIT}}{48}{figure.caption.115}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CONTENTS BIT}}{51}{figure.caption.123}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces CONTENTS BIT}}{52}{figure.caption.125}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CONTENTS BIT}}{54}{figure.caption.127}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CONTENTS BIT}}{56}{figure.caption.135}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

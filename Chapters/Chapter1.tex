@@ -92,9 +92,14 @@ Any body with a non-absolute zero temperature emits thermal radiation as light, 
 
 The final way heat is conducted is by the vibration of atoms, where the velocity of an atom is proportional to its heat. As an atom vibrates, forces act on neighbouring atoms, inducing motion. Hot atoms in a closed system transfer energy to cold atoms in this way, until energy and temperature are both equilibrated. Considering a crystalline arrangement of atoms, there is long-range structure and well-defined bonds between atoms. Much like standing waves on a string, atoms can vibrate in-phase. These patterns of vibrations are called phonons, and can be differentiated by wavelength and the relative motions of atoms.
 
-Similar to how photons have wave particle duality, phonons are known as quasiparticles. This is useful for explaining how phonons ``waves'' interact with structural discontinuities and in phonon-phonon collisions. As a particle, a phonon is a quantised packet of vibrational energy. Unlike electronic heat conduction, there is a net motion of phonon ``particles'' from hot to cold regions.
+Similar to how photons have wave particle duality, phonons are known as quasiparticles. This is useful for explaining how phonons ``waves'' interact with structural discontinuities and in phonon-phonon collisions. As a particle, a phonon is a quantised packet of vibrational energy. Unlike electronic heat conduction, there is a net motion of phonon ``particles'' from hot to cold regions. 
 
-The amount of phonon ``modes'' contributing to heat transport increases with the material's heat capacity, until the saturation of this parameter at the Debye temperature. \Tc is proportional to the amount of active modes, so also increases with temperature up to the Debye limit. After this point, phonon-phonon scattering begins to reduce conductivity, as the frequency of more energetic collisions increases. Conductivity change is inversely proporitional to temperature at this point, decreasing, and eventually saturating, to a minimum value. Bridgmanite is above its Debye temperature for all lower mantle conditions I will consider. I can safely assume its conductivity will decrease with rising temperature.
+A phonon's mean free path (MFP) is the distance it travels before scattering. The further the average phonon travels, the more efficient the heat transport and thus higher the thermal condutivity. A number of effects cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. The MFP can be determined with Matthiesen's rule, 
+
+!!! INSERT EQUATION HERE
+
+where [VARIABLE DECLARATION]. All sources of scattering are considered, but the shortest path dominates the MFP. This is displayed in the equation, where the inverse of the smallest number contributes the most to the sum.
+
 
 
 
@@ -103,17 +108,30 @@ The amount of phonon ``modes'' contributing to heat transport increases with the
 %---------------------------------------
 \subsection{What affects it?}
 %---------------------------------------
-pressure, temperature, and composition
 
-temperature dependence from 0~K
-
-pressure increase
-
-refer to composition effects in chap 4
-
-Heat is transported as lattice virbrations, or phonons. The further phonons travel before scattering (mean free path, MFP), the more efficient the heat transport and thus higher the thermal condutivity. A number of effects (MENTION MATTHIESSEN'S RULE) cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. 
+!!! ADD THE EQUATION WITH CV AND V! 
 
 
+
+%-------------------
+\subsubsection{Pressure}
+%-------------------
+
+Volume of the material decreases with increasing pressure, with increasing depth into the Earth. This tends to increase the bulk and shear moduli, causing the seismic wave velocity to increase. Referring back to ABOVE EQUATION, increasing pressure causes a conductivity increase.
+
+%-------------------
+\subsubsection{Temperature}
+%-------------------
+
+!!! ADD NICE FIGURE
+
+The amount of phonon ``modes'' contributing to heat transport increases with the material's heat capacity, until the saturation of this parameter at the Debye temperature. \Tc is proportional to the amount of active modes, so also increases with temperature up to the Debye limit. After this point, phonon-phonon scattering begins to reduce conductivity, as the frequency of more energetic collisions increases. Conductivity change is inversely proporitional to temperature at this point, decreasing, and eventually saturating, to a minimum value. Bridgmanite is above its Debye temperature for all lower mantle conditions I will consider. I can safely assume its conductivity will decrease with rising temperature.
+
+%-------------------
+\subsubsection{Composition}
+%-------------------
+
+Considering a ``pure'' material, like \mgsios \bdg, the two sources of scattering are phonon-phonon, and phonon-boundary. Addition of impurities, such as in \mgfesios \pv, introduces phonon-impurity scattering and can reduce conductivity. The effect of impurities is less significant at high temperatures, when conductivity is already reduced by phonon-phonon sacttering. When the phonon-impurity path is much shorter than those of other scattering sources however, impurities can greatly reduce conductivity. Because of these relations, impurities will affect conductivity more higher in the mantle, with the effect reducing towards the CMB. The effect of impurities on thermal conductivity will be discussed extensively in CHAPTER FOUR.
 
 
 
