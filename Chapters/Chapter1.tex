@@ -94,11 +94,13 @@ The final way heat is conducted is by the vibration of atoms, where the velocity
 
 Similar to how photons have wave particle duality, phonons are known as quasiparticles. This is useful for explaining how phonons ``waves'' interact with structural discontinuities and in phonon-phonon collisions. As a particle, a phonon is a quantised packet of vibrational energy. Unlike electronic heat conduction, there is a net motion of phonon ``particles'' from hot to cold regions. 
 
-A phonon's mean free path (MFP) is the distance it travels before scattering. The further the average phonon travels, the more efficient the heat transport and thus higher the thermal condutivity. A number of effects cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. The MFP can be determined with Matthiesen's rule, 
-
-!!! INSERT EQUATION HERE
-
-where [VARIABLE DECLARATION]. All sources of scattering are considered, but the shortest path dominates the MFP. This is displayed in the equation, where the inverse of the smallest number contributes the most to the sum.
+A phonon's mean free path (MFP) is the average distance it travels before scattering. The further the average phonon travels, the more efficient the heat transport and thus higher the thermal condutivity. A number of effects cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. The MFP can be determined via Matthiessen's rule, which states the total thermal resistivity (inverse of conductivity) is equal to the sum of individual resistivities,
+%
+\begin{equation}
+\frac{1}{\kappa} = \frac{1}{\kappa_{\mathrm{ph}}} + \frac{1}{\kappa_{\mathrm{b}}} + \frac{1}{\kappa_{\mathrm{d}}}\ ,
+\end{equation}
+%
+where \textbf{ph}onon, \textbf{b}oundary, and \textbf{d}efect scattering effects are considered. The distance a phonon travels is proportional to conductivity, thus inversely proporitional to resistivity. The shorter the phonon path of an effect, the more it influences and contributes to the MFP. This is displayed in the equation, where the inverse of the smallest number contributes the most to the sum.
 
 
 
