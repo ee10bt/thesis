@@ -64,11 +64,9 @@ Convection in them mantle is dependent on the \tc, and will occur if heat cannot
 \subsection{Mechanisms of heat transport}
 %---------------------------------------
 
-The transport of heat, rather than the transport of hot material, can be split into three components that contribute to the overall thermal conductivity of a material. These transport mechanisms can be explained on an atomic level, and in the case of this study within a crystal lattice. Atoms have translational symmetry within a crystal, the lattice can be thought of a regular, repeating pattern of atomic arrangement. 
+The transport of heat, rather than the transport of hot material, can be split into three components which contribute to the overall thermal conductivity of a material. These transport mechanisms can be explained on an atomic level, and in the case of this study within a crystal lattice. Atoms have translational symmetry within a crystal, the lattice can be thought of a regular, repeating pattern of atomic arrangement. 
 
-Electrical thermal conductivity refers to the transport of heat via free electrons in a lattice structure. Radiative thermal conductivity is the transport of heat via photons, or packets of electromagnetic energy. Phonons are packets of vibrational energy, a quasiparticle used to describe atomic motions which contribute to lattice thermal conductivity.
-
-!!! DIAGRAM OF A LATTICE ??? CRYSTALMAKER ???
+Electrical thermal conductivity refers to the transport of heat via free electrons in an atomic structure. Radiative thermal conductivity is the transport of heat via photons, or packets of electromagnetic energy. Phonons are packets of vibrational energy, a quasiparticle used to describe atomic motions which contribute to lattice thermal conductivity (often referred to as just ``conductivity'' elsewhere in this thesis).
 
 %-------------------
 \subsubsection{Electron}
@@ -86,11 +84,18 @@ Any body with a non-absolute zero temperature emits thermal radiation as light, 
 \subsubsection{Phonon}
 %-------------------
 
-!!! DEBYE DIAGRAM
-
-!!! OPTICAL VS. ACOUSTIC EXPLAIN !!!
-
 The final way heat is conducted is by the vibration of atoms, where the velocity of an atom is proportional to its heat. As an atom vibrates, forces act on neighbouring atoms, inducing motion. Hot atoms in a closed system transfer energy to cold atoms in this way, until energy and temperature are both equilibrated. Considering a crystalline arrangement of atoms, there is long-range structure and well-defined bonds between atoms. Much like standing waves on a string, atoms can vibrate in-phase. These patterns of vibrations are called phonons, and can be differentiated by wavelength and the relative motions of atoms.
+
+There are two types of phonon, acoustic and optical, differentiated by the atomic motions they embody (see Fig.~\ref{fig:phonon_diagram}). Both types can be longitudinal or transverse, referring to the motion of atoms relative to the direction of energy propagation. Longitudinal motion means atoms in a line move closer and further apart with no vertical displacement. Transverse motion refers to vertical displacement of atoms off the line, with no lateral motion along it. The former is like extention/compression of a spring, the latter a standing wave on a string.
+ 
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{Figures/phonon-warwick-acoustic-optical-diagram.png}
+  \caption[PHONON TYPE DIAGRAM]{STOLEN FROM UNI WARWICK https://warwick.ac.uk/fac/sci/physics/current/postgraduate/
+  regs/mpagswarwick/ex5/phonons/}
+  \label{fig:phonon_diagram}
+\end{figure}
+
+(((IS THIS STUFF CORRECT???))) Acoustic phonons are propagated by atoms displaced in-phase from their equilibrium positions, generating forces on their neighbours and thus subsequent displacement. Optical phonons are propagated by the opposite motion of adjacent positive and negatively-charged ions (conserving momentum, the lighter atom moves further). This motion is generated from the electric fields of external electromagnetic radiation ((OR DOES MOTION GENERATE EM FIELD?)), and is typically of a higher energy than its acoustic counterpart. 
 
 Similar to how photons have wave particle duality, phonons are known as quasiparticles. This is useful for explaining how phonons waves interact with structural discontinuities and in phonon-phonon collisions. As a particle, a phonon is a quantised packet of vibrational energy. Unlike electronic heat conduction, there is a net motion of phonon particles from hot to cold regions. 
 
@@ -100,7 +105,7 @@ A phonon's mean free path (MFP) is the average distance it travels before scatte
 \frac{1}{\kappa} = \frac{1}{\kappa_{\mathrm{ph}}} + \frac{1}{\kappa_{\mathrm{b}}} + \frac{1}{\kappa_{\mathrm{d}}}\ ,
 \end{equation}
 %
-where \textbf{ph}onon, \textbf{b}oundary, and \textbf{d}efect scattering effects are considered. The distance a phonon travels is proportional to conductivity, thus inversely proporitional to resistivity. The shorter the phonon path of an effect, the more it influences and contributes to the MFP. This is displayed in the equation, where the inverse of the smallest number contributes the most to the sum.
+where \textbf{ph}onon, \textbf{b}oundary, and \textbf{d}efect scattering effects are considered. The distance a phonon travels is proportional to conductivity, thus inversely proporitional to resistivity. The shorter the phonon path of an effect, the more it influences and contributes to, or detracts from, the MFP. This is displayed in the equation, where the inverse of the smallest number contributes the most to the sum.
 
 
 
@@ -131,9 +136,23 @@ Volume of the material decreases with increasing pressure, with increasing depth
 \subsubsection{Temperature}
 %-------------------
 
-!!! ADD NICE FIGURE - Cv driving regime, MFP driving regime, saturation
+The phonon MFP increases with the volumetric heat capacity, until the saturation and convergence of this parameter at a material's Debye temperature (see Fig.~\ref{fig:debye-model}). Lattice conductivity is proportional to the MFP (Eq.~\ref{eq.cvvl}), so also increases with temperature up to the Debye limit. 
 
-The phonon MFP increases with the volumetric heat capacity, until the saturation and convergence of this parameter at a material's Debye temperature. Lattice conductivity is proportional to the MFP (Eq.\ref{eq.cvvl}), so also increases with temperature up to the Debye limit. Phonon-phonon scattering occurs as long as there are phonons, the effect of which increases with temperature past the Debye temperature. Conductivity change is inversely proporitional to temperature at this point, decreasing, and eventually saturating, to a minimum value as the MFP reaches its minimum (on the order of atomic spacing). Bridgmanite is above its Debye temperature for all lower mantle conditions I will consider. I can safely assume its conductivity will decrease with rising temperature.
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/debye-model.png}
+  \caption[DEBYE MODEL]{http://borisv.lk.net/matsc597c-1997/systems/Lecture4/node4.html}
+  \label{fig:debye-model}
+\end{figure}
+
+Phonon-phonon scattering occurs as long as there are phonons, the effect of which increases with temperature past the Debye temperature. Conductivity change is inversely proporitional to temperature at this point, decreasing, and eventually saturating (see Fig.~\ref{fig:kappa-temp-dep}), to a minimum value as the MFP reaches its minimum (on the order of atomic spacing). Bridgmanite is above its Debye temperature for all lower mantle conditions I will consider. I can safely assume its conductivity will decrease with rising temperature.
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/kappa-temp-dep.png}
+  \caption[KAPPA AGAINST TEMP]{https://slideplayer.com/slide/9699097/31/images/29/
+  Thermal+Conductivity+Metals+Dielectrics+Wiedemann-Franz+law\%3A.jpg}
+  \label{fig:kappa-temp-dep}
+\end{figure}
+
 
 %-------------------
 \subsubsection{Composition}
