@@ -30,7 +30,7 @@ Within the lower mantle, thermal conductivity influences the rate at which heat 
 Observations of plume structures and cyclic subduction patterns \citep[see][]{Garnero2008} suggest convective behaviour in the lower mantle. Thermal conductivity is poorly constrained in this region, obtaining a comprehensive depth profile is not a trivial task. Additional difficulties are pressure, temperature, and compositional dependences, including isotopic variation \citep{Tang2010,Dalton2013,Tang2014} and inclusion of impurities \citep{Manthilake2011,Ammann2014,Ohta2014}.
 
 %---------------------------------------
-\subsection{AIMS / WHAT DO I DO THAT IS DIFFERENT TO OTHERS}
+\subsection{AIMS / WHAT I DO THAT IS DIFFERENT TO OTHERS}
 %---------------------------------------
 
 The aim of the work presented in this thesis is to model \tcs at the core mantle boundary (CMB). I will running simulations at high pressure and varying temperatures, considering the effects of composition across an entire solid solution. 
@@ -130,7 +130,7 @@ where $C_{\mathrm{v}}$ is the volumetric heat capacity, $v$ is the acoustic phon
 \subsubsection{Pressure}
 %-------------------
 
-Volume of the material decreases with increasing pressure, with increasing depth into the Earth. This tends to increase the bulk and shear moduli, causing the seismic wave velocity, and thus the acoustic phonon velocity, to increase. Referring back to Eq.\ref{eq.cvvl}, increasing pressure causes a conductivity increase.
+Volume of the material decreases with increasing pressure, with increasing depth into the Earth. This tends to increase the bulk and shear moduli, causing the seismic wave velocity, and thus the acoustic phonon velocity, to increase. Referring back to Eq.~\ref{eq.cvvl}, increasing pressure causes a conductivity increase.
 
 %-------------------
 \subsubsection{Temperature}
@@ -158,7 +158,7 @@ Phonon-phonon scattering occurs as long as there are phonons, the effect of whic
 \subsubsection{Composition}
 %-------------------
 
-Considering a ``pure'' material, like \mgsios \bdg, the two sources of scattering are phonon-phonon, and phonon-boundary. Addition of impurities, such as in \mgfesios \pv, introduces phonon-impurity scattering and can reduce conductivity (refer back to Eq.\ref{eq.cvvl}). The effect of impurities is less significant at high temperatures, when conductivity is already reduced by phonon-phonon sacttering. When the phonon-impurity path is much shorter than those of other scattering sources however, impurities can greatly reduce conductivity (via Matthiessen rule, above). Because of these relations, impurities will affect conductivity more higher in the mantle, with the effect reducing towards the CMB. The effect of impurities on thermal conductivity will be discussed extensively in CHAPTER FOUR.
+Considering a ``pure'' material, like \mgsios \bdg, the two sources of scattering are phonon-phonon, and phonon-boundary. Addition of impurities, such as in \mgfesios \pv, introduces phonon-impurity scattering and can reduce conductivity (refer back to Eq.~\ref{eq.cvvl}). The effect of impurities is less significant at high temperatures, when conductivity is already reduced by phonon-phonon sacttering. When the phonon-impurity path is much shorter than those of other scattering sources however, impurities can greatly reduce conductivity (via Matthiessen rule, above). Because of these relations, impurities will affect conductivity more higher in the mantle, with the effect reducing towards the CMB. The effect of impurities on thermal conductivity will be discussed extensively in CHAPTER FOUR.
 
 
 
@@ -250,13 +250,17 @@ Using shear wave velocity as a proxy for CMB heat flow, \citet{Gubbins2007} show
 
 A range of atomic scale simulation methods are available to determine the lattice thermal conductivity of materials. These are invaluable for calculating thermal conductivity at conditions of which experiments are difficult, i.e. the extreme conditions found in the Earth's lower mantle (pressures and temperatures up to 136~GPa and 4000~K at the core-mantle boundary). 
 
-Many studies assume lowermost mantle thermal conductivity to be 10~\wmk\ \citep[e.g.][]{Lay2008}, but uncertainty in the extrapolation of experimental results made at low pressures and temperatures gives a range of 4--16 \wmk~\citep{Brown1986, Osako1991, Hofmeister1999, Goncharov2009, Manthilake2011, Ohta2012}. I give a review of experimental and computational determinations of conductivity for Earth-relevant conditions, where the Direct and Green-Kubo calculation methods are elaborated later on in Section REF (somewhere in chap2).
+Many studies assume lowermost mantle thermal conductivity to be 10~\wmk\ \citep[e.g.][]{Lay2008}, but uncertainty in the extrapolation of experimental results made at low pressures and temperatures gives a range of 4--16 \wmk~\citep{Brown1986, Osako1991, Hofmeister1999, Goncharov2009, Manthilake2011, Ohta2012}. 
+
+The significance of radiative thermal conductivity, the transport of heat by photonic processes, is poorly constrained in the lower mantle. Until proven otherwise, it is convenient to assume the radiative component is small compared to the lattice component. The two components can simply be added to determine the total conductivity, a correction that can be applied to my results at a later date.
+
+I give a review of experimental and computational determinations of conductivity for Earth-relevant conditions, where the Direct and Green-Kubo calculation methods are elaborated later on in Section REF (somewhere in chap2).
 
 %-------------------
 \subsubsection{Experiments}
 %-------------------
 
-There have been several computational studies to calculate the lattice thermal conductivity of bridgmanite at CMB conditions. \citet{Osako1991} measured the lattice thermal conductivity of MgSiO$_3$ perovskite, using a modified \AA ngstrom method. They investigated a temperature range of 160--340~K at ambient pressure. At 300~K, a conductivity of 5.1~\wmks was obtained. This value is similar to that reported for chemical and structural analogues, MgSiO$_3$ enstatite (5.0~\wmk~REF) and CaTiO$_{3}$ perovskite (4~\wmk~REF). The authors extrapolated the value to mantle conditions, neglecting radiative thermal conductivity. They predicted a value of 3.0~\wmks just beneath the mantle transition zone at 1900~K, and 12.0~\wmks at the top of the \ddds layer at 2500~K, a four-fold increase. Thermal conductivity is highlighted as an important indictor of lowermost mantle structure, whether or not the \ddds layer can behave as a thermal boundary between core and mantle.
+There have been several computational studies to calculate the lattice thermal conductivity of bridgmanite at CMB conditions. \citet{Osako1991} measured the lattice thermal conductivity of MgSiO$_3$ perovskite, using a modified \AA ngstrom method. They investigated a temperature range of 160--340~K at ambient pressure. At 300~K, a conductivity of 5.1~\wmks was obtained. This value is reported by the authors to be consitent with chemical and structural analogues, MgSiO$_3$ enstatite (5~\wmk) and CaTiO$_{3}$ perovskite (4~\wmk). The authors extrapolated the value to mantle conditions, neglecting radiative thermal conductivity. They predicted a value of 3.0~\wmks just beneath the mantle transition zone at 1900~K, and 12.0~\wmks at the top of the \ddds layer at 2500~K, a four-fold increase. Thermal conductivity is highlighted as an important indictor of lowermost mantle structure, whether or not the \ddds layer can behave as a thermal boundary between core and mantle.
 
 \citet{Manthilake2011} measured MgSiO$_3$ perovskite at 26~GPa and 473--1073~K, and periclase at 8 and 14~GPa between 373--1273~K. In order to estimate values of thermal conductivity at the top and bottom of D$^{\prime \prime}$ for a lower mantle compositional model of 4~perovskite~:~1~periclase, the authors extrapolated their measurements to high temperature and pressure. For an iron-free mantle, thermal conductivities of $18.9\pm1.6~$\wmks and $15.4\pm1.4$~\wmks are estimated for the top of D$^{\prime \prime}$ and CMB respectively. Similarly, for a mantle composition with Fe, thermal conductivities of $9.1\pm1.2$~\wmks and $8.4\pm1.2$~\wmks are calculated. This highlights the importance of impurities in controlling thermal conductivity in the lower mantle.
 
@@ -267,8 +271,6 @@ MANTHILAKE'S HIGH T RESULTS? CAN'T FIND REFERENCE?
 %-------------------
 \subsubsection{Calculations}
 %-------------------
-
-%My approach is similar to that of \citet{Ammann2014}, who use the direct method and interatomic potentials reporting a value of $\sim$8.5~\wmk. \citet{Stackhouse2015} again use the direct method but with density functional theory, yielding conductivity of $6.8\pm0.9$~\wmk. Using Green-Kubo, \citet{Haigis2013} report a value of $12.4\pm2.0$~\wmks for conditions of 3000~K, 139~GPa. \citet{Tang2014} and \citet{Dekura2013} employed first principles, anharmonic lattice dynamics techniques, obtaining values of $\sim$1~\wmks (CMB conditions) and 2.3~\wmks (for 4000~K and 100~GPa) respectively. These results are much lower than other studies, and could be because of LD TRUNCATION OF CONDUCTIVITY [CRITICAL ANALYSIS].
 
 \citet{Haigis2012} used the Green-Kubo method (refer to REF) to calculate the lattice thermal conductivity of bridgmanite, post-perovskite, and periclase at lower mantle conditions. Assuming an iron-free composition with four parts bridgmanite to one part periclase, a model is constructed of density and temperature-dependent thermal conductivity along a geotherm. This model suggests great variation over the lower mantle, with a value of 9.5~\wmks at the top and 20.5~\wmks above \ddd. Based on the results of \citet{Manthilake2011}, \citeauthor{Haigis2012} suggest the inclusion of iron will lower thermal conductivity by up to half, bringing their result in line with \citet{Lay2006} ((10 WMK???)). The authors estimate the CMB heat flux to be 10.8~TW for an iron-bearing perovskite/periclase aggregate, dropping slightly to 10.6~TW for a similar post-perovskite aggregate. These values match other predictions of CMB heat flux \citep[e.g.][]{Lay2008}.
 
@@ -296,22 +298,89 @@ and the effect of Fe inclusions therein. These results feed into a model of cond
 
 \citet{Keppler2008} studied the near-infrared and optical absorption spectra of silicate perovskite up to pressures of 125~GPa at room temperature. From both their tests and visual inspection, it can be shown that their synthesised perovskite remains transparent at high pressures. Extrapolating their results to high temperatures (4500~K) they suggest that the maximum radiative thermal conductivity above the CMB is around 10~\wmk, implying that radiative conductivity is likely to be an important component of the total conductivity at lower mantle conditions. The study does not measure the variation of absorption spectra with temperature and pressure, of which experimentation is currently unfeasible.
 
-\citet{Goncharov2008} performed a similar optical absorption spectra analysis up to 133~GPa, but with the opposite conclusion to \citet{Keppler2008}. They agreed the radiative conductivity was dependent on the amount, redox state, and spin state of iron, but disagreed with its significance. \citet{Goncharov2008} estimated radiative conductivity would not exceed 0.54~\wmks at the top of the \ddds layer, a value in line with \citet{Hofmeister1999} and at odds with \citet{Keppler2008}. Until better constrained, it is convenient to assume the radiative component is small compared to the lattice component. As stated earlier (Section~\ref{sec:what_is_tc}), the two components can simply be added to determine the total thermal conductivity (for the lower mantle).
+\citet{Goncharov2008} performed a similar optical absorption spectra analysis up to 133~GPa, but with the opposite conclusion to \citet{Keppler2008}. They agreed the radiative conductivity was dependent on the amount, redox state, and spin state of iron, but disagreed with its significance. \citet{Goncharov2008} estimated radiative conductivity would not exceed 0.54~\wmks at the top of the \ddds layer, a value in line with \citet{Hofmeister1999} and at odds with \citet{Keppler2008}. 
 
-\citet{Tang2014} re-evaluated the works of \citet{Keppler2008} and \citet{Goncharov2008} to create a profile of radiative conductivity in the lower mantle. \citeauthor{Tang2014}'s profile suggests that the previous works have a more reasonable agreement than they show, using analysis which gives an upper bound on the conductivity. Radiative heat transfer is inhibited in the same way as conductive, by impurities and grain boundaries which are not considered when calculating this upper bound. Unlike lattice thermal conductivity, radiative conductivity increases with temperature, steeply so in the mantle thermal boundary layer. When the opposing temperature dependencies of lattice and radiative conductivity are considered in tandem, they suggest that the thermal conductivity of the lower mantle is largely temperature-independent above the \ddds region at around 3~\wmk. Thermal conductivity increases to 5.5 \wmks in the TBL, due to the increased significance of the radiative component.
+\citet{Tang2014} re-evaluated the works of \citet{Keppler2008} and \citet{Goncharov2008} to create a profile of radiative conductivity in the lower mantle. \citeauthor{Tang2014}'s profile suggests that the previous works have a more reasonable agreement than they show, using analysis which gives an upper bound on the conductivity. Radiative heat transfer is inhibited in the same way as conductive, by impurities and grain boundaries which are not considered when calculating this upper bound. Unlike lattice thermal conductivity, radiative conductivity increases with temperature, steeply so in the mantle thermal boundary layer. When the opposing temperature dependencies of lattice and radiative conductivity are considered in tandem, they suggest that the thermal conductivity of the lower mantle is largely temperature-independent above the \ddds region at around 3~\wmk. Thermal conductivity is found to increase to 5.5 \wmks in the TBL, due to the increased significance of the radiative component.
 
+\begin{sidewaystable}[ph!]
+%\begin{table}[ph!]
+\centering
+\newcolumntype{P}{ >{\centering\arraybackslash} m{1.5cm} }
+\newcolumntype{T}{ >{\centering\arraybackslash} m{1.4cm} }
+\newcolumntype{K}{ >{\centering\arraybackslash} m{2.4cm} }
+\caption{Comparison of previous lower mantle thermal conductivity values}
+\vspace{2mm}
+  \begin{tabular}{ | c | c | c | P | T | K | c | }
+	 \hline
+	
+	Paper & Type & Material & Pressure (GPa) & Temp. (K) & Thermal Conductivity (\wmk) & Notes  \\ \hline \hline
 
+	\multirow{5}{*}{\parbox{2.2cm}{\cite{Osako1991}}} & \multirow{5}{*}{Experiment} & \mgsios perovskite & 0 & 300 & 5.1 & \multirow{3}{*}{\parbox{2.5cm}{Measurement, w/ analogues}} \\ \cline{3-6}
+ 	& & \mgsios enstatite & 0 & 300 & 5.0 &  \\ \cline{3-6}
+ 	& & CaTiO$_3$ perovskite & 0 & 300 & 4 &  \\ \cline{3-7}
+ 	& &  \multirow{2}{*}{\mgsios perovskite} & 24 & 1900 & 3 & \multirow{2}{*}{Extrapolation} \\ \cline{4-6}
+ 	& & & 127 & 2500 & 12 & \\ \hline \hline
+ 	
+% 	\multirow{4}{*}{\parbox{2.2cm}{\cite{Manthilake2011a}}} & \multirow{4}{*}{Experiment} & \multirow{2}{*}{CaGeO$_3$ perovskite} & 127 & ? & 3.3 & \multirow{4}{*}{\parbox{2.5cm}{Extrapolation}} \\ \cline{4-6}
+% 	& & & 136 & ? & 2.2 & \\ \cline{3-6}
+% 	& & \multirow{2}{*}{\parbox{4cm}{4 CaGeO$_3$ perovskite : 1 MgO periclase}} & 127 & ? & 6.4 & \\ \cline{4-6}
+% 	& & & 136 & ? & 4.5 & \\ \hline \hline
 
-
+	\multirow{4}{*}{\parbox{2.8cm}{\cite{Manthilake2011}}} & \multirow{4}{*}{Experiment} & \multirow{4}{*}{4 \mgsios pv : 1 periclase} & 127 & 2600 & 9.1 $\pm$ 1.2 & \multirow{2}{*}{\parbox{3cm}{Extrap., mantle model (w/ Fe)}} \\ \cline{4-6}
+	& & & 136 & 4100 & 8.4 $\pm$ 1.2 & \\ \cline{4-7}
+	& & & 127 & 2600 & 18.9 $\pm$ 1.6 & \multirow{2}{*}{\parbox{3cm}{Extrap., mantle model (no Fe)}} \\ \cline{4-6}
+	& & & 136 & 4100 & 15.4 $\pm$ 1.4 & \\ \hline \hline
+ 	
+ 	\multirow{4}{*}{\parbox{2.2cm}{\cite{Ohta2012}}} & \multirow{4}{*}{Experiment} & \mgsios perovskite & \multirow{4}{*}{136} & \multirow{4}{*}{3700} & 9.0 $\pm$ 1.6 & \multirow{4}{*}{\parbox{2.5cm}{Extrapolation}} \\ \cline{3-3} \cline{6-6}
+ 	& & \mgsios post-perovskite & & & 16.8 $\pm$ 3.7 & \\ \cline{3-3} \cline{6-6}
+ 	& & 4 \mgsios pv : 1 periclase & & & 11.0 $\pm$ 2.0 & \\ \cline{3-3} \cline{6-6}
+ 	& & 4 \mgsios ppv : 1 periclase & & & 17.8 $\pm$ 3.9 & \\ \hline \hline
+ 	
+ 	 \multirow{6}{*}{\parbox{2.2cm}{\cite{Haigis2012}}} & \multirow{6}{*}{\parbox{2.3cm}{Green-Kubo Calculation}} & \multirow{2}{*}{4 \mgsios pv : 1 periclase} & 24 & 2200 & 9.5 & \multirow{2}{*}{Calculation} \\  \cline{4-6}
+ 	 & & & 127 & 2900 & 20.5 & \\ \cline{3-7}
+ 	 & & Pv/periclase aggregate & \multirow{4}{*}{136} & \multirow{4}{*}{3739} & 16.4 $\pm$ 2.7 & \multirow{4}{*}{\parbox{2.6cm}{Extrapolation, mantle model}} \\  \cline{3-3} \cline{6-6}
+ 	 & & Ppv/periclase aggregate & & & 16.6 $\pm$ 2.7 & \\  \cline{3-3} \cline{6-6}
+ 	 & & Pv/periclase aggregate w/ Fe & & & 8.2 & \\  \cline{3-3} \cline{6-6}
+ 	 & & Ppv/periclase aggregate w/ Fe & & & 8.3 & \\ \hline \hline
+ 	 
+ 	 \multirow{5}{*}{\parbox{2.2cm}{\cite{Dekura2013}}} & \multirow{5}{*}{\parbox{2cm}{Lattice Dynamics}} & \multirow{5}{*}{\mgsios perovskite} & 23.5 & 300 & 9.8 & \multirow{4}{*}{Calculation} \\ \cline{4-6}
+ 	 & & & 136 & 300 & 43.6 & \\ \cline{4-6}
+ 	 & & & 100 & 300 & 28.1 & \\ \cline{4-6}
+ 	 & & & 100 & 4000 & 2.3 & \\ \cline{4-7}
+ 	 & & & 136 & 3200 & 5.3 & Extrapolation \\ \hline \hline
+ 	 
+ 	 \multirow{2}{*}{\parbox{2.2cm}{\cite{Ammann2014}}} & \multirow{2}{*}{\parbox{2.3cm}{Direct method}} & \mgsios perovskite & \multirow{2}{*}{136} & \multirow{2}{*}{3739} & 8.5 & \multirow{2}{*}{Calculation} \\ \cline{3-3} \cline{6-6}
+ 	 & & \mgsios post-perovskite & & & 12 & \\ \hline \hline
+ 	 
+ 	 \multirow{3}{*}{\parbox{2.2cm}{\cite{Tang2014}}} & \multirow{3}{*}{\parbox{2.3cm}{Peierls Boltzmann}} & \multirow{3}{*}{4 \mgsios pv : 1 periclase} & 24 & 2000 & 2.5 & \multirow{3}{*}{\parbox{2.5cm}{Including Fe, with radiative}} \\ \cline{4-6}
+ 	 & & & 127 & 3000 & 3.5 & \\ \cline{4-6}
+ 	 & & & 136 & 4000 & 5.5 & \\ \hline
+ 	
+ 	
+ 	
+ 	
+	\end{tabular}
+\label{tab:summary}  
+%\end{table}
+\end{sidewaystable}
 
 %-----------------------------------------------------------
 \section{Thesis outline}
 %-----------------------------------------------------------
-In Chapter \ref{Chapter2} we provide an overview of the methods and expand on issues. I outline my computational approaches, for the non-equilibrium molecular dynamics direct method and equilibrium molecular dynamics Green-Kubo method. I show convergence of computed conductivity with respect to simulation cell size and shape 
 
-In Chapter \ref{Chapter3}, PRESSURE/TEMPERATURE EFFECTS. DISCUSS [P/T] SCALING LAW / THEORETICAL MODEL
+!!! I SAY ``i'' ALOT, I DO THIS, I DO THAT
 
-In Chapter \ref{Chapter4}, ADAPTING SYSTEM TO INCLUDE IRON, DETERMINING EFFECT OF IMPURITY CONTENT, PRODUCING A MODEL OF THE LOWER MANTLE CONDUCTIVITY WITH VARIABLE TEMPERATURE AND BRIDGMANITE COMPOSITION
+In this Chapter, I introduced the concepts surrounding thermal conductivity generally and in the deep earth. A great deal of uncertainty surrounds this parameter at those conditions, which I explore in subsequent chapters.
+
+In Chapter \ref{Chapter2}, I provide an overview of the methods and expand on issues. I outline my computational approaches, for the non-equilibrium molecular dynamics direct method and equilibrium molecular dynamics Green-Kubo method. I show convergence of computed conductivity with respect to simulation time and physical conditions.
+
+In Chapter \ref{Chapter3}, I investigate the effect of system size and shape on the converged, computed conductivities. By comparing and contrasting methodologies, I am able to establish the requiste system properties to obtain accurate results at a given condition. This leads me to analyse previous works, and suggest results which may not be correct due to effects of simulation size.
+
+In Chapter \ref{Chapter4}, I apply my converged computational techniques to investigate the effect of introducing Fe impurities into \bdg, and how this affects the resultant conductivity across the enitre endmember suite. Furthermore the effect is constrained across multiple lower mantle temperatures, allowing me to create a model of \mgfesios conductivity as a function of temperature.
+
+In Chapter \ref{Chapter5}, I discuss the temperature and compositional-dependence on heat flow across the CMB, and the effect this has on the whole lower mantle. A review of findings will be presented with suggestions for future work, both in thermal conductivity computations and applications thereof to deep earth studies.
+
+
 
 %---------------------------------------
 \subsection{Aims}

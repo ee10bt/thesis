@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  20 MAR 2019 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  21 MAR 2019 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1619,16 +1619,25 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@dima=\skip75
 \bigstrutjot=\dimen181
 )
+(/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/graphics/r
+otating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count395
+\rotFPtop=\skip76
+\rotFPbot=\skip77
+\rot@float@box=\box53
+\rot@mess@toks=\toks21
+)
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/csquotes/c
 squotes.sty
 Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
-\csq@reset=\count395
-\csq@gtype=\count396
-\csq@glevel=\count397
-\csq@qlevel=\count398
-\csq@maxlvl=\count399
-\csq@tshold=\count400
-\csq@ltx@everypar=\toks21
+\csq@reset=\count396
+\csq@gtype=\count397
+\csq@glevel=\count398
+\csq@qlevel=\count399
+\csq@maxlvl=\count400
+\csq@tshold=\count401
+\csq@ltx@everypar=\toks22
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/csquotes/c
 squotes.def
@@ -1686,8 +1695,8 @@ uxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen182
-\Hy@linkcounter=\count401
-\Hy@pagecounter=\count402
+\Hy@linkcounter=\count402
+\Hy@pagecounter=\count403
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/hyperref/p
 d1enc.def
@@ -1695,7 +1704,7 @@ File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count403
+\Hy@SavedSpaceFactor=\count404
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/latexconfi
 g/hyperref.cfg
@@ -1708,10 +1717,10 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count404
+\c@Hy@tempcnt=\count405
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen183
-\Fld@menulength=\count405
+\Fld@menulength=\count406
 \Field@Width=\dimen184
 \Fld@charsize=\dimen185
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -1723,13 +1732,13 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count406
-\c@Item=\count407
-\c@Hfootnote=\count408
+\Hy@abspage=\count407
+\c@Item=\count408
+\c@Hfootnote=\count409
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 139.
+(scrhack)             need that hack, on input line 141.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -1738,8 +1747,8 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/hyperref/h
 pdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count409
-\c@bookmark@seq@number=\count410
+\Fld@listcount=\count410
+\c@bookmark@seq@number=\count411
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/oberdiek/r
 erunfilecheck.sty
@@ -1747,12 +1756,12 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip76
+\Hy@SectionHShift=\skip78
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 139.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 139.
-Package hyperref Info: Option `colorlinks' set `true' on input line 139.
-Package hyperref Info: Option `unicode' set `true' on input line 139.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 141.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 141.
+Package hyperref Info: Option `colorlinks' set `true' on input line 141.
+Package hyperref Info: Option `unicode' set `true' on input line 141.
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/hyperref/p
 uenc.def
@@ -1760,7 +1769,7 @@ File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 139.
+Package hyperref Info: Option `breaklinks' set `true' on input line 141.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1779,23 +1788,23 @@ LaTeX Warning: Label `eq.g_def' multiply defined.
 (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 139.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 141.
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/t1p
 pl.fd
@@ -1889,17 +1898,17 @@ File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/context/base/mki
 i/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count411
+\scratchcounter=\count412
 \scratchdimen=\dimen186
-\scratchbox=\box53
-\nofMPsegments=\count412
-\nofMParguments=\count413
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count414
+\scratchbox=\box54
+\nofMPsegments=\count413
+\nofMParguments=\count414
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count415
 \MPscratchDim=\dimen187
-\MPnumerator=\count415
-\makeMPintoPDFobject=\count416
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count416
+\makeMPintoPDFobject=\count417
+\everyMPtoPDFconversion=\toks24
 )
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/oberdiek/e
 pstopdf-base.sty
@@ -1923,6 +1932,7 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -1961,7 +1971,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 139.
+(scrlayer)             \begin{document} on input line 141.
 
 Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                Using scrlayer-scrpage the head height
@@ -1975,13 +1985,13 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                option `singlespacing=true'
 (scrlayer-scrpage)                to avoid this warning.
 
-Package scrbase Info: activating english \abbrevname on input line 139.
-Package scrbase Info: activating english \byname on input line 139.
-Package scrbase Info: activating english \acknowledgementname on input line 139
+Package scrbase Info: activating english \abbrevname on input line 141.
+Package scrbase Info: activating english \byname on input line 141.
+Package scrbase Info: activating english \acknowledgementname on input line 141
 .
-Package scrbase Info: activating english \authorshipname on input line 139.
-Package scrbase Info: activating english \constantsname on input line 139.
-Package scrbase Info: activating english \symbolsname on input line 139.
+Package scrbase Info: activating english \authorshipname on input line 141.
+Package scrbase Info: activating english \constantsname on input line 141.
+Package scrbase Info: activating english \symbolsname on input line 141.
 \big@size=\dimen188
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2095,10 +2105,10 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 139.
-Package biblatex Info: Reference segment=0 on input line 139.
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 139.
+Package biblatex Info: Reference section=0 on input line 141.
+Package biblatex Info: Reference segment=0 on input line 141.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring ON on input line 141.
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/hyperref/n
 ameref.sty
@@ -2108,56 +2118,56 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 /gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count417
+\c@section@level=\count418
 )
-LaTeX Info: Redefining \ref on input line 139.
-LaTeX Info: Redefining \pageref on input line 139.
-LaTeX Info: Redefining \nameref on input line 139.
+LaTeX Info: Redefining \ref on input line 141.
+LaTeX Info: Redefining \pageref on input line 141.
+LaTeX Info: Redefining \nameref on input line 141.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c__siunitx_mathsf_int=\count418
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 139.
+\c__siunitx_mathsf_int=\count419
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 141.
 
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/ot1
 ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 141
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/oml
 zplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 141
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/oms
 zplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 141
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/omx
 zplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 141
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/ot1
 zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-\c__siunitx_mathtt_int=\count419
+\c__siunitx_mathtt_int=\count420
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 157.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 159.
 [1
 
 
@@ -2169,7 +2179,7 @@ ap/pdftex.map}] [2
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 200.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 202.
 
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/oms
@@ -2177,9 +2187,9 @@ ppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
@@ -2193,7 +2203,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.896pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
-15.
+17.
 
 
 Overfull \vbox (3.04236pt too high) has occurred while \output is active []
@@ -2208,7 +2218,7 @@ Overfull \vbox (3.04236pt too high) has occurred while \output is active []
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 246.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 248.
 1: section
 [7] [8
 
@@ -2221,7 +2231,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 265.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 267.
  (./main.toc
 1: section
 [11]
@@ -2304,7 +2314,7 @@ Overfull \hbox (2.13884pt too wide) in paragraph at lines 59--60
  []
 
 [4] [5]
-<Figures/phonon-warwick-acoustic-optical-diagram.png, id=720, 501.875pt x 590.2
+<Figures/phonon-warwick-acoustic-optical-diagram.png, id=722, 501.875pt x 590.2
 05pt>
 File: Figures/phonon-warwick-acoustic-optical-diagram.png Graphic file (type pn
 g)
@@ -2330,7 +2340,7 @@ Overfull \hbox (1.79424pt too wide) in paragraph at lines 98--99
  []
 
 [6 <./Figures/phonon-warwick-acoustic-optical-diagram.png>] [7]
-<Figures/debye-model.png, id=736, 257.46187pt x 170.13562pt>
+<Figures/debye-model.png, id=738, 257.46187pt x 170.13562pt>
 File: Figures/debye-model.png Graphic file (type png)
 <use Figures/debye-model.png>
 Package pdftex.def Info: Figures/debye-model.png  used on input line 142. on in
@@ -2344,7 +2354,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--143
  []
 
 [8 <./Figures/debye-model.png (PNG copy)>]
-<Figures/kappa-temp-dep.png, id=742, 246.1697pt x 230.36063pt>
+<Figures/kappa-temp-dep.png, id=744, 246.1697pt x 230.36063pt>
 File: Figures/kappa-temp-dep.png Graphic file (type png)
 <use Figures/kappa-temp-dep.png>
 Package pdftex.def Info: Figures/kappa-temp-dep.png  used on input line 150. on
@@ -2363,7 +2373,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--152
  []
 
 [9 <./Figures/kappa-temp-dep.png (PNG copy)>]
-<Figures/pp_earth_diagram.png, id=748, 659.46375pt x 530.73282pt>
+<Figures/pp_earth_diagram.png, id=750, 659.46375pt x 530.73282pt>
 File: Figures/pp_earth_diagram.png Graphic file (type png)
 <use Figures/pp_earth_diagram.png>
 Package pdftex.def Info: Figures/pp_earth_diagram.png  used on input line 171. 
@@ -2387,38 +2397,99 @@ Overfull \hbox (20.69295pt too wide) in paragraph at lines 248--248
  []
 
 [14]
-Overfull \hbox (0.15182pt too wide) in paragraph at lines 259--260
+Overfull \hbox (0.15182pt too wide) in paragraph at lines 263--264
 \T1/ppl/m/n/10.95 tice ther-mal con-duc-tiv-ity of MgSiO$[]$ per-ovskite, us-in
 g a mod-i-fied Ångstrom method.
  []
 
 [15] [16]
-Overfull \hbox (12.33385pt too wide) in paragraph at lines 277--278
+Overfull \hbox (12.33385pt too wide) in paragraph at lines 279--280
 \T1/ppl/m/n/10.95 post-perovskite un-der D$[]$ con-di-tions. They found the con
 -duc-tiv-ity of post-perovskiteto
  []
 
-<Figures/ammann_saturation.png, id=825, 720.44156pt x 291.33844pt>
+<Figures/ammann_saturation.png, id=827, 720.44156pt x 291.33844pt>
 File: Figures/ammann_saturation.png Graphic file (type png)
 <use Figures/ammann_saturation.png>
-Package pdftex.def Info: Figures/ammann_saturation.png  used on input line 282.
- on input line 282.
+Package pdftex.def Info: Figures/ammann_saturation.png  used on input line 284.
+ on input line 284.
 Package pdftex.def Info: Requested size: 404.02908pt x 163.38402pt on input lin
-e 282.
+e 284.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 283.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 285.
 [17] [18 <./Figures/ammann_saturation.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]\T1/ppl/m/n/10.95 Osako and
+ []
 
-LaTeX Warning: Reference `sec:what_is_tc' on page 19 undefined on input line 29
-9.
 
-[19]) [20]
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]\T1/ppl/m/n/10.95 Measurement,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+[]\T1/ppl/m/n/10.95 Manthilake
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+[]\T1/ppl/m/n/10.95 Extrap., man-tle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
+[]\T1/ppl/m/n/10.95 Extrap., man-tle
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 334--334
+[]\T1/ppl/m/n/10.95 Ohta et al.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+[]\T1/ppl/m/n/10.95 Green-Kubo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]\T1/ppl/m/n/10.95 Extrapolation,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
+[]\T1/ppl/m/n/10.95 Dekura et
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 352--352
+[]\T1/ppl/m/n/10.95 Ammann et
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
+[]\T1/ppl/m/n/10.95 Direct
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 355--355
+[]\T1/ppl/m/n/10.95 Tang et al.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+[]\T1/ppl/m/n/10.95 Including Fe,
+ []
+
+[19] [20]) [21]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex
+ (./Chapters/Chapter2.tex [22
+
+
+
+]
 Chapter 2.
 
 Overfull \hbox (0.55722pt too wide) in paragraph at lines 13--14
@@ -2433,12 +2504,8 @@ Overfull \hbox (2.19836pt too wide) in paragraph at lines 15--16
  []
 
 1: section
-[21
-
-
-
-] [22] [23]
-<Figures/cell_diagram.png, id=901, 1553.805pt x 1391.1975pt>
+[23] [24] [25]
+<Figures/cell_diagram.png, id=919, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 91. on in
@@ -2449,7 +2516,7 @@ e 91.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/ss_direct_mod.png, id=902, 2156.5368pt x 1185.228pt>
+<Figures/ss_direct_mod.png, id=920, 2156.5368pt x 1185.228pt>
 File: Figures/ss_direct_mod.png Graphic file (type png)
 <use Figures/ss_direct_mod.png>
 Package pdftex.def Info: Figures/ss_direct_mod.png  used on input line 97. on i
@@ -2459,15 +2526,15 @@ e 97.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24]
-<Figures/ideal_extrap.png, id=912, 945.5325pt x 403.5075pt>
+[26]
+<Figures/ideal_extrap.png, id=930, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 122. on i
 nput line 122.
 Package pdftex.def Info: Requested size: 404.02908pt x 172.4212pt on input line
  122.
- [25 <./Figures/cell_diagram.png>] [26 <./Figures/ss_direct_mod.png> <./Figures
+ [27 <./Figures/cell_diagram.png>] [28 <./Figures/ss_direct_mod.png> <./Figures
 /ideal_extrap.png>]
 Overfull \hbox (0.15266pt too wide) in paragraph at lines 133--134
 \T1/ppl/m/n/10.95 phonon-phonon scat-ter-ing, from sparse phonon phase sam-plin
@@ -2480,16 +2547,16 @@ Overfull \hbox (0.31639pt too wide) in paragraph at lines 137--138
  com-pared to the fit through
  []
 
-[27]
-<Figures/gk_acf.png, id=937, 1220.30907pt x 514.17094pt>
+[29]
+<Figures/gk_acf.png, id=956, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 160. on input l
 ine 160.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
 e 160.
- [28 <./Figures/gk_acf.png>]
-<Figures/gk_int.png, id=948, 1237.62375pt x 533.74406pt>
+ [30 <./Figures/gk_acf.png>]
+<Figures/gk_int.png, id=967, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 182. on input l
@@ -2502,13 +2569,13 @@ Overfull \hbox (14.3329pt too wide) in paragraph at lines 198--201
 -lar dy-nam-ics method ([]Koker,
  []
 
-[29 <./Figures/gk_int.png>]) [30]
+[31 <./Figures/gk_int.png>]) [32]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
 Chapter 3.
 1: section
-[31
+[33
 
 
 
@@ -2528,37 +2595,37 @@ Package scrlayer-scrpage Warning: \headheight to low.
 Overfull \vbox (21.89601pt too high) has occurred while \output is active []
 
 
-[32] [33]
+[34] [35]
 
-LaTeX Warning: Reference `fig:acf_decay' on page 34 undefined on input line 66.
+LaTeX Warning: Reference `fig:acf_decay' on page 36 undefined on input line 66.
 
 
-[34]
+[36]
 
-LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 35 undefined on
+LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 37 undefined on
  input line 86.
 
 
-LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 35 undefined on
+LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 37 undefined on
  input line 86.
 
 
-LaTeX Warning: Reference `fig:direct_length_graph' on page 35 undefined on inpu
+LaTeX Warning: Reference `fig:direct_length_graph' on page 37 undefined on inpu
 t line 88.
 
 
-LaTeX Warning: Reference `sec:theory.direct' on page 35 undefined on input line
+LaTeX Warning: Reference `sec:theory.direct' on page 37 undefined on input line
  88.
 
-[35]
+[37]
 
-LaTeX Warning: Reference `fig:gk-direct' on page 36 undefined on input line 90.
+LaTeX Warning: Reference `fig:gk-direct' on page 38 undefined on input line 90.
 
 
-[36]) [37]
+[38]) [39]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [38
+ (./Chapters/Chapter4.tex [40
 
 
 
@@ -2571,7 +2638,7 @@ Overfull \hbox (11.57881pt too wide) in paragraph at lines 8--9
  []
 
 1: section
-[39]
+[41]
 Overfull \hbox (0.15155pt too wide) in paragraph at lines 21--24
 \T1/ppl/m/n/10.95 Impurities re-duce ther-mal con-duc-tiv-ity by pro-vid-ing mo
 re op-por-tu-ni-ties for phonon
@@ -2601,7 +2668,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 48.
 
-[40] [41]
+[42] [43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
@@ -2626,8 +2693,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
 
-[42]
-<Figures/effective-phonon-relaxation-time.png, id=1059, 703.12688pt x 471.26062
+[44]
+<Figures/effective-phonon-relaxation-time.png, id=1077, 703.12688pt x 471.26062
 pt>
 File: Figures/effective-phonon-relaxation-time.png Graphic file (type png)
 <use Figures/effective-phonon-relaxation-time.png>
@@ -2635,8 +2702,8 @@ Package pdftex.def Info: Figures/effective-phonon-relaxation-time.png  used on
 input line 127. on input line 127.
 Package pdftex.def Info: Requested size: 404.02908pt x 270.79298pt on input lin
 e 127.
- [43 <./Figures/effective-phonon-relaxation-time.png>] [44] [45] [46]
-<Figures/substitution_05-collated.png, id=1104, 1014.03844pt x 1021.56656pt>
+ [45 <./Figures/effective-phonon-relaxation-time.png>] [46] [47] [48]
+<Figures/substitution_05-collated.png, id=1123, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 <use Figures/substitution_05-collated.png>
 Package pdftex.def Info: Figures/substitution_05-collated.png  used on input li
@@ -2647,7 +2714,7 @@ e 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-t_all_02.png, id=1106, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=1125, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 234. on inp
@@ -2657,8 +2724,8 @@ Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47] [48 <./Figures/substitution_05-collated.png>]
-<Figures/k-c_all_01.png, id=1121, 695.59875pt x 411.03563pt>
+[49] [50 <./Figures/substitution_05-collated.png>]
+<Figures/k-c_all_01.png, id=1139, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 246. on inp
@@ -2669,7 +2736,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=1123, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=1141, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 254. o
@@ -2679,11 +2746,11 @@ e 254.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[49 <./Figures/k-t_all_02.png (PNG copy)>]
+[51 <./Figures/k-t_all_02.png (PNG copy)>]
 
-LaTeX Warning: Text page 50 contains only floats.
+LaTeX Warning: Text page 52 contains only floats.
 
-[50 <./Figures/k-c_all_01.png> <./Figures/K_over_T_over_X.png>] [51] [52]
+[52 <./Figures/k-c_all_01.png> <./Figures/K_over_T_over_X.png>] [53] [54]
 Overfull \hbox (9.30644pt too wide) in paragraph at lines 328--328
 []|\T1/ppl/m/n/10.95 Conductivity 
  []
@@ -2697,23 +2764,23 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 328--328
 Overfull \vbox (1.03882pt too high) detected at line 328
  []
 
-<Figures/draft_XT.png, id=1160, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=1179, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 348. on input
  line 348.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
 e 348.
-[53 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=1172, 797.98125pt x 490.83376pt>
+[55 <./Figures/draft_XT.png>]
+<Figures/draft_XTT.png, id=1190, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 363. on inpu
 t line 363.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
 e 363.
- [54 <./Figures/draft_XTT.png>]
-<Figures/k-c_demo-cartoon.png, id=1187, 888.31876pt x 502.12593pt>
+ [56 <./Figures/draft_XTT.png>]
+<Figures/k-c_demo-cartoon.png, id=1205, 888.31876pt x 502.12593pt>
 File: Figures/k-c_demo-cartoon.png Graphic file (type png)
 <use Figures/k-c_demo-cartoon.png>
 Package pdftex.def Info: Figures/k-c_demo-cartoon.png  used on input line 386. 
@@ -2724,8 +2791,8 @@ e 386.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[55] [56 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [57]
-<Figures/draft_VrefV-T.png, id=1214, 393.72093pt x 179.16937pt>
+[57] [58 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [59]
+<Figures/draft_VrefV-T.png, id=1234, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
 Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 450. on 
@@ -2736,27 +2803,27 @@ e 450.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[58 <./Figures/draft_VrefV-T.png>] [59]
+[60 <./Figures/draft_VrefV-T.png>] [61]
 Overfull \hbox (0.91743pt too wide) in paragraph at lines 529--531
 \T1/ppl/m/n/10.95 This MFP value is ob-tained from a con-duc-tiv-ity rep-re-sen
 -ta-tive of bulk MgSiO$[]$ bridg-
  []
 
-[60]) [61] [62]
+[62]) [63] [64]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex
 Chapter 5.
 )
 1: section
-[63
+[65
 
 
 
 ]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [64
+ (./Chapters/Chapter6.tex [66
 
 
 
@@ -2764,10 +2831,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[65]
+[67]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [66
+ (./Appendices/AppendixA.tex [68
 
 
 
@@ -2780,74 +2847,74 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[67] [68
+[69] [70
 
 
 ]
-Overfull \hbox (6.40623pt too wide) in paragraph at lines 374--374
+Overfull \hbox (6.40623pt too wide) in paragraph at lines 376--376
 [][]\T1/ppl/m/n/10.95 Balandin, A. A. et al. (2008). ^^P  Su-pe-rior ther-mal c
 on-duc-tiv-ity of single-layer graphene.^^Q
  []
 
 
-Overfull \hbox (3.39851pt too wide) in paragraph at lines 374--374
+Overfull \hbox (3.39851pt too wide) in paragraph at lines 376--376
 \T1/cmtt/m/n/10.95 gov / articlerender . fcgi ? artid = 3739002{\ & }tool = pmc
 entrez{\ & }rendertype =
  []
 
 
-Overfull \hbox (13.76234pt too wide) in paragraph at lines 374--374
+Overfull \hbox (13.76234pt too wide) in paragraph at lines 376--376
 \T1/ppl/m/n/10.95 duc-tiv-ity^^Q. In: \T1/ppl/m/it/10.95 Geo-phys-i-cal re-sear
 ch let-ters \T1/ppl/m/n/10.95 27, pp. 17^^U20. \T1/ppl/m/sc/10.95 url\T1/ppl/m/
 n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary .
  []
 
 1: section
-[69]
-Overfull \hbox (52.39838pt too wide) in paragraph at lines 374--374
+[71]
+Overfull \hbox (52.39838pt too wide) in paragraph at lines 376--376
 \T1/cmtt/m/n/10.95 2012 . 09 . 002$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 u
 rl\T1/ppl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / linkinghub . elsevier 
 . com / retrieve / pii / S0012821X12004815$[][]\T1/ppl/m/n/10.95 . 
  []
 
-[70] [71]
-Overfull \hbox (29.89816pt too wide) in paragraph at lines 374--374
+[72] [73]
+Overfull \hbox (29.89816pt too wide) in paragraph at lines 376--376
 \T1/ppl/m/n/10.95 tems^^Q. In: \T1/ppl/m/it/10.95 Molec-u-lar Physics \T1/ppl/m
 /n/10.95 101.14, pp. 2303^^U2307. \T1/ppl/m/sc/10.95 doi\T1/ppl/m/n/10.95 : [][
 ]$\T1/cmtt/m/n/10.95 10 . 1080 / 0026897031000154338$[][]\T1/ppl/m/n/10.95 . 
  []
 
 
-Overfull \hbox (13.62624pt too wide) in paragraph at lines 374--374
+Overfull \hbox (13.62624pt too wide) in paragraph at lines 376--376
 \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / ww
 w . sciencedirect . com / science / article / pii / S0031920100001977$[][]\T1/p
 pl/m/n/10.95 . 
  []
 
-[72]
-Overfull \hbox (24.03674pt too wide) in paragraph at lines 374--374
+[74]
+Overfull \hbox (24.03674pt too wide) in paragraph at lines 376--376
 [][]\T1/ppl/m/n/10.95 Parise, J. B. and Y. Wang (1990). ^^P  Crys-tal struc-tur
 e and ther-mal ex-pan-sion of (Mg,Fe)SiO_3
  []
 
-[73]
-Overfull \hbox (4.39392pt too wide) in paragraph at lines 374--374
+[75]
+Overfull \hbox (4.39392pt too wide) in paragraph at lines 376--376
 \T1/cmtt/m/n/10.95 Received$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / onlinelibrary . wiley . com /
  doi / 10 . 1002 / 2014GL059385 /
  []
 
-[74]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
- [75]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
+[76]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
+ [77]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9AE36830F327230EDA23CA46569DD55C;16482.
+(rerunfilecheck)             Checksum: BFD10CEC9FD0F6DE614A33EAA32F4702;16464.
 
 
 LaTeX Warning: There were undefined references.
@@ -2860,13 +2927,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34647 strings out of 492990
- 704965 string characters out of 6121926
- 968100 words of memory out of 5000000
- 37460 multiletter control sequences out of 15000+600000
+ 34723 strings out of 492990
+ 706079 string characters out of 6121926
+ 987521 words of memory out of 5000000
+ 37530 multiletter control sequences out of 15000+600000
  605361 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,20n,82p,10377b,2909s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,21n,82p,10377b,2909s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm
 -super/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-di
 st/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/
@@ -2885,10 +2952,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (101 pages, 1773098 bytes).
+Output written on main.pdf (103 pages, 1778414 bytes).
 PDF statistics:
- 1535 PDF objects out of 1728 (max. 8388607)
- 1370 compressed objects within 14 object streams
- 314 named destinations out of 1000 (max. 500000)
+ 1554 PDF objects out of 1728 (max. 8388607)
+ 1387 compressed objects within 14 object streams
+ 317 named destinations out of 1000 (max. 500000)
  840 words of extra memory for PDF output out of 10000 (max. 10000000)
 
