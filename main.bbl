@@ -88,7 +88,7 @@
     \verb  2014 - Variation of thermal conductivity and heat flux at the Earth'
     \verb s core mantle boundary.pdf:pdf
     \endverb
-    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
     \field{year}{2014}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -173,7 +173,7 @@
     \verb  - 2008 - Superior thermal conductivity of single-layer graphene.pdf:
     \verb pdf
     \endverb
-    \field{journaltitle}{Nano letters}
+    \field{journaltitle}{Nano Lett.}
     \field{year}{2008}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -267,7 +267,7 @@
     \verb - 1986 - Phase transitions, Gr{\"{u}}neisen parameter, and elasticity
     \verb  for shocked iron between 77{\~{}}GPa and 400{\~{}}GPa.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Geophysical Research}
+    \field{journaltitle}{J. Geophys. Res.}
     \field{year}{1986}
   \endentry
 
@@ -348,7 +348,7 @@
     \verb  2013 - Effect of mass disorder on the lattice thermal conductivity o
     \verb f MgO periclase under pressure.pdf:pdf
     \endverb
-    \field{journaltitle}{Scientific reports}
+    \field{journaltitle}{Sci. Rep.}
     \field{year}{2013}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -397,7 +397,7 @@
     \verb a, Tsuchiya - 2013 - Ab initio lattice thermal conductivity of MgSiO3
     \verb  perovskite as found in Earth's lower mantle.pdf:pdf
     \endverb
-    \field{journaltitle}{Physical Review Letters}
+    \field{journaltitle}{Phys. Rev. Lett.}
     \field{year}{2013}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -476,7 +476,7 @@
     \verb - 2000 - A thick pipe-like heat-transfer mechanism in the mantle Nonl
     \verb inear coupling between 3‐D convection and variable.pdf:pdf
     \endverb
-    \field{journaltitle}{Geophysical research letters}
+    \field{journaltitle}{Geophys. Res. Lett.}
     \field{year}{2000}
   \endentry
 
@@ -541,8 +541,78 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Garnero, McNama
     \verb ra - 2008 - Structure and dynamics of Earth's lower mantle.pdf:pdf
     \endverb
-    \field{journaltitle}{Science}
+    \field{journaltitle}{Science (80-. ).}
     \field{year}{2008}
+  \endentry
+
+  \entry{Ghaderi2017}{article}{}
+    \name{author}{6}{}{%
+      {{hash=GN}{%
+         family={Ghaderi},
+         familyi={G\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=XJ}{%
+         family={Xian},
+         familyi={X\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WRM}{%
+         family={Wentzcovitch},
+         familyi={W\bibinitperiod},
+         given={R.\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \strng{namehash}{GN+1}
+    \strng{fullhash}{GNXJZDZHWRMST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1038/s41598-017-05523-6
+    \endverb
+    \field{issn}{2045-2322}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 9}
+    \field{title}{{Lattice Thermal Conductivity of MgSiO3 Perovskite from First
+  Principles}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1038/s41598-017-05523-6
+    \endverb
+    \field{volume}{7}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Ghaderi et al.
+    \verb - 2017 - Lattice Thermal Conductivity of MgSiO3 Perovskite from First
+    \verb  Principles.pdf:pdf
+    \endverb
+    \field{journaltitle}{Sci. Rep.}
+    \field{year}{2017}
   \endentry
 
   \entry{Goncharov2008}{article}{}
@@ -682,7 +752,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Goncharov et al
     \verb . - 2009 - Thermal conductivity of lower-mantle minerals.pdf:pdf
     \endverb
-    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{journaltitle}{Phys. Earth Planet. Inter.}
     \field{year}{2009}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -733,7 +803,7 @@
     \verb Markoff random processes and the statistical mechanics of time-depend
     \verb ent phenomena. II. Irreversible processes in fluids.pdf:pdf
     \endverb
-    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{journaltitle}{J. Chem. Phys.}
     \field{year}{1954}
   \endentry
 
@@ -784,44 +854,9 @@
     \verb , Sreenivasan - 2007 - Correlation of Earth's magnetic field with low
     \verb er mantle thermal and seismic structure.pdf:pdf
     \endverb
-    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{journaltitle}{Phys. Earth Planet. Inter.}
     \field{year}{2007}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Haigis2013}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=HV}{%
-         family={Haigis},
-         familyi={H\bibinitperiod},
-         given={V.},
-         giveni={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HV1}
-    \strng{fullhash}{HV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{pages}{83}
-    \field{title}{{Trace elements in silicate melts and the thermal
-  conductivity of the earth's deep mantle: insights from atomistic modeling of
-  geomaterials}}
-    \verb{url}
-    \verb http://d-nb.info/1031915087/
-    \endverb
-    \list{institution}{1}{%
-      {Freien Universit{\"{a}}t Berlin}%
-    }
-    \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Haigis - 2013 -
-    \verb  Trace elements in silicate melts and the thermal conductivity of the
-    \verb  earth's deep mantle insights from atomistic modelin.pdf:pdf
-    \endverb
-    \field{type}{phdthesis}
-    \field{year}{2013}
   \endentry
 
   \entry{Haigis2012}{article}{}
@@ -873,7 +908,7 @@
     \verb , Jahn - 2012 - Thermal conductivity of MgO, MgSiO3 perovskite and po
     \verb st-perovskite in the Earth's deep mantle.pdf:pdf
     \endverb
-    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
     \field{year}{2012}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -910,7 +945,7 @@
     \verb 99 - Mantle values of thermal conductivity and the geotherm from phon
     \verb on lifetimes.pdf:pdf
     \endverb
-    \field{journaltitle}{Science}
+    \field{journaltitle}{Science (80-. ).}
     \field{year}{1999}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -966,7 +1001,7 @@
     \verb  Comparison of molecular dynamics methods and interatomic potentials
     \verb for calculating the thermal conductivity of silicon.pdf:pdf
     \endverb
-    \field{journaltitle}{The Journal of chemical physics}
+    \field{journaltitle}{J. Chem. Phys.}
     \field{year}{2012}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -1017,7 +1052,7 @@
     \verb inski - 2011 - One-dimensional phonon effects in direct molecular dyn
     \verb amics method for thermal conductivity determinati(2).pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Applied Physics}
+    \field{journaltitle}{J. Appl. Phys.}
     \field{year}{2011}
   \endentry
 
@@ -1067,7 +1102,7 @@
     \verb - 2008 - Optical absorption and radiative thermal conductivity of sil
     \verb icate perovskite to 125 gigapascals.pdf:pdf
     \endverb
-    \field{journaltitle}{Science}
+    \field{journaltitle}{Science (80-. ).}
     \field{year}{2008}
   \endentry
 
@@ -1116,7 +1151,7 @@
     \verb - Thermal resistance due to point defects at high temperatures.pdf:pd
     \verb f
     \endverb
-    \field{journaltitle}{Physical Review}
+    \field{journaltitle}{Phys. Rev.}
     \field{year}{1960}
   \endentry
 
@@ -1151,7 +1186,7 @@
     \verb  - Thermal conductivity of MgO periclase from equilibrium first princ
     \verb iples molecular dynamics.pdf:pdf
     \endverb
-    \field{journaltitle}{Physical Review Letters}
+    \field{journaltitle}{Phys. Rev. Lett.}
     \field{year}{2009}
   \endentry
 
@@ -1183,7 +1218,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Kubo - 1957 - S
     \verb tatistical-mechanical theory of irreversible processes. I.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of the Physical Society of Japan}
+    \field{journaltitle}{J. Phys. Soc. Japan}
     \field{year}{1957}
   \endentry
 
@@ -1286,7 +1321,7 @@
     \verb 06 - A post-perovskite lens and D'' heat flux beneath the central Pac
     \verb ific.pdf:pdf
     \endverb
-    \field{journaltitle}{Science}
+    \field{journaltitle}{Science (80-. ).}
     \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -1333,7 +1368,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Lay, Hernlund,
     \verb Buffett - 2008 - Core–mantle boundary heat flow.pdf:pdf
     \endverb
-    \field{journaltitle}{Nature Geoscience}
+    \field{journaltitle}{Nat. Geosci.}
     \field{year}{2008}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -1388,9 +1423,83 @@
     \verb 95 - Thermal characterization of carbon-opacified silica aerogels.pdf
     \verb :pdf
     \endverb
-    \field{journaltitle}{Journal of Non-Crystalline Solids}
+    \field{journaltitle}{J. Non. Cryst. Solids}
     \field{year}{1995}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Lobanov2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LSS}{%
+         family={Lobanov},
+         familyi={L\bibinitperiod},
+         given={S.\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Holtgrewe},
+         familyi={H\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GAF}{%
+         family={Goncharov},
+         familyi={G\bibinitperiod},
+         given={A.\bibnamedelima F.},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier B.V.}%
+    }
+    \keyw{core–mantle boundary,diamond anvil cell,high pressure,optical
+  spectroscopy,spin transition,thermal conductivity}
+    \strng{namehash}{LSS+1}
+    \strng{fullhash}{LSSHNLJGAF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Thermal conductivity of the lowermost mantle governs the heat flow out of
+  the core energizing planetary-scale geological processes. Yet, there are no
+  direct experimental measurements of thermal conductivity at relevant
+  pressure–temperature conditions of Earth's core–mantle boundary. Here we
+  determine the radiative conductivity of post-perovskite at near core–mantle
+  boundary conditions by optical absorption measurements in a laser-heated
+  diamond anvil cell. Our results show that the radiative conductivity of
+  Mg0.9Fe0.1SiO3post-perovskite (∼1.1 W/m/K) is almost two times smaller than
+  that of bridgmanite (∼2.0 W/m/K) at the base of the mantle. By combining
+  this result with the present-day core–mantle heat flow and available
+  estimations on the lattice thermal conductivity we conclude that
+  post-perovskite is at least as abundant as bridgmanite in the lowermost
+  mantle which has profound implications for the dynamics of the deep Earth.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.epsl.2017.09.016
+    \endverb
+    \field{issn}{0012821X}
+    \field{pages}{43\bibrangedash 49}
+    \field{title}{{Radiative conductivity and abundance of post-perovskite in
+  the lowermost mantle}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.epsl.2017.09.016
+    \endverb
+    \field{volume}{479}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Lobanov et al.
+    \verb - 2017 - Radiative conductivity and abundance of post-perovskite in t
+    \verb he lowermost mantle.pdf:pdf
+    \endverb
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
+    \field{year}{2017}
   \endentry
 
   \entry{Manthilake2011}{article}{}
@@ -1465,8 +1574,7 @@
     \verb l. - 2011 - Lattice thermal conductivity of lower mantle minerals and
     \verb  heat flux from Earth's core.pdf:pdf
     \endverb
-    \field{journaltitle}{Proceedings of the National Academy of Sciences of the
-  United States of America}
+    \field{journaltitle}{Proc. Natl. Acad. Sci. U. S. A.}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -1564,7 +1672,7 @@
     \verb 04 - Ferromagnesian post-perovskite silicates in the D'' layer of the
     \verb  Earth.pdf:pdf
     \endverb
-    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{journaltitle}{Proc. Natl. Acad. Sci.}
     \field{year}{2004}
   \endentry
 
@@ -1602,7 +1710,7 @@
     \verb athe - 1997 - A simple nonequilibrium molecular dynamics method for c
     \verb alculating the thermal conductivity(2).pdf:pdf
     \endverb
-    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{journaltitle}{J. Chem. Phys.}
     \field{year}{1997}
   \endentry
 
@@ -1653,7 +1761,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Murakami et al.
     \verb  - 2004 - Post-perovskite phase transition in MgSiO{\_}3.pdf:pdf
     \endverb
-    \field{journaltitle}{Science}
+    \field{journaltitle}{Science (80-. ).}
     \field{year}{2004}
   \endentry
 
@@ -1695,7 +1803,7 @@
     \verb gg - 2006 - Dynamic effects of a step-wise increase in thermal conduc
     \verb tivity and viscosity in the lowermost mantle.pdf:pdf
     \endverb
-    \field{journaltitle}{Geophysical Research Letters}
+    \field{journaltitle}{Geophys. Res. Lett.}
     \field{year}{2006}
   \endentry
 
@@ -1734,7 +1842,7 @@
     \verb valos - 2013 - Non-equilibrium momentum exchange algorithm for molecu
     \verb lar dynamics simulation of heat flow in multicompone.pdf:pdf
     \endverb
-    \field{journaltitle}{Molecular Physics}
+    \field{journaltitle}{Mol. Phys.}
     \field{year}{2013}
   \endentry
 
@@ -1815,7 +1923,7 @@
     \verb t, Price - 2000 - Comparative study of quasiharmonic lattice dynamics
     \verb , molecular dynamics and Debye model applied to MgSi.pdf:pdf
     \endverb
-    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{journaltitle}{Phys. Earth Planet. Inter.}
     \field{year}{2000}
   \endentry
 
@@ -1898,7 +2006,7 @@
     \verb 012 - Lattice thermal conductivity of MgSiO3 perovskite and post-pero
     \verb vskite at the core–mantle boundary.pdf:pdf
     \endverb
-    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
     \field{year}{2012}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -1946,7 +2054,7 @@
     \verb ose - 2014 - Thermal diffusivities of MgSiO3 and Al-bearing MgSiO3 pe
     \verb rovskites.pdf:pdf
     \endverb
-    \field{journaltitle}{American Mineralogist}
+    \field{journaltitle}{Am. Mineral.}
     \field{year}{2014}
   \endentry
 
@@ -2026,7 +2134,7 @@
     \verb 017 - Thermal conductivity of ferropericlase in the Earth's lower man
     \verb tle.pdf:pdf
     \endverb
-    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
     \field{year}{2017}
   \endentry
 
@@ -2123,7 +2231,7 @@
     \verb 2017 - The effect of iron and aluminum incorporation on lattice therm
     \verb al conductivity of bridgmanite at the Earth's lower.pdf:pdf
     \endverb
-    \field{journaltitle}{Earth and Planetary Science Letters}
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
     \field{year}{2017}
   \endentry
 
@@ -2160,7 +2268,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Osako, Ito - 19
     \verb 91 - Thermal diffusivity of MgSiO3 perovskite.pdf:pdf
     \endverb
-    \field{journaltitle}{Geophysical Research Letters}
+    \field{journaltitle}{Geophys. Res. Lett.}
     \field{year}{1991}
   \endentry
 
@@ -2198,7 +2306,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Padture, Klemen
     \verb s - 1997 - Low thermal conductivity in garnets.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of the American Ceramic Society}
+    \field{journaltitle}{J. Am. Ceram. Soc.}
     \field{year}{1997}
   \endentry
 
@@ -2288,7 +2396,7 @@
     \verb  - Fast parallel algorithms for short–range molecular dynamics.pdf:
     \verb pdf
     \endverb
-    \field{journaltitle}{Journal of Computational Physics}
+    \field{journaltitle}{J. Comput. Phys.}
     \field{year}{1995}
   \endentry
 
@@ -2337,7 +2445,7 @@
     \verb lpot, Keblinski - 2002 - Comparison of atomic-level simulation method
     \verb s for computing thermal conductivity.pdf:pdf
     \endverb
-    \field{journaltitle}{Physical Review B}
+    \field{journaltitle}{Phys. Rev. B}
     \field{annotation}{%
     DIRECT METHOD the direct method of calculating thermal conductivity is
   analogous to experiment particle velocities are altered at each time step to
@@ -2449,7 +2557,7 @@
     \verb  2010 - Size effects in molecular dynamics thermal conductivity predi
     \verb ctions.pdf:pdf
     \endverb
-    \field{journaltitle}{Physical Review B}
+    \field{journaltitle}{Phys. Rev. B}
     \field{year}{2010}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -2504,7 +2612,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Snyder, Toberer
     \verb  - 2008 - Complex thermoelectric materials.pdf:pdf
     \endverb
-    \field{journaltitle}{Nature materials}
+    \field{journaltitle}{Nat. Mater.}
     \field{eprinttype}{arXiv}
     \field{year}{2008}
   \endentry
@@ -2547,7 +2655,7 @@
     \verb xrude - 2010 - Theoretical methods for calculating the lattice therma
     \verb l conductivity of minerals.pdf:pdf
     \endverb
-    \field{journaltitle}{Reviews in Mineralogy and Geochemistry}
+    \field{journaltitle}{Rev. Mineral. Geochemistry}
     \field{year}{2010}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -2599,7 +2707,7 @@
     \verb xrude, Karki - 2015 - First-principles calculations of the lattice th
     \verb ermal conductivity of the lower mantle.pdf:pdf
     \endverb
-    \field{journaltitle}{Earth And Planetary Science Letters}
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
     \field{year}{2015}
   \endentry
 
@@ -2651,7 +2759,7 @@
     \verb 09 - Pressure dependence of harmonic and anharmonic lattice dynamics
     \verb in MgO A first-principles calculation and implicatio.pdf:pdf
     \endverb
-    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{journaltitle}{Phys. Earth Planet. Inter.}
     \field{year}{2009}
   \endentry
 
@@ -2719,7 +2827,7 @@
     \verb 10 - Lattice thermal conductivity of MgO at conditions of Earth's int
     \verb erior.pdf:pdf
     \endverb
-    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{journaltitle}{Proc. Natl. Acad. Sci.}
     \field{year}{2010}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -2778,7 +2886,7 @@
     \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Tang et al. - 2
     \verb 014 - The thermal conductivity of the Earth's lower mantle.pdf:pdf
     \endverb
-    \field{journaltitle}{Geophysical Research Letters}
+    \field{journaltitle}{Geophys. Res. Lett.}
     \field{year}{2014}
   \endentry
 
@@ -2842,8 +2950,7 @@
     \verb McGaughey - 2010 - Thermal conductivity and phonon transport in empty
     \verb  and water-filled carbon nanotubes.pdf:pdf
     \endverb
-    \field{journaltitle}{Physical Review B - Condensed Matter and Materials
-  Physics}
+    \field{journaltitle}{Phys. Rev. B - Condens. Matter Mater. Phys.}
     \field{year}{2010}
   \endentry
 
@@ -2931,7 +3038,7 @@
     \verb 013 - Mantle dynamics with pressure- and temperature-dependent therma
     \verb l expansivity and conductivity.pdf:pdf
     \endverb
-    \field{journaltitle}{Physics of the Earth and Planetary Interiors}
+    \field{journaltitle}{Phys. Earth Planet. Inter.}
     \field{year}{2013}
   \endentry
 
@@ -2966,7 +3073,7 @@
     \verb 09 - Structure, mineralogy and dynamics of the lowermost mantle.pdf:p
     \verb df
     \endverb
-    \field{journaltitle}{Mineralogy and Petrology}
+    \field{journaltitle}{Mineral. Petrol.}
     \field{year}{2009}
     \warn{\item Invalid format of field 'month'}
   \endentry
