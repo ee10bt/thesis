@@ -1,14 +1,16 @@
-\chapter{Intro/Background/Theory 2} 
+\chapter{Computing thermal conductivity} 
 
 \label{Chapter2} 
 
+In Chapter~\ref{Chapter1}, I introduced the key concepts surrounding this study. I will be investigating the magnitude of thermal conductivity throughout the deep Earth, considering the effect of physical conditions and Fe impurities. I will be using computational approaches to access this parameter, as experiments are difficult to perfrom in the regime I require. 
 
+Part of computing results is ensuring the simulations are running faithfully to the material of interest and the physical processes that operate in bulk materials. In this chapter I introduce the background to calculating conductivity through simulation, and show fundamental system setup and parameter convergence. 
+
+The following chapters apply theory introduced here to investigate how conductivity is affected by; system shape and size, and adding impurities to an otherwise regular crystal structure.
 
 %-----------------------------------------------------------
 \section{Atomic-scale modelling}
 %-----------------------------------------------------------
-
-THIS IS JUST AWFUL
 
 Knowledge of thermal conductivity is important for modelling the deep earth, but can not be measured experimentally at core mantle boundary conditions. Atomic scale simulations sidestep experimental limitations, but system size must be chosen carefully in order to determine accurate conductivity values. 
 
@@ -17,21 +19,68 @@ Classical molecular dynamics approaches are utilised, with the intention of cons
 A range of atomic scale simulation methods are available to determine the lattice thermal conductivity of materials. These are invaluable for calculating thermal conductivity at conditions of which experiments are difficult, e.g. the extreme conditions found in the Earth's lower mantle (pressures and temperatures up to 136~GPa and 4000~K at the core-mantle boundary). 
 
 %---------------------------------------
-\subsection{Molecular dynamics}
+\subsection{Computational approaches (for modelling atoms...?)}
 %---------------------------------------
 
-TRANSFER
+Before you can calculate material properties of interest, you need to determine how the atoms will interact with one another in your system. I do not mean the magnitude of the interactions or the parameters you choose to replicate a material, but the specific theoretical approach of atomic-scale modelling. There are multiple regimes for doing so, a couple of which are described below.
 
 %-------------------
-\subsubsection{Parameter drift/convergence}
+\subsubsection{Molecular dynamics}
 %-------------------
-We ensure all calculations are run for a sufficient length of time for the conductivity value to converge. When conductivity fails to converge it means either the simulations needs to be run for longer (unlikely with our nanosecond-scale classical calculations), or the system temperature has drifted. When NVE simulations are run for a long time there is noticable drift in the average system temperature (due to numerical approximations in the equation of motion), which in turn causes drift in the computed conductivity.
 
-NPT-NVT-NVE PROCESS
+In a moldecular dynamics (MD) calculation, atoms in a simulation cell have masses, velocities, and forces acting between them. At each computational timestep the net force on each atom is calculated from all the other atoms. Accelerations are then calculated from Newton's second law of motion, which are used to update the velocities and positions of the atoms. The process is repeated, iteratively updating parameters every timestep. At zero temperature, a parameter such as unit cell volume will converge, but this is not true when finite temperatures are considered. Temperature fluctuations mean cell volume will constantly change, regardless of simulation length. The solution is to take the cumulative average over many timesteps, which converges eventually.
+
+!!! FLOWCHART FIGURE, MD TIMESTEP PROCESS?
+
+%-------------------
+\subsubsection{Lattice dynamics}
+%-------------------
+
+An alternative approach to MD is lattice dynamics (LD),where the response of all atoms to the motion of one is considered. Each atom in the simualtion cell is perturbed in turn, the motions and response of the other atoms stored  in a 3 by 3 tensor for each atom pairing. The tensor takes significant time to compute compared to a single MD timestep, but can be used to calculate various material properties once obtained. 
+
+!!! ADD A REFERENCE AND FORGET ABOUT IT?
+
+The focus of this study will be on MD approaches, but LD results from literature will be reviewed for comparison.
+
+!!! DO I NEED TO SAY WHY I AM NOT USING LD? WHY AM I NOT USING LD!?
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %---------------------------------------
-\subsection{Interatomic potentials / Atomic interactions?}
+\subsection{Calculating atomic interactions}
 %---------------------------------------
+
+
+
+%-------------------
+\subsubsection{DFT}
+%-------------------
+
+JUST A MENTION
+
+!!! ANY OTHER ALTERNATIVE APPROACHES THAT NEED TO GO HERE?
+
+%-------------------
+\subsubsection{Interatomic potentials}
+%-------------------
+
+
+
+%-------------------
+\subsubsection{OGANOV}
+%-------------------
+
 With the interatomic potential of \citet{Oganov2000} we simulate bridgmanite, a magnesium silicate otherwise referred to as MgSiO$_{3}$ or perovskite (the name of its crystal structure family). To assess finite-size effects we use larger simulation cells than those employed in previous studies. The atom counts associated with these cells (the largest cell considered having over 100,000 atoms) means an ab initio study would be impractical, necessitating the use of interatomic potentials. We expect the potentials to represent the finite size effects well, even if computed conductivities may inaccurate compared to first-principles calculations.
 
 WHY OGANOV? 
@@ -40,15 +89,30 @@ WHAT CUTOFFS?
 
 TRANSFER
 
-%---------------------------------------
-\subsection{LAMMPS}
-%---------------------------------------
-LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a classical molecular dynamics code \citep{Plimpton1995}.
+
+
+
+
+
+
+
+
+
 
 %---------------------------------------
-\subsection{DFT/other}
+\subsection{Finite-size effects}
 %---------------------------------------
-Required? Subsubsection somewhere?
+
+
+
+
+
+%-------------------
+\subsubsection{LAMMPS}
+%-------------------
+
+LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a classical molecular dynamics code \citep{Plimpton1995}.
+
 
 
 
@@ -217,5 +281,22 @@ Should this section be interspersed into when FSE are mentioned in methods?
 %-------------------
 \subsubsection{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}
 %-------------------
+
+
+
+
+
+
+
+
+
+
+%%-------------------
+%\subsubsection{Parameter drift/convergence}
+%%-------------------
+%We ensure all calculations are run for a sufficient length of time for the conductivity value to converge. When conductivity fails to converge it means either the simulations needs to be run for longer (unlikely with our nanosecond-scale classical calculations), or the system temperature has drifted. When NVE simulations are run for a long time there is noticable drift in the average system temperature (due to numerical approximations in the equation of motion), which in turn causes drift in the computed conductivity.
+
+%NPT-NVT-NVE PROCESS
+
 
 

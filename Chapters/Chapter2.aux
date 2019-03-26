@@ -1,45 +1,49 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Intro/Background/Theory 2}{25}{chapter.52}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Computing thermal conductivity}{25}{chapter.52}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{Chapter2}{{2}{25}{Intro/Background/Theory 2}{chapter.52}{}}
+\newlabel{Chapter2}{{2}{25}{Computing thermal conductivity}{chapter.52}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Atomic-scale modelling}{25}{section.53}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Molecular dynamics}{25}{subsection.54}}
-\@writefile{toc}{\contentsline {subsubsection}{Parameter drift/convergence}{25}{section*.55}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Interatomic potentials / Atomic interactions?}{26}{subsection.56}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}LAMMPS}{26}{subsection.57}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}DFT/other}{26}{subsection.58}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Computing thermal conductivity}{26}{section.59}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Finite-size effects}{27}{subsection.60}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Direct method}{28}{subsection.61}}
-\newlabel{fourier}{{2.1}{28}{Direct method}{equation.62}{}}
-\@writefile{toc}{\contentsline {subsubsection}{System setup}{28}{section*.63}}
-\newlabel{length-dep}{{2.2}{28}{System setup}{equation.66}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }}{29}{figure.caption.64}}
-\newlabel{fig:cell_dia}{{2.1}{29}{The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }{figure.caption.64}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Data processing}{29}{section*.67}}
-\newlabel{linear-extrap}{{2.3}{29}{Data processing}{equation.68}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Movement and distribution of heat in the direct method. Orange to white scale represents temperature \citep [modified from][]{Stackhouse2015}.\relax }}{30}{figure.caption.65}}
-\newlabel{fig:ss_direct}{{2.2}{30}{Movement and distribution of heat in the direct method. Orange to white scale represents temperature \citep [modified from][]{Stackhouse2015}.\relax }{figure.caption.65}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }}{30}{figure.caption.69}}
-\newlabel{fig:ideal}{{2.3}{30}{Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }{figure.caption.69}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Finite-size effects}{30}{section*.70}}
-\@writefile{toc}{\contentsline {subsubsection}{Other NEMD}{31}{section*.71}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Green-Kubo}{32}{subsection.72}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }}{32}{figure.caption.73}}
-\newlabel{fig:gk_acf}{{2.4}{32}{Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }{figure.caption.73}{}}
-\newlabel{acf-j}{{2.4}{32}{Green-Kubo}{equation.74}{}}
-\newlabel{gk-int}{{2.5}{32}{Green-Kubo}{equation.75}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).\relax }}{33}{figure.caption.76}}
-\newlabel{fig:gk_int}{{2.5}{33}{Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).\relax }{figure.caption.76}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Other}{34}{subsection.77}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Previous work}{34}{section.78}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Method comparison}{34}{subsection.79}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Finite-size effects}{34}{subsection.80}}
-\@writefile{toc}{\contentsline {subsubsection}{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}{34}{section*.81}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Computational approaches (for modelling atoms...?)}{26}{subsection.54}}
+\@writefile{toc}{\contentsline {subsubsection}{Molecular dynamics}{26}{section*.55}}
+\@writefile{toc}{\contentsline {subsubsection}{Lattice dynamics}{26}{section*.56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Calculating atomic interactions}{27}{subsection.57}}
+\@writefile{toc}{\contentsline {subsubsection}{DFT}{27}{section*.58}}
+\@writefile{toc}{\contentsline {subsubsection}{Interatomic potentials}{27}{section*.59}}
+\@writefile{toc}{\contentsline {subsubsection}{OGANOV}{27}{section*.60}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Finite-size effects}{27}{subsection.61}}
+\@writefile{toc}{\contentsline {subsubsection}{LAMMPS}{27}{section*.62}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Computing thermal conductivity}{28}{section.63}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Finite-size effects}{28}{subsection.64}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Direct method}{29}{subsection.65}}
+\newlabel{fourier}{{2.1}{29}{Direct method}{equation.66}{}}
+\@writefile{toc}{\contentsline {subsubsection}{System setup}{29}{section*.67}}
+\newlabel{length-dep}{{2.2}{29}{System setup}{equation.70}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }}{30}{figure.caption.68}}
+\newlabel{fig:cell_dia}{{2.1}{30}{The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }{figure.caption.68}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Data processing}{30}{section*.71}}
+\newlabel{linear-extrap}{{2.3}{30}{Data processing}{equation.72}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Movement and distribution of heat in the direct method. Orange to white scale represents temperature \citep [modified from][]{Stackhouse2015}.\relax }}{31}{figure.caption.69}}
+\newlabel{fig:ss_direct}{{2.2}{31}{Movement and distribution of heat in the direct method. Orange to white scale represents temperature \citep [modified from][]{Stackhouse2015}.\relax }{figure.caption.69}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }}{31}{figure.caption.73}}
+\newlabel{fig:ideal}{{2.3}{31}{Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }{figure.caption.73}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Finite-size effects}{31}{section*.74}}
+\@writefile{toc}{\contentsline {subsubsection}{Other NEMD}{32}{section*.75}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Green-Kubo}{33}{subsection.76}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }}{33}{figure.caption.77}}
+\newlabel{fig:gk_acf}{{2.4}{33}{Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }{figure.caption.77}{}}
+\newlabel{acf-j}{{2.4}{33}{Green-Kubo}{equation.78}{}}
+\newlabel{gk-int}{{2.5}{33}{Green-Kubo}{equation.79}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).\relax }}{34}{figure.caption.80}}
+\newlabel{fig:gk_int}{{2.5}{34}{Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).\relax }{figure.caption.80}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Other}{35}{subsection.81}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Previous work}{35}{section.82}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Method comparison}{35}{subsection.83}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Finite-size effects}{35}{subsection.84}}
+\@writefile{toc}{\contentsline {subsubsection}{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}{35}{section*.85}}
 \@setckpt{Chapters/Chapter2}{
-\setcounter{page}{35}
+\setcounter{page}{36}
 \setcounter{equation}{5}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -68,7 +72,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{100}
+\setcounter{instcount}{99}
 \setcounter{maxnames}{2}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -169,6 +173,6 @@
 \setcounter{r@tfl@t}{1}
 \setcounter{Item}{0}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{53}
+\setcounter{bookmark@seq@number}{57}
 \setcounter{section@level}{3}
 }
