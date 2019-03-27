@@ -12,9 +12,11 @@ The following chapters apply theory introduced here to investigate how conductiv
 \section{Atomic-scale modelling}
 %-----------------------------------------------------------
 
-Knowledge of thermal conductivity is important for modelling the deep earth, but can not be measured experimentally at core mantle boundary conditions. Atomic scale simulations sidestep experimental limitations, but system size must be chosen carefully in order to determine accurate conductivity values. 
+!!! THIS SECTION HAS REDUNDANCY WITH ABOVE CHAPTER INTRO SPIEL
 
-Classical molecular dynamics approaches are utilised, with the intention of constraining appropriate system parameters. MOVE TO CLASSICAL POTENTIAL SECTION
+!!! PROBABLY REVISE HEAVILY
+
+Knowledge of thermal conductivity is important for modelling the deep earth, but can not be measured experimentally at core mantle boundary conditions. Atomic scale simulations sidestep experimental limitations, but system size must be chosen carefully in order to determine accurate conductivity values. 
 
 A range of atomic scale simulation methods are available to determine the lattice thermal conductivity of materials. These are invaluable for calculating thermal conductivity at conditions of which experiments are difficult, e.g. the extreme conditions found in the Earth's lower mantle (pressures and temperatures up to 136~GPa and 4000~K at the core-mantle boundary). 
 
@@ -36,11 +38,9 @@ In a moldecular dynamics (MD) calculation, atoms in a simulation cell have masse
 \subsubsection{Lattice dynamics}
 %-------------------
 
-An alternative approach to MD is lattice dynamics (LD),where the response of all atoms to the motion of one is considered. Each atom in the simualtion cell is perturbed in turn, the motions and response of the other atoms stored  in a 3 by 3 tensor for each atom pairing. The tensor takes significant time to compute compared to a single MD timestep, but can be used to calculate various material properties once obtained. 
+An alternative approach to MD is lattice dynamics (LD),where the response of all atoms to the motion of one is considered. Each atom in the simualtion cell is perturbed in turn, the motions and response of the other atoms stored  in a 3 by 3 tensor for each atom pairing. The tensor takes significant time to compute compared to a single MD timestep, but can be used to calculate various material properties once obtained. The focus of this study will be on MD approaches, but LD results from literature will be reviewed for comparison.
 
 !!! ADD A REFERENCE AND FORGET ABOUT IT?
-
-The focus of this study will be on MD approaches, but LD results from literature will be reviewed for comparison.
 
 !!! DO I NEED TO SAY WHY I AM NOT USING LD? WHY AM I NOT USING LD!?
 
@@ -61,33 +61,60 @@ The focus of this study will be on MD approaches, but LD results from literature
 \subsection{Calculating atomic interactions}
 %---------------------------------------
 
-
+!!! ADD INTRO SPIEL HERE
 
 %-------------------
-\subsubsection{DFT}
+\subsubsection{Density functional theory}
 %-------------------
 
-JUST A MENTION
+Density functional theory (DFT) is a way of determining accurate interatomic forces. The properties of the electrons are considered along with the nuclei, which increases the computational cost and simulation run time. This additionally limits the size of systems, or number of atoms (on the order of thousands), that can be considered. Calculating from first principles in this manner should only be considered if you know the system parameters for converged results, and they can be completed on a suitable timescale. I will be opting for a different approach, as I wish to investigate a large amount of big systems systems, potentially for multiple compositional variations.
 
 !!! ANY OTHER ALTERNATIVE APPROACHES THAT NEED TO GO HERE?
 
 %-------------------
-\subsubsection{Interatomic potentials}
+\subsubsection{Classical interatomic potentials}
+%-------------------
+
+The alternative to DFT is to use empirically-derived potentials to calculate the interatomic forces. Whereas calculating from first principles considers the interactions of atoms and their outer shell electrons, interatomic potentials use an approximation of the electronic potential component (i.e. a classical atomic model). 
+
+Systems on the order of millions of atoms can be considered with atomic potentials, due to significantly reduced computational cost compared to DFT. The trade-off is accuracy however, which is controlled by the characteristics of the employed potential. These potentials are set up to reproduce a set of experimental results, but the is no certainty they reflect true values outside their calibrated range of conditions. A realsitic model reproduces the structural, elastic, and thermal properties of a material. A common feature of classical potentials is to underestimate the diagonal terms of the elastic constant tensor, and overestimate the off-diagonal, where the discrepancy increases with pressure \citep{Chen2012}.
+
+%-------------------
+\subsubsection{Oganov's \bdgs potential}
+%-------------------
+
+The interatomic potential I will be using  was developed by \citet{Oganov2000}. Many potentials exist for \mgsios perovskite, but the aforementioned is robust up to lower mantle pressures and temperatures. The interatomic potential function includes ionic, covalent, and van der Waals components. The dominant long-range term is the Coulomb interaction, and the short-range interactions are described using a Buckingham potential with the Born-Mayer potential, and a $C/r^{6}$ van der Waals term. The equation for pair-wise potential (summed for potential energy of the system) takes the form
+%
+\begin{equation}
+V_{ij}^{\mathrm{Buck}}
+= \frac{1}{4 \pi \epsilon_{0}} 
+\frac{q_{i} q_{j}}{r_{ij}} 
++ b_{ij}\ exp\left ( \frac{-r_{ij}}{\rho_{ij}} \right )
+- \frac{c_{ij}}{{r_{ij}}^{6}} \  ,
+\label{eq.buck}
+\end{equation}
+%
+where $q_{i}$ and $q_{j}$ are the charges of atoms $i$ and $j$, $r_{ij}$ is the distance between them, $b_{ij}$ is the pre-exponential repulsive parameter for the pair, $\rho_{ij}$ is the repulsion exponent, and $c_{ij}$ is the van der Waals parameter.
+There are three sets of these paramters, for each of the interacting atomic pairs (shown in Table~\ref{tab.oganov}). The charges for Mg, Si, and O atoms are $1.9104$, $2.9043$, and $-1.6049$, respectively.
+%
+\begin{table}[h]
+\centering
+\caption[CONTENTS BIT]{\label{tab.oganov}Parameters used to define \citet{Oganov2000}'s \mgsios perovskite potential.}
+\begin{tabular}{clll} 
+Bond $ij$ & $b_{ij}$ (eV)  & $\rho_{ij}$ (\AA) & $c_{ij}$ (eV.\AA$^{6}$) \\ \hline
+Mg-O        & 1041.435        & 0.2866                 & 0                \\
+Si-O          & 1137.028        & 0.2827                 & 0                \\
+O-O          & 2023.800        & 0.2674                  & 13.83         \\ \hline       
+\end{tabular}
+\end{table}
+
+
+
+%-------------------
+\subsubsection{SETTING UP POTENTIAL CUTOFFS}
 %-------------------
 
 
-
-%-------------------
-\subsubsection{OGANOV}
-%-------------------
-
-With the interatomic potential of \citet{Oganov2000} we simulate bridgmanite, a magnesium silicate otherwise referred to as MgSiO$_{3}$ or perovskite (the name of its crystal structure family). To assess finite-size effects we use larger simulation cells than those employed in previous studies. The atom counts associated with these cells (the largest cell considered having over 100,000 atoms) means an ab initio study would be impractical, necessitating the use of interatomic potentials. We expect the potentials to represent the finite size effects well, even if computed conductivities may inaccurate compared to first-principles calculations.
-
-WHY OGANOV? 
-
-WHAT CUTOFFS?
-
-TRANSFER
 
 
 
@@ -103,15 +130,41 @@ TRANSFER
 \subsection{Finite-size effects}
 %---------------------------------------
 
-
-
-
-
 %-------------------
 \subsubsection{LAMMPS}
 %-------------------
 
 LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a classical molecular dynamics code \citep{Plimpton1995}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
