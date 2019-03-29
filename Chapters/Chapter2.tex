@@ -114,7 +114,9 @@ O-O          & 2023.800        & 0.2674                  & 13.83         \\ \hli
 \subsubsection{SETTING UP POTENTIAL CUTOFFS}
 %-------------------
 
+Part of applying classical potentials is setting up the distance over which they act, the maximum seperation between two atoms before they are not paired for force calculation. Too small a cut-off distance, and the material is not being replicated faithfully. Too large a cut-off, you are performing more calculations than you need, and will increase computation time. The potential between two atoms is inversely proportional to their separation (see Eq. \ref{eq.buck}), ``cutting off'' in this manner is acceptable when the value is tending towards zero with large interatomic distance. I consider two cut-off distances, for both the Coulombic and the Buckingham interactions (the former have a larger value than the latter).
 
+ !!! BUT WHAT DID I DECIDE ON THOUGH 
 
 
 
@@ -130,11 +132,21 @@ O-O          & 2023.800        & 0.2674                  & 13.83         \\ \hli
 \subsection{Finite-size effects}
 %---------------------------------------
 
+Computational techniques are not limited by the reproduction of physical conditions like experiments, this does not mean they are without limitations however. Finite-size effects refer to when the number of atoms or system shape and size affect the computed result, compared to an infinite system. In the case of thermal conductivity, the problem arises when phonons are truncated by boundaries in the simulation cell. As discussed in Chapter~\ref{sec.phonon_explan}, phonons have wave-like properties, including wavelength. 
+
+When a simulation cell is shorter than a phonon, that phonon cannot be represented in the system. This will mean a calculation is tending to underestimate conductivity. The opposite scenario is also true, if the phonon mean free path is longer than the distance between boundaries in a system, phonon scattering behaviour is not being replicated accurately. This leads to overestimations, where phonons are able to transport heat unimpeded, and conductivity is strongly dependent on system size \citep{Tadano2014}. 
+
+The FSE observed for a material change with thermal conductivity/phonon MFP, and thus are pressure, temperature, and composition sensitive. Long MFPs require larger systems to eliminate FSE (and vice versa) [[[BUT IS THIS TRUE?]]].
+
+This can be a problem when employing DFT calculations, where systems sizes must be kept small to maintain computational efficiency. Testing system size is also a problem, as calculations of large systems must be performed to check convergence of results.
+
 %-------------------
 \subsubsection{LAMMPS}
 %-------------------
 
-LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a classical molecular dynamics code \citep{Plimpton1995}.
+LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a classical molecular dynamics code \citep{Plimpton1995}. I will be using it to look at large systems (up to the order of $10^5$ atoms) and assess how size and shape affects results. While calculations using interatomic poternials are not as accurate as those using DFT, a main focus of this work will be on the observations of conductivity magnitude change between systems of varying size. The \wmks result isn't as important as confirming phonon behaviour is not being greatly inhibited. 
+
+While not considered here, the system size parameters I determine for \bdgs at a range of temperatures and pressures could be used in a DFT calculation. This ensures the DFT calculation is using a large enough arrangement of atoms, while providing a useful reliability check for my classical results. 
 
 
 
@@ -172,21 +184,23 @@ LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a classica
 %-----------------------------------------------------------
 \section{Computing \tc}
 %-----------------------------------------------------------
-\citet{Stackhouse2010} review different methods to compute thermal conductivity, in the present work we focus on two of these:
-(1) Equilibrium molecular dynamics based on the Green-Kubo relations to determine the thermal conductivity from heat flux fluctuations and their time-dependence \citep{Green1954,Kubo1957,Kubo1966,Schelling2002}. 
-(2) The non-equilbrium molecular dynamics-based ``direct method'', where thermal conductivity is calculated from an imposed heat flux and corresponding temperature gradient via Fourier's Law \citep{Muller-Plathe1997,Nieto-Draghi2013}.
 
-%---------------------------------------
-\subsection{Finite-size effects}
-%---------------------------------------
-[[[Give its own section, or as subsection in each method?]]]\\
-Computational techniques are not limited by the reproduction of physical conditions like experiments, however they are affected by the size and shape of the simulation cell. The effects of the finite system size available for computation must be checked, as systems with too few atoms are sometimes unable to reproduce the behaviour of the bulk material. If the wavelength of a phonon is too long to fit into a cell, it is not able to transport heat like it should. In the case of the direct method, the length to cross sectional area (CSA) aspect ratio can also matter.
+I will be using two approaches, both utilising classical interatomic potentials, to calculate thermal conductivity throughout this thesis. They will be explained later in this section, and are as follows,
 
-Considering systems of varying size, length-dependent conductivities are obtained from the direct method and extrapolated to the bulk material (\citet{Schelling2002}). The validity of this extrapolation procedure have been called into question (e.g. \citet{Sellan2010}), when a linear trend cannot be fit through the length-dependent conductivities. We describe finite-size effects (FSE) which cause the conductivity result of a simulation to diverge from the value expected by a linear trend, and offer a comparison with results obtained from the Green-Kubo method. The two methods have previously been compared (e.g. \citet{Schelling2002} [[[REFERENCED EARLIER IN THIS PARAGRAPH, THIS OKAY?]]] ), and have been found to give results in good agreement.
+(1) The non-equilbrium molecular dynamics-based ``direct method'', where thermal conductivity is calculated from an imposed heat flux and corresponding temperature gradient via Fourier's Law \citep{Muller-Plathe1997,Nieto-Draghi2013}.
 
-The finite-size effects (FSE) I describe are associated with phonon-phonon scattering, or the lack thereof, and boundary-scattering or truncation of phonon mean free path due to limited system sizes. These phenomena combine to misrepresent the phonon behaviour of the bulk material. 
+(2) Equilibrium molecular dynamics based on the Green-Kubo relations to determine the thermal conductivity from heat flux fluctuations and their time-dependence \citep{Green1954,Kubo1957,Kubo1966,Schelling2002}. 
 
-The FSE observed for a material change with thermal conductivity/phonon MFP, and thus are pressure, temperature, and composition sensitive. Higher conductivity(or is it MFP?) materials/conditions require larger systems to eliminate FSE (and vice versa) [[[BUT IS THIS TRUE?]]].
+
+\citet{Stackhouse2010} review other methods to compute thermal conductivity, including the above but also,
+
+(3) Anharmonic lattice dynamics \citep{Tang2009}. %(BTE)CHERNATYNSKIY and PHILLPOT 2010?
+
+(4) Combined quasiharmonic lattice dynamics and molecular dynamics method \citep{DeKoker2009}.
+
+!!! Fixed ends? Sinusoidal temperature perturbation?
+
+The Green-Kubo and direct method use the same underlying atomic model, but calculate \tcs differently. They have their own unique system setup procedures, data processing work flows, and finite-size effects. In the following sections, each method will be considered individually, before a review of literature comparing the two, and how I will use them to analyse their FSE.
 
 
 
@@ -194,8 +208,10 @@ The FSE observed for a material change with thermal conductivity/phonon MFP, and
 \subsection{Direct method}
 %---------------------------------------
 The direct method is the computational implementation of a typical experiment to measure thermal conductivity, using Fourier's law to relate heat flux ($q$) and temperature gradient ($\nabla{T}$) to thermal conductivity ($k$), 
+%
 \begin{equation}
-q=-k \nabla{T} \label{fourier}.
+q=-k \nabla{T} 
+\label{fourier}.
 \end{equation}
 
 %-------------------
@@ -253,19 +269,34 @@ For a given length, conductivity is dependent on the CSA, or aspect ratio of the
 
 The convergence is not necessarily observed concurrently for longer cells however, where they may show overestimated conductivities compared to the fit through short cells (\cite{Hu2011}). This would cause the fit to all data to be steeper than it should, increasing the extrapolated result.  [[[HOPEFULLY THIS IS TRUE]]] I can show that increasing CSA does not change the computed conductivity at short lengths, but does reduce values from longer cells and bring them into alignment with the expected fit.
 
-%-------------------
-\subsubsection{Other NEMD}
-%-------------------
-Fixed ends?
+%I MOVED THIS DOWN HERE RECENTLY - DO NOT IGNORE %Considering systems of varying size, length-dependent conductivities are obtained from the direct method and extrapolated to the bulk material (\citet{Schelling2002}). The validity of this extrapolation procedure have been called into question (e.g. \citet{Sellan2010}), when a linear trend cannot be fit through the length-dependent conductivities. We describe finite-size effects (FSE) which cause the conductivity result of a simulation to diverge from the value expected by a linear trend, and offer a comparison with results obtained from the Green-Kubo method. The two methods have previously been compared (e.g. \citet{Schelling2002}, and have been found to give results in good agreement.
 
-Sinusoidal temperature perturbation.
+%By comparing results with the Green-Kubo method, we will constrain the cell lengths in the linear extrapolation region to mitigate these effects. 
+
+
+
+
+
+
+
+
+
 
 
 %%%MOVE TO 3
-%By comparing results with the Green-Kubo method, we will constrain the cell lengths in the linear extrapolation region to mitigate these effects. 
+
 %[[[SPECIFIC ALERT, REFERENCING THINGS I FOUND]]] The effect of FSE on conductivity results depends on the magnitude of conductivity/phonon MFP/physical conditions. At low kappa/low MFP/high T/ (my 4000~K), no BPT is observed, and short cells (>16 unit cells) can be used for extrapolation. In fact, short cells must be used to extrapolate, unless CSA considersations are made to ensure convergence of long cell results.
 %[[[SPECIFIC ALERT, REFERENCING THINGS I FOUND]]] At high kappa/high MFP/low T (my 1000~K), BPT must considered at the shorter cells (just 6?). Effectively there is a "sweet-spot", a window of cell lengths for a given CSA that produce consistently-converged results. Long cells outside of the window require a larger CSA, short cells outside show BPT. At 4000~K the lower limit of the window is smaller than the minimum cell length considered, and the upper limit is between 16-24 unit cells. For 1000~K the lower limit of the window moves inside the simulated cell length range around 6-8 unit cells (OR MORE?). The upper limit of the window appears to be larger than 96 unit cells, including all long cells up to this value produces an extrapolation in agreement with GK.
 %We have investigated this effect by varying CSA for a range of cell lengths, extrapolated conductivity decreases and eventually converges with CSA. We will use the smallest area that produces the converged conductivity for computational efficiency. 
+
+
+
+
+
+
+
+
+
 
 
 %---------------------------------------

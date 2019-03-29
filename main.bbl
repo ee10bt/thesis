@@ -271,6 +271,74 @@
     \field{year}{1986}
   \endentry
 
+  \entry{Chen2012}{article}{}
+    \name{author}{6}{}{%
+      {{hash=CY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Chernatynskiy},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SPK}{%
+         family={Schelling},
+         familyi={S\bibinitperiod},
+         given={P.\bibnamedelima K.},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Artacho},
+         familyi={A\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PSR}{%
+         family={Phillpot},
+         familyi={P\bibinitperiod},
+         given={S.\bibnamedelima R.},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \keyw{classical potentials,thermal conductivity}
+    \strng{namehash}{CY+1}
+    \strng{fullhash}{CYCABDSPKAEPSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1016/j.pepi.2012.08.002
+    \endverb
+    \field{issn}{00319201}
+    \field{pages}{75\bibrangedash 89}
+    \field{title}{{Critical assessment of classical potentials for MgSiO3
+  perovskite with application to thermal conductivity calculations}}
+    \verb{url}
+    \verb http://linkinghub.elsevier.com/retrieve/pii/S0031920112001483
+    \endverb
+    \field{volume}{210-211}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Chen et al. - 2
+    \verb 012 - Critical assessment of classical potentials for MgSiO3 perovski
+    \verb te with application to thermal conductivity calculat.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Earth Planet. Inter.}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Dalton2013}{article}{}
     \name{author}{5}{}{%
       {{hash=DDA}{%
@@ -2709,6 +2777,81 @@
     \endverb
     \field{journaltitle}{Earth Planet. Sci. Lett.}
     \field{year}{2015}
+  \endentry
+
+  \entry{Tadano2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TT}{%
+         family={Tadano},
+         familyi={T\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gohda},
+         familyi={G\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tsuneyuki},
+         familyi={T\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{225402,26,anharmonic force constant,available from stacks,boltzmann
+  transport equation,dynamics,first-principles calculation,in colour only
+  in,iop,j,lattice thermal conductivity,mmedia,non-equilibrium
+  molecular,org,physcm,s online supplementary data,some figures may appear,the
+  online journal}
+    \strng{namehash}{TT+1}
+    \strng{fullhash}{TTGYTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    A systematic method to calculate anharmonic force constants of crystals is
+  presented. The method employs the direct-method approach, where anharmonic
+  force constants are extracted from the trajectory of first-principles
+  molecular dynamics simulations at high temperature. The method is applied to
+  Si where accurate cubic and quartic force constants are obtained. We observe
+  that higher-order correction is crucial to obtain accurate force constants
+  from the trajectory with large atomic displacements. The calculated harmonic
+  and anharmonic force constants are, then, combined with the Boltzmann
+  transport equation (BTE) and non-equilibrium molecular dynamics (NEMD)
+  methods in calculating the thermal conductivity. The BTE approach
+  successfully predicts the lattice thermal conductivity of bulk Si, whereas
+  NEMD shows considerable underestimates. To evaluate the linear extrapolation
+  method employed in NEMD to estimate bulk values, we analyze the size
+  dependence in NEMD based on BTE calculations. We observe strong nonlinearity
+  in the size dependence of NEMD in Si, which can be ascribed to acoustic
+  phonons having long mean-free-paths and carrying considerable heat.
+  Subsequently, we also apply the whole method to a thermoelectric material
+  Mg2Si and demonstrate the reliability of the NEMD method for systems with low
+  thermal conductivities.%
+    }
+    \verb{doi}
+    \verb 10.1088/0953-8984/26/22/225402
+    \endverb
+    \field{issn}{1361-648X}
+    \field{pages}{1\bibrangedash 12}
+    \field{title}{{Anharmonic force constants extracted from first-principles
+  molecular dynamics: applications to heat transfer simulations.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/24824156
+    \endverb
+    \field{volume}{26}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Tadano, Gohda,
+    \verb Tsuneyuki - 2014 - Anharmonic force constants extracted from first-pr
+    \verb inciples molecular dynamics applications to heat tra.pdf:pdf
+    \endverb
+    \field{journaltitle}{J. Phys. Condens. Matter}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Tang2009}{article}{}
