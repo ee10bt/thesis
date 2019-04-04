@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  3 APR 2019 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  4 APR 2019 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1738,7 +1738,7 @@ LaTeX Info: Redefining \pageref on input line 6432.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 141.
+(scrhack)             need that hack, on input line 145.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -1758,10 +1758,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip78
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 141.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 141.
-Package hyperref Info: Option `colorlinks' set `true' on input line 141.
-Package hyperref Info: Option `unicode' set `true' on input line 141.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 145.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 145.
+Package hyperref Info: Option `colorlinks' set `true' on input line 145.
+Package hyperref Info: Option `unicode' set `true' on input line 145.
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/hyperref/p
 uenc.def
@@ -1769,7 +1769,7 @@ File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 141.
+Package hyperref Info: Option `breaklinks' set `true' on input line 145.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1779,8 +1779,8 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Ch
-apter3.aux) (./Chapters/Chapter4.aux
+ (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Charpter2.aux) (./Chapters/C
+hapter3.aux) (./Chapters/Chapter4.aux
 
 LaTeX Warning: Label `eq.g_def' multiply defined.
 
@@ -1788,23 +1788,23 @@ LaTeX Warning: Label `eq.g_def' multiply defined.
 (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 141.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 145.
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/t1p
 pl.fd
@@ -1971,7 +1971,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 141.
+(scrlayer)             \begin{document} on input line 145.
 
 Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                Using scrlayer-scrpage the head height
@@ -1985,13 +1985,13 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                option `singlespacing=true'
 (scrlayer-scrpage)                to avoid this warning.
 
-Package scrbase Info: activating english \abbrevname on input line 141.
-Package scrbase Info: activating english \byname on input line 141.
-Package scrbase Info: activating english \acknowledgementname on input line 141
+Package scrbase Info: activating english \abbrevname on input line 145.
+Package scrbase Info: activating english \byname on input line 145.
+Package scrbase Info: activating english \acknowledgementname on input line 145
 .
-Package scrbase Info: activating english \authorshipname on input line 141.
-Package scrbase Info: activating english \constantsname on input line 141.
-Package scrbase Info: activating english \symbolsname on input line 141.
+Package scrbase Info: activating english \authorshipname on input line 145.
+Package scrbase Info: activating english \constantsname on input line 145.
+Package scrbase Info: activating english \symbolsname on input line 145.
 \big@size=\dimen188
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2115,10 +2115,10 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 141.
-Package biblatex Info: Reference segment=0 on input line 141.
+Package biblatex Info: Reference section=0 on input line 145.
+Package biblatex Info: Reference segment=0 on input line 145.
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring ON on input line 141.
+Package hyperref Info: Link coloring ON on input line 145.
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/hyperref/n
 ameref.sty
@@ -2130,43 +2130,43 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count418
 )
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 145.
+LaTeX Info: Redefining \pageref on input line 145.
+LaTeX Info: Redefining \nameref on input line 145.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 \c__siunitx_mathsf_int=\count419
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 141.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 145.
 
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/ot1
 ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 141
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 145
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/oml
 zplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 141
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 145
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/oms
 zplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 141
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 145
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/omx
 zplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 141
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 145
 .
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/ot1
@@ -2177,7 +2177,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 163.
 [1
 
 
@@ -2189,7 +2189,7 @@ ap/pdftex.map}] [2
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 202.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 206.
 
 
 (/apps/applications/texlive/2017/1/default/2017/texmf-dist/tex/latex/psnfss/oms
@@ -2197,9 +2197,9 @@ ppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
@@ -2213,7 +2213,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.896pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
-17.
+21.
 
 
 Overfull \vbox (3.04236pt too high) has occurred while \output is active []
@@ -2228,7 +2228,7 @@ Overfull \vbox (3.04236pt too high) has occurred while \output is active []
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 248.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 252.
 1: section
 [7] [8
 
@@ -2241,7 +2241,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 267.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 271.
  (./main.toc
 1: section
 [11]
@@ -2251,36 +2251,31 @@ TIONS[][] [][]
  []
 
 [12]
-Overfull \hbox (7.02795pt too wide) in paragraph at lines 87--87
+Overfull \hbox (7.02795pt too wide) in paragraph at lines 64--64
  [][] [][]\T1/ppl/m/n/10.95 SCAL-ING MFP TO QUAN-TIFY PHONON-DEFECT SCAT-TER- 
  []
 
-[13])
+)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [14] (./main.lof
-Overfull \hbox (1.22649pt too wide) in paragraph at lines 14--14
- [][] [][][]\T1/ppl/m/n/10.95 Normalised ACF. Cor-re-la-tion is taken over a lo
-nger length than shown 
- []
+ [13] [14
 
-1: section
-[15
-
-])
+] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [16] (./main.lot)
+
+1: section
+[15] [16
+
+] (./main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
 
 1: section
-[17
-
-] [18
+[17] [18
 
 ]
 1: section
@@ -2330,7 +2325,7 @@ s-tal-maker/specific,
  []
 
 [4] [5]
-<Figures/phonon-warwick-acoustic-optical-diagram.png, id=739, 501.875pt x 590.2
+<Figures/phonon-warwick-acoustic-optical-diagram.png, id=597, 501.875pt x 590.2
 05pt>
 File: Figures/phonon-warwick-acoustic-optical-diagram.png Graphic file (type pn
 g)
@@ -2356,7 +2351,7 @@ Overfull \hbox (1.79424pt too wide) in paragraph at lines 101--102
  []
 
 [6 <./Figures/phonon-warwick-acoustic-optical-diagram.png>] [7]
-<Figures/debye-model.png, id=755, 257.46187pt x 170.13562pt>
+<Figures/debye-model.png, id=613, 257.46187pt x 170.13562pt>
 File: Figures/debye-model.png Graphic file (type png)
 <use Figures/debye-model.png>
 Package pdftex.def Info: Figures/debye-model.png  used on input line 145. on in
@@ -2370,7 +2365,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--146
  []
 
 [8 <./Figures/debye-model.png (PNG copy)>]
-<Figures/kappa-temp-dep.png, id=761, 246.1697pt x 230.36063pt>
+<Figures/kappa-temp-dep.png, id=620, 246.1697pt x 230.36063pt>
 File: Figures/kappa-temp-dep.png Graphic file (type png)
 <use Figures/kappa-temp-dep.png>
 Package pdftex.def Info: Figures/kappa-temp-dep.png  used on input line 153. on
@@ -2389,7 +2384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--155
  []
 
 [9 <./Figures/kappa-temp-dep.png (PNG copy)>]
-<Figures/pp_earth_diagram.png, id=767, 659.46375pt x 530.73282pt>
+<Figures/pp_earth_diagram.png, id=626, 659.46375pt x 530.73282pt>
 File: Figures/pp_earth_diagram.png Graphic file (type png)
 <use Figures/pp_earth_diagram.png>
 Package pdftex.def Info: Figures/pp_earth_diagram.png  used on input line 174. 
@@ -2430,7 +2425,7 @@ Overfull \hbox (12.33385pt too wide) in paragraph at lines 280--281
 -duc-tiv-ity of post-perovskiteto
  []
 
-<Figures/ammann_saturation.png, id=844, 720.44156pt x 291.33844pt>
+<Figures/ammann_saturation.png, id=702, 720.44156pt x 291.33844pt>
 File: Figures/ammann_saturation.png Graphic file (type png)
 <use Figures/ammann_saturation.png>
 Package pdftex.def Info: Figures/ammann_saturation.png  used on input line 285.
@@ -2504,7 +2499,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--363
 []\T1/ppl/m/n/10.95 Including Fe,
  []
 
-[20] [21] [22]) [23]
+[20] [21] [22]
+
+LaTeX Warning: Reference `Chapter2' on page 23 undefined on input line 384.
+
+) [23]
 \openout2 = `Chapters/Charpter2.aux'.
 
 
@@ -2521,6 +2520,9 @@ No file Chapters/Charpter2.tex.
 Chapter 2.
 1: section
 [25]
+
+LaTeX Warning: Reference `Chapter2' on page 26 undefined on input line 33.
+
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 43.792pt needed,
@@ -2635,8 +2637,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
 
 [36]
-<Figures/effective-phonon-relaxation-time.png, id=1026, 703.12688pt x 471.26062
-pt>
+<Figures/effective-phonon-relaxation-time.png, id=869, 703.12688pt x 471.26062p
+t>
 File: Figures/effective-phonon-relaxation-time.png Graphic file (type png)
 <use Figures/effective-phonon-relaxation-time.png>
 Package pdftex.def Info: Figures/effective-phonon-relaxation-time.png  used on 
@@ -2644,7 +2646,7 @@ input line 127. on input line 127.
 Package pdftex.def Info: Requested size: 404.02908pt x 270.79298pt on input lin
 e 127.
  [37 <./Figures/effective-phonon-relaxation-time.png>] [38] [39] [40]
-<Figures/substitution_05-collated.png, id=1079, 1014.03844pt x 1021.56656pt>
+<Figures/substitution_05-collated.png, id=915, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 <use Figures/substitution_05-collated.png>
 Package pdftex.def Info: Figures/substitution_05-collated.png  used on input li
@@ -2655,7 +2657,7 @@ e 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-t_all_02.png, id=1081, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=917, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 234. on inp
@@ -2666,7 +2668,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [41] [42 <./Figures/substitution_05-collated.png>]
-<Figures/k-c_all_01.png, id=1097, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=932, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 246. on inp
@@ -2677,7 +2679,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=1099, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=934, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 254. o
@@ -2705,7 +2707,7 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 328--328
 Overfull \vbox (1.03882pt too high) detected at line 328
  []
 
-<Figures/draft_XT.png, id=1143, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=972, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 348. on input
@@ -2713,7 +2715,7 @@ Package pdftex.def Info: Figures/draft_XT.png  used on input line 348. on input
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
 e 348.
 [47 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=1158, 797.98125pt x 490.83376pt>
+<Figures/draft_XTT.png, id=984, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 363. on inpu
@@ -2721,7 +2723,7 @@ t line 363.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
 e 363.
  [48 <./Figures/draft_XTT.png>]
-<Figures/k-c_demo-cartoon.png, id=1176, 888.31876pt x 502.12593pt>
+<Figures/k-c_demo-cartoon.png, id=999, 888.31876pt x 502.12593pt>
 File: Figures/k-c_demo-cartoon.png Graphic file (type png)
 <use Figures/k-c_demo-cartoon.png>
 Package pdftex.def Info: Figures/k-c_demo-cartoon.png  used on input line 386. 
@@ -2733,7 +2735,7 @@ e 386.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [49] [50 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [51]
-<Figures/draft_VrefV-T.png, id=1203, 393.72093pt x 179.16937pt>
+<Figures/draft_VrefV-T.png, id=1026, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
 Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 450. on 
@@ -2760,21 +2762,34 @@ Chapter 4.
 
 
 
-]) [58]
+]
+<Figures/sph_harm.png, id=1062, 796.47563pt x 204.765pt>
+File: Figures/sph_harm.png Graphic file (type png)
+<use Figures/sph_harm.png>
+Package pdftex.def Info: Figures/sph_harm.png  used on input line 31. on input 
+line 31.
+Package pdftex.def Info: Requested size: 404.02908pt x 103.86948pt on input lin
+e 31.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+ []\T1/ppl/m/sc/10 Figure 4.1: |\T1/ppl/m/n/10 Source: http://www- 
+ []
+
+[58 <./Figures/sph_harm.png>]) [59]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex
-Chapter 5.
-)
-1: section
-[59
+ (./Chapters/Chapter6.tex [60
 
 
 
 ]
+Chapter 5.
+)
+1: section
+[61]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [60
+ (./Appendices/AppendixA.tex [62
 
 
 
@@ -2787,372 +2802,112 @@ t.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 1: section
-[61] [62
+[63] [64
 
 
 ]
-Overfull \hbox (6.40623pt too wide) in paragraph at lines 376--376
+Overfull \hbox (6.40623pt too wide) in paragraph at lines 380--380
 [][]\T1/ppl/m/n/10.95 Balandin, A. A. et al. (2008). ^^P  Su-pe-rior ther-mal c
 on-duc-tiv-ity of single-layer graphene.^^Q
  []
 
 
-Overfull \hbox (7.13141pt too wide) in paragraph at lines 376--376
+Overfull \hbox (7.13141pt too wide) in paragraph at lines 380--380
 \T1/cmtt/m/n/10.95 002$[][]\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/
 n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / linkinghub . elsevier . com / retr
 ieve / pii / S0031920112001483$[][]\T1/ppl/m/n/10.95 . 
  []
 
 1: section
-[63]
-Overfull \hbox (0.38953pt too wide) in paragraph at lines 376--376
+[65]
+Overfull \hbox (0.38953pt too wide) in paragraph at lines 380--380
 \T1/ppl/m/n/10.95 time-dependent phe-nom-ena. II. Ir-re-versible pro-cesses in 
 flu-ids^^Q. In: \T1/ppl/m/it/10.95 J. Chem. Phys.
  []
 
-[64] [65]
-Overfull \hbox (1.7856pt too wide) in paragraph at lines 376--376
+[66] [67]
+Overfull \hbox (1.7856pt too wide) in paragraph at lines 380--380
 [][]\T1/ppl/m/n/10.95 Lobanov, S. S. et al. (2017). ^^P  Ra-dia-tive con-duc-ti
 v-ity and abun-dance of post-perovskite
  []
 
 
-Overfull \hbox (1.89677pt too wide) in paragraph at lines 376--376
+Overfull \hbox (1.89677pt too wide) in paragraph at lines 380--380
 \T1/ppl/m/n/10.95 in the low-er-most man-tle^^Q. In: \T1/ppl/m/it/10.95 Earth P
 lanet. Sci. Lett. \T1/ppl/m/n/10.95 479, pp. 43^^U49. \T1/ppl/m/sc/10.95 issn\T
 1/ppl/m/n/10.95 : 0012821X.
  []
 
-[66]
-Overfull \hbox (10.84619pt too wide) in paragraph at lines 376--376
+[68]
+Overfull \hbox (10.84619pt too wide) in paragraph at lines 380--380
 \T1/ppl/m/n/10.95 perovskite at the core^^Umantle bound-ary^^Q. In: \T1/ppl/m/i
 t/10.95 Earth Planet. Sci. Lett. \T1/ppl/m/n/10.95 349-350, pp. 109^^U
  []
 
 
-Overfull \hbox (1.35857pt too wide) in paragraph at lines 376--376
+Overfull \hbox (1.35857pt too wide) in paragraph at lines 380--380
 \T1/ppl/m/n/10.95 ther-mal con-duc-tiv-ity of bridg-man-ite at the Earth's lowe
 r man-tle^^Q. In: \T1/ppl/m/it/10.95 Earth Planet.
  []
 
 
-Overfull \hbox (24.03674pt too wide) in paragraph at lines 376--376
+Overfull \hbox (24.03674pt too wide) in paragraph at lines 380--380
 [][]\T1/ppl/m/n/10.95 Parise, J. B. and Y. Wang (1990). ^^P  Crys-tal struc-tur
 e and ther-mal ex-pan-sion of (Mg,Fe)SiO_3
  []
 
-[67] [68]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
- [69]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
+[69] [70]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
+ [71]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Charpter2.aux) (./Chapters/C
 hapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: A3F821B2B51188B62A1054ED5CD7F16B;13176.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 5A63C46181205A0E7AD51511A24C6AD9;17317
-(rerunfilecheck)             After:  24E660C3055BF55A7A04D5E01D493BAD;13176.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34784 strings out of 492990
- 707037 string characters out of 6121926
- 994420 words of memory out of 5000000
- 37549 multiletter control sequences out of 15000+600000
+ 34657 strings out of 492990
+ 705451 string characters out of 6121926
+ 991351 words of memory out of 5000000
+ 37501 multiletter control sequences out of 15000+600000
  605361 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,21n,82p,10377b,2909s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.151} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.145} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.142} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.140} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.132} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.131} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.130} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.102} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.147} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.111} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.101} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.148} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.133} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.120} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.62} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.146} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.138} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.136} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.134} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.126} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.125} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.124} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.122} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.113} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.81} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.75} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.71} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.70} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.164} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.163} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.162} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.161} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.160} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.159} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.158} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.157} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.156} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.155} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.154} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.153} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.152} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.150} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.149} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.139} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.137} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.129} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.128} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.127} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.123} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.121} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.117} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.116} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.107} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.103} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.100} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.98} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.97} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.96} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.95} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.94} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.93} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.92} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.91} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.90} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.89} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.87} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.86} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.85} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.84} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.83} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.77} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.76} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.73} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.67} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.66} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.65} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.64} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.63} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.60} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.59} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.58} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.56} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.55} has been referenced but does not exist
-, replaced by a fixed one
-
-{/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm-s
-uper/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-dist
-/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></apps/applications/texlive/
-2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></apps
-/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></apps/applications/texlive/2017/1/default
-/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></apps/applications/texl
-ive/2017/1/default/2017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></app
-s/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-sup
-er/sftt1000.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/font
-s/type1/public/cm-super/sftt1095.pfb></apps/applications/texlive/2017/1/default
-/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></apps/applications/texliv
-e/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/app
-lications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8
-a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/ur
-w/palatino/uplri8a.pfb>
-Output written on main.pdf (95 pages, 1205711 bytes).
+ 60i,21n,82p,10377b,2829s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/enc/dvips/cm
+-super/cm-super-t1.enc}{/apps/applications/texlive/2017/1/default/2017/texmf-di
+st/fonts/enc/dvips/base/8r.enc}</apps/applications/texlive/2017/1/default/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></apps/applications/texliv
+e/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></ap
+ps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></apps/applications/texlive/2017/1/defau
+lt/2017/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></apps/applications/te
+xlive/2017/1/default/2017/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></a
+pps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/public/cm-s
+uper/sftt1000.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fo
+nts/type1/public/cm-super/sftt1095.pfb></apps/applications/texlive/2017/1/defau
+lt/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></apps/applications/texl
+ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
+pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
+r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
+urw/palatino/uplri8a.pfb>
+Output written on main.pdf (97 pages, 1216997 bytes).
 PDF statistics:
- 1583 PDF objects out of 1728 (max. 8388607)
- 1434 compressed objects within 15 object streams
- 365 named destinations out of 1000 (max. 500000)
- 839 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1381 PDF objects out of 1440 (max. 8388607)
+ 1230 compressed objects within 13 object streams
+ 286 named destinations out of 1000 (max. 500000)
+ 660 words of extra memory for PDF output out of 10000 (max. 10000000)
 

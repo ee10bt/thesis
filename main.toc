@@ -68,9 +68,9 @@
 \contentsline {chapter}{\numberline {4}Using STUFF to do THINGS}{57}{chapter.121}
 \contentsline {section}{\numberline {4.1}Main Section 1}{57}{section.122}
 \contentsline {subsection}{\numberline {4.1.1}Subsection 1}{57}{subsection.123}
-\contentsline {chapter}{\numberline {5}Summary/Discussion/Conclusion}{59}{chapter.124}
-\contentsline {section}{\numberline {5.1}Main Section 1}{59}{section.125}
-\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{59}{subsection.126}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{61}{appendix.127}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{61}{section.128}
-\contentsline {chapter}{Bibliography}{63}{appendix*.129}
+\contentsline {chapter}{\numberline {5}Summary/Discussion/Conclusion}{61}{chapter.126}
+\contentsline {section}{\numberline {5.1}Main Section 1}{61}{section.127}
+\contentsline {subsection}{\numberline {5.1.1}Subsection 1}{61}{subsection.128}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{63}{appendix.129}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{63}{section.130}
+\contentsline {chapter}{Bibliography}{65}{appendix*.131}
