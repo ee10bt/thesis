@@ -5,19 +5,8 @@
 \label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %-----------------------------------------------------------
-\section{Main Section 1}
+\section{Draft words}
 %-----------------------------------------------------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%---------------------------------------
-\subsection{Subsection 1}
-%---------------------------------------
-
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
-
-
-
 
 I am able to construct a model of lower mantle heat flux, including the effect of LLSVP properties. Using LEMA, I specify a CMB base condition, and a TBL condition at some height above it. In all models I consider, the CMB will be isothermal. The TBL will have a variable mean temperature, and regions of higher and lower temperature. The lower mantle has an average Fe\%, but the LLSVPs are enriched compared the depleted surrounding bulk lower mantle. By varying the temperature and composition at the CMB, conductivity can be altered using the model from PREVIOUS-REF. The difference in temperature between CMB and TBL, and the undulations on the latter, control the lower mantle temperature gradient. 
 
@@ -52,20 +41,76 @@ q* = \frac{q_{\mathrm{max}}-q_{\mathrm{min}}}{q_{\mathrm{mean}}}\ ,
 %
 where max and min refer to the calculated extremes, and mean the average over the whole CMB. The larger the value of $q*$, the smaller the heat flux through the LLSVPs. While the magnitudes of heat flux may not be accurate, using $q*$ will let me make comments on thermal conductivity's role in the Earth heat engine for a wide range of possible lower mantle conditions.
 
+%---------------------------------------
+\subsection{Notes}
+%---------------------------------------
+
+VARIABLES TO PLAY WITH
+
+Temp-cmb,
+Temp-tbl,
+Temp-diff,
+Temp-hot,
+Temp-cold,
+
+Height-tbl,
+Height-llsvp (peak height, how is shape considered, sph. harm.?)
+
+Comp-mean,
+Comp-lm,
+Comp-llsvp,
+
+
+The things I can vary are temperature, composition, and TBL thickness. Temperature and thickness amount to the same thing in the model however, which is the thermal gradient.
+
+Temperature variations are set at the top of the model (1000~km above CMB). The temperature is constant all the way down to the TBL, at which it increases up to the CMB temperature. I only need to plot the temperature gradient at the CMB. WHAT IS THE POINT OF THE TBL THEN? OR RATHER, WHAT IS THE POINT OF MANTLE ABOVE THE TBL?
+
+In the real world, Fe may be localised. in the model, it is constant radially up. 
+
+I need to fiddle with parameters to obtain realistic change in shear velocity. I can then record this and q* ``about 2\% shear wave anomaly'' - vary temp to get this, then comp, then both
+
+Changing temperature at the top of the model changes gradient. Changing temperature at the bottom also changes conductivity.
+
+Keep the top around 1000~K cooler?
+
+Turn notebook into function with input arguments, then run in a loop.
+
+Investigate thermo mantle, chemical mantle, and then thermochemical. How sensible are these models? How feasible are they?
+
+Lateral temperature variations are different to radial variations!
+
+use model to link tomography
+
+what range could q* occupy, and why would jon and chris care?
 
 
 
-%VARIABLES TO PLAY WITH
 
-%Temp_cmb
-%Temp_tbl
-%Temp_diff
-%Temp_hot
-%Temp_cold
+PLAN
 
-%Height_tbl
-%Height_llsvp (peak height, how is shape considered, sph. harm.?)
+Refresh LLSVP theory
 
-%Comp_mean
-%Comp_lm
-%Comp_llsvp
+Ask question about how conductivity can affect heat flux and the lower mantle generally. ''given waht we now know about the effect of T and Fe on K, can we say what these models imply for CMB heat flux?''
+
+Introduce heat flux and the lateral variation. ``for Q and q*, what is it, what do we know, what does it mean?'' 
+
+LEMA - what is, why am i using it, how does it work ``i will use LEMA to explore'' - numerical tests
+
+CHEBYSHEVYS related to LEMA section? -numerical tests ``1D CMB heat flux''
+
+Future work / conclusion / caveats / limitations. i am only using \bdg, future work would be to add MgO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
