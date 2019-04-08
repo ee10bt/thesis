@@ -119,8 +119,11 @@ Part of applying classical potentials is setting up the distance over which they
  !!! BUT WHAT DID I DECIDE ON THOUGH 
 
 
+%-------------------
+\subsubsection{NPT-NVT-NVE}
+%-------------------
 
-
+INTRODUCE/EXPLAIN/CONTRAST - DO IT HERE TO SAVE DOING IT MULTIPLE TIMES LATER
 
 
 
@@ -134,7 +137,7 @@ Part of applying classical potentials is setting up the distance over which they
 
 Computational techniques are not limited by the reproduction of physical conditions like experiments, this does not mean they are without limitations however. Finite-size effects refer to when the number of atoms or system shape and size affect the computed result, compared to an infinite system. In the case of thermal conductivity, the problem arises when phonons are truncated by boundaries in the simulation cell. As discussed in Chapter~\ref{sec.phonon_explan}, phonons have wave-like properties, including wavelength. 
 
-When a simulation cell is shorter than a phonon, that phonon cannot be represented in the system. This will mean a calculation is tending to underestimate conductivity. The opposite scenario is also true, if the phonon mean free path is longer than the distance between boundaries in a system, phonon scattering behaviour is not being replicated accurately. This leads to overestimations, where phonons are able to transport heat unimpeded, and conductivity is strongly dependent on system size \citep{Tadano2014}. 
+When a simulation cell is shorter than a phonon's wavelength, that phonon cannot be represented in the system. This will mean a calculation is tending to underestimate conductivity, the phonon population is not being fully represented. Another scenario is if the phonon mean free path is longer than the distance between boundaries in a system, phonon scattering behaviour is not being replicated accurately. This leads to overestimations, where phonons are able to transport heat unimpeded, and conductivity is strongly dependent on system size \citep{Tadano2014}. 
 
 The FSE observed for a material change with thermal conductivity/phonon MFP, and thus are pressure, temperature, and composition sensitive. Long MFPs require larger systems to eliminate FSE (and vice versa) [[[BUT IS THIS TRUE?]]].
 
@@ -150,12 +153,66 @@ While not considered here, the system size parameters I determine for \bdgs at a
 
 
 
+%-------------------
+\subsubsection{Calibration and comparison}
+%-------------------
 
+For my calculations to be valid, I have to be able to reproduce other results calculated using the \citet{Oganov2000} potential. \citeauthor{Oganov2000} provide lattice parameters for a unit cell, along with elastic constants and the bulk and shear moduli. I reproduced their results to accpetable accuracy (see Table \ref{tab:oga_pot}, page \pageref{tab:oga_pot}), using LAMMPS and the lattice dynamics code GULP \citep{Gale1997}. Of particular note in this table is the agreement of the static LAMMPS and GULP results, showing the potential has been implemented identically for both codes. With regards to the 300~K results, GULP and LAMMPS differ, but only by around 1\% for each property. The standard error on the LAMMPS values is smaller than the difference with the GULP values, this disparity is caused by the use of lattice dynamics (LD) opposed to molecular dynamics (MD). The GULP (LD) values are believed to be more accurate in this case, 
+as 300~K is likely below the Debye temperature for perovskite. Calculations run below this temperature will not accurately recreate the material's thermal properties, due to the inactivity of some phonon modes. This will not be a concern when calculating thermal conductivity, as I will be using temperatures on the order of thousands of Kelvin.
 
+\begin{sidewaystable}[htbp]
+\centering
+\caption{Comparison of \mgsios perovskite properties calculated using the \citet{Oganov2000} potential at 0~GPa}\vspace{2mm} 
 
+\begin{tabular}{l|l|l|l|l|l}
+\hline
+Property  &  \citeauthor{Oganov2000} (Static) & GULP (Static) & LAMMPS (Static) & GULP (LD, 300~K) & LAMMPS (MD, 300~K) \\ \hline
+a (\AA)                   & 4.7822               & 4.7875            & 4.7875         & 4.8074      & 4.8022	\\ 
+b (\AA)                   & 4.8960               & 4.9001            & 4.9002          & 4.9193      & 4.9140	\\ 
+c (\AA)   		      & 6.9322               & 6.9366            & 6.9366          & 6.9598      & 6.9530	\\ 
+V (\AA$^{3}$)      & 162.31               & 162.73            & 162.73          & 164.59      & 164.08	\\ \hline
+C$_{11}$ (GPa)     & 500                   & 507                 & 507               & 492           & 487	\\ 
+C$_{22}$ (GPa)     & 509                   & 519                 & 519               & 502           & 498	\\ 
+C$_{33}$ (GPa)     & 398                   & 411                 & 411               & 395           & 395	\\ 
+C$_{12}$ (GPa)     & 116                   & 125                 & 125               & 117           & 116	\\ 
+C$_{13}$ (GPa)     & 210                   & 209                 & 209               & 205           & 201	\\ 
+C$_{23}$ (GPa)     & 188                   & 192                 & 192               & 185           & 184	\\ 
+C$_{44}$ (GPa)     & 174                   & 177                 & 177               & 172           & 170	\\ 
+C$_{55}$ (GPa)     & 189                   & 189                 & 189               & 186           & 184	\\ 
+C$_{66}$ (GPa)     & 102                   & 108                 & 108               & 103           & 102	\\ \hline
+K$_{H}$ (GPa)  & 270.4                & 276.5              & 276.5            & 266.8        & 269.9	\\ 
+G$_{H}$ (GPa)  & 146.3                & 150.1              & 150.0            & 145.2        & 145.7	\\
+\hline       
+\end{tabular}
+\\ \vspace{2mm}
+a, b, c, and V represent lattice vectors and unit cell volume. C$_{xx}$ denotes elastic constants. K$_{H}$ and G$_{H}$are the Voigt-Reuss-Hill averaged bulk and shear moduli. The MD LAMMPS elastic constants have standard error on the order of 0.1.
+\label{tab:oga_pot}
+\end{sidewaystable}
 
+	\par \citet{Ammann2014} used GULP and the \citet{Oganov2000} potential, and provide unit cell lattice parameters for sample lower mantle pressures and temperatures. I reproduced their data to within $\sim$0.1\% (see Table \ref{tab:ammann_comp}, page \pageref{tab:ammann_comp}), the above mentioned difference between LD and MD reducing with increased temperatures.
 
-
+\begin{sidewaystable}[htbp]
+  \centering
+  \caption{Comparison of calculated \mgsios peroskite unit cell parameters with \cite{Ammann2014}}\vspace{2mm}
+    \begin{tabular}{cc|lll|lll|lll}
+    \hline
+    \multirow{3}[2]{*}{Pressure (GPa)} & \multirow{3}[2]{*}{Value} & \multicolumn{9}{c}{Lattice parameter (\AA) at a given temperature (K)} \\
+          &       &       & 1000  &       &       & 2000  &       &       & 3000  &  \\
+          &       & a     & b     & c     & a     & b     & c     & a     & b     & c \\ \hline
+    \multirow{4}[2]{*}{20} & My work & 4.7281 & 4.8336 & 6.8215 & 4.7701 & 4.8676 & 6.8670 & 4.8220 & 4.9102 & 6.9127 \\
+          & Standard error & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0006 & 0.0006 & 0.0006 \\
+          & \citeauthor{Ammann2014} & 4.7281 & 4.8342 & 6.8221 & 4.7708 & 4.8685 & 6.8653 & 4.8293 & 4.9169 & 6.9070 \\
+          & \% Difference & 0.00  & 0.01  & 0.01  & 0.02  & 0.02  & 0.02  & 0.15  & 0.14  & 0.08 \\ \hline
+    \multirow{4}[2]{*}{130} & My work & 4.3787 & 4.5180 & 6.3290 & 4.3985 & 4.5265 & 6.3495 & 4.4191 & 4.5352 & 6.3706 \\
+          & Standard error & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0001 & 0.0001 \\
+          & \citeauthor{Ammann2014} & 4.3807 & 4.5192 & 6.3236 & 4.4003 & 4.5244 & 6.3438 & 4.4203 & 4.5347 & 6.3691 \\
+          & \% Difference & 0.05  & 0.03  & 0.08  & 0.04  & 0.05  & 0.09  & 0.03  & 0.01  & 0.02 \\
+    \hline
+    \end{tabular} 
+\\ \vspace{2mm}
+Data produced using LAMMPS is compared with the GULP results of \cite{Ammann2014}, across a range of pressure/temperature conditions. The standard error is calculated from 1E6 timesteps of NVT simulation. The percent difference refers to the variation between my work and \citeauthor{Ammann2014}'s. 
+  \label{tab:ammann_comp}%
+\end{sidewaystable}%
 
 
 
@@ -192,7 +249,7 @@ I will be using two approaches, both utilising classical interatomic potentials,
 (2) Equilibrium molecular dynamics based on the Green-Kubo relations to determine the thermal conductivity from heat flux fluctuations and their time-dependence \citep{Green1954,Kubo1957,Kubo1966,Schelling2002}. 
 
 
-\citet{Stackhouse2010} review other methods to compute thermal conductivity, including the above but also,
+\citet{Stackhouse2010} review other methods to compute thermal conductivity, including the above, but also
 
 (3) Anharmonic lattice dynamics \citep{Tang2009}. %(BTE)CHERNATYNSKIY and PHILLPOT 2010?
 
@@ -207,18 +264,27 @@ The Green-Kubo and direct method use the same underlying atomic model, but calcu
 %---------------------------------------
 \subsection{Direct method}
 %---------------------------------------
-The direct method is the computational implementation of a typical experiment to measure thermal conductivity, using Fourier's law to relate heat flux ($q$) and temperature gradient ($\nabla{T}$) to thermal conductivity ($k$), 
+The direct method is the computational implementation of a typical experiment to measure thermal conductivity, using Fourier's law to relate heat flux ($q$) and temperature gradient ($\nabla{T}$) to thermal conductivity ($k$)
 %
 \begin{equation}
-q=-k \nabla{T} 
-\label{fourier}.
+q=-k \nabla{T}\ . 
+\label{fourier}
 \end{equation}
 
 %-------------------
 \subsubsection{System setup}
 %-------------------
 
-In the direct method energy is transferred from one group of atoms to another, creating hot and cold regions between which heat flows. The resultant temperature gradient is measured by calculating the temperature of individual groups of atoms along the direction of the heat flux. Simulation cells tend to be long relative to their cross-sectional area, defined as height by width (see Figure~\ref{fig:cell_dia}). Cell boundaries are periodic and the hot and cold sections are half the cell length apart, meaning heat flows in both directions from hot to cold (one of which is across the length-end periodic boundary). This results in two similar temperature gradients which can be averaged.
+In the direct method energy is transferred from one group of atoms to another at regular intervals, creating hot and cold regions between which heat flows. This heat transfer process is implemented by taking the velocity of the lowest energy atom in the hot section, and swapping it with the highest energy atom in the cold section \citep{Muller-Plathe1997}. The resultant temperature gradient is measured by calculating the temperature of individual groups of atoms along the direction of the heat flux. Thermal conductivity is equal to the ratio of imposed heat flux to the resulting temperature gradient. This can be shown in a rearranged version of Fourier's law
+%
+\begin{equation}
+k = - \frac{\left \langle J \right \rangle}{\left \langle dT/dx \right \rangle}\ ,
+\label{fourier2}  
+\end{equation}
+%
+where $k$ is thermal conductivity, $\left \langle J \right \rangle$ is heat flux through a unit cross-sectional area, and $\left \langle dT/dx \right \rangle$ is the temperature gradient between hot and cold regions. 
+
+Simulation cells tend to be long relative to their cross-sectional area, defined as height by width (see Figure~\ref{fig:cell_dia}). Cell boundaries are periodic and the hot and cold sections are half the cell length apart, meaning heat flows in both directions from hot to cold (one of which is across the length-end periodic boundary). This results in two similar temperature gradients which can be averaged.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/cell_diagram.png}
@@ -232,23 +298,21 @@ In the direct method energy is transferred from one group of atoms to another, c
   \label{fig:ss_direct}
 \end{figure}
 
-From kinetic theory [[[REF?]]], conductivities computed by the direct method ($k_L$) are dependent on length of simulation cell,
-\begin{equation}
-k_{L} = \frac{1}{3} C_{V} v l_{L} \label{length-dep},
-\end{equation}
 
-where $C_v$ is the volumetric heat capacity, $v$ is the average phonon drift velocity, and $l_L$ is the phonon mean free path. 
 
 %-------------------
 \subsubsection{Data processing}
 %-------------------
 
+In the immediate vicinity of hot and cold regions, the temperature gradient exhibits non-linear behaviour (INSERT FIGURE) due to the non-Newtonian nature of the heat exchange. Care must be taken to measure the linear portion, which is located roughly in the middle third of the temperature gradient. 
+
 The finite size of the simulation cell truncates the mean free path, underestimating conductivity compared to that of the bulk material ($k_\infty$). Using results from simulations of varying cell length ($L$), conductivity is extrapolated to a length-independent value (where $b$ is a material dependent parameter),
-
+%
 \begin{equation}
-{k_{L}}^{-1} = b L^{-1} + {k_{\infty}}^{-1} \label{linear-extrap}.
+{k_{L}}^{-1} = b L^{-1} + {k_{\infty}}^{-1}\ . 
+\label{linear-extrap}
 \end{equation}
-
+%
 Inverse conductivities from direct method simulations are plotted against corresponding inverse cell lengths. A straight line is fit to the data and extrapolated to the y-axis (at which the inverse cell length equals zero and real length equals infinity), where the intercept gives the inverse of the bulk material conductivity \citep{Schelling2002}.
 
 \begin{figure}[h]
@@ -257,29 +321,28 @@ Inverse conductivities from direct method simulations are plotted against corres
   \label{fig:ideal}
 \end{figure}
 
+
+
 %-------------------
 \subsubsection{Finite-size effects}
 %-------------------
 
-Problems arise when the data do not support a linear trend. There are two effects of finite system size that can cause an individual direct method simulation to diverge away from an inferred/expected linear trend, both of which result in overestimation of the length-dependent conductivity data point. First, when the distance between hot and cold sections (controlled by cell length) is shorter than the MFP, phonons travel ballistically (i.e. without any scattering events) from heat source to sink \citep{Sellan2010}. Conductivites in shorter length cells are overestimated when this occurs, reducing the gradient of the linear fit and thus underestimating the extrapolated conductivity.
+From kinetic theory [[[REF?]]], conductivities computed by the direct method ($k_L$) are dependent on length of simulation cell,
+%
+\begin{equation}
+k_{L} = \frac{1}{3} C_{V} v l_{L}\ ,
+\label{length-dep}
+\end{equation}
+%
+where $C_v$ is the volumetric heat capacity, $v$ is the average phonon drift velocity, and $l_L$ is the phonon mean free path. 
+
+Problems arise when the data do not support the aforementioned linear trend. There are two effects of finite system size that can cause an individual direct method simulation to diverge away from an inferred/expected linear trend, both of which result in overestimation of the length-dependent conductivity data point. First, when the distance between hot and cold sections (controlled by cell length) is shorter than the MFP, phonons travel ballistically (i.e. without any scattering events) from heat source to sink \citep{Sellan2010}. Conductivites in shorter length cells are overestimated when this occurs, reducing the gradient of the linear fit and thus underestimating the extrapolated conductivity.
 
 For a given length, conductivity is dependent on the CSA, or aspect ratio of the simulation cell. Conductivity is overestimated due to an underestimation of phonon-phonon scattering, from sparse phonon phase sampling in cells where cross-section is small compared to length. Phonons that aren't resolved cannot contribute to phonon-phonon scattering effects. Reduced scattering means heat transport is artificially more efficient than expected from the bulk material. 
 
 [[[SPECIFIC ALERT, REFERENCING THINGS I FOUND]]] However, the required CSA to abate this FSE is length-dependent. When the CSA is smaller than required for all cell lengths (e.g. 1x1 [FIGURE]), all conductivities are overestimated \citep[][albeit for nanotube diameter?]{Thomas2010}. As the CSA is increased, the data points (and thus also the extrapolated result) shift to lower conductivities (higher inverse conductivities). It is at this point that the short cells with lengths of similar order, will report conductivities converged with respect to CSA. Assuming these cells are sufficiently long to avoid the ballistic phonon transport (BPT), a linear fit can be extrapolated to obtain conductivity (for CSA around 2x2, the case at 4000~K). 
 
-The convergence is not necessarily observed concurrently for longer cells however, where they may show overestimated conductivities compared to the fit through short cells (\cite{Hu2011}). This would cause the fit to all data to be steeper than it should, increasing the extrapolated result.  [[[HOPEFULLY THIS IS TRUE]]] I can show that increasing CSA does not change the computed conductivity at short lengths, but does reduce values from longer cells and bring them into alignment with the expected fit.
-
-%I MOVED THIS DOWN HERE RECENTLY - DO NOT IGNORE %Considering systems of varying size, length-dependent conductivities are obtained from the direct method and extrapolated to the bulk material (\citet{Schelling2002}). The validity of this extrapolation procedure have been called into question (e.g. \citet{Sellan2010}), when a linear trend cannot be fit through the length-dependent conductivities. We describe finite-size effects (FSE) which cause the conductivity result of a simulation to diverge from the value expected by a linear trend, and offer a comparison with results obtained from the Green-Kubo method. The two methods have previously been compared (e.g. \citet{Schelling2002}, and have been found to give results in good agreement.
-
-%By comparing results with the Green-Kubo method, we will constrain the cell lengths in the linear extrapolation region to mitigate these effects. 
-
-
-
-
-
-
-
-
+The convergence is not necessarily observed concurrently for longer cells however, where they may show overestimated conductivities compared to the fit through short cells (\cite{Hu2011}). This would cause the fit to all data to be steeper than it should, increasing the extrapolated result.  [[[HOPEFULLY THIS IS TRUE]]] I can show that increasing CSA does not change the computed conductivity at short lengths, but does reduce values from longer cells and bring them into alignment with the expected fit. By comparing results with the Green-Kubo method, we will constrain the cell lengths in the linear extrapolation region to mitigate these effects.
 
 
 
@@ -302,7 +365,14 @@ The convergence is not necessarily observed concurrently for longer cells howeve
 %---------------------------------------
 \subsection{Green-Kubo}
 %---------------------------------------
-The Green-Kubo method uses auto-correlation functions (ACFs) to quantify time-dependence of heat fluxes (shown in Figure~\ref{fig:gk_acf}, and Equation \ref{acf-j}), in a simulation cell of roughly cubic dimensions (WHY??) and spatially-consistent average temperature. Instantaneous heat fluxes can be used to determine how energy is dissipated within a system, where brief flux events mean heat is transferred quickly indicating high thermal conductivity [[[and vice versa, BUT IS THIS TRUE?]]]. 
+
+Equilibrium molecular dynamic (EMD) simulations consider systems with constant average temperatures, and an overall heat flux of zero. The Green-Kubo method is an example of EMD, looking at heat flux caused by temperature flucuations in a simulation cell of roughly cubic dimensions. The lattice thermal conducivity of the system is related to the duration of these variations. I will use the Green-Kubo method to compute, but also to validate direct method results and workflow.	
+
+%-------------------
+\subsubsection{Methodology}
+%-------------------
+
+The Green-Kubo method uses auto-correlation functions (ACFs) to quantify time-dependence of heat fluxes (shown in Figure~\ref{fig:gk_acf}, and Equation \ref{acf-j}). Instantaneous heat fluxes can be used to determine how energy is dissipated within a system, where brief flux events mean heat is transferred quickly indicating high thermal conductivity [[[and vice versa, BUT IS THIS TRUE?]]]. HIGHER CONDUCTIVITY, LONGER CORRELATION TIME. BRIEF FLUX EVENTS MEAN MORE DAMPING TO KILL SIGNAL. LONG CORRELATION, RESONANT SYSTEM, RINGING EFFECT, MORE EFFICIENT HEAT TRANSFER.
 
 \begin{figure}[h]
 \includegraphics[width=\linewidth]{Figures/gk_acf.png}
@@ -310,14 +380,18 @@ The Green-Kubo method uses auto-correlation functions (ACFs) to quantify time-de
 \label{fig:gk_acf}
 \end{figure}
 
-The auto-correlation is obtained over the net heat flux series in each crystallographic direction, for a timescale up to a chosen correlation length.
+The heat flux data required to generate the ACF is obtained from MD simulation in the NVE regime. As always, it is necessary to perform the NPT cell size convergence, and preliminary NVT to populate the atomic velocities.
+
+The auto-correlation is obtained over the series of net heat flux in each crystallographic direction, for a timescale up to a chosen correlation length. 
 ~
 \begin{equation}
 ACF_i = \left \langle J_i(0) \cdot  J_i(t) \right \rangle,
 \label{acf-j}
 \end{equation}
 ~
-where $i$ specifies direction, $J$ is heat flux, and $t$ is the correlation length. The integral of heat flux ACF is proportional to thermal conductivity via the Green-Kubo equation (see Figure~\ref{fig:gk_int} and Equation \ref{gk-int}), 
+where $i$ specifies direction, $J$ is heat flux, and $t$ is the correlation length. This acts as a cut-off, the significance of correlating points far apart in time decreases with the separation. The correlation length could be as long as the simulation length, but for large time differences there would be fewer and fewer heat flux pairs. This means there would be increased uncertainty on points of decreasing relevance. The correlation lengths I use are much shorter than the simulation length.  
+
+The integral of heat flux ACF is proportional to thermal conductivity via the Green-Kubo equation (see Figure~\ref{fig:gk_int} and Equation \ref{gk-int}), 
 ~
 \begin{equation}
 \kappa_i = \frac{V}{k_{B}T^{2}} \int_{0}^{\infty} \left \langle J_i(0) \cdot  J_i(t) \right \rangle dt ,
@@ -328,11 +402,21 @@ where $i$ specifies direction, $J$ is heat flux, and $t$ is the correlation leng
 
 \begin{figure}[h]
 \includegraphics[width=\linewidth]{Figures/gk_int.png}
-\caption{Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~ps - 10~ps (region in red box).}
+\caption{Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~--~10~ps (region in red box).}
 \label{fig:gk_int}
 \end{figure}
 
+
+
+
+
+%-------------------
+\subsubsection{Data processing}
+%-------------------
+
 The individual integrals obtained from the Green-Kubo show variation from the average combined integral on the order of the mean. Many simulations from different intital temperature conditions are required in order to ensure good sampling of conductivity, as well as ensuring the computation time for each is long enough for convergence. This makes Green-Kubo a computationally expensive method, especially for large systems.
+
+From a large sample of integrals, the mean integral is examined to find a time window of convergence. This region exists after the inital large variations, and before any drift behaviour. This correlation window is then applied to all integrals seperately, yielding a population of conductivities and uncertainties. I then applied a weighted average to this information, obtaining a conductivity for the entire population.
 
 The ACF should decay to zero as correlation time tends to infinity, however noise in the ACF prevents this. This will ultimately cause the integral to diverge/drift on long timescales. \citet{Howell2012} fits a series of exponential decays to their ACF, forcing the expected decay to zero and subsequent (constant) integral convergence. This is represents a significant improvement on the conductivity estimate at long correlation lengths, but is mostly similar with the un-fit integrals early in the correlation. (INTEGRAL DRIFT FIGURE, JUST THE ONE INTEGRAL FOR 100PS)
 
@@ -340,12 +424,7 @@ The ACF should decay to zero as correlation time tends to infinity, however nois
 
 
 
-%---------------------------------------
-\subsection{Other}
-%---------------------------------------
-(3) Anharmonic lattice dynamics \citep{Tang2009}. %(BTE)CHERNATYNSKIY and PHILLPOT 2010?
-\\
-(4) Combined quasiharmonic lattice dynamics and molecular dynamics method \citep{DeKoker2009}.
+
 
 
 
@@ -358,18 +437,15 @@ The ACF should decay to zero as correlation time tends to infinity, however nois
 %---------------------------------------
 
 %---------------------------------------
-\subsection{Finite-size effects}
+\subsection{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}
 %---------------------------------------
-Should this section be interspersed into when FSE are mentioned in methods?
-
-%-------------------
-\subsubsection{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}
-%-------------------
 
 
 
 
-
+%-----------------------------------------------------------
+\section{Conclusion}
+%-----------------------------------------------------------
 
 
 
