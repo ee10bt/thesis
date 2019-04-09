@@ -120,10 +120,22 @@ Part of applying classical potentials is setting up the distance over which they
 
 
 %-------------------
-\subsubsection{NPT-NVT-NVE}
+\subsubsection{MD ensembles}
 %-------------------
 
-INTRODUCE/EXPLAIN/CONTRAST - DO IT HERE TO SAVE DOING IT MULTIPLE TIMES LATER
+!!! EXPAND THIS TOPIC? MOVE UP TO MD SECTION?
+
+There are 3 styles of molecular dynamics ensemble that I will utilise over the course of this project, to perform different kinds of calculations. These are NPT, NVT, and NVE, where N refers to the number of atoms, P to pressure, T to temperature, V to volume, and E to energy. The number of atoms is kept constant in all cases presented here. 
+
+In NPT and NVT simulations, the system is thermostatted to a specified temperature. In NPT a barostat is also set, and the cell volume is allowed to equilibrate with the pressure and temperature conditions. This kind of simulation is performed before calculating parameters like thermal conductivity, in order to recreate conditions like the CMB (i.e. 136~GPa, 4000~K). One cannot simply equilibrate the system at high pressure and then run temperature initialisation, this will introduce an effect of thermal pressure. If this equilibration is performed incorrectly, one might end up with a CMB at 145~GPa for example, ultimately causing conductivity results to be overestimated (as they increase with pressure).
+
+Once the cell is of a suitable volume for the conditions of interest, the temperature of the system (via the velocities of the atoms) can be initialised through computation in the NVT regime. Freedom to control the initial temperature condition is great for studies where repeatability or gathering a sample of data is important. The structure, conditions, and subsequent computation steps don't change, but the result will varying in a given distribution from the random nature of atomic velocities and motion. While pressure is free to change, it will remain constant assuming the aforementioned NPT equilibration is perform to obtain a suitable cell volume. Volume can't change, and temperature is thermostatted, so there are no variations in thermal pressure.
+
+Once a reasonable distribution and steady average temperature are obtained, a system can be computed in the NVE ensemble. For both the direct and Green-Kubo methods I utilise, conductivity results are determined in this regime. The kinetic and potential energies of the atoms are held constant, allowing local temperature variations. The same point about variable pressure applies here as well as with NVT, but an overall consistent average temperature means a similarly average pressure. NVE is used in this was thermostatting can affect the dynamics of the system.
+
+!!! EXPAND THIS TOPIC? MOVE UP TO MD SECTION?
+
+
 
 
 
@@ -447,7 +459,9 @@ The ACF should decay to zero as correlation time tends to infinity, however nois
 \section{Conclusion}
 %-----------------------------------------------------------
 
+In this chapter I introduced atomic-scale modelling, how it can be performed, and how atoms can be made to behave like realistic materials. I outline molecular dynamics methodologies for computing thermal conductivity, and potential problems associated with them. In the following chapter I will apply these techniques to study the effects of finite simulation size on computed \bdgs conductivity result. I will use and compare both of the techniques, as they have independent finite-size effects (FSE).
 
+Once the methodology is checked to have minimized FSE, I will calculate how temperature and composition affect \bdgs conductivity at CMB conditions. This will feed into calculations of lower mantle heat flux, and how thermo-and/or-chemical piles, the large low shear velocity provinces (LLSVPs), influence lateral variations therein. This will be compared with observed shear wave velocity reductions to offer insight into the extend of LLSVP temperature and chemical heterogeneity.
 
 
 
