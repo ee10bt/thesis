@@ -56,10 +56,10 @@
 \contentsline {subsection}{\numberline {2.2.2}Green-Kubo}{39}{subsection.82}
 \contentsline {subsubsection}{Methodology}{40}{section*.83}
 \contentsline {subsubsection}{Data processing}{41}{section*.88}
-\contentsline {section}{\numberline {2.3}Previous work}{43}{section.89}
-\contentsline {subsection}{\numberline {2.3.1}Method comparison}{43}{subsection.90}
-\contentsline {subsection}{\numberline {2.3.2}STUFF THAT MIGHT BE WRONG BECAUSE FSE?}{43}{subsection.91}
-\contentsline {section}{\numberline {2.4}Conclusion}{43}{section.92}
+\contentsline {section}{\numberline {2.3}Previous work}{42}{section.89}
+\contentsline {subsection}{\numberline {2.3.1}Method comparison}{42}{subsection.90}
+\contentsline {subsection}{\numberline {2.3.2}Bridgmanite FSE}{43}{subsection.91}
+\contentsline {section}{\numberline {2.4}Conclusion}{44}{section.92}
 \contentsline {chapter}{\numberline {3}Constraining the finite-size effects of molecular dynamics methods to compute thermal coductivity}{45}{chapter.93}
 \contentsline {section}{\numberline {3.1}Introduction}{45}{section.94}
 \contentsline {subsection}{\numberline {3.1.1}Finite-size effects}{46}{subsection.95}

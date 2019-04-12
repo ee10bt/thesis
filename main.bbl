@@ -508,6 +508,87 @@
     \field{year}{2005}
   \endentry
 
+  \entry{Dong2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DH}{%
+         family={Dong},
+         familyi={D\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FZ}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Harju},
+         familyi={H\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ANT}{%
+         family={Ala-Nissila},
+         familyi={A\bibinitperiod-N\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \keyw{doi:10.1103/PhysRevB.97.094305 url:https://doi.org}
+    \strng{namehash}{DH+2}
+    \strng{fullhash}{DHFZSLHAANT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Molecular dynamics simulations play an important role in studying heat
+  transport in complex materials. The lattice thermal conductivity can be
+  computed either using the Green-Kubo formula in equilibrium MD (EMD)
+  simulations or using Fourier's law in nonequilibrium MD (NEMD) simulations.
+  These two methods have not been systematically compared for materials with
+  different dimensions and inconsistencies between them have been occasionally
+  reported in the literature. Here we give an in-depth comparison of them in
+  terms of heat transport in three allotropes of Si: three dimensional bulk
+  silicon, two-dimensional silicene, and quasi-one-dimensional silicon
+  nanowire. By multiplying the correlation time in the Green-Kubo formula with
+  an appropriate effective group velocity, we can express the running thermal
+  conductivity in the EMD method as a function of an effective length and
+  directly compare it with the length-dependent thermal conductivity in the
+  NEMD method. We find that the two methods quantitatively agree with each
+  other for all the systems studied, firmly establishing their equivalence in
+  computing thermal conductivity.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevB.97.094305
+    \endverb
+    \field{issn}{24699969}
+    \field{number}{9}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{{Equivalence of the equilibrium and the nonequilibrium
+  molecular dynamics methods for thermal conductivity calculations: From bulk
+  to nanowire silicon}}
+    \field{volume}{97}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Dong et al. - 2
+    \verb 018 - Equivalence of the equilibrium and the nonequilibrium molecular
+    \verb  dynamics methods for thermal conductivity calculati.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Rev. B}
+    \field{year}{2018}
+  \endentry
+
   \entry{Dubuffet2000}{article}{}
     \name{author}{2}{}{%
       {{hash=DF}{%
@@ -3219,6 +3300,126 @@
     \field{journaltitle}{Mineral. Petrol.}
     \field{year}{2009}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Turney2009}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TJE}{%
+         family={Turney},
+         familyi={T\bibinitperiod},
+         given={J.\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=LES}{%
+         family={Landry},
+         familyi={L\bibinitperiod},
+         given={E.\bibnamedelima S.},
+         giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MAJ}{%
+         family={McGaughey},
+         familyi={M\bibinitperiod},
+         given={A.\bibnamedelima J.H.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=ACH}{%
+         family={Amon},
+         familyi={A\bibinitperiod},
+         given={C.\bibnamedelima H.},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TJE+1}
+    \strng{fullhash}{TJELESMAJACH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Two methods for predicting phonon frequencies and relaxation times are
+  presented. The first is based on quasiharmonic and anharmonic lattice
+  dynamics calculations, and the second is based on a combination of
+  quasiharmonic lattice dynamics calculations and molecular dynamics
+  simulations. These phonon properties are then used with the Boltzmann
+  transport equation under the relaxation-time approximation to predict the
+  lattice thermal conductivity. The validity of the low-temperature assumptions
+  made in the lattice dynamics framework are assessed by comparing to thermal
+  conductivities predicted by the Green-Kubo and direct molecular dynamics
+  methods for a test system of Lennard-Jones argon. The predictions of all four
+  methods are in agreement at low temperature (20 K). At temperatures of 40 K
+  (half the Debye temperature of Lennard-Jones argon) and below, the
+  thermal-conductivity predictions from the two methods that use lattice
+  dynamics calculations are within about 30{\%} of those made using the more
+  accurate Green-Kubo and direct molecular dynamics methods. The
+  thermal-conductivity predictions using the lattice dynamics techniques become
+  inaccurate at high temperature (above 40 K) due to the approximations
+  inherent in the lattice dynamics framework. We apply the results to assess
+  the validity of (i) the isotropic approximation in modeling thermal transport
+  and (ii) the common assertion that low-frequency phonons dominate thermal
+  transport. Lastly, we suggest approximations that can be made within the
+  lattice dynamics framework that allow the thermal conductivity of
+  Lennard-Jones argon to be estimated using two orders of magnitude less
+  computing effort than the Green-Kubo or direct molecular dynamics methods.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevB.79.064301
+    \endverb
+    \field{issn}{10980121}
+    \field{number}{6}
+    \field{pages}{1\bibrangedash 12}
+    \field{title}{{Predicting phonon properties and thermal conductivity from
+  anharmonic lattice dynamics calculations and molecular dynamics simulations}}
+    \field{volume}{79}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Turney et al. -
+    \verb  2009 - Predicting phonon properties and thermal conductivity from an
+    \verb harmonic lattice dynamics calculations and molecular.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Rev. B - Condens. Matter Mater. Phys.}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Wang2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=RX}{%
+         family={Ruan},
+         familyi={R\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WZRX1}
+    \strng{fullhash}{WZRX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1063/1.4974884
+    \endverb
+    \field{number}{044301}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{{On the domain size effect of thermal conductivities from
+  equilibrium and nonequilibrium molecular dynamics simulations}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1063/1.4974884
+    \endverb
+    \field{volume}{121}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Wang, Ruan - 20
+    \verb 17 - On the domain size effect of thermal conductivities from equilib
+    \verb rium and nonequilibrium molecular dynamics simulatio.pdf:pdf
+    \endverb
+    \field{journaltitle}{J. Appl. Phys.}
+    \field{year}{2017}
   \endentry
 \endsortlist
 \endinput

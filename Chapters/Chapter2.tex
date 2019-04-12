@@ -117,6 +117,8 @@ O-O          & 2023.800        & 0.2674                  & 13.83         \\ \hli
 Part of applying classical potentials is setting up the distance over which they act, the maximum seperation between two atoms before they are not paired for force calculation. Too small a cut-off distance, and the material is not being replicated faithfully. Too large a cut-off, you are performing more calculations than you need, and will increase computation time. The potential between two atoms is inversely proportional to their separation (see Eq. \ref{eq.buck}), ``cutting off'' in this manner is acceptable when the value is tending towards zero with large interatomic distance. I consider two cut-off distances, for both the Coulombic and the Buckingham interactions (the former have a larger value than the latter).
 
  !!! BUT WHAT DID I DECIDE ON THOUGH 
+ 
+% 150527_pressures.xlsx 
 
 
 %-------------------
@@ -352,9 +354,9 @@ Problems arise when the data do not support the aforementioned linear trend. The
 
 For a given length, conductivity is dependent on the CSA, or aspect ratio of the simulation cell. Conductivity is overestimated due to an underestimation of phonon-phonon scattering, from sparse phonon phase sampling in cells where cross-section is small compared to length. Phonons that aren't resolved cannot contribute to phonon-phonon scattering effects. Reduced scattering means heat transport is artificially more efficient than expected from the bulk material. 
 
-[[[SPECIFIC ALERT, REFERENCING THINGS I FOUND]]] However, the required CSA to abate this FSE is length-dependent. When the CSA is smaller than required for all cell lengths (e.g. 1x1 [FIGURE]), all conductivities are overestimated \citep[][albeit for nanotube diameter?]{Thomas2010}. As the CSA is increased, the data points (and thus also the extrapolated result) shift to lower conductivities (higher inverse conductivities). It is at this point that the short cells with lengths of similar order, will report conductivities converged with respect to CSA. Assuming these cells are sufficiently long to avoid the ballistic phonon transport (BPT), a linear fit can be extrapolated to obtain conductivity (for CSA around 2x2, the case at 4000~K). 
+[[[SPECIFIC ALERT, REFERENCING THINGS I FOUND]]] However, the required CSA to abate this FSE is length-dependent. When the CSA is smaller than required for all cell lengths (e.g. 1x1 [FIGURE]), all conductivities are overestimated \citep{Thomas2010}. As the CSA is increased, the data points (and thus also the extrapolated result) shift to lower conductivities (higher inverse conductivities). It is at this point that the short cells with lengths of similar order, will report conductivities converged with respect to CSA. Assuming these cells are sufficiently long to avoid the ballistic phonon transport (BPT), a linear fit can be extrapolated to obtain conductivity (for CSA around 2x2, the case at 4000~K). 
 
-The convergence is not necessarily observed concurrently for longer cells however, where they may show overestimated conductivities compared to the fit through short cells (\cite{Hu2011}). This would cause the fit to all data to be steeper than it should, increasing the extrapolated result.  [[[HOPEFULLY THIS IS TRUE]]] I can show that increasing CSA does not change the computed conductivity at short lengths, but does reduce values from longer cells and bring them into alignment with the expected fit. By comparing results with the Green-Kubo method, we will constrain the cell lengths in the linear extrapolation region to mitigate these effects.
+The convergence is not necessarily observed concurrently for longer cells however, where they may show overestimated conductivities compared to the fit through short cells (\cite{Hu2011}). This would cause the fit to all data to be steeper than it should, increasing the extrapolated result.  [[[HOPEFULLY THIS IS TRUE]]] I can show that increasing CSA does not change the converged conductivities at short lengths, but does reduce values from longer cells and bring them into alignment with the expected fit. By comparing results with the Green-Kubo method, we will constrain the cell lengths in the linear extrapolation region to mitigate these effects.
 
 
 
@@ -378,7 +380,7 @@ The convergence is not necessarily observed concurrently for longer cells howeve
 \subsection{Green-Kubo}
 %---------------------------------------
 
-Equilibrium molecular dynamic (EMD) simulations consider systems with constant average temperatures, and an overall heat flux of zero. The Green-Kubo method is an example of EMD, looking at heat flux caused by temperature flucuations in a simulation cell of roughly cubic dimensions. The lattice thermal conducivity of the system is related to the duration of these variations. I will use the Green-Kubo method to compute, but also to validate direct method results and workflow.	
+Equilibrium molecular dynamic (EMD) simulations consider systems with constant average temperatures, and an overall heat flux of zero. The Green-Kubo method is an example of EMD, looking at heat flux caused by temperature flucuations in a simulation cell of roughly cubic dimensions. The lattice thermal conducivity of the system is related to the duration of these variations. I will use the Green-Kubo method to compute, but also to validate direct method results and workflow.	While the direct method has complex finite-size effects based on length and cross-sectional area, Green-Kubo is simpler in that number of atoms is the main factor. As long as the system is big enough, there is no need to care about arranging the cells or extrapolation procedures.
 
 %-------------------
 \subsubsection{Methodology}
@@ -432,7 +434,7 @@ From a large sample of integrals, the mean integral is examined to find a time w
 
 The ACF should decay to zero as correlation time tends to infinity, however noise in the ACF prevents this. This will ultimately cause the integral to diverge/drift on long timescales. \citet{Howell2012} fits a series of exponential decays to their ACF, forcing the expected decay to zero and subsequent (constant) integral convergence. This is represents a significant improvement on the conductivity estimate at long correlation lengths, but is mostly similar with the un-fit integrals early in the correlation. (INTEGRAL DRIFT FIGURE, JUST THE ONE INTEGRAL FOR 100PS)
 
-(STACKHOUSE 2010 REFERENCES Volz and Chen 2000; Sun and Murthy 2006)
+!!! (STACKHOUSE 2010 REFERENCES Volz and Chen 2000; Sun and Murthy 2006)
 
 
 
@@ -448,10 +450,17 @@ The ACF should decay to zero as correlation time tends to infinity, however nois
 \subsection{Method comparison}
 %---------------------------------------
 
+A wealth of data comparing the conductivities yielded by non-equilibrium and equilibrium molecular dynamics is available for silicon, at temperatures around 1000~K. \citet{Schelling2002} consider Sillinger-Weber silicon, and find good agreement in conductivity results, once FSE are addressed. \citet{Sellan2010} consider the same material and find the two methods don't agree at a lower temperature of 500~K, although it is agrued by \citet{Howell2012} that there direct method finite-size scaling was inappropriate. \citeauthor{Howell2012} performs their own calculations and review of literature, finding consistent results between the methods and the suite of studies considered. \citet{Wang2017} contribute further results consistent with \citeauthor{Howell2012} for SW Si at 1000~K, as well showing agreement between methods for graphene and silicene at 300~K. 
+
+\citet{Dong2018} show consistency between NEMD and EMD for silicene and Si nanowires. \citet{Turney2009} show very coherent agreements for Lennard-Jones argon across a range of simulation methods, including NEMD, EMD Green-Kubo, along with Boltzmann transport equation and lattice dynamics approaches. None of these studies consider a material as complicated as \bdgs however, of which I will show the equivalence (or lack thereof) of computed conductivity between the direct and Green-Kubo methods.
+
 %---------------------------------------
-\subsection{STUFF THAT MIGHT BE WRONG BECAUSE FSE?}
+\subsection{Bridgmanite FSE}
 %---------------------------------------
 
+As introduced earlier, \citet{Ammann2014} used NEMD to calculate the thermal conductivity of \bdg. For conditions of 20~GPa and 2000K, they observe convergence with respect to cross-sectional area (CSA) with dimensions of 2$\times$2 unit cells (UC), irrespective of crystallographic direction. They only consider cell lengths up to 32 unit cells however, which means they may be missing the effect understimated phonon-phonon scattering for a small CSA. Their extrapolation is not incorrect for the results that they have (see their Figure 3), but the gradient can be seen to decrease when 3$\times$3 CSA is considered. The computed conductivity of cells over 20~UC decreases as this area increases, possibly due to increased phonon-phonon scattering effect. I will investigate this further by studying longer systems with larger CSAs.
+
+!!! ALSO CONSIDER STACKHOUSE 2015?
 
 
 
