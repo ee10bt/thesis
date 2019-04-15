@@ -36,28 +36,27 @@
 \contentsline {subsection}{\numberline {1.5.2}Objectives}{23}{subsection.51}
 \contentsline {chapter}{\numberline {2}Computing thermal conductivity}{25}{chapter.52}
 \contentsline {section}{\numberline {2.1}Atomic-scale modelling}{25}{section.53}
-\contentsline {subsection}{\numberline {2.1.1}Computational approaches (for modelling atoms...?)}{26}{subsection.54}
+\contentsline {subsection}{\numberline {2.1.1}Computational regimes}{26}{subsection.54}
 \contentsline {subsubsection}{Molecular dynamics}{26}{section*.55}
-\contentsline {subsubsection}{Lattice dynamics}{26}{section*.56}
-\contentsline {subsection}{\numberline {2.1.2}Calculating atomic interactions}{27}{subsection.57}
-\contentsline {subsubsection}{Density functional theory}{27}{section*.58}
-\contentsline {subsubsection}{Classical interatomic potentials}{27}{section*.59}
-\contentsline {subsubsection}{Oganov's bridgmanite potential}{28}{section*.60}
-\contentsline {subsubsection}{SETTING UP POTENTIAL CUTOFFS}{29}{section*.63}
-\contentsline {subsubsection}{MD ensembles}{29}{section*.64}
-\contentsline {subsection}{\numberline {2.1.3}Finite-size effects}{30}{subsection.65}
-\contentsline {subsubsection}{LAMMPS}{31}{section*.66}
-\contentsline {subsubsection}{Calibration and comparison}{31}{section*.67}
+\contentsline {subsubsection}{Lattice dynamics}{28}{section*.57}
+\contentsline {subsection}{\numberline {2.1.2}Calculating atomic interactions}{28}{subsection.58}
+\contentsline {subsubsection}{Density functional theory}{28}{section*.59}
+\contentsline {subsubsection}{Classical interatomic potentials}{29}{section*.60}
+\contentsline {subsection}{\numberline {2.1.3}Finite-size effects}{29}{subsection.61}
+\contentsline {subsubsection}{Why use LAMMPS?}{30}{section*.62}
+\contentsline {subsection}{\numberline {2.1.4}Oganov's bridgmanite potential}{30}{subsection.63}
+\contentsline {subsubsection}{CALIBRATING CUTOFFS}{31}{section*.66}
+\contentsline {subsubsection}{COMPARING RESULTS}{31}{section*.67}
 \contentsline {section}{\numberline {2.2}Computing thermal conductivity}{35}{section.70}
 \contentsline {subsection}{\numberline {2.2.1}Direct method}{35}{subsection.71}
 \contentsline {subsubsection}{System setup}{36}{section*.73}
-\contentsline {subsubsection}{Data processing}{36}{section*.77}
-\contentsline {subsubsection}{Finite-size effects}{37}{section*.80}
-\contentsline {subsection}{\numberline {2.2.2}Green-Kubo}{39}{subsection.82}
+\contentsline {subsubsection}{Data processing}{37}{section*.77}
+\contentsline {subsubsection}{Finite-size effects}{39}{section*.80}
+\contentsline {subsection}{\numberline {2.2.2}Green-Kubo}{40}{subsection.82}
 \contentsline {subsubsection}{Methodology}{40}{section*.83}
 \contentsline {subsubsection}{Data processing}{41}{section*.88}
 \contentsline {section}{\numberline {2.3}Previous work}{42}{section.89}
-\contentsline {subsection}{\numberline {2.3.1}Method comparison}{42}{subsection.90}
+\contentsline {subsection}{\numberline {2.3.1}Method comparison}{43}{subsection.90}
 \contentsline {subsection}{\numberline {2.3.2}Bridgmanite FSE}{43}{subsection.91}
 \contentsline {section}{\numberline {2.4}Conclusion}{44}{section.92}
 \contentsline {chapter}{\numberline {3}Constraining the finite-size effects of molecular dynamics methods to compute thermal coductivity}{45}{chapter.93}
