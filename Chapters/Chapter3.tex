@@ -37,9 +37,9 @@ In this section I talk about my specific approaches to applying the methods disc
 %---------------------------------------
 
 The simulation supercell is split into sections along its length, each half a unit cell wide. 
-Two of these sections, half the supercell length apart, are designated as the heat source and heat sink. We measure (HOW?) the temperature in all sections to obtain the temperature gradient. Heat flows in both directions from the hot section because of cell periodicity [NEED DIRECT METHOD DIAGRAM BY THIS PARA], meaning there are two temperature gradients to average. Where L is supercell length in unit cells and S (= 2L) gives the number of sections, we obtain S/2 + 1 temperature points to fit the gradient. Because the temperature gradient is non-linear around the heat source and sink, we ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell we fit S/3 + 1 points to obtain the temperature gradient. We use a minimum supercell length of 6 unit cells (12 sections, 5 data points), in order for sufficient fitting of the temperature gradient. [HOW NECESSARY IS THIS PARA, VERY JARGONY]
+Two of these sections, half the supercell length apart, are designated as the heat source and heat sink. We measure (HOW?) the temperature in all sections to obtain the temperature gradient. Heat flows in both directions from the hot section because of cell periodicity (REF BACK), meaning there are two temperature gradients to average. Where L is supercell length in unit cells and S (= 2L) gives the number of sections, we obtain S/2 + 1 temperature points to fit the gradient. Because the temperature gradient is non-linear around the heat source and sink, we ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell we fit S/3 + 1 points to obtain the temperature gradient. We use a minimum supercell length of 6 unit cells (12 sections, 5 data points), in order for sufficient fitting of the temperature gradient. [HOW NECESSARY IS THIS PARA, VERY JARGONY]
 
-(MOVE TO RESULTS?) Changing the width of the heated sections has no effect on the conductivity result. Furthermore, changing the width (and thus number) of temperature bins has no effect on the sampled gradient, assuming resolution is large enough to capture the non-linear region around the heat source/sink.
+(MOVE TO RESULTS?) Changing the width of the heated sections has no effect on the conductivity result. Furthermore, changing the width (and thus number) of temperature bins has no effect on the sampled gradient, assuming resolution is large enough to capture the non-linear region around the heat source/sink. % 170222_stuff.xlsx
 
 An important factor for utilising the direct method is maintaining a sensible temperature gradient where Fourier's law remains valid, i.e. conductivity is constant along the length of the cell. Thermal conductivity is strongly temperature-dependent at upper lower-mantle conditions (1000~K), it is therefore undesirable to have substanially different conductivities as a of function of temperature across the cell. The opposite case is also true, the difference in temperature between hot and cold sections must be larger than the uncertainty in the average system temperature. 
 
@@ -49,22 +49,23 @@ We typically observe fluctuations in temperature of around $\pm$50~K during temp
 \subsection{\label{sec:3.GK}Green-Kubo}
 %---------------------------------------
 
-The bridgmanite unit cell does not have cell dimensions resembling a cube (a:b:c = 1:1:1.4), so we use supercell structures of 3x3x2, 4x4x3, 5x5x4, 6x6x4 etc. to make an approximately cubic simulation cell (((WHY IS IT CUBIC THOUGH I HAVEN'T CONVINCED MYSELF))). Temperature initialisation (NVT) of 1~ns is run to ensure convergence of system pressure and temperature. To obtain heat flux auto-correlation functions, a simulation for each initial temperature condition is run for X~ns, with 9 successive repeats for a total of 10 jobs. This gives 10 ACFs from each initial condition. Simulation runs are split in this manner to be feasible computationally, jobs submitted to the high-performance computing facilities have a maximum length of 48~hours. Each job finished in this manner produces an ACF, somewhat of a bootstrapping process on the total simulation series.
+The bridgmanite unit cell does not have cell dimensions resembling a cube (a:b:c = 1:1:1.4), so we use supercell structures of 3x3x2, 4x4x3, 5x5x4, 6x6x4 etc. to make an approximately cubic simulation cell (((WHY IS IT CUBIC THOUGH, I HAVEN'T CONVINCED MYSELF YET))). Temperature initialisation (NVT) of 1~ns is run to ensure convergence of system pressure and temperature. To obtain heat flux auto-correlation functions, a simulation for each initial temperature condition is run for X~ns, with 9 successive repeats for a total of 10 jobs. This gives 10 ACFs from each initial condition. Simulation runs are split in this manner to be feasible computationally, jobs submitted to the high-performance computing facilities have a maximum length of 48~hours. Each job finished in this manner produces an ACF, somewhat of a bootstrapping process on the total simulation series.
 
 
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+\begin{tabular}{cccrr}
+Supercell                        & Simulation length & \# initial conditions & \multicolumn{2}{c}{Total run time}           \\ \hline
+3x3x2                             & 10 ns                     & 20                             & \multicolumn{2}{r}{2 $\mu$s}   \\ \hline
+4x4x3                             & 10 ns                     & 30                             & \multicolumn{2}{r}{3 $\mu$s}               \\ \hline
+\multirow{2}{*}{5x5x4} & 5 ns                       & 20                             & 1 $\mu$s     & \multirow{2}{*}{1.7 $\mu$s} \\
+                                       & 1 ns                       & 70                              & 0.7 $\mu$s &                               \\ \hline
+6x6x4                            & 1 ns                       & 80                              & \multicolumn{2}{r}{0.8 $\mu$s}            
+\end{tabular}
+\end{table}
 
-
-3x3x2 - X = 10~ns, for 20 inital conditions - 2~$\mu$s total time
-
-4x4x3 - X = 10~ns, for 30 inital conditions - 3~$\mu$s total time
-
-5x5x4 - X = 5~ns, for 20 inital conditions - 1~$\mu$s, X = 1~ns, for 70 inital conditions - 0.7~$\mu$s, 1.7~$\mu$s total time
-
-6x6x4 - X = 1~ns, for 80 inital conditions - 0.8~$\mu$s total time
-
-THIS INFO IN A TABLE, OR JUST GIVE FOR THE RELEVANT VOLUME?
-
-I DON'T LIKE THE INCLUSION OF ALL THE ABOVE INFORMATION
+!!! Did I get these numbers from 4000~K simulations? Use this table to show I've been thorough, I'm not showing it for everything.
 
 In this study we compute ACFs up to correlation lengths of 100~ps, with (100,000) 1~fs timesteps. This length is longer than required but selected as a proof of concept to show convergence in the conductivity result, additionally to display the extent and behaviour of drift in the integrals for long correlation times. We show in Figure \ref{fig:acf_decay} that the magnitude of the ACF decays to much less than 1\% of its initial value around a correlation time of 2~ps, inferring the start of convergence for the integral and thus conductivity.
 

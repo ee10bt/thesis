@@ -65,37 +65,37 @@
 \contentsline {section}{\numberline {3.2}Computational approaches}{46}{section.96}
 \contentsline {subsection}{\numberline {3.2.1}Direct method}{46}{subsection.97}
 \contentsline {subsection}{\numberline {3.2.2}Green-Kubo}{47}{subsection.98}
-\contentsline {section}{\numberline {3.3}Results}{49}{section.99}
-\contentsline {subsection}{\numberline {3.3.1}Green-Kubo}{49}{subsection.100}
-\contentsline {subsection}{\numberline {3.3.2}Direct method}{49}{subsection.101}
-\contentsline {section}{\numberline {3.4}Summary}{50}{section.102}
-\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{53}{chapter.103}
-\contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{53}{section.104}
-\contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{54}{subsection.106}
-\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{55}{section*.109}
-\contentsline {subsubsection}{What effects the magnitude of impurity scattering?}{55}{section*.110}
-\contentsline {subsection}{\numberline {4.1.2}$\omega $ and $\tau $ in depth}{56}{subsection.113}
-\contentsline {section}{\numberline {4.2}Methodology}{59}{section.122}
-\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{59}{subsection.123}
-\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{60}{subsection.127}
-\contentsline {section}{\numberline {4.3}Results}{61}{section.129}
-\contentsline {section}{\numberline {4.4}Parameterising composition and temperature effects on CMB conductivity}{65}{section.133}
-\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{65}{subsection.134}
-\contentsline {subsubsection}{Compositional dependence}{66}{section*.135}
-\contentsline {subsubsection}{Why does this model work?}{68}{section*.143}
-\contentsline {subsubsection}{Temperature dependence}{70}{section*.145}
-\contentsline {subsection}{\numberline {4.4.2}MEAN FREE PATH}{72}{subsection.155}
-\contentsline {subsubsection}{MFP FROM DM EXTRAPOLATION}{72}{section*.156}
-\contentsline {subsubsection}{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}{74}{section*.158}
-\contentsline {subsubsection}{C(1-C) MODEL LIMITATIONS}{75}{section*.159}
-\contentsline {subsubsection}{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}{75}{section*.160}
-\contentsline {subsubsection}{MASS VS. POTENTIAL IN MODELLING FE}{75}{section*.161}
-\contentsline {chapter}{\numberline {5}Using STUFF to do THINGS}{77}{chapter.162}
-\contentsline {section}{\numberline {5.1}Draft words}{77}{section.163}
-\contentsline {subsection}{\numberline {5.1.1}Notes}{79}{subsection.166}
-\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{81}{chapter.167}
-\contentsline {section}{\numberline {6.1}Main Section 1}{81}{section.168}
-\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{81}{subsection.169}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{83}{appendix.170}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{83}{section.171}
-\contentsline {chapter}{Bibliography}{85}{appendix*.172}
+\contentsline {section}{\numberline {3.3}Results}{49}{section.100}
+\contentsline {subsection}{\numberline {3.3.1}Green-Kubo}{49}{subsection.101}
+\contentsline {subsection}{\numberline {3.3.2}Direct method}{49}{subsection.102}
+\contentsline {section}{\numberline {3.4}Summary}{50}{section.103}
+\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{53}{chapter.104}
+\contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{53}{section.105}
+\contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{54}{subsection.107}
+\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{55}{section*.110}
+\contentsline {subsubsection}{What effects the magnitude of impurity scattering?}{55}{section*.111}
+\contentsline {subsection}{\numberline {4.1.2}$\omega $ and $\tau $ in depth}{56}{subsection.114}
+\contentsline {section}{\numberline {4.2}Methodology}{59}{section.123}
+\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{59}{subsection.124}
+\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{60}{subsection.128}
+\contentsline {section}{\numberline {4.3}Results}{61}{section.130}
+\contentsline {section}{\numberline {4.4}Parameterising composition and temperature effects on CMB conductivity}{65}{section.134}
+\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{65}{subsection.135}
+\contentsline {subsubsection}{Compositional dependence}{66}{section*.136}
+\contentsline {subsubsection}{Why does this model work?}{68}{section*.144}
+\contentsline {subsubsection}{Temperature dependence}{70}{section*.146}
+\contentsline {subsection}{\numberline {4.4.2}MEAN FREE PATH}{72}{subsection.156}
+\contentsline {subsubsection}{MFP FROM DM EXTRAPOLATION}{72}{section*.157}
+\contentsline {subsubsection}{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}{74}{section*.159}
+\contentsline {subsubsection}{C(1-C) MODEL LIMITATIONS}{75}{section*.160}
+\contentsline {subsubsection}{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}{75}{section*.161}
+\contentsline {subsubsection}{MASS VS. POTENTIAL IN MODELLING FE}{75}{section*.162}
+\contentsline {chapter}{\numberline {5}Using STUFF to do THINGS}{77}{chapter.163}
+\contentsline {section}{\numberline {5.1}Draft words}{77}{section.164}
+\contentsline {subsection}{\numberline {5.1.1}Notes}{79}{subsection.167}
+\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{81}{chapter.168}
+\contentsline {section}{\numberline {6.1}Main Section 1}{81}{section.169}
+\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{81}{subsection.170}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{83}{appendix.171}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{83}{section.172}
+\contentsline {chapter}{Bibliography}{85}{appendix*.173}

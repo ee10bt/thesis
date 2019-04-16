@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.4)  15 APR 2019 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.4)  16 APR 2019 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2457,29 +2457,33 @@ Overfull \vbox (21.89601pt too high) has occurred while \output is active []
 
 [46] [47]
 
-LaTeX Warning: Reference `fig:acf_decay' on page 48 undefined on input line 69.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 57.
+
+
+LaTeX Warning: Reference `fig:acf_decay' on page 48 undefined on input line 70.
 
 
 [48]
 
 LaTeX Warning: Reference `fig:direct_length_graph_4000' on page 49 undefined on
- input line 89.
+ input line 90.
 
 
 LaTeX Warning: Reference `fig:direct_length_graph_1000' on page 49 undefined on
- input line 89.
+ input line 90.
 
 
 LaTeX Warning: Reference `fig:direct_length_graph' on page 49 undefined on inpu
-t line 91.
+t line 92.
 
 
 LaTeX Warning: Reference `sec:theory.direct' on page 49 undefined on input line
- 91.
+ 92.
 
 [49]
 
-LaTeX Warning: Reference `fig:gk-direct' on page 50 undefined on input line 93.
+LaTeX Warning: Reference `fig:gk-direct' on page 50 undefined on input line 94.
 
 
 [50]) [51]
@@ -2554,7 +2558,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
 
 [56]
-<Figures/effective-phonon-relaxation-time.png, id=1205, 703.12688pt x 471.26062
+<Figures/effective-phonon-relaxation-time.png, id=1206, 703.12688pt x 471.26062
 pt>
 File: Figures/effective-phonon-relaxation-time.png Graphic file (type png)
  <use Figures/effective-phonon-relaxation-time.png>
@@ -2562,7 +2566,7 @@ Package pdftex.def Info: Figures/effective-phonon-relaxation-time.png used on i
 nput line 127.
 (pdftex.def)             Requested size: 404.02908pt x 270.79298pt.
  [57 <./Figures/effective-phonon-relaxation-time.png>] [58] [59] [60]
-<Figures/substitution_05-collated.png, id=1250, 1014.03844pt x 1021.56656pt>
+<Figures/substitution_05-collated.png, id=1251, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 
 <use Figures/substitution_05-collated.png>
@@ -2573,7 +2577,7 @@ e 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-t_all_02.png, id=1252, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=1253, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 
 <use Figures/k-t_all_02.png>
@@ -2584,7 +2588,7 @@ Package pdftex.def Info: Figures/k-t_all_02.png used on input line 234.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [61] [62 <./Figures/substitution_05-collated.png>]
-<Figures/k-c_all_01.png, id=1266, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=1267, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 
 <use Figures/k-c_all_01.png>
@@ -2594,7 +2598,7 @@ Package pdftex.def Info: Figures/k-c_all_01.png used on input line 246.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=1268, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=1269, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 
 <use Figures/K_over_T_over_X.png>
@@ -2622,21 +2626,21 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 328--328
 Overfull \vbox (1.03882pt too high) detected at line 328
  []
 
-<Figures/draft_XT.png, id=1306, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=1307, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png used on input line 348.
 (pdftex.def)             Requested size: 404.02908pt x 121.50237pt.
  [67 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=1317, 797.98125pt x 490.83376pt>
+<Figures/draft_XTT.png, id=1318, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png used on input line 363.
 (pdftex.def)             Requested size: 404.02908pt x 248.51692pt.
  [68 <./Figures/draft_XTT.png>]
-<Figures/k-c_demo-cartoon.png, id=1332, 888.31876pt x 502.12593pt>
+<Figures/k-c_demo-cartoon.png, id=1333, 888.31876pt x 502.12593pt>
 File: Figures/k-c_demo-cartoon.png Graphic file (type png)
 
 <use Figures/k-c_demo-cartoon.png>
@@ -2647,7 +2651,7 @@ Package pdftex.def Info: Figures/k-c_demo-cartoon.png used on input line 386.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [69] [70 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [71]
-<Figures/draft_VrefV-T.png, id=1361, 393.72093pt x 179.16937pt>
+<Figures/draft_VrefV-T.png, id=1362, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 
 <use Figures/draft_VrefV-T.png>
@@ -2673,7 +2677,7 @@ Chapter 5.
 
 
 
-] <Figures/sph_harm.png, id=1396, 796.47563pt x 204.765pt>
+] <Figures/sph_harm.png, id=1397, 796.47563pt x 204.765pt>
 File: Figures/sph_harm.png Graphic file (type png)
 
 <use Figures/sph_harm.png>
@@ -2785,7 +2789,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 383.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 383.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 383.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6E895BD7FB1A828F34B1FC04C44DC44C;17050.
+(rerunfilecheck)             Checksum: F21389F916A9E5704697F9023528DCFB;17053.
 
 
 LaTeX Warning: There were undefined references.
@@ -2798,9 +2802,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34121 strings out of 492995
- 684359 string characters out of 6132705
- 978170 words of memory out of 5000000
+ 34122 strings out of 492995
+ 684377 string characters out of 6132705
+ 978171 words of memory out of 5000000
  36892 multiletter control sequences out of 15000+600000
  78729 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2819,10 +2823,10 @@ st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
 /urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/pa
 latino/uplri8a.pfb>
-Output written on main.pdf (117 pages, 1547124 bytes).
+Output written on main.pdf (117 pages, 1547322 bytes).
 PDF statistics:
- 1720 PDF objects out of 1728 (max. 8388607)
- 1532 compressed objects within 16 object streams
- 350 named destinations out of 1000 (max. 500000)
+ 1721 PDF objects out of 1728 (max. 8388607)
+ 1533 compressed objects within 16 object streams
+ 351 named destinations out of 1000 (max. 500000)
  890 words of extra memory for PDF output out of 10000 (max. 10000000)
 
