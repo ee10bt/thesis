@@ -52,9 +52,11 @@ We typically observe fluctuations in temperature of around $\pm$50~K during temp
 The bridgmanite unit cell does not have cell dimensions resembling a cube (a:b:c = 1:1:1.4), so we use supercell structures of 3x3x2, 4x4x3, 5x5x4, 6x6x4 etc. to make an approximately cubic simulation cell (((WHY IS IT CUBIC THOUGH, I HAVEN'T CONVINCED MYSELF YET))). Temperature initialisation (NVT) of 1~ns is run to ensure convergence of system pressure and temperature. To obtain heat flux auto-correlation functions, a simulation for each initial temperature condition is run for X~ns, with 9 successive repeats for a total of 10 jobs. This gives 10 ACFs from each initial condition. Simulation runs are split in this manner to be feasible computationally, jobs submitted to the high-performance computing facilities have a maximum length of 48~hours. Each job finished in this manner produces an ACF, somewhat of a bootstrapping process on the total simulation series.
 
 
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-\begin{table}[]
+\begin{table}[h]
+
+\centering
+\caption[CONTENTS1]{4000~K}%\vspace{2mm}
+
 \begin{tabular}{cccrr}
 Supercell                        & Simulation length & \# initial conditions & \multicolumn{2}{c}{Total run time}           \\ \hline
 3x3x2                             & 10 ns                     & 20                             & \multicolumn{2}{r}{2 $\mu$s}   \\ \hline
@@ -63,9 +65,33 @@ Supercell                        & Simulation length & \# initial conditions & \
                                        & 1 ns                       & 70                              & 0.7 $\mu$s &                               \\ \hline
 6x6x4                            & 1 ns                       & 80                              & \multicolumn{2}{r}{0.8 $\mu$s}            
 \end{tabular}
+
+%\\ \vspace{2mm}
+% UNDERTABLE TEXT CAN GO HERE
+\label{tab:gk_fse_times_4K}
 \end{table}
 
-!!! Did I get these numbers from 4000~K simulations? Use this table to show I've been thorough, I'm not showing it for everything.
+%---
+
+\begin{table}[h]
+
+\centering
+\caption[CONTENTS2]{1000~K}%\vspace{2mm}
+
+\begin{tabular}{cccc}
+Supercell                        & Simulation length & \# initial conditions    & Total run time           \\ \hline
+3x3x2                             & 1 ns                        & 20                                & 0.2 $\mu$s               \\ \hline
+4x4x3                             & 1 ns                        & 50                                & 0.5 $\mu$s               \\ \hline
+5x5x4                             & 1 ns                        & 50                                & 0.5 $\mu$s               \\ \hline
+6x6x4                             & 1 ns                        & 50                                & 0.5 $\mu$s            
+\end{tabular}
+
+%\\ \vspace{2mm}
+% UNDERTABLE TEXT CAN GO HERE
+\label{tab:gk_fse_times_1K}
+
+\end{table}
+
 
 In this study we compute ACFs up to correlation lengths of 100~ps, with (100,000) 1~fs timesteps. This length is longer than required but selected as a proof of concept to show convergence in the conductivity result, additionally to display the extent and behaviour of drift in the integrals for long correlation times. We show in Figure \ref{fig:acf_decay} that the magnitude of the ACF decays to much less than 1\% of its initial value around a correlation time of 2~ps, inferring the start of convergence for the integral and thus conductivity.
 
