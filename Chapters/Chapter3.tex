@@ -8,13 +8,13 @@
 \section{\label{sec:3.intro}Introduction}
 %-----------------------------------------------------------
 
-!!! EDIT THIS
+!!! EDIT THIS - HOW MUCH OF THIS HAVE I EXPLAINED ALREADY? HOW MUCH IS THAT A PROBLEM?
 
 Knowledge of the thermal conductivity of solids is key in a wide range of technological applications and for our understanding of natural systems. For example, in the Earth's lower mantle thermal conductivity controls the nature of planetary convection \citep{Tosi2013}, and the heat flux out of the core which powers the geotherm. Low thermal conductivities are required in thermoelectric materials, to maximise the efficiency of heat-electricity conversion \citep{Snyder2008}.
 
 A range of atomic scale simulation methods are available to determine the lattice thermal conductivity of materials. These are invaluable for calculating thermal conductivity at conditions of which experiments are difficult, e.g. the extreme conditions found in the Earth's lower mantle (pressures and temperatures up to 136~GPa and 4000~K at the core-mantle boundary).
 
-(MOVE - to where though?) Many studies assume lowermost mantle thermal conductivity to be 10~\wmk~\citep[e.g.][]{Lay2008}, but uncertainty in the extrapolation of results made at low pressures and temperatures gives a range of 4~-~16 \wmk~\citep{Brown1986, Osako1991, Hofmeister1999, Goncharov2009, Manthilake2011, Ohta2012}.
+%(MOVE - to where though?) Many studies assume lowermost mantle thermal conductivity to be 10~\wmk~\citep[e.g.][]{Lay2008}, but uncertainty in the extrapolation of results made at low pressures and temperatures gives a range of 4~-~16 \wmk~\citep{Brown1986, Osako1991, Hofmeister1999, Goncharov2009, Manthilake2011, Ohta2012}.
 
 %---------------------------------------
 \subsection{\label{sec:3.FSE}Finite-size effects}
@@ -60,7 +60,13 @@ Two of these sections, half the supercell length apart, are designated as the he
 
 !!! DOES THIS SECTION NEED TO EXIST?
 
-Changing the width of the heated sections has no effect on the conductivity result, assuming you have enough temperature points to fit the linear gradient. Furthermore, changing the width (and thus number) of temperature bins has no effect on the sampled gradient, assuming resolution is large enough to capture the non-linear region around the heat source/sink. % 170222_stuff.xlsx
+Changing the width of the heated sections has no effect on the conductivity result, assuming you have enough temperature points to fit the linear gradient. Furthermore, changing the width (and thus number) of temperature bins has no effect on the sampled gradient, assuming resolution is large enough to capture the non-linear region around the heat source/sink (see Figure~\ref{fig:direct bin width}). 
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_bin_width.png}
+\caption[direct bin width]{Conductivity results from direct method when temperature is calculated from sections half a unit cell wide, and also a twelfth of the total length. The amount of points in the temperature gradient changes when the section width depends on the unit cell, but not on the length (i.e. there are always twelve sections, the gradient is fit to five data points).}
+\label{fig:direct bin width}
+\end{figure}
 
 
 %---------------------------------------
