@@ -43,7 +43,7 @@ In this section I will talk specifically about how I apply the direct method to 
 \subsection{\label{sec:3.DM.cell}Setting up supercells}
 %---------------------------------------
 
-!!! HOW IS HEAT FLOW ESTABLISHED? REF BACK?
+!!! HOW IS HEAT FLOW ESTABLISHED? REF BACK? MULLER PLATHE
 
 In order to investigate how FSE can affect direct method results, I plan to use very large cells, both in length and cross sectional area. To capture a large section of inverse-length space during processing (more on this later, REF?), I will use supercells up to 96 unit cells long in the x-direction of heat flow (specifically 6, 8, 10, 12, 16, 24, 48, and 96 unit cells long). Perpendicular to this length, I will use supercells with a cross section up to 12$\times$12 unit cells (1$\times$1, 2$\times$1, 2$\times$2, 4$\times$4, 8$\times$8, and 12$\times$12).
 
@@ -69,9 +69,9 @@ Changing the width of the heated sections has no effect on the conductivity resu
 
 !!! GRAPHS AND STUFF - EDIT HEAVILY!
 
-An important factor for utilising the direct method is maintaining a sensible temperature gradient where Fourier's law remains valid, i.e. conductivity is constant along the length of the cell. Thermal conductivity is strongly temperature-dependent at upper lower-mantle conditions (1000~K), it is therefore undesirable to have substanially different conductivities as a of function of temperature across the cell. The opposite case is also true, the difference in temperature between hot and cold sections must be larger than the uncertainty in the average system temperature. 
+An important factor for utilising the direct method is maintaining a sensible temperature gradient, such that Fourier's law (REF) remains valid, i.e. conductivity is constant along the length of the cell. Thermal conductivity is strongly temperature-dependent at upper lower-mantle conditions (1000~K), it is therefore undesirable to have substanially different conductivities as a of function of temperature across the cell. The opposite case is also true, the difference in temperature between hot and cold sections must be larger than the uncertainty in the average system temperature. 
 
-We typically observe fluctuations in temperature of around $\pm$50~K during temperature equilibration, and look for temperature increases/decreases on the order of 10\% the mean temperature. We control the magnitude of the gradient by altering the interval at which heat is exchanged. To produce the desired gradients we find shorter intervals are required as cell length decreases, cross-sectional area increases, and system equilibrium temperature decreases.
+As a general rule, I try to keep the temperature difference between the ends of the gradient to 20\% the mean temperature. I control the magnitude of the gradient by altering the interval at which heat is exchanged (REF BACK?). To produce the desired gradient magnitude as outlined above, shorter intervals are required as cell length decreases, cross-sectional area increases, and system equilibrium temperature decreases. The easier it is for heat to flow from hot to cold (smaller distance between, more area for heat transport, lower temperature/less thermal resistance), the more heat must be transported (in the form of shorter intervals between heat swaps) to maintain the temperature gradient.
 
 
 %---------------------------------------
@@ -80,12 +80,24 @@ We typically observe fluctuations in temperature of around $\pm$50~K during temp
 
 !!! SHOW CONVERGENCE ONCE, THEN ASSUME READER HAS FAITH IN ME
 
+Initial results from the direct method show a large variability in conductivity, despite the seperate temperature equilibration performed beforehand. This is related to the setup of the temperature gradient and its transition to steady behaviour. For this reason, the timesteps containing this behaviour are ignored when determining conductivity. This simply means removing the temperature gradient and heat flow data from the rest of the series. How this is applied varies in practice, but on a 1~ns simulation, I would typically ingnore the first 100~ps (10\% simulation time).
+
+!!! FIGURES NEEDED EVERYWHERE
+
+After removing the first portion of the data there is still variability in the calculated conductivity, but this typically converges quickly over the course of the simulation. If you have enough timesteps, the cumulative average of conductivity will tend towards a value while the uncertainty decreases. This is a simple check to ensure accurate results, where the simulation can be extended if more data is required.
+
+!!! FIGURES NEEDED EVERYWHERE
+
+It is possible for a simulation to be too long however, where the conductivity result will drift from its converged position. This is due to inaccuracies in the molecular dynamics calculations, typically in the form of steepening temperature gradient over time. It is difficult to spot by just looking at the conductivity result and uncertainty, but easy to observe in the time series and/or graphically. The conductivity value obviously begins to change irratically, and the uncertainty begins to increase. The uncertainty would never increase if the result was still converging, making this a useful marker to look for in the series.
+
+!!! FIGURES NEEDED EVERYWHERE
+
 
 %---------------------------------------
 \subsection{\label{sec:3.DM.data}Data processing}
 %---------------------------------------
 
-!!! FLYVBERG AND STUFF
+!!! FLYVBERG AND STUFF - ASK STEPHEN
 
 
 %---------------------------------------
@@ -99,9 +111,28 @@ We typically observe fluctuations in temperature of around $\pm$50~K during temp
 \subsection{\label{sec:3.DM.fse}Finite-size effects}
 %---------------------------------------
 
-!!! HEAVY REWORK NEEDED
+!!! HEAVY REWORK NEEDED - FIGURES EVERYWHERE
 
-By computing conductivities across a range of cell lengths we show that direct method simulations with small cross-sectional areas fail to produce converged results with respect to larger CSAs. Without considering any extrapolation, it is clear that small CSA cells overestimate conductivity (Figures \ref{fig:direct_length_graph_4000} \& \ref{fig:direct_length_graph_1000}) at conditions of both 1000~K and 4000~K. On both figures the results for cells with CSA 2x2 and larger plot close to on top of each other. Producing the same results as 8x8 cells, we conclude that cells with CSA of 2x2 are suitable for direct method simulations of bridgmanite.
+OBVIOUS CSA - One thing that is immediately obvious is that supercell CSAs of 1\by1 and 2\by1 overestimate conductivity (underestimate inverse conductivity) with respect to the larger CSA. As discussed earlier, this can attributed to the absence of realistic phonon scattering within a narrow material. For the supercells with shorter lengths (larger inverse length), increasing CSA (to 2\by2) brings the results into alignment. 
+
+TOO SHORT - Another problem becomes apparent when looking at the 1000~K results, the shortest cells in the series (longest inverse length) appear to overestimate conductivity (underestimate inverse etc.) with respect to the expected linear fit through the other short cells. This can be explained by the cell being on the order of the phonon MFP, allowing for phonons to travel from hot to cold without any scattering events (Ballistic Phonon Transport). This means the simulation does not have thermal resistance representative of the material. No correction can be applied here, the 6 unit cells long cells must be excluded from the extrapolation. The problem does not seem to be present in the 4000~K results, the explanation being that the unit cell is larger from thermal expansion, and more significantly, the phonon MFP is shorter with higher temperature.
+
+!!! MFP ANALYSIS?
+
+NOT-OBVIOUS CSA
+
+
+
+
+
+
+
+
+
+
+
+
+By computing conductivities across a range of cell lengths, I can show that direct method simulations with small cross-sectional areas fail to produce converged results with respect to larger CSAs. Without considering any extrapolation, it is clear that small CSA cells overestimate conductivity (Figures \ref{fig:direct_length_graph_4000} \& \ref{fig:direct_length_graph_1000}) at conditions of both 1000~K and 4000~K. On both figures the results for cells with CSA 2x2 and larger plot close to on top of each other. Producing the same results as 8x8 cells, we conclude that cells with CSA of 2x2 are suitable for direct method simulations of bridgmanite.
 
 Now considering CSAs of 2x2, we examine the divergence of conductivity result with cell length from an expected linear trend (Figure \ref{fig:direct_length_graph}). As mentioned in Section \ref{sec:theory.direct}, cells that are too long or short cause a conductivity result to be overestimated. At 4000~K we find that cells up to 24 unit cells length ($<$0.06 in inverse length) produce a reasonably linear trend. At this condition, there is no reasonable overestimation due to short cells and ballistic phonon transport. However at 1000~K where the MFP is longer, a cell of length 6 unit cells (inverse length 0.167) produces conductivity larger than expected. The same long-cell divergence is found $>$24 unit cells length, the onset of insufficient phonon sampling. For all direct method simulations of bridgmanite at lower mantle conditions, we recommend employing cell lengths of 8~-~$<$24 unit cells. Due to the increasing computational cost associated with cell length (especially for ab initio methods), we recommend the longest cells be 16 unit cells. FINITE SIZE EFFECTS INCREASE WITH MFP/KAPPA
 

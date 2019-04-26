@@ -67,16 +67,16 @@
 \contentsline {subsection}{\numberline {3.2.2}FIDDLING WITH BIN WIDTH}{48}{subsection.98}
 \contentsline {subsection}{\numberline {3.2.3}Temperature gradient convergence}{48}{subsection.99}
 \contentsline {subsection}{\numberline {3.2.4}Simulation time convergence}{49}{subsection.100}
-\contentsline {subsection}{\numberline {3.2.5}Data processing}{49}{subsection.101}
-\contentsline {subsection}{\numberline {3.2.6}Inverse extrapolation procedure}{49}{subsection.102}
-\contentsline {subsection}{\numberline {3.2.7}Finite-size effects}{49}{subsection.103}
-\contentsline {subsection}{\numberline {3.2.8}Explaining CSA effect}{50}{subsection.104}
-\contentsline {section}{\numberline {3.3}Green-Kubo}{50}{section.105}
-\contentsline {subsection}{\numberline {3.3.1}Correlation length convergence}{51}{subsection.106}
-\contentsline {subsection}{\numberline {3.3.2}Integral sample convergence}{51}{subsection.107}
-\contentsline {subsection}{\numberline {3.3.3}Simulation length convergence}{52}{subsection.108}
-\contentsline {subsection}{\numberline {3.3.4}Finite-size effect convergence}{52}{subsection.109}
-\contentsline {section}{\numberline {3.4}Summary}{54}{section.114}
+\contentsline {subsection}{\numberline {3.2.5}Data processing}{50}{subsection.101}
+\contentsline {subsection}{\numberline {3.2.6}Inverse extrapolation procedure}{50}{subsection.102}
+\contentsline {subsection}{\numberline {3.2.7}Finite-size effects}{50}{subsection.103}
+\contentsline {subsection}{\numberline {3.2.8}Explaining CSA effect}{51}{subsection.104}
+\contentsline {section}{\numberline {3.3}Green-Kubo}{51}{section.105}
+\contentsline {subsection}{\numberline {3.3.1}Correlation length convergence}{52}{subsection.106}
+\contentsline {subsection}{\numberline {3.3.2}Integral sample convergence}{53}{subsection.107}
+\contentsline {subsection}{\numberline {3.3.3}Simulation length convergence}{53}{subsection.108}
+\contentsline {subsection}{\numberline {3.3.4}Finite-size effect convergence}{53}{subsection.109}
+\contentsline {section}{\numberline {3.4}Summary}{55}{section.114}
 \contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{57}{chapter.115}
 \contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{57}{section.116}
 \contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{58}{subsection.118}
