@@ -61,18 +61,18 @@
 \contentsline {section}{\numberline {2.4}Conclusion}{44}{section.92}
 \contentsline {chapter}{\numberline {3}Examining finite-size effects in thermal conductivity computations}{45}{chapter.93}
 \contentsline {section}{\numberline {3.1}Introduction}{45}{section.94}
-\contentsline {subsection}{\numberline {3.1.1}Finite-size effects}{46}{subsection.95}
-\contentsline {section}{\numberline {3.2}Direct method}{47}{section.96}
+\contentsline {subsection}{\numberline {3.1.1}Finite-size effects}{45}{subsection.95}
+\contentsline {section}{\numberline {3.2}Direct method}{46}{section.96}
 \contentsline {subsection}{\numberline {3.2.1}Setting up supercells}{47}{subsection.97}
 \contentsline {subsection}{\numberline {3.2.2}FIDDLING WITH BIN WIDTH}{48}{subsection.98}
-\contentsline {subsection}{\numberline {3.2.3}Temperature gradient convergence}{49}{subsection.100}
+\contentsline {subsection}{\numberline {3.2.3}Temperature gradient convergence}{48}{subsection.100}
 \contentsline {subsection}{\numberline {3.2.4}Simulation time convergence}{49}{subsection.101}
 \contentsline {subsection}{\numberline {3.2.5}Data processing}{50}{subsection.102}
 \contentsline {subsection}{\numberline {3.2.6}Inverse extrapolation procedure}{50}{subsection.103}
 \contentsline {subsection}{\numberline {3.2.7}Finite-size effects}{50}{subsection.104}
 \contentsline {subsection}{\numberline {3.2.8}Explaining CSA effect}{52}{subsection.105}
 \contentsline {section}{\numberline {3.3}Green-Kubo}{52}{section.106}
-\contentsline {subsection}{\numberline {3.3.1}Correlation length convergence}{53}{subsection.107}
+\contentsline {subsection}{\numberline {3.3.1}Correlation length convergence}{52}{subsection.107}
 \contentsline {subsection}{\numberline {3.3.2}Integral sample convergence}{53}{subsection.108}
 \contentsline {subsection}{\numberline {3.3.3}Simulation length convergence}{54}{subsection.109}
 \contentsline {subsection}{\numberline {3.3.4}Finite-size effect convergence}{54}{subsection.110}

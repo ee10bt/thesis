@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  26 APR 2019 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  29 APR 2019 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2617,7 +2617,7 @@ Chapter 3.
 
 
 ] [46] [47]
-<Figures/direct_bin_width.png, id=1183, 362.10281pt x 216.81pt>
+<Figures/direct_bin_width.png, id=1176, 362.10281pt x 216.81pt>
 File: Figures/direct_bin_width.png Graphic file (type png)
 <use Figures/direct_bin_width.png>
 Package pdftex.def Info: Figures/direct_bin_width.png  used on input line 66. o
@@ -2641,37 +2641,35 @@ t line 143.
 LaTeX Warning: Reference `sec:theory.direct' on page 51 undefined on input line
  143.
 
-[51]
 
-LaTeX Warning: Reference `fig:gk-direct' on page 52 undefined on input line 145
+LaTeX Warning: Reference `fig:gk-direct' on page 51 undefined on input line 145
 .
 
-
+[51]
 Overfull \hbox (1.40572pt too wide) in paragraph at lines 174--175
 []\T1/ppl/m/n/10.95 After de-ter-min-ing cell pa-ram-e-ters ap-pro-pri-ate to t
 he sim-u-lated con-di-tions (NPT),
  []
 
-[52]
 
-LaTeX Warning: Reference `fig:acf_decay' on page 53 undefined on input line 182
+LaTeX Warning: Reference `fig:acf_decay' on page 52 undefined on input line 182
 .
 
-
+[52]
 Overfull \hbox (2.309pt too wide) in paragraph at lines 192--193
 \T1/ppl/m/n/10.95 !!! Is this sec-tion even nec-es-sary? Boot-strap the in-te-g
 rals, show re-sult doesn't change? 
  []
 
 [53]
-<Figures/gk_fse_4K_draft.png, id=1211, 362.10281pt x 217.5628pt>
+<Figures/gk_fse_4K_draft.png, id=1204, 362.10281pt x 217.5628pt>
 File: Figures/gk_fse_4K_draft.png Graphic file (type png)
 <use Figures/gk_fse_4K_draft.png>
 Package pdftex.def Info: Figures/gk_fse_4K_draft.png  used on input line 216. o
 n input line 216.
 Package pdftex.def Info: Requested size: 404.02908pt x 242.75575pt on input lin
 e 216.
-<Figures/gk_fse_1K_draft.png, id=1212, 361.35pt x 216.81pt>
+<Figures/gk_fse_1K_draft.png, id=1205, 361.35pt x 216.81pt>
 File: Figures/gk_fse_1K_draft.png Graphic file (type png)
 <use Figures/gk_fse_1K_draft.png>
 Package pdftex.def Info: Figures/gk_fse_1K_draft.png  used on input line 222. o
@@ -2770,7 +2768,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 86.
 
 [62]
-<Figures/effective-phonon-relaxation-time.png, id=1284, 703.12688pt x 471.26062
+<Figures/effective-phonon-relaxation-time.png, id=1277, 703.12688pt x 471.26062
 pt>
 File: Figures/effective-phonon-relaxation-time.png Graphic file (type png)
 <use Figures/effective-phonon-relaxation-time.png>
@@ -2779,7 +2777,7 @@ input line 127. on input line 127.
 Package pdftex.def Info: Requested size: 404.02908pt x 270.79298pt on input lin
 e 127.
  [63 <./Figures/effective-phonon-relaxation-time.png>] [64] [65] [66]
-<Figures/substitution_05-collated.png, id=1328, 1014.03844pt x 1021.56656pt>
+<Figures/substitution_05-collated.png, id=1321, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 <use Figures/substitution_05-collated.png>
 Package pdftex.def Info: Figures/substitution_05-collated.png  used on input li
@@ -2790,7 +2788,7 @@ e 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/k-t_all_02.png, id=1330, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=1323, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 234. on inp
@@ -2801,7 +2799,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [67] [68 <./Figures/substitution_05-collated.png>]
-<Figures/k-c_all_01.png, id=1344, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=1337, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 246. on inp
@@ -2812,7 +2810,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/K_over_T_over_X.png, id=1346, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=1339, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 254. o
@@ -2840,7 +2838,7 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 328--328
 Overfull \vbox (1.03882pt too high) detected at line 328
  []
 
-<Figures/draft_XT.png, id=1385, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=1378, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 348. on input
@@ -2848,7 +2846,7 @@ Package pdftex.def Info: Figures/draft_XT.png  used on input line 348. on input
 Package pdftex.def Info: Requested size: 404.02908pt x 121.50237pt on input lin
 e 348.
 [73 <./Figures/draft_XT.png>]
-<Figures/draft_XTT.png, id=1396, 797.98125pt x 490.83376pt>
+<Figures/draft_XTT.png, id=1389, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 363. on inpu
@@ -2856,7 +2854,7 @@ t line 363.
 Package pdftex.def Info: Requested size: 404.02908pt x 248.51692pt on input lin
 e 363.
  [74 <./Figures/draft_XTT.png>]
-<Figures/k-c_demo-cartoon.png, id=1411, 888.31876pt x 502.12593pt>
+<Figures/k-c_demo-cartoon.png, id=1404, 888.31876pt x 502.12593pt>
 File: Figures/k-c_demo-cartoon.png Graphic file (type png)
 <use Figures/k-c_demo-cartoon.png>
 Package pdftex.def Info: Figures/k-c_demo-cartoon.png  used on input line 386. 
@@ -2868,7 +2866,7 @@ e 386.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [75] [76 <./Figures/k-c_demo-cartoon.png (PNG copy)>] [77]
-<Figures/draft_VrefV-T.png, id=1439, 393.72093pt x 179.16937pt>
+<Figures/draft_VrefV-T.png, id=1432, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
 Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 450. on 
@@ -2896,7 +2894,7 @@ Chapter 5.
 
 
 ]
-<Figures/sph_harm.png, id=1475, 796.47563pt x 204.765pt>
+<Figures/sph_harm.png, id=1468, 796.47563pt x 204.765pt>
 File: Figures/sph_harm.png Graphic file (type png)
 <use Figures/sph_harm.png>
 Package pdftex.def Info: Figures/sph_harm.png  used on input line 20. on input 
@@ -3024,10 +3022,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34893 strings out of 492990
- 709325 string characters out of 6121926
- 1000996 words of memory out of 5000000
- 37643 multiletter control sequences out of 15000+600000
+ 34886 strings out of 492990
+ 709241 string characters out of 6121926
+ 1000880 words of memory out of 5000000
+ 37636 multiletter control sequences out of 15000+600000
  605361 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,21n,82p,10377b,2832s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3049,10 +3047,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (123 pages, 1573587 bytes).
+Output written on main.pdf (123 pages, 1572933 bytes).
 PDF statistics:
- 1803 PDF objects out of 2073 (max. 8388607)
- 1605 compressed objects within 17 object streams
+ 1795 PDF objects out of 2073 (max. 8388607)
+ 1598 compressed objects within 16 object streams
  369 named destinations out of 1000 (max. 500000)
  969 words of extra memory for PDF output out of 10000 (max. 10000000)
 
