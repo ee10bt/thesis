@@ -131,11 +131,17 @@ O-O          & 2023.800        & 0.2674                  & 13.83         \\ \hli
 \subsubsection{CALIBRATING CUTOFFS}
 %-------------------
 
-!!! BUT WHAT DID I DECIDE ON THOUGH? ADD FIGURE AND EXPLAIN PROCESS!
-
 Part of applying classical potentials is setting up the distance over which they act, the maximum seperation between two atoms before they are not paired for force calculation. Too small a cut-off distance, and the material is not being replicated faithfully. Too large a cut-off, you are performing more calculations than you need, increasing computation time. The potential between two atoms is inversely proportional to their separation (see Eq. \ref{eq.buck}), ``cutting off'' in this manner is acceptable when the potential is tending towards zero with increasingly large interatomic distance. I consider two cut-off distances, for both the Coulombic and the Buckingham interactions.
 
-% 150527_pressures.xlsx 
+!!! IT MAKES MORE SENSE TO DO BUCK OR COUL FIRST, RATHER THAN ENERGY OR CELL. THE SPLIT FEELS WEIRD - ACBD
+
+I choose to use Buckingham and Coulombic cutoffs of 14~\AA and 8~\AA respectively. This choice was influenced by other works, and size of the \bdg unit cell. As shown in Figure~\ref{fig:buck_cutoff}a. \& c., the choice of Coulombic cutoff is of low significance. Figure~\ref{fig:buck_cutoff}b. \& d. show the convergence of both energy and \textit{a} with increasing Buckingham cutoff. The difference between a cutoff of 14~\AA and higher values is on the picometer scale, we use the former in the interests of computational efficiency.
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/buck_cutoff_justification.png}
+  \caption[BUCK CUTOFF]{Top two figures show energy relationship with cutoff, bottom two show lattice parameter \textit{a}. Lefthand figures show a Buckingham cutoff of 14~\AA, with varying Coulombic cutoff. Righthand figures show the opposite, with Coulombic cutoff of 8~\AA. Y-axis set to same scale for both the parameters across the figure. Geometry optimisation formed static at a pressure of 136~GPa.}
+  \label{fig:buck_cutoff}
+\end{figure}
 
 %-------------------
 \subsubsection{COMPARING RESULTS}
