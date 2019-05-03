@@ -36,7 +36,7 @@ The severity of these finite-size effects (FSE) increases with the length and ex
 
 In this section I will talk specifically about how I apply the direct method to compute the \tcs of \bdg. I cover the initial system setup, the supercell geometry and how the system is divided into sections to determine the temperature gradient. I then cover properties which must be monitored to ensure accurate results, namely the magnitude of the temperature difference across the gradient, and the convergence of computed conductivity with total simulation time. I briefly introduce the data processing methodology, before explaining how the effects of finite system size are considered and mitigated. Finally I correlate my observed results with theoretical predictions, and discuss the required system size to compute the conductivity of \bdgs at lower mantle conditions.
 
-!!! FLOW CHART, OVERVIEW FIGURE OF BELOW STEPS AND PROCESS
+!!! FLOW CHART, OVERVIEW FIGURE OF BELOW STEPS AND PROCESS?
 
 
 %---------------------------------------
@@ -125,7 +125,7 @@ TOO SHORT - Another problem becomes apparent when looking at the 1000~K results,
 
 !!! MFP ANALYSIS?
 
-NOT-OBVIOUS CSA
+NOT-OBVIOUS CSA - Lorem Ipsum
 
 
 
@@ -138,11 +138,8 @@ NOT-OBVIOUS CSA
 
 
 
-By computing conductivities across a range of cell lengths, I can show that direct method simulations with small cross-sectional areas fail to produce converged results with respect to larger CSAs. Without considering any extrapolation, it is clear that small CSA cells overestimate conductivity (Figures \ref{fig:direct_length_graph_4000} \& \ref{fig:direct_length_graph_1000}) at conditions of both 1000~K and 4000~K. On both figures the results for cells with CSA 2x2 and larger plot close to on top of each other. Producing the same results as 8x8 cells, we conclude that cells with CSA of 2x2 are suitable for direct method simulations of bridgmanite.
 
-Now considering CSAs of 2x2, we examine the divergence of conductivity result with cell length from an expected linear trend (Figure \ref{fig:direct_length_graph}). As mentioned in Section \ref{sec:theory.direct}, cells that are too long or short cause a conductivity result to be overestimated. At 4000~K we find that cells up to 24 unit cells length ($<$0.06 in inverse length) produce a reasonably linear trend. At this condition, there is no reasonable overestimation due to short cells and ballistic phonon transport. However at 1000~K where the MFP is longer, a cell of length 6 unit cells (inverse length 0.167) produces conductivity larger than expected. The same long-cell divergence is found $>$24 unit cells length, the onset of insufficient phonon sampling. For all direct method simulations of bridgmanite at lower mantle conditions, we recommend employing cell lengths of 8~-~$<$24 unit cells. Due to the increasing computational cost associated with cell length (especially for ab initio methods), we recommend the longest cells be 16 unit cells. FINITE SIZE EFFECTS INCREASE WITH MFP/KAPPA
 
-Now we consider CSA of 2x2 and supercell lengths of 8, 10, 12, and 16 unit cells for comparison with the results from Green-Kubo. After performing a weight least squares regression (extrapolation) on the direct method results, we obtain a conductivity with uncertainty. Figure \ref{fig:gk-direct} shows the extrapolation and Green-Kubo result (at x~=~0). They agree within error, meaning we have chosen a suitable set of criteria for working with direct method results. DO I NEED TO PROVE THAT OTHER LENGTHS/EXTRAPOLATIONS DON'T MATCH GK? FINE AT HIGH T / SHORT MFP, LOW T / HIGH MFP NEEDS LONGER CELLS TO EXTRAPOLATE, OR MORE SHORTER CELLS IGNORED.
 
 
 %---------------------------------------
@@ -167,7 +164,7 @@ Now we consider CSA of 2x2 and supercell lengths of 8, 10, 12, and 16 unit cells
 \section{\label{sec:3.GK}Green-Kubo}
 %-----------------------------------------------------------
 
-!!! MENTION HOW TO GET ACF IN C2?
+!!! DO I NEED TO MENTION HOW TO PERFORM ACF IN C2?
 
 Now I will outline my approach for applying the Green-Kubo method for computing conductivity to \bdgs at lower mantle conditions. First I show accurate results can be obtained within the chosen correlation length. I then show how results represent a large sample of possible conditions, and a way of minimising error by combining multiple heat flux autocorrelation functions (ACFs). Finally I show that all these components are valid with respect to total simulation time, before presenting how finite simulation size affects conductivity results.
 
