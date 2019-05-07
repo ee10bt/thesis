@@ -64,46 +64,46 @@
 \contentsline {subsection}{\numberline {3.1.1}Finite-size effects}{47}{subsection.96}
 \contentsline {section}{\numberline {3.2}Direct method}{48}{section.97}
 \contentsline {subsection}{\numberline {3.2.1}Setting up supercells}{49}{subsection.98}
-\contentsline {subsection}{\numberline {3.2.2}FIDDLING WITH BIN WIDTH}{50}{subsection.99}
-\contentsline {subsection}{\numberline {3.2.3}Temperature gradient convergence}{50}{subsection.101}
-\contentsline {subsection}{\numberline {3.2.4}Simulation time convergence}{51}{subsection.102}
-\contentsline {subsection}{\numberline {3.2.5}Data processing}{52}{subsection.103}
-\contentsline {subsection}{\numberline {3.2.6}Inverse extrapolation procedure}{52}{subsection.104}
-\contentsline {subsection}{\numberline {3.2.7}Finite-size effects}{52}{subsection.105}
-\contentsline {subsection}{\numberline {3.2.8}Explaining CSA effect}{53}{subsection.106}
-\contentsline {section}{\numberline {3.3}Green-Kubo}{53}{section.107}
-\contentsline {subsection}{\numberline {3.3.1}Correlation length convergence}{53}{subsection.108}
-\contentsline {subsection}{\numberline {3.3.2}Integral sample convergence}{54}{subsection.109}
-\contentsline {subsection}{\numberline {3.3.3}Simulation length convergence}{55}{subsection.110}
-\contentsline {subsection}{\numberline {3.3.4}Finite-size effect convergence}{55}{subsection.111}
-\contentsline {section}{\numberline {3.4}Summary}{56}{section.116}
-\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{59}{chapter.117}
-\contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{59}{section.118}
-\contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{60}{subsection.120}
-\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{61}{section*.123}
-\contentsline {subsubsection}{What effects the magnitude of impurity scattering?}{61}{section*.124}
-\contentsline {subsection}{\numberline {4.1.2}$\omega $ and $\tau $ in depth}{62}{subsection.127}
-\contentsline {section}{\numberline {4.2}Methodology}{65}{section.136}
-\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{65}{subsection.137}
-\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{66}{subsection.141}
-\contentsline {section}{\numberline {4.3}Results}{67}{section.143}
-\contentsline {section}{\numberline {4.4}Parameterising composition and temperature effects on CMB conductivity}{71}{section.147}
-\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{71}{subsection.148}
-\contentsline {subsubsection}{Compositional dependence}{72}{section*.149}
-\contentsline {subsubsection}{Why does this model work?}{74}{section*.157}
-\contentsline {subsubsection}{Temperature dependence}{76}{section*.159}
-\contentsline {subsection}{\numberline {4.4.2}MEAN FREE PATH}{78}{subsection.169}
-\contentsline {subsubsection}{MFP FROM DM EXTRAPOLATION}{78}{section*.170}
-\contentsline {subsubsection}{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}{80}{section*.172}
-\contentsline {subsubsection}{C(1-C) MODEL LIMITATIONS}{81}{section*.173}
-\contentsline {subsubsection}{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}{81}{section*.174}
-\contentsline {subsubsection}{MASS VS. POTENTIAL IN MODELLING FE}{81}{section*.175}
-\contentsline {chapter}{\numberline {5}Using STUFF to do THINGS}{83}{chapter.176}
-\contentsline {section}{\numberline {5.1}Draft words}{83}{section.177}
-\contentsline {subsection}{\numberline {5.1.1}Notes}{85}{subsection.180}
-\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{87}{chapter.181}
-\contentsline {section}{\numberline {6.1}Main Section 1}{87}{section.182}
-\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{87}{subsection.183}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{89}{appendix.184}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{89}{section.185}
-\contentsline {chapter}{Bibliography}{91}{appendix*.186}
+\contentsline {subsection}{\numberline {3.2.2}FIDDLING WITH BIN WIDTH}{50}{subsection.100}
+\contentsline {subsection}{\numberline {3.2.3}Temperature gradient convergence}{50}{subsection.102}
+\contentsline {subsection}{\numberline {3.2.4}Simulation time convergence}{51}{subsection.103}
+\contentsline {subsection}{\numberline {3.2.5}Data processing}{52}{subsection.104}
+\contentsline {subsection}{\numberline {3.2.6}Inverse extrapolation procedure}{52}{subsection.105}
+\contentsline {subsection}{\numberline {3.2.7}Finite-size effects}{53}{subsection.106}
+\contentsline {subsection}{\numberline {3.2.8}Explaining CSA effect}{53}{subsection.107}
+\contentsline {section}{\numberline {3.3}Green-Kubo}{53}{section.108}
+\contentsline {subsection}{\numberline {3.3.1}Correlation length convergence}{54}{subsection.109}
+\contentsline {subsection}{\numberline {3.3.2}Integral sample convergence}{55}{subsection.110}
+\contentsline {subsection}{\numberline {3.3.3}Simulation length convergence}{55}{subsection.111}
+\contentsline {subsection}{\numberline {3.3.4}Finite-size effect convergence}{55}{subsection.112}
+\contentsline {section}{\numberline {3.4}Summary}{57}{section.117}
+\contentsline {chapter}{\numberline {4}Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB}{59}{chapter.118}
+\contentsline {section}{\numberline {4.1}Simulating the effect of atomic impurities}{59}{section.119}
+\contentsline {subsection}{\numberline {4.1.1}How do impurities affect conductivity?}{60}{subsection.121}
+\contentsline {subsubsection}{$\omega _{\mathrm {0}}/\omega _{\mathrm {D}}$ overview}{61}{section*.124}
+\contentsline {subsubsection}{What effects the magnitude of impurity scattering?}{61}{section*.125}
+\contentsline {subsection}{\numberline {4.1.2}$\omega $ and $\tau $ in depth}{62}{subsection.128}
+\contentsline {section}{\numberline {4.2}Methodology}{65}{section.137}
+\contentsline {subsection}{\numberline {4.2.1}How does iron behave?}{65}{subsection.138}
+\contentsline {subsection}{\numberline {4.2.2}Where do the impurities go?}{66}{subsection.142}
+\contentsline {section}{\numberline {4.3}Results}{67}{section.144}
+\contentsline {section}{\numberline {4.4}Parameterising composition and temperature effects on CMB conductivity}{71}{section.148}
+\contentsline {subsection}{\numberline {4.4.1}Parameterising the data fit}{71}{subsection.149}
+\contentsline {subsubsection}{Compositional dependence}{72}{section*.150}
+\contentsline {subsubsection}{Why does this model work?}{74}{section*.158}
+\contentsline {subsubsection}{Temperature dependence}{76}{section*.160}
+\contentsline {subsection}{\numberline {4.4.2}MEAN FREE PATH}{78}{subsection.170}
+\contentsline {subsubsection}{MFP FROM DM EXTRAPOLATION}{78}{section*.171}
+\contentsline {subsubsection}{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}{80}{section*.173}
+\contentsline {subsubsection}{C(1-C) MODEL LIMITATIONS}{81}{section*.174}
+\contentsline {subsubsection}{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}{81}{section*.175}
+\contentsline {subsubsection}{MASS VS. POTENTIAL IN MODELLING FE}{81}{section*.176}
+\contentsline {chapter}{\numberline {5}Using STUFF to do THINGS}{83}{chapter.177}
+\contentsline {section}{\numberline {5.1}Draft words}{83}{section.178}
+\contentsline {subsection}{\numberline {5.1.1}Notes}{85}{subsection.181}
+\contentsline {chapter}{\numberline {6}Summary/Discussion/Conclusion}{87}{chapter.182}
+\contentsline {section}{\numberline {6.1}Main Section 1}{87}{section.183}
+\contentsline {subsection}{\numberline {6.1.1}Subsection 1}{87}{subsection.184}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{89}{appendix.185}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{89}{section.186}
+\contentsline {chapter}{Bibliography}{91}{appendix*.187}

@@ -49,10 +49,27 @@ In order to investigate how FSE can affect direct method results, I plan to use 
 
 The simulation supercell is split into sections along its length, where the average temperature of atoms within is determined to calculate the gradient across the system. The symmetry of the \bdgs crystal system allows unit cells to divided into two, such that the width of sections is half a unit cell along the length of the supercell (the direction of heat flow). 
 
-Two of these sections, half the supercell length apart, are designated as the heat source and heat sink. It is within these sections that the energy of the atoms is swapped. Heat flows in both directions from the hot section because of cell periodicity (REF BACK), meaning there are two temperature gradients to sample and combine. 
+Two of these sections, half the supercell length apart, are designated as the heat source and heat sink. It is within these sections that the energy of the atoms is swapped. Heat flows in both directions from the hot section because of cell periodicity (refer back to Section \ref{sec:2.DM.setup}), meaning there are two temperature gradients to sample and combine. 
 
-!!! SHOW FIGURE OF WHAT I AM PRATTLING ON ABOUT? Where L is supercell length in unit cells and S (= 2L) gives the number of sections, we obtain S/2 + 1 temperature points to fit the gradient. Because the temperature gradient is non-linear around the heat source and sink, we ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell we fit S/3 + 1 points to obtain the temperature gradient. We use a minimum supercell length of 6 unit cells (12 sections, 5 data points), in order for sufficient fitting of the temperature gradient. [HOW NECESSARY IS THIS PARA, VERY JARGONY]
+Where L is supercell length in unit cells and S (= 2L) gives the number of sections, we obtain S/2 + 1 temperature points to fit the gradient. Width of a section, S$_{\mathrm{W}}$, is half that of a single unit cell. Because the temperature gradient is non-linear around the heat source and sink, we ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell we fit S/3 + 1 points to obtain the temperature gradient. We use a minimum supercell length of 6 unit cells (12 sections, 5 data points), in order for sufficient fitting of the temperature gradient. 
 
+%\begin{figure}[h!]
+%\includegraphics[width=\linewidth]{Figures/direct_temp_pro_01.png}
+%\caption[direct temperature profile 1]{}
+%\label{fig:direct_temp_pro_01}
+%\end{figure}
+
+%\begin{figure}[h!]
+%\includegraphics[width=\linewidth]{Figures/direct_temp_pro_02.png}
+%\caption[direct temperature profile 2]{}
+%\label{fig:direct_temp_pro_02}
+%\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_temp_pro_03.png}
+\caption[direct temperature profile 3]{}
+\label{fig:direct_temp_pro_03}
+\end{figure}
 
 %---------------------------------------
 \subsection{\label{sec:3.DM.bin}FIDDLING WITH BIN WIDTH}
@@ -65,7 +82,7 @@ Changing the width of the heated sections has no effect on the conductivity resu
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{Figures/direct_bin_width.png}
 \caption[direct bin width]{Conductivity results from direct method when temperature is calculated from sections half a unit cell wide, and also a twelfth of the total length. The amount of points in the temperature gradient changes when the section width depends on the unit cell, but not on the length (i.e. there are always twelve sections, the gradient is fit to five data points).}
-\label{fig:direct bin width}
+\label{fig:direct_bin_width}
 \end{figure}
 
 
@@ -77,7 +94,7 @@ Changing the width of the heated sections has no effect on the conductivity resu
 
 An important factor for utilising the direct method is maintaining a sensible temperature gradient, such that Fourier's law (REF) remains valid, i.e. conductivity is constant along the length of the cell. Thermal conductivity is strongly temperature-dependent at upper lower-mantle conditions (1000~K), it is therefore undesirable to have substanially different conductivities as a of function of temperature across the cell. The opposite case is also true, the difference in temperature between hot and cold sections must be larger than the uncertainty in the average system temperature. 
 
-As a general rule, I try to keep the temperature difference between the ends of the gradient to 20\% the mean temperature. I control the magnitude of the gradient by altering the interval at which heat is exchanged (REF BACK?). To produce the desired gradient magnitude as outlined above, shorter intervals are required as cell length decreases, cross-sectional area increases, and system equilibrium temperature decreases. The easier it is for heat to flow from hot to cold (smaller distance between, more area for heat transport, lower temperature/less thermal resistance), the more heat must be transported (in the form of shorter intervals between heat swaps) to maintain the temperature gradient.
+As a general rule, I try to keep the temperature difference between the ends of the gradient to 20\% the mean temperature. I control the magnitude of the gradient by altering the interval at which heat is exchanged, via swapping atomic velocities in the hot and cold sections (see Section \ref{sec:2.DM.setup}) . To produce the desired gradient magnitude as outlined above, shorter intervals are required as cell length decreases, cross-sectional area increases, and system equilibrium temperature decreases. The easier it is for heat to flow from hot to cold (smaller distance between, more area for heat transport, lower temperature/less thermal resistance), the more heat must be transported (in the form of shorter intervals between heat swaps) to maintain a temperature gradient.
 
 
 %---------------------------------------

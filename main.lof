@@ -16,20 +16,21 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }}{41}{figure.caption.85}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~--~10~ps (region in red box).\relax }}{43}{figure.caption.88}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces direct bin width}}{50}{figure.caption.100}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces gk fse 4k}}{55}{figure.caption.112}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces gk fse 1k}}{56}{figure.caption.113}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces direct temperature profile 3}}{50}{figure.caption.99}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces direct bin width}}{51}{figure.caption.101}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces gk fse 4k}}{56}{figure.caption.113}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces gk fse 1k}}{56}{figure.caption.114}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CONTENTS BIT}}{63}{figure.caption.133}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces CONTENTS BIT}}{68}{figure.caption.142}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CONTENTS BIT}}{69}{figure.caption.144}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CONTENTS BIT}}{70}{figure.caption.145}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CONTENTS BIT}}{70}{figure.caption.146}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces CONTENTS BIT}}{73}{figure.caption.154}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces CONTENTS BIT}}{74}{figure.caption.156}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces CONTENTS BIT}}{76}{figure.caption.158}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces CONTENTS BIT}}{78}{figure.caption.166}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CONTENTS BIT}}{63}{figure.caption.134}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CONTENTS BIT}}{68}{figure.caption.143}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CONTENTS BIT}}{69}{figure.caption.145}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CONTENTS BIT}}{70}{figure.caption.146}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CONTENTS BIT}}{70}{figure.caption.147}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CONTENTS BIT}}{73}{figure.caption.155}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces CONTENTS BIT}}{74}{figure.caption.157}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CONTENTS BIT}}{76}{figure.caption.159}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CONTENTS BIT}}{78}{figure.caption.167}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces SPHERICAL HARMONICS}}{84}{figure.caption.178}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SPHERICAL HARMONICS}}{84}{figure.caption.179}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
