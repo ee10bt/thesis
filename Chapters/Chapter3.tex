@@ -109,14 +109,16 @@ After removing the first portion of the data there is still variability in the c
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{Figures/direct_raw_conv_4000_2x2.png}
-\caption[direct conv]{THIS FIGURE SHOWS CONVERGENCE}
+\caption[direct conv]{THIS FIGURE SHOWS CONVERGENCE - length = 48, }
+\label{fig:direct_conv}
 \end{figure}
 
 It is possible for a simulation to be too long however, where the conductivity result will drift from its converged position. This is due to inaccuracies in the molecular dynamics calculations, typically in the form of steepening temperature gradient over time. It is difficult to spot by just looking at the conductivity result and uncertainty, but easy to observe in the time series and/or graphically. The conductivity value obviously begins to change irratically, and the uncertainty begins to increase. The uncertainty would never increase if the result was still converging, making this a useful marker to look for in the series.
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{Figures/direct_trim_drift_4000_2x2.png}
-\caption[direct conv]{THIS FIGURE SHOWS DRIFT}
+\caption[direct conv]{THIS FIGURE SHOWS DRIFT - length = 8, the equivalent raw would also work}
+\label{fig:direct_drift}
 \end{figure}
 
 
@@ -137,15 +139,41 @@ As discussed in Chapter~\label{chp2.schelling}, the results from simulations of 
 \subsection{\label{sec:3.DM.fse}Finite-size effects}
 %---------------------------------------
 
-!!! HEAVY REWORK NEEDED - FIGURES EVERYWHERE
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_4000.png}
+\caption[direct inv 4000]{CAPTION}
+\label{fig:direct_inv_4000}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_1000.png}
+\caption[direct inv 1000]{CAPTION}
+\label{fig:direct_inv_1000}
+\end{figure}
 
 OBVIOUS CSA - One thing that is immediately obvious is that supercell CSAs of 1\by1 and 2\by1 overestimate conductivity (underestimate inverse conductivity) with respect to the larger CSA. As discussed earlier, this can attributed to the absence of realistic phonon scattering within a narrow material. For the supercells with shorter lengths (larger inverse length), increasing CSA (to 2\by2) brings the results into alignment. 
 
-TOO SHORT - Another problem becomes apparent when looking at the 1000~K results, the shortest cells in the series (longest inverse length) appear to overestimate conductivity (underestimate inverse etc.) with respect to the expected linear fit through the other short cells. This can be explained by the cell being on the order of the phonon MFP, allowing for phonons to travel from hot to cold without any scattering events (Ballistic Phonon Transport). This means the simulation does not have thermal resistance representative of the material. No correction can be applied here, the 6 unit cells long cells must be excluded from the extrapolation. The problem does not seem to be present in the 4000~K results, the explanation being that the unit cell is larger from thermal expansion, and more significantly, the phonon MFP is shorter with higher temperature.
+!!! EVERYTHING SHORTER THAN 48 IS WRONG FOR 1000K ???
 
-!!! MFP ANALYSIS?
+TOO SHORT - Another problem becomes apparent when looking at the shortest cells in the series (longest inverse length), they appear to overestimate conductivity (underestimate inverse etc.) with respect to the expected linear fit through the other short cells (see the linear trend on Figure~\ref{fig:direct_inv_4000}). This can be explained by the cell being on the order of the phonon MFP, allowing for phonons to travel from hot to cold without any scattering events (Ballistic Phonon Transport). This means the simulation does not have thermal resistance representative of the material. No correction can be applied here, the 6 unit cells long cells must be excluded from the extrapolation. %The problem does not seem to be present in the 4000~K results, the explanation being that the unit cell is larger from thermal expansion, and more significantly, the phonon MFP is shorter with higher temperature.
 
-NOT-OBVIOUS CSA - Lorem Ipsum
+%!!! MFP ANALYSIS?
+
+!!! THIS ONLY APPLIES TO 4000K, 1000K HAS DIFFERENT RULES OR SOMETHING
+
+!!! SHOULD I EVEN BE CONSIDERING GK COMPARISON AT THIS POINT ???
+
+NOT-OBVIOUS CSA - While the shorter cells across all cross-sectional areas produce similar conductivity results, they diverge from the expected linear trend with length. The nature of the divergence is an overestimation of conductivity, the magnitude of which appears to be greater with smaller CSA. This suggests that there is some sort of aspect ratio finite-size effect. This is similar to the CSA effect mentioned above, whereby phonon-phonon scattering behaviour is not being replicated correctly. This explains why effect is larger the smaller the CSA, fewer possible phonons to participate in scattering events. 
+
+The divergence is all but removed when the 12\by12 CSA is considered (see the small difference between data and fit in Figure~\ref{fig:direct_inv_4000}). This is a significant computational cost however, and not really an efficient option for employing the direct method to calculate conductivity. I recommend ignoring cells with lengths longer than 24~UC. Computational cost increases with length, as does the divergence from linear behaviour. I can still produce accurate results using the cell lengths where 2\by2~CSA cells produce the same results as those from 12\by12 ((REF)), at a fraction of the cost. These key dimensions are somewhat arbitrary, only inferred from observations of the finite-size effects. Different materials require their own FSE analysis, despite any similarities in chemistry to \bdg or conditions to the lower mantle.
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_cut-up_4000.png}
+\caption[direct inv cut up 4000]{CAPTION}
+\label{fig:direct_inv_cut-up_4000}
+\end{figure}
+
+REDUNDANCY WITH THE ABOVE TEXT - In summary, accurate \bdgs conductivity results can be produced with the direct method when the cell CSA is greater than 2\by2, and the length between 8--24~UC. This will be the most efficient use of computational resources. Different lower mantle minerals may require different simulation geometries, making them easier or more difficult to compute.
 
 
 
