@@ -30,182 +30,6 @@ The severity of these finite-size effects (FSE) increases with the length and ex
 
 
 
-%-----------------------------------------------------------
-\section{\label{sec:3.direct}Direct method}
-%-----------------------------------------------------------
-
-In this section I will talk specifically about how I apply the direct method to compute the \tcs of \bdg. I cover the initial system setup, the supercell geometry and how the system is divided into sections to determine the temperature gradient. I then cover properties which must be monitored to ensure accurate results, namely the magnitude of the temperature difference across the gradient, and the convergence of computed conductivity with total simulation time. I briefly introduce the data processing methodology, before explaining how the effects of finite system size are considered and mitigated. Finally I correlate my observed results with theoretical predictions, and discuss the required system size to compute the conductivity of \bdgs at lower mantle conditions.
-
-!!! FLOW CHART, OVERVIEW FIGURE OF BELOW STEPS AND PROCESS?
-
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.cell}Setting up supercells}
-%---------------------------------------
-
-!!! HOW IS HEAT FLOW ESTABLISHED? REF BACK? MULLER PLATHE
-
-In order to investigate how FSE can affect direct method results, I plan to use very large cells, both in length and cross sectional area. To capture a large section of inverse-length space during processing (more on this later, REF?), I will use supercells up to 96 unit cells long in the x-direction of heat flow (specifically 6, 8, 10, 12, 16, 24, 48, and 96 unit cells long). Perpendicular to this length, I will use supercells with a cross section up to 12$\times$12 unit cells (1$\times$1, 2$\times$1, 2$\times$2, 4$\times$4, 8$\times$8, and 12$\times$12).
-
-The simulation supercell is split into sections along its length, where the average temperature of atoms within is determined to calculate the gradient across the system. The symmetry of the \bdgs crystal system allows unit cells to divided into two, such that the width of sections is half a unit cell along the length of the supercell (the direction of heat flow). 
-
-Two of these sections, half the supercell length apart, are designated as the heat source and heat sink. It is within these sections that the energy of the atoms is swapped. Heat flows in both directions from the hot section because of cell periodicity (refer back to Section \ref{sec:2.DM.setup}), meaning there are two temperature gradients to sample and combine. 
-
-Where L is supercell length in unit cells and S (= 2L) gives the number of sections, we obtain S/2 + 1 temperature points to fit the gradient. Width of a section, S$_{\mathrm{W}}$, is half that of a single unit cell. Because the temperature gradient is non-linear around the heat source and sink, we ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell we fit S/3 + 1 points to obtain the temperature gradient. We use a minimum supercell length of 6 unit cells (12 sections, 5 data points), in order for sufficient fitting of the temperature gradient. 
-
-%\begin{figure}[h!]
-%\includegraphics[width=\linewidth]{Figures/direct_temp_pro_01.png}
-%\caption[direct temperature profile 1]{}
-%\label{fig:direct_temp_pro_01}
-%\end{figure}
-
-%\begin{figure}[h!]
-%\includegraphics[width=\linewidth]{Figures/direct_temp_pro_02.png}
-%\caption[direct temperature profile 2]{}
-%\label{fig:direct_temp_pro_02}
-%\end{figure}
-
-\begin{figure}[h!]
-\includegraphics[width=\linewidth]{Figures/direct_temp_pro_03.png}
-\caption[direct temperature profile 3]{Heat flows, and temperature decreases, from hot to cold. The temperature profile is non-linear, steeper gradient than the surrounding, immediately around the heated sections. In longer cells, the non-linear region will be wider than one section, requiring more sections to be ignored. The temperature profile is folded over onto itself to average one temperature gradient. The equations discussed hold as long as a unit cell is divided into two sections, and a twelveth of the total sections are removed from each end of the combined gradient.}
-\label{fig:direct_temp_pro_03}
-\end{figure}
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.bin}FIDDLING WITH BIN WIDTH}
-%---------------------------------------
-
-!!! DOES THIS SECTION NEED TO EXIST?
-
-Changing the width of the heated sections has no effect on the conductivity result, assuming you have enough temperature points to fit the linear gradient. Furthermore, changing the width (and thus number) of temperature bins has no effect on the sampled gradient, assuming resolution is large enough to capture the non-linear region around the heat source/sink (see Figure~\ref{fig:direct bin width}). 
-
-\begin{figure}[h!]
-\includegraphics[width=\linewidth]{Figures/direct_bin_width.png}
-\caption[direct bin width]{Conductivity results from direct method when temperature is calculated from sections half a unit cell wide, and also a twelfth of the total length. The amount of points in the temperature gradient changes when the section width depends on the unit cell, but not on the length (i.e. there are always twelve sections, the gradient is fit to five data points).}
-\label{fig:direct_bin_width}
-\end{figure}
-
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.grad}Temperature gradient convergence}
-%---------------------------------------
-
-!!! GRAPHS AND STUFF - EDIT HEAVILY!
-
-An important factor for utilising the direct method is maintaining a sensible temperature gradient, such that Fourier's law (REF) remains valid, i.e. conductivity is constant along the length of the cell. Thermal conductivity is strongly temperature-dependent at upper lower-mantle conditions (1000~K), it is therefore undesirable to have substanially different conductivities as a of function of temperature across the cell. The opposite case is also true, the difference in temperature between hot and cold sections must be larger than the uncertainty in the average system temperature. 
-
-As a general rule, I try to keep the temperature difference between the ends of the gradient to 20\% the mean temperature. I control the magnitude of the gradient by altering the interval at which heat is exchanged, via swapping atomic velocities in the hot and cold sections (see Section \ref{sec:2.DM.setup}) . To produce the desired gradient magnitude as outlined above, shorter intervals are required as cell length decreases, cross-sectional area increases, and system equilibrium temperature decreases. The easier it is for heat to flow from hot to cold (smaller distance between, more area for heat transport, lower temperature/less thermal resistance), the more heat must be transported (in the form of shorter intervals between heat swaps) to maintain a temperature gradient.
-
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.time}Simulation time convergence}
-%---------------------------------------
-
-!!! SHOW CONVERGENCE ONCE, THEN ASSUME READER HAS FAITH IN ME
-
-Initial results from the direct method show a large variability in conductivity, despite the seperate temperature equilibration performed beforehand. This is related to the setup of the temperature gradient and its transition to steady behaviour. For this reason, the timesteps containing this behaviour are ignored when determining conductivity. This simply means removing the temperature gradient and heat flow data from the rest of the series. How this is applied varies in practice, but on a 1~ns simulation, I would typically ingnore the first 100~ps (10\% simulation time).
-
-After removing the first portion of the data there is still variability in the calculated conductivity, but this typically converges quickly over the course of the simulation. If you have enough timesteps, the cumulative average of conductivity will tend towards a value while the uncertainty decreases. This is a simple check to ensure accurate results, where the simulation can be extended if more data is required.
-
-\begin{figure}[h!]
-\includegraphics[width=\linewidth]{Figures/direct_raw_conv_4000_2x2.png}
-\caption[direct conv]{THIS FIGURE SHOWS CONVERGENCE - length = 48, }
-\label{fig:direct_conv}
-\end{figure}
-
-It is possible for a simulation to be too long however, where the conductivity result will drift from its converged position. This is due to inaccuracies in the molecular dynamics calculations, typically in the form of steepening temperature gradient over time. It is difficult to spot by just looking at the conductivity result and uncertainty, but easy to observe in the time series and/or graphically. The conductivity value obviously begins to change irratically, and the uncertainty begins to increase. The uncertainty would never increase if the result was still converging, making this a useful marker to look for in the series.
-
-\begin{figure}[h!]
-\includegraphics[width=\linewidth]{Figures/direct_trim_drift_4000_2x2.png}
-\caption[direct conv]{THIS FIGURE SHOWS DRIFT - length = 8, the equivalent raw would also work}
-\label{fig:direct_drift}
-\end{figure}
-
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.data}Data processing}
-%---------------------------------------
-
-!!! FLYVBERG AND STUFF - ASK STEPHEN
-
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.extrap}Inverse extrapolation procedure}
-%---------------------------------------
-
-As discussed in Chapter~\label{chp2.schelling}, the results from simulations of varying cell lengths are combined to produce the conductivity result representative of the bulk material. As I am aiming for a linear fit, I can use the lack of a linear fit to identify a simulation with problems caused by FSE.
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.fse}Finite-size effects}
-%---------------------------------------
-
-\begin{figure}[h!]
-\includegraphics[width=\linewidth]{Figures/direct_inv_4000.png}
-\caption[direct inv 4000]{CAPTION}
-\label{fig:direct_inv_4000}
-\end{figure}
-
-\begin{figure}[h!]
-\includegraphics[width=\linewidth]{Figures/direct_inv_1000.png}
-\caption[direct inv 1000]{CAPTION}
-\label{fig:direct_inv_1000}
-\end{figure}
-
-OBVIOUS CSA - One thing that is immediately obvious is that supercell CSAs of 1\by1 and 2\by1 overestimate conductivity (underestimate inverse conductivity) with respect to the larger CSA. As discussed earlier, this can attributed to the absence of realistic phonon scattering within a narrow material. For the supercells with shorter lengths (larger inverse length), increasing CSA (to 2\by2) brings the results into alignment. 
-
-!!! EVERYTHING SHORTER THAN 48 IS WRONG FOR 1000K ???
-
-TOO SHORT - Another problem becomes apparent when looking at the shortest cells in the series (longest inverse length), they appear to overestimate conductivity (underestimate inverse etc.) with respect to the expected linear fit through the other short cells (see the linear trend on Figure~\ref{fig:direct_inv_4000}). This can be explained by the cell being on the order of the phonon MFP, allowing for phonons to travel from hot to cold without any scattering events (Ballistic Phonon Transport). This means the simulation does not have thermal resistance representative of the material. No correction can be applied here, the 6 unit cells long cells must be excluded from the extrapolation. %The problem does not seem to be present in the 4000~K results, the explanation being that the unit cell is larger from thermal expansion, and more significantly, the phonon MFP is shorter with higher temperature.
-
-%!!! MFP ANALYSIS?
-
-!!! THIS ONLY APPLIES TO 4000K, 1000K HAS DIFFERENT RULES OR SOMETHING
-
-!!! SHOULD I EVEN BE CONSIDERING GK COMPARISON AT THIS POINT ???
-
-NOT-OBVIOUS CSA - While the shorter cells across all cross-sectional areas produce similar conductivity results, they diverge from the expected linear trend with length. The nature of the divergence is an overestimation of conductivity, the magnitude of which appears to be greater with smaller CSA. This suggests that there is some sort of aspect ratio finite-size effect. This is similar to the CSA effect mentioned above, whereby phonon-phonon scattering behaviour is not being replicated correctly. This explains why effect is larger the smaller the CSA, fewer possible phonons to participate in scattering events. 
-
-The divergence is all but removed when the 12\by12 CSA is considered (see the small difference between data and fit in Figure~\ref{fig:direct_inv_4000}). This is a significant computational cost however, and not really an efficient option for employing the direct method to calculate conductivity. I recommend ignoring cells with lengths longer than 24~UC. Computational cost increases with length, as does the divergence from linear behaviour. I can still produce accurate results using the cell lengths where 2\by2~CSA cells produce the same results as those from 12\by12 ((REF)), at a fraction of the cost. These key dimensions are somewhat arbitrary, only inferred from observations of the finite-size effects. Different materials require their own FSE analysis, despite any similarities in chemistry to \bdg or conditions to the lower mantle.
-
-\begin{figure}[h!]
-\includegraphics[width=\linewidth]{Figures/direct_inv_cut-up_4000.png}
-\caption[direct inv cut up 4000]{CAPTION}
-\label{fig:direct_inv_cut-up_4000}
-\end{figure}
-
-REDUNDANCY WITH THE ABOVE TEXT - In summary, accurate \bdgs conductivity results can be produced with the direct method when the cell CSA is greater than 2\by2, and the length between 8--24~UC. This will be the most efficient use of computational resources. Different lower mantle minerals may require different simulation geometries, making them easier or more difficult to compute.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%---------------------------------------
-\subsection{\label{sec:3.DM.theory}Explaining CSA effect}
-%---------------------------------------
-
-!!! GO THROUGH THEORY WITH STEPHEN
-
-
- 
-
-
-
-
-
-
-
-
 
 
 %-----------------------------------------------------------
@@ -320,6 +144,220 @@ Supercell                        & Simulation length & \# initial conditions    
 \end{table}
 
 
+\pagebreak
+
+
+%-----------------------------------------------------------
+\section{\label{sec:3.direct}Direct method}
+%-----------------------------------------------------------
+
+In this section I will talk specifically about how I apply the direct method to compute the \tcs of \bdg. I cover the initial system setup, the supercell geometry and how the system is divided into sections to determine the temperature gradient. I then cover properties which must be monitored to ensure accurate results, namely the magnitude of the temperature difference across the gradient, and the convergence of computed conductivity with total simulation time. I briefly introduce the data processing methodology, before explaining how the effects of finite system size are considered and mitigated. Finally I correlate my observed results with theoretical predictions, and discuss the required system size to compute the conductivity of \bdgs at lower mantle conditions.
+
+!!! FLOW CHART, OVERVIEW FIGURE OF BELOW STEPS AND PROCESS?
+
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.cell}Setting up supercells}
+%---------------------------------------
+
+!!! HOW IS HEAT FLOW ESTABLISHED? REF BACK? MULLER PLATHE
+
+In order to investigate how FSE can affect direct method results, I plan to use very large cells, both in length and cross sectional area. I will use supercells up to 96 unit cells long in the x-direction of heat flow (specifically 6, 8, 10, 12, 16, 24, 48, and 96 unit cells long). Perpendicular to this length, I will use supercells with a cross section up to 12$\times$12 unit cells (1$\times$1, 2$\times$1, 2$\times$2, 4$\times$4, 8$\times$8, and 12$\times$12).
+
+The simulation supercell is split into sections along its length, where the average temperature of atoms within is determined to calculate the gradient across the system. The symmetry of the \bdgs crystal system allows unit cells to divided into two, such that the width of sections is half a unit cell along the length of the supercell (the direction of heat flow). 
+
+Two of these sections, half the supercell length apart, are designated as the heat source and heat sink. It is within these sections that the energy of the atoms is swapped. Heat flows in both directions from the hot section because of cell periodicity (refer back to Section~\ref{sec:2.DM.setup}), meaning there are two temperature gradients to sample and combine. 
+
+Where L is supercell length in unit cells and S (= 2L) gives the number of sections, we obtain S/2 + 1 temperature points to fit the gradient. Width of a section, S$_{\mathrm{W}}$, is half that of a single unit cell. Because the temperature gradient is non-linear around the heat source and sink, we ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell we fit S/3 + 1 points to obtain the temperature gradient. We use a minimum supercell length of 6 unit cells (12 sections, 5 data points), in order for sufficient fitting of the temperature gradient. 
+
+%\begin{figure}[h!]
+%\includegraphics[width=\linewidth]{Figures/direct_temp_pro_01.png}
+%\caption[direct temperature profile 1]{}
+%\label{fig:direct_temp_pro_01}
+%\end{figure}
+
+%\begin{figure}[h!]
+%\includegraphics[width=\linewidth]{Figures/direct_temp_pro_02.png}
+%\caption[direct temperature profile 2]{}
+%\label{fig:direct_temp_pro_02}
+%\end{figure}
+
+\begin{figure}[hp!]
+\includegraphics[width=\linewidth]{Figures/direct_temp_pro_03.png}
+\caption[direct temperature profile 3]{Temperature profile and geometry schematic for a cell 6 unit cells long. The temperature profile is non-linear, steeper gradient than the surrounding, immediately around the heated sections. In longer cells, the non-linear region will be wider than one section, requiring more sections to be ignored. The temperature profile is folded over onto itself to average one temperature gradient. The equations discussed hold as long as a unit cell is divided into two sections, and a twelveth of the total sections are removed from each end of the combined gradient.}
+\label{fig:direct_temp_pro_03}
+\end{figure}
+
+\pagebreak
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.bin}FIDDLING WITH BIN WIDTH}
+%---------------------------------------
+
+Changing the width of the heated sections has no effect on the conductivity result, assuming you have enough temperature points to fit the linear gradient. Furthermore, changing the width (and thus number) of temperature bins has no effect on the sampled gradient, assuming resolution is large enough to capture the non-linear region around the heat source/sink (see Figure~\ref{fig:direct bin width}).
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_bin_width.png}
+\caption[direct bin width]{Conductivity results from direct method when temperature is calculated from sections half a unit cell wide, and also a twelfth of the total length. The amount of points in the temperature gradient changes when the section width depends on the unit cell, but not on the length (i.e. there are always twelve sections, the gradient is fit to five data points).}
+\label{fig:direct_bin_width}
+\end{figure}
+
+\pagebreak
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.grad}Temperature gradient convergence}
+%---------------------------------------
+
+An important factor for utilising the direct method is maintaining a sensible temperature gradient, such that Fourier's law (REF) remains valid, i.e. conductivity is constant along the length of the cell. Thermal conductivity is strongly temperature-dependent at upper lower-mantle conditions (1000~K), it is therefore undesirable to have substanially different conductivities as a of function of temperature across the cell. The opposite case is also true, the difference in temperature between hot and cold sections must be larger than the uncertainty in the average system temperature. 
+
+As a general rule, I try to keep the temperature difference between the ends of the gradient to 20\% the mean temperature. I control the magnitude of the gradient by altering the interval at which heat is exchanged, via swapping atomic velocities in the hot and cold sections (see Section \ref{sec:2.DM.setup}) . To produce the desired gradient magnitude as outlined above, shorter intervals are required as cell length decreases, cross-sectional area increases, and system equilibrium temperature decreases. The easier it is for heat to flow from hot to cold (smaller distance between, more area for heat transport, lower temperature/less thermal resistance), the more heat must be transported (in the form of shorter intervals between heat swaps) to maintain a temperature gradient.
+
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.time}Simulation time convergence}
+%---------------------------------------
+
+Initial results from the direct method show a large variability in conductivity, despite the seperate temperature equilibration performed beforehand. This is related to the setup of the temperature gradient and its transition to steady behaviour. For this reason, the timesteps containing this behaviour are ignored when determining conductivity. This simply means removing the temperature gradient and heat flow data from the rest of the series. How this is applied varies in practice, but on a 1~ns simulation, I would typically ingnore the first 100~ps (10\% simulation time).
+
+After removing the first portion of the data there is still variability in the calculated conductivity, but this typically converges quickly over the course of the simulation. If you have enough timesteps, the cumulative average of conductivity will tend towards a value while the uncertainty decreases. This is a simple check to ensure accurate results, where the simulation can be extended if more data is required.
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_raw_conv_4000_2x2.png}
+\caption[direct conv]{THIS FIGURE SHOWS CONVERGENCE - length = 48, }
+\label{fig:direct_conv}
+\end{figure}
+
+\pagebreak
+
+It is possible for a simulation to be too long however, where the conductivity result will drift from its converged position. This is due to inaccuracies in the molecular dynamics calculations, typically in the form of steepening temperature gradient over time. It is difficult to spot by just looking at the conductivity result and uncertainty, but easy to observe in the time series and/or graphically. The conductivity value obviously begins to change irratically, and the uncertainty begins to increase. The uncertainty would never increase if the result was still converging, making this a useful marker to look for in the series.
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_trim_drift_4000_2x2.png}
+\caption[direct conv]{THIS FIGURE SHOWS DRIFT - length = 8, the equivalent raw would also work}
+\label{fig:direct_drift}
+\end{figure}
+
+\pagebreak
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.data}Data processing}
+%---------------------------------------
+
+!!! FLYVBERG AND STUFF - ASK STEPHEN
+
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.extrap}Inverse extrapolation procedure}
+%---------------------------------------
+
+As discussed in Chapter~\ref{chp2.schelling}, the results from simulations of varying cell lengths are combined to produce the conductivity result representative of the bulk material. As I am aiming for a linear fit, I can use the lack of a linear fit to identify a simulation with problems caused by FSE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.fse}Finite-size effects}
+%---------------------------------------
+
+%-------------------
+\subsubsection{4000~K}
+%-------------------
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_4000.png}
+\caption[direct inv 4000]{CAPTION}
+\label{fig:direct_inv_4000}
+\end{figure}
+
+OBVIOUS CSA - One thing immediately obvious is that supercell CSAs of 1\by1 and 2\by1 overestimate conductivity (underestimate inverse conductivity) with respect to the larger CSAs. As discussed earlier, this can attributed to the absence of realistic phonon scattering within a narrow material. For the supercells with shorter lengths (larger inverse length), increasing CSA (to 2\by2) brings the results into alignment. 
+
+TOO SHORT - Another problem becomes apparent when looking at the shortest cells in the series (longest inverse length), they appear to overestimate conductivity (underestimate inverse etc.) with respect to the expected linear fit through the other short cells (see the linear trend on Figure~\ref{fig:direct_inv_4000}). This can be explained by the cell being on the order of the phonon MFP, allowing for phonons to travel from hot to cold without any scattering events (Ballistic Phonon Transport). This means the simulation does not have thermal resistance representative of the material. No correction can be applied here, the 6 unit cells long cells must be excluded from the extrapolation. %The problem does not seem to be present in the 4000~K results, the explanation being that the unit cell is larger from thermal expansion, and more significantly, the phonon MFP is shorter with higher temperature.
+
+%!!! MFP ANALYSIS?
+
+NOT-OBVIOUS CSA - While the shorter cells across all cross-sectional areas produce similar conductivity results, they diverge from the expected linear trend with length. The nature of the divergence is an overestimation of conductivity, the magnitude of which appears to be greater with smaller CSA. This suggests that there is some sort of aspect ratio finite-size effect. This is similar to the CSA effect mentioned above, whereby phonon-phonon scattering behaviour is not being replicated correctly. This explains why effect is larger the smaller the CSA, fewer possible phonons to participate in scattering events. 
+
+The divergence is all but removed when the 12\by12 CSA is considered (see the small difference between data and fit in Figure~\ref{fig:direct_inv_4000}). This is a significant computational cost however, and not really an efficient option for employing the direct method to calculate conductivity. I recommend ignoring cells with lengths longer than 24~UC. Computational cost increases with length, as does the divergence from linear behaviour. I can still produce accurate results using the cell lengths where 2\by2~CSA cells produce the same results as those from 12\by12 (see Figure~\ref{fig:direct_inv_cut-up_4000}), at a fraction of the cost. These key dimensions are somewhat arbitrary, only inferred from observations of the finite-size effects. Different materials require their own FSE analysis, despite any similarities in chemistry to \bdgs or conditions to the lower mantle.
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_cut-up_4000.png}
+\caption[direct inv cut up 4000]{CAPTION}
+\label{fig:direct_inv_cut-up_4000}
+\end{figure}
+
+\pagebreak
+
+Comparison with the equivalent Green-Kubo point shows good agreement for the extrapolations from CSAs 2\by2 and above. The 12\by12 series extrapolates to 6.7~\wmk, the spread of the other extrapolations is $\pm$~0.3~\wmk, with the GK point at around 7.0~\wmk. WHAT MORE DO I SAY HERE?
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_extrap_gk_comp_4000.png}
+\caption[direct extrap gk comp 4000]{CAPTION}
+\label{fig:direct_extrap_gk_comp_4000}
+\end{figure}
+
+\pagebreak
+
+REDUNDANCY WITH THE ABOVE TEXT? - In summary, accurate \bdgs conductivity results can be produced with the direct method when the cell CSA is greater than 2\by2, and the length between 8--24~UC. This will be the most efficient use of computational resources. Different lower mantle minerals may require different simulation geometries, making them easier or more difficult to compute.
+
+
+
+%-------------------
+\subsubsection{1000~K}
+%-------------------
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_1000.png}
+\caption[direct inv 1000]{CAPTION}
+\label{fig:direct_inv_1000}
+\end{figure}
+
+Everything is different with the FSE analysis at 1000~K. It still appears that the 1\by1 and 2\by1 CSAs overestimate conductivity, and that the smallest, 6 unit cell length data point overestimates conductivity compared to a hypothetical linear fit through the other points. Using cells between 8--24~UC for extrapolation does not produce conductivity results which agree with GK however. 
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_cut-up_1000_03.png}
+\caption[direct inv cutup 1000 03]{CAPTION}
+\label{fig:direct_inv_cutup_1000_03}
+\end{figure}
+
+\pagebreak
+
+The discrepancy is around 5~\wmk, 12.5~\wmks from direct method and 17.5~\wmks from Green-Kubo. The best CSA series to fit appears to be the 2\by1. To get agreement between the two methods at these conditions, it appears cells longer than 48~UC should be considered. The 2\by2 or larger cells produce around the same result, suggesting convergence of the minimum CSA to the GK result.
+
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/direct_inv_cut-up_1000_01.png}
+\caption[direct inv cutup 1000 01]{CAPTION}
+\label{fig:direct_inv_cutup_1000_01}
+\end{figure}
+
+\pagebreak
+
+%---------------------------------------
+\subsection{\label{sec:3.DM.theory}Explaining CSA effect}
+%---------------------------------------
+
+!!! GO THROUGH THEORY WITH STEPHEN
+
+
+ 
+
+
+
+
+
 
 
 
@@ -327,14 +365,14 @@ Supercell                        & Simulation length & \# initial conditions    
 \section{\label{sec:3.Summary}Summary}
 %-----------------------------------------------------------
 
-!!! STITCH METHODS TOGETHER IN THIS SECTION. COMPARE AND CONTRAST. PROBLEMS? HOW TO APPLY THIS GOING FORWARD?
-
 !!! EDIT ALL THIS
 
-For bridgmanite (at conditions representing the lower mantle), we show that use of the direct method for calculation of thermal conductivity will lead to an overestimate if the simulation cell is too long (\textgreater 16 unit cells, 4000 ONLY!!!). Small cross-sectional areas (\textless 2x2 unit cells) also overestimate the thermal conductivity. This informs future work using Density Functional Theory, and will allow a model of lower mantle conductivity considering composition to be established [[[OOPS]]].
+!!! STITCH METHODS TOGETHER IN THIS SECTION. COMPARE AND CONTRAST. PROBLEMS? HOW TO APPLY THIS GOING FORWARD?
 
-(ASSUMING THE RESULTS ARE CORRECT AND AGREE WITH GK) We see the non-linear region as described by \citet{Sellan2010} for the cell length of 6 unit cells at 1000~K, which has individually higher conductivity than expected from the linear fit through data points corresponding to lengths of 8-16 unit cells. When included in the extrapolation, this reduces the gradient of the fit, raising the intercept and thus causing conductivity to be underestimated. At temperature of 4000~K, the 6 length cell is inline with the fit through other cells with length less than 16 unit cells. As the ratio of cell length to phonon MFP increases with temperature, we believe the onset of divergence as described by Sellan et al. moves to the right (??? - MENTION ACTUAL EFFECT - QUANTIFY RATHER THAN REFERENCING GRAPH). A shorter MFP needs shorter cell lengths to display divergent conductivity, of which we have not sampled (at high temperature). DOING THE DIRECT METHOD WITH CELLS OF LENGTH LESS THAN 6 UNIT CELLS AT ANY TEMPERATURE IS A BAD IDEA BECAUSE ... 
+For bridgmanite (at conditions representing the CMB), we show that use of the direct method for calculation of thermal conductivity will lead to an overestimate if the simulation cell is too long (\textgreater 24 unit cells). Small cross-sectional areas (\textless 2x2 unit cells) also overestimate the thermal conductivity. %This informs future work using Density Functional Theory, and will allow a model of lower mantle conductivity considering composition to be established [[[OOPS]]].
 
-We find conductivity is definitely dependent on CSA, but we were not able to increase CSA enough to eliminate aspect ratio-dependent divergence as reported by \citet{Hu2011}. This does support our conclusion ignoring long cell lengths however, in order to keep the aspect ratio within a reasonable limit and ensure a linear fit is extrapolated. (EVEN THOUGH 48x8x8 HAS A SMALLER RATIO than 8x2x2?)
+(ASSUMING THE RESULTS ARE CORRECT AND AGREE WITH GK) We see the non-linear region as described by \citet{Sellan2010} for the cell length of 6 unit cells, which has individually higher conductivity than expected from the linear fit through data points corresponding to lengths of 8--24 unit cells. When included in the extrapolation, this reduces the gradient of the fit, raising the intercept and thus causing conductivity to be underestimated. %At temperature of 4000~K, the 6 length cell is inline with the fit through other cells with length less than 16 unit cells. As the ratio of cell length to phonon MFP increases with temperature, we believe the onset of divergence as described by Sellan et al. moves to the right (??? - MENTION ACTUAL EFFECT - QUANTIFY RATHER THAN REFERENCING GRAPH). A shorter MFP needs shorter cell lengths to display divergent conductivity, of which we have not sampled (at high temperature). DOING THE DIRECT METHOD WITH CELLS OF LENGTH LESS THAN 6 UNIT CELLS AT ANY TEMPERATURE IS A BAD IDEA BECAUSE ... 
 
-(WAFFLE ALERT) Ignoring the specifics of this study, we stress the importance of performing finite-size analysis when performing direct method calculations.  Direct method cells spanning a range of lengths must be considered to find the linear regime for extrapolation. Cross-sectional area must be increased until the conductivity result converges. The same can be said about the Green--Kubo method, where the result converges with increasing volume. These effects vary with phonon mean-free path, sensitive to pressure, temperature, and compositional variations such as impurities. Completing finite-size effect analysis at conditions with the largest phonon mean-free path / thermal conductivity ensure all other conditions represent converged results. We believe classical molecular dynamics with interatomic potentials to be an excellent way of quantifying these effects quickly, performing ab initio methods (SHOULD I TAKE THIS SENTENCE OUT, NO PROOF OF THIS CLAIM).
+I find conductivity is definitely dependent on CSA, and was able to increase CSA enough to eliminate aspect ratio-dependent divergence as reported by \citet{Hu2011}. This does support my conclusion ignoring the longer cell lengths however, in order to ensure a linear fit is extrapolated and computational costs are kept low. 
+
+(WAFFLE ALERT) Ignoring the specifics of this study, we stress the importance of performing finite-size analysis when performing direct method calculations.  Direct method cells spanning a range of lengths must be considered to find the linear regime for extrapolation. Cross-sectional area must be increased until the conductivity result converges. The same can be said about the Green-Kubo method, where the result converges with increasing volume. These effects vary with phonon mean-free path, sensitive to pressure, temperature, and compositional variations such as impurities. Completing finite-size effect analysis at conditions with the largest phonon mean-free path / thermal conductivity ensure all other conditions represent converged results. We believe classical molecular dynamics with interatomic potentials to be an excellent way of quantifying these effects quickly, to then utilise ab initio methods accurately (SHOULD I TAKE THIS SENTENCE OUT, NO PROOF OF THIS CLAIM).
