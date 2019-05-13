@@ -365,22 +365,22 @@ The Green-Kubo method uses auto-correlation functions (ACFs) to quantify time-de
 
 The heat flux data required to generate the ACF is obtained from MD simulation in the NVE regime. As always, it is necessary to perform the NPT cell size convergence, and preliminary NVT to populate the atomic velocities.
 
-The auto-correlation is obtained over the series of net heat flux in each crystallographic direction, for a timescale up to a chosen correlation length. 
-~
+For a timescale up to a chosen correlation length, the auto-correlation function is obtained over the series of net heat flux in each crystallographic direction
+%
 \begin{equation}
 ACF_i = \left \langle J_i(0) \cdot  J_i(t) \right \rangle,
 \label{acf-j}
 \end{equation}
-~
+%
 where $i$ specifies direction, $J$ is heat flux, and $t$ is the correlation length. This acts as a cut-off, the significance of correlating points far apart in time decreases with the separation. The correlation length could be as long as the simulation length, but for large time differences there would be fewer and fewer heat flux pairs. This means there would be increased uncertainty on points of decreasing relevance. The correlation lengths I use are much shorter than the simulation length.  
 
 The integral of heat flux ACF is proportional to thermal conductivity via the Green-Kubo equation (see Figure~\ref{fig:gk_int} and Equation \ref{gk-int}), 
-~
+%
 \begin{equation}
 \kappa_i = \frac{V}{k_{B}T^{2}} \int_{0}^{\infty} \left \langle J_i(0) \cdot  J_i(t) \right \rangle dt ,
 \label{gk-int}
 \end{equation}
-~
+%
 where $V$ is the simulation cell volume, $k_B$ is the Boltzmann constant, and $T$ is the average temperature of the system. In this study we use Green-Kubo results as an independent check on the direct method, as they do not have the same finite size-effects. Obtaining a converged conductivity result simply depends on using a large enough cell volume / number of atoms. 
 
 \begin{figure}[h]

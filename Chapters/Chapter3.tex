@@ -36,9 +36,7 @@ The severity of these finite-size effects (FSE) increases with the length and ex
 \section{\label{sec:3.GK}Green-Kubo}
 %-----------------------------------------------------------
 
-!!! DO I NEED TO MENTION HOW TO PERFORM ACF IN C2?
-
-Now I will outline my approach for applying the Green-Kubo method for computing conductivity to \bdgs at lower mantle conditions. First I show accurate results can be obtained within the chosen correlation length. I then show how results represent a large sample of possible conditions, and a way of minimising error by combining multiple heat flux autocorrelation functions (ACFs). Finally I show that all these components are valid with respect to total simulation time, before presenting how finite simulation size affects conductivity results.
+Here I will outline my approach for applying the Green-Kubo method for computing conductivity to \bdgs at lower mantle conditions. First I show accurate results can be obtained within the chosen correlation length. I then show how results represent a large sample of possible conditions, and a way of minimising error by combining multiple heat flux autocorrelation functions (ACFs). Finally I show that all these components are valid with respect to total simulation time, before presenting how finite simulation size affects conductivity results.
 
 After determining cell parameters appropriate to the simulated conditions (NPT), I initialise a temperature distribution (NVT). To obtain heat flux auto-correlation functions, a simulation for each initial temperature condition is run for X~ns, with 9 successive repeats for a total of 10 jobs. This gives 10 ACFs from each initial condition. Simulation runs are split in this manner to be feasible computationally, jobs submitted to the high-performance computing facilities have a maximum length of 48~hours. Each job finished in this manner produces an ACF, somewhat of a bootstrapping process on the total simulation series.
 
@@ -46,48 +44,69 @@ After determining cell parameters appropriate to the simulated conditions (NPT),
 \subsection{\label{sec:3.GK.cor}Correlation length convergence}
 %---------------------------------------
 
-!!! Show high and low temperature, difference in start and end of correlation window.
+I compute ACFs up to correlation lengths of 100~ps, with (100,000) 1~fs timesteps. This length is longer than required but selected as a proof of concept to show convergence in the conductivity result, additionally to display the extent and behaviour of drift in the integrals for long correlation times. Figure~\ref{fig:gk_acf} shows that the magnitude of the ACF decays to much less than 1\% of its initial value around a correlation time of 2~ps, inferring the start of convergence for the integral and thus conductivity.
 
-In this study we compute ACFs up to correlation lengths of 100~ps, with (100,000) 1~fs timesteps. This length is longer than required but selected as a proof of concept to show convergence in the conductivity result, additionally to display the extent and behaviour of drift in the integrals for long correlation times. We show in Figure \ref{fig:acf_decay} that the magnitude of the ACF decays to much less than 1\% of its initial value around a correlation time of 2~ps, inferring the start of convergence for the integral and thus conductivity.
+Considering bridgemanite at lower mantle pressures, I find correlation time window extrema of 2-30~ps to be suitable. At the low-end, this allows the initial high-variability in integral value to be ignored. At the high-end, the time is long enough for good sampling of the integral, but short enough to ignore the drift-effects. The magnitude and range of the window typically increases with conductivity (or with decreasing temperature etc.), e.g. 2--10~ps at 3000~K (Figure~\ref{fig:gk_int_3000_000pc_trio}b), and 10--30~ps at 1000~K (Figure~\ref{fig:gk_int_1000_000pc_trio}b). These correlation lengths are on the same order of magnitude as used by \citet{Haigis2012}. They observe convergence in MgO conductivity results after 30~ps, albeit at a temperature of 300~K. %This corresponds with what I noticed, lower temperatures/higher conductivities require longer ACF.
 
-!!! INSERT FIGURES HERE
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/gk_int_3000_000pc_trio.png}
+\caption[gk int 3000 000pc trio]{Integral populations (blue) from GK calculation at 3000~K, with mean integral and plus/minus standard deviation (red). 
+\textbf{a.} shows the range of conductivity series over the full correlation length.
+\textbf{b.} shows the series up to the end of the correlation window (8~ps, the window starts at 2~ps).
+\textbf{c.} focuses on the mean integral over all the correlation length, past the correlation window where it begins to drift away from a converged value.}
+\label{fig:gk_int_3000_000pc_trio}
+\end{figure}
+%
+\begin{figure}[h!]
+\includegraphics[width=\linewidth]{Figures/gk_int_1000_000pc_trio.png}
+\caption[gk int 1000 000pc trio]{Integral populations (blue) from GK calculation at 1000~K, with mean integral and plus/minus standard deviation (red). 
+\textbf{a.} shows the range of conductivity series over the full correlation length.
+\textbf{b.} shows the series up to the end of the correlation window (30~ps, the window starts at 10~ps).
+\textbf{c.} focuses on the mean integral over all the correlation length, past the correlation window where it begins to drift away from a converged value.}
+\label{fig:gk_int_1000_000pc_trio}
+\end{figure}
 
-Considering bridgemanite at lower mantle conditions, we find correlation time windows in the range of 2-30~ps to be suitable. At the low-end, this allows the initial high-variability in integral value to be ignored. At the high-end, the time is long enough for good sampling of the integral, but short enough to ignore the drift-effects. The magnitude and range of the window typically increases with conductivity (or with decreasing temperature etc.), e.g. 2-10~ps at 4000~K, and 10-30~ps at 1000~K. These correlation lengths are on the same order of magnitude as used by \citet{Haigis2012}. They observe convergence in the conductivity result after 30~ps, albeit at a temperature of 300~K. This corresponds with what I noticed, lower temperatures/higher conductivities require longer ACF.
+A shown in Figure~\ref{fig:gk_int_3000_000pc_trio}c \& \ref{fig:gk_int_1000_000pc_trio}c, the integral drifts considerably outside of the chosen correlation window. This effect needs to be resolved before accurate conductivity results can be determined, and is caused by an increase in the ACF signal to noise ratio at long correlation lengths. Theoretically, the ACF tends to zero as correlation length tends to infinity. In practice this doesn't happen because of noise, but it can be thought of as the signal tending to zero and the noise remaining finite.
+
+\pagebreak
 
 %---------------------------------------
 \subsection{\label{sec:3.GK.int}Integral sample convergence}
 %---------------------------------------
 
-!!! Is this section even necessary? Bootstrap the integrals, show result doesn't change?
+!!! IS THIS SECTION EVEN NECESSARY? 
 
 ACFs produced by each simulation are integrated seperately, and averaged into a single series. 
 %This process is performed for heat fluxes in each crystallographic direction, to allow analysis of anisotropy and finite system size effects.  
-From this combined integral we pick a window of correlation lengths to capture a flat, converged region (or the section just after the 'bottleneck' if convergence is not obvious). This correlation length window is then applied to all integrals constituent to the combined series, giving a sample of integral averages and corresponding standard deviations. A weighted average is then taken of these data points, to give a single value with uncertainty. This value is directly proportional to thermal conductivity, as given by Equation \ref{gk-int}. REFERENCING TOO FAR BACK? REPEAT EQUATION?
+From this combined integral I pick a window of correlation lengths to capture a flat, converged region (or the section just after the 'bottleneck' if convergence is not obvious). This correlation length window is then applied to all integrals constituent to the combined series, giving a sample of integral averages and corresponding standard deviations. A weighted average is then taken of these data points, to give a single value with uncertainty. This value is directly proportional to thermal conductivity, as given by Equation \ref{gk-int}. REFERENCING TOO FAR BACK? REPEAT EQUATION?
+
+!!!SHOULD I BOOTSTRAP THE INTEGRALS, HOPEFULLY SHOW THAT THE RESULT DOESNT CHANGE?
 
 %---------------------------------------
 \subsection{\label{sec:3.GK.sim}Simulation length convergence}
 %---------------------------------------
 
-%!!! SIMULATION LENGTH CONVERGENCE BY FIDDLING WITH profile.heatflux AND pull_list.bash
+!!! AM I WORKING ON THIS
 
-%!!! HAIGIS RUN FOR AT LEAST 0.5NS - SIMULATION LENGTH CONVERGENCE OTHER WORKS
+!!! SIMULATION LENGTH CONVERGENCE BY FIDDLING WITH profile.heatflux AND pull\_list.bash
+
+!!! HAIGIS RUN FOR AT LEAST 0.5NS - SIMULATION LENGTH CONVERGENCE OTHER WORKS
 
 %---------------------------------------
 \subsection{\label{sec:3.GK.fse}Finite-size effect convergence}
 %---------------------------------------
 
-The bridgmanite unit cell is orthorhombic (i.e. a:b:c = 1:1:1.4), so we use supercell structures of 3x3x2, 4x4x3, 5x5x4, and 6x6x4 to make a supercell arrangement approximating a cube. These supercells house 360, 960, 2000, and 2880 atoms respectively (20 atoms in unit cell). The goal here was to keep the height to area ratio as small as possible in each direction, while increasing the atom count.
+The bridgmanite unit cell is orthorhombic (i.e. a:b:c = 1:1:1.4), so I assemble supercell structures of 3x3x2, 4x4x3, 5x5x4, and 6x6x4 to make a supercell arrangement approximating a cube. These supercells house 360, 960, 2000, and 2880 atoms respectively (20 atoms in unit cell). The goal here was to keep the height to area ratio as small as possible in each direction, while increasing the atom count.
 
-The supercell arrangement of 3x3x2 (REF) fails to reproduce conductivities on the same order as the larger cells for both temperatures. 
-The conductivity obtained from the 4x4x3 supercell is in good agreement with the larger cells. This a useful result in terms of computation efficiency, as 6x6x4 supercells are 3 times as large as 4x4x3.
+The supercell arrangement of 3x3x2 fails to reproduce conductivities on the same order as the larger cells for both temperatures (see Figures~\ref{fig:gk_fse_4K} \& \ref{fig:gk_fse_1K}. The conductivity obtained from the 4x4x3 supercell is in good agreement with the larger cells. This a useful result in terms of computation efficiency, as 6x6x4 supercells are 3 times as large as 4x4x3.
 
-\begin{figure}[h!]
+\begin{figure}[]
 \includegraphics[width=\linewidth]{Figures/gk_fse_4K_draft.png}
 \caption[gk fse 4k]{}
 \label{fig:gk_fse_4K}
 \end{figure}
 ~
-\begin{figure}[h!]
+\begin{figure}[]
 \includegraphics[width=\linewidth]{Figures/gk_fse_1K_draft.png}
 \caption[gk fse 1k]{}
 \label{fig:gk_fse_1K}
@@ -160,15 +179,13 @@ In this section I will talk specifically about how I apply the direct method to 
 \subsection{\label{sec:3.DM.cell}Setting up supercells}
 %---------------------------------------
 
-!!! HOW IS HEAT FLOW ESTABLISHED? REF BACK? MULLER PLATHE
-
 In order to investigate how FSE can affect direct method results, I plan to use very large cells, both in length and cross sectional area. I will use supercells up to 96 unit cells long in the x-direction of heat flow (specifically 6, 8, 10, 12, 16, 24, 48, and 96 unit cells long). Perpendicular to this length, I will use supercells with a cross section up to 12$\times$12 unit cells (1$\times$1, 2$\times$1, 2$\times$2, 4$\times$4, 8$\times$8, and 12$\times$12).
 
 The simulation supercell is split into sections along its length, where the average temperature of atoms within is determined to calculate the gradient across the system. The symmetry of the \bdgs crystal system allows unit cells to divided into two, such that the width of sections is half a unit cell along the length of the supercell (the direction of heat flow). 
 
 Two of these sections, half the supercell length apart, are designated as the heat source and heat sink. It is within these sections that the energy of the atoms is swapped. Heat flows in both directions from the hot section because of cell periodicity (refer back to Section~\ref{sec:2.DM.setup}), meaning there are two temperature gradients to sample and combine. 
 
-Where L is supercell length in unit cells and S (= 2L) gives the number of sections, we obtain S/2 + 1 temperature points to fit the gradient. Width of a section, S$_{\mathrm{W}}$, is half that of a single unit cell. Because the temperature gradient is non-linear around the heat source and sink, we ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell we fit S/3 + 1 points to obtain the temperature gradient. We use a minimum supercell length of 6 unit cells (12 sections, 5 data points), in order for sufficient fitting of the temperature gradient. 
+Where L is supercell length in unit cells and S (= 2L) gives the number of sections, there are S/2 + 1 temperature points to fit the gradient to. Width of a section, S$_{\mathrm{W}}$, is half that of a single unit cell. Because the temperature gradient is non-linear around the heat source and sink, I ignore S/12 sections (rounded to nearest integer) from both ends of the temperature gradient. For a given simulation cell, S/3 + 1 points are used to fit the temperature gradient. The minimum supercell length considered is 6 unit cells (12 sections, 5 data points for fitting), in order for sufficient sampling of the temperature gradient. 
 
 %\begin{figure}[h!]
 %\includegraphics[width=\linewidth]{Figures/direct_temp_pro_01.png}
@@ -349,7 +366,7 @@ The discrepancy is around 5~\wmk, 12.5~\wmks from direct method and 17.5~\wmks f
 \subsection{\label{sec:3.DM.theory}Explaining CSA effect}
 %---------------------------------------
 
-!!! GO THROUGH THEORY WITH STEPHEN
+!!! GO THROUGH THEORY WITH STEPHEN - HU et al 2011
 
 
  
@@ -369,10 +386,10 @@ The discrepancy is around 5~\wmk, 12.5~\wmks from direct method and 17.5~\wmks f
 
 !!! STITCH METHODS TOGETHER IN THIS SECTION. COMPARE AND CONTRAST. PROBLEMS? HOW TO APPLY THIS GOING FORWARD?
 
-For bridgmanite (at conditions representing the CMB), we show that use of the direct method for calculation of thermal conductivity will lead to an overestimate if the simulation cell is too long (\textgreater 24 unit cells). Small cross-sectional areas (\textless 2x2 unit cells) also overestimate the thermal conductivity. %This informs future work using Density Functional Theory, and will allow a model of lower mantle conductivity considering composition to be established [[[OOPS]]].
+For bridgmanite (at conditions representing the CMB), I show that use of the direct method for calculation of thermal conductivity will lead to an overestimate if the simulation cell is too long (\textgreater 24 unit cells). Small cross-sectional areas (\textless 2x2 unit cells) also overestimate the thermal conductivity. %This informs future work using Density Functional Theory, and will allow a model of lower mantle conductivity considering composition to be established [[[OOPS]]].
 
-(ASSUMING THE RESULTS ARE CORRECT AND AGREE WITH GK) We see the non-linear region as described by \citet{Sellan2010} for the cell length of 6 unit cells, which has individually higher conductivity than expected from the linear fit through data points corresponding to lengths of 8--24 unit cells. When included in the extrapolation, this reduces the gradient of the fit, raising the intercept and thus causing conductivity to be underestimated. %At temperature of 4000~K, the 6 length cell is inline with the fit through other cells with length less than 16 unit cells. As the ratio of cell length to phonon MFP increases with temperature, we believe the onset of divergence as described by Sellan et al. moves to the right (??? - MENTION ACTUAL EFFECT - QUANTIFY RATHER THAN REFERENCING GRAPH). A shorter MFP needs shorter cell lengths to display divergent conductivity, of which we have not sampled (at high temperature). DOING THE DIRECT METHOD WITH CELLS OF LENGTH LESS THAN 6 UNIT CELLS AT ANY TEMPERATURE IS A BAD IDEA BECAUSE ... 
+(ASSUMING THE RESULTS ARE CORRECT AND AGREE WITH GK) The non-linear region as described by \citet{Sellan2010} can be observed for the cell length of 6 unit cells, which has individually higher conductivity than expected from the linear fit through data points corresponding to lengths of 8--24 unit cells. When included in the extrapolation, this reduces the gradient of the fit, raising the intercept and thus causing conductivity to be underestimated. %At temperature of 4000~K, the 6 length cell is inline with the fit through other cells with length less than 16 unit cells. As the ratio of cell length to phonon MFP increases with temperature, we believe the onset of divergence as described by Sellan et al. moves to the right (??? - MENTION ACTUAL EFFECT - QUANTIFY RATHER THAN REFERENCING GRAPH). A shorter MFP needs shorter cell lengths to display divergent conductivity, of which we have not sampled (at high temperature). DOING THE DIRECT METHOD WITH CELLS OF LENGTH LESS THAN 6 UNIT CELLS AT ANY TEMPERATURE IS A BAD IDEA BECAUSE ... 
 
 I find conductivity is definitely dependent on CSA, and was able to increase CSA enough to eliminate aspect ratio-dependent divergence as reported by \citet{Hu2011}. This does support my conclusion ignoring the longer cell lengths however, in order to ensure a linear fit is extrapolated and computational costs are kept low. 
 
-(WAFFLE ALERT) Ignoring the specifics of this study, we stress the importance of performing finite-size analysis when performing direct method calculations.  Direct method cells spanning a range of lengths must be considered to find the linear regime for extrapolation. Cross-sectional area must be increased until the conductivity result converges. The same can be said about the Green-Kubo method, where the result converges with increasing volume. These effects vary with phonon mean-free path, sensitive to pressure, temperature, and compositional variations such as impurities. Completing finite-size effect analysis at conditions with the largest phonon mean-free path / thermal conductivity ensure all other conditions represent converged results. We believe classical molecular dynamics with interatomic potentials to be an excellent way of quantifying these effects quickly, to then utilise ab initio methods accurately (SHOULD I TAKE THIS SENTENCE OUT, NO PROOF OF THIS CLAIM).
+(WAFFLE ALERT) Ignoring the specifics of this study, I believe it is important to perform finite-size analysis when performing direct method calculations.  Direct method cells spanning a range of lengths must be considered to find the linear regime for extrapolation. Cross-sectional area must be increased until the conductivity result converges. The same can be said about the Green-Kubo method, where the result converges with increasing volume. These effects vary with phonon mean-free path, sensitive to pressure, temperature, and compositional variations such as impurities. Completing finite-size effect analysis at conditions with the largest phonon mean-free path / thermal conductivity ensure all other conditions represent converged results. I believe classical molecular dynamics with interatomic potentials to be an excellent way of quantifying these effects quickly, to then utilise ab initio methods accurately (SHOULD I TAKE THIS SENTENCE OUT, NO PROOF OF THIS CLAIM).
