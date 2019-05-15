@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  13 MAY 2019 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  15 MAY 2019 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2650,24 +2650,18 @@ e 61.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [49] [50 <./Figures/gk_int_3000_000pc_trio.png (PNG copy)> <./Figures/gk_int_10
-00_000pc_trio.png (PNG copy)>]
-Overfull \hbox (14.2917pt too wide) in paragraph at lines 91--92
-[]\T1/ppl/m/n/10.95 !!! SIM-U-LA-TION LENGTH CON-VER-GENCE BY FID-DLING WITH pr
-o-file.heatflux
- []
-
+00_000pc_trio.png (PNG copy)>] [51]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 103.
 
-<Figures/gk_fse_4K_draft.png, id=1235, 362.10281pt x 217.5628pt>
+<Figures/gk_fse_4K_draft.png, id=1239, 362.10281pt x 217.5628pt>
 File: Figures/gk_fse_4K_draft.png Graphic file (type png)
 <use Figures/gk_fse_4K_draft.png>
 Package pdftex.def Info: Figures/gk_fse_4K_draft.png  used on input line 104. o
 n input line 104.
 Package pdftex.def Info: Requested size: 404.02908pt x 242.75575pt on input lin
 e 104.
-[51]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 109.
@@ -3144,7 +3138,7 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (133 pages, 1879226 bytes).
+Output written on main.pdf (133 pages, 1879513 bytes).
 PDF statistics:
  1903 PDF objects out of 2073 (max. 8388607)
  1682 compressed objects within 17 object streams
