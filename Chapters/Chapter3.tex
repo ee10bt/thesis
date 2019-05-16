@@ -86,11 +86,36 @@ From this combined integral I pick a window of correlation lengths to capture a 
 \subsection{\label{sec:3.GK.sim}Simulation length convergence}
 %---------------------------------------
 
-!!! SIMULATION LENGTH CONVERGENCE BY FIDDLING WITH profile.heatflux AND pull\_list.bash
+%!!! SIMULATION LENGTH CONVERGENCE BY FIDDLING WITH profile.heatflux AND pull\_list.bash
 
-!!! HAIGIS RUN FOR AT LEAST 0.5NS - SIMULATION LENGTH CONVERGENCE OTHER WORKS
+% !!! I think i can look at individual simulation time less than 1ns by looking at 170125 results, maybe the 6x6x4?
 
-The number of integrals and their correlation length is ultimately more important than the simulation length the integrals were derived from. This is of course assuming individual simulation length is much longer than the required correlation length. In this example I use individual simulation length of 10~ns with 100~ps correlation length, i.e. simulation 100 times longer than correlation.
+%!!! HAIGIS RUN FOR AT LEAST 0.5NS - SIMULATION LENGTH CONVERGENCE OTHER WORKS
+
+!!! NO ONE HAS EVER READ THIS SECTION, TRIPLE CHECK!
+
+The number of integrals and their correlation length is ultimately more important than the simulation length the integrals were derived from. This is of course assuming individual simulation length is much longer than the required correlation length window maximum. 
+
+In this example I use an individual simulation length of 10~ns (for 289 runs) with up to 100~ps correlation length, i.e. simulation 100 times longer than correlation. Converged conductivity can be obtained from windows ranging between 5--10~ps, so it will this 10~ps that the simulation length must be longer than. I reprocess the ACFs in such a way that the individual simulation time is reduced, reducing the effective simulation time but not the number of integrals averaged.
+
+\begin{figure}[hb!]
+\includegraphics[width=\linewidth]{Figures/gk_sim_length_conv_graph.png}
+\caption[gk simulation length convergence]{}
+\label{fig:gk_int_4000_sim_length_conv_graph}
+\end{figure}
+
+Figure~\ref{fig:gk_int_4000_sim_length_conv_graph} shows little variability in conductivity result average from the 5--10~ps window, when individual simulation length to obtain each integral changes from 1~to~10~ns. The variation is $\pm0.02$  on an average of 6.80~\wmk. 
+
+\begin{figure}[hb!]
+\includegraphics[width=\linewidth]{Figures/gk_int_4000_comp_sim_length.png}
+\caption[gk integrals, simulation length convergence]{}
+\label{fig:gk_int_4000_sim_length_comp}
+\end{figure}
+
+While statistics show the conductivity is converged, it does not mean the integral set is the same. The Figure~\ref{fig:gk_int_4000_sim_length_comp}.\textbf{a} corresponds to individual simulation length of 1~ns (the leftmost data point on Figure~\ref{fig:gk_int_4000_sim_length_conv_graph}), and \ref{fig:gk_int_4000_sim_length_comp}.\textbf{b} 10~ns (the rightmost point). Increasing simulation length means the individual integrals converge on the mean, reducing the spread and standard deviation. Negative conductivities can be seen on \ref{fig:gk_int_4000_sim_length_comp}.\textbf{a}, which is obviously unphysical, reinforcing the idea that averaging a large enough sample of integrals is more important than the simulation time that went into producing a single series.
+
+\pagebreak
+
 
 %---------------------------------------
 \subsection{\label{sec:3.GK.fse}Finite-size effect convergence}
@@ -100,13 +125,13 @@ The bridgmanite unit cell is orthorhombic (i.e. a:b:c = 1:1:1.4), so I assemble 
 
 The supercell arrangement of 3x3x2 fails to reproduce conductivities on the same order as the larger cells for both temperatures (see Figures~\ref{fig:gk_fse_4K} \& \ref{fig:gk_fse_1K}. The conductivity obtained from the 4x4x3 supercell is in good agreement with the larger cells. This a useful result in terms of computation efficiency, as 6x6x4 supercells are 3 times as large as 4x4x3.
 
-\begin{figure}[]
+\begin{figure}[hb]
 \includegraphics[width=\linewidth]{Figures/gk_fse_4K_draft.png}
 \caption[gk fse 4k]{}
 \label{fig:gk_fse_4K}
 \end{figure}
 ~
-\begin{figure}[]
+\begin{figure}[h]
 \includegraphics[width=\linewidth]{Figures/gk_fse_1K_draft.png}
 \caption[gk fse 1k]{}
 \label{fig:gk_fse_1K}

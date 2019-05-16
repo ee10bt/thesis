@@ -18,29 +18,31 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces gk int 3000 000pc trio}}{50}{figure.caption.99}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces gk int 1000 000pc trio}}{50}{figure.caption.100}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces gk fse 4k}}{52}{figure.caption.104}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces gk fse 1k}}{53}{figure.caption.105}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces direct temperature profile 3}}{55}{figure.caption.110}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces direct bin width}}{56}{figure.caption.112}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces direct conv}}{58}{figure.caption.115}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces direct conv}}{59}{figure.caption.116}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces direct inv 4000}}{61}{figure.caption.121}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces direct inv cut up 4000}}{63}{figure.caption.122}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces direct extrap gk comp 4000}}{63}{figure.caption.123}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces direct inv 1000}}{64}{figure.caption.125}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces direct inv cutup 1000 03}}{65}{figure.caption.126}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces direct inv cutup 1000 01}}{66}{figure.caption.127}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces gk simulation length convergence}}{52}{figure.caption.103}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces gk integrals, simulation length convergence}}{52}{figure.caption.104}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces gk fse 4k}}{53}{figure.caption.106}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces gk fse 1k}}{54}{figure.caption.107}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces direct temperature profile 3}}{56}{figure.caption.112}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces direct bin width}}{57}{figure.caption.114}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces direct conv}}{59}{figure.caption.117}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces direct conv}}{60}{figure.caption.118}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces direct inv 4000}}{62}{figure.caption.123}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces direct inv cut up 4000}}{64}{figure.caption.124}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces direct extrap gk comp 4000}}{64}{figure.caption.125}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces direct inv 1000}}{65}{figure.caption.127}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces direct inv cutup 1000 03}}{66}{figure.caption.128}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces direct inv cutup 1000 01}}{67}{figure.caption.129}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CONTENTS BIT}}{73}{figure.caption.146}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces CONTENTS BIT}}{78}{figure.caption.155}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CONTENTS BIT}}{79}{figure.caption.157}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CONTENTS BIT}}{80}{figure.caption.158}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CONTENTS BIT}}{80}{figure.caption.159}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces CONTENTS BIT}}{83}{figure.caption.167}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces CONTENTS BIT}}{84}{figure.caption.169}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces CONTENTS BIT}}{86}{figure.caption.171}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces CONTENTS BIT}}{88}{figure.caption.179}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CONTENTS BIT}}{73}{figure.caption.148}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CONTENTS BIT}}{78}{figure.caption.157}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CONTENTS BIT}}{79}{figure.caption.159}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CONTENTS BIT}}{80}{figure.caption.160}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CONTENTS BIT}}{80}{figure.caption.161}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CONTENTS BIT}}{83}{figure.caption.169}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces CONTENTS BIT}}{84}{figure.caption.171}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CONTENTS BIT}}{86}{figure.caption.173}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CONTENTS BIT}}{88}{figure.caption.181}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces SPHERICAL HARMONICS}}{94}{figure.caption.191}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SPHERICAL HARMONICS}}{94}{figure.caption.193}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
