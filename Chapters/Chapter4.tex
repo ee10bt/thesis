@@ -3,9 +3,13 @@
 
 \label{Chapter4} % for referencing this chapter elsewhere, use \ref{ChapterX}
 
-As stated earlier (REF), there are no are experiments that can reach the high pressures and temperatures necessary to replicate the conditions of the lower mantle. The addition of impurities into minerals further complicates the matter. In addition to pressure and temperature-dependence, composition must be considered for full evaluation.
+As stated previously, there are no are experiments that can reach the high pressures and temperatures necessary to replicate the conditions of the lower mantle. The addition of impurities into minerals further complicates the matter. In addition to pressure and temperature-dependence, composition must be considered for full evaluation of lower mantle conductivity.
 
-DISCUSS/RE-ITERATE EARLIER-DISCUSSED SEMI-RELEVANT EXPERIMENTS HERE, MANTHILAKE
+\citet{Manthilake2011} extrapolate their experimental results to lower mantle conditions, modelling conductivity for a 4 parts \bdgs : 1 part ferropericlase compositional model. Their actual experimental results (performed between 500--1200~K) comprise of \bdgs with iron and aluminium at 26~GPa, and ferropericlase at 8 and 14~GPa. At lower temperatures for any pressure or composition, adding any amount of impurity reduces conductivity by an order of around 3. The magnitude of this reduction decreases with temperature (as impurity-free conductivity decreases anyway), but impurities can have a huge effect. Conductivity decreases with temperature at a slower rate for the compositions with impurities, suggesting that reductions from impurities affect the reductions from other effects (such as temperature increase), and that there might be a minimum conductivity where there can be no further decreases.
+
+Developing the methodologies presented in Chapter~\ref{Chapter3}, in this chapter I will introduce iron into my existing bridgmanite model and establish the effects on lattice thermal conductivity around the core-mantle boundary. This is in order to quantify conductivity as a function of temperature and composition, to use Fourier's law in assessing CMB heat flux with variable conductivity and temperature gradient. 
+
+
 
 %-----------------------------------------------------------
 \section{Simulating the effect of atomic impurities}
@@ -45,7 +49,7 @@ where $\omega_{\mathrm{0}}$ is the phonon frequency at which the mean free path 
 where $\kappa_{\mathrm{1}}$ and $\kappa_{\mathrm{2}}$ are the solid solution endmember conductivities, and $C$ is the fractional concentration of the second endmember (Eq. SS7).
 
 %-------------------
-\subsubsection{$\omega_{\mathrm{0}}/\omega_{\mathrm{D}}$ overview} 
+\subsection{Why does this model work?} 
 %-------------------
 
 When $\omega_{\mathrm{0}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}}) \rightarrow (\omega_{\mathrm{D}}/\omega_{\mathrm{0}})$, so $k_{SS} \rightarrow k_{V}$, the conductivity including the effect of impurities tends toward the endmember linear average. This is the scenario when other factors, such as Umklapp processes at high temperatures, have caused conductivity to decrease significantly. Adding impurities at this point has little additional effect, conductivity is already close to its saturated minimum.
@@ -53,7 +57,7 @@ When $\omega_{\mathrm{0}} \gg \omega_{\mathrm{D}}$, $\arctan(\omega_{\mathrm{D}}
 On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\omega_{\mathrm{D}}/\omega_{\mathrm{0}})\rightarrow\pi/2$, but $(\omega_{\mathrm{0}}/\omega_{\mathrm{D}})\ll 2/\pi$, so $k_{\mathrm{SS}} < k_{\mathrm{V}}$, and impurity scattering has a noticeable effect on the resultant conductivity. Adding impurities affects conductivity in this fashion when phonon-phonon collisions are not the dominant conductivity reducing process, like at low temperatures compared to the conditions mentioned in the above case. Additional information on $\omega_{\mathrm{0}}$ will be given at the end of this subsection.
 
 %-------------------
-\subsubsection{What effects the magnitude of impurity scattering?} 
+\subsection{What effects the magnitude of impurity scattering?} 
 %-------------------
 
 That factors that affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{eq.SS2015SM.6} can be expressed (Eq. S11) as
@@ -83,7 +87,7 @@ The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increase
 !!! MANTLE COMPOSITION REFERENCE NEEDED ABOVE
 
 %-------------------
-\subsection{$\omega$ and $\tau$ in depth} 
+\subsection{Phonon frequency and relaxation time} 
 %-------------------
 
 $\omega_{\mathrm{0}}$ is defined \citep[by][Eq.~11]{Klemens1960} as the frequency at which 
@@ -164,7 +168,7 @@ In this section I outline the process of taking Fe from chemistry to computer, b
 \subsection{How does iron behave?} 
 %---------------------------------------
 
-ELECTRONIC THERMAL CONDUCTIVITY???
+!!! REFER FORWARD TO SECTION~\ref{sec:iso_pot}
 
 I use two methods to introduce iron impurities to my bridgmanite models. The first approach is to simply create a magnesium atom with the mass of an iron atom, without changing any coefficients of the interatomic potentials from \citet{Oganov2000}. Despite being an obviously "quick and dirty" method, (I will show) this is a reasonable first-order approximation(((PROVE IT!?))). As the variation in mass number from Mg to Fe is large (24 to 56, a 133\% increase), it is likely to change the behaviour of the system more than a subtle change in the atomic interactions.
 
@@ -198,9 +202,7 @@ Fe-O         & 1440.437        & 0.2846                  & 0 \\ \hline
 
 Despite potential fitting being an improvement on solely changing atomic mass, it is not perfect as I do not vary atomic charge from Mg to Fe. The problem is additionally complicated by the Fe-partitioning between \mgsios and \mgo, the effect of ferrous vs. ferric iron, and how spin state affects properties such as conductivity as it varies along the geotherm (((REFS?))). These additional complexities are beyond the scope of this project, where only ferrous iron will be considered. The effects of impurities (i.e. some kind of irregular atom) is interesting, even if the exact chemistry is not accurate.
 
-!!! Validate potentials
 
-!!! Validate Fe vs. heavy Mg, isotope mass
 
 %---------------------------------------
 \subsection{Where do the impurities go?} 
@@ -268,14 +270,6 @@ Due to uncertainty in the lower mantle's composition, properties like \tcs are o
 
 The conductivity of an intermediate composition is not a simple weighted average of the endmember values, you cannot interpolate linearly. This can be seen in Figure \ref{fig:kappa-temp_01}, where the (Mg$_{0.5}$,Fe$_{0.5}$)SiO$_3$ results do not plot between those of \mgsios and \fesio.
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%---------------------------------------
-\subsection{Parameterising the data fit} 
-%---------------------------------------
-
 Equations and functional forms exist for the temperature and compostional dependence of \tc, and it is possible to combine the two. The basic idea is to determine the conductivity of \mgsios and \fesios endmembers at the temperature of interest, and then apply the (temperature-dependent) effect of composition.
 
 \citet{Padture1997} propose a model for how impurities affect lattice thermal conductivity of a solid soultion, which \citet{Ohta2017} use to fit experimental ferropericlase data. Following a similar methodology, I fit the functional form to my (Mg,Fe)SiO$_3$ perovskite results at various temperatures (1000~K, 2000~K, 3000~K, 4000~K, and 5000~K). In an additional step, I establish how the functional forms change with temperature, the temperature-dependence of the compositional-dependence if you will.
@@ -290,7 +284,7 @@ The aforementioned temperature dependence from \citet{Manthilake2011} considers 
  
  
 %-------------------
-\subsubsection{Compositional dependence}
+\subsection{Compositional dependence}
 %-------------------
 
 The lattice thermal conductivity of a solid-solution as a function of temperature and composition can be approximated by the following equation (first seen as Eq. \ref{eq.SS2015SM.6}),
@@ -368,7 +362,7 @@ where $A$ is the coefficient and $B$ is the exponent to be determined. The magni
 
 
 %-------------------
-\subsubsection{Why does this model work?}
+\subsection{Why does this model work?}
 %-------------------
 
 
@@ -395,7 +389,7 @@ In the context of the model, the effect of this ratio is handled by the arctan s
 \end{figure}
 
 %-------------------
-\subsubsection{Temperature dependence}
+\subsection{Temperature dependence}
 %-------------------
 
 The conductivities of $\kappa_{\mathrm{MgSiO_{3}}}$ and $\kappa_{\mathrm{FeSiO_{3}}}$ from Equation \ref{eq.ohta9} can be scaled with temperature, giving an adjusted value 
@@ -485,11 +479,41 @@ $c$                      & 1.00975    & 1.00965    & 1.00983
 
 
 %---------------------------------------
-\subsection{MEAN FREE PATH} 
+\section{Discussion} 
 %---------------------------------------
 
 %-------------------
-\subsubsection{MFP FROM DM EXTRAPOLATION}
+\subsection{C(1-C) model limitations}
+%-------------------
+
+Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Taking the 4000~K model-fit conductivities, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\%. This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation REF. However, when the raw 4000~K data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). The model is assuming that an equal number of each type of atom creates the most phonon-defect scattering, but I believe it is when each type of atom contributes equal to the system's mass ((INFORMAL, THERE IS SCIENCE TO BACK THIS UP SOMEWHERE)). The composition at which this mass contribution scenario is satisfied can be calculated by
+%
+$$ C_{\mathrm{mass}} = \frac{A_{\mathrm{Mg}}}{A_{\mathrm{Mg}} + A_{\mathrm{Fe}}}\ ,$$
+%
+where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe, $C_{\mathrm{mass}} = 0.3$, or 30\%~Fe to 70\%~Mg. This is the turning point in phonon-defect scattering, it increases up to this composition, and decreases after. Even if conductivity decreases overall due to phonon-phonon effects, this is the point of minimum $\Lambda_{\mathrm{ph-d}}$.
+
+\pagebreak
+
+%-------------------
+\subsection{\label{sec:iso_pot}Significance of mass and atomic interactions on the iron potential}
+%-------------------
+
+I believe mass is the most important thing for the magnitude of phonon-defect scattering. I am to prove this by running calculations where the mass of the impurities are kept the same as Mg, only changing their potential to match my fitted Mg-Fe interaction. I predict conductivity will be largely unchanged with varying composition.
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/kc_iso_pot_full.png}
+  \caption[kc iso pot full]{}
+  \label{kc_iso_pot_full}
+\end{figure}
+
+Figure~\ref{kc_iso_pot_full} shows the Green-Kubo conductivity results as a function as composition for 1000 and 4000~K, with the model fit to data. The other partial series represent a partial potential compared to the one I used, one where the iron impurities only have the correct mass (the isotopic model, akin to \citet{Ammann2014}), the other with my calibrated Fe-O pair potential but the Mg mass. The isotopic atomic model is much closer to the results of the full model than the potential model. Both atomic masses and chemical potential play a roll in determining the interaction, albeit mass is more significant. 
+
+
+
+\pagebreak
+
+%-------------------
+\subsection{Mean free path}
 %-------------------
 REFERENCE SCHELLING FOR EQUATION
 
@@ -524,7 +548,7 @@ Using the gradient and conductivity from direct method calculations at 136~GPa, 
 
 
 %-------------------
-\subsubsection{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}
+\subsection{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}
 %-------------------
 This MFP value is obtained from a conductivity representative of bulk \mgsios \bdg, therefore I can assume it is the effective MFP in the absense of phonon-defect or phonon-boundary scattering ((MATTHIESEN)). MFP is direct proportional to conductivity ((REF)), therefore I propose scaling the 4000~K GK conductivity results ((REF)) to try and quantify the phonon-defect scattering associated with adding iron. When considering the effect of impurities on conductivity, the effective MFP depends on phonon-phonon and phonon-defect interactions
 %
@@ -540,21 +564,10 @@ $$\frac{1}{\Lambda_{\mathrm{ph-d}}}=\frac{1}{\Lambda}-\frac{1}{\Lambda_{\mathrm{
 
 
 
-%-------------------
-\subsubsection{C(1-C) MODEL LIMITATIONS}
-%-------------------
-
-Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Taking the 4000~K model-fit conductivities, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\%. This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation REF. However, when the raw 4000~K data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). The model is assuming that an equal number of each type of atom creates the most phonon-defect scattering, but I believe it is when each type of atom contributes equal to the system's mass ((INFORMAL, THERE IS SCIENCE TO BACK THIS UP SOMEWHERE)). The composition at which this mass contribution scenario is satisfied can be calculated by
-%
-$$ C_{\mathrm{mass}} = \frac{A_{\mathrm{Mg}}}{A_{\mathrm{Mg}} + A_{\mathrm{Fe}}}\ ,$$
-%
-where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe, $C_{\mathrm{mass}} = 0.3$, or 30\%~Fe to 70\%~Mg. This is the turning point in phonon-defect scattering, it increases up to this composition, and decreases after. Even if conductivity decreases overall due to phonon-phonon effects, this is the point of minimum $\Lambda_{\mathrm{ph-d}}$.
-
-
 
 
 %-------------------
-\subsubsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
+\subsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
 %-------------------
 
 WORK OUT A TON OF DM MFPs???
@@ -562,11 +575,7 @@ WORK OUT A TON OF DM MFPs???
 I can do something similar with direct method results, taking the extrapolated MFP as the phonon-phonon contribution (as in Equation \ref{eq.ss2010.28}), and the computed conductivity as the effective. Subtracting these two may give info on the effects of phonon-boundary scattering, for impurity-free systems anyway.
 
 
-%-------------------
-\subsubsection{MASS VS. POTENTIAL IN MODELLING FE}
-%-------------------
 
-I believe mass is the most important thing for the magnitude of phonon-defect scattering. I am to prove this by running calculations where the mass of the impurities are kept the same as Mg, only changing their potential to match my fitted Mg-Fe interaction. I predict conductivity will be largely unchanged with varying composition.
 
 
 
