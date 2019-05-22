@@ -15,9 +15,8 @@ Developing the methodologies presented in Chapter~\ref{Chapter3}, in this chapte
 \section{Simulating the effect of atomic impurities}
 %-----------------------------------------------------------
 
-The bulk of the lower mantle comprises bridgmanite (\textasciitilde70\%, and its high-pressure polymorph post-perovskite), ferropericlase (\textasciitilde20\%), along with others (\textasciitilde10\%) such as calcium silicate perovskite CaSiO$_3$ \citep{Tronnes2009}. The composition can vary within these mineral archetypes, significantly the concentration of iron impurities. Magnesium is replaced with iron in 
-\mgsios and MgO compositions, leading to \fesios and FeO endmembers. Aluminium can similarly be subsituted for Magnesium and Silicon
-\citep[as in][]{Brodholt2000} where, ((DOES THIS NEED TO BE IN, WITH AN EQ NUMBER?))
+The bulk of the lower mantle comprises bridgmanite (\textasciitilde70\%, and its high-pressure polymorph post-perovskite), ferropericlase (\textasciitilde20\%), along with others (\textasciitilde10\%) such as calcium silicate perovskite CaSiO$_3$ \citep{Tronnes2009}. The composition can vary within these mineral archetypes, significantly the concentration of iron impurities. Magnesium is replaced with iron in \mgsios and MgO compositions, leading to \fesios and FeO endmembers. Aluminium can similarly be subsituted for Magnesium and Silicon
+\citep[as in][]{Brodholt2000} where,
 %
 \begin{equation}
 \mathrm{ \left ( Mg_{3}Al \right )\left ( Si_{3}Al \right )O_{12} + 2MgO = Mg_{2}Al_{2}O_{5} + 3MgSiO_{3} }\ .
@@ -82,15 +81,14 @@ $\varepsilon$ increases with the mass difference of the endmembers, and the impu
 
 As an aside, Equation~\ref{eq.SS2015SM.9} predicts that isotopic variations will have little effect on conductivity, where the mass changes are typically small (e.g. $^{24}$Mg to $^{25/26}$Mg) and abundances are low (Mg standard atomic weight is 24.3, the ratio of $^{24}$Mg to heavier isotopes is roughly 4:1). Mass difference is an additional reason why Fe impurities are more interesting theoretically than Al. The mass of Al is 27, compared to Mg with 24 and Si at 28.
 
-The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the model. While I investigate the full range of C, most of the lower mantle \mgfesios is going to have compositions up to 20\% Fe (((REF))). Knowledge of conductivity up to \fesios composition is interesting if ultra low velocity zones are thermochemical features of high Fe content \citep[e.g.][]{Mao2004, Dobson2005}. 
+The composition control term in Equation~\ref{eq.SS2015SM.9}, $C(1-C)$, increases from 0 to 0.25, when $x = 0.5$. $\varepsilon$ increases with composition up to 50\%, the furthest point away from both endmembers, therefore the condition of most disorder in the model. While I investigate the full range of C, most of the lower mantle will have Fe content no greater than 15\% \citep{Lee2004}. Knowledge of conductivity up to \fesios composition is interesting if ultra low velocity zones are thermochemical features of high Fe content \citep[e.g.][]{Mao2004, Dobson2005}. 
 
-!!! MANTLE COMPOSITION REFERENCE NEEDED ABOVE
 
 %-------------------
 \subsection{Phonon frequency and relaxation time} 
 %-------------------
 
-$\omega_{\mathrm{0}}$ is defined \citep[by][Eq.~11]{Klemens1960} as the frequency at which 
+The compositional model presented by \citeauthor{Klemens1960} considers the ratio of phonon frequencies, and the contribution of these frequencies to the effective relaxation time of the system. $\omega_{\mathrm{0}}$ is defined \citep[by][Eq.~11]{Klemens1960} as the frequency at which 
 %
 \begin{equation}
 {\tau}'\left ( \omega_{\mathrm{0}} \right ) = \tau_{u}\left ( \omega_{\mathrm{0}} \right ),
@@ -168,13 +166,11 @@ In this section I outline the process of taking Fe from chemistry to computer, b
 \subsection{How does iron behave?} 
 %---------------------------------------
 
-!!! REFER FORWARD TO SECTION~\ref{sec:iso_pot}
+There are two reasonable methods I could use to introduce iron impurities to my bridgmanite models. The first approach is to simply create a magnesium atom with the mass of an iron atom, without changing any coefficients of the interatomic potentials from \citet{Oganov2000}. Despite being an obviously "quick and dirty" method, I will show in Section~\ref{sec:iso_pot} this is a reasonable first-order approximation. As the variation in mass number from Mg to Fe is large (24 to 56, a 133\% increase), it is likely to change the behaviour of the system more than a subtle change in the atomic interactions.
 
-I use two methods to introduce iron impurities to my bridgmanite models. The first approach is to simply create a magnesium atom with the mass of an iron atom, without changing any coefficients of the interatomic potentials from \citet{Oganov2000}. Despite being an obviously "quick and dirty" method, (I will show) this is a reasonable first-order approximation(((PROVE IT!?))). As the variation in mass number from Mg to Fe is large (24 to 56, a 133\% increase), it is likely to change the behaviour of the system more than a subtle change in the atomic interactions.
+Approximating Fe with heavier Mg atoms is used by \citet{Ammann2014} to investigate \mgfesios with 20\% impurity content at 20~GPa and 2000~K. They found the effect of adding impurities in this manner was variable on a number of factors (crystallographic direction, interatomic potential), and observed saturation in the conductivity decrease with concentration. 
 
-MENTION MORE AMMANN IRON STUFF HERE, QUANTIFY/DATA? Approximating Fe with heavier Mg atoms is used by \citet{Ammann2014} to investigate \mgfesios with 20\% impurity content at 20~GPa and 2000~K. They found the effect of adding impurities in this manner was variable on a number of factors (crystallographic direction, interatomic potential), and observed saturation in the conductivity decrease with concentration. 
-
-The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. I adapted the \citet{Oganov2000} \mgsios Buckingham interatomic potential ($U$) to include the Fe-O interation (see Table \ref{tab:oganov_param_mod}). I determined two short-range potential parameters, $b$ and $\rho$, shown in Eq. 11 from \citet{Oganov2000},
+The second approach to add Fe into the \mgsios system is to fit interatomic potentials, as well as using the aforementioned mass change for a more realistic model. An in-depth review of these approaches can be found in Section~\ref{sec:iso_pot}.  I adapted the \citet{Oganov2000} \mgsios Buckingham interatomic potential ($U$) to include the Fe-O interation (see Table \ref{tab:oganov_param_mod}). I determined two short-range potential parameters, $b$ and $\rho$, shown in Eq. 11 from \citet{Oganov2000},
 %
 \begin{equation}
 U_{ij}\left ( R_{ij} \right ) = \frac{z_{i}z_{j}}{R_{ij}} + b_{ij}\ \textup{exp}\left ( - \frac{R_{ij}}{\rho_{ij}} \right ) - \frac{c_{ij}}{{R_{ij}}^{6}}, \label{og_buck}
@@ -200,7 +196,7 @@ Fe-O         & 1440.437        & 0.2846                  & 0 \\ \hline
 \end{tabular}
 \end{table}
 
-Despite potential fitting being an improvement on solely changing atomic mass, it is not perfect as I do not vary atomic charge from Mg to Fe. The problem is additionally complicated by the Fe-partitioning between \mgsios and \mgo, the effect of ferrous vs. ferric iron, and how spin state affects properties such as conductivity as it varies along the geotherm (((REFS?))). These additional complexities are beyond the scope of this project, where only ferrous iron will be considered. The effects of impurities (i.e. some kind of irregular atom) is interesting, even if the exact chemistry is not accurate.
+Despite potential fitting being an improvement on solely changing atomic mass, it is not perfect as I do not vary atomic charge from Mg to Fe. The problem is additionally complicated by the Fe-partitioning between \mgsios and \mgo, the effect of ferrous vs. ferric iron, and how spin state affects properties such as conductivity as it varies along the geotherm \citep[e.g.][]{Ohta2017}. These additional complexities are beyond the scope of this project, where only ferrous iron will be considered. The effects of impurities (i.e. some kind of irregular atom) is interesting, even if the exact chemistry is not accurate.
 
 
 
@@ -208,7 +204,7 @@ Despite potential fitting being an improvement on solely changing atomic mass, i
 \subsection{Where do the impurities go?} 
 %---------------------------------------
 
-Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple MATLAB script (((APPENDIX/ONLINE?))) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
+Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple MATLAB script (/nfs/see-fs-01\_teaching/ee10bt/phd/matlab\_scripts/170510\_supercell\_and\_replacement/supercell/lammps\_supercell\_maker.m) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
 
 Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region. To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. These distributions are illustrated in Figure \ref{fig:substitutions}. After iron is added, the standard direct method or Green-Kubo workflow is followed.
 
@@ -431,7 +427,7 @@ h \sim \left( \partial \ln \kappa_{\mathrm{latt}} / \partial \ln \rho \right) _{
 %
 where pressure ($P$) is the condition kept constant. The significance here is that pressure-driven and temperature-driven density changes affect the conductivity differently. At constant temperature, conductivity and density increase with pressure. The opposite is true at constant pressure for the material and temperatures considered here, conductivity and density decrease with increasing temperature. The result is $g$ and $h$ having opposite polarities based on the scenarios they describe.
 
-Volume does not need to be input ((INDEPENDENT?)) variable for the model, as all the data are obtained from constant pressure (136~GPa) calculations and any volume variations relate to thermal expansion. I express the volume ratio shown in Equation~\ref{eq.okuda5mod} as 
+Volume does not need to be an input variable for the model, as all the data are obtained from constant pressure (136~GPa) calculations and any volume variations relate to thermal expansion. I express the volume ratio shown in Equation~\ref{eq.okuda5mod} as 
 %
 \begin{equation}
 \frac{V_{\mathrm{ref}}}{V(T)} \approx  mT+c \ ,
@@ -475,24 +471,12 @@ $c$                      & 1.00975    & 1.00965    & 1.00983
 
 
 
-
+\pagebreak
 
 
 %---------------------------------------
 \section{Discussion} 
 %---------------------------------------
-
-%-------------------
-\subsection{C(1-C) model limitations}
-%-------------------
-
-Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Taking the 4000~K model-fit conductivities, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\%. This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation REF. However, when the raw 4000~K data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). The model is assuming that an equal number of each type of atom creates the most phonon-defect scattering, but I believe it is when each type of atom contributes equal to the system's mass ((INFORMAL, THERE IS SCIENCE TO BACK THIS UP SOMEWHERE)). The composition at which this mass contribution scenario is satisfied can be calculated by
-%
-$$ C_{\mathrm{mass}} = \frac{A_{\mathrm{Mg}}}{A_{\mathrm{Mg}} + A_{\mathrm{Fe}}}\ ,$$
-%
-where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe, $C_{\mathrm{mass}} = 0.3$, or 30\%~Fe to 70\%~Mg. This is the turning point in phonon-defect scattering, it increases up to this composition, and decreases after. Even if conductivity decreases overall due to phonon-phonon effects, this is the point of minimum $\Lambda_{\mathrm{ph-d}}$.
-
-\pagebreak
 
 %-------------------
 \subsection{\label{sec:iso_pot}Significance of mass and atomic interactions on the iron potential}
@@ -508,23 +492,20 @@ I believe mass is the most important thing for the magnitude of phonon-defect sc
 
 Figure~\ref{kc_iso_pot_full} shows the Green-Kubo conductivity results as a function as composition for 1000 and 4000~K, with the model fit to data. The other partial series represent a partial potential compared to the one I used, one where the iron impurities only have the correct mass (the isotopic model, akin to \citet{Ammann2014}), the other with my calibrated Fe-O pair potential but the Mg mass. The isotopic atomic model is much closer to the results of the full model than the potential model. Both atomic masses and chemical potential play a roll in determining the interaction, albeit mass is more significant. 
 
-
-
 \pagebreak
 
 %-------------------
-\subsection{Mean free path}
+\subsection{Backcalculating mean free path}
 %-------------------
-REFERENCE SCHELLING FOR EQUATION
 
-The conductivities from supercells ($\kappa_{L}$) of varying length ($L$) obtained via direct method calculations fit the form \citep[modified from][]{Stackhouse2010}
+The conductivities from supercells ($\kappa_{L}$) of varying length ($L$) obtained via direct method calculations fit the form
 %
 \begin{equation} 
 \frac{1}{\kappa_{L}}=\left [ \frac{12}{C_{\mathrm{v}}v} \right ]\frac{1}{L}+\left [ \frac{3}{C_{\mathrm{v}}v} \frac{1}{\Lambda_{\mathrm{ph-ph}}} \right ],
 \label{eq.ss2010.28}
 \end{equation}
 %
-where $C_{\mathrm{v}}$ is the volumetric isochoric heat capacity, $v$ is the phonon group velocity, and $\Lambda_{\mathrm{ph-ph}}$ is the mean free path associated with phonon--phonon scattering. When the inverse conductivities are plotted against the inverse cell lengths, extrapolation to the y-axis ($1/L = 0$) gives the bulk material ($L\rightarrow \infty$) conductivity, and its associated phonon mean free path. The two square-bracketed terms in the above equation represent the gradient and intercept respectively, of such a line fit to data and extrapolated ((FIGURE)). 
+where $C_{\mathrm{v}}$ is the volumetric isochoric heat capacity, $v$ is the phonon group velocity, and $\Lambda_{\mathrm{ph-ph}}$ is the mean free path associated with phonon--phonon scattering (modified from \cite{Schelling2002}, via \cite{Stackhouse2010}). When the inverse conductivities are plotted against the inverse cell lengths, extrapolation to the y-axis ($1/L = 0$) gives the bulk material ($L\rightarrow \infty$) conductivity, and its associated phonon mean free path. The two square-bracketed terms in the above equation represent the gradient and intercept respectively, of such a line fit to data and extrapolated (as in Figure~\ref{fig:ideal}). 
 
 I can rewrite Equation~\ref{eq.ss2010.28} with the following simplifications 
 %
@@ -532,7 +513,10 @@ $$M = \left [ \frac{12}{C_{\mathrm{v}}v} \right ],\ \mathrm{and}\ \frac{M}{4}= \
 %
 giving
 %
-$$ \frac{1}{\kappa_{L}}= M\ \frac{1}{L}+\left [ \frac{M}{4} \frac{1}{\Lambda_{\mathrm{ph-ph}}} \right ]. $$
+\begin{equation} 
+\frac{1}{\kappa_{L}}= M\ \frac{1}{L}+\left [ \frac{M}{4} \frac{1}{\Lambda_{\mathrm{ph-ph}}} \right ]. 
+\label{eq.ss2010.28_simp}
+\end{equation}
 %
 When $1/L = 0$, the extrapolated conductivity can be equated to the gradient and effective mean free path
 %
@@ -540,42 +524,78 @@ $$ \frac{1}{\kappa}=  \frac{M}{4} \frac{1}{\Lambda}\ ,$$
 %
 and thus 
 %
-$$ 
-\Lambda = \frac{M}{4}\ \kappa \ .$$
+\begin{equation}
+\Lambda = \frac{M}{4}\ \kappa \ .
+\label{eq.ss2010.28_rearr.}
+\end{equation}
 
-Using the gradient and conductivity from direct method calculations at 136~GPa, 4000~K, and a supercell cross-sectional area of $12\times12$, the mean free path is equal to $0.23\pm0.03$~nm. This value is roughly half the width of the unit cell in the A/x-direction, or the width of a direct method temperature section.
+Using the gradient and conductivity from direct method calculations at 136~GPa, 4000~K, and a supercell cross-sectional area of 12\by12, the mean free path is equal to $0.23\pm0.03$~nm. This value is roughly half the width of the unit cell in the \textit{a}/x-direction, or the width of a direct method temperature section.
 
 
 
 %-------------------
-\subsection{SCALING MFP TO QUANTIFY PHONON-DEFECT SCATTERING}
+\subsection{Scaling MFP to quantiy phonon-defect scattering}
 %-------------------
-This MFP value is obtained from a conductivity representative of bulk \mgsios \bdg, therefore I can assume it is the effective MFP in the absense of phonon-defect or phonon-boundary scattering ((MATTHIESEN)). MFP is direct proportional to conductivity ((REF)), therefore I propose scaling the 4000~K GK conductivity results ((REF)) to try and quantify the phonon-defect scattering associated with adding iron. When considering the effect of impurities on conductivity, the effective MFP depends on phonon-phonon and phonon-defect interactions
+
+This MFP value is obtained from a conductivity representative of bulk \mgsios \bdg, therefore I can assume it is the effective MFP in the absense of phonon-defect or phonon-boundary scattering (Matthiessen's rule, recall Equation~\ref{eq:matth}). MFP is directly proportional to conductivity (Equation~\ref{eq.ss2010.28_rearr.}), therefore I propose scaling the 4000~K GK conductivity results to quantify the phonon-defect scattering associated with adding iron. When considering the effect of impurities on conductivity, the effective MFP depends on phonon-phonon and phonon-defect interactions
 %
-$$\frac{1}{\Lambda}=\frac{1}{\Lambda_{\mathrm{ph-ph}}}+\frac{1}{\Lambda_{\mathrm{ph-d}}}\ . $$
+\begin{equation}
+\frac{1}{\Lambda}=\frac{1}{\Lambda_{\mathrm{ph-ph}}}+\frac{1}{\Lambda_{\mathrm{ph-d}}}\ .
+\label{eq:matth_mfp_mod}
+\end{equation}
 
-The MFP determined from the direct method extrapolation can be matched with the equivalent 0\%~Fe, 4000~K Green-Kubo result on Figure REF. If 7.07~\wmks is proportional to an effective MFP of 0.23~nm, I can scale this MFP value by the \mgsios endmember-normalised conductivities ((ADD FIGURE)). 
+The MFP determined from the direct method extrapolation can be matched with the equivalent 0\%~Fe, 4000~K Green-Kubo result on Figure~\ref{fig:kappa-comp_01}. If 7.07~\wmks is proportional to an effective MFP of 0.23~nm, I can scale this MFP value by the \mgsios endmember-normalised conductivities (see Figure~\ref{kc_4000_mfp_norm}). 
 
-I make the assumption that the data points/curve of Figure REF represent the effective MFP, the linear interpolation between endmembers the phonon-phonon scattering MFP. The interpolated conductivities do not capture the non-linear effects of defect scattering, at constant temperature the change in conductivity is proporitional to the change in mass associated with changing Mg to Fe.
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/kc_4000_mfp_norm.png}
+  \caption[kc 4000 mfp norm]{}
+  \label{kc_4000_mfp_norm}
+\end{figure}
+
+I make the assumption that the data points/curve of Figure~\ref{kc_4000_mfp_norm} represent the effective MFP, the linear interpolation between endmembers the phonon-phonon scattering MFP. The interpolated conductivities do not capture the non-linear effects of defect scattering, at constant temperature the change in conductivity is proporitional to the change in mass associated with changing Mg to Fe.
 
 The deficit between computed and interpolated conductivity can be imagined as phonon-defect contribution to $\Lambda$, the bigger the gap at a given composition, the greater significance of $\Lambda_{\mathrm{ph-d}}$. I will obtain the phonon-defect MFP by subtracting the inverse of the two, as in 
 %
-$$\frac{1}{\Lambda_{\mathrm{ph-d}}}=\frac{1}{\Lambda}-\frac{1}{\Lambda_{\mathrm{ph-ph}}}\ . $$
+\begin{equation}
+\frac{1}{\Lambda_{\mathrm{ph-d}}}=\frac{1}{\Lambda}-\frac{1}{\Lambda_{\mathrm{ph-ph}}}\ .
+\label{eq:matth_mfp_mod2}
+\end{equation}
+
+!!! ADD TABLE HERE FROM impurity-via-matthiessen.xlsx
+
+!!! GRAPHS OF MFP VS COMP
+
+!!! SHOULD USE MODEL FIT HERE - DATA FIT BELOW?
+
+!!! ACTUAL NUMBERS HERE - FOCUS ON DISCREPANCY BELOW
 
 
 
+%%-------------------
+%\subsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
+%%-------------------
+%
+%WORK OUT A TON OF DM MFPs???
+%
+%I can do something similar with direct method results, taking the extrapolated MFP as the phonon-phonon contribution (as in Equation \ref{eq.ss2010.28}), and the computed conductivity as the effective. Subtracting these two may give info on the effects of phonon-boundary scattering, for impurity-free systems anyway.
 
 
 %-------------------
-\subsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
+\subsection{C(1-C) model limitations}
 %-------------------
 
-WORK OUT A TON OF DM MFPs???
+Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Taking the 4000~K conductivity model, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\%. This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation~\ref{eq.ohta8}. However, when the raw 4000~K data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). The model is assuming that an equal number of each type of atom creates the most phonon-defect scattering, but I suggest it is when each type of atom contributes equal to the system's mass. The composition at which this mass contribution scenario is satisfied can be calculated by
+%
+\begin{equation}
+C_{\mathrm{mass}} = \frac{A_{\mathrm{Mg}}}{A_{\mathrm{Mg}} + A_{\mathrm{Fe}}}\ ,
+\label{eq:mass_turnover_point}
+\end{equation}
+%
+where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe, $C_{\mathrm{mass}} = 0.3$, or 30\%~Fe to 70\%~Mg. This is the turning point in phonon-defect scattering, it increases up to this composition, and decreases after. Even if conductivity decreases overall due to phonon-phonon effects, this is the point of minimum $\Lambda_{\mathrm{ph-d}}$.
 
-I can do something similar with direct method results, taking the extrapolated MFP as the phonon-phonon contribution (as in Equation \ref{eq.ss2010.28}), and the computed conductivity as the effective. Subtracting these two may give info on the effects of phonon-boundary scattering, for impurity-free systems anyway.
+!!! MY WONKY MASS GRAPHS
 
-
-
+!!! KC FIGURE WITH LINE AT MASS TURNOVER POINT
 
 
 

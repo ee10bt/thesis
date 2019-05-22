@@ -1577,6 +1577,92 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Lee2004}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LKKM}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={K.\bibnamedelima K.\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=OB}{%
+         family={O'Neill},
+         familyi={O\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PWR}{%
+         family={Panero},
+         familyi={P\bibinitperiod},
+         given={W.\bibnamedelima R.},
+         giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SSH}{%
+         family={Shim},
+         familyi={S\bibinitperiod},
+         given={S.\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=BLR}{%
+         family={Benedetti},
+         familyi={B\bibinitperiod},
+         given={L.\bibnamedelima R.},
+         giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jeanloz},
+         familyi={J\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Calcium perovskite,High pressure,Lower
+  mantle,Magnesiow{\"{u}}stite,Orthorhombic
+  perovskite,Peridotite,Pyrolite,X-ray diffraction}
+    \strng{namehash}{LKKM+1}
+    \strng{fullhash}{LKKMOBPWRSSHBLRJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    To help determine the chemical composition of the Earth's mantle, we
+  characterised the high-pressure mineral assemblage of an undepleted natural
+  peridotite-thought to be representative of the Earth's upper-mantle-to 107
+  GPa using high-resolution X-ray diffraction. At lower-mantle conditions, the
+  peridotite transforms to the assemblage 76 (±2){\%} (Mg0.88Fe0.052+
+  Fe0.013+Al0.12Si0.94) O3 orthorhombic perovskite by volume (at zero
+  pressure), 17 (±2){\%} (Mg0.80Fe0.20)O magnesiow{\"{u}}stite and 7 (±1){\%}
+  CaSiO3 perovskite. The measured room-temperature bulk properties of this
+  high-pressure assemblage, together with a range of estimates of thermal
+  properties of the constituent minerals, appear to be inconsistent with
+  seismological constraints on the density and bulk modulus of the lower
+  mantle. Our results suggest that the lower mantle differs in bulk composition
+  (e.g., richer in iron, Mg{\#}∼0.85) from current estimates for the upper
+  mantle, requiring some amount of segregation between the upper and lower
+  mantle over geological history. {\textcopyright} 2004 Elsevier B.V. All
+  rights reserved.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.epsl.2004.04.033
+    \endverb
+    \field{isbn}{0012-821X}
+    \field{issn}{0012821X}
+    \field{pages}{381\bibrangedash 393}
+    \field{title}{{Equations of state of the high-pressure phases of a natural
+  peridotite and implications for the Earth's lower mantle}}
+    \field{volume}{223}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Lee et al. - 20
+    \verb 04 - Equations of state of the high-pressure phases of a natural peri
+    \verb dotite and implications for the Earth's lower mantle.pdf:pdf
+    \endverb
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
+    \field{year}{2004}
+  \endentry
+
   \entry{Lobanov2017}{article}{}
     \name{author}{4}{}{%
       {{hash=LSS}{%
@@ -3112,70 +3198,6 @@
     \endverb
     \field{journaltitle}{Geophys. Res. Lett.}
     \field{year}{2014}
-  \endentry
-
-  \entry{Thomas2010}{article}{}
-    \name{author}{3}{}{%
-      {{hash=TJA}{%
-         family={Thomas},
-         familyi={T\bibinitperiod},
-         given={J.\bibnamedelima A.},
-         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=IRM}{%
-         family={Iutzi},
-         familyi={I\bibinitperiod},
-         given={R.\bibnamedelima M.},
-         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=MAJH}{%
-         family={McGaughey},
-         familyi={M\bibinitperiod},
-         given={A.\bibnamedelima J.\bibnamedelima H.},
-         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TJA+1}
-    \strng{fullhash}{TJAIRMMAJH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2010}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{abstract}{%
-    The thermal conductivities of empty and water-filled single-walled carbon
-  nanotubes (CNTs) with diameters between 0.83 and 1.36 nm and lengths ranging
-  from 200 to 1400 nm are predicted using molecular dynamics simulation. Using
-  a direct application of the Fourier law, we explore the transition to fully
-  diffusive phonon transport with increasing CNT length. For empty CNTs, we
-  find that the CNT length required to obtain fully diffusive phonon transport
-  decreases from 1090 nm for the 0.83-nm-diameter CNT to 510 nm for the
-  1.36-nm-diameter CNT. The magnitude of the fully diffusive thermal
-  conductivity also decreases monotonically with increasing CNT diameter. We
-  find that the fully diffusive thermal conductivity of water-filled CNTs is
-  20{\%}–35{\%} lower than that of empty CNTs. By examining the empty and
-  water-filled CNT density of states, we attribute the thermal conductivity
-  reductions to an increase in low-frequency acoustic phonon scattering due to
-  interactions with the water molecules.%
-    }
-    \verb{doi}
-    \verb 10.1103/PhysRevB.81.045413
-    \endverb
-    \field{isbn}{1098-0121}
-    \field{issn}{10980121}
-    \field{number}{4}
-    \field{pages}{1\bibrangedash 7}
-    \field{title}{{Thermal conductivity and phonon transport in empty and
-  water-filled carbon nanotubes}}
-    \field{volume}{81}
-    \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Thomas, Iutzi,
-    \verb McGaughey - 2010 - Thermal conductivity and phonon transport in empty
-    \verb  and water-filled carbon nanotubes.pdf:pdf
-    \endverb
-    \field{journaltitle}{Phys. Rev. B - Condens. Matter Mater. Phys.}
-    \field{year}{2010}
   \endentry
 
   \entry{Tosi2013}{article}{}
