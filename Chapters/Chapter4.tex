@@ -561,15 +561,45 @@ The deficit between computed and interpolated conductivity can be imagined as ph
 \label{eq:matth_mfp_mod2}
 \end{equation}
 
-!!! ADD TABLE HERE FROM impurity-via-matthiessen.xlsx
 
-!!! GRAPHS OF MFP VS COMP
-
-!!! SHOULD USE MODEL FIT HERE - DATA FIT BELOW?
-
-!!! ACTUAL NUMBERS HERE - FOCUS ON DISCREPANCY BELOW
+%-------------------------------------------------------
+!!! PARAGRAPH DESCRIBING TABLE RESULTS
+%-------------------------------------------------------
 
 
+\begin{sidewaystable}[h]
+\label{tab:data_applied_table}
+\caption[contents]{caption}
+\begin{tabular}{c|p{1.9cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}}
+& Fe content (100\%) & Conductivity result (\wmk) & Interpolated conductivity (W/m.K) & Conductivity difference (W/m.K) & Normalised conductivity (W/m.K) & Conductivity-scaled MFP (nm) & Scaled ph-ph scattering MFP (nm) & Inferred ph-d scattering MFP (nm) & Relative ph-d scattering \\ \hline
+
+\multirow{9}{*}{\rotatebox[origin=c]{90}{Data}}   & 0.00   & 7.07   & 7.07   & 0.00   & 1.00   & 0.229   & 0.229   & INF      & 0.00   \\
+                                                                                       & 0.02   & 6.72   & 7.03   & 0.31   & 0.95   & 0.217   & 0.227   & 4.86     & 0.27  \\
+                                                                                       & 0.06   & 6.44   & 6.96   & 0.52   & 0.91   & 0.208   & 0.225   & 2.77     & 0.48  \\
+										       & 0.25   & 5.70   & 6.63   & 0.93   & 0.81   & 0.184   & 0.214   & 1.32     & 1.00  \\
+										       & 0.50   & 5.46   & 6.19   & 0.73   & 0.77   & 0.177   & 0.200   & 1.51     & 0.87  \\
+										       & 0.75   & 5.14   & 5.74   & 0.60   & 0.73   & 0.166   & 0.186   & 1.58     & 0.83  \\
+										       & 0.94   & 5.23   & 5.41   & 0.18   & 0.74   & 0.169   & 0.175   & 5.19     & 0.25  \\
+										       & 0.98   & 5.27   & 5.34   & 0.07   & 0.75   & 0.170   & 0.172   & 13.90   & 0.09  \\
+										       & 1.00   & 5.30   & 5.30   & 0.00   & 0.75   & 0.171   & 0.171   & INF       & 0.00 \\ \hline
+
+\multirow{9}{*}{\rotatebox[origin=c]{90}{Model}} & 0.00   & 6.95   & 6.95   & 0.00   & 1.00   & 0.229   & 0.229   & INF      & 0.00  \\
+                                                                                       & 0.02   & 6.83   & 6.92   & 0.09   & 0.98   & 0.224   & 0.227   & 16.77   & 0.08  \\
+                                                                                       & 0.06   & 6.60   & 6.85   & 0.25   & 0.95   & 0.217   & 0.225   & 5.88     & 0.22  \\
+                                                                                       & 0.25   & 5.82   & 6.52   & 0.70   & 0.84   & 0.191   & 0.214   & 1.79     & 0.72  \\
+                                                                                       & 0.50   & 5.26   & 6.08   & 0.82   & 0.76   & 0.173   & 0.200   & 1.28     & 1.00  \\
+                                                                                       & 0.75   & 5.04   & 5.64   & 0.60   & 0.72   & 0.166   & 0.186   & 1.54     & 0.83  \\
+                                                                                       & 0.94   & 5.11   & 5.31   & 0.20   & 0.74   & 0.168   & 0.175   & 4.40     & 0.29  \\
+                                     						       & 0.98   & 5.17   & 5.24   & 0.07   & 0.74   & 0.170   & 0.172   & 11.46   & 0.11  \\
+                                         					       & 1.00   & 5.20   & 5.20   & 0.00   & 0.75   & 0.171   & 0.171   & INF      & 0.00
+\end{tabular}
+\end{sidewaystable}
+
+
+%-------------------------------------------------------
+!!! PARAGRAPH DESCRIBING TABLE RESULTS
+%-------------------------------------------------------
+!!! GRAPH TOO, REQUIRED FOR BELOW?
 
 %%-------------------
 %\subsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
