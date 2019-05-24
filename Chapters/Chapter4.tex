@@ -492,7 +492,7 @@ I believe mass is the most important thing for the magnitude of phonon-defect sc
 
 Figure~\ref{kc_iso_pot_full} shows the Green-Kubo conductivity results as a function as composition for 1000 and 4000~K, with the model fit to data. The other partial series represent a partial potential compared to the one I used, one where the iron impurities only have the correct mass (the isotopic model, akin to \citet{Ammann2014}), the other with my calibrated Fe-O pair potential but the Mg mass. The isotopic atomic model is much closer to the results of the full model than the potential model. Both atomic masses and chemical potential play a roll in determining the interaction, albeit mass is more significant. 
 
-\pagebreak
+
 
 %-------------------
 \subsection{Backcalculating mean free path}
@@ -534,7 +534,7 @@ Using the gradient and conductivity from direct method calculations at 136~GPa, 
 
 
 %-------------------
-\subsection{Scaling MFP to quantiy phonon-defect scattering}
+\subsection{Scaling MFP to quantify phonon-defect scattering}
 %-------------------
 
 This MFP value is obtained from a conductivity representative of bulk \mgsios \bdg, therefore I can assume it is the effective MFP in the absense of phonon-defect or phonon-boundary scattering (Matthiessen's rule, recall Equation~\ref{eq:matth}). MFP is directly proportional to conductivity (Equation~\ref{eq.ss2010.28_rearr.}), therefore I propose scaling the 4000~K GK conductivity results to quantify the phonon-defect scattering associated with adding iron. When considering the effect of impurities on conductivity, the effective MFP depends on phonon-phonon and phonon-defect interactions
@@ -552,7 +552,7 @@ The MFP determined from the direct method extrapolation can be matched with the 
   \label{kc_4000_mfp_norm}
 \end{figure}
 
-I make the assumption that the data points/curve of Figure~\ref{kc_4000_mfp_norm} represent the effective MFP, the linear interpolation between endmembers the phonon-phonon scattering MFP. The interpolated conductivities do not capture the non-linear effects of defect scattering, at constant temperature the change in conductivity is proporitional to the change in mass associated with changing Mg to Fe.
+I make the assumption that the data points/curve of Figure~\ref{kc_4000_mfp_norm} represent the effective MFP, and that the linear interpolation between endmembers the phonon-phonon scattering MFP. The interpolated conductivities do not capture the non-linear effects of defect scattering, at constant temperature the change in conductivity is proporitional to the change in mass associated with changing Mg to Fe.
 
 The deficit between computed and interpolated conductivity can be imagined as phonon-defect contribution to $\Lambda$, the bigger the gap at a given composition, the greater significance of $\Lambda_{\mathrm{ph-d}}$. I will obtain the phonon-defect MFP by subtracting the inverse of the two, as in 
 %
@@ -561,15 +561,14 @@ The deficit between computed and interpolated conductivity can be imagined as ph
 \label{eq:matth_mfp_mod2}
 \end{equation}
 
+Table~\ref{tab:data_applied_table} shows how properties change across the range of compositions studied. The results are the computed conductivity, the interpolated conductivity as a function of composition, this difference between this two value, and the conductivity result normalised. This conductivity is then converted to a mean-free path value as discussed earlier, as is the interpolated conductivity to obtain my proxy for phonon-phonon scattering MFP. I then calculate the phonon-defect scattering MFP as in Equation~\ref{eq:matth_mfp_mod}. This value is then inverted and normalised, showing relative significance of scattering as conductivity varies.
 
-%-------------------------------------------------------
-!!! PARAGRAPH DESCRIBING TABLE RESULTS
-%-------------------------------------------------------
+
 
 
 \begin{sidewaystable}[h]
-\label{tab:data_applied_table}
-\caption[contents]{caption}
+
+\caption[4000~K GK MFP table]{4000~K}
 \begin{tabular}{c|p{1.9cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}}
 & Fe content (100\%) & Conductivity result (\wmk) & Interpolated conductivity (W/m.K) & Conductivity difference (W/m.K) & Normalised conductivity (W/m.K) & Conductivity-scaled MFP (nm) & Scaled ph-ph scattering MFP (nm) & Inferred ph-d scattering MFP (nm) & Relative ph-d scattering \\ \hline
 
@@ -592,14 +591,33 @@ The deficit between computed and interpolated conductivity can be imagined as ph
                                                                                        & 0.94   & 5.11   & 5.31   & 0.20   & 0.74   & 0.168   & 0.175   & 4.40     & 0.29  \\
                                      						       & 0.98   & 5.17   & 5.24   & 0.07   & 0.74   & 0.170   & 0.172   & 11.46   & 0.11  \\
                                          					       & 1.00   & 5.20   & 5.20   & 0.00   & 0.75   & 0.171   & 0.171   & INF      & 0.00
+
+\label{tab:data_applied_table}
+
 \end{tabular}
 \end{sidewaystable}
 
 
-%-------------------------------------------------------
-!!! PARAGRAPH DESCRIBING TABLE RESULTS
-%-------------------------------------------------------
-!!! GRAPH TOO, REQUIRED FOR BELOW?
+
+If the mean free path is the distance between scattering events, then the inverse (as presented in Equation~\ref{eq:matth_mfp_mod2}) is the amount of scattering events per unit distance. The total number of scattering events combines the number of phonon-phonon and phonon-defect collisions, as shown for 4000~K and 1000~K respectively in Figures~\ref{fig:gk_mfp_scattering_4000K} \& \ref{fig:gk_mfp_scattering_1000K}. Where phonon-phonon scattering is high because of 4000~K temperature, impurity scattering influences, but is not the dominant control on the magnitude of scattering. This behaviour is different at 1000~K, where the effect of phonon-defect scattering is of comparable magnitude to the decreased phonon-phonon scattering for high impurity contents (i.e. around 50\%). The largest phonon-defect scattering coincides with the largest difference between computed and interpolated conductivity, as you might expect.
+
+\begin{figure}[p]
+  \includegraphics[width=\linewidth]{Figures/gk_mfp_scattering_4000K.png}
+  \caption[gk mfp scattering 4000K]{}
+  \label{fig:gk_mfp_scattering_4000K}
+\end{figure}
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/gk_mfp_scattering_1000K.png}
+  \caption[gk mfp scattering 1000K]{}
+  \label{fig:gk_mfp_scattering_1000K}
+\end{figure}
+
+ 
+
+
+
+
 
 %%-------------------
 %\subsection{DM ANALYSIS - PH-B SCATTERING AND SHORTEST CELL}
@@ -610,22 +628,37 @@ The deficit between computed and interpolated conductivity can be imagined as ph
 %I can do something similar with direct method results, taking the extrapolated MFP as the phonon-phonon contribution (as in Equation \ref{eq.ss2010.28}), and the computed conductivity as the effective. Subtracting these two may give info on the effects of phonon-boundary scattering, for impurity-free systems anyway.
 
 
+
 %-------------------
 \subsection{C(1-C) model limitations}
 %-------------------
 
-Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Taking the 4000~K conductivity model, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\%. This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation~\ref{eq.ohta8}. However, when the raw 4000~K data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). The model is assuming that an equal number of each type of atom creates the most phonon-defect scattering, but I suggest it is when each type of atom contributes equal to the system's mass. The composition at which this mass contribution scenario is satisfied can be calculated by
+Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Table~\ref{tab:data_applied_table} has two group of rows, one with conductivity data points as computed, the other with the model predictions at the same compositions. When the data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). 
+
+Taking the 4000~K conductivity model however, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\% (see Figure~\ref{fig:gk_mfp_ph-d_significance_4000K}). This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation~\ref{eq.ohta8}. The C(1-C) model is assuming that an equal proportion of each type of atom (i.e. 50/50 composition) creates the most phonon-defect scattering, but I suggest it is weighted by the masses of the atoms in question (which is captured in the data). The composition at which the mass contribution is equal can be calculated by
 %
 \begin{equation}
 C_{\mathrm{mass}} = \frac{A_{\mathrm{Mg}}}{A_{\mathrm{Mg}} + A_{\mathrm{Fe}}}\ ,
 \label{eq:mass_turnover_point}
 \end{equation}
 %
-where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe, $C_{\mathrm{mass}} = 0.3$, or 30\%~Fe to 70\%~Mg. This is the turning point in phonon-defect scattering, it increases up to this composition, and decreases after. Even if conductivity decreases overall due to phonon-phonon effects, this is the point of minimum $\Lambda_{\mathrm{ph-d}}$.
+where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe, $C_{\mathrm{mass}} = 0.3$, or 30\%~Fe to 70\%~Mg (see Figure~\ref{fig:gk_mfp_ph-d_mass_demo}). 30 Fe atoms weigh the same as 70 Mg atoms, which I believe to be the turning point in phonon-defect scattering. Defect scattering increases from zero up to its maximum at this composition, and decreases to zero as Fe content tends towards 100\%. Even if conductivity/MFP decreases overall due to phonon-phonon scattering effects with increasing temperature, this composition will be the point of minimum $\Lambda_{\mathrm{ph-d}}$ or maximum phonon-defect scattering.
 
-!!! MY WONKY MASS GRAPHS
 
-!!! KC FIGURE WITH LINE AT MASS TURNOVER POINT
+
+\begin{figure}[p]
+  \includegraphics[width=\linewidth]{Figures/gk_mfp_ph-d_significance_4000K.png}
+  \caption[gk mfp ph-d significance 4000K]{}
+  \label{fig:gk_mfp_ph-d_significance_4000K}
+\end{figure}
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/gk_mfp_ph-d_mass_demo.png}
+  \caption[gk mfp ph-d mass demo]{}
+  \label{fig:gk_mfp_ph-d_mass_demo}
+\end{figure}
+
+
 
 
 
