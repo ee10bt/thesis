@@ -1,4 +1,4 @@
-\chapter{Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB} % Main chapter title
+\chapter{25th May - Modelling the thermal conductivity of Fe-bearing bridgmanite at the CMB} % Main chapter title
 %(Mg,Fe)SiO$_3$
 
 \label{Chapter4} % for referencing this chapter elsewhere, use \ref{ChapterX}
@@ -59,7 +59,7 @@ On the other hand, when $\omega_{\mathrm{D}}\gg\omega_{\mathrm{0}}$, $\arctan(\o
 \subsection{What effects the magnitude of impurity scattering?} 
 %-------------------
 
-That factors that affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{eq.SS2015SM.6} can be expressed (Eq. S11) as
+That factors that affect the severity of impurity scattering are temperature, the mass difference between the impurity and what it replaced, and the concentration of said replacements. The ratio of the phonon frequencies in Eq. \ref{eq.SS2015SM.6} can be expressed (Eq.~S11) as
 %
 \begin{equation}
 \left ( \frac{\omega_{0}}{\omega_{D}} \right )^{2} = \frac{1}{\left ( 6\pi^{2} \right )^{1/3}} \ \frac{T}{3 \varepsilon T_{0}} \ ,
@@ -176,13 +176,13 @@ The second approach to add Fe into the \mgsios system is to fit interatomic pote
 U_{ij}\left ( R_{ij} \right ) = \frac{z_{i}z_{j}}{R_{ij}} + b_{ij}\ \textup{exp}\left ( - \frac{R_{ij}}{\rho_{ij}} \right ) - \frac{c_{ij}}{{R_{ij}}^{6}}, \label{og_buck}
 \end{equation}
 %
-where $ij$ refers to an atom pair, $R$ is interatomic distance, $z$ is atomic charge, and $c$ relates to the Van der Waals force (zero for non O-O interactions). We determine $\rho$ in the same fashion as \citet{Oganov2000}, calculated from the atomic first ionisation potentials,
+where $ij$ refers to an atom pair, $R$ is interatomic distance, $z$ is atomic charge, and $c$ relates to the Van der Waals force (zero for non O-O interactions). I determine $\rho$ in the same fashion as \citet{Oganov2000}, calculated from the atomic first ionisation potentials,
 %
 \begin{equation}
 \rho_{ij} = \frac{1.85}{\sqrt{I_{i}}+\sqrt{I_{j}}}.  \label{urusov}
 \end{equation}
 %
-$b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\rho$ value for Fe-O. We fit to structural information from \citet{Parise1990}, an experimental study of (Mg$_{0.9}$,Fe$_{0.1}$)SiO$_3$ bridgmanite at ambient conditions. This study was chosen as it matches the conditions at which \citet{Oganov2000} fit their potential. 
+$b$ is constrained using the GULP code \citep{Gale1997}, using the calculated $\rho$ value for Fe-O. I fit to structural information from \citet{Parise1990}, an experimental study of (Mg$_{0.9}$,Fe$_{0.1}$)SiO$_3$ bridgmanite at ambient conditions. This study was chosen as it matches the conditions at which \citet{Oganov2000} fit their potential. 
 
 \begin{table}[h]
 \centering
@@ -204,9 +204,10 @@ Despite potential fitting being an improvement on solely changing atomic mass, i
 \subsection{Where do the impurities go?} 
 %---------------------------------------
 
-Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. A simple MATLAB script (/nfs/see-fs-01\_teaching/ee10bt/phd/matlab\_scripts/170510\_supercell\_and\_replacement/supercell/lammps\_supercell\_maker.m) is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
+Iron is substituted with magnesium into the bridgmanite atomic structure. The unit cell contains 4~Mg atoms, and the smallest direct method cell I employ is a 6x2x2 supercell. Therefore the smallest amount of iron that can be added is 1/96 atoms, a concentration just over 1\%. I use a simple MATLAB script %(/nfs/see-fs-01\_teaching/ee10bt/phd/matlab\_scripts/170510\_supercell\_and\_replacement/supercell/lammps\_supercell\_maker.m) 
+is used to modify LAMMPS input files, randomly selecting a specified proportion of Mg atoms to be replaced with Fe. When a Mg atom changes to Fe, its mass and interatomic potential properties change. 
 
-Due to the microscopic nature of the system, we do not want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region. To avoid this we order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. These distributions are illustrated in Figure \ref{fig:substitutions}. After iron is added, the standard direct method or Green-Kubo workflow is followed.
+Due to the microscopic nature of the system, you wouldn't want all of the added iron to be concentrated together in the simulation cell, especially in a heat source/sink region. To avoid this I order Mg atoms by length along supercell, and change a single atom every so many. For example, changing 1/4 atoms is different to changing 24/96. The latter has a higher variance in Fe per unit length, and the former chooses one atom to swap for every four along the system. These distributions are illustrated in Figure \ref{fig:substitutions}. After iron is added, the standard direct method or Green-Kubo workflow is followed.
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/substitution_05-collated.png}
@@ -304,12 +305,12 @@ where $C$ is the fractional concentration of Fe, and $\kappa_{\mathrm{MgSiO_{3}}
 \label{eq.ohta8}
 \end{equation}
 %
-where $\chi$ is a temperature-dependent constant, and $T$ is the temperature of interest \citep{Padture1997}. $\chi$ can be thought of as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (see Table \ref{tab:temp-table}). For a given $T$ and $C$, increasing $\chi$ causes the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ to increase which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model we need it as a function of temperature. Figure \ref{fig:draft_xt} shows a plot of $\chi$ against $T$ with a power law (LEFT/B.) and 4th-order polynomial (RIGHT/B.), the former of which is a poor fit and the latter an egregious overfitting. 
+where $\chi$ is a temperature-dependent constant, and $T$ is the temperature of interest \citep{Padture1997}. $\chi$ can be thought of as a measure of resistance to the effects of impurity scattering. The $\kappa$ against $C$ relationship (Figure~\ref{fig:kappa-comp_01}) shows a larger effect of impurity scattering in the form of greater curvature when $T$ and $\chi$ are lower (see Table \ref{tab:temp-table}). For a given $T$ and $C$, increasing $\chi$ causes the phonon frequency ratio $\left ( \frac{\omega_{\mathrm{0}}}{\omega_{\mathrm{M}}}\right )$ to increase which, as discussed in Section \ref{impur_theory}, means $\kappa_{\mathrm{latt}}$ tends towards $\kappa_{\mathrm{i}}$. $\chi$ is fit to the data at each temperature, but for the model it needs to be a function of temperature. Figure \ref{fig:draft_xt} shows a plot of $\chi$ against $T$ with a power law (LEFT/B.) and 4th-order polynomial (RIGHT/B.), the former of which is a poor fit and the latter an egregious overfitting. 
 
 %-----------------------------------------------------------
 \begin{table}[h!]
 \centering
-\caption[CONTENTS BIT]{\label{tab:temp-table}DOCUMENT BIT}
+\caption[CONTENTS BIT]{\label{tab:temp-table}Variation with temperature of parameters used to fit the chemical and temperature-dependences. Reference volume from 1000~K for both endmembers.}
 \begin{tabular}{cc|lllll}
                                                                            &        & \multicolumn{5}{c}{Temperature (K)}                       \\
 
@@ -347,7 +348,7 @@ The lack of an obvious trend in $\chi$ against $T$ can be mitigated by plotting 
 \label{eq.chi_scale}
 \end{equation}%-------
 %
-where $A$ is the coefficient and $B$ is the exponent to be determined. The magnitudes of these fit parameters are $3.468 \times 10^{-6}$ and $1.426$ respectively. This fit represents the temperature-dependence better, both statistically and sensitivity-wise compared to an exponential relationship $\left ( \chi^{T}=A e^{BT}\right )$. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. In Figure~\ref{fig:draft_xt}, we can see that both the power law and exponential $\chi^T$ over $T$ relationships fit the data better than the $\chi$ over $T$ power law or polynomial relations.
+where $A$ is the coefficient and $B$ is the exponent to be determined. The magnitudes of these fit parameters are $3.468 \times 10^{-6}$ and $1.426$ respectively. This fit represents the temperature-dependence better, both statistically and sensitivity-wise compared to an exponential relationship $\left ( \chi^{T}=A e^{BT}\right )$. The value of $\chi^T$ at high $T$ has a lesser effect on the conductivity-composition relationship than at low $T$, where the power law fit matches the data closer. In Figure~\ref{fig:draft_xt}, you can see that both the power law and exponential $\chi^T$ over $T$ relationships fit the data better than the $\chi$ over $T$ power law or polynomial relations.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/draft_XTT.png}
@@ -362,7 +363,7 @@ where $A$ is the coefficient and $B$ is the exponent to be determined. The magni
 %-------------------
 
 
-At this point, we have all the pieces in place to qualitatively describe how the equation for modelling a solid solution's thermal conductivity (Eq.~\ref{eq.ohta7}) works and why. The first part is to scale a linearly interpolate the conductivity of two endmembers, at a given temperature, to the composition of interest. This ($\kappa_{\mathrm{V}}$, Eq.~\ref{eq.ohta9}) will be an overestimate of the true value, the conductivity is more complicated than a weighted average of the endmembers. 
+At this point, I have all the pieces in place to qualitatively describe how the equation for modelling a solid solution's thermal conductivity (Eq.~\ref{eq.ohta7}) works and why. The first part is to scale a linearly interpolate the conductivity of two endmembers, at a given temperature, to the composition of interest. This ($\kappa_{\mathrm{V}}$, Eq.~\ref{eq.ohta9}) will be an overestimate of the true value, the conductivity is more complicated than a weighted average of the endmembers. 
 
 Increasing impurity mass difference and concentration (towards $\sim$50\%) increase the magnitude of point defect scattering. Mass difference is always constant in this study. Concentration varies, but as discrete values across the various temperatures. For a given concentration at varying temperature, the mass difference and thus magnitude of point defect scattering is constant. Despite this, conductivity decrease due to adding impurities is not constant with varying temperature.
 
@@ -442,7 +443,7 @@ a simple linear function of temperature (see Figure~\ref{fig:draft_VrefV-T}), wh
   \label{fig:draft_VrefV-T}
 \end{figure}
 
-With Equation~\ref{eq.linear_v_mT_c}, we rewrite Equation~\ref{eq.okuda5} one more time,
+With Equation~\ref{eq.linear_v_mT_c}, I rewrite Equation~\ref{eq.okuda5} one more time,
 %
 \begin{equation}
 \kappa_{\mathrm{adj}}=\kappa_{\mathrm{ref}} \left ( mT+c \right )^{h} \left ( \frac{T_{\mathrm{ref}}}{T} \right )^{a}.
@@ -486,7 +487,7 @@ I believe mass is the most important thing for the magnitude of phonon-defect sc
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/kc_iso_pot_full.png}
-  \caption[kc iso pot full]{}
+  \caption[kc iso pot full]{Green-Kubo conductivity results and model fits for 1000~K and 4000~K. The Fe in these series have the correct atomic mass, and the calibrated interatomic potential. The partial series show how conductivity changes when the atomic interactions are altered. Changing the atomic mass (i.e. Fe effectively becomes a heavy Mg isotope) produces small variation in conductivity result. Changing the interatomic potential but not the mass (i.e. an incredibly light Fe isotope) alters the result drastically.}
   \label{kc_iso_pot_full}
 \end{figure}
 
@@ -548,7 +549,7 @@ The MFP determined from the direct method extrapolation can be matched with the 
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/kc_4000_mfp_norm.png}
-  \caption[kc 4000 mfp norm]{}
+  \caption[kc 4000 mfp norm]{GK conductivity results from 4000~K, scaled to the MFP determined from analysis of direct method results. The linear interpolation between endmembers gives the MFP of phonon-phonon scattering, which decreases as Fe is introduced and the mass of the system increases.}
   \label{kc_4000_mfp_norm}
 \end{figure}
 
@@ -568,9 +569,9 @@ Table~\ref{tab:data_applied_table} shows how properties change across the range 
 
 \begin{sidewaystable}[h]
 
-\caption[4000~K GK MFP table]{4000~K}
+\caption[4000~K GK MFP table]{Conductivities within this table are obtained from simulations at 4000~K. Inferred MFPs change subtlely depending on whether the raw data, or values from the model are considered. Conductivity difference represents the significance of impurities, shown by the MFP of phonon-defect scattering and its relative influence.}
 \begin{tabular}{c|p{1.9cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}p{2.3cm}}
-& Fe content (100\%) & Conductivity result (\wmk) & Interpolated conductivity (W/m.K) & Conductivity difference (W/m.K) & Normalised conductivity (W/m.K) & Conductivity-scaled MFP (nm) & Scaled ph-ph scattering MFP (nm) & Inferred ph-d scattering MFP (nm) & Relative ph-d scattering \\ \hline
+& Fe content (100\%) & Conductivity result (\wmk) & Interpolated conductivity (\wmk) & Conductivity difference (\wmk) & Normalised conductivity (\wmk) & Conductivity-scaled MFP (nm) & Scaled ph-ph scattering MFP (nm) & Inferred ph-d scattering MFP (nm) & Relative ph-d scattering \\ \hline
 
 \multirow{9}{*}{\rotatebox[origin=c]{90}{Data}}   & 0.00   & 7.07   & 7.07   & 0.00   & 1.00   & 0.229   & 0.229   & INF      & 0.00   \\
                                                                                        & 0.02   & 6.72   & 7.03   & 0.31   & 0.95   & 0.217   & 0.227   & 4.86     & 0.27  \\
@@ -603,13 +604,13 @@ If the mean free path is the distance between scattering events, then the invers
 
 \begin{figure}[p]
   \includegraphics[width=\linewidth]{Figures/gk_mfp_scattering_4000K.png}
-  \caption[gk mfp scattering 4000K]{}
+  \caption[gk mfp scattering 4000K]{The scattering event frequency, or inverse of MFP, plotted against composition at 4000~K. The total scattering behaves like the inverse of the conductivity. Phonon-phonon scattering increases with composition, as the mass of the system increases. Phonon-defect scattering increases from each endmember, to a maximum point at an intermediate composition. The ph-ph scattering is high compared to ph-d, the 4000~K temperature dominates the MFP behaviour.}
   \label{fig:gk_mfp_scattering_4000K}
 \end{figure}
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/gk_mfp_scattering_1000K.png}
-  \caption[gk mfp scattering 1000K]{}
+  \caption[gk mfp scattering 1000K]{An illustrative measure of scattering significance, plotted against composition at 1000~K. The total scattering behaves like the inverse of the conductivity. Phonon-phonon scattering increases with composition, as the mass of the system increases. Phonon-defect scattering increases from each endmember, to a maximum point at an intermediate composition. While the magnitude of phonon-defect scattering is similar to that at 4000~K, ph-ph scattering is smaller due to the lower temperature. The relative significance of ph-d increases, meaning impurities have a greater effect on the conductivity.}
   \label{fig:gk_mfp_scattering_1000K}
 \end{figure}
 
@@ -630,12 +631,12 @@ If the mean free path is the distance between scattering events, then the invers
 
 
 %-------------------
-\subsection{C(1-C) model limitations}
+\subsection{\cocs model limitations}
 %-------------------
 
 Using this method to determine $\Lambda_{\mathrm{ph-d}}$, I am able to observe how its magnitude changes with composition. Table~\ref{tab:data_applied_table} has two group of rows, one with conductivity data points as computed, the other with the model predictions at the same compositions. When the data is used to determine $\Lambda_{\mathrm{ph-d}}$, the greatest effect is at a composition between 25\% and 50\% (albeit closer to 25\%). 
 
-Taking the 4000~K conductivity model however, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\% (see Figure~\ref{fig:gk_mfp_ph-d_significance_4000K}). This is to be expected, and is set by the $C \left (1-C \right)$ term in Equation~\ref{eq.ohta8}. The C(1-C) model is assuming that an equal proportion of each type of atom (i.e. 50/50 composition) creates the most phonon-defect scattering, but I suggest it is weighted by the masses of the atoms in question (which is captured in the data). The composition at which the mass contribution is equal can be calculated by
+Taking the 4000~K conductivity model however, the largest effect of phonon-defect scattering (smallest MFP) is at a composition around 50\% (see Figure~\ref{fig:gk_mfp_ph-d_significance_4000K}). This is to be expected, and is set by the \cocs term in Equation~\ref{eq.ohta8}. The \cocs model is assuming that an equal proportion of each type of atom (i.e. 50/50 composition) creates the most phonon-defect scattering, but I suggest it is weighted by the masses of the atoms in question (which is captured in the data). The composition at which the mass contribution is equal can be calculated by
 %
 \begin{equation}
 C_{\mathrm{mass}} = \frac{A_{\mathrm{Mg}}}{A_{\mathrm{Mg}} + A_{\mathrm{Fe}}}\ ,
@@ -648,13 +649,13 @@ where $A$ is atomic mass, Mg corresponds to $C=0$ and Fe to $C=1$. For Mg and Fe
 
 \begin{figure}[p]
   \includegraphics[width=\linewidth]{Figures/gk_mfp_ph-d_significance_4000K.png}
-  \caption[gk mfp ph-d significance 4000K]{}
+  \caption[gk mfp ph-d significance 4000K]{An illustration of how the significance of ph-d scattering changes with composition depending on the data. Determining the ph-d MFP from the model gives a result similar to \coc, as you might expect (not exactly though, error is introduced by the model not being fixed to the endmembers). However the data shows that the largest effect of defects is between 25\% and 50\%, presumably closer to 25\%.}
   \label{fig:gk_mfp_ph-d_significance_4000K}
 \end{figure}
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/gk_mfp_ph-d_mass_demo.png}
-  \caption[gk mfp ph-d mass demo]{}
+  \caption[gk mfp ph-d mass demo]{An illustration of contributions to the average mass of all Mg and Fe in the system. They contribute equally when 30\% of Mg is replaced with Fe.}
   \label{fig:gk_mfp_ph-d_mass_demo}
 \end{figure}
 

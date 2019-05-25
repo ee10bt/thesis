@@ -1,0 +1,54 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces PHONON TYPE DIAGRAM}}{6}{figure.caption.24}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces DEBYE MODEL}}{8}{figure.caption.30}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces KAPPA AGAINST TEMP}}{9}{figure.caption.31}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces EARTH STRUCTURE DIAGRAM}}{10}{figure.caption.34}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Thermal conductivity against Fe-content}}{18}{figure.caption.46}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces MD process flowchart draft}}{26}{figure.caption.56}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces BUCK CUTOFF}}{32}{figure.caption.67}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The unit cell represents the smallest box of atoms that can be replicated to produce a crystal structure. A supercell is an arrangement of unit cells.\relax }}{38}{figure.caption.76}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces DIRECT METHOD SCHEMATIC}}{39}{figure.caption.77}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Idealised example of linear extrapolation procedure. Inverse computed conductivities are plotted against inverse simulation lengths. Extrapolation to y-axis gives conductivity of an infinite system length, i.e. the bulk material.\relax }}{40}{figure.caption.80}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Normalised ACF. Correlation is taken over a longer length than shown on this plot (100 ps), however the function decays to less than 1\% of its initial value at 2~ps. It continues to oscillate about zero, with a positive average value.\relax }}{41}{figure.caption.85}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Integrated ACF, multiplied by constants to get thermal conductivity. Large variation in the first 1 ps corresponds to the correlation time where the ACF is unconverged (still decaying / large oscillations). Thermal conductivity is averaged from correlation time of 5~--~10~ps (region in red box).\relax }}{43}{figure.caption.88}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces gk int 3000 000pc trio}}{50}{figure.caption.99}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces gk int 1000 000pc trio}}{50}{figure.caption.100}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces gk simulation length convergence}}{52}{figure.caption.103}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces gk integrals, simulation length convergence}}{53}{figure.caption.104}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces gk fse 4k}}{54}{figure.caption.106}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces gk fse 1k}}{55}{figure.caption.107}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces direct temperature profile 3}}{57}{figure.caption.112}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces direct bin width}}{58}{figure.caption.114}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces direct conv}}{60}{figure.caption.117}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces direct conv}}{61}{figure.caption.118}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces direct inv 4000}}{63}{figure.caption.123}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces direct inv cut up 4000}}{65}{figure.caption.124}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces direct extrap gk comp 4000}}{65}{figure.caption.125}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces direct inv 1000}}{66}{figure.caption.127}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces direct inv cutup 1000 03}}{67}{figure.caption.128}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces direct inv cutup 1000 01}}{68}{figure.caption.129}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CONTENTS BIT}}{76}{figure.caption.148}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CONTENTS BIT}}{80}{figure.caption.157}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CONTENTS BIT}}{81}{figure.caption.159}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CONTENTS BIT}}{82}{figure.caption.160}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CONTENTS BIT}}{83}{figure.caption.161}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CONTENTS BIT}}{86}{figure.caption.168}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces CONTENTS BIT}}{87}{figure.caption.170}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CONTENTS BIT}}{88}{figure.caption.172}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CONTENTS BIT}}{90}{figure.caption.180}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces kc iso pot full}}{92}{figure.caption.185}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces kc 4000 mfp norm}}{94}{figure.caption.192}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces gk mfp scattering 4000K}}{98}{figure.caption.195}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces gk mfp scattering 1000K}}{99}{figure.caption.196}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces gk mfp ph-d significance 4000K}}{100}{figure.caption.199}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces gk mfp ph-d mass demo}}{100}{figure.caption.200}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SPHERICAL HARMONICS}}{102}{figure.caption.203}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
