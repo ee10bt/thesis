@@ -4,13 +4,16 @@
 
 %-----------------------------------------------------------------------------------------------------------
 
+%%-----------------------------------------------------------
+%\section{Introduction to the problem}
+%%-----------------------------------------------------------
+
+%The nature of heat transport within a substance is controlled by its \tc. This influences the thermal evolution and heat budget of the Earth, but is poorly constrained across relevant conditions. Experiments can measure the conductivity of material, but not at the high pressure/temperature conditions found in the deep Earth. Computer simulations allow materials and their conductivities to be modelled on an atomic-scale, but care must be taken to achieve accurate results. This involves setting up the material to faithfully replicate its expected real-world counterpart, and choosing a simulation method which includes realistic atomic interactions. In this chapter, I will introduce thermal conductivity and the deep earth, considering the effects of the former on the latter.
 
 
-%-----------------------------------------------------------
-\section{Introduction to the problem}
-%-----------------------------------------------------------
 
-The nature of heat transport within a substance is controlled by its \tc. This influences the thermal evolution and heat budget of the Earth, but is poorly constrained across relevant conditions. Experiments can measure the conductivity of material, but not at the high pressure/temperature conditions found in the deep Earth. Computer simulations allow materials and their conductivities to be modelled on an atomic-scale, but care must be taken to achieve accurate results. This involves setting up the material to faithfully replicate its expected real-world counterpart, and choosing a simulation method which includes realistic atomic interactions. In this chapter, I will introduce thermal conductivity and the deep earth, considering the effects of the former on the latter.
+
+
 
 %---------------------------------------
 \subsection{Man-made applications with \tc}
@@ -180,8 +183,18 @@ Considering a ``pure'' material, like \mgsios \bdg, the two sources of scatterin
 The average radius of the Earth is 6371~km, the properties of which change dramatically with depth to the centre. I will be focussed on the lower mantle, particularly the region close to the core (the core mantle boundary, CMB). Events in the lower mantle influence (and are influenced by) the upper mantle and lithosphere above, and the core below. Heat transport throughout the Earth is influenced by thermal conductivity, which in turn affects the dynamics of the system, the surface expression of this being plate tectonics. Heat flow also affects the core geodynamo, which produces the Earth's magnetic field. 
 
 %---------------------------------------
+\subsection{Lithosphere and upper mantle}
+%---------------------------------------
+
+The lithosphere and upper mantle lie above the transition zone (down to 660~km depth), the bottom of which marks the top of the lower mantle. Although the chemistry of these regions is similar to that of the lower mantle, the physical conditions and mineral phases are different. Eruptive and subductive behaviour associated with plate tectonics is perhaps the most obvious consequence of mantle dynamics at the Earth's surface, and generally to humanity.
+
+The ``rocky'' portion of the Earth (from the surface down to CMB) is largely some form of silicate mineral, often with magnesium and iron. The two main mineral transitions from the Earth's surface to the top of the lower mantle are pyroxene to garnet (40\%), and olivine through wadsleyite to ringwoodite \citep[60\%][]{Tronnes2009}. The olivine to wadsleyite change occurs at 410~km, marking the top of the mantle transition zone. Wadsleyite transitions to ringwoodite through this zone until 660~km, at which point it breaks down into lower mantle bridgmanite and ferropericlase.
+
+%---------------------------------------
 \subsection{Lower mantle}
 %---------------------------------------
+
+!!! FACT CHECK STATEMENTS ABOUT SHEAR IN FINAL PARA
 
 The lower mantle encompasses the region after the mantle transition zone (660~km deep, $\sim$1900~K, $\sim$25~GPa) to the CMB (2900~km deep, $\sim$4000~K, 136~GPa). The composition of this region can be approximated as 75\% bridgmanite (MgSiO$_3$, magnesium silicate perovskite), 20\% periclase (MgO, magnesium oxide), and  5\% calcium silicate (CaSiO$_3$) perovskite \citep{Tronnes2009}. All of which are insulators and past their Debye temperatures at lower mantle conditions, with the potential for the inclusion of impurities such as iron and aluminium.
 
@@ -189,15 +202,7 @@ The exact nature of impurities is complicated to resolve, as there are a lot of 
 
 A popular opinion is that bridgmanite is stable in the lower mantle until the bottom few 100~km, where it undergoes a pressure-driven phase change to post-perovskite \citep{Murakami2004,Oganov2004}. In places, close proximity to the CMB might transform post-perovskite back to perovskite structure due to the increased temperature. This ``double crossing'' of the bridgmanite stability range can be imaged seismically, where lens-like bands of post-perovskite are shown to pinch out laterally \citep{Lay2006}.
 
-The lower mantle is not heterogeneous, with large-scale features around the CMB. Two large low shear velocity provinces (LLSVPs) can be found roughly underneath Africa and the Pacific. An associated feature is the ultra-low velocity zones (ULVZs), identified around the edges of LLSVPs. These can be observed seismically, but the reason they exist is unclear. It is suggested they are ``thermo-chemical features'', hotter and denser than the regular lower mantle. Increasing temperature and density tend to reduce seismic velocity, with increased density to offset the additional buoyancy from raised temperature. ``Thermo'' intuitively refers to the change in temperatures, while ``chemical'' changes are required to explain density increase. As a result, thermal conductivity will vary within these regions. Adding impurities such as iron would be a possible cause for density increase, such that the conductivity change should be quantified.
-
-%---------------------------------------
-\subsection{Lithosphere and upper mantle}
-%---------------------------------------
-
-The lithosphere (from 0~km depth) and upper mantle lie above the transition zone (to 660~km depth), which marks the top of the lower mantle. Although the chemistry of these regions is similar to that of the lower mantle, the physical conditions and mineral phases are different. Eruptive and subductive behaviour associated with plate tectonics is perhaps the most obvious consequence of mantle dynamics at the Earth's surface, and generally to humanity.
-
-The ``rocky'' portion of the Earth (from the surface down to CMB) is largely some form of silicate mineral, often with magnesium and iron. The two main mineral transitions from the Earth's surface to the top of the lower mantle are pyroxene to garnet (40\%), and olivine through wadsleyite to ringwoodite \citep[60\%][]{Tronnes2009}. The olivine to wadsleyite change occurs at 410~km, marking the top of the mantle transition zone. Wadsleyite transitions to ringwoodite through this zone until 660~km, at which point it breaks down into lower mantle bridgmanite and ferropericlase.
+The lower mantle is not heterogeneous, with large-scale features around the CMB. Two large low shear velocity provinces (LLSVPs) can be found roughly underneath Africa and the Pacific. They are identified seismically by a $\sim$3\% reduction in shear wave velocity. An associated feature is the ultra-low velocity zones (ULVZs), identified around the edges of LLSVPs. These can be observed seismically by a $\sim$30\% reduction in shear (???) wave velocity, but the reason they exist is unclear. It is suggested they are ``thermo-chemical features'', hotter and denser than the regular lower mantle. Increasing temperature and density tend to reduce seismic velocity, with increased density to offset the additional buoyancy from raised temperature. ``Thermo'' intuitively refers to the change in temperatures, while ``chemical'' changes are required to explain density increase. As a result, thermal conductivity will vary within these regions. Adding impurities such as iron would be a possible cause for density increase, such that the conductivity change should be quantified.
 
 %---------------------------------------
 \subsection{Inner and outer core}
@@ -225,6 +230,8 @@ Thermal conductivity in the deep Earth influences dynamic processes such as mant
 %-------------------
 \subsubsection{Mantle dynamics}
 %-------------------
+
+!!! TOSI REFERENCE AT END, DEPTH DEPENDENT CONDUCTIVITY AND EFFECT ON SLAB STAGNATION. TALK ABOUT SLABS TOO, PLUMES LEAD TO SLABS AND SO ON
 
 In the lower mantle \tcs changes with pressure, temperature, and composition, influencing features on a large scale. For example, \citet{Naliboff2006} used numerical models of mantle convection to show size and stability of convective plumes are sensitive to thermal conductivity above the core mantle boundary (CMB).
 
@@ -374,9 +381,29 @@ More recently, \citet{Lobanov2017} determine the radiative conductivity of \ppvs
 \end{sidewaystable}
 \pagebreak
 
-%-----------------------------------------------------------
-\section{Thesis outline}
-%-----------------------------------------------------------
+
+
+%---------------------------------------
+\section{Project summary}
+%---------------------------------------
+
+
+
+%---------------------------------------
+\subsection{Aims}
+%---------------------------------------
+
+(The questions I answered)
+
+%---------------------------------------
+\subsection{Objectives}
+%---------------------------------------
+
+(The things I did)
+
+%---------------------------------------
+\subsection{Thesis outline}
+%---------------------------------------
 
 !!! I SAY ``i'' ALOT, I DO THIS, I DO THAT
 
@@ -392,14 +419,3 @@ In Chapter \ref{Chapter5}, I discuss the temperature and compositional-dependenc
 
 
 
-%---------------------------------------
-\subsection{Aims}
-%---------------------------------------
-
-(The questions I answered)
-
-%---------------------------------------
-\subsection{Objectives}
-%---------------------------------------
-
-(The things I did)
