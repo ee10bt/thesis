@@ -57,68 +57,79 @@ Fundamental characteristics of heat transport in atomic systems mean that the si
 
 !!! ADD EQUATION AND REORDER FIRST PARAGRAPH
 
-Thermal conductivity is a material property, indicative of the ease with which heat is transferred through conduction. Fourier's law relates heat flux through a material to its thermal conductivity, and the temperature gradient across the material
+Thermal conductivity is a material property, indicative of the ease with which heat is transferred through conduction. For known substances thermal conductivity spans about six orders of magnitude, from silica aerogels with 0.005~\wmks \citep{Lee1995} to graphene with 5000~\wmks \citep{Balandin2008}. Fourier's law relates heat flux ($q$) through a material to its thermal conductivity ($\kappa$), and the temperature gradient ($\nabla{T}$) across the body
+%
+\begin{equation}
+q=-\kappa \nabla{T}\ . 
+\label{eq:fourier1}
+\end{equation}
 
-For known substances thermal conductivity spans about six orders of magnitude, from silica aerogels with 0.005~\wmks \citep{Lee1995} to graphene with 5000~\wmks \citep{Balandin2008}. 
+The transfer of thermal energy can occur between an object and its surroundings, two bodies brought into contact, or along a temperature gradient within an object. The possible mechanisms by which this can occur are conduction, convection, and radiation. Conduction is the transfer of heat by atomic vibrations and electron transport in metallic substances \citep[such as in the outer core, e.g.][C.D. REFERENCE, SUITABLE???]{Pozzo2012}. Convection is the transfer of thermal energy via a moving medium, generally in liquids and gases (but expected in the mantle). Density differences are the driving force for convection, due to the volume change associated with thermal expansion. Radiation refers to the transport of heat by electromagnetic radiation in the form of photons.
 
+I am primarily concerned with lattice conduction through the lower mantle, and secondly the convective behaviour therein. Mantle minerals are expected to be insulators, meaning there is no contribution from electron transport. The radiative component of thermal conductivity in the mantle is thought to be small \citep{Goncharov2008}, and will not be determined as part of this work. In the event that radiation contributes significantly to the effective thermal conductivity \citep{Keppler2008}, it can simply be added to the lattice component.
 
-
-The transfer of thermal energy can occur between an object and its surroundings, two bodies brought into contact, or along a temperature gradient within an object. The possible mechanisms by which this can occur are conduction, convection, and radiation. Conduction is the transfer of heat by atomic vibrations and electron transport in metallic substances (such as in the outer core). Convection is the motion of thermal energy via a moving medium, generally in liquids and gases (but expected in the mantle). Density differences are the driving force for convection, due to the volume change associated with thermal expansion. Radiation refers to the transport of heat by electromagnetic radiation in the form of photons.
-
-I am primarily concerned with the atomic vibrations of lattice conduction through the lower mantle, and secondly the convective behaviour therein. Mantle minerals are expected to be insulators, meaning there is no contribution from electron transport. The radiative component of thermal conductivity in the mantle is thought to be small \citep{Goncharov2008}, and will not be determined as part of this work. In the event that radiation contributes significantly to the effective thermal conductivity \citep{Keppler2008}, it can simply be added to the lattice component.
-
-Convection in them mantle is dependent on the \tc, and will occur if heat cannot be sufficiently transported by conductive processes. The value of the Rayleigh number describes the behaviour of heat flow in a fluid, relative to a critical value for the system. Many variables are required to determine the Rayleigh number, but most importantly here it is inversely proportional to \tc. If the calculated Rayleigh number is lower than the critcal value, conduction is the dominant process. When the Rayleigh number is greater, the ratio between it and the critcal value decribes the vigour and style of convection.
+Convection in the mantle is dependent on \tc, and will occur if heat cannot be sufficiently transported by conductive processes. The value of the Rayleigh number describes the behaviour of heat flow in a fluid, relative to a critical value for the system. The Rayleigh number related to internal heating in the lower mantle can be expressed as
+%
+\begin{equation}
+\mathrm{Ra}_{H} = \frac{g {\rho_{0}}^{2} \beta H D^5}{\eta \alpha \kappa}\ ,
+\label{eq:rayleigh}
+\end{equation}
+%
+where $H$ is radiogenic heat production per unit mass, $g$ is the acceleration due to gravity, $\rho_{0}$ is the reference density, $\beta$ is the thermal expansion coefficient, $D$ is the depth in the mantle, $\eta$ is dynamic viscosity, $\alpha$ is the thermal diffusivity, and finally $\kappa$ is \tc.
+While many variables are required to determine the Rayleigh number, most important here is inverse proportionality with \tc. If the calculated Rayleigh number is lower than the critcal value, conduction is the dominant process. When the Rayleigh number is greater, the ratio between it and the critcal value decribes the vigour and style of convection.
 
 %---------------------------------------
 \subsection{Mechanisms of heat transport}
 %---------------------------------------
 
-CRYSTAL LATTICE DIAGRAM SOMEWHERE IN THIS SECTION? - crystalmaker/specific, or generally vague?
+!!! CRYSTAL LATTICE DIAGRAM SOMEWHERE IN THIS SECTION? - crystalmaker/specific, or generally vague?
 
 The transport of heat, rather than the transport of hot material, can be split into three components which contribute to the overall thermal conductivity of a material. These transport mechanisms can be explained on an atomic level, and in the case of this study within a crystal lattice. Atoms have translational symmetry within a crystal, the lattice can be thought of a regular, repeating pattern of atomic arrangement. 
 
-Electrical thermal conductivity refers to the transport of heat via free electrons in an atomic structure. Radiative thermal conductivity is the transport of heat via photons, or packets of electromagnetic energy. Phonons are packets of vibrational energy, a quasiparticle used to describe atomic motions which contribute to lattice thermal conductivity (often referred to as just ``conductivity'' elsewhere in this thesis).
+
 
 %-------------------
 \subsubsection{Electron}
 %-------------------
 
-Close parallels exist between thermal and electrical conduction. The conduction of thermal energy in metals is predominantly due to the motion and interaction of free electrons. Heat is transferred as electrons move and collide in the lattice. There is no net transport of electrons in order to maintain charge neutrality within the lattice. Lower mantle minerals are semiconductors, and thus electrical thermal conductivity is of little significance to this project.
+Electrical thermal conductivity refers to the transport of heat via free electrons in an atomic structure. Close parallels exist between thermal and electrical conduction. The conduction of thermal energy in metals is predominantly due to the motion and interaction of free electrons. Heat is transferred as electrons move and collide in the lattice. There is no net transport of electrons in order to maintain charge neutrality within the lattice. Lower mantle minerals are insulators, and thus electrical thermal conductivity is of little significance unless very high concentrations of iron minerals exist. 
 
 %-------------------
 \subsubsection{Photon}
 %-------------------
 
-Any body with a non-absolute zero temperature emits thermal radiation as light, or photons. Radiative thermal conductivity is determined by a material's optical absorptivity, which describes how heat is transferred by electromagnetic radiation within a material. On the atomic scale, charged particles vibrate and emit light. Energy is transferred from one particle to another when this light is scattered or absorbed. The transfer of heat by radiation is limited similarly to the transfer of visible light, with difficulty passing through opaque media. Unlike lattice conductivity at mantle conditions, radiative conductivity increases with temperature \citep{Hofmeister1999}. This relation has been used to assume thermal conductivity could be constant through the lower mantle if radiative processes are significant, where the lattice component decreases at the same rate the radiative increases \citep{Tang2014}.
+Radiative thermal conductivity is the transport of heat via photons, or packets of electromagnetic energy. Any body with a non-absolute zero temperature emits thermal radiation as light, or photons. Radiative thermal conductivity is determined by a material's optical absorptivity, which describes how heat is transferred by electromagnetic radiation. On the atomic scale, charged particles vibrate and emit light. Energy is transferred from one particle to another when this light is scattered or absorbed. The transfer of heat by radiation is limited similarly to the transfer of visible light, with difficulty passing through opaque media. Unlike lattice conductivity at mantle conditions, radiative conductivity increases with temperature \citep{Hofmeister1999}. This relation has been used to assume thermal conductivity could be constant through the lower mantle if radiative processes are significant, where the lattice component decreases at the same rate the radiative increases \citep{Tang2014}.
 
 %-------------------
 \subsubsection{Phonon}
 %-------------------
 \label{sec.phonon_explan}
 
-The final way heat is conducted is by the vibration of atoms, where the velocity of an atom is proportional to its heat. As an atom vibrates, forces act on neighbouring atoms, inducing motion. Hot atoms in a closed system transfer energy to cold atoms in this way, until energy and temperature are both equilibrated. Considering a crystalline arrangement of atoms, there is long-range structure and well-defined bonds between atoms. Much like standing waves on a string, atoms can vibrate in-phase. These patterns of vibrations are called phonons, and can be differentiated by wavelength and the relative motions of atoms.
 
-There are two types of phonon, acoustic and optical, differentiated by the atomic motions they embody (see Fig.~\ref{fig:phonon_diagram}). Both types can be longitudinal or transverse, referring to the motion of atoms relative to the direction of energy propagation. Longitudinal motion means atoms in a line move closer and further apart with no vertical displacement. Transverse motion refers to vertical displacement of atoms off the line, with no lateral motion along it. The former is like extention/compression of a spring, the latter a standing wave on a string.
+
+Phonons are packets of vibrational energy, a quasiparticle used to describe atomic motions which contribute to lattice thermal conductivity (often referred to as just ``conductivity'' elsewhere in this thesis). As an atom vibrates it exerts a force on its neighbours, where the velocity of the motion is related to heat. Hot atoms in a closed system transfer energy to cold atoms in this way, until energy and temperature are both equilibrated. Considering a crystalline arrangement of atoms, there is long-range structure and well-defined bonds between atoms. Much like standing waves on a string, atoms can vibrate in-phase. These patterns of vibrations are called phonons, and can be differentiated by wavelength and the relative motions of atoms.
+
+There are two types of phonon, acoustic and optic (see Fig.~\ref{fig:phonon_diagram}). Both types can be longitudinal or transverse, referring to the motion of atoms relative to the direction of energy propagation. Longitudinal means atoms move only in the direction of motion with no perpendicular displacement. Transverse refers to perpendicular displacement of atoms away from the direction of propagation, with no lateral motion along it. The former is like extention/compression of a spring, the latter a standing wave on a string.
  
 \begin{figure}[h]
-  \includegraphics[width=\linewidth]{Figures/phonon-warwick-acoustic-optical-diagram.png}
+  \includegraphics[width=\linewidth]{Figures/phonon-warwick-acoustic-optic-diagram.png}
   \caption[PHONON TYPE DIAGRAM]{STOLEN FROM UNI WARWICK https://warwick.ac.uk/fac/sci/physics/current/postgraduate/
   regs/mpagswarwick/ex5/phonons/}
   \label{fig:phonon_diagram}
 \end{figure}
 
-(((IS THIS STUFF CORRECT???))) Acoustic phonons are propagated by atoms displaced in-phase from their equilibrium positions, generating forces on their neighbours and thus subsequent displacement. Optical phonons are propagated by the opposite motion of adjacent positive and negatively-charged ions (conserving momentum, the lighter atom moves further). This motion is generated from the electric fields of external electromagnetic radiation ((OR DOES MOTION GENERATE EM FIELD?)), and is typically of a higher energy than its acoustic counterpart. 
+Acoustic phonons are propagated by atoms displaced in-phase from their equilibrium positions, generating forces on their neighbours and thus subsequent displacement. Optic phonons are propagated by out of phase motion of adjacent positive and negatively-charged ions (conserving momentum, the lighter atom moves further). This motion is generated from the electric fields of external electromagnetic radiation, and is typically of a higher energy than its acoustic counterpart. 
 
-Similar to how photons have wave particle duality, phonons are known as quasiparticles. This is useful for explaining how phonons waves interact with structural discontinuities and in phonon-phonon collisions. As a particle, a phonon is a quantised packet of vibrational energy. Unlike electronic heat conduction, there is a net motion of phonon particles from hot to cold regions. 
+Similar to how photons have wave particle duality (i.e. properties of energy and matter), phonons are known as quasiparticles. This is useful for explaining how phonons waves interact with structural discontinuities and in phonon-phonon collisions. As a particle, a phonon is a quantised packet of vibrational energy. Phonon ``particles'' move from hot to cold regions, but there is no net motion of atoms within the lattice. 
 
-A phonon's mean free path (MFP) is the average distance it travels before scattering. The further the average phonon travels, the more efficient the heat transport and thus higher the thermal condutivity. A number of effects cause phonons to scatter: (1) collisions with other phonons in the lattice, (2) boundaries or defects in the material, and (3) impurities in the atomic structure. The MFP can be determined via Matthiessen's rule, which states the total thermal resistivity (inverse of conductivity) is equal to the sum of individual resistivities,
+The mean free path (MFP) of a phonon is the average distance it travels before scattering. The further the longer the MFP, the more efficient the heat transport and thus higher the thermal condutivity. There are several different phonon scattering mechanisms, collisions with (1) other phonons in the lattice, (2) boundaries in the material, and (3) defects in atomic structure. The MFP can be determined via Matthiessen's rule \citep[see][]{Klemens1959}, which states the total thermal resistivity (inverse of conductivity) is equal to the sum of individual resistivities,
 %
 \begin{equation}
 \frac{1}{\kappa} = \frac{1}{\kappa_{\mathrm{ph}}} + \frac{1}{\kappa_{\mathrm{b}}} + \frac{1}{\kappa_{\mathrm{d}}}\ ,
 \label{eq:matth}
 \end{equation}
 %
-where \textbf{ph}onon, \textbf{b}oundary, and \textbf{d}efect scattering effects are considered. The distance a phonon travels is proportional to conductivity, thus inversely proporitional to resistivity. The shorter the phonon path of an effect, the more it influences and contributes to, or detracts from, the MFP. This is displayed in the equation, where the inverse of the smallest number contributes the most to the sum.
+where \textbf{ph}onon, \textbf{b}oundary, and \textbf{d}efect scattering effects are considered. The MFP is proportional to conductivity, thus inversely proporitional to resistivity. The shorter the phonon path of a scattering mechanism, the more it influences and contributes to, or detracts from, the MFP. This is apparent in Equation~\ref{eq:matth}, where the inverse of the smallest number contributes the most to the sum.
 
 
 
@@ -129,27 +140,34 @@ where \textbf{ph}onon, \textbf{b}oundary, and \textbf{d}efect scattering effects
 \subsection{What affects it?}
 %---------------------------------------
 
-Lattice thermal conductivity can be expressed in the form 
+Lattice thermal conductivity can be expressed \citep[e.g.][]{Schelling2002, Stackhouse2010a} as a simplification of kinetic theory in the form 
 %
 \begin{equation}
 \kappa_{\mathrm{lat}} = \frac{1}{3} C_{\mathrm{v}} v l\ ,
 \label{eq.cvvl}
 \end{equation}
 %
-where $C_{\mathrm{v}}$ is the volumetric heat capacity, $v$ is the acoustic phonon velocity, and $l$ is the phonon mean free path.
+where $C_{\mathrm{v}}$ is the volumetric heat capacity, $v$ is the average acoustic phonon velocity, and $l$ is the phonon mean free path.
 
 
 %-------------------
-\subsubsection{Pressure}
+\subsubsection{Pressure-dependence}
 %-------------------
 
-Volume of the material decreases with increasing pressure, with increasing depth into the Earth. This tends to increase the bulk and shear moduli, causing the seismic wave velocity, and thus the acoustic phonon velocity, to increase. Referring back to Eq.~\ref{eq.cvvl}, increasing pressure causes a conductivity increase.
+The volume of material decreases with increasing pressure, with increasing depth into the Earth. This tends to increase the bulk and shear moduli, causing the seismic wave velocity (Eq.~\ref{eq:vp}), and thus the acoustic phonon velocity, to increase. 
+%
+\begin{equation}
+v_{\mathrm{p}} = \sqrt \frac{K+\frac{4}{3}\mu}{\rho}\ ,
+\label{eq:vp}
+\end{equation}
+%
+where $v_{\mathrm{p}}$ is the p-wave seismic velocity, $K$ is the bulk modulus, $\mu$ is the shear modulus, and $\rho$ is the density of the medium. Referring back to Equation~\ref{eq.cvvl}, increasing pressure therefore causes a conductivity increase, as the atomic motions become more harmonic. 
 
 %-------------------
-\subsubsection{Temperature}
+\subsubsection{Temperature-dependence}
 %-------------------
 
-The phonon MFP increases with the volumetric heat capacity, until the saturation and convergence of this parameter at a material's Debye temperature (see Fig.~\ref{fig:debye-model}). Lattice conductivity is proportional to the MFP (Eq.~\ref{eq.cvvl}), so also increases with temperature up to the Debye limit. 
+The phonon MFP increases with the volumetric heat capacity, until saturation at a material's Debye temperature (see Figure~\ref{fig:debye-model}). Lattice conductivity is proportional to the MFP (Eq.~\ref{eq.cvvl}), so also increases with temperature up to the Debye limit. 
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/debye-model.png}
@@ -157,7 +175,7 @@ The phonon MFP increases with the volumetric heat capacity, until the saturation
   \label{fig:debye-model}
 \end{figure}
 
-Phonon-phonon scattering occurs as long as there are phonons, the effect of which increases with temperature past the Debye temperature. Conductivity change is inversely proporitional to temperature at this point, decreasing, and eventually saturating (see Fig.~\ref{fig:kappa-temp-dep}), to a minimum value as the MFP reaches its minimum (on the order of atomic spacing). Bridgmanite is above its Debye temperature for all lower mantle conditions I will consider. I can safely assume its conductivity will decrease with rising temperature.
+The effect of phonon-phonon scattering increases with temperature past the Debye temperature. Conductivity change is inversely proporitional to temperature at this point, decreasing, and eventually saturating (see Fig.~\ref{fig:kappa-temp-dep}), to a minimum value as the MFP reaches its minimum (on the order of atomic spacing). Bridgmanite is above its Debye temperature for all lower mantle conditions I will consider. I can safely assume its conductivity will decrease with rising temperature.
 
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/kappa-temp-dep.png}

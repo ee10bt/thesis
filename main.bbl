@@ -1255,6 +1255,48 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Klemens1959}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KPG}{%
+         family={Klemens},
+         familyi={K\bibinitperiod},
+         given={P.\bibnamedelima G.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KPG1}
+    \strng{fullhash}{KPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1959}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    The purpose of this note is to point out that the difference in the ideal
+  -electronic thermal conductivity between an alloy and a pure metal can be
+  estimated from the corresponding difference in the ideal electrical
+  resistivity, using the Wiedemann-Franz law. This allows the separation of the
+  thermal conductivity into an electronic and a lattice component to be made
+  with greater confidence, particularly at liquid oxygen temperatures.%
+    }
+    \verb{doi}
+    \verb 10.1071/ph590199
+    \endverb
+    \field{issn}{0004-9506}
+    \field{number}{2}
+    \field{pages}{199\bibrangedash 202}
+    \field{title}{{Deviation from Matthiessen's rule and lattice thermal
+  conductivity of alloys}}
+    \field{volume}{12}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Klemens - 1959
+    \verb - Deviation from Matthiessen's rule and lattice thermal conductivity
+    \verb of alloys.pdf:pdf
+    \endverb
+    \field{journaltitle}{Aust. J. Phys.}
+    \field{year}{1959}
+  \endentry
+
   \entry{Klemens1960}{article}{}
     \name{author}{1}{}{%
       {{hash=KPG}{%
@@ -2635,6 +2677,88 @@
     \field{year}{1995}
   \endentry
 
+  \entry{Pozzo2012}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PM}{%
+         family={Pozzo},
+         familyi={P\bibinitperiod},
+         given={Monica},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DC}{%
+         family={Davies},
+         familyi={D\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gubbins},
+         familyi={G\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Alf{\`{e}}},
+         familyi={A\bibinitperiod},
+         given={Dario},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PM+1}
+    \strng{fullhash}{PMDCGDAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    The Earth acts as a gigantic heat engine driven by the decay of radiogenic
+  isotopes and slow cooling, which gives rise to plate tectonics, volcanoes and
+  mountain building. Another key product is the geomagnetic field, generated in
+  the liquid iron core by a dynamo running on heat released by cooling and
+  freezing (as the solid inner core grows), and on chemical convection (due to
+  light elements expelled from the liquid on freezing). The power supplied to
+  the geodynamo, measured by the heat flux across the core-mantle boundary
+  (CMB), places constraints on Earth's evolution. Estimates of CMB heat flux
+  depend on properties of iron mixtures under the extreme pressure and
+  temperature conditions in the core, most critically on the thermal and
+  electrical conductivities. These quantities remain poorly known because of
+  inherent experimental and theoretical difficulties. Here we use density
+  functional theory to compute these conductivities in liquid iron mixtures at
+  core conditions from first principles-unlike previous estimates, which relied
+  on extrapolations. The mixtures of iron, oxygen, sulphur and silicon are
+  taken from earlier work and fit the seismologically determined core density
+  and inner-core boundary density jump. We find both conductivities to be two
+  to three times higher than estimates in current use. The changes are so large
+  that core thermal histories and power requirements need to be reassessed. New
+  estimates indicate that the adiabatic heat flux is 15 to 16 terawatts at the
+  CMB, higher than present estimates of CMB heat flux based on mantle
+  convection; the top of the core must be thermally stratified and any
+  convection in the upper core must be driven by chemical convection against
+  the adverse thermal buoyancy or lateral variations in CMB heat flow. Power
+  for the geodynamo is greatly restricted, and future models of mantle
+  evolution will need to incorporate a high CMB heat flux and explain the
+  recent formation of the inner core. {\textcopyright} 2012 Macmillan
+  Publishers Limited. All rights reserved.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature11031
+    \endverb
+    \field{issn}{00280836}
+    \field{number}{7398}
+    \field{pages}{355\bibrangedash 358}
+    \field{title}{{Thermal and electrical conductivity of iron at Earth's core
+  conditions}}
+    \field{volume}{485}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Pozzo et al. -
+    \verb 2012 - Thermal and electrical conductivity of iron at Earth's core co
+    \verb nditions.pdf:pdf
+    \endverb
+    \field{journaltitle}{Nature}
+    \field{year}{2012}
+  \endentry
+
   \entry{Schelling2002}{article}{}
     \name{author}{3}{}{%
       {{hash=SPK}{%
@@ -2891,6 +3015,62 @@
     \verb l conductivity of minerals.pdf:pdf
     \endverb
     \field{journaltitle}{Rev. Mineral. Geochemistry}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Stackhouse2010a}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SS}{%
+         family={Stackhouse},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Stixrude},
+         familyi={S\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KBB}{%
+         family={Karki},
+         familyi={K\bibinitperiod},
+         given={B.\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS+1}
+    \strng{fullhash}{SSSLKBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.104.208501
+    \endverb
+    \field{issn}{0031-9007}
+    \field{number}{20}
+    \field{pages}{208501}
+    \field{title}{{Thermal Conductivity of Periclase (MgO) from First
+  Principles}}
+    \verb{url}
+    \verb http://link.aps.org/doi/10.1103/PhysRevLett.104.208501
+    \endverb
+    \field{volume}{104}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Stackhouse, Sti
+    \verb xrude, Karki - 2010 - Thermal Conductivity of Periclase (MgO) from Fi
+    \verb rst Principles.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{annotation}{%
+    debye? isothermal logarithmic density 5-7 In order to account for the
+  effects of finite system size wefollow the method of [15]. Uncertainties in
+  the temperature of the sections, heat flux, and lattice thermal conductivity
+  are estimated using the appropriate statistics [22].%
+    }
     \field{year}{2010}
     \warn{\item Invalid format of field 'month'}
   \endentry
