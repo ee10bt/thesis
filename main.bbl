@@ -17,6 +17,127 @@
 \endgroup
 
 \sortlist[entry]{nyt/global/}
+  \entry{Alfe2007}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AD}{%
+         family={Alf{\`{e}}},
+         familyi={A\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GMJ}{%
+         family={Gillan},
+         familyi={G\bibinitperiod},
+         given={M.\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PGD}{%
+         family={Price},
+         familyi={P\bibinitperiod},
+         given={G.\bibnamedelima D.},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AD+1}
+    \strng{fullhash}{ADGMJPGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    The Earth's core is a ball of swirling hot metal at the centre of our
+  planet, with a radius roughly one half of the Earth's radius. It is formed by
+  two parts: a solid inner core, with a radius of 1221 km, surrounded by a
+  shell of liquid which extends up to 3480 km from the centre. It is widely
+  believe that the Earth's core is mainly formed by iron, or iron with up to
+  5-10{\%} of nickel. It is also known that the core must contain a significant
+  fraction of light impurities, in the region of 2-3{\%} in the solid and
+  6-7{\%} in the liquid. The nature of these light impurities is unknown. The
+  temperature of the core is also inaccessible to direct probing. Here we
+  present a theoretical study on the temperature and the composition of the
+  Earth's core. The investigation is based on the application of the
+  implementation of quantum mechanics known as density functional theory. We
+  shall show that these techniques are very accurate at predicting the
+  properties of iron, and therefore can be usefully used to study the
+  properties of the core. We show that by combining these techniques with
+  direct observations it is possible to predict the temperature of the core, in
+  particular the temperature at the boundary between the solid and the liquid
+  core (the ICB), and put constraints on its composition. The result of this
+  study is that the temperature of the ICB is probably in the region of
+  5400-5700 K and that the outer core contains a significant fraction
+  (8-13{\%}) of oxygen. As the Earth cools down the solid core grows and expels
+  oxygen in the liquid. Since oxygen is lighter than iron it rises in the
+  liquid, and its gravitational energy is available to drive the convective
+  motions in the liquid core that are responsible for the generation of the
+  Earth's magnetic field.%
+    }
+    \verb{doi}
+    \verb 10.1080/00107510701529653
+    \endverb
+    \field{issn}{00107514}
+    \field{number}{2}
+    \field{pages}{63\bibrangedash 80}
+    \field{title}{{Temperature and composition of the Earth's core}}
+    \field{volume}{48}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Alf{\`{e}}, Gil
+    \verb lan, Price - 2007 - Temperature and composition of the Earth's core.p
+    \verb df:pdf
+    \endverb
+    \field{journaltitle}{Contemp. Phys.}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Allegre1995}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ACJ}{%
+         family={All{\`{e}}gre},
+         familyi={A\bibinitperiod},
+         given={C.\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PJP}{%
+         family={Poirier},
+         familyi={P\bibinitperiod},
+         given={J.\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HE}{%
+         family={Humler},
+         familyi={H\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+      {{hash=HW}{%
+         family={{Hofmann, A}},
+         familyi={H\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ACJ+1}
+    \strng{fullhash}{ACJPJPHEHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1093/astrogeo/atv065
+    \endverb
+    \field{issn}{14684004}
+    \field{pages}{515\bibrangedash 526}
+    \field{title}{{The chemical composition of the Earth}}
+    \field{volume}{134}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/All{\`{e}}gre e
+    \verb t al. - 1995 - The chemical composition of the Earth.pdf:pdf
+    \endverb
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
+    \field{year}{1995}
+  \endentry
+
   \entry{Ammann2014}{article}{}
     \name{author}{7}{}{%
       {{hash=AMW}{%
@@ -1953,6 +2074,124 @@
     \field{year}{2004}
   \endentry
 
+  \entry{McCammon1997}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MCA}{%
+         family={McCammon},
+         familyi={M\bibinitperiod},
+         given={C.\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCA1}
+    \strng{fullhash}{MCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The lower mantle constitutes more than half the Earth's interior by volume,
+  and is believed to consist predominantly of (Mg,Fe)SiO3 perovskite with up to
+  approximately 20{\%} (Mg,Fe)O. In the system FeO–MgO–SiO2, iron
+  partitions preferentially into (Mg,Fe)O relative to the perovskite phase and
+  has been believed to be nearly all in the form of Fe2+on the basis of
+  experiments in the MgO–FeO–SiO2 system1, 2, 3, 4. Here, however, we
+  present a M{\"{o}}ssbauer study of (Mg,Fe)SiO3 perovskite containing 3.3
+  mol{\%} Al2O3, which shows that approximately 50{\%} of the iron is Fe3+.
+  These results, combined with evidence from other experiments, suggest that
+  the proportion of iron present as Fe3+in the lower-mantle perovskite phase is
+  probably much higher than is currently believed. Because the oxidation state
+  of iron in the perovskite phase affects the electrostatic charge balance and
+  equilibrium defect concentration, the presence of Fe3+is likely to
+  significantly affect physical and chemical properties of the lower mantle
+  such as sub- and super-solidus phase relations, transport properties,
+  mechanical behaviour, trace-element partitioning and the concentration of
+  species such as hydroxide ions.%
+    }
+    \verb{doi}
+    \verb 10.1038/42685
+    \endverb
+    \field{issn}{00280836}
+    \field{number}{6634}
+    \field{pages}{694\bibrangedash 696}
+    \field{title}{{Perovskite as a possible sink for ferric iron in the lower
+  mantle}}
+    \field{volume}{387}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/McCammon - 1997
+    \verb  - Perovskite as a possible sink for ferric iron in the lower mantle.
+    \verb pdf:pdf
+    \endverb
+    \field{journaltitle}{Nature}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Muir2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MJMR}{%
+         family={Muir},
+         familyi={M\bibinitperiod},
+         given={J.\bibnamedelima M.\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=BJP}{%
+         family={Brodholt},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Authors}%
+    }
+    \keyw{Bridgmanite,Ferropericlase,Lower mantle,Partitioning}
+    \strng{namehash}{MJMRBJP1}
+    \strng{fullhash}{MJMRBJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    We used density functional theory (DFT) to examine the partitioning of
+  ferrous iron between periclase and bridgmanite under lower mantle conditions.
+  To study the effects of the three major variables - pressure, temperature and
+  concentration - these have been varied from 0 to 150 GPa, from 1000 to 4000 K
+  and from 0 to 100{\%} total iron content. We find that increasing temperature
+  increases KD, increasing iron concentration decreases KD, while pressure can
+  both increase and decrease KD. We find that KD decreases slowly from about
+  0.32 to 0.06 with depth under lower mantle conditions. We also find that KD
+  increases sharply to 0.15 in the very lowermost mantle due to the strong
+  temperature increases near the CMB. Spin transitions have a large effect on
+  the activity of ferropericlase which causes KD to vary with pressure in a
+  peak-like fashion. Despite the apparently large changes in KD through the
+  mantle, this actually results in relatively small changes in total iron
+  content in the two phases, with XFefp ranging from about 0.20 to 0.35, before
+  decreasing again to about 0.28 at the CMB, and XFebd has a pretty constant
+  value of about 0.04-0.07 throughout the lower mantle. For the very high Fe
+  concentrations suggested for ULVZs, Fe partitions very strongly into
+  ferropericlase.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.pepi.2016.05.008
+    \endverb
+    \field{issn}{00319201}
+    \field{pages}{12\bibrangedash 17}
+    \field{title}{{Ferrous iron partitioning in the lower mantle}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.pepi.2016.05.008
+    \endverb
+    \field{volume}{257}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Muir, Brodholt
+    \verb - 2016 - Ferrous iron partitioning in the lower mantle.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Earth Planet. Inter.}
+    \field{year}{2016}
+  \endentry
+
   \entry{Muller-Plathe1997}{article}{}
     \name{author}{1}{}{%
       {{hash=MPF}{%
@@ -2682,25 +2921,25 @@
       {{hash=PM}{%
          family={Pozzo},
          familyi={P\bibinitperiod},
-         given={Monica},
+         given={M.},
          giveni={M\bibinitperiod},
       }}%
       {{hash=DC}{%
          family={Davies},
          familyi={D\bibinitperiod},
-         given={Chris},
+         given={C.},
          giveni={C\bibinitperiod},
       }}%
       {{hash=GD}{%
          family={Gubbins},
          familyi={G\bibinitperiod},
-         given={David},
+         given={D.},
          giveni={D\bibinitperiod},
       }}%
       {{hash=AD}{%
          family={Alf{\`{e}}},
          familyi={A\bibinitperiod},
-         given={Dario},
+         given={D.},
          giveni={D\bibinitperiod},
       }}%
     }
@@ -2757,6 +2996,78 @@
     \endverb
     \field{journaltitle}{Nature}
     \field{year}{2012}
+  \endentry
+
+  \entry{Rost2005}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RS}{%
+         family={Rost},
+         familyi={R\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GEJ}{%
+         family={Garnero},
+         familyi={G\bibinitperiod},
+         given={E.\bibnamedelima J.},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WQ}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Q.},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Manga},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RS+1}
+    \strng{fullhash}{RSGEJWQMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Recent seismological discoveries have indicated that the Earth's core -
+  mantle boundary is far more complex than a simple boundary between the molten
+  outer core and the silicate mantle. Instead, its structural complexities
+  probably rival those of the Earth's crust(1). Some regions of the lowermost
+  mantle have been observed to have seismic wave speed reductions of at least
+  10 per cent(2-7), which appear not to be global in extent(7-9). Here we
+  present robust evidence for an 8.5-km- thick and similar to 50-km-wide pocket
+  of dense, partially molten material at the core - mantle boundary east of
+  Australia. Array analyses of an anomalous precursor to the reflected seismic
+  wave ScP reveal compressional and shear-wave velocity reductions of 8 and 25
+  per cent, respectively, and a 10 per cent increase in density of the
+  partially molten aggregate. Seismological data are incompatible with a basal
+  layer composed of pure melt, and thus require a mechanism to prevent downward
+  percolation of dense melt within the layer. This may be possible by trapping
+  of melt by cumulus crystal growth following melt drainage from an anomalously
+  hot overlying region of the lowermost mantle. This magmatic evolution and the
+  resulting cumulate structure seem to be associated with overlying thermal
+  instabilities, and thus may mark a root zone of an upwelling plume.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature03620
+    \endverb
+    \field{issn}{00280836}
+    \field{number}{7042}
+    \field{pages}{666\bibrangedash 669}
+    \field{title}{{Seismological constraints on a possible plume root at the
+  core-mantle boundary}}
+    \field{volume}{435}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Rost et al. - 2
+    \verb 005 - Seismological constraints on a possible plume root at the core-
+    \verb mantle boundary.pdf:pdf
+    \endverb
+    \field{journaltitle}{Nature}
+    \field{year}{2005}
   \endentry
 
   \entry{Schelling2002}{article}{}
