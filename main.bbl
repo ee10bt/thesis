@@ -355,40 +355,33 @@
     \field{year}{2000}
   \endentry
 
-  \entry{Brown1986}{article}{}
-    \name{author}{2}{}{%
+  \entry{Brown1986a}{article}{}
+    \name{author}{1}{}{%
       {{hash=BJM}{%
          family={Brown},
          familyi={B\bibinitperiod},
          given={J.\bibnamedelima M.},
          giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
-      {{hash=MRG}{%
-         family={McQueen},
-         familyi={M\bibinitperiod},
-         given={R.\bibnamedelima G.},
-         giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
     }
-  \keyw{doi:10.1029/JB091iB07p07485,http://dx.doi.org/10.1029/JB091iB07p07485}
-    \strng{namehash}{BJMMRG1}
-    \strng{fullhash}{BJMMRG1}
+    \strng{namehash}{BJM1}
+    \strng{fullhash}{BJM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1986}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{number}{B7}
-    \field{pages}{7485\bibrangedash 7494}
-    \field{title}{{Phase transitions, Gr{\"{u}}neisen parameter, and elasticity
-  for shocked iron between 77{\~{}}GPa and 400{\~{}}GPa}}
-    \field{volume}{91}
+    \field{number}{13}
+    \field{pages}{1509\bibrangedash 1512}
+    \field{title}{{Interpretation of the D" zone at the base of the mantle:
+  dependence on assumed values of thermal conductivity}}
+    \field{volume}{13}
     \verb{file}
-    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Brown, McQueen
-    \verb - 1986 - Phase transitions, Gr{\"{u}}neisen parameter, and elasticity
-    \verb  for shocked iron between 77{\~{}}GPa and 400{\~{}}GPa.pdf:pdf
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Brown - 1986 -
+    \verb Interpretation of the D zone at the base of the mantle dependence on
+    \verb assumed values of thermal conductivity.pdf:pdf
     \endverb
-    \field{journaltitle}{J. Geophys. Res.}
+    \field{journaltitle}{Geophys. Res. Lett.}
     \field{year}{1986}
   \endentry
 
@@ -1218,6 +1211,38 @@
     \field{journaltitle}{Science (80-. ).}
     \field{year}{1999}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Horai1971}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HK}{%
+         family={Horai},
+         familyi={H\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HK1}
+    \strng{fullhash}{HK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1971}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1016/0012-821X(69)90186-1
+    \endverb
+    \field{issn}{0012821X}
+    \field{number}{5}
+    \field{pages}{359\bibrangedash 368}
+    \field{title}{{Thermal conductivity of rock-forming minerals}}
+    \field{volume}{76}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Horai - 1971 -
+    \verb Thermal conductivity of rock-forming minerals.pdf:pdf
+    \endverb
+    \field{journaltitle}{Earth Planet. Sci. Lett.}
+    \field{year}{1971}
   \endentry
 
   \entry{Howell2012}{article}{}
@@ -3777,6 +3802,58 @@
     \endverb
     \field{journaltitle}{Phys. Earth Planet. Inter.}
     \field{year}{2013}
+  \endentry
+
+  \entry{Touloukian1970}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TYS}{%
+         family={Touloukian},
+         familyi={T\bibinitperiod},
+         given={Y.\bibnamedelima S.},
+         giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PRW}{%
+         family={Powel},
+         familyi={P\bibinitperiod},
+         given={R.\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=HCY}{%
+         family={Ho},
+         familyi={H\bibinitperiod},
+         given={C.\bibnamedelima Y.},
+         giveni={C\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=KPG}{%
+         family={Klemens},
+         familyi={K\bibinitperiod},
+         given={P.\bibnamedelima G.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TYS+1}
+    \strng{fullhash}{TYSPRWHCYKPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1970}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Y. S. Touloukian, R. W. Powell, C. Y. Ho, and P. G. Klemens, “Thermal
+  conductivity of nonmetallic solids,” in Thermophysical Properties of
+  Matter, Y. S. Touloukian, and C. Y. Ho, eds. IFIPlenum, New York, 1970, Vol.
+  2, pp. 183–193.%
+    }
+    \field{isbn}{0306670224}
+    \field{pages}{183\bibrangedash 193}
+    \field{title}{{Thermal conductivity of nonmetallic solids}}
+    \field{volume}{2}
+    \verb{file}
+    \verb :nfs/see-fs-01{\_}teaching/ee10bt/phd/papers/mendeley/Touloukian et a
+    \verb l. - 1970 - Thermal conductivity of nonmetallic solids.pdf:pdf
+    \endverb
+    \field{journaltitle}{Thermophys. Prop. Matter}
+    \field{year}{1970}
   \endentry
 
   \entry{Tronnes2009}{article}{}
