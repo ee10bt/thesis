@@ -5,12 +5,31 @@
 \label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %-----------------------------------------------------------
-\section{Draft words}
+\section{Introduction}
 %-----------------------------------------------------------
 
-I am able to construct a model of lower mantle heat flux, including the effect of LLSVP properties. Using LEMA, I specify a CMB base condition, and a TBL condition at some height above it. In all models I consider, the CMB will be isothermal. The TBL will have a variable mean temperature, and regions of higher and lower temperature. The lower mantle has an average Fe\%, but the LLSVPs are enriched compared the depleted surrounding bulk lower mantle. By varying the temperature and composition at the CMB, conductivity can be altered using the model from PREVIOUS-REF. The difference in temperature between CMB and TBL, and the undulations on the latter, control the lower mantle temperature gradient. 
+Many variables affect heat flux across core-mantle boundary (CMB). On the mantle side, they are the properties of the thermal boundary layer (TBL), the chemistry, temperature, and thickness. As explained in Chapter~\ref{Chapter4}, \tcs is dependent on the temperature and composition of a mineral. The thermal gradient away from the CMB depends on the thickness and temperature at the top and bottom of the TBL. Recalling Fourier's law once more, heat flux ($q$) is equal to the product of the thermal conductivity ($\kappa$), and the temperature gradient ($\nabla{T}$)
+%
+\begin{equation}
+q=-\kappa \nabla{T}\ . 
+\label{eq:fourier5}
+\end{equation}
 
-Heat flux can be calculated using conductivity and temperature gradient via FOURIER'S LAW. While the magnitude of the heat flux will change with parameters, perhaps more interesting is the lateral variation of this parameter. This will show how the lower mantle heat flux is sensitive to the conditions therein, and what condition or combination of conditions is most significant. The results from these calculations can then be compared to observables, dismissing scenarios which are unfeasible or unstable. There are many variables in the lower mantle, and observables to compare to. The variable conductivities from this work will play an important role in constraining CMB heat flux.
+%---------------------------------------
+\subsection{Approaching the problem}
+%---------------------------------------
+
+A simple one-dimensional model is not sufficient to describe the Earth, recalling Section~\ref{sec:LM}, two large low shear velocity provinces (LLSVPs) sit approximately on opposite sides of the CMB. A two-dimensional model, around the equator perhaps, would better describe the situation, but the CMB is spherical. A more sophisticated model is required to model changes in CMB structure with varying latitude and longitudes.
+
+%---------------------------------------
+\subsection{Introducing LEMA}
+%---------------------------------------
+
+!!! Need to introduce LEMA
+
+Using LEMA, I specify a CMB base condition, and a TBL condition at some height above it. In all models I consider, the CMB will be isothermal. The TBL will have a variable mean temperature, and regions of higher and lower temperature. The lower mantle has an average Fe\%, but the LLSVPs are enriched compared the depleted surrounding bulk lower mantle. By varying the temperature and composition at the CMB, conductivity can be altered using the model from Section~\ref{sec:kappa_model}. The difference in temperature between CMB and TBL, and the undulations on the latter, control the lower mantle temperature gradient. 
+
+The magnitude of the heat flux will change with parameters, perhaps more interesting is the lateral variation of this parameter. This will show how the lower mantle heat flux is sensitive to the conditions therein, and what condition or combination of conditions is most significant. The results from these calculations can then be compared to observables, dismissing scenarios which are unfeasible or unstable. There are many variables in the lower mantle, and observables to compare to. The variable conductivities from this work will play an important role in constraining CMB heat flux.
 
 I can use spherical harmonics to generate structures that resemble LLSVPs. The centre of LLSVPs are approximately(/loosely?) located on the equator, antipodal at $0\degsym$ and $180\degsym$ longitude (the African and Pacific LLSVPs respectively). A first order approxiamtion for this geometry is the spherical harmonic $Y^{2}_{2}$, four quadrants of varying polarity around the polar axis. This looks good, but the projection is misleading in that it actually extends to the poles. It can be improved by stacking $Y^{0}_{2}$ on top of it, enhancing regions on the equator and reducing everything towards the poles. The results is two circular patterns, each located at opposite sides of the equator.
 
