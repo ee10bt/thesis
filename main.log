@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  8 JUN 2019 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.28)  9 JUN 2019 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2317,7 +2317,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 17.
-<Figures/pp_earth_diagram2.png, id=802, 393.72093pt x 265.74281pt>
+<Figures/pp_earth_diagram2.png, id=823, 393.72093pt x 265.74281pt>
 File: Figures/pp_earth_diagram2.png Graphic file (type png)
 <use Figures/pp_earth_diagram2.png>
 Package pdftex.def Info: Figures/pp_earth_diagram2.png  used on input line 24. 
@@ -2332,7 +2332,7 @@ Underfull \hbox (badness 1728) in paragraph at lines 25--25
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/tronnes_earth_diagram.png, id=804, 1238.37656pt x 1271.5003pt>
+<Figures/tronnes_earth_diagram.png, id=825, 1238.37656pt x 1271.5003pt>
 File: Figures/tronnes_earth_diagram.png Graphic file (type png)
 <use Figures/tronnes_earth_diagram.png>
 Package pdftex.def Info: Figures/tronnes_earth_diagram.png  used on input line 
@@ -2349,7 +2349,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 
 ]
-<Figures/tronnes_perid_compo.png, id=811, 639.13782pt x 345.54094pt>
+<Figures/tronnes_perid_compo.png, id=832, 639.13782pt x 345.54094pt>
 File: Figures/tronnes_perid_compo.png Graphic file (type png)
 <use Figures/tronnes_perid_compo.png>
 Package pdftex.def Info: Figures/tronnes_perid_compo.png  used on input line 51
@@ -2374,7 +2374,7 @@ Overfull \hbox (0.62285pt too wide) in paragraph at lines 102--103
  []
 
 [6] [7] [8] [9] [10]
-<Figures/phonon-warwick-acoustic-optic-diagram.png, id=924, 376.40625pt x 442.6
+<Figures/phonon-warwick-acoustic-optic-diagram.png, id=944, 376.40625pt x 442.6
 5375pt>
 File: Figures/phonon-warwick-acoustic-optic-diagram.png Graphic file (type png)
 
@@ -2397,7 +2397,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--205
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11] [12 <./Figures/phonon-warwick-acoustic-optic-diagram.png>] [13]
-<Figures/debye-model.png, id=954, 257.46187pt x 170.13562pt>
+<Figures/debye-model.png, id=974, 257.46187pt x 170.13562pt>
 File: Figures/debye-model.png Graphic file (type png)
 <use Figures/debye-model.png>
 Package pdftex.def Info: Figures/debye-model.png  used on input line 261. on in
@@ -2410,7 +2410,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--262
 
  []
 
-<Figures/kappa-temp-dep.png, id=957, 246.1697pt x 230.36063pt>
+<Figures/kappa-temp-dep.png, id=977, 246.1697pt x 230.36063pt>
 File: Figures/kappa-temp-dep.png Graphic file (type png)
 <use Figures/kappa-temp-dep.png>
 Package pdftex.def Info: Figures/kappa-temp-dep.png  used on input line 270. on
@@ -2450,7 +2450,7 @@ Overfull \hbox (2.78564pt too wide) in paragraph at lines 315--316
 -duc-tiv-ity of post-perovskite
  []
 
-<Figures/ammann_saturation.png, id=1006, 720.44156pt x 291.33844pt>
+<Figures/ammann_saturation.png, id=1026, 720.44156pt x 291.33844pt>
 File: Figures/ammann_saturation.png Graphic file (type png)
 <use Figures/ammann_saturation.png>
 Package pdftex.def Info: Figures/ammann_saturation.png  used on input line 320.
@@ -2535,7 +2535,7 @@ Chapter 2.
 
 
 ]
-<Figures/md_flowchart.png, id=1077, 651.93562pt x 336.50719pt>
+<Figures/md_flowchart.png, id=1097, 651.93562pt x 336.50719pt>
 File: Figures/md_flowchart.png Graphic file (type png)
 <use Figures/md_flowchart.png>
 Package pdftex.def Info: Figures/md_flowchart.png  used on input line 32. on in
@@ -2543,7 +2543,7 @@ put line 32.
 Package pdftex.def Info: Requested size: 404.02908pt x 208.55013pt on input lin
 e 32.
  [26 <./Figures/md_flowchart.png>] [27] [28] [29] [30] [31]
-<Figures/buck_cutoff_justification.png, id=1118, 732.48656pt x 433.62pt>
+<Figures/buck_cutoff_justification.png, id=1138, 732.48656pt x 433.62pt>
 File: Figures/buck_cutoff_justification.png Graphic file (type png)
 <use Figures/buck_cutoff_justification.png>
 Package pdftex.def Info: Figures/buck_cutoff_justification.png  used on input l
@@ -2557,7 +2557,7 @@ ons and their time-dependence
  []
 
 [36]
-<Figures/cell_diagram.png, id=1176, 1553.805pt x 1391.1975pt>
+<Figures/cell_diagram.png, id=1196, 1553.805pt x 1391.1975pt>
 File: Figures/cell_diagram.png Graphic file (type png)
 <use Figures/cell_diagram.png>
 Package pdftex.def Info: Figures/cell_diagram.png  used on input line 265. on i
@@ -2568,7 +2568,7 @@ e 265.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/ss_direct_master_figure.png, id=1177, 526.96875pt x 645.16031pt>
+<Figures/ss_direct_master_figure.png, id=1197, 526.96875pt x 645.16031pt>
 File: Figures/ss_direct_master_figure.png Graphic file (type png)
 <use Figures/ss_direct_master_figure.png>
 Package pdftex.def Info: Figures/ss_direct_master_figure.png  used on input lin
@@ -2585,7 +2585,7 @@ Overfull \hbox (3.83054pt too wide) in paragraph at lines 290--292
  []
 
 [38 <./Figures/cell_diagram.png>]
-<Figures/ideal_extrap.png, id=1194, 945.5325pt x 403.5075pt>
+<Figures/ideal_extrap.png, id=1214, 945.5325pt x 403.5075pt>
 File: Figures/ideal_extrap.png Graphic file (type png)
 <use Figures/ideal_extrap.png>
 Package pdftex.def Info: Figures/ideal_extrap.png  used on input line 300. on i
@@ -2603,7 +2603,7 @@ g in cells where cross-
  []
 
 [40 <./Figures/ideal_extrap.png>]
-<Figures/gk_acf.png, id=1211, 1220.30907pt x 514.17094pt>
+<Figures/gk_acf.png, id=1231, 1220.30907pt x 514.17094pt>
 File: Figures/gk_acf.png Graphic file (type png)
 <use Figures/gk_acf.png>
 Package pdftex.def Info: Figures/gk_acf.png  used on input line 361. on input l
@@ -2611,7 +2611,7 @@ ine 361.
 Package pdftex.def Info: Requested size: 404.02908pt x 170.23396pt on input lin
 e 361.
  [41 <./Figures/gk_acf.png>]
-<Figures/gk_int.png, id=1220, 1237.62375pt x 533.74406pt>
+<Figures/gk_int.png, id=1240, 1237.62375pt x 533.74406pt>
 File: Figures/gk_int.png Graphic file (type png)
 <use Figures/gk_int.png>
 Package pdftex.def Info: Figures/gk_int.png  used on input line 387. on input l
@@ -2638,7 +2638,7 @@ Overfull \hbox (1.40572pt too wide) in paragraph at lines 41--42
 he sim-u-lated con-di-tions (NPT),
  []
 
-<Figures/gk_int_3000_000pc_trio.png, id=1270, 1100.61188pt x 308.65312pt>
+<Figures/gk_int_3000_000pc_trio.png, id=1290, 1100.61188pt x 308.65312pt>
 File: Figures/gk_int_3000_000pc_trio.png Graphic file (type png)
 <use Figures/gk_int_3000_000pc_trio.png>
 Package pdftex.def Info: Figures/gk_int_3000_000pc_trio.png  used on input line
@@ -2648,7 +2648,7 @@ e 52.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/gk_int_1000_000pc_trio.png, id=1271, 1085.55562pt x 301.125pt>
+<Figures/gk_int_1000_000pc_trio.png, id=1291, 1085.55562pt x 301.125pt>
 File: Figures/gk_int_1000_000pc_trio.png Graphic file (type png)
 <use Figures/gk_int_1000_000pc_trio.png>
 Package pdftex.def Info: Figures/gk_int_1000_000pc_trio.png  used on input line
@@ -2660,14 +2660,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [49] [50 <./Figures/gk_int_3000_000pc_trio.png (PNG copy)> <./Figures/gk_int_10
 00_000pc_trio.png (PNG copy)>] [51]
-<Figures/gk_sim_length_conv_graph.png, id=1289, 362.10281pt x 217.5628pt>
+<Figures/gk_sim_length_conv_graph.png, id=1309, 362.10281pt x 217.5628pt>
 File: Figures/gk_sim_length_conv_graph.png Graphic file (type png)
 <use Figures/gk_sim_length_conv_graph.png>
 Package pdftex.def Info: Figures/gk_sim_length_conv_graph.png  used on input li
 ne 102. on input line 102.
 Package pdftex.def Info: Requested size: 404.02908pt x 242.75575pt on input lin
 e 102.
-<Figures/gk_int_4000_comp_sim_length.png, id=1291, 715.17188pt x 300.3722pt>
+<Figures/gk_int_4000_comp_sim_length.png, id=1311, 715.17188pt x 300.3722pt>
 File: Figures/gk_int_4000_comp_sim_length.png Graphic file (type png)
 <use Figures/gk_int_4000_comp_sim_length.png>
 Package pdftex.def Info: Figures/gk_int_4000_comp_sim_length.png  used on input
@@ -2676,14 +2676,14 @@ Package pdftex.def Info: Requested size: 404.02908pt x 169.69226pt on input lin
 e 110.
  [52 <./Figures/gk_sim_length_conv_graph.png>] [53 <./Figures/gk_int_4000_comp_
 sim_length.png>]
-<Figures/gk_fse_4K_draft.png, id=1308, 362.10281pt x 217.5628pt>
+<Figures/gk_fse_4K_draft.png, id=1328, 362.10281pt x 217.5628pt>
 File: Figures/gk_fse_4K_draft.png Graphic file (type png)
 <use Figures/gk_fse_4K_draft.png>
 Package pdftex.def Info: Figures/gk_fse_4K_draft.png  used on input line 129. o
 n input line 129.
 Package pdftex.def Info: Requested size: 404.02908pt x 242.75575pt on input lin
 e 129.
-<Figures/gk_fse_1K_draft.png, id=1309, 361.35pt x 216.81pt>
+<Figures/gk_fse_1K_draft.png, id=1329, 361.35pt x 216.81pt>
 File: Figures/gk_fse_1K_draft.png Graphic file (type png)
 <use Figures/gk_fse_1K_draft.png>
 Package pdftex.def Info: Figures/gk_fse_1K_draft.png  used on input line 135. o
@@ -2696,7 +2696,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [54 <./Figures/gk_fse_4K_draft.png>] [55 <./Figures/gk_fse_1K_draft.png>]
 [56]
-<Figures/direct_temp_pro_03.png, id=1323, 2032.59375pt x 1228.59pt>
+<Figures/direct_temp_pro_03.png, id=1343, 2032.59375pt x 1228.59pt>
 File: Figures/direct_temp_pro_03.png Graphic file (type png)
 <use Figures/direct_temp_pro_03.png>
 Package pdftex.def Info: Figures/direct_temp_pro_03.png  used on input line 228
@@ -2708,7 +2708,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 244.2139pt on input line
 LaTeX Warning: Reference `fig:direct bin width' on page 58 undefined on input l
 ine 239.
 
-<Figures/direct_bin_width.png, id=1330, 362.10281pt x 216.81pt>
+<Figures/direct_bin_width.png, id=1350, 362.10281pt x 216.81pt>
 File: Figures/direct_bin_width.png Graphic file (type png)
 <use Figures/direct_bin_width.png>
 Package pdftex.def Info: Figures/direct_bin_width.png  used on input line 242. 
@@ -2716,7 +2716,7 @@ on input line 242.
 Package pdftex.def Info: Requested size: 404.02908pt x 241.91577pt on input lin
 e 242.
 [58 <./Figures/direct_bin_width.png>]
-<Figures/direct_raw_conv_4000_2x2.png, id=1336, 365.11406pt x 286.82156pt>
+<Figures/direct_raw_conv_4000_2x2.png, id=1356, 365.11406pt x 286.82156pt>
 File: Figures/direct_raw_conv_4000_2x2.png Graphic file (type png)
 <use Figures/direct_raw_conv_4000_2x2.png>
 Package pdftex.def Info: Figures/direct_raw_conv_4000_2x2.png  used on input li
@@ -2724,7 +2724,7 @@ ne 267. on input line 267.
 Package pdftex.def Info: Requested size: 404.02908pt x 317.40846pt on input lin
 e 267.
  [59] [60 <./Figures/direct_raw_conv_4000_2x2.png (PNG copy)>]
-<Figures/direct_trim_drift_4000_2x2.png, id=1345, 365.86688pt x 292.84406pt>
+<Figures/direct_trim_drift_4000_2x2.png, id=1365, 365.86688pt x 292.84406pt>
 File: Figures/direct_trim_drift_4000_2x2.png Graphic file (type png)
 <use Figures/direct_trim_drift_4000_2x2.png>
 Package pdftex.def Info: Figures/direct_trim_drift_4000_2x2.png  used on input 
@@ -2732,7 +2732,7 @@ line 277. on input line 277.
 Package pdftex.def Info: Requested size: 404.02908pt x 323.40742pt on input lin
 e 277.
  [61 <./Figures/direct_trim_drift_4000_2x2.png (PNG copy)>] [62]
-<Figures/direct_inv_4000.png, id=1355, 430.60875pt x 259.7203pt>
+<Figures/direct_inv_4000.png, id=1375, 430.60875pt x 259.7203pt>
 File: Figures/direct_inv_4000.png Graphic file (type png)
 <use Figures/direct_inv_4000.png>
 Package pdftex.def Info: Figures/direct_inv_4000.png  used on input line 323. o
@@ -2740,7 +2740,7 @@ n input line 323.
 Package pdftex.def Info: Requested size: 404.02908pt x 243.69325pt on input lin
 e 323.
  [63 <./Figures/direct_inv_4000.png>]
-<Figures/direct_inv_cut-up_4000.png, id=1364, 440.39531pt x 283.81032pt>
+<Figures/direct_inv_cut-up_4000.png, id=1384, 440.39531pt x 283.81032pt>
 File: Figures/direct_inv_cut-up_4000.png Graphic file (type png)
 <use Figures/direct_inv_cut-up_4000.png>
 Package pdftex.def Info: Figures/direct_inv_cut-up_4000.png  used on input line
@@ -2752,7 +2752,7 @@ e 339.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [64]
-<Figures/direct_extrap_gk_comp_4000.png, id=1369, 371.13657pt x 217.5628pt>
+<Figures/direct_extrap_gk_comp_4000.png, id=1389, 371.13657pt x 217.5628pt>
 File: Figures/direct_extrap_gk_comp_4000.png Graphic file (type png)
 <use Figures/direct_extrap_gk_comp_4000.png>
 Package pdftex.def Info: Figures/direct_extrap_gk_comp_4000.png  used on input 
@@ -2761,14 +2761,14 @@ Package pdftex.def Info: Requested size: 404.02908pt x 236.84993pt on input lin
 e 349.
  [65 <./Figures/direct_inv_cut-up_4000.png> <./Figures/direct_extrap_gk_comp_40
 00.png>]
-<Figures/direct_inv_1000.png, id=1374, 438.13687pt x 264.23718pt>
+<Figures/direct_inv_1000.png, id=1394, 438.13687pt x 264.23718pt>
 File: Figures/direct_inv_1000.png Graphic file (type png)
 <use Figures/direct_inv_1000.png>
 Package pdftex.def Info: Figures/direct_inv_1000.png  used on input line 365. o
 n input line 365.
 Package pdftex.def Info: Requested size: 404.02908pt x 243.66965pt on input lin
 e 365.
-<Figures/direct_inv_cut-up_1000_03.png, id=1375, 412.54124pt x 264.23718pt>
+<Figures/direct_inv_cut-up_1000_03.png, id=1395, 412.54124pt x 264.23718pt>
 File: Figures/direct_inv_cut-up_1000_03.png Graphic file (type png)
 <use Figures/direct_inv_cut-up_1000_03.png>
 Package pdftex.def Info: Figures/direct_inv_cut-up_1000_03.png  used on input l
@@ -2780,7 +2780,7 @@ e 373.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [66 <./Figures/direct_inv_1000.png>]
-<Figures/direct_inv_cut-up_1000_01.png, id=1380, 412.54124pt x 264.23718pt>
+<Figures/direct_inv_cut-up_1000_01.png, id=1400, 412.54124pt x 264.23718pt>
 File: Figures/direct_inv_cut-up_1000_01.png Graphic file (type png)
 <use Figures/direct_inv_cut-up_1000_01.png>
 Package pdftex.def Info: Figures/direct_inv_cut-up_1000_01.png  used on input l
@@ -2824,7 +2824,7 @@ Overfull \vbox (21.89601pt too high) has occurred while \output is active []
 
 
 [72] [73] [74]
-<Figures/effective-phonon-relaxation-time.png, id=1448, 703.12688pt x 471.26062
+<Figures/effective-phonon-relaxation-time.png, id=1468, 703.12688pt x 471.26062
 pt>
 File: Figures/effective-phonon-relaxation-time.png Graphic file (type png)
 <use Figures/effective-phonon-relaxation-time.png>
@@ -2842,7 +2842,7 @@ Overfull \hbox (4.23582pt too wide) in paragraph at lines 210--211
 , es-pe-cially in a heat source/sink
  []
 
-<Figures/substitution_05-collated.png, id=1499, 1014.03844pt x 1021.56656pt>
+<Figures/substitution_05-collated.png, id=1520, 1014.03844pt x 1021.56656pt>
 File: Figures/substitution_05-collated.png Graphic file (type png)
 <use Figures/substitution_05-collated.png>
 Package pdftex.def Info: Figures/substitution_05-collated.png  used on input li
@@ -2853,7 +2853,7 @@ e 213.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [79]
-<Figures/k-t_all_02.png, id=1505, 672.26157pt x 410.2828pt>
+<Figures/k-t_all_02.png, id=1526, 672.26157pt x 410.2828pt>
 File: Figures/k-t_all_02.png Graphic file (type png)
 <use Figures/k-t_all_02.png>
 Package pdftex.def Info: Figures/k-t_all_02.png  used on input line 233. on inp
@@ -2865,7 +2865,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 246.5785pt on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [80 <./Figures/substitution_05-collated.png>]
-<Figures/k-c_all_01.png, id=1516, 695.59875pt x 411.03563pt>
+<Figures/k-c_all_01.png, id=1536, 695.59875pt x 411.03563pt>
 File: Figures/k-c_all_01.png Graphic file (type png)
 <use Figures/k-c_all_01.png>
 Package pdftex.def Info: Figures/k-c_all_01.png  used on input line 245. on inp
@@ -2877,7 +2877,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 238.7395pt on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [81 <./Figures/k-t_all_02.png (PNG copy)>]
-<Figures/K_over_T_over_X.png, id=1524, 702.86118pt x 502.34735pt>
+<Figures/K_over_T_over_X.png, id=1544, 702.86118pt x 502.34735pt>
 File: Figures/K_over_T_over_X.png Graphic file (type png)
 <use Figures/K_over_T_over_X.png>
 Package pdftex.def Info: Figures/K_over_T_over_X.png  used on input line 253. o
@@ -2902,7 +2902,7 @@ Overfull \hbox (3.47081pt too wide) in paragraph at lines 319--319
 Overfull \vbox (1.03882pt too high) detected at line 319
  []
 
-<Figures/draft_XT.png, id=1554, 723.45282pt x 217.5628pt>
+<Figures/draft_XT.png, id=1574, 723.45282pt x 217.5628pt>
 File: Figures/draft_XT.png Graphic file (type png)
 <use Figures/draft_XT.png>
 Package pdftex.def Info: Figures/draft_XT.png  used on input line 339. on input
@@ -2913,7 +2913,7 @@ e 339.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [85]
-<Figures/draft_XTT.png, id=1565, 797.98125pt x 490.83376pt>
+<Figures/draft_XTT.png, id=1585, 797.98125pt x 490.83376pt>
 File: Figures/draft_XTT.png Graphic file (type png)
 <use Figures/draft_XTT.png>
 Package pdftex.def Info: Figures/draft_XTT.png  used on input line 354. on inpu
@@ -2925,7 +2925,7 @@ e 354.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [86 <./Figures/draft_XT.png>]
-<Figures/k-c_demo-cartoon.png, id=1580, 888.31876pt x 502.12593pt>
+<Figures/k-c_demo-cartoon.png, id=1600, 888.31876pt x 502.12593pt>
 File: Figures/k-c_demo-cartoon.png Graphic file (type png)
 <use Figures/k-c_demo-cartoon.png>
 Package pdftex.def Info: Figures/k-c_demo-cartoon.png  used on input line 377. 
@@ -2934,7 +2934,7 @@ Package pdftex.def Info: Requested size: 404.02908pt x 228.37572pt on input lin
 e 377.
  [87 <./Figures/draft_XTT.png>] [88 <./Figures/k-c_demo-cartoon.png (PNG copy)>
 ] [89]
-<Figures/draft_VrefV-T.png, id=1609, 393.72093pt x 179.16937pt>
+<Figures/draft_VrefV-T.png, id=1629, 393.72093pt x 179.16937pt>
 File: Figures/draft_VrefV-T.png Graphic file (type png)
 <use Figures/draft_VrefV-T.png>
 Package pdftex.def Info: Figures/draft_VrefV-T.png  used on input line 441. on 
@@ -2946,7 +2946,7 @@ e 441.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [90 <./Figures/draft_VrefV-T.png>]
-<Figures/kc_iso_pot_full.png, id=1619, 424.58624pt x 283.81032pt>
+<Figures/kc_iso_pot_full.png, id=1640, 424.58624pt x 283.81032pt>
 File: Figures/kc_iso_pot_full.png Graphic file (type png)
 <use Figures/kc_iso_pot_full.png>
 Package pdftex.def Info: Figures/kc_iso_pot_full.png  used on input line 489. o
@@ -2963,7 +2963,7 @@ Overfull \hbox (0.91743pt too wide) in paragraph at lines 541--543
 -ta-tive of bulk MgSiO$[]$ bridg-
  []
 
-<Figures/kc_4000_mfp_norm.png, id=1641, 365.86688pt x 217.5628pt>
+<Figures/kc_4000_mfp_norm.png, id=1661, 365.86688pt x 217.5628pt>
 File: Figures/kc_4000_mfp_norm.png Graphic file (type png)
 <use Figures/kc_4000_mfp_norm.png>
 Package pdftex.def Info: Figures/kc_4000_mfp_norm.png  used on input line 551. 
@@ -3047,14 +3047,14 @@ Overfull \hbox (12.65083pt too wide) in paragraph at lines 573--599
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [94 <./Figures/kc_4000_mfp_norm.png>]
-<Figures/gk_mfp_scattering_4000K.png, id=1660, 361.35pt x 217.5628pt>
+<Figures/gk_mfp_scattering_4000K.png, id=1680, 361.35pt x 217.5628pt>
 File: Figures/gk_mfp_scattering_4000K.png Graphic file (type png)
 <use Figures/gk_mfp_scattering_4000K.png>
 Package pdftex.def Info: Figures/gk_mfp_scattering_4000K.png  used on input lin
 e 606. on input line 606.
 Package pdftex.def Info: Requested size: 404.02908pt x 243.26035pt on input lin
 e 606.
-<Figures/gk_mfp_scattering_1000K.png, id=1661, 361.35pt x 217.5628pt>
+<Figures/gk_mfp_scattering_1000K.png, id=1681, 361.35pt x 217.5628pt>
 File: Figures/gk_mfp_scattering_1000K.png Graphic file (type png)
 <use Figures/gk_mfp_scattering_1000K.png>
 Package pdftex.def Info: Figures/gk_mfp_scattering_1000K.png  used on input lin
@@ -3088,7 +3088,7 @@ Overfull \hbox (0.42778pt too wide) in paragraph at lines 639--641
 /10.95 C []$
  []
 
-<Figures/gk_mfp_ph-d_significance_4000K.png, id=1666, 361.35pt x 217.5628pt>
+<Figures/gk_mfp_ph-d_significance_4000K.png, id=1686, 361.35pt x 217.5628pt>
 File: Figures/gk_mfp_ph-d_significance_4000K.png Graphic file (type png)
 <use Figures/gk_mfp_ph-d_significance_4000K.png>
 Package pdftex.def Info: Figures/gk_mfp_ph-d_significance_4000K.png  used on in
@@ -3096,7 +3096,7 @@ put line 651. on input line 651.
 Package pdftex.def Info: Requested size: 404.02908pt x 243.26035pt on input lin
 e 651.
 [95]
-<Figures/gk_mfp_ph-d_mass_demo.png, id=1672, 409.53pt x 217.5628pt>
+<Figures/gk_mfp_ph-d_mass_demo.png, id=1692, 409.53pt x 217.5628pt>
 File: Figures/gk_mfp_ph-d_mass_demo.png Graphic file (type png)
 <use Figures/gk_mfp_ph-d_mass_demo.png>
 Package pdftex.def Info: Figures/gk_mfp_ph-d_mass_demo.png  used on input line 
@@ -3120,15 +3120,15 @@ Chapter 5.
 
 
 ]
-<Figures/sph_harm.png, id=1706, 796.47563pt x 204.765pt>
+<Figures/sph_harm.png, id=1728, 796.47563pt x 204.765pt>
 File: Figures/sph_harm.png Graphic file (type png)
 <use Figures/sph_harm.png>
-Package pdftex.def Info: Figures/sph_harm.png  used on input line 39. on input 
-line 39.
+Package pdftex.def Info: Figures/sph_harm.png  used on input line 49. on input 
+line 49.
 Package pdftex.def Info: Requested size: 404.02908pt x 103.86948pt on input lin
-e 39.
+e 49.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
  []\T1/ppl/m/sc/10 Figure 5.1: |\T1/ppl/m/n/10 Source: http://www- 
  []
 
@@ -3192,13 +3192,13 @@ Overfull \hbox (18.84175pt too wide) in paragraph at lines 383--383
 -la-tions: From bulk to nanowire
  []
 
-
+[112]
 Overfull \hbox (0.38953pt too wide) in paragraph at lines 383--383
 \T1/ppl/m/n/10.95 time-dependent phe-nom-ena. II. Ir-re-versible pro-cesses in 
 flu-ids^^Q. In: \T1/ppl/m/it/10.95 J. Chem. Phys.
  []
 
-[112] [113]
+[113]
 Overfull \hbox (1.7856pt too wide) in paragraph at lines 383--383
 [][]\T1/ppl/m/n/10.95 Lobanov, S. S. et al. (2017). ^^P  Ra-dia-tive con-duc-ti
 v-ity and abun-dance of post-perovskite
@@ -3211,13 +3211,13 @@ lanet. Sci. Lett. \T1/ppl/m/n/10.95 479, pp. 43^^U49. \T1/ppl/m/sc/10.95 issn\T
 1/ppl/m/n/10.95 : 0012821X.
  []
 
-[114]
+[114] [115]
 Overfull \hbox (10.84619pt too wide) in paragraph at lines 383--383
 \T1/ppl/m/n/10.95 perovskite at the core^^Umantle bound-ary^^Q. In: \T1/ppl/m/i
 t/10.95 Earth Planet. Sci. Lett. \T1/ppl/m/n/10.95 349-350, pp. 109^^U
  []
 
-[115]
+
 Overfull \hbox (1.35857pt too wide) in paragraph at lines 383--383
 \T1/ppl/m/n/10.95 ther-mal con-duc-tiv-ity of bridg-man-ite at the Earth's lowe
 r man-tle^^Q. In: \T1/ppl/m/it/10.95 Earth Planet.
@@ -3240,7 +3240,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 387.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 387.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 387.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B048D9A25ED6D4E2177479F37FA62133;18301.
+(rerunfilecheck)             Checksum: 6779D59A7E56591A262E555E45711F51;19247.
 
 
 LaTeX Warning: There were undefined references.
@@ -3248,19 +3248,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35152 strings out of 492990
- 716072 string characters out of 6121926
- 1018581 words of memory out of 5000000
- 37814 multiletter control sequences out of 15000+600000
+ 35172 strings out of 492990
+ 716461 string characters out of 6121926
+ 1020912 words of memory out of 5000000
+ 37829 multiletter control sequences out of 15000+600000
  607056 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,21n,82p,10377b,2835s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3282,10 +3278,10 @@ ive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></apps/a
 pplications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></apps/applications/texlive/2017/1/default/2017/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (146 pages, 2596959 bytes).
+Output written on main.pdf (146 pages, 2598462 bytes).
 PDF statistics:
- 2076 PDF objects out of 2487 (max. 8388607)
- 1822 compressed objects within 19 object streams
- 432 named destinations out of 1000 (max. 500000)
- 1063 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2104 PDF objects out of 2487 (max. 8388607)
+ 1850 compressed objects within 19 object streams
+ 437 named destinations out of 1000 (max. 500000)
+ 1095 words of extra memory for PDF output out of 10000 (max. 10000000)
 
